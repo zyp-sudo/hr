@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2038450103123079168",
+    "RecruitPostId": 118929,
+    "RecruitPostName": "混元数据平台全栈开发工程师",
+    "LocationId": 1,
+    "LocationName": "深圳",
+    "BGId": 958,
+    "BGName": "TEG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40001001",
+    "CategoryName": "技术",
+    "ProductName": "混元-工程平台",
+    "Responsibility": "1.负责平台类产品的前后端研发工作，包括配置化能力、模板能力、任务流转、数据管理、权限管理等核心模块建设；\r\n2.参与平台架构设计与通用能力建设，提升系统扩展性、复用性和稳定性；\r\n3.负责复杂交互页面、中后台系统及配置化界面的开发与优化，提升平台整体使用体验；\r\n4.负责服务端业务逻辑、接口设计、数据建模及系统联调，支撑多业务场景接入；\r\n5.沉淀组件、模板、公共模块及工程化能力，推动平台能力标准化和规模化复用。",
+    "Requirement": "1.本科及以上学历，计算机相关专业优先，具备3年及以上相关研发经验；\n2.熟悉 React / Vue 等前端框架，具备复杂中后台、配置化或平台型产品开发经验；\n3.熟悉  Java / Go / Python 中至少一种后端开发语言，具备独立承担服务端开发任务的能力；\n4.熟悉 MySQL / Redis / MQ 等常见基础组件，具备一定系统设计和性能优化能力；\n5.具备组件化、配置化、平台化建设经验和抽象复用能力，熟悉 AI Coding 相关工具与研发范式，具备良好的沟通协作能力，能够独立负责项目或核心模块交付。",
+    "LastUpdateTime": "2026年07月03日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2038450103123079168",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "1.有AI编程相关实践经验，熟悉代码生成、智能辅助开发、Agent 应用等场景者优先；\r\n2.有AI平台、数据标注平台、智能产品相关研发经验。",
+    "Introduction": "",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "三年以上工作经验"
+  }
+}

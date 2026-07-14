@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2056633439326748672",
+    "RecruitPostId": 120136,
+    "RecruitPostName": "AI渲染研究员",
+    "LocationId": 3,
+    "LocationName": "上海",
+    "BGId": 956,
+    "BGName": "IEG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40001005",
+    "CategoryName": "技术",
+    "ProductName": "先锋云算力基础服务",
+    "Responsibility": "1.负责多模态游戏资产内容生成与增强相关算法的研发，通过大模型的训练、微调等手段，提升世界模型的清晰度、补全缺失内容；\r\n2.探索多模态大模型与AIGC技术在游戏领域的应用，通过AI技术能力对世界模型进行二次编辑改造；\r\n3.探索和推进有影响力的AI技术研究和在具体业务场景中的应用。",
+    "Requirement": "1.数学、计算机、机器学习、人工智能等相关专业硕士研究生及以上学历；\r\n2.精通至少一种技术语言，包括但不限于Python、C/C++等；\r\n3.具有扎实的计算机视觉、计算机图形学或机器学习算法基础；\r\n4.具有多模态大模型的研究和开发经验，具备生成式大模型（如Diffusion Models、GANs）的训练、微调（Fine-tuning）及LoRA/ControlNet等外挂模块的实操经验。",
+    "LastUpdateTime": "2026年05月26日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2056633439326748672",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "1.在世界顶尖会议NeurIPS, ICLR, CVPR, ICCV, ECCV，SIGGRAPH等发表过文章并有丰富的工程项目经验；\r\n2.拥有 3DGS（3D Gaussian Splatting）、NeRF 或传统 3D 重建（如多视图几何、SFM）的实际项目经验。",
+    "Introduction": "渴望为世界带来新意的人，早已对描绘未来的“热词”不陌生——人工智能、机器学习、数据科学等等。腾讯始终在业界前沿不断探索，积极布局，并为优秀的你提供无限广阔的舞台。我们坚信科技的不断革新，最终能带来美好的、撼动人心的改变。",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "不限"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2041008029465477120",
+    "RecruitPostId": 10002692,
+    "RecruitPostName": "Senior Cloud Engineer",
+    "LocationId": 1301,
+    "LocationName": "新加坡",
+    "BGId": 14129,
+    "BGName": "WXG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40001003",
+    "CategoryName": "技术",
+    "ProductName": "",
+    "Responsibility": "Business Unit\nWeiXin Group(WXG) is responsible for the construction and operation of the Weixin ecosystem and leveraging Weixin's open platforms such as Official Accounts, Mini Programs, Weixin Pay, WeCom and search function. WXG provides solutions and connectivity for intelligent upgrades across all industries. WXG is also responsible for the development and operation of QQ Mail, WeRead and other products.\n\nWhat the Role Entails\nWeChat is seeking Cloud Engineers to help deploy and scale WeChat's diverse ecosystem of services to over a billion users. The role will work closely with software engineers, data scientists, security specialists, and project managers to help develop internal tools and security systems for keeping WeChat users worldwide safe. Ensure site reliability by managing the deploy, scaling, and maintanence of new and existing online services to a worldwide network and userbase.\nParticipate in system architecture and reliability design for new and existing services, balancing high-availability, service capacity, performance, and cost.\nDeploy, manage and maintain new and existing services; manage Kubernetes/container clusters (upgrade, scaling, multi-cluster governance).\nBuild and operate observability: metrics/logs/tracing, alert strategy (noise reduction, severity, escalation) and incident handling and resolution.\nOwn the CI/CD and release engineering pipeline: pipeline design, canary/gray release, rollback, configuration and change management.\nDrive automation to eliminate repetitive work (scripts/tools, IaC), and improve operational efficiency and quality.\nHandle high-severity incidents focusing on fast detection, mitigation, recovery, and postmortem-driven improvements.\n\nWho We Look For\nBachelor's degree or above in Computer Science, Information Systems, or related fields\nPrior work experience in Cloud Engineering, Site Reliability Engineering (SRE), or DevOps for a major, public-facing internet service\nStrong Linux fundamentals (kernel/memory/process/thread/IPC) and solid networking knowledge (HTTP/DNS/TLS/TCP/IP)\nCluster management experience with containers and Kubernetes; familiarity with upgrade, troubleshooting and governance.\nExperience in large-scale distributed systems and microservices; ability to reason about trade-offs (CAP, consistency, latency).\nExperience with monitoring/alerting and observability tools (e.g., Prometheus, Zabbix) and practical alert hygiene.\nExperience with CI/CD, release automation, and change management; familiarity with IaC is a plus.\nHands-on experience with at least one language: Go, Python, Bash; able to write production-quality automation code.\nDatabase operations experience (MySQL/PostgreSQL/Redis) is a plus.\nFluency in both English and Mandarin Chinese to deal with international stakeholders and stakeholders who are based in HQ\n\nEqual Employment Opportunity at Tencent\nAs an equal opportunity employer, we firmly believe that diverse voices fuel our innovation and allow us to better serve our users and the community. We foster an environment where every employee of Tencent feels supported and inspired to achieve individual and common goals.\r\nWork Location: Singapore-CapitaSky",
+    "Requirement": "岗位要求详情请见上方岗位职责内说明",
+    "LastUpdateTime": "2026年04月05日",
+    "PostURL": "https://tencent.wd1.myworkdayjobs.com/Tencent_Careers/job/Singapore-CapitaSky/Senior-Cloud-Engineer_R107243-1",
+    "SourceID": 4,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "",
+    "Introduction": "",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": ""
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2053808955943206912",
+    "RecruitPostId": 119943,
+    "RecruitPostName": "QQ-#高级推荐算法工程师#",
+    "LocationId": 1,
+    "LocationName": "深圳",
+    "BGId": 29292,
+    "BGName": "PCG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40001005",
+    "CategoryName": "技术",
+    "ProductName": "QQ",
+    "Responsibility": "1.负责空间公域推荐链路优化，针对业务特点进行算法优化，提升用户体验及消费数据；\r\n2.深入理解产品业务，洞察用户需求；工作内容包括不限于技术规划、case分析、数据挖掘、特征工程、模型开发、召回策略、排序策略；\r\n3.能够紧跟工业界、学术界的前沿技术，结合大模型技术，升级推荐模型，LLM4Rec、生成式召回等，提升推荐效果。",
+    "Requirement": "1.计算机或相关专业本科以上学历，具备扎实的机器学习和深度学历理论基础；在推荐、搜索领域有相关算法优化经验优先；\r\n2.熟悉推荐系统链路，精通一个或者多个算法模块，并在其中有丰富的落地和迭代经验；\r\n3.扎实的编程基础和开发能力，熟悉linux开发环境，熟悉hadoop、hive、spark等常用的大数据处理平台，熟悉TensorFlow、PyTorch、MxNet等至少一种主流深度学习框架，熟悉python、C++和shell编程优先；\r\n4.具备良好的AI提效意识，在日常工作中，深入使用AI tools、coding提高效率，问题自AI发现、自优化应用；\r\n5.具有好奇心和探索精神，注重用户体验，对业务和用户有深入理解和洞察，有比较好的数据分析sense。",
+    "LastUpdateTime": "2026年05月11日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2053808955943206912",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "",
+    "Introduction": "渴望为世界带来新意的人，早已对描绘未来的“热词”不陌生——人工智能、机器学习、数据科学等等。腾讯始终在业界前沿不断探索，积极布局，并为优秀的你提供无限广阔的舞台。我们坚信科技的不断革新，最终能带来美好的、撼动人心的改变。",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "不限"
+  }
+}

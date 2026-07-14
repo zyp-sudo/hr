@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2052676737472577536",
+    "RecruitPostId": 119848,
+    "RecruitPostName": "腾讯营销-高级数据产品agent算法工程师",
+    "LocationId": 3,
+    "LocationName": "上海",
+    "BGId": 953,
+    "BGName": "CDG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40001005",
+    "CategoryName": "技术",
+    "ProductName": "腾讯广告",
+    "Responsibility": "1.智能体架构设计与开发：负责核心智能体（Agent）应用的架构设计与开发，利用 LangChain、LangGraph、类 OpenClaw 的技术框架搭建复杂推理链路，实现基于大模型的任务规划、工具调用与状态管理；\r\n2.算法与工程落地：负责 RAG（检索增强生成）、Context Engineering、Function Calling 等技术的深度优化，结合向量数据库、图数据库或 Text2SQL 引擎，提升智能体的知识召回精度和推理成功率；\r\n3.模型调参与评测：跟踪并引入最新 LLM 技术，负责模型的 SFT/RL 微调，搭建完善的 LLM 评测体系，以数据驱动的方式提升模型在具体场景下的表现；\r\n4.系统抽象与能力沉淀：针对多业务接入的需求，抽象并开发配置化、插件化、可观测性等通用能力，确保智能体架构的高可用性、可扩展性及低接入成本；\r\n5.全链路优化：关注 AI 应用的工程化指标（如推理成本、响应延迟、任务成功率），从算法选型、模型量化、Prompt 优化等多维度持续迭代，提升用户体验。",
+    "Requirement": "1.学历与经验：计算机科学、机器学习、人工智能或相关专业硕士及以上学历（优秀本科酌情考虑），3 年以上后端或算法研发经验；\r\n2.算法基础：在 NLP、多模态、AIGC 或机器学习领域有深入理解和实践经验，熟悉大模型的生成原理与评测方法；\r\n3.工程能力：精通 Python，具备优秀的工程实现能力；熟悉异步编程、分布式系统设计，了解高并发、高可用架构的设计模式；\r\n4.智能体框架：必须具备智能体开发经验，熟练掌握至少一种主流 Agent 架构（如 LangChain/LangGraph/AutoGen/Hermes Agent/NanoBot），并能深入理解其底层原理（如 Agent Executor、Tool Calling、Chain 的设计模式）；\r\n5.检索增强：熟悉 RAG 全链路技术，包括但不限于文档解析、切片策略、Embedding 模型选型、检索重排；熟悉向量数据库（如 Milvus、Faiss、Chroma）或图数据库（如 Neo4j）的应用与优化；\r\n6.调参与优化：对 Prompt Engineering 有深刻理解，精通通过 SFT 或 RL 微调模型提升特定任务能力；有参与 LLM 评测体系建设或基准测试经验者优先；\r\n7.软性素质：具备强烈的问题驱动意识，善于复盘与技术沉淀，乐于分享和团队合作；对 AI 工程化有激情，具备拼搏精神，能在大模型快速迭代的环境中持续学习。",
+    "LastUpdateTime": "2026年05月21日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2052676737472577536",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "",
+    "Introduction": "渴望为世界带来新意的人，早已对描绘未来的“热词”不陌生——人工智能、机器学习、数据科学等等。腾讯始终在业界前沿不断探索，积极布局，并为优秀的你提供无限广阔的舞台。我们坚信科技的不断革新，最终能带来美好的、撼动人心的改变。",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "三年以上工作经验"
+  }
+}

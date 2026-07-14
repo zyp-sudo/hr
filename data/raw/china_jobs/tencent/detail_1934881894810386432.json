@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "1934881894810386432",
+    "RecruitPostId": 112741,
+    "RecruitPostName": "微信秒剪-大模型算法研究员-多模态方向",
+    "LocationId": 2,
+    "LocationName": "北京",
+    "BGId": 14129,
+    "BGName": "WXG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40001005",
+    "CategoryName": "技术",
+    "ProductName": "微信读书",
+    "Responsibility": "1.负责多模态内容理解、多模态生成等算法技术在视频剪辑、多模态理解和生成业务上的落地工作：；\r\n2.图像、视频、语音等多模态内容理解和生成算法的模型设计、训练、优化；\r\n3.文生图、文生视频、图生视频等算法的探索和落地；\r\n4.实现模型轻量化（知识蒸馏、量化剪枝）及推理加速，满足低延迟需求；\r\n5.跟踪多模态大模型、世界模型等前沿方向，探索业务结合点。",
+    "Requirement": "1.具备深厚的图像、视频、语音、NLP等领域算法基础，具备独立探索前沿方向技术的能力；\r\n2.具备良好的分析和解决问题的能力，针对具体的应用场景，能合理设计和优化算法并应用；\r\n3.熟悉pytorch或tensorflow，具备较好的数据处理能力；\r\n4.具备良好多模态理论和算法基础者优先；\r\n5.沟通能力良好，工作认真负责。",
+    "LastUpdateTime": "2026年06月29日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=1934881894810386432",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "1.在图像、视频、语音、NLP等领域高水平会议上持续发表论文；\r\n2.获得过国际重大比赛奖项；\r\n3.具备线上服务开发能力。",
+    "Introduction": "渴望为世界带来新意的人，早已对描绘未来的“热词”不陌生——人工智能、机器学习、数据科学等等。腾讯始终在业界前沿不断探索，积极布局，并为优秀的你提供无限广阔的舞台。我们坚信科技的不断革新，最终能带来美好的、撼动人心的改变。",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "两年以上工作经验"
+  }
+}

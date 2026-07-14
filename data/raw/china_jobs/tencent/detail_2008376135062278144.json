@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2008376135062278144",
+    "RecruitPostId": 117041,
+    "RecruitPostName": "腾讯游戏-多模态世界模型算法研究专家-视频生成方向",
+    "LocationId": 1,
+    "LocationName": "深圳",
+    "BGId": 956,
+    "BGName": "IEG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40001005",
+    "CategoryName": "技术",
+    "ProductName": "公共",
+    "Responsibility": "1.负责世界模型（World Model）相关核心算法的研发与落地，包括但不限于视频生成、视频预测、视频编辑等方向；\n2.探索面向游戏世界场景的新一代视频生成技术，构建具备可交互性、可编辑性、物理一致性和时空一致性的世界模型。",
+    "Requirement": "1.教育背景：人工智能、计算机科学、数学或相关专业，硕士及以上学历，博士优先；\n2.编程能力：熟练掌握 PyTorch 等主流深度学习框架，具备扎实的编程能力与工程实现能力；能够高质量复现前沿论文，并推动算法从研究原型到工程实现；\n3.满足以下任意一种技术栈要求：（1）生成模型：深入理解Diffusion Models, GANs, VAEs, Flow-based Models等，具备图像生成或视频生成相关研究或实践经验；（2）模型训练：有大规模 GPU 集群上的模型预训练、微调与后训练经验；具备多模态大模型（如CLIP、LLaVA、Qwen等）的训练或应用经验；（3）学术能力：在SIGGRAPH, CVPR, ICCV, NeurIPS等顶级会议或期刊发表过相关领域的一作论文者优先。",
+    "LastUpdateTime": "2026年06月08日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2008376135062278144",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "",
+    "Introduction": "渴望为世界带来新意的人，早已对描绘未来的“热词”不陌生——人工智能、机器学习、数据科学等等。腾讯始终在业界前沿不断探索，积极布局，并为优秀的你提供无限广阔的舞台。我们坚信科技的不断革新，最终能带来美好的、撼动人心的改变。",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "五年以上工作经验"
+  }
+}

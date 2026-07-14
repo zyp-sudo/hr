@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2068974835094171648",
+    "RecruitPostId": 120698,
+    "RecruitPostName": "《王者荣耀》游戏客户端开发工程师—游戏系统方向",
+    "LocationId": 8,
+    "LocationName": "成都",
+    "BGId": 956,
+    "BGName": "IEG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40001001",
+    "CategoryName": "技术",
+    "ProductName": "王者荣耀",
+    "Responsibility": "1.业务系统开发：负责游戏核心主流程、商业化系统、活动系统等业务模块的开发与迭代，确保系统稳定性与可维护性；\r\n2.基建系统建设：参与资源管理、版本更新、资源分包与DLC扩展、AI协同开发等基础架构系统的设计与实现，优化开发流程和运行效率；\r\n3.技术方案制定：协同策划、美术、服务器等团队，在技术上提供专业解决方案和建议，推动实现优秀游戏体验；\r\n4.架构设计与优化：遵循项目三层架构规范（View-Logic-System），设计清晰的模块划分和数据流，保障代码质量；\r\n5.性能调优：针对游戏运行性能进行优化，包括内存管理、渲染效率、加载速度等方面。",
+    "Requirement": "1.本科及以上学历，计算机相关专业优先；\r\n2.具备3年以上Unity引擎游戏开发经验，有完整大型游戏上线经验者优先；\r\n3.精通Unity引擎及C#编程，熟悉UGUI框架，熟悉游戏客户端常用架构模式（MVC/MVP/MVVM）；\r\n4.熟悉TypeScript/JavaScript等脚本语言开发；\r\n5.了解游戏资源管理、内存优化、性能调优技巧；\r\n6.责任心强，具备良好的问题分析和解决能力，善于沟通，能够与策划、美术等上下游成员顺畅协作；\r\n7.对游戏行业有热情，关注游戏前沿技术及AI发展趋势，有AI Agent协同开发经验者优先；\r\n8.具备良好的代码规范意识，注重代码可读性和可维护性。",
+    "LastUpdateTime": "2026年06月22日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2068974835094171648",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "",
+    "Introduction": "在腾讯，作为一位游戏客户端开发，你始终身处科技前沿，与同样具备满分热情的策划、美术等团队紧密协作，助力新世界的诞生、运作，持续打造极致体验。你可以善用自己的全局观察能力，不断打开技术视野，与靠谱的团队一起做出真正有趣的新事物。",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "五年以上工作经验"
+  }
+}

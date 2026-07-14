@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2043623817225596928",
+    "RecruitPostId": 119270,
+    "RecruitPostName": "J3-UE5微恐射击-游戏引擎开发工程师（CI/研发效能）",
+    "LocationId": 1,
+    "LocationName": "深圳",
+    "BGId": 956,
+    "BGName": "IEG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40001001",
+    "CategoryName": "技术",
+    "ProductName": "CFH-手游APP",
+    "Responsibility": "1.负责研发环境相关的流程与工具的维护和迭代；\r\n2.开发自定义工具和插件，提升团队工作效率；\r\n3.积极响应和处理项目研发流程中的各种问题；\r\n4.与团队成员紧密合作，解决技术难题，推动项目进展。",
+    "Requirement": "1.精通C/C++，具备扎实的数据结构和算法基础；\r\n2.深入了解git、P4以及相关工具的使用；\r\n3.有UE4/UE5项目的工具开发和构建相关经验,并熟悉编辑器模块和功能；\r\n4.良好的问题分析和解决能力，能够独立解决复杂技术问题；\r\n5.强烈的责任心和团队合作精神，良好的沟通能力和文档编写能力。",
+    "LastUpdateTime": "2026年04月14日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2043623817225596928",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "1.有大型游戏项目开发经验，熟悉游戏开发流程。",
+    "Introduction": "",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "三年以上工作经验"
+  }
+}

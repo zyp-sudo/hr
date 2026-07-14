@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2060193132812873728",
+    "RecruitPostId": 120291,
+    "RecruitPostName": "《逆战：未来》客户端开发工程师（怪物）",
+    "LocationId": 1,
+    "LocationName": "深圳",
+    "BGId": 956,
+    "BGName": "IEG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40001001",
+    "CategoryName": "技术",
+    "ProductName": "code-z",
+    "Responsibility": "1.负责怪物框架的设计与维护；\r\n2.负责怪物的功能开发，能主导复杂Boss的行为/技能实现以及表现优化；\r\n3.负责怪物模块相关的制作工具链优化；\r\n4.负责怪物模块的性能优化；\r\n5.负责怪物模块的各类疑难问题的跟进与解决。",
+    "Requirement": "1.本科及以上学历，计算机相关专业，具备3年以上游戏开发相关工作经验；\r\n2.熟练掌握C++，至少掌握一门脚本语言, 有一定框架设计能力；\r\n3.具有UE Gameplay开发经验，熟悉引擎底层对象系统，网络同步机制等, 熟悉GAS，动画模块优先；\r\n4.具备游戏AI领域的开发经验，熟悉UE的行为树机制，EQS，寻路导航等系统的实现原理；\r\n5.责任心强，有较高的团队协作和任务跟进能力，善于沟通，使命必达；\r\n6.有优秀的学习能力，善于沟通协作，热爱游戏事业。",
+    "LastUpdateTime": "2026年05月29日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2060193132812873728",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "1.对FPS游戏熟悉和热爱者优先。",
+    "Introduction": "在腾讯，作为一位游戏客户端开发，你始终身处科技前沿，与同样具备满分热情的策划、美术等团队紧密协作，助力新世界的诞生、运作，持续打造极致体验。你可以善用自己的全局观察能力，不断打开技术视野，与靠谱的团队一起做出真正有趣的新事物。",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "三年以上工作经验"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "1920396918077378560",
+    "RecruitPostId": 111858,
+    "RecruitPostName": "微信视频号-发布器SDK高级研发工程师",
+    "LocationId": 5,
+    "LocationName": "广州",
+    "BGId": 14129,
+    "BGName": "WXG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40001001",
+    "CategoryName": "技术",
+    "ProductName": "视频号短视频",
+    "Responsibility": "团队介绍：我们负责微信视频号客户端(iOS和 Android)的短视频业务开发，负责提供视频号浏览体验，发表，视频图片编辑器，个人主页，广告等多个基础模块。期待对技术保持好奇，对用户体验有追求的小伙伴们加入，和我们一同追求卓越与创新，让书写的代码运行在海量用户的设备上，给用户带来更大的价值。\n\n岗位职责\n1.负责视频号发布器SDK中视频剪辑、特效拍摄新功能的研发，包括从结构设计到具体实现的一系列工作；\n2.负责发布器SDK中渲染引擎、媒体处理引擎等底层机制的研发与维护，支持iOS / macOS / Android / Windows等多平台； \n3.为终端发布器、素材制作工具等上层应用提供全面深入的技术支持，保证高质量的最终用户体验。",
+    "Requirement": "1.两年以上相关工作经验，熟练使用 C++ 编程语言，具备理解、调试较大规模 C++ 代码库的能力，有 C++ 跨平台 SDK 研发经验者优先，有 iOS / Android 研发经验者优先； \n2.具备较好的软件设计能力，有开发高品质软件、编写高质量代码的自我要求； \n3.有能力、有意愿进行深入的软件研发工作；善于学习新知识，善于探索并解决复杂问题； \n4.熟悉常见视频剪辑与拍摄效果实现方案，熟悉图形 API（OpenGL / Metal等）、媒体API（AVFoundation / MediaCodec / FFmpeg等）者优先。",
+    "LastUpdateTime": "2026年06月15日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=1920396918077378560",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "1.有中大型客户端项目研发经验优先；\r\n2.技术社区活跃，有独立App或 Github开源项目可加分；\r\n3.有视频播放/浏览项目经验可加分。",
+    "Introduction": "",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "两年以上工作经验"
+  }
+}

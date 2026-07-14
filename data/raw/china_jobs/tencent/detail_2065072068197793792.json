@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2065072068197793792",
+    "RecruitPostId": 120528,
+    "RecruitPostName": "腾讯云-大模型产品解决方案架构师",
+    "LocationId": 1,
+    "LocationName": "深圳",
+    "BGId": 29294,
+    "BGName": "CSIG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40003001",
+    "CategoryName": "产品",
+    "ProductName": "腾讯云-云原生",
+    "Responsibility": "1.理解客户大模型相关的业务场景、为客户设计从工程架构到模型能力的完整解决方案，并协助客户测试、迁移；\n2.与客户、销售、产研团队紧密配合，识别与把控项目风险，提升客户满意度，推动完善产品能力。",
+    "Requirement": "1.本科以上学历，3年以上机器学习或大模型平台领域相关研发、运维或解决方案经验；\n2.熟悉大模型技术栈，例如Prompt Engineering、RAG、模型微调、Agent框架、推理加速等技术；\n3.具有良好的沟通技巧，英语流利更佳；\n4.工作自驱力强，善于持续学习和总结。",
+    "LastUpdateTime": "2026年06月11日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2065072068197793792",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "",
+    "Introduction": "“用户为本，科技向善”，是写在每位腾讯产品人心中的一句箴言。在互联网浪潮中，大众的生活已被深刻地改变，如何为用户创造价值、创造怎样的价值，需要每位产品人花费更长时间去体会与探索。在这里，你将与同样关注细节、关注本质、关注美好的同事一道，开启你的创造性工作。",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "三年以上工作经验"
+  }
+}

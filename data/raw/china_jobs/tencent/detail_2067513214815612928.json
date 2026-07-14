@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2067513214815612928",
+    "RecruitPostId": 120660,
+    "RecruitPostName": "Supercell游戏《皇室战争》-数值策划",
+    "LocationId": 1,
+    "LocationName": "深圳",
+    "BGId": 956,
+    "BGName": "IEG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40003002",
+    "CategoryName": "产品",
+    "ProductName": "腾讯版皇室战争",
+    "Responsibility": "1.负责Supercell游戏的数值体系设计与优化，以及核心玩法的数值平衡；\n2.通过数据分析驱动数值迭代，制定合理的数值成长曲线和付费点设计，提升玩家游戏体验和留存；\n3.与游戏设计师、程序、运营紧密合作，将策划需求转化为可落地的数值方案，并跟进开发实现；\n4.参与游戏版本规划，通过数值调优支持游戏长期运营和商业化目标；\n5.持续监控游戏数据表现，快速定位数值问题并提出解决方案，确保游戏经济系统健康稳定。",
+    "Requirement": "1.本科及以上学历，数学、统计、计算机或游戏相关专业优先，3年以上游戏数值策划经验；\n2.熟悉卡牌、策略类游戏的数值设计逻辑，有成功项目经验者优先；\n3.精通Excel及至少一种数据分析工具（如SQL、Python），具备扎实的数据分析能力；\n4.逻辑思维严谨，对数字敏感，能够独立设计复杂的数值模型和系统；\n5.优秀的沟通能力和团队协作精神，能够清晰表达设计思路并推动跨部门合作；\n6.热爱游戏，对Supercell游戏及同类游戏有深入体验和理解。",
+    "LastUpdateTime": "2026年06月25日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2067513214815612928",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "1.有Supercell风格游戏或国际游戏项目经验；\r\n2.具备完整的从0到1数值体系搭建经验；\r\n3.熟悉游戏经济系统和付费设计，有商业化调优成功案例。",
+    "Introduction": "【腾讯游戏｜这一局，由你主导】\n腾讯游戏，致力于以顶尖技术创造丰富优质的游戏体验，用创新玩法点燃玩家情感共鸣，深度打磨每处游戏细节。加入我们，用创造力拓展游戏的边界，为用户创造高品质数字生活体验！",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "两年以上工作经验"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2056949444708057088",
+    "RecruitPostId": 120156,
+    "RecruitPostName": "Technology Platform-游戏引擎研发工程师-(渲染效果)",
+    "LocationId": 1,
+    "LocationName": "深圳",
+    "BGId": 956,
+    "BGName": "IEG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40001001",
+    "CategoryName": "技术",
+    "ProductName": "公共",
+    "Responsibility": "1.负责全局光照（GI）系统的前沿技术预研与工程落地，包括实时GI与离线烘焙方案；\r\n2.设计并实现光照烘焙管线，优化Lightmap质量、烘焙效率与内存占用；\r\n3.开发高品质渲染效果，包括体积光、AO、反射探针、间接光照等；\r\n4.持续追踪学术界与工业界最新成果（SIGGRAPH/GDC/Eurographics），主导前沿技术的原型验证与产品化落地；\r\n5.与美术团队紧密配合，制定光照工作流与场景表现标准。",
+    "Requirement": "1.5年以上3D引擎开发经验，精通UE或Unity引擎光照与渲染模块；\r\n2.扎实的数学基础（球谐函数、蒙特卡洛积分、辐射度量学）；\r\n3.深入理解全局光照理论（Path Tracing、Radiosity、Light Probe等）；\r\n4.熟悉GPU/CPU架构，具备Shader开发与优化能力（HLSL/GLSL/Metal）；\r\n5.有Lightmap烘焙管线或实时GI系统开发经验；\r\n6.有将前沿图形学技术（如Lumen、DDGI、ReSTIR、Surfel GI、Neural Radiance等）从论文/原型落地到实际项目的成功经验，能独立完成\"论文复现→工程适配→性能调优→产品上线\"全流程；\r\n7.有移动端光照适配经验者优先；有UE5 3A级PC端游戏开发经验者更佳；\r\n8.有AI辅助编程实践经验，具备AI工程化落地的系统性方法论者加分。",
+    "LastUpdateTime": "2026年05月27日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2056949444708057088",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "",
+    "Introduction": "",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "五年以上工作经验"
+  }
+}

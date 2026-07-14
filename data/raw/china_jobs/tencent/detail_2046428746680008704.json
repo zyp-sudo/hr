@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2046428746680008704",
+    "RecruitPostId": 10002731,
+    "RecruitPostName": "Tencent Cloud- PaaS Senior Site Reliability Engineer(Malaysia)",
+    "LocationId": 1201,
+    "LocationName": "吉隆坡",
+    "BGId": 29294,
+    "BGName": "CSIG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40001003",
+    "CategoryName": "技术",
+    "ProductName": "",
+    "Responsibility": "Business Unit\nCloud & Smart Industries Group (CSIG) is responsible for promoting the company's cloud and industry Internet strategy. CSIG explores the interactions between users and industries to create innovative solutions for smart industries via technological advancements such as cloud, AI, and network security. While driving the digitalization of retail, medical, education, transportation and other industries, CSIG helps companies serve users in smarter ways, building a new ecosystem of intelligent industries that connect users and businesses.\n\nWhat the Role Entails\nSystem Monitoring and Maintenance: Ensure the stability and reliability of Tencent Cloud's PaaS products by continuously monitoring systems, resolving technical issues, and mitigating risks to maintain seamless operations.\nArchitecture Optimization: Collaborate with the engineering team to optimize and upgrade product architecture, enhancing system performance and scalability through a deep understanding of cloud technologies.\nAutomation and High-Availability: Implement automated operations and develop high-availability components, focusing on improving system efficiency and conducting high-availability drills.\nTool and Platform Utilization: Utilize CI/CD pipelines, intelligent monitoring systems, and data analytics to enhance operational workflows, reduce costs, and eliminate inefficiencies.\n\nWho We Look For\nBachelor’s or Master’s degree in Computer Science or related fields.\nMinimum 5 years of hands-on experience in cloud operations, SRE, or platform engineering roles, preferably supporting large-scale public cloud or enterprise-grade platforms.\nStrong understanding of distributed systems with solid practical experience in technologies such as Kubernetes, Docker, Nginx, Redis, Kafka, and MySQL.\nProficiency in at least one programming or scripting language, including Java, Go, Python, or Shell, with the ability to develop automation and operational tooling.\nStrong expertise in Linux systems, TCP/IP networking, and systematic troubleshooting of complex production issues.\nExperience with public cloud platforms is required; cloud certifications are a strong plus.\nFluent in both English and Chinese Mandarin, with the ability to collaborate effectively with China-based stakeholders and operate in cross-border technical environments.\n\nEqual Employment Opportunity at Tencent\nAs an equal opportunity employer, we firmly believe that diverse voices fuel our innovation and allow us to better serve our users and the community. We foster an environment where every employee of Tencent feels supported and inspired to achieve individual and common goals.\r\nWork Location: Malaysia-Kuala Lumpur",
+    "Requirement": "岗位要求详情请见上方岗位职责内说明",
+    "LastUpdateTime": "2026年06月22日",
+    "PostURL": "https://tencent.wd1.myworkdayjobs.com/Tencent_Careers/job/Malaysia-Kuala-Lumpur/Tencent-Cloud--PaaS-Senior-Site-Reliability-Engineer-Malaysia-_R107310",
+    "SourceID": 4,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "",
+    "Introduction": "",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": ""
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "1927639956445069312",
+    "RecruitPostId": 112381,
+    "RecruitPostName": "微信读书/输入法/秒剪-AI 应用客户端开发工程师",
+    "LocationId": 5,
+    "LocationName": "广州",
+    "BGId": 14129,
+    "BGName": "WXG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40001001",
+    "CategoryName": "技术",
+    "ProductName": "微信读书",
+    "Responsibility": "1.推进微信读书或微信输入法 AI 应用的端侧落地与优化，探索端侧 AI 推理、端云协同智能等技术方案，增强产品核心竞争力。​；\r\n2.负责微信读书或微信输入法 iOS/Android 客户端核心模块的开发与维护，开展性能调优及技术难点攻坚，保障客户端稳定高效运行。​；\r\n3.参与产品专项技术调研与新技术探索，评估技术可行性，为客户端功能迭代与体验优化提供技术支撑。​；\r\n4.参与客户端性能与稳定性体系建设，开发配套工具，保障软件质量，提升团队研发效率。",
+    "Requirement": "1.计算机相关专业本科及以上学历，一年以上客户端应用开发经验；\r\n2.熟悉 Objective-C / Swift 或 Java / Kotlin ，熟悉 iOS 或 Android 开发，有扎实的算法和数据结构功底，对具体平台有深入了解，iOS 和 Android都有经验者优先；\r\n3.具有良好的工程素养，包括但不限于文档撰写能力，单元测试能力，版本管理能力。",
+    "LastUpdateTime": "2026年06月22日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=1927639956445069312",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "1.有移动设备内存、功耗、速度等性能优化相关经验优先；\r\n2.有移动端跨平台、 Flutter 、 C++ 开发经验者优先。",
+    "Introduction": "",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "一年以上工作经验"
+  }
+}

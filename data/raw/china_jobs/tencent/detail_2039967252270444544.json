@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2039967252270444544",
+    "RecruitPostId": 119049,
+    "RecruitPostName": "3A级开放世界-资深任务策划",
+    "LocationId": 7,
+    "LocationName": "杭州",
+    "BGId": 956,
+    "BGName": "IEG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40003002",
+    "CategoryName": "产品",
+    "ProductName": "HI-端游-海外版",
+    "Responsibility": "1.负责开放大世界的游戏任务流程与任务表演的设计和落地；\r\n2.负责使用事件编写逻辑，驱动任务关卡中的对象进行表演，并对任务流程的整体体验负责；\r\n3.负责任务流程中NPC氛围、对话表演的制作、过场动画与其他美术资源的接入；\r\n4.负责各环节任务呈现品质的把控、调整迭代以及验收，推动确保各方按时高品质完成进度计划。",
+    "Requirement": "1.本科及以上学历，3年以上MMO或开放世界项目任务策划或关卡策划的工作经验；\r\n2.有游戏叙事经验，熟悉游戏叙事的各种形式，承担过项目核心文案内容设计及落地的任务玩法设计；\r\n3.熟悉UE引擎开发管线，熟练使用Sequence，对任务结构与逻辑编写有足够的了解；\r\n4.有大型开放世界或MMO任务体验设计或关卡设计经验优先。",
+    "LastUpdateTime": "2026年05月20日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2039967252270444544",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "1.熟悉各类开放世界游戏任务体验；\r\n2.有过文案相关工作经历，具备一定写作能力。",
+    "Introduction": "【腾讯游戏｜这一局，由你主导】\n腾讯游戏，致力于以顶尖技术创造丰富优质的游戏体验，用创新玩法点燃玩家情感共鸣，深度打磨每处游戏细节。加入我们，用创造力拓展游戏的边界，为用户创造高品质数字生活体验！",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "五年以上工作经验"
+  }
+}

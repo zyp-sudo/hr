@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "1897945233740599296",
+    "RecruitPostId": 110517,
+    "RecruitPostName": "游戏AI-高级产品经理",
+    "LocationId": 1,
+    "LocationName": "深圳",
+    "BGId": 958,
+    "BGName": "TEG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40003001",
+    "CategoryName": "产品",
+    "ProductName": "",
+    "Responsibility": "1.负责探索AI技术在游戏中的应用，包括但不限于以AI为核心的玩法设计、拟人AI、AI测试等；\n2.熟悉游戏研发流程与管线，根据项目需求推动AI能力产品化，用标准化的AI工具提升游戏体验或研发效率；\n3.深入了解AIGC相关技术与业界进展，了解AI的能力边界并建设合理的评估标准体系。",
+    "Requirement": "1.本科及以上学历，具有丰富的游戏项目经验，热爱各类游戏，对市面上主流游戏类型都有了解，并有自己的分析、理解；\n2.了解AI相关技术的能力边界与迭代流程，有过熟练使用游戏引擎或编辑器产品进行AI制作等相关经验者优先；\n3.有创新思维与学习能力，并能基于数据指导工作，与技术团队一起推动方案落地；\n4.有游戏或AI的战略规划、投行咨询等相关经验者优先。",
+    "LastUpdateTime": "2026年06月12日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=1897945233740599296",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "",
+    "Introduction": "",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "三年以上工作经验"
+  }
+}

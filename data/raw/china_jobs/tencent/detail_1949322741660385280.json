@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "1949322741660385280",
+    "RecruitPostId": 113680,
+    "RecruitPostName": "智能体-策划产品经理-CodeBuddy/WorkBuddy",
+    "LocationId": 1,
+    "LocationName": "深圳",
+    "BGId": 29294,
+    "BGName": "CSIG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40003001",
+    "CategoryName": "产品",
+    "ProductName": "腾讯云-Codebuddy-C端专用",
+    "Responsibility": "1.负责CodeBuddy IDE产品的整体规划与战略制定，明确AI功能迭代方向；\r\n2.持续跟踪AI开发者工具竞品的动态，为产品决策提供有力依据，同时精准提炼垂直行业的核心痛点，如合规代码生成等；\r\n3.主导产品的全生命周期管理，负责编写需求文档（PRD），清晰定义AI功能的交互逻辑；\r\n4.积极推动腾讯云生态与CodeBuddy IDE的深度集成，包括CloudBase部署、微信小程序兼容等方面，设计有效的技术解决方案；\r\n5.构建完善的产品指标体系，如代码生成准确率、任务耗时等，通过漏斗分析精准定位用户体验断点；\r\n6.备注：base地可选深圳/北京/上海。",
+    "Requirement": "1.本科及以上学历，计算机科学、AI或产品设计相关专业优先，熟悉AI开发生态，包括大模型技术栈、Agentic Workflow等，以及主流IDE工具链；\r\n2.具备3年以上AI/开发者工具产品策划经验，有主导代码生成、低代码平台或智能助手类产品的成功案例，熟悉GitHub、VS Code生态以及企业级服务落地的相关要求，如金融、医疗行业的合规需求；\r\n3.拥有敏锐的技术趋势洞察力，能够及时捕捉如L5级自组织AI团队等技术发展趋势，熟练运用用户研究方法，如焦点小组、Kano模型等，精准转化开发者需求为产品特性；\r\n4.具备高效的跨职能协同能力，能够与技术（算法/工程）、市场（GTM策略）、销售（企业客户拓展）等团队进行良好的沟通与协作，推动资源整合与策略的有效落地；\r\n5.熟练使用产品管理工具，如Jira、Confluence等，以及数据分析平台，如QuickSight、Tableau等，英语读写流利，具备较强的抗压能力和创新意识。",
+    "LastUpdateTime": "2026年07月02日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=1949322741660385280",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "1.在同等条件下，通过腾讯云认证或取得同等资格认证的候选人，我们会优先考虑。",
+    "Introduction": "“用户为本，科技向善”，是写在每位腾讯产品人心中的一句箴言。在互联网浪潮中，大众的生活已被深刻地改变，如何为用户创造价值、创造怎样的价值，需要每位产品人花费更长时间去体会与探索。在这里，你将与同样关注细节、关注本质、关注美好的同事一道，开启你的创造性工作。",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "五年以上工作经验"
+  }
+}

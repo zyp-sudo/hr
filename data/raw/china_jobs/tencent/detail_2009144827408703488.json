@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2009144827408703488",
+    "RecruitPostId": 117130,
+    "RecruitPostName": "PUBG Mobile-游戏客户端开发工程师(玩法方向)-新星引力计划",
+    "LocationId": 1,
+    "LocationName": "深圳",
+    "BGId": 956,
+    "BGName": "IEG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40001001",
+    "CategoryName": "技术",
+    "ProductName": "PUBG Mobile-全球不分明细",
+    "Responsibility": "1.负责UE4的UGC相关GamePlay开发，设计和封装玩法组件（如角色控制、战斗系统、任务逻辑）；\n2.参与UGC功能模块的重构与开发，确保玩法系统稳定性和可扩展性；\n3.负责UGC开发相关技术架构设计、深度优化等技术攻关工作。",
+    "Requirement": "1.扎实的编程基础，熟练掌握C++和Lua脚本语言；\n2.3年以上游戏客户端开发经验，精通UE4引擎，有Unity或Cocos经验者优先；\n3.在Gameplay、引擎或工具开发等某一技术领域有丰富的实践经验。有UGC开发经验者优先；\n4.有优秀的学习能力，善于沟通，热爱游戏事业，能够承受一定工作压力。",
+    "LastUpdateTime": "2026年06月12日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2009144827408703488",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "1.参与设计和开发UGC玩法系统，塑造创新游戏体验；\n2.使用UE4引擎开发UGC，学习UGC游戏的动态和离线性能优化技术。",
+    "ImportantItem": "",
+    "Introduction": "在腾讯，作为一位游戏客户端开发，你始终身处科技前沿，与同样具备满分热情的策划、美术等团队紧密协作，助力新世界的诞生、运作，持续打造极致体验。你可以善用自己的全局观察能力，不断打开技术视野，与靠谱的团队一起做出真正有趣的新事物。",
+    "DepartmentIntroduction": "光子工作室群，一个对游戏狂热的全球知名开发团队，在全球10余个国家和地区研发布局，旗下包括《和平精英》《PUBG Moblie》《欢乐斗地主》《最强NBA》等超出50款端手游产品。多款产品曾获得超过15个奖项荣誉，其中，《PUBG Mobile》上线一周内登顶105个国家和地区App Store榜首。\n光子为每位员工量身定制成长舞台，针对游戏策划有武林师徒项目、针对开发有程序精品课、针对美术有大咖沙龙；如果你怀抱游戏初心，可以借光子的大平台孵化独立游戏如《末剑》；若希望声音被听到，可以借光子内部的《游你百家谈》节目彰显智慧。此外，光子建立了全球前沿技术协同发展的研发团队，持续推动游戏品质向次世代升华。\n光子未来还将持续面向全球，探索大型游戏和创新游戏等领域，欢迎热爱游戏的你加入！",
+    "RequireWorkYearsName": "一年以上工作经验"
+  }
+}

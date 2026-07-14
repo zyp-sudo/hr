@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "1856169059511463936",
+    "RecruitPostId": 108515,
+    "RecruitPostName": "腾讯云--- 音频语音识别/理解算法高级工程师",
+    "LocationId": 1,
+    "LocationName": "深圳",
+    "BGId": 29294,
+    "BGName": "CSIG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40001005",
+    "CategoryName": "技术",
+    "ProductName": "",
+    "Responsibility": "1.负责语音识别ASR应用涉及的效果调优与实现，比如多语种语音识别与翻译（中/英/法/日/韩/东南亚/中东等）、端侧超级轻量级高效ASR的落地实现、解决目标说话人增强的ASR相关技术的落地、声学/语意vad等；\r\n2.负责语音识别asr-llm大模型与前沿技术调研与落地，比如更合理的语音与文本对齐、适用于多语种的模型方案、更高效的弱监督数据筛选流程等；\r\n3.负责跟踪并复现业界最前沿的音频处理方案，并能融合优化当前效果。",
+    "Requirement": "1.硕士及以上学历，声学、信号处理等其他相关专业；\r\n2.对于音频处理领域与背景有深刻理解，具备一定声学信号处理数学建模能力，对于大模型llm量化与训练经验、特定人声增强、端到端多语种语音识别、轻量级端侧高效语音识别、个性化声纹情绪等语音合成有实际项目，且参加过相关比赛的同学优先；\r\n3.在Wenet、K2、Whisper等开源社区方案中任意一种实际项目开发经验的同学优先；\r\n4.熟练使用Python、C、C++等编程语言，以及精通AI训练与推理，熟练使用Pytorch与Tensorflow优先。",
+    "LastUpdateTime": "2026年07月06日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=1856169059511463936",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "1.在同等条件下，通过腾讯云认证或取得同等资格认证的候选人，我们会优先考虑。",
+    "Introduction": "渴望为世界带来新意的人，早已对描绘未来的“热词”不陌生——人工智能、机器学习、数据科学等等。腾讯始终在业界前沿不断探索，积极布局，并为优秀的你提供无限广阔的舞台。我们坚信科技的不断革新，最终能带来美好的、撼动人心的改变。",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "三年以上工作经验"
+  }
+}

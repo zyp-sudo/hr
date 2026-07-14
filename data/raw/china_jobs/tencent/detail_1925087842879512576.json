@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "1925087842879512576",
+    "RecruitPostId": 112211,
+    "RecruitPostName": "《逆战：未来》客户端开发（武器方向）",
+    "LocationId": 1,
+    "LocationName": "深圳",
+    "BGId": 956,
+    "BGName": "IEG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40001001",
+    "CategoryName": "技术",
+    "ProductName": "code-z",
+    "Responsibility": "1.负责武器框架的设计与维护；\r\n2.负责武器以及技能的功能开发，能主导复杂武器功能/技能实现以及动画表现优化；\r\n3.负责武器模块相关的制作工具链优化；\r\n4.负责武器模块的性能优化；\r\n5.负责武器模块的各类疑难问题的跟进与解决。",
+    "Requirement": "1.本科及以上学历，计算机相关专业，具备3年以上游戏开发相关工作经验；\r\n2.熟练掌握C++，至少掌握一门脚本语言, 有一定框架设计能力；\r\n3.具有UE Gameplay开发经验，熟悉引擎底层对象系统，网络同步机制等,  有3C, 动画技术基础，熟悉GAS优先；\r\n4.具备FPS游戏的武器开发经验优先，对FPS游戏熟悉和热爱者优先；\r\n5.责任心强，有较高的团队协作和任务跟进能力，善于沟通，使命必达。",
+    "LastUpdateTime": "2026年07月06日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=1925087842879512576",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "",
+    "Introduction": "",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "三年以上工作经验"
+  }
+}

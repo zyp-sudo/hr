@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2044972215568592896",
+    "RecruitPostId": 119426,
+    "RecruitPostName": "TDSQL存储引擎研发工程师(北京/上海/深圳)",
+    "LocationId": 1,
+    "LocationName": "深圳",
+    "BGId": 958,
+    "BGName": "TEG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40001001",
+    "CategoryName": "技术",
+    "ProductName": "TDSQL PG",
+    "Responsibility": "1.参与分布式事务存储引擎核心模块的架构设计与开发，方向涵盖 LSM Tree 内核、多模态存储、冷热分层等；\r\n2.负责存储引擎关键路径的深度性能分析与优化，提升 TP 场景下的吞吐与尾延迟表现；\r\n3.参与分布式事务机制的设计与实现，包括并发控制、锁管理、MVCC 等核心模块；\r\n4.设计并落地基于多介质的智能冷热分层方案，在保障业务 SLA 的前提下最大化降低存储成本。",
+    "Requirement": "1.3年以上数据库内核、存储引擎或系统软件研发经验；\r\n2.有 RocksDB / LevelDB 等 LSM Tree 存储引擎**源码级**开发或深度调优经验；\r\n3.有 MySQL / CockroachDB / OceanBase / TiKV 等数据库内核开发经验，深入理解事务、MVCC、并发控制机制；\r\n4.有分级存储、冷热分离或基于对象存储（S3/COS）的存储系统设计与开发经验；\r\n5.对分布式系统有深入理解，熟悉 Raft / Paxos 协议及一致性模型；\r\n6.有 SIGMOD / VLDB / ICDE 等数据库顶会论文发表，或在 RocksDB / TiKV 等知名开源项目有 Contributor 经验。",
+    "LastUpdateTime": "2026年04月24日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2044972215568592896",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "",
+    "Introduction": "",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "三年以上工作经验"
+  }
+}

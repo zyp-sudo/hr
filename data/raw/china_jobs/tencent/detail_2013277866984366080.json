@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2013277866984366080",
+    "RecruitPostId": 117393,
+    "RecruitPostName": "微信-大模型后训练算法专家",
+    "LocationId": 2,
+    "LocationName": "北京",
+    "BGId": 14129,
+    "BGName": "WXG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40001005",
+    "CategoryName": "技术",
+    "ProductName": "WXG公共",
+    "Responsibility": "1.负责大语言模型（LLM）推理能力的核心技术研发，包括数学推理、逻辑推理、知识推理和通用任务（如问答、翻译等）的算法研发、优化与创新，提升大模型在复杂场景下的高阶推理能力；\n2.跟踪推理领域的前沿技术，参与前沿算法研究，推动研究成果在业务场景的落地应用。",
+    "Requirement": "1.计算机科学、数学、人工智能等相关专业硕士及以上学历；\r\n2.具备良好的数理基础和 NLP 技术基础，能够熟练使用 HuggingFace，Megatron，DeepSpeed，PyTorch 等框架至少一种，深入理解Transformer、GPT等模型架构；\r\n3.在Post-training方向有一定研究基础，熟悉SFT/DPO/PPO/GRPO/Reward Model等；\r\n4.具备良好的分析和解决问题的能力，针对具体的应用场景能合理设计和优化算法并应用；\r\n5.对于探索前沿技术有很好的热情，具备独立探索前沿技术的能力，有良好的团队协作和沟通能力。",
+    "LastUpdateTime": "2026年06月22日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2013277866984366080",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "1.主导过推理任务优化项目（如数学解题、代码生成、逻辑问答），在权威推理评测（如AIME、MATH、HumanEval等）中取得过显著效果提升；\r\n2.以第一作者身份发表过 NeurIPS、ICML、ICLR、ACL、EMNLP、NAACL 等论文；\r\n3.了解GPU硬件架构，有CUDA编程经验，熟悉各种网络底层算子实现细节。",
+    "Introduction": "渴望为世界带来新意的人，早已对描绘未来的“热词”不陌生——人工智能、机器学习、数据科学等等。腾讯始终在业界前沿不断探索，积极布局，并为优秀的你提供无限广阔的舞台。我们坚信科技的不断革新，最终能带来美好的、撼动人心的改变。",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "一年以上工作经验"
+  }
+}

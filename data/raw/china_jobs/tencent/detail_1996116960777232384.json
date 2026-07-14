@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "1996116960777232384",
+    "RecruitPostId": 116361,
+    "RecruitPostName": "元宝-效果设计师（AIGC方向）",
+    "LocationId": 2,
+    "LocationName": "北京",
+    "BGId": 29294,
+    "BGName": "CSIG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40002001",
+    "CategoryName": "设计",
+    "ProductName": "元宝",
+    "Responsibility": "1.负责元宝多模态相关的效果落地，包括风格定义、风格训练、模型效果评测与验收、风格效果迭代等美学相关工作；\r\n2.参与创意脑暴及策划，善于通过分析与洞察，精准把握目标用户对Al绘画/AI视频等相关产品的诉求，输出风格策划及执行方案，并推动落地。",
+    "Requirement": "1.熟练使用AI工具，掌握模型训练与ComfyUl调试，会0-1搭建 Workflow 并复现效果；精通并能熟练运用illustrator/Photoshop 等设计软件；\r\n2.具备良好的绘画技巧和创作能力，良好的审美观，能够提供有创意的设计方案；\r\n3.本科及以上学历，设计/艺术类相关专业优先；有AI设计经验，模型训练相关经验优先；\r\n4.责任心强，积极主动有热情，乐于挑战新事物，具备较好的跨团队沟通协调能力。",
+    "LastUpdateTime": "2026年06月18日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=1996116960777232384",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "",
+    "Introduction": "设计，决定了用户体验的上限。在“一切以用户价值为依归”的腾讯，设计师们始终以开放、严谨的专业态度，持续传递设计的价值。加入我们，与极富想象力和专业能力的同事一起，探索体验，设计未来。",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "三年以上工作经验"
+  }
+}

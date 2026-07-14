@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2072873374673186816",
+    "RecruitPostId": 120913,
+    "RecruitPostName": "数值策划",
+    "LocationId": 1,
+    "LocationName": "深圳",
+    "BGId": 956,
+    "BGName": "IEG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40003002",
+    "CategoryName": "产品",
+    "ProductName": "和平精英手游",
+    "Responsibility": "1.参与设计局内战斗基础数值；\r\n2.设计成长体验与经济循环数值，包括局内外数值成长。",
+    "Requirement": "1.游戏阅历丰富，对射击品类有深入理解；\r\n2.对\"做一款属于当代中国的游戏\"有强烈热情与表达欲；\r\n3.对达成共识的目标能报以信念，积极乐观，能在不确定性中灵活转变思路、快速迭代；\r\n4.良好的团队协作与沟通能力，有责任心；\r\n5.善于学习和使用生成式 AI 工具；\r\n6.有PVP射击项目数值相关经验者优先；\r\n7.强逻辑思维与数据分析能力，能独立搭建数值模型并持续调优；\r\n8.对 TTK、战斗手感，或对玩法系统的数值化表达有深入理解。",
+    "LastUpdateTime": "2026年07月03日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2072873374673186816",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "",
+    "Introduction": "",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "两年以上工作经验"
+  }
+}

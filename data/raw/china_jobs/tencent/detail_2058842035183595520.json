@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2058842035183595520",
+    "RecruitPostId": 120218,
+    "RecruitPostName": "研发效能专家（深圳/北京）",
+    "LocationId": 1,
+    "LocationName": "深圳",
+    "BGId": 958,
+    "BGName": "TEG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40001001",
+    "CategoryName": "技术",
+    "ProductName": "大数据(数据计算平台部)",
+    "Responsibility": "1.负责AI提效相关工作的规划与落地，围绕AI-Native工作模式对研发流程、方式进行升级，提升组织效率。在重点项目上试点落地，形成可复用、可推广的最佳实践；\r\n2.负责AI Coding方向的全流程工程化落地，推进代码生成、自动化测试、无人值守发布等能力在研发流程中落地，推动AI前沿实践经验在团队内沉淀；\r\n3.负责AI Agent方向的探索与落地，推动OpenClaw等Agent框架在研发、平台运营等场景中的实际应用；\r\n4.负责相关能力的平台化与治理建设，明确各角色协作机制、权限控制、风险治理、效果评估与可观测性要求，保障平台能力可用、可信、可规模化推广。",
+    "Requirement": "1.有AI Engineering、研发效能、平台建设、横向架构或相关方向的实践经验，能够推动新能力从0到1落地，或从1到N规模化推广；\r\n2.具备AI Coding工程化实践经验优先，有AI Agent、自动化工作流及协同系统相关实践经验优先；\r\n3.对AI前沿方向有深刻理解，尤其对AI Coding、Agent、模型能力演进等方向有较强判断力，能够结合业务场景完成路径选择与落地推进；\r\n4.具备扎实的工程化和架构思维，能够将快速变化的AI能力转化为稳定、可治理、可复制的解决方案；\r\n5.有良好的跨团队沟通能力，具备横向全局视角和复杂协同场景推动能力，有横向架构经验者优先。",
+    "LastUpdateTime": "2026年05月25日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2058842035183595520",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "",
+    "Introduction": "在腾讯，后台开发工程师不仅是“又快又稳”的问题解决专家，更是生态共创者。你将与技术团队一同沉淀优质代码，让它成为我们共有的宝贵资产。在不同的业务场景和技术发展阶段，你的架构思维也将帮助更多协作团队拓展新的思考。我们也珍视你的挑战精神，同时欢迎你一起参与团队愿景、文化和产品方向的探讨。",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "三年以上工作经验"
+  }
+}

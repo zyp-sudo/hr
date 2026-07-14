@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2003993086535032832",
+    "RecruitPostId": 116819,
+    "RecruitPostName": "腾讯游戏-3D动画生成高级算法研究员-面部动画",
+    "LocationId": 1,
+    "LocationName": "深圳",
+    "BGId": 956,
+    "BGName": "IEG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40001005",
+    "CategoryName": "技术",
+    "ProductName": "Aivatar_语音生成面部动画",
+    "Responsibility": "1.负责通用3D面部动画生成方向的技术方案设计与核心算法研发，构建可泛化的面部动画生成能力；\n2.深入研究面部表演的建模与生成方法，探索统一的三维表征与驱动方式；\n3.基于大模型与多模态技术，构建将语音、文本、表情、情绪标签等映射到3D面部动画空间的可控生成框架；\n4.结合面部动作捕捉数据及数字人制作流程，提升面部动画质量、表现力与制作效率；\n5.跟踪面部动画、数字人、多模态生成等领域前沿研究，形成高质量技术输出，并推动成果在游戏及数字人业务中的落地。",
+    "Requirement": "1.计算机图形学、计算机视觉、人工智能等相关领域硕士及以上学历，博士优先；\n2.深入理解深度学习原理，在Transformer/Diffusion/序列建模/3D 表征学习等方向具备扎实基础与实践经验；\n3.在以下方向之一具备有代表性的成果（论文/项目/产品落地之一即可）：a. 面部动画生成、Talking Head、语音驱动面部表情；b. 2D→3D 面部重建、3D人脸/面部动画表示；c. 数字人、多模态生成或大模型在图形/动画方向的应用；\n4.熟悉常见3D人脸/面部动画表示（如 3DMM、FLAME、BlendShape 等）或面部动画制作流程；\n5.具有较强的问题抽象与方案设计能力，有主导算法方向或关键项目经验。",
+    "LastUpdateTime": "2026年06月26日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2003993086535032832",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "1.拥有面部动作捕捉（Face Mocap）及数字人制作管线的实战经验；\n2.具有多模态大模型/数字人大模型相关经验，如文本-语音-动作-表情的统一建模与对齐；\n3.在SIGGRAPH/SIGGRAPH Asia/CVPR/ICCV/ECCV/NeurIPS /ICML 等会议或期刊发表过相关论文者优先。",
+    "Introduction": "渴望为世界带来新意的人，早已对描绘未来的“热词”不陌生——人工智能、机器学习、数据科学等等。腾讯始终在业界前沿不断探索，积极布局，并为优秀的你提供无限广阔的舞台。我们坚信科技的不断革新，最终能带来美好的、撼动人心的改变。",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "不限"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2055136913035276288",
+    "RecruitPostId": 120053,
+    "RecruitPostName": "AW项目组-AI产品前端工程师",
+    "LocationId": 1,
+    "LocationName": "深圳",
+    "BGId": 956,
+    "BGName": "IEG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40001001",
+    "CategoryName": "技术",
+    "ProductName": "预算专用-AW",
+    "Responsibility": "1.负责Web应用核心开发，搭建高质量可复用的前端架构及组件体系；\r\n2.负责前端状态管理与样式系统，保障数据流清晰、界面一致；\r\n3.集成各类复杂交互组件，保障良好用户体验；\r\n4.参与前端游戏相关开发，处理Canvas渲染、触控交互及动画；\r\n5.编写测试、维护组件文档，保障代码质量与可维护性；\r\n6.对接LLM API，参与AI对话界面及Agent工作流前端实现。",
+    "Requirement": "1.精通TypeScript、主流前端框架及构建工具，有monorepo架构实践经验；\n2.熟练掌握前端状态管理、样式解决方案，能搭建可复用设计系统；\n3.熟悉HTML5 Canvas/WebGL，有互动内容或小游戏开发经验；\n4.具备良好工程素养，重视代码质量、错误处理、日志规范及国际化；\n5.理解Feature-First架构及DDD分层思想，能实现全链路类型安全；\n6.深度运用AI编程工具，高效驾驭AI辅助工作流，契合团队Vibe Coding核心模式。",
+    "LastUpdateTime": "2026年05月25日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2055136913035276288",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "1.有移动端跨平台开发经验，能实现原生级体验；\r\n2.有AI产品、AI Agent开发经验，热衷并愿意探索AI应用前沿；\r\n3.有设计系统搭建、实时通信及前端性能优化经验。",
+    "Introduction": "作为一名前端开发工程师，你需要在快速变化的技术世界中保持一贯的敏锐与好奇，同时懂得如何将项目落地，给用户创造更多惊喜。你将与产品团队、客户端团队紧密合作，一同打造极致的用户体验。随着技术视野的不断拓宽，公司将会与你一同成长，个人职业的更多可能性亦被打开。",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "一年以上工作经验"
+  }
+}

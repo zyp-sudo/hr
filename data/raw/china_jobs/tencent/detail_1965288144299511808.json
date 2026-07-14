@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "1965288144299511808",
+    "RecruitPostId": 114661,
+    "RecruitPostName": "《王者荣耀》引擎开发工程师（图形技术方向）",
+    "LocationId": 8,
+    "LocationName": "成都",
+    "BGId": 956,
+    "BGName": "IEG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40001001",
+    "CategoryName": "技术",
+    "ProductName": "王者荣耀",
+    "Responsibility": "1.负责针对业务需求体现出稳定可靠的 C++ 代码能力；\n2.对现有渲染系统进行优化与设计改进；\n3.研发新的渲染技术，在性能与伸缩性上取得突破；\n4.与美术、技术美术等相关职能同事协作，推动新的渲染系统落地。",
+    "Requirement": "1.熟练使用任意一种现代图形 API；\r\n2.能准确分析渲染系统的性能瓶颈；\r\n3.具备多平台发布至少一款游戏的经验，对多平台开发的挑战与优化有深入见解；\r\n4.关注研究领域和工程领域的最新进展；\r\n5.具备较强的沟通能力，能够清晰阐述工作规划与技术目标。",
+    "LastUpdateTime": "2026年06月23日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=1965288144299511808",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "",
+    "Introduction": "在腾讯，作为一位游戏客户端开发，你始终身处科技前沿，与同样具备满分热情的策划、美术等团队紧密协作，助力新世界的诞生、运作，持续打造极致体验。你可以善用自己的全局观察能力，不断打开技术视野，与靠谱的团队一起做出真正有趣的新事物。",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "三年以上工作经验"
+  }
+}

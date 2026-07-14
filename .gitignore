@@ -1,0 +1,7 @@
+backend/out/
+tmp/
+__pycache__/
+*.pyc
+scripts/local-env.ps1
+.env
+.env.local

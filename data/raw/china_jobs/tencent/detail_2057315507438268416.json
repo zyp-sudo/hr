@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2057315507438268416",
+    "RecruitPostId": 10002787,
+    "RecruitPostName": "Senior Software Engineer II",
+    "LocationId": 1,
+    "LocationName": "深圳",
+    "BGId": 956,
+    "BGName": "IEG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40001001",
+    "CategoryName": "技术",
+    "ProductName": "",
+    "Responsibility": "What the Role Entails\n1、负责业务后台系统的开发与维护，通过各种技术优化手段确保核心服务的性能和稳定；\n2、协同发行运营团队，深入理解海外发行业务解决业务痛点问题；协调发行与外部技术团队协作，确保技术方案与业务需求高效对接；\n3、协同运维团队，通过 AI 工具化解决游戏发行运营过程中的痛点问题；\n\nWho We Look For\n1、丰富的后台开发经验，具备扎实的计算机基础、服务运开发以及运维实践经验，有大型高并发后台项目经验优先；\n2、主导过大型后台项目的架构设计，熟悉微服务、K8s、分布式系统架构；\n3、了解 AI 大模型相关技术，对大模型推理优化、GPU 集群运维部署优化有一定的经验，有与业务结合 AI 应用落地实践经验者优先；\n4、有 AI 研效提升落地经验，能通过工具链建设等手段推动团队工程化水平提升；\n5、具备很强的责任心和自驱力，具备优秀的跨团队沟通协作能力与项目推动力；\n\nEqual Employment Opportunity at Tencent\nAs an equal opportunity employer, we firmly believe that diverse voices fuel our innovation and allow us to better serve our users and the community. We foster an environment where every employee of Tencent feels supported and inspired to achieve individual and common goals.\r\nWork Location: China-Shenzhen",
+    "Requirement": "岗位要求详情请见上方岗位职责内说明",
+    "LastUpdateTime": "2026年06月07日",
+    "PostURL": "https://tencent.wd1.myworkdayjobs.com/Tencent_Careers/job/China-Shenzhen/PUBGM_R107512-1",
+    "SourceID": 4,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "",
+    "Introduction": "",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": ""
+  }
+}

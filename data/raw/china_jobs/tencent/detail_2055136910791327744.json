@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2055136910791327744",
+    "RecruitPostId": 120052,
+    "RecruitPostName": "Project T-游戏战斗策划（3C 方向）",
+    "LocationId": 1,
+    "LocationName": "深圳",
+    "BGId": 956,
+    "BGName": "IEG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40003002",
+    "CategoryName": "产品",
+    "ProductName": "Project T",
+    "Responsibility": "1.负责单机主机游戏角色3C体系的搭建，针对移动、攀爬、地形穿越、掩体交互等系统，进行动作优化/镜头调教/输入手感等核心体感设计；\r\n2.制定近战、枪械、道具使用、环境互动等模块的3C规范和动作表现标准，和程序、动画职能合作完善动作体系，打造高品质动作表现；\r\n3.参与游戏战斗系统设计，进行TPS掩体射击、战斗机动等模块的设计和落地；\r\n4.与团队内部策划、开发、美术和音频团队紧密合作，共同达成交付目标。",
+    "Requirement": "1.三年以上3C/战斗策划工作经验，至少1款TPS游戏项目的完整3C/战斗设计经历；\r\n2.熟悉UE5引擎及工具集（角色蓝图，动画蓝图，动作状态机，Motion Matching等）；\r\n3.对3A级操作手感、动作表现力、场景化镜头有极致追求，审美敏锐，逻辑清晰，能精准拆解并落地设计需求；\r\n4.资深3A游戏玩家，涉猎广泛，对第三人称动作冒险游戏有浓厚兴趣和深度理解者优先；\r\n5.备良好跨部门沟通与抗压能力，能适配项目迭代节奏，持续优化战斗体验。",
+    "LastUpdateTime": "2026年06月01日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2055136910791327744",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "1.聚焦单机半开放玩法，基于 UE5 引擎主导3C 战斗体验设计与影视级镜头气氛营造，打造“精准探索操作 + 流畅攻防手感 + 场景化镜头叙事” 的主机级交互，适配秘境、户外探索等场景的探索与战斗融合需求。",
+    "ImportantItem": "",
+    "Introduction": "",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "三年以上工作经验"
+  }
+}

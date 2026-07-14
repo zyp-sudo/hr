@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "1960905204534759424",
+    "RecruitPostId": 1158402765302829056,
+    "RecruitPostName": "Data Engineer 105992",
+    "LocationId": 1301,
+    "LocationName": "新加坡",
+    "BGId": 956,
+    "BGName": "IEG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40001001",
+    "CategoryName": "技术",
+    "ProductName": "",
+    "Responsibility": "About the Hiring Team\nLevel Infinite is Tencent’s global gaming brand. It is a global game publisher offering a comprehensive network of services for games, development teams, and studios around the world.\nWe are dedicated to delivering engaging and original gaming experiences to a worldwide audience, whenever and wherever they choose to play while building a community that fosters inclusivity, connection, and accessibility. Level Infinite also provides a wide range of services and resources to our network of developers and partner studios around the world to help them unlock the true potential of their games.\n\nWhat the Role Entails\n* Design, build, and maintain efficient, scalable data architectures and pipelines.\n* Process and transform large-scale datasets, ensuring data quality and integrity.\n* Optimize ETL processes to enhance data processing efficiency and reliability.\n* Collaborate with the data analytics team to provide necessary data support, ensuring timeliness and accuracy.\n* Work with product and engineering teams to drive data-driven decision-making and product optimization.\n* Design and implement data warehouse solutions, supporting both data lake and data warehouse architectures.\n* Ensure data security, privacy, and compliance, adhering to best practices in data management.\nQualifications:\n\nWho We Look For\n* Bachelor’s degree or higher in Computer Science, Information Technology, Data Science, or a related field.\n* At least 2 years of experience in data engineering, with hands-on experience in big data processing and pipeline design.\n* Proficient in SQL, with the ability to handle complex queries and optimizations.\n* Familiarity with big data technologies such as Spark, Hive, Flink, Kafka, etc.\n* Proficient in programming languages such as Python or Java, with good coding practices.\n* Experience with database design, data warehousing, and ETL tools (such as Airflow, Luigi).\n* Familiarity with cloud platforms (AWS, Azure, GCP) and data lake technologies (Iceberg, Delta Lake).\n* Strong communication and teamwork skills, with the ability to collaborate with cross-functional teams and drive project progress.\n* Bonus: Experience in data quality, data governance, or related fields.\n\nEqual Employment Opportunity at Tencent\nAs an equal opportunity employer, we firmly believe that diverse voices fuel our innovation and allow us to better serve our users and the community. We foster an environment where every employee of Tencent feels supported and inspired to achieve individual and common goals.\r\nWork Location: Singapore-CapitaSky",
+    "Requirement": "岗位要求详情请见上方岗位职责内说明",
+    "LastUpdateTime": "2025年09月15日",
+    "PostURL": "https://tencent.wd1.myworkdayjobs.com/Tencent_Careers/job/Singapore-CapitaSky/Data-Engineer_R105992",
+    "SourceID": 4,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "",
+    "Introduction": "",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": ""
+  }
+}

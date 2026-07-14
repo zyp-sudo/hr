@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2056303841447690240",
+    "RecruitPostId": 10002779,
+    "RecruitPostName": "WXG - Software Engineer - Infrastructure",
+    "LocationId": 1301,
+    "LocationName": "新加坡",
+    "BGId": 14129,
+    "BGName": "WXG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40001003",
+    "CategoryName": "技术",
+    "ProductName": "",
+    "Responsibility": "Business Unit\nWeiXin Group(WXG) is responsible for the construction and operation of the Weixin ecosystem and leveraging Weixin's open platforms such as Official Accounts, Mini Programs, Weixin Pay, WeCom and search function. WXG provides solutions and connectivity for intelligent upgrades across all industries. WXG is also responsible for the development and operation of QQ Mail, WeRead and other products.\n\nWhat the Role Entails\nWeChat is looking for Software Engineers to build the infrastructure software and internal platforms behind services used by more than a billion users worldwide.\nYou will develop backend systems, DevOps platforms, automation frameworks, and engineering tools that improve deployment efficiency, fault tolerance, disaster recovery, and production reliability. This role is more software-engineering-focused than traditional operations roles, and is well suited for candidates who enjoy writing code to solve infrastructure and platform problems at scale.Build backend services, internal platforms, and engineering tools for infrastructure and production systems.\nWrite high-quality code in Go and/or C++ to improve reliability, scalability, and operational efficiency.\nDevelop CI/CD pipelines, deployment automation, and release safety mechanisms.\nBuild automation for disaster recovery, failover, rollback, and fault-tolerant service operation.\nImprove FaaS and platform capabilities to support scalable and efficient service development.\nDevelop tools for observability, monitoring, and production diagnostics.\nCollaborate with engineering teams on system performance, resilience, and operational improvements.\n\nWho We Look For\nDegree in Computer Science or a related field.\nStrong coding skills in Go, C++, or similar backend languages.\nExperience in backend development, site reliability engineering, or infrastructure-related projects.\nFamiliarity with Linux, networking fundamentals, and distributed systems concepts.\nExperience with Kubernetes, Docker, cloud infrastructure, FaaS, or infrastructure automation.\nInterest in DevOps, CI/CD, automation, and large-scale production systems.\nFamiliarity with observability, fault tolerance, disaster recovery, or release engineering.\nFluency in both English and Mandarin Chinese to collaborate effectively with global stakeholders and teams based at headquarters\n\nEqual Employment Opportunity at Tencent\nAs an equal opportunity employer, we firmly believe that diverse voices fuel our innovation and allow us to better serve our users and the community. We foster an environment where every employee of Tencent feels supported and inspired to achieve individual and common goals.\r\nWork Location: Singapore-CapitaSky",
+    "Requirement": "岗位要求详情请见上方岗位职责内说明",
+    "LastUpdateTime": "2026年05月18日",
+    "PostURL": "https://tencent.wd1.myworkdayjobs.com/Tencent_Careers/job/Singapore-CapitaSky/WXG---Software-Engineer---Infrastructure_R107473-2",
+    "SourceID": 4,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "",
+    "Introduction": "",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": ""
+  }
+}

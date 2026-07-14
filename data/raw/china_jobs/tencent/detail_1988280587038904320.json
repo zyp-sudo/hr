@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "1988280587038904320",
+    "RecruitPostId": 10002417,
+    "RecruitPostName": "Data Scientist - Algorithm（模型算法方向）",
+    "LocationId": 1,
+    "LocationName": "深圳",
+    "BGId": 956,
+    "BGName": "IEG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40001005",
+    "CategoryName": "技术",
+    "ProductName": "",
+    "Responsibility": "团队介绍\nLevel Infinite 是腾讯旗下国际游戏业务品牌，致力为全球玩家带来充满乐趣、原汁原味的游戏体验，让玩家随时随地进入游戏世界；并通过打造包容、互通、便捷的玩家社区，促进分享交流。\nLevel Infinite为合作工作室提供一系列支持及服务，助力其释放产品潜能。\nLevel Infinite发行产品包括《PUBG MOBILE》、《Goddess of Victory: NIKKE 》《Honor of King》等热门游戏，并与合作工作室联手推出了来自Fatshark的《战锤40K：暗潮》、Funcom的《沙丘：觉醒》、Inflexion Studios的《夜莺》在内多款产品。\n想进一步了解Level Infinite，请访问www.levelinfinite.com，并在Twitter、Facebook、Instagram和Youtube上关注我们的官方账号。\n\n岗位职责\n- 负责游戏场景下的用户分层、商品推荐、生命周期预测、流失预警与价值评估等建模任务。\n- 研发并优化匹配机制、平衡性算法及动态定价策略，提升游戏体验与变现效率。\n- 构建可复用的算法框架与服务部署，支持多游戏项目的规模化应用。\n- 探索LLM，机器学习，因果推断等在游戏实验与智能运营中的前沿应用。\n\n岗位要求\n学历背景：\n本科及以上学历，计算机科学、统计学、人工智能或相关专业。硕士优先。\n工作经验：\n- 3年以上数据科学、机器学习算法相关经验，有休闲游戏行业背景者优先；\n- 具备用户画像、运筹优化或经济建模等项目实践经验者优先；\n- 熟悉大数据处理和分布式计算经验者优先。\n技能要求：\n- 精通 Python（Scikit-learn、PyTorch/TensorFlow等）及常用数据科学工具栈；\n- 扎实的机器学习与统计建模基础，熟悉因果推断、强化学习、运筹优化等方向；\n- 具备较强的算法工程能力，熟悉 分布式计算（Spark）与部署流程；\n- 具备优秀的问题抽象、模型优化与跨团队协作能力。\n\n腾讯致力于提供平等就业机会\n在腾讯，我们始终秉承平等就业机会的原则，致力于为每一位员工打造公平、包容的工作环境。我们坚信，多元的声音能够激发出无限的创新活力，推动我们为用户和社会提供更优质的服务。我们用心营造一个充满支持与激励的氛围，帮助每一位员工找到属于自己的舞台，以实现个人及共同的发展目标。\r\nWork Location: China-Beijing | China-Shenzhen",
+    "Requirement": "岗位要求详情请见上方岗位职责内说明",
+    "LastUpdateTime": "2025年11月11日",
+    "PostURL": "https://tencent.wd1.myworkdayjobs.com/Tencent_Careers/job/China-Shenzhen/Data-Scientist---Algorithm--_R106392-3",
+    "SourceID": 4,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "",
+    "Introduction": "",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": ""
+  }
+}

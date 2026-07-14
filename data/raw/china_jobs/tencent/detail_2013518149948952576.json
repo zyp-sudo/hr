@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2013518149948952576",
+    "RecruitPostId": 117401,
+    "RecruitPostName": "3A开放世界-UE5资深Gameplay工程师（任务方向）",
+    "LocationId": 7,
+    "LocationName": "杭州",
+    "BGId": 956,
+    "BGName": "IEG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40001001",
+    "CategoryName": "技术",
+    "ProductName": "HI-端游-海外版",
+    "Responsibility": "1.负责使用UE5引擎设计并开发RPG游戏的任务系统，包括任务逻辑、进度追踪、条件判定及奖励发放等核心功能；\r\n2.参与游戏基础系统框架（如Gameplay、UI、网络、关卡流程）的开发、迭代及核心架构设计，并撰写相关技术文档；\r\n3.对项目版本进行性能分析，解决系统性性能问题与崩溃，确保游戏稳定运行和良好的用户体验；\r\n4.负责或参与游戏相关模块的工具扩展与工具链建设，优化策划、美术等团队的工作流程；\r\n5.与策划、QA等团队成员紧密协作，分析需求，实现效果与性能兼顾的技术方案，并持续迭代改进。",
+    "Requirement": "1.需要精通C++，并熟悉UE5引擎的GamePlay框架、UI、网络等底层架构；\r\n2.熟悉蓝图、Lua等脚本语言者优先；\r\n3.具备UE4/5引擎的游戏开发经验，有RPG类型游戏任务系统或Gameplay开发经验者优先；\r\n4.需要具备良好的编程习惯、代码风格、逻辑思维能力以及沟通协作能力。热爱游戏开发，自驱力和责任心强。",
+    "LastUpdateTime": "2026年06月22日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2013518149948952576",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "",
+    "Introduction": "在腾讯，作为一位游戏客户端开发，你始终身处科技前沿，与同样具备满分热情的策划、美术等团队紧密协作，助力新世界的诞生、运作，持续打造极致体验。你可以善用自己的全局观察能力，不断打开技术视野，与靠谱的团队一起做出真正有趣的新事物。",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "三年以上工作经验"
+  }
+}

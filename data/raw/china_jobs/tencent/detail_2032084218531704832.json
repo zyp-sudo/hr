@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2032084218531704832",
+    "RecruitPostId": 1229581779941871616,
+    "RecruitPostName": "Senior  Researcher 107089",
+    "LocationId": 1301,
+    "LocationName": "新加坡",
+    "BGId": 956,
+    "BGName": "IEG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40001005",
+    "CategoryName": "技术",
+    "ProductName": "",
+    "Responsibility": "About the Hiring Team\nLevel Infinite is Tencent’s global gaming brand. It is a global game publisher offering a comprehensive network of services for games, development teams, and studios around the world.\nWe are dedicated to delivering engaging and original gaming experiences to a worldwide audience, whenever and wherever they choose to play while building a community that fosters inclusivity, connection, and accessibility. Level Infinite also provides a wide range of services and resources to our network of developers and partner studios around the world to help them unlock the true potential of their games.\n\nWhat the Role Entails\n●Participate in the research, development, and implementation of visual content generation technologies for game marketing and game development scenarios, including but not limited to image/video Ads Creatives generation, playable Ads generation, game asset generation, and game scene generation.\n●Evaluate and track cutting-edge multimodal generative models (such as Flux, Qwen, Sora, and Wan series), continuously improving generation quality and efficiency.\n●Build a complete visual content generation pipeline—from data processing and model training to inference and service deployment—to support the production needs of content teams.\n●Explore innovative applications of generative AI based on business requirements, such as character-generation tools, automated video editing, dynamic promotional material generation, and more.\n\nWho We Look For\n●Master’s degree or above in Computer Science, Artificial Intelligence, Computer Graphics, Machine Learning, or related fields. Candidates with backgrounds in visual arts, film production, animation design, digital media, or other interdisciplinary fields are also welcome.\n●At least 2 years of relevant experience in Ads Creative(image or video) generation, with hands-on experience in training or fine-tuning deep learning models in these domains. Proficiently use tools such as Sora2, Jimeng, Keling, Nano Banana, and ChatGPT 4o. Familiar with ComfyUI and WebUI for building private workflows.\n●Prior experience in the gaming or animation industries is preferred.\n●Over 1,000 hours of gaming experience within the past three years is a strong plus.\n●Strong sensitivity to visual style or formal training in fine arts is preferred.\n●Passion for AI creativity and game-oriented applications; candidates with an AI video portfolio will be prioritised.\n●Familiarity with tools such as Maya, Blender, Unity, and Unreal Engine is a significant advantage.\n\nEqual Employment Opportunity at Tencent\nAs an equal opportunity employer, we firmly believe that diverse voices fuel our innovation and allow us to better serve our users and the community. We foster an environment where every employee of Tencent feels supported and inspired to achieve individual and common goals.\r\nWork Location: Singapore-CapitaSky",
+    "Requirement": "岗位要求详情请见上方岗位职责内说明",
+    "LastUpdateTime": "2026年03月12日",
+    "PostURL": "https://tencent.wd1.myworkdayjobs.com/Tencent_Careers/job/Singapore-CapitaSky/Senior--Researcher_R107089",
+    "SourceID": 4,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "",
+    "Introduction": "",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": ""
+  }
+}

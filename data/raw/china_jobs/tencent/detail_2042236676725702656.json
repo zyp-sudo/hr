@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2042236676725702656",
+    "RecruitPostId": 119188,
+    "RecruitPostName": "新一代在研SLG-资深动效设计师",
+    "LocationId": 3,
+    "LocationName": "上海",
+    "BGId": 956,
+    "BGName": "IEG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40002001",
+    "CategoryName": "设计",
+    "ProductName": "重返帝国-手游APP",
+    "Responsibility": "1.负责游戏中动效的设计与实现，确保动效与游戏整体风格相符；\r\n2.与美术、策划、UX、程序团队紧密合作，设计优秀的动效表现，提升玩家动态体验；\r\n3.参与游戏项目的整体流程，包括需求分析、设计文档规范撰写、动效制作及测试；\r\n4.关注游戏行业最新发展，持续学习新技术、新工具，提升个人技能。",
+    "Requirement": "1.本科及以上学历，动画、游戏设计、影视特效等相关专业优先；\r\n2.熟练使用Unity引擎，具备三年以上的动效开发经验，有完整项目研发经历；\r\n3.熟练掌握任一3D设计工具，能独立设计制作3D相关特效辅助资产，掌握AE、PS等工具辅助UI特效制作；\r\n4.具备良好的学习能力，能够快速掌握新技术、新工具，融入新的研发流程；\r\n5.熟悉不同实现方法对设备的性能的消耗，对已有、正在研发的需求做针对性的性能优化；\r\n6.关注AI发展，有AI工具实际使用经验，如Unity中的AI插件或相关工具辅助动效设计；\r\n7.对游戏行业有浓厚兴趣，关注行业动态及趋势；\r\n8.良好的团队合作精神和沟通能力，能够在快节奏的环境中工作。",
+    "LastUpdateTime": "2026年04月12日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2042236676725702656",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "",
+    "Introduction": "设计，决定了用户体验的上限。在“一切以用户价值为依归”的腾讯，设计师们始终以开放、严谨的专业态度，持续传递设计的价值。加入我们，与极富想象力和专业能力的同事一起，探索体验，设计未来。",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "三年以上工作经验"
+  }
+}

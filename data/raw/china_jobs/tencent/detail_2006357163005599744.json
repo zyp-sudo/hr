@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2006357163005599744",
+    "RecruitPostId": 116959,
+    "RecruitPostName": "金融科技-多模态大模型算法工程师",
+    "LocationId": 1,
+    "LocationName": "深圳",
+    "BGId": 953,
+    "BGName": "CDG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40001005",
+    "CategoryName": "技术",
+    "ProductName": "微信支付-基础平台",
+    "Responsibility": "1.负责VLM在GUI智能体场景下的全流程优化，包括多模态数据Pipeline构建、GUI-Sandbox仿真环境搭建、模型后训练（Post-training）等；\r\n2.深入GUI交互与多模态理解方向，进行模型调优与技术创新，覆盖视觉定位、界面元素理解、跨模态工具调用等；\r\n3.跟踪多模态大模型与具身智能领域的技术动态，评估其在GUI自动化、智能助手等场景的应用潜力；\r\n4.参与多模态系统架构设计，确保系统的高性能、可扩展性与稳定性。",
+    "Requirement": "1.熟练掌握PyTorch、Swift、VeRL等一种或多种深度学习框架，具备多模态模型（如VLM）开发与调优经验；\r\n2.熟悉多模态大模型训练技术，包括增量预训练（CPT）、有监督微调（SFT）、强化学习（RL）等，具备分布式训练实践经验；\r\n3.熟悉RLVR（可验证奖励强化学习）流程，有多模态任务强化学习项目经验者优先；\r\n4.具备计算机视觉、自然语言处理或多模态学习相关项目经验，熟悉常见VLM架构与评测基准；\r\n5.计算机科学、人工智能、机器学习等相关专业硕士及以上学历，或在CVPR、ECCV、NeurIPS、ICML等多模态/视觉相关顶会发表论文者优先。",
+    "LastUpdateTime": "2026年06月08日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2006357163005599744",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "",
+    "Introduction": "",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "三年以上工作经验"
+  }
+}

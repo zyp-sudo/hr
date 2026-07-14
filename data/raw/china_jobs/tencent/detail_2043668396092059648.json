@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2043668396092059648",
+    "RecruitPostId": 119293,
+    "RecruitPostName": "《暗区突围》手游图形引擎开发工程师-新星引力计划",
+    "LocationId": 1,
+    "LocationName": "深圳",
+    "BGId": 956,
+    "BGName": "IEG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40001001",
+    "CategoryName": "技术",
+    "ProductName": "TKGame-手游APP-国内",
+    "Responsibility": "1.负责《暗区突围》手游图形渲染相关功能的开发与优化，提升游戏画面表现力；\r\n2.参与虚幻引擎图形模块的设计与实现，包括但不限于光照、材质、后处理等系统；\r\n3.与美术、策划团队紧密合作，将需求转化为高效的图形技术方案并落地；\r\n4.持续优化渲染性能，确保在移动设备上的流畅运行和低功耗表现；\r\n5.研究并应用前沿图形技术，推动团队在渲染领域的技术创新；\r\n6.解决图形渲染相关的疑难问题，保障项目高质量交付。",
+    "Requirement": "1.计算机相关专业本科及以上学历，有图形开发相关经验；\r\n2.熟练掌握C++编程语言，有扎实的计算机图形学基础；\r\n3.熟悉至少一种主流图形API（如OpenGL、Vulkan、Metal等）；\r\n4.有Unreal或Unity等引擎图形模块开发经验者优先；\r\n5.具备良好的算法和数据结构基础，能够编写高性能代码；\r\n6.较强的问题分析与解决能力，良好的团队协作和沟通能力；\r\n7.对游戏图形技术有热情，关注行业发展趋势。",
+    "LastUpdateTime": "2026年06月16日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2043668396092059648",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "1.有移动端图形渲染优化经验，熟悉移动GPU特性；\r\n2.有Shader开发经验，熟悉HLSL/GLSL/Metal Shader等；\r\n3.发表过图形学相关论文, 或实现过图形相关论文的算法；\r\n4.熟悉多线程编程和GPU并行计算技术, 熟悉GPU硬件架构。",
+    "Introduction": "在腾讯，作为一位游戏客户端开发，你始终身处科技前沿，与同样具备满分热情的策划、美术等团队紧密协作，助力新世界的诞生、运作，持续打造极致体验。你可以善用自己的全局观察能力，不断打开技术视野，与靠谱的团队一起做出真正有趣的新事物。",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "一年以上工作经验"
+  }
+}

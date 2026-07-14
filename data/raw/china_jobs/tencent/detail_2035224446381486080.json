@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2035224446381486080",
+    "RecruitPostId": 118717,
+    "RecruitPostName": "边缘 Serverless 开发工程师",
+    "LocationId": 1,
+    "LocationName": "深圳",
+    "BGId": 958,
+    "BGName": "TEG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40001001",
+    "CategoryName": "技术",
+    "ProductName": "云架构平台",
+    "Responsibility": "1.负责边缘函数引擎的架构设计与开发，通过 JIT 优化、冷启动加速等技术提升执行效率；\r\n2.负责业务配置与函数代码的极速分发系统，确保在节点抖动、网络复杂环境下，业务配置能秒级、一致地送达全球数千个边缘节点；\r\n3.设计高性能的函数计算调度系统与租户编排机制，确保多租户环境下的资源隔离、安全与公平调度。",
+    "Requirement": "1.2 年以上互联网行业开发经验；\r\n2.对控制面系统、分布式调度、并发模型、资源分配算法有深刻理解；\r\n3.具备强烈的运营意识，能够从监控和指标中洞察系统风险；\r\n4.深入理解 V8 引擎、Wasm 或其他高性能运行时技术优先。",
+    "LastUpdateTime": "2026年06月22日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2035224446381486080",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "",
+    "Introduction": "在腾讯，后台开发工程师不仅是“又快又稳”的问题解决专家，更是生态共创者。你将与技术团队一同沉淀优质代码，让它成为我们共有的宝贵资产。在不同的业务场景和技术发展阶段，你的架构思维也将帮助更多协作团队拓展新的思考。我们也珍视你的挑战精神，同时欢迎你一起参与团队愿景、文化和产品方向的探讨。",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "两年以上工作经验"
+  }
+}

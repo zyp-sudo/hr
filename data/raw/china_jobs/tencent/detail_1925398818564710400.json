@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "1925398818564710400",
+    "RecruitPostId": 112233,
+    "RecruitPostName": "元宝- AI策略产品经理",
+    "LocationId": 1,
+    "LocationName": "深圳",
+    "BGId": 29294,
+    "BGName": "CSIG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40003001",
+    "CategoryName": "产品",
+    "ProductName": "元宝",
+    "Responsibility": "1.优化Agent能力，通过包括不限于RAG、Tools、Memory等方式，不断提升用户体验；\r\n2.了解行业最新动态，并总结产品创新路径，探索行业最佳实践；\r\n3.抽象沉淀通用组建和能力，完善Agent平台能力，提升业务迭代效率。",
+    "Requirement": "1.本科及以上学历，1年以上C端产品经验，有创新用户体验或用户增长经验优先；\n2.逻辑思维能力，沟通协作能力强，能跨团队高效协作，推动目标达成；\n3.有Agent实操经验，或大模型创新产品经验优先。",
+    "LastUpdateTime": "2026年06月25日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=1925398818564710400",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "",
+    "Introduction": "“用户为本，科技向善”，是写在每位腾讯产品人心中的一句箴言。在互联网浪潮中，大众的生活已被深刻地改变，如何为用户创造价值、创造怎样的价值，需要每位产品人花费更长时间去体会与探索。在这里，你将与同样关注细节、关注本质、关注美好的同事一道，开启你的创造性工作。",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "两年以上工作经验"
+  }
+}

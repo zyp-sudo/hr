@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "1831882755403702272",
+    "RecruitPostId": 107521,
+    "RecruitPostName": "linux内核高级研发工程师",
+    "LocationId": 3,
+    "LocationName": "上海",
+    "BGId": 958,
+    "BGName": "TEG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40001001",
+    "CategoryName": "技术",
+    "ProductName": "",
+    "Responsibility": "1.负责内核态系统架构设计、预研及产品落地；\r\n2.负责内核特性开发，缺陷修复，系统优化，工具开发；\r\n3.负责内核相关前沿研究，技术建议，技术输出。",
+    "Requirement": "1.3年以上Linux内核开发经验，可靠的内核编码/调试能力；\r\n2.熟悉X86/ARM等体系架构；熟悉调度/内存/文件/网络等子系统，至少精通其一；\r\n3.有内核社区贡献者优先；\r\n4.有系统安全/可信相关开发经验者优先；\r\n5.有服务器硬件开发经验者优先。",
+    "LastUpdateTime": "2026年06月15日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=1831882755403702272",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "",
+    "Introduction": "",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "五年以上工作经验"
+  }
+}

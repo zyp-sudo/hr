@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "1940976677735735296",
+    "RecruitPostId": 113156,
+    "RecruitPostName": "混元大模型训练框架研发工程师-（北京/深圳）",
+    "LocationId": 2,
+    "LocationName": "北京",
+    "BGId": 958,
+    "BGName": "TEG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40001001",
+    "CategoryName": "技术",
+    "ProductName": "公共",
+    "Responsibility": "1.参与开发优化大模型训练框架，支持单任务万卡以上规模高效稳定训练；\r\n2.参与NLP、多模态大模型结构设计，并联合业务进行模型训练效率和效果验证；\r\n3.参与文生图、文生视频、文生3D等业务的训练性能加速；\r\n4.参与低精度训练性能优化和业务推广、参与大窗口训练性能优化。",
+    "Requirement": "1.熟练使用PyTorch框架，可对DDP训练的代码进行性能分析和优化；\r\n2.熟练使用主流大模型训练框架DeepSpeed、Megatron，掌握3D并行、ZeRO机制、Flash-Attn等的原理、使用场景、优劣势以及可优化方向；\r\n3.有ViT、SD、DiT模型训练性能优化经验者优先；\r\n4.熟练掌握CUDA性能优化手段，有算子编写优化项目经验者优先；\r\n5.对大模型前沿技术比较敏锐者优先；\r\n6.有实际大模型的训练调参和效果评测项目经验的优先；\r\n7.良好的沟通能力、解决问题能力。",
+    "LastUpdateTime": "2026年06月26日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=1940976677735735296",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "",
+    "Introduction": "",
+    "DepartmentIntroduction": "机器学习平台部负责腾讯“太极”机器学习平台的建设，构建面向搜索、广告、推荐的稀疏大模型、大语言模型及稠密大模型和通用机器学习的平台能力，为腾讯广告，微信搜索、社交、游戏、金融、云等多个业务提供易用、高效的一站式机器学习平台服务。我们的技术包括但不限于预训练大模型框架、高性能参数服务器、CPU/GPU 训练和推理加速、图神经网络、NLP自然语言处理、搜索工程与算法等。",
+    "RequireWorkYearsName": "五年以上工作经验"
+  }
+}

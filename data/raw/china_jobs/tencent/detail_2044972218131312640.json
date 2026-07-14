@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2044972218131312640",
+    "RecruitPostId": 119427,
+    "RecruitPostName": "数据库运维开发工程师",
+    "LocationId": 1,
+    "LocationName": "深圳",
+    "BGId": 958,
+    "BGName": "TEG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40001003",
+    "CategoryName": "技术",
+    "ProductName": "TDSQL MySQL",
+    "Responsibility": "1.开发并持续迭代腾讯云数据库统一运维平台与自动化工具链，覆盖部署、监控、容灾、变更、告警管理等全生命周期；\r\n2.深入业务运维场景，通过自动化、智能化解决方案，显著降低人工干预成本，提升故障应急效率与系统可用性；\r\n3.参与建设高可用的监控体系、智能诊断平台及运维数据门户，推动运维数据化与决策智能化；\r\n4.与架构师、研发及运维团队紧密协作，将运维需求转化为高效、可靠的平台能力，并对系统稳定性和用户体验负责。",
+    "Requirement": "1.本科及以上学历，计算机相关专业，3年以上运维开发（SRE/DevOps）或后端开发经验；\r\n2.精通Go或python语言，有扎实的编程能力和良好的代码规范意识（Go优先）；\r\n3.熟悉Linux操作系统、网络（TCP/HTTP）及Shell编程，具备扎实的计算机基础；\r\n4.熟悉至少一种主流数据库（如MySQL）的基本原理、架构及常见运维操作；\r\n5.具备强烈的责任心、主动性和Owner意识，具备优秀的问题分析与解决能力。",
+    "LastUpdateTime": "2026年04月24日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2044972218131312640",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "1.有大规模分布式系统、数据库运维平台、监控告警系统、发布系统或运营支撑系统开发经验；\r\n2.了解Kubernetes、Docker等云原生技术栈，有相关开发或运维经验；\r\n3.具备良好的沟通协作能力和团队精神，能推动技术方案落地并有效进行知识分享。",
+    "Introduction": "",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "三年以上工作经验"
+  }
+}

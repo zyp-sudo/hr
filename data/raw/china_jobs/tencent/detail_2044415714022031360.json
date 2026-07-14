@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2044415714022031360",
+    "RecruitPostId": 119382,
+    "RecruitPostName": "腾讯云-CubeSandbox高级研发工程师",
+    "LocationId": 1,
+    "LocationName": "深圳",
+    "BGId": 29294,
+    "BGName": "CSIG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40001001",
+    "CategoryName": "技术",
+    "ProductName": "腾讯云",
+    "Responsibility": "1.负责CubeSandbox的线上业务支持，功能开发和稳定性建设；\r\n2.负责CubeSandbox开源版本的功能开发和问题维护；\r\n3.持续跟踪Agent Infra行业的最新动态，扩展Cube Sandbox的能力边界。",
+    "Requirement": "1.本科及以上学历，2年以上linux后台开发经验， 中等规模以上实际后台系统的架构和线上运营经验；\n2.精通go， rust， python等语言的一种或多种，有好的代码品味和追求；\n3.熟悉rustvmm，containerd，kvm等技术， 并有实际的相关项目经历；\n4.有好的技术品味，有把事情做到极致的追求以及对新生事物有强烈好奇心的人选，我们会优先考虑。",
+    "LastUpdateTime": "2026年05月07日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2044415714022031360",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "",
+    "Introduction": "在腾讯，后台开发工程师不仅是“又快又稳”的问题解决专家，更是生态共创者。你将与技术团队一同沉淀优质代码，让它成为我们共有的宝贵资产。在不同的业务场景和技术发展阶段，你的架构思维也将帮助更多协作团队拓展新的思考。我们也珍视你的挑战精神，同时欢迎你一起参与团队愿景、文化和产品方向的探讨。",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "两年以上工作经验"
+  }
+}

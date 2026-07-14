@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2056017578089955328",
+    "RecruitPostId": 120102,
+    "RecruitPostName": "《三角洲行动》-AI产品运营",
+    "LocationId": 1,
+    "LocationName": "深圳",
+    "BGId": 956,
+    "BGName": "IEG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40003002",
+    "CategoryName": "产品",
+    "ProductName": "ProjectD-手游APP",
+    "Responsibility": "1.负责《三角洲行动》的搜打撤玩家AI模块设计工作，包括但不限于针对AI的战斗3C、loot行为、动线优化、AI协同等专项能力；\r\n2.对强化学习、监督学习算法有基础了解，对AI前沿技术有产品思考，对接算法团队完成算法奖励和任务设计、实现、调优和数据验证全流程把控；\r\n3.能通过同类竞品研究和拆解，提出对游戏有建设性意见的改进方案。",
+    "Requirement": "1.FPS游戏爱好者，《三角洲行动》重度玩家优先，对搜打撤模式有深入研究；\r\n2.有AI产品经历，具有游戏AI产品实践经验者优先；\r\n3.对AI前沿技术有实践经验的优先，包括但不限于LLM、多模态、具身智能等。",
+    "LastUpdateTime": "2026年05月18日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2056017578089955328",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "",
+    "Introduction": "",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "两年以上工作经验"
+  }
+}

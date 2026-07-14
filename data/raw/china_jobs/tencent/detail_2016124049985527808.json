@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2016124049985527808",
+    "RecruitPostId": 10002556,
+    "RecruitPostName": "Technical Architect, Finance IT Systems",
+    "LocationId": 1301,
+    "LocationName": "新加坡",
+    "BGId": 2233,
+    "BGName": "S2",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40001001",
+    "CategoryName": "技术",
+    "ProductName": "",
+    "Responsibility": "Business Unit\nAt Tencent Finance, we are deeply committed to fostering the professional growth of our staff through tailored finance training, mentorship programs, job rotation initiatives, and support for finance professional certifications. Recognized as an approved employer by esteemed organizations like ACCA, HKICPA, CIMA, CPA Australia, and CA, and certified accredited trainer with the Singapore Accountancy Commission, we provide comprehensive resources and guidance to ensure our employees remain at the forefront of the rapidly evolving finance landscape. Whether you're a recent graduate or an experienced hire, we empower you to acquire and maintain professional qualifications, enhancing your credibility and competence in the finance domain while keeping you competitive in the ever-changing industry.\n\nWhat the Role Entails\nJob SummaryTencent Finance is seeking an experienced Technical Architect (Finance IT Systems) to define, govern, and evolve the architecture of enterprise finance platforms. This role is responsible for ensuring that finance IT systems are scalable, secure, compliant, and aligned with business and regulatory requirements. The Senior Technical Architect will work closely with Finance stakeholders to design end-to-end technical solutions covering core finance platforms, integrations, data, and controls.\nResponsibilitiesDesign end-to-end solutions for Finance IT systems (ERP systems, billing, reporting, integrations, data and security etc)\nLead product discovery, design and validate end-to-end finance workflows (e.g. month-end close, billing, approvals, reporting)\nTranslate complex business needs (e.g., accounting standards, tax regulations, compliance, risk management) into system requirements and drive technical solutions. \nLead the technical implementations with cross-functional development team to ensure quality and timely project delivery\nProvide technical leadership and architecture guidance across delivery teams\nSupport vendor evaluation, system selection, and solution implementation\nDrive modernisation and continuous improvement of finance platforms\n\nWho We Look For\nQualificationsBachelor’s degree in Computer Science, Information Systems, or related field\n10+ years of IT experience, with 5+ years in a solution or architect role\nSolid foundation in computer science fundamentals, including data structures & algorithms, networking, operating systems, and concurrency.\nFamiliar with mainstream Java backend frameworks (e.g., Spring ecosystem such as Spring MVC / Spring Boot, MyBatis); strong understanding of underlying principles and best practices is a plus.\nStrong SQL skills; proficient with mainstream databases such as Oracle and MySQL; experienced in data modeling and database scaling design (sharding / partitioning).\nHands-on experience with large-scale distributed systems and microservices architecture; strong understanding of service governance; practical experience with Dubbo and/or Spring Cloud is preferred.\nProficient in business-level English and Chinese Mandarin in order to work with a vast pool of internal stakeholders based out of China and various international markets. \nStrong analytical skills, business acumen, and ability to influence cross-functional teams. \n\nEqual Employment Opportunity at Tencent\nAs an equal opportunity employer, we firmly believe that diverse voices fuel our innovation and allow us to better serve our users and the community. We foster an environment where every employee of Tencent feels supported and inspired to achieve individual and common goals.\r\nWork Location: Singapore-CapitaSky",
+    "Requirement": "岗位要求详情请见上方岗位职责内说明",
+    "LastUpdateTime": "2026年01月27日",
+    "PostURL": "https://tencent.wd1.myworkdayjobs.com/Tencent_Careers/job/Singapore-CapitaSky/Technical-Architect--Finance-IT-Systems_R106810-2",
+    "SourceID": 4,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "",
+    "Introduction": "",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": ""
+  }
+}

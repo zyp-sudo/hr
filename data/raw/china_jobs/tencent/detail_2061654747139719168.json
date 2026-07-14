@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2061654747139719168",
+    "RecruitPostId": 120348,
+    "RecruitPostName": "混元沙盒平台工程师（北京/深圳/上海）",
+    "LocationId": 2,
+    "LocationName": "北京",
+    "BGId": 958,
+    "BGName": "TEG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40001001",
+    "CategoryName": "技术",
+    "ProductName": "混元-模型算法",
+    "Responsibility": "1.负责大模型 Agent 评估、强化学习和数据制造所需的大规模沙盒平台建设，面向大规模 CPU 集群提供稳定、可扩展的虚拟化运行环境；\r\n2.设计虚拟机、容器等多类运行环境的统一接入、编排、调度和交付能力，建设可复用的沙盒资源抽象和平台架构；\r\n3.支持 Linux / Windows / macOS / Android 等任务环境适配，沉淀统一 runtime、环境验收标准、调试链路和自动化回归能力；\r\n4.开发全局网络代理、网络隔离、网络转发和连通性治理能力，保障大规模沙盒任务运行过程中的稳定性和可观测性；\r\n5.建设面向复杂 Agent 任务的环境生命周期管理能力，包括环境创建、镜像管理、资源调度、状态恢复、环境快照和可复现回放等。",
+    "Requirement": "1.熟练掌握 Python，具备扎实的编程能力、工程设计能力和复杂系统问题定位能力；\r\n2.具备扎实的虚拟化技术经验，熟悉 KVM / QEMU、轻量虚拟机、快照、网络、存储或资源隔离等关键能力；\r\n3.熟悉 Linux、Docker、Kubernetes、容器网络、镜像构建、CPU / 内存 / 磁盘资源管理或集群调度中的多项；\r\n4.有大规模 CPU 服务器集群、虚拟机平台、云原生资源池、任务调度平台、测试执行平台或实验环境平台建设经验；\r\n5.能独立排查资源隔离、网络连通性、镜像兼容性、任务失败、环境漂移和大规模并发稳定性等问题；\r\n6.具备良好的 owner 意识和跨团队沟通能力，能将算法侧需求抽象为稳定可复用的平台能力。",
+    "LastUpdateTime": "2026年06月02日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2061654747139719168",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "",
+    "Introduction": "",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "一年以上工作经验"
+  }
+}

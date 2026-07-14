@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "1991360880637530112",
+    "RecruitPostId": 1188858441451548672,
+    "RecruitPostName": "AI IT Engineer 106076",
+    "LocationId": 1301,
+    "LocationName": "新加坡",
+    "BGId": 62314,
+    "BGName": "Overseas Functional System",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40001005",
+    "CategoryName": "技术",
+    "ProductName": "",
+    "Responsibility": "About the Hiring Team\nTencent Overseas IT has the mission to empower Tencent’s rapid global growth with future ready, global IT platforms, applications and services. We are chartered to lead the Overseas IT strategy, architecture, roadmap and execution. Satisfying our internal/external customers and becoming a world class global IT team are our top aspirations.\n\nWhat the Role Entails\nOverview:\nWe are seeking a technically strong and proactive AI IT Engineer to join our regional IT team in Singapore. This role blends AI-driven internal application development, enterprise systems integration, and hands-on IT support operations in a dynamic global environment. You will work closely with teams across regions to build internal AI applications, support enterprise IT infrastructure, and drive automation across systems and processes.\nKey Responsibilities:\nProvide hands-on IT support for end-user devices (Windows/macOS), networking, AV systems, and office IT infrastructure.\nMaintain local IT infrastructure, WiFi, printers, access control systems, and coordinate with global IT teams for rollouts and upgrades.\nSupport onboarding/offboarding processes such as account creation, access management, and device provisioning.\nManage IT asset lifecycle: procurement, inventory, allocation, and decommissioning\nEnsure IT operations follow security policies, compliance requirements, and ITSM best practices.\nBuild and maintain internal AI applications, including RAG pipelines, multi-agent workflows, and knowledge retrieval systems.\nDevelop and enhance graph databases, AI data pipelines, and enterprise API integrations (e.g., ServiceNow, Workday, Microsoft Graph).\nSupport testing, CI/CD automation, performance tuning, and documentation for internal IT applications.\n\nWho We Look For\nRequired Qualifications:\n●Bachelor’s or Master’s degree in Computer Science, Information Systems, Artificial Intelligence, or a related field\n●Strong communication skills and ability to read, speak, and write fluent Mandarin\n●Strong proficiency in at least one backend programming language: Python / Go / Node.js / Java\n●Familiarity with modern frontend frameworks (e.g., Next.js, Vue) & strong understanding of databases (MySQL / PostgreSQL / NoSQL), and Git workflows\n●Familiarity with AI applications, RAG workflows, or agent-based frameworks is advantageous.\n●Experience with tools such as LangChain, LlamaIndex, Autogen, Kubernetes, Docker, Prometheus, or Grafana is preferred.\n●Understanding of IT asset management, ITSM processes (e.g., ServiceNow, Jira), and enterprise IT infrastructure is beneficial.\n\nWhy Join Us?\nWork in a dynamic and collaborative environment.\nOpportunity to enhance IT service delivery processes.\nBe part of a growing team that supports global IT operations.\n\nEqual Employment Opportunity at Tencent\nAs an equal opportunity employer, we firmly believe that diverse voices fuel our innovation and allow us to better serve our users and the community. We foster an environment where every employee of Tencent feels supported and inspired to achieve individual and common goals.\r\nWork Location: Singapore-CapitaSky",
+    "Requirement": "岗位要求详情请见上方岗位职责内说明",
+    "LastUpdateTime": "2025年11月27日",
+    "PostURL": "https://tencent.wd1.myworkdayjobs.com/Tencent_Careers/job/Singapore-CapitaSky/Sr-IT-Operation-Engineer_R106076",
+    "SourceID": 4,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "",
+    "Introduction": "",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": ""
+  }
+}

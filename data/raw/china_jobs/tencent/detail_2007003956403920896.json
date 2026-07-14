@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2007003956403920896",
+    "RecruitPostId": 1204501517877194752,
+    "RecruitPostName": "Cloud Engineer 106644",
+    "LocationId": 1301,
+    "LocationName": "新加坡",
+    "BGId": 956,
+    "BGName": "IEG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40001003",
+    "CategoryName": "技术",
+    "ProductName": "",
+    "Responsibility": "Business Unit\nTencent Games was established in 2003. We are a leading global platform for game development, operations and publishing, and the largest online game community in China.\nTencent Games has developed and operated over 140 games. We provide cross-platform interactive entertainment experience for more than 800 million users in over 200 countries and regions around the world. Honor of Kings, PUBG MOBILE, and League of Legends, are some of our most popular titles around the world.\nMeanwhile, we actively promote the development of esports industry, work with global partners to build an open, collaborative and symbiotic industrial ecology, and create high-quality digital life experiences for players.\n\nWhat the Role Entails\nKey Responsibilities:\nCloud Technology Implementation: Deploy and maintain technologies across various cloud platforms, including AWS, Azure, and GCP, ensuring optimal performance and scalability.\nProject Development: Execute well-defined mini projects that are integral parts of larger, real-world gaming projects, contributing directly to the product pipeline.\nMonitoring & Dashboard Development: Design and implement robust monitoring systems and dashboards to ensure system reliability, performance tracking, and rapid incident response.\nCI/CD Pipeline Development: Build and optimize Continuous Integration and Continuous Deployment (CI/CD) pipelines to support rapid, reliable, and repeatable software delivery processes.\n\nWho We Look For\nQualifications:\nBachelor's Degree in Computer Science, Software Engineering, or a related field.\nBasic understanding of cloud platforms (AWS, Azure, GCP).\nFamiliarity with DevOps concepts, CI/CD tools, and monitoring solutions is a plus.\nStrong problem-solving skills, eagerness to learn, and the ability to work both independently and collaboratively.\n\nEqual Employment Opportunity at Tencent\nAs an equal opportunity employer, we firmly believe that diverse voices fuel our innovation and allow us to better serve our users and the community. We foster an environment where every employee of Tencent feels supported and inspired to achieve individual and common goals.\r\nWork Location: Singapore-CapitaSky",
+    "Requirement": "岗位要求详情请见上方岗位职责内说明",
+    "LastUpdateTime": "2026年01月01日",
+    "PostURL": "https://tencent.wd1.myworkdayjobs.com/Tencent_Careers/job/Singapore-CapitaSky/Cloud-Engineer_R106644",
+    "SourceID": 4,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "",
+    "Introduction": "",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": ""
+  }
+}

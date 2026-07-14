@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2037369040648957952",
+    "RecruitPostId": 1234866602184794112,
+    "RecruitPostName": "World Model Research Intern 107225",
+    "LocationId": 1301,
+    "LocationName": "新加坡",
+    "BGId": 956,
+    "BGName": "IEG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40001005",
+    "CategoryName": "技术",
+    "ProductName": "",
+    "Responsibility": "About the Hiring Team\nLevel Infinite is Tencent’s global gaming brand. It is a global game publisher offering a comprehensive network of services for games, development teams, and studios around the world.\nWe are dedicated to delivering engaging and original gaming experiences to a worldwide audience, whenever and wherever they choose to play while building a community that fosters inclusivity, connection, and accessibility. Level Infinite also provides a wide range of services and resources to our network of developers and partner studios around the world to help them unlock the true potential of their games.\n\nWhat the Role Entails\n专注于 World Model（世界模型）及 Video Diffusion Model（视频扩散模型）的前沿算法研究与开发，探索视频生成、视频交互等关键问题。作为生成式人工智能研究工作者（实习生），你将参与一项或多项任务：\n协助大规模视频/图像数据的清洗、过滤、标注及预处理流程，构建高质量的训练数据集。\n协助搭建高效的扩散模型训练框架，优化训练流程，负责模型训练任务的管理、监控与调优。\n深度参与项目技术讨论，主动提出创新性想法或改进方案，并积极推动研究成果在游戏视频生成、虚拟世界构建场景中的实际落地与转化。\n与资深研究员紧密合作，共同探索数字内容生成与交互式智能体领域的前沿方向。\n\nWho We Look For\n就读于计算机视觉、计算机图形学或相关专业的博士或硕士研究生, 熟悉常见的生成模型。\n扎实的深度学习基础，具备图片或视频数据处理的基本经验，能够独立处理复杂的数据清洗与流水线搭建任务。\n对生成式 AI 在互动娱乐和虚拟世界构建中的应用有浓厚兴趣。\n具备良好的沟通与协作能力。\n优先条件:熟悉常见的视频生成模型，并有模型训练或微调经验者优先。\n有在 CVPR, ICCV, ECCV, ICLR, ICML, NeurIPS 等顶级会议或期刊发表过相关论文的经验者优先。\n\nEqual Employment Opportunity at Tencent\nAs an equal opportunity employer, we firmly believe that diverse voices fuel our innovation and allow us to better serve our users and the community. We foster an environment where every employee of Tencent feels supported and inspired to achieve individual and common goals.\r\nWork Location: Singapore-CapitaSky",
+    "Requirement": "岗位要求详情请见上方岗位职责内说明",
+    "LastUpdateTime": "2026年06月08日",
+    "PostURL": "https://tencent.wd1.myworkdayjobs.com/Tencent_Careers/job/Singapore-CapitaSky/World-Model-Research-Intern_R107225-1",
+    "SourceID": 4,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "",
+    "Introduction": "",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": ""
+  }
+}

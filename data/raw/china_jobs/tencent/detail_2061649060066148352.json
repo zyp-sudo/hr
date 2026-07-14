@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2061649060066148352",
+    "RecruitPostId": 1259146621786218496,
+    "RecruitPostName": "Data/AI Engineer Intern 107564",
+    "LocationId": 1301,
+    "LocationName": "新加坡",
+    "BGId": 62314,
+    "BGName": "Overseas Functional System",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40001001",
+    "CategoryName": "技术",
+    "ProductName": "",
+    "Responsibility": "About the Hiring Team\nTencent Overseas IT has the mission to empower Tencent’s rapid global growth with future ready, global IT platforms, applications and services. We are chartered to lead the Overseas IT strategy, architecture, roadmap and execution. Satisfying our internal/external customers and becoming a world class global IT team are our top aspirations.\n\nWhat the Role Entails\nCentered on the deployment needs of Tencent's overseas gaming business in large language model (LLM) and reinforcement learning scenarios, this role is responsible for the development, performance optimization, and engineering implementation of high-quality AI computing infrastructure. Specific responsibilities include:\n1. Distributed Training Engineering: Participate in the implementation of large-scale distributed training solutions; own the engineering delivery of data parallelism, model parallelism (Tensor Parallelism / Pipeline Parallelism), and ZeRO techniques; continuously tune GPU utilization and ensure the stability of ultra-large-scale training jobs.\n2. Compute Scheduling Optimization: Take a deep role in developing and optimizing AI job scheduling logic; Address compute bottlenecks in complex gaming scenarios through fine-grained resource management, fault self-healing mechanisms, and efficient checkpointing strategies.\n3. End-to-End Model Engineering: Own the full engineering pipeline from model training to inference serving; participate in operator profiling, model quantization, and the construction of high-performance inference pipelines to support rapid AI iteration within gaming products.\n4. AI-Driven Engineering Evolution: Actively embrace AI Coding tools to boost development efficiency; drive Harness Engineering practices — including automated testing and engineering governance — to ensure extreme reliability of the underlying infrastructure.\n \n\nWho We Look For\n1. Bachelor's degree or above; majors in Computer Science, Computer Architecture, High-Performance Computing, or related fields preferred. \n2. Core Tech Stack: Proficient in at least one of Python / C++ / Go; deep understanding of the PyTorch framework; hands-on experience engineering distributed training with DeepSpeed, Megatron-LM, or equivalent frameworks.\n3. Solid understanding of distributed systems principles; Familiarity with NCCL, RDMA networking, or high-performance storage is a plus; working knowledge of containerized infrastructure (Docker / Kubernetes).\n4. Demonstrable experience with AI Coding tools (e.g., GitHub Copilot, Cursor) is a strong plus; prior work in Harness Engineering — engineering governance, automated benchmarking, or system stress testing — is highly valued.\n5. Exceptional learning agility, clear logical thinking, and the ability to collaborate effectively with cross-functional teams on complex systems engineering challenges; Fluent proficiency in English \n6. Bonus: Background in high-performance backend architecture, or real project experience in LLM training / inference engineering.\n\nEqual Employment Opportunity at Tencent\nAs an equal opportunity employer, we firmly believe that diverse voices fuel our innovation and allow us to better serve our users and the community. We foster an environment where every employee of Tencent feels supported and inspired to achieve individual and common goals.\r\nWork Location: Singapore-CapitaSky",
+    "Requirement": "岗位要求详情请见上方岗位职责内说明",
+    "LastUpdateTime": "2026年06月01日",
+    "PostURL": "https://tencent.wd1.myworkdayjobs.com/Tencent_Careers/job/Singapore-CapitaSky/Data-AI-Engineer-Intern_R107564",
+    "SourceID": 4,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "",
+    "Introduction": "",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": ""
+  }
+}

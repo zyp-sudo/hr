@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2044312228425003008",
+    "RecruitPostId": 119364,
+    "RecruitPostName": "PaaS 高级产品经理（实时互动 / IoT 方向）",
+    "LocationId": 1,
+    "LocationName": "深圳",
+    "BGId": 29294,
+    "BGName": "CSIG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40003001",
+    "CategoryName": "产品",
+    "ProductName": "音视频PaaS",
+    "Responsibility": "1.参与实时互动相关产品的规划与能力建设（音视频 / 消息 / 设备接入等）；\r\n2.探索实时互动技术在智能硬件场景中的应用方式与产品形态；\r\n3.支持行业客户或生态合作伙伴，推动解决方案落地；\r\n4.推动产品能力抽象与平台化，提升通用性与复用能力；\r\n5.协同研发、销售及生态团队，推进产品演进与商业转化。",
+    "Requirement": "1.3-5 年产品经验，有 ToB 或平台型产品经验优先；\r\n2.对音视频、实时通信或物联网方向有一定理解或经验；\r\n3.具备较好的结构化思考能力，能够参与复杂产品设计；\r\n4.具备跨团队协作能力，能够推动项目落地；\r\n5.有行业解决方案或客户项目经验者优先。",
+    "LastUpdateTime": "2026年04月27日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2044312228425003008",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "",
+    "Introduction": "“用户为本，科技向善”，是写在每位腾讯产品人心中的一句箴言。在互联网浪潮中，大众的生活已被深刻地改变，如何为用户创造价值、创造怎样的价值，需要每位产品人花费更长时间去体会与探索。在这里，你将与同样关注细节、关注本质、关注美好的同事一道，开启你的创造性工作。",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "三年以上工作经验"
+  }
+}

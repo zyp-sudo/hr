@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2051932214668738560",
+    "RecruitPostId": 119793,
+    "RecruitPostName": "微信安全-大模型专家算法工程师",
+    "LocationId": 5,
+    "LocationName": "广州",
+    "BGId": 14129,
+    "BGName": "WXG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40001005",
+    "CategoryName": "技术",
+    "ProductName": "微信APP基础体验",
+    "Responsibility": "1.负责安全垂类多模态大模型（基模）的研发与迭代，涵盖图片、视频、行为序列、关系特征等模态，构建能深度理解行业规则、违规模式与风险信号的模型，支持高质量内容安全审核和账号风控打击；\r\n2.针对大模型应用行算法优化，包括但不限于数据处理加速、模型训练效率提升、推理速度优化等，确保大模型能够在实际应用场景中有效落地；\r\n3.探索并落地多模态大模型前沿技术在安全领域的应用，如强化学习对齐、领域知识注入、跨模态信息对齐、持续预训练/后训练等，推动技术创新与业务价值结合。",
+    "Requirement": "1.硕士及以上学历，计算机、人工智能、机器学习等相关专业背景；\n2.3年以上大模型或多模态算法研发经验，熟练掌握至少一种主流深度学习框架（PyTorch优先），精通Python编程；有CUDA并行优化或大规模训练经验者优先；\n3.具备扎实的数学基础（概率论、线性代数、微积分等），能够将数学工具应用于算法问题求解；对大模型训练、优化与AI安全落地有浓厚兴趣和快速学习能力。",
+    "LastUpdateTime": "2026年06月18日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2051932214668738560",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "1.有内容安全、风险防控、多模态理解（CV+NLP+序列建模）相关项目经验者优先；\r\n2.在AI/CV/NLP顶会（如CVPR、ICCV、ACL、NeurIPS、AAAI等）发表过论文，或有业界知名开源项目贡献/维护经验者优先；\r\n3.有团队管理或技术领导经验，能带领小团队完成复杂项目者优先。",
+    "Introduction": "",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "不限"
+  }
+}

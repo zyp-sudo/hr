@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2074091033209253888",
+    "RecruitPostId": 10002856,
+    "RecruitPostName": "Senior Anti-Fraud Strategy Engineer",
+    "LocationId": 1301,
+    "LocationName": "新加坡",
+    "BGId": 953,
+    "BGName": "CDG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40001001",
+    "CategoryName": "技术",
+    "ProductName": "",
+    "Responsibility": "Business Unit\nCorporate Development Group (CDG) as the platform for the company's new business incubation and new business exploration, CDG is responsible for promoting development and innovation for important areas such as financial technology and advertising, as well as marketing services, including payment and financial applications. As a professional support platform, CDG also supports the company and various business groups in strategic planning, investments and mergers, investor relations and corporate global communications, marketing and public relations, and more.\n\nWhat the Role Entails\nKey Responsibilities\nStrategy Development: Develop and iterate end-to-end anti-fraud strategies for the overseas AdN, covering pre-bid, in-flight, and post-event phases. Target various fraud schemes (e.g., IVT, click farms) across multiple ad formats.\nAdvanced Analytics & AI: Leverage distributed data platforms and large-scale models (LLMs) to conduct in-depth mining of ad events. Integrate AI technologies to achieve precise risk identification, extract high-value features, and translate insights into actionable strategies.\nPerformance Optimization: Define and track core anti-fraud KPIs. Optimize strategy precision through A/B testing to balance fraud prevention with legitimate traffic growth.\nCross-Functional Collaboration: Partner with Data Science, Engineering, Product, and Business teams to deploy strategies into real-time risk engines, ensuring low latency and alignment with business goals.\nIndustry Monitoring: Monitor global ad fraud trends and industry standards; proactively adjust strategies to counter emerging threats in key overseas markets.\nEcosystem Health: Manage fraud-related disputes with publishers and advertisers. Collaborate to promote anti-fraud best practices and ensure compliance with data privacy regulations.\n\nWho We Look For\nTechnical Requirements\nBachelor’s degree or above in Computer Science, Statistics, Mathematics, Data Science, or a related field.\n3-5+ years of hands-on experience in anti-fraud strategy, traffic quality, or risk management within the mobile ad tech industry.\nStrong data processing and analysis capabilities with familiarity in distributed data platforms. Proficiency in SQL and Python is required; experience with LLM applications is a strong advantage.\nIn-depth understanding of the mobile ad ecosystem, attribution logic, monetization models, and industry standards (e.g., IAB).\nDeep understanding of various ad fraud tactics and verifiable experience in designing anti-fraud strategies and AI-driven risk identification.\nFluent in English (written and spoken), with the ability to collaborate effectively with global teams and stakeholders.\nStrong analytical thinking and problem-solving skills; able to work independently in a fast-paced environment.\nPreferred Qualifications\nPrior experience in overseas ad business or AdN operations at top-tier tech companies.\nDeep understanding of AI/ML technologies for fraud detection, with practical experience in innovative AI applications.\nFamiliarity with real-time stream processing frameworks (e.g., Flink, Kafka), rule engines, or big data platforms.\nExperience in game ad monetization or app ecosystems; TAG certification or compliance experience is preferred.\n\nEqual Employment Opportunity at Tencent\nAs an equal opportunity employer, we firmly believe that diverse voices fuel our innovation and allow us to better serve our users and the community. We foster an environment where every employee of Tencent feels supported and inspired to achieve individual and common goals.\r\nWork Location: Singapore-CapitaSky",
+    "Requirement": "岗位要求详情请见上方岗位职责内说明",
+    "LastUpdateTime": "2026年07月06日",
+    "PostURL": "https://tencent.wd1.myworkdayjobs.com/Tencent_Careers/job/Singapore-CapitaSky/Senior-Anti-Fraud-Strategy-Engineer_R107742-1",
+    "SourceID": 4,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "",
+    "Introduction": "",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": ""
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2049161768453980160",
+    "RecruitPostId": 1246659329892929536,
+    "RecruitPostName": "Game Site Reliability Engineer Intern 107377",
+    "LocationId": 1301,
+    "LocationName": "新加坡",
+    "BGId": 956,
+    "BGName": "IEG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40001003",
+    "CategoryName": "技术",
+    "ProductName": "",
+    "Responsibility": "Business Unit\nTencent Games was established in 2003. We are a leading global platform for game development, operations and publishing, and the largest online game community in China.\nTencent Games has developed and operated over 140 games. We provide cross-platform interactive entertainment experience for more than 800 million users in over 200 countries and regions around the world. Honor of Kings, PUBG MOBILE, and League of Legends, are some of our most popular titles around the world.\nMeanwhile, we actively promote the development of esports industry, work with global partners to build an open, collaborative and symbiotic industrial ecology, and create high-quality digital life experiences for players.\n\nWhat the Role Entails\nOperational Support: Deeply involve in the SRE lifecycle of game services, assisting with CI/CD pipeline optimization, automated deployments, and real-time system monitoring.\nArchitecture & Documentation: Collaborate with senior engineers to design high-availability systems and maintain technical documentation for troubleshooting and operational standards.\nInfrastructure & Stability: Participate in the benchmarking and performance tuning of core infrastructure to ensure system robustness under high-concurrency scenarios.\n\nWho We Look For\nEducation: Final year undergraduate or Master’s students in Computer Science or related fields.\nAvailability: Must be able to work full-time for at least 3–6 months. Long-term internship is highly preferred.\nTech Stack: Solid foundation in Linux/Unix and Networking (TCP/IP, DNS); familiar with containerization (Docker/K8s) and cloud services (AWS/GCP/Azure/Tencent Cloud).\nProgramming: Proficient in Python or Shell scripting; understanding of SQL and database operations.\nAI Interest: Passionate about AIOps and automated operations; experience with AI model deployment or maintenance is a plus.\n\nEqual Employment Opportunity at Tencent\nAs an equal opportunity employer, we firmly believe that diverse voices fuel our innovation and allow us to better serve our users and the community. We foster an environment where every employee of Tencent feels supported and inspired to achieve individual and common goals.\r\nWork Location: Singapore-CapitaSky",
+    "Requirement": "岗位要求详情请见上方岗位职责内说明",
+    "LastUpdateTime": "2026年04月28日",
+    "PostURL": "https://tencent.wd1.myworkdayjobs.com/Tencent_Careers/job/Singapore-CapitaSky/Game-Site-Reliability-Engineer-Intern_R107377",
+    "SourceID": 4,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "",
+    "Introduction": "",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": ""
+  }
+}

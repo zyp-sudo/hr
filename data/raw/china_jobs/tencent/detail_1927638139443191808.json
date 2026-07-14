@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "1927638139443191808",
+    "RecruitPostId": 112376,
+    "RecruitPostName": "微信小店-应用运维安全工程师",
+    "LocationId": 5,
+    "LocationName": "广州",
+    "BGId": 14129,
+    "BGName": "WXG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40001004",
+    "CategoryName": "技术",
+    "ProductName": "微信",
+    "Responsibility": "1.负责微信电商相关业务系统的漏洞挖掘和风险治理，对重点项目提供安全支持；\n2.负责安全事件的应急响应、溯源分析等工作，主动发现新型威胁场景下的安全问题；\n3.参与SDLC流程的建设和优化。",
+    "Requirement": "1.本科及以上学历，计算机、软件工程、信息安全、电子信息类、数学或其它相关专业优先；\n2.熟练掌握常见Web、APP、系统等方面的安全漏洞原理，对其利用方式和解决方案有较深的理解；\n3.熟悉白盒审计，掌握codeql等审计工具，能对C/C++/NodeJS进行审计；\n4.对SDLC流程建设有足够的认知和理解，具备一定的代码开发能力，熟悉C/C++/Python/NodeJS任意一门语言；\n5.在众测、SRC、CTF等有经验者优先。",
+    "LastUpdateTime": "2026年06月30日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=1927638139443191808",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "",
+    "Introduction": "相信你与所有腾讯安全人一样，都认为抵抗邪恶是一件极其热血的事。希望你与我们一起，守护用户的安全，守护产品的安全，守护科技向善的不变初心。",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "不限"
+  }
+}

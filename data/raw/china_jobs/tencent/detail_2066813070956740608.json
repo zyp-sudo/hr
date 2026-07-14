@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2066813070956740608",
+    "RecruitPostId": 10002833,
+    "RecruitPostName": "Senior Game Engine Programmer",
+    "LocationId": 1401,
+    "LocationName": "伦敦",
+    "BGId": 956,
+    "BGName": "IEG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40001001",
+    "CategoryName": "技术",
+    "ProductName": "",
+    "Responsibility": "Business Unit\nLIGHTSPEED STUDIOS is made up of passionate players who advance the art & science of game development through great stories, great gameplay, and advanced technology. We are focused on bringing next generation experiences to gamers who want to enjoy them anywhere, anytime, across multiple genres and devices.\n\nAbout the Hiring Team\nLightspeed Tech Center is a R&D department under Lightspeed Studios which develop PUBG Mobile and other high-quality games. Our Tech Center leads the research, exploration, and discovery of innovative technologies and provides technical services for all games during all phases of life cycle, including engine, audio, QA, AI, next generation game, technical cooperation, etc.\n\nWhat the Role Entails\nWe are looking for a Senior Game Engine Programmer to join our engine team and contribute to the development and optimisation of cutting-edge game engine technologies. In this role, you will work on core engine systems across areas such as engine architecture, rendering, animation, physics, performance optimisation and cross-platform development.\nYou will collaborate closely with gameplay, tools, art and production teams to build scalable and high-performance engine solutions for multiple platforms, including mobile, PC and console. You will also help solve complex engine challenges, and mentor other engineers within the team.1. Design and implement advanced game engine technologies, including engine architecture, rendering, animation, physics and related systems.\n2. Develop and optimise cross-platform engine solutions for mobile, PC and console platforms.\n3. Work closely with gameplay, art, design and production teams to deliver robust and efficient technical solutions.\n4. Analyse and resolve complex performance, stability and scalability issues across different platforms.\n5. Follow and apply the latest technical developments from industry conferences and research papers, such as SIGGRAPH and GDC.\n6. Provide technical guidance, code reviews and mentorship to other engineers on the team.\n\nWho We Look For\n1. Minimum 5 years of experience in 3D game engine development.\n2. Strong understanding of game engine architecture and at least one major technical area such as rendering, animation, physics, performance optimisation.\n3. Solid C/C++ programming skills, with strong knowledge of data structures, algorithms and software engineering principles.\n4. Experience developing and shipping games or engine technologies on mobile, PC or console platforms.\n5. Ability to read, understand and implement techniques from academic papers, industry talks or technical publications.\n6. Strong problem-solving skills and the ability to work independently in complex technical areas.\n7. Good communication skills and experience collaborating with cross-functional teams.\n8. Self-driven, detail-oriented and committed to delivering high-quality technical work.\nPreferred Qualifications\n1. Experience with commercial engines such as Unreal Engine.\n2. Deep expertise in rendering, animation systems, physics simulation or engine performance optimisation.\n3. Experience with profiling, debugging and optimisation across multiple platforms.\n4. Previous experience mentoring engineers or leading technical initiatives.\n\nEqual Employment Opportunity at Tencent\nAs an equal opportunity employer, we firmly believe that diverse voices fuel our innovation and allow us to better serve our users and the community. We foster an environment where every employee of Tencent feels supported and inspired to achieve individual and common goals.\r\nWork Location: UK-London",
+    "Requirement": "岗位要求详情请见上方岗位职责内说明",
+    "LastUpdateTime": "2026年06月16日",
+    "PostURL": "https://tencent.wd1.myworkdayjobs.com/Tencent_Careers/job/UK-London/Senior-Game-Engine-Programmer_R107672-1",
+    "SourceID": 4,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "",
+    "Introduction": "",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": ""
+  }
+}

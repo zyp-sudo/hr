@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "1989279138019696640",
+    "RecruitPostId": 116016,
+    "RecruitPostName": "微信小程序-大模型算法工程师-开发生态",
+    "LocationId": 5,
+    "LocationName": "广州",
+    "BGId": 14129,
+    "BGName": "WXG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40001005",
+    "CategoryName": "技术",
+    "ProductName": "小程序",
+    "Responsibility": "1.负责LLM训练算法(SFT、RL）、训练数据合成、自动评测相关算法研究，提升模型在问答、代码生成、数据分析等领域的推理能力；\r\n2.负责跟踪 AI 领域的技术进展，参与前沿算法研究，推动业界成果在小程序开发生态落地应用。",
+    "Requirement": "1.熟练掌握 Python/C++ 等至少一门编程语言，熟悉 PyTorch/TensorFlow 等至少一种深度学习框架；\r\n2.熟悉主流大模型训练框架 Megatron/DeepSpeed，深入理解 Transformer/GPT 等模型架构；\r\n3.具备大语言模型研究和应用经验，包括 SFT/DPO/PPO/GRPO 等技术的落地实践；\r\n4.具备良好的数据处理能力，具备快速学习和解决问题能力，有团队合作精神；\r\n5.对于探索前沿技术有热情，具备独立探索前沿技术的能力。",
+    "LastUpdateTime": "2026年06月26日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=1989279138019696640",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "1.在 NeurIPS、ACL、ICML、EMNLP 等顶会有以第一作者发表过论文优先；\r\n2.有 RAG 技术实现与调优、Agent 应用落地经验优先；\r\n3.有大模型测评，大模型数据管理相关经验优先。",
+    "Introduction": "",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "两年以上工作经验"
+  }
+}

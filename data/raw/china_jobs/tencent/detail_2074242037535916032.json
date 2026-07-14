@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2074242037535916032",
+    "RecruitPostId": 1271739599084650496,
+    "RecruitPostName": "Data Scientist Intern 107737",
+    "LocationId": 1301,
+    "LocationName": "新加坡",
+    "BGId": 956,
+    "BGName": "IEG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40001005",
+    "CategoryName": "技术",
+    "ProductName": "",
+    "Responsibility": "Business Unit\nLIGHTSPEED STUDIOS is made up of passionate players who advance the art & science of game development through great stories, great gameplay, and advanced technology. We are focused on bringing next generation experiences to gamers who want to enjoy them anywhere, anytime, across multiple genres and devices.\n\nAbout the Hiring Team\nLightspeed Tech Center is a R&D department under Lightspeed Studios which develop PUBG Mobile and other high-quality games. Our Tech Center leads the research, exploration, and discovery of innovative technologies and provides technical services for all games during all phases of life cycle, including engine, audio, QA, AI, next generation game, technical cooperation, etc.\n\nWhat the Role Entails\nResearch on state-of-the-art machine learning, deep learning, social-network data mining and recommendation algorithms with game data, help design, evaluate and improve the core algorithm and strategy for online AI serving.\nResponse for in-depth statistical analysis from large-scale data, mining for user behavior and attributes, building user portraits.\nConduct sentiment analysis, topic modeling and summarization on massive user comments.\nIdentify user pain points through massive data and proposing strategies improving user retention.\nImproving data analysis pipelines, combining business requirements and data, by using distributed computation platform, develop efficient and reliable data mining solutions.\nResearch on AI agents for upgrading existing working pipeline.\n\nWho We Look For\nA strong understanding of statistical models, related machine learning principles, and experience working on data mining related projects.Familiar with machine learning, deep learning and recommendation algorithms such as clustering and classification, grasping and having deep understanding in at least one of them.\nStrong self-driven ability, team cooperation ability, anti-pressure ability and studious candidates is preferred.\nProficient in at least one programming language, familiar with basic data structures and algorithms.\nPrefer candidates with research experience such as academic publications.\nPrefer candidates with NLP experience such as sentimen analysis, text summary, LLM fine-tune, AI agents.\nPrefer candidates familiar with causal inference or optimization algorithms.\nPrefer candidates having big data experience, and familiar with distributed computation framework such as Hadoop, spark, hive and etc.\nPrefer candidates with strong logical thinking ability, communication ability and business understanding, and familiar with game situations.\n\nEqual Employment Opportunity at Tencent\nAs an equal opportunity employer, we firmly believe that diverse voices fuel our innovation and allow us to better serve our users and the community. We foster an environment where every employee of Tencent feels supported and inspired to achieve individual and common goals.\r\nWork Location: Singapore-CapitaSky",
+    "Requirement": "岗位要求详情请见上方岗位职责内说明",
+    "LastUpdateTime": "2026年07月06日",
+    "PostURL": "https://tencent.wd1.myworkdayjobs.com/Tencent_Careers/job/Singapore-CapitaSky/Data-Scientist-Intern_R107737-1",
+    "SourceID": 4,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "",
+    "Introduction": "",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": ""
+  }
+}

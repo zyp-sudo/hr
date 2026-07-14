@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2068624483438211072",
+    "RecruitPostId": 120674,
+    "RecruitPostName": " 腾讯云全球CDN后台开发工程师(深圳)",
+    "LocationId": 1,
+    "LocationName": "深圳",
+    "BGId": 958,
+    "BGName": "TEG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40001001",
+    "CategoryName": "技术",
+    "ProductName": "云架构平台",
+    "Responsibility": "1.负责腾讯云全球CDN产品的后台研发设计和实现工作，包括但不限于调度系统、缓存系统、运营系统、质量评测系统的设计和开发；\r\n2.负责大规模分布式后台服务架构优化和维护，保障服务的高质量与高可用性；\r\n3.负责海外视频类业务终端到后台的全链条性能分析和优化。",
+    "Requirement": "1.熟悉短视频业务流程，对播放器、推荐流、传输协议、CDN流量调度、播放体验优化等相关方向之一有深度经验；\r\n2.熟悉C++或者GO，熟悉抓包分析、客户端逆向、nginx等高并发软件架构者优先；\r\n3.熟悉CDN工作原理以及海外网络，具备海外CDN开发经验以及海外网络优化经验者优先；\r\n4.具备AI Agent在CDN场景下的落地经验者优先；\r\n5.具有良好的学习能力、沟通能力、服务理念和合作精神，对于项目有owner意识，能够独立承担项目的架构，设计和开发。",
+    "LastUpdateTime": "2026年06月29日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2068624483438211072",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "",
+    "Introduction": "",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "三年以上工作经验"
+  }
+}

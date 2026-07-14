@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "1919955377873592320",
+    "RecruitPostId": 10002019,
+    "RecruitPostName": "Cloud Engineer",
+    "LocationId": 1301,
+    "LocationName": "新加坡",
+    "BGId": 14129,
+    "BGName": "WXG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40001003",
+    "CategoryName": "技术",
+    "ProductName": "",
+    "Responsibility": "Business Unit\nWeiXin Group(WXG) is responsible for the construction and operation of the Weixin ecosystem and leveraging Weixin's open platforms such as Official Accounts, Mini Programs, Weixin Pay, WeCom and search function. WXG provides solutions and connectivity for intelligent upgrades across all industries. WXG is also responsible for the development and operation of QQ Mail, WeRead and other products.\n\nWhat the Role Entails\nAbout WeChat\nWith over 1.2 billion users worldwide, WeChat is changing the mobile landscape by connecting people, services, and businesses in China and around-the world. The WeChat team in Singapore is responsible for managing and growing our core product including messaging and social networking for users worldwide (excluding the Chinese mainland).\n\nJoin the WeChat team and play an impactful role in keeping people around the world connected, help redefine how people use their mobile devices to communicate and interact online, and understand user behavior and preferences of users worldwide.\n\nAbout the Role\nWeChat is seeking software engineers with expertise in backend and web frontend development to join the team. Candidates should already have experience in traditional 3-tier architecture (presentation, application, database), fullstack web development experience via a Node.js framework (Vue.js preferred) in addition to traditional software development experience in a compiled language such as Golang/C/C++/Rust. The role will work closely with data scientists, data engineers, security engineers, test engineers, DevOps engineers, and project managers to help develop internal tools and security systems for keeping WeChat users worldwide safe.Ensure site reliability by managing the deploy, scaling, and maintanence of new and existing online services that connect over a billion users around the world\nLeverage your engineering skills while working directly with developers in order to help test and diagnose issues with newly deployed services, infrastructure resources, or code before and after they reach the production environment\nManage high severity incidents and incidents impacting end users by focusing on service monitoring, alerts, and rapid recovery\nUse stress testing to help measure, tune, and optimize system performance and reliability for a wide variety of services\nDevelop and maintain automation tools/systems to help eliminate repetitive manual operations and ensure better site reliability\nProduce and maintain documentation and standard operating procedures (SOPs) to more efficiently and reliably handle regular operations in conjunction with colleagues around the world\n\nWho We Look For\nEngineering, or related fields\nPrior work experience in Cloud Engineering, Site Reliability Engineering (SRE), or DevOps for a major, public-facing internet service\nHands-on experience with at least one of the programming languages: Bash, Go, Python\nGood command of Linux environment with deep understanding of the Linux operating system, including kernel, memory, processes, threads, static / shared libraries, IPC, RPCs, and signals\nUnderstanding of standard networking protocols such as HTTP, DNS, SSL, TCP/IP, and ICMP\nExperience in large-scale distributed environments. Familiarity with distributed systems including the CAP theorem and microservices.\nExperience with container technologies such as Docker and Kubernetes\nExperience with monitoring tools like Prometheus and Zabbix\nStrong sense of ownership, reliability, and integrity demonstrated\nPassion for eliminating repetitive manual processes via automation\nFast learning ability and a good team player\nFluency in both English and Mandarin to deal with international stakeholders and stakeholders who are based in HQ\n\nEqual Employment Opportunity at Tencent\nAs an equal opportunity employer, we firmly believe that diverse voices fuel our innovation and allow us to better serve our users and the community. We foster an environment where every employee of Tencent feels supported and inspired to achieve individual and common goals.\r\nWork Location: Singapore-CapitaSky",
+    "Requirement": "岗位要求详情请见上方岗位职责内说明",
+    "LastUpdateTime": "2025年09月15日",
+    "PostURL": "https://tencent.wd1.myworkdayjobs.com/Tencent_Careers/job/Singapore-CapitaSky/Cloud-Engineer_R105412",
+    "SourceID": 4,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "",
+    "Introduction": "",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": ""
+  }
+}

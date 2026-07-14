@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2052550690479452160",
+    "RecruitPostId": 119835,
+    "RecruitPostName": "预研风格化项目-资深关卡策划-（地图向）",
+    "LocationId": 1,
+    "LocationName": "深圳",
+    "BGId": 956,
+    "BGName": "IEG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40003002",
+    "CategoryName": "产品",
+    "ProductName": "天天炫斗",
+    "Responsibility": "1.负责射击品类大地图关卡的设计和制作，对最终关卡质量负责；\r\n2.绘制关卡 2D Layout，使用 UE5 引擎工具高效搭建 3D 白盒，设计并实现关卡原型，持续调优关卡体验；\r\n3.负责关卡中 POI（Point of Interest）的设计规划：定义 POI 类型与功能定位、控制节奏分布与密度、平衡风险收益，打造具有记忆点的标志性区域；\r\n4.结合世界观与剧情设定，通过关卡布局、环境细节与物件摆放进行场景叙事，让玩家在探索过程中自然感知世界观；\r\n5.跟进关卡制作全流程，协调程序、美术、叙事等职能，解决过程中问题，落地相关资源；\r\n6.根据测试、CE 的数据和反馈，对关卡布局和平衡性及时进行有效的迭代。",
+    "Requirement": "1.5 年以上关卡研发经验，3 年以上 3D 视角的完整地图和玩法设计经验；\r\n2.能够高效使用主流引擎搭建关卡白盒、快速制作关卡原型；有 UE 大地图管线、蓝图基础经验者优先；\r\n3.至少独立负责过 1 个完整的单局玩法设计研发，对玩法结构、动线设计、机制有经验；\r\n4.对 POI 设计有清晰方法论：能规划 POI 的功能定位、节奏分布、风险收益与辨识度；\r\n5.对场景叙事（Environmental Storytelling）有深入理解：能通过空间布局、环境细节与物件语言传达世界观与剧情信息；\r\n6.有搜打撤、大地图 PVP/PVE、开放世界等相关品类的地图设计经验者优先；\r\n7.熟悉 UE 引擎者优先；\r\n8.对搜打撤类游戏有深入游玩经验者优先（300h+），能把握搜打撤类玩法的核心要点。",
+    "LastUpdateTime": "2026年05月19日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2052550690479452160",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "1.喜欢欧美题材加分；\r\n2.有出海经验加分。",
+    "Introduction": "",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "五年以上工作经验"
+  }
+}

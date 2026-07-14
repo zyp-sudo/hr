@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2038796569410695168",
+    "RecruitPostId": 118960,
+    "RecruitPostName": "AI Infra强化学习工程师-深圳/北京/上海",
+    "LocationId": 3,
+    "LocationName": "上海",
+    "BGId": 29294,
+    "BGName": "CSIG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40001001",
+    "CategoryName": "技术",
+    "ProductName": "腾讯云",
+    "Responsibility": "1.负责LLM RL、Agentic RL强化学习训练框架的设计、开发与性能优化，支撑大规模 RL 算法（如 PPO、DQN、GRPO等）的高效落地；\r\n2.构建分布式训练体系，优化训推异步、partial rollout、数据并行、模型并行、Replay Buffer分布式存储与调度策略，提升 GPU 利用率与训练吞吐；\r\n3.设计并实现 RL 训练全流程工具链：包括环境封装、数据预处理、模型版本管理、训练日志监控、指标可可视化（TensorBoard/Weights & Biases）等；\r\n4.解决 RL 训练中的工程瓶颈：如样本传输延迟、GPU 显存溢出、训练稳定性（梯度爆炸 / 消失）等问题，提供工程化解决方案；\r\n5.与 RL 算法团队紧密协作，理解算法需求并迭代基础设施，适配多场景的训练需求；\r\n6.跟进强化学习与分布式训练领域的前沿技术（如 VERL、rllm、Agentlightning、Ray、Megatron-LM等），并落地到实际系统中。",
+    "Requirement": "1.计算机科学、软件工程、人工智能等相关专业，3 年以上工程化开发经验（含 1 年以上 RL 或深度学习基础设施相关经验）；\r\n2.熟练掌握 Python 编程，具备扎实的工程编码能力，熟悉 C/C++ 者优先（底层优化场景）；\r\n3.深入理解深度学习框架（PyTorch），精通分布式训练原理与实践（FSDP/DeepSpeed/Megatron/Ray 等工具使用经验）；\r\n4.具备强化学习基础，理解 RL 训练流程（智能体、环境、奖励机制、经验回放等核心组件），熟悉主流 RL 框架（Ray、VERL、rllm、Agentlightning）者优先；\r\n5.具备复杂系统设计能力，能独立负责基础设施模块的从 0 到 1 搭建；\r\n6.强问题排查能力，能快速定位训练过程中的工程问题（性能、稳定性、资源瓶颈）；\r\n7.良好的跨团队沟通能力，能准确理解算法需求并转化为工程方案；\r\n8.自驱力强，乐于跟进前沿技术，具备快速学习与落地能力。",
+    "LastUpdateTime": "2026年07月01日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2038796569410695168",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "",
+    "Introduction": "在腾讯，后台开发工程师不仅是“又快又稳”的问题解决专家，更是生态共创者。你将与技术团队一同沉淀优质代码，让它成为我们共有的宝贵资产。在不同的业务场景和技术发展阶段，你的架构思维也将帮助更多协作团队拓展新的思考。我们也珍视你的挑战精神，同时欢迎你一起参与团队愿景、文化和产品方向的探讨。",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "三年以上工作经验"
+  }
+}

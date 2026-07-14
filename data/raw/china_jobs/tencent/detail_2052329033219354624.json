@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2052329033219354624",
+    "RecruitPostId": 119827,
+    "RecruitPostName": "《洛克王国：世界》-技术美术-渲染向",
+    "LocationId": 1,
+    "LocationName": "深圳",
+    "BGId": 956,
+    "BGName": "IEG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40002002",
+    "CategoryName": "设计",
+    "ProductName": "NRC-手游APP",
+    "Responsibility": "1.实现基于PBR框架的风格化渲染和部分对象的NPR渲染，并搭建TOD，天气系统，使整体渲染效果实时自洽，以上同时兼顾性能，并维护美术制作规范；\n2.通过搭建灯光环境和配置后处理，以营造不同的环境氛围，并使之与其他系统联动；\n3.搭建LookDev环境，以确保美术资产正确验收。",
+    "Requirement": "1.艺术类专业背景或有相关工作经验，具备良好的审美能力；\n2.具备图形学基础，熟练掌握至少一门Shader编程语言；\n3.深入了解PBR理论，熟悉PBR美术资产制作管线；\n4.精通UE4，Unity等至少一款主流商业引擎，UE4优先；\n5.熟练使用至少一款DCC软件(3dsMax, Maya, Blender, Houdini等)，Maya优先；\n6.良好的书面和口头沟通能力，优秀的团队协作能力。",
+    "LastUpdateTime": "2026年05月08日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2052329033219354624",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "",
+    "Introduction": "【腾讯游戏｜这一局，由你主导】\n用画笔创造玩家热爱的世界。在腾讯游戏，你将主导角色设计、场景搭建或风格定义，用扎实的美术功底与独特创意，打造真正触动人心的视觉体验。这里有成熟的技术支持、丰富的项目机会，你的作品将随国民级游戏走进亿万玩家视野。加入我们，让艺术真正“玩”出价值。",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "三年以上工作经验"
+  }
+}

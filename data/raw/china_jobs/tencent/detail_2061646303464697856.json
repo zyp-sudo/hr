@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2061646303464697856",
+    "RecruitPostId": 120345,
+    "RecruitPostName": "产品经理 — WorkBuddy（ Agent对话/知识空间方向）",
+    "LocationId": 1,
+    "LocationName": "深圳",
+    "BGId": 29294,
+    "BGName": "CSIG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40003001",
+    "CategoryName": "产品",
+    "ProductName": "腾讯文档",
+    "Responsibility": "1.负责 WorkBuddy 会话的渲染模块，提升对话的可读性、可互动性；\r\n2.设计 WorkBuddy 会话中的组件能力，提升 agent 的表达力上限；\r\n3.基于会话组件，建设完善生态。",
+    "Requirement": "1.五年以上互联网产品经验；\r\n2.具备成熟IM、邮件产品的设计经验（飞书等）；\r\n3.有 AI / Agent 产品规划与落地经验，熟悉 RAG、Function Call、多轮交互、多 Agent 编排与大模型评测方法论，能独立设计 Agent 能力边界并主导效果调优；\r\n4.对编辑器技术有体系化理解：富文本模型、CRDT/OT 协同算法、渲染管线、插件与扩展架构；不要求亲自编码，但能以工程视角与研发同学对齐方案；\r\n5.对产品体验有近乎苛刻的追求，具备优秀的交互判断力与设计品味，能在复杂场景下做出清晰的体验取舍；\r\n6.自驱力强、学习能力突出，具备跨团队协作与向上沟通能力，对 AI 与未来工作方式有独立思考与前瞻洞察；\r\n7.可 base 深圳。",
+    "LastUpdateTime": "2026年06月02日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2061646303464697856",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "",
+    "Introduction": "“用户为本，科技向善”，是写在每位腾讯产品人心中的一句箴言。在互联网浪潮中，大众的生活已被深刻地改变，如何为用户创造价值、创造怎样的价值，需要每位产品人花费更长时间去体会与探索。在这里，你将与同样关注细节、关注本质、关注美好的同事一道，开启你的创造性工作。",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "五年以上工作经验"
+  }
+}

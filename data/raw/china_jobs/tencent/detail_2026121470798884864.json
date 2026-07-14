@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2026121470798884864",
+    "RecruitPostId": 117900,
+    "RecruitPostName": "海外带宽成本管理经理",
+    "LocationId": 1,
+    "LocationName": "深圳",
+    "BGId": 29294,
+    "BGName": "CSIG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40010",
+    "CategoryName": "行政支持",
+    "ProductName": "腾讯云",
+    "Responsibility": "1.目标管理：负责成本目标拟定、监控与分析；利用数据分析工具（如 BI 平台、日志分析系统）挖掘成本优化机会；\r\n2.工具建设：建立相关的采购成本管理模型，评估成本优化举措；\r\n3.运营协同：跨部门沟通协调及推动，保证采购成本优化方案的执行。",
+    "Requirement": "1.全日制本科或以上学历，数学、统计、计算机、财务管理等相关专业；\r\n2.三年以上工作经验，熟悉建模分析、SQL、Python或R语言以及数据挖掘工作，能独立完成数据提取到数据分析及输出报告；\r\n3.具有丰富的数据分析相关经验，了解采购成本管理理体系，有大型数据建模、海量商业数据分析工作经验者优先；\r\n4.具有较好的抗压能力和跨部门沟通能力。",
+    "LastUpdateTime": "2026年06月24日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2026121470798884864",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "1.在同等条件下，通过腾讯云认证或取得同等资格认证的候选人，我们会优先考虑。",
+    "Introduction": "作为业务发展的战略支撑者与资源连接者，我们以采购驱动价值创造。依托腾讯生态与技术优势，你将通过全球资源整合、供应商生态协同及全链路数字化工具，在支撑海量业务需求的同时，推动商业创新与可持续发展。在这里，每一份谈判智慧与成本洞见，都将转化为推动万亿生态增长的关键力量。",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "三年以上工作经验"
+  }
+}

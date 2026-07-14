@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2006301756904071168",
+    "RecruitPostId": 116955,
+    "RecruitPostName": "《三角洲行动》-数据分析（活动分析方向）",
+    "LocationId": 1,
+    "LocationName": "深圳",
+    "BGId": 956,
+    "BGName": "IEG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40003002",
+    "CategoryName": "产品",
+    "ProductName": "ProjectD-手游APP",
+    "Responsibility": "1.负责分析游戏国内及海外活跃和商业化效果评估及问题定位，输出解决方案，持续监控改进效果；\r\n2.开展专题数据分析，输出分析报告，通过数据驱动游戏业务增长；\r\n3.设计和分析A/B Testing实验，以验证策略有效性，并提出优化的策略。",
+    "Requirement": "1.3年以上游戏商业化和活跃分析经验，有全面负责过一款游戏数据分析为佳；\r\n2.热爱游戏，熟悉主流的FPS游戏；\r\n3.能独立搭建日常游戏运营的分析框架，快速输出有价值内容；\r\n4.对数据敏感，有清晰的数据分析思考框架，能熟练使用Mysql。",
+    "LastUpdateTime": "2026年06月08日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2006301756904071168",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "",
+    "Introduction": "",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "三年以上工作经验"
+  }
+}

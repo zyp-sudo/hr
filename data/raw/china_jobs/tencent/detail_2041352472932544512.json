@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2041352472932544512",
+    "RecruitPostId": 119084,
+    "RecruitPostName": "微信-高性能 - 视觉 AIGC 大模型推理优化工程师",
+    "LocationId": 1,
+    "LocationName": "深圳",
+    "BGId": 14129,
+    "BGName": "WXG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40001005",
+    "CategoryName": "技术",
+    "ProductName": "视频号短视频",
+    "Responsibility": "1. 针对 NPU、GPU 等异构硬件，探索 AIGC 大模型的最优推理方案，开发维护自研 AIGC 推理框架，将 XNet 推理引擎的优化能力赋能业务模型，支持微信视频号及其他业务的部署与持续优化\n2. 深入理解 AIGC 大模型，以算法-系统 Co-design 的思路，探索与应用 Cache、稀疏、量化等 Training-free 或需要 Finetune 的优化方案，在保证业务指标的前提下，探索推理优化的边界\n3. 持续跟进 AIGC 大模型的发展动态，探索并落地通用推理优化方案，支持新模型的高效上线，并提供模型优化的原子能力，支持算法侧与业务侧的高效接入与调试\n\n",
+    "Requirement": "1. 对 CPU/GPU/NPU 等硬件体系结构有实践层面的理解，将其落地于算子性能与模型部署优化中\n2. 对当前常见的开源 AIGC 模型和框架，如 HunyuanVideo、Wan、LTX、ComfyUI 等，有推理调优经验\n3. 熟悉 Linux 系统与分布式环境部署调试，熟悉 Python 开发\n4. 具有良好的沟通能力，能够与算法侧、业务侧顺畅协作\n5. 愿意探索和尝试新技术，对 AI 落地应用与提效有热情与愿景",
+    "LastUpdateTime": "2026年07月06日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2041352472932544512",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "1. 在视觉 AIGC 大模型快速演进的今天，与我们一起站在最前沿，深入理解模型能力与业务需求，探索各种非典型 Co-design 优化的极限，化不可能为可能\n2. 面向亿级用户与调用量，每一点优化都意味着大量成本的降低与用户体验的提升，同时也将 AIGC 大模型的想象力带给更多人，让这个世界变得更有趣一些",
+    "ImportantItem": "1. 有国产 GPU / NPU 加速卡上 AIGC 大模型的部署优化经验，有 Triton、CUDA 等的算子开发与调优经验\n2. 了解 Sglang Diffusion、VLLM Omni、LightX2V 等 AIGC 推理框架\n3. 对自回归视频生成模型、扩散语言模型、视觉统一理解生成模型有优化经验，了解 AIGC 大模型的业界动态与趋势\n4. 有 AI Agent 提效的工程化落地经验，能够支持个人与团队在 AIGC 大模型部署、Profiling、优化等全生命周期的提效工作",
+    "Introduction": "渴望为世界带来新意的人，早已对描绘未来的“热词”不陌生——人工智能、机器学习、数据科学等等。腾讯始终在业界前沿不断探索，积极布局，并为优秀的你提供无限广阔的舞台。我们坚信科技的不断革新，最终能带来美好的、撼动人心的改变。",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "一年以上工作经验"
+  }
+}

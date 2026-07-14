@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2046538637730021376",
+    "RecruitPostId": 119529,
+    "RecruitPostName": "《王者荣耀》王者营地-iOS开发工程师",
+    "LocationId": 8,
+    "LocationName": "成都",
+    "BGId": 956,
+    "BGName": "IEG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40001001",
+    "CategoryName": "技术",
+    "ProductName": "王者荣耀",
+    "Responsibility": "1.负责王者营地App的功能研发和性能优化；\r\n2.负责高质量的设计和编码，承担重点、难点的技术攻坚；\r\n3.负责沉淀高质量的技术组件和框架，提高研发效率和产品质量；\r\n4.负责AI研发提效落地以及相关配套工具建设。",
+    "Requirement": "1.具有扎实的编程功底，良好的设计能力和编程习惯。熟悉 Obj-C/Swift，熟悉 iOS 开发，对 iOS 等具体平台有深入了解；\r\n2.具备良好的分析解决问题能力，能够及时总结开发问题并给出解决方案；\r\n3.具备良好的沟通能力和优秀的团队协作能力；\r\n4.有移动端跨平台、 Flutter 、 AI 相关经验者优先。",
+    "LastUpdateTime": "2026年05月20日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2046538637730021376",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "",
+    "Introduction": "在腾讯客户端开发的字典里，“敏捷高效”与“精益求精”并不互斥，追求技术的深度是我们共同的信仰。希望你也能在足够广阔的平台上尽情的施展拳脚。",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "三年以上工作经验"
+  }
+}

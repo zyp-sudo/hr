@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2034114869342666752",
+    "RecruitPostId": 118616,
+    "RecruitPostName": "AI技术型产品运营",
+    "LocationId": 1,
+    "LocationName": "深圳",
+    "BGId": 29294,
+    "BGName": "CSIG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40003001",
+    "CategoryName": "产品",
+    "ProductName": "腾讯云",
+    "Responsibility": "1.智能社群管理（万人级）： 负责搭建与维护社群运营 Agent，实现万人社群的自动化答疑、活跃引导及违规监控，确保社群 7x24 小时高质量运转；\r\n2.内容生产与宣发提效： 开发专门针对业务场景的内容宣发智能体（Content Agent），通过 AI 辅助产出高质量文案、海报及视频脚本，并实现多平台的一键/自动化分发；\r\n3.前端快速迭代： 负责运营相关 H5、活动网页及产品前端界面的设计与开发。要求能够利用低代码或现代前端框架（如 Next.js/Tailwind）进行“最小化可行产品 (MVP)”的快速产出与测试；\r\n4.流程自动化： 持续探索 AI 工具链（如 n8n, Make, Zapier），消除运营过程中的重复劳动。",
+    "Requirement": "1.AI 实操能力： 熟练掌握主流 LLM（GPT, Claude等）的 Prompt Engineering，有 Agent 框架（如 LangChain, Dify, CrewAI）实操经验者优先；\r\n2.全栈/前端技能： 具备基本的前端能力，能独立完成美观的网页设计与上线，审美在线；\r\n3.运营感知： 懂社群逻辑，知道如何通过技术手段提升用户粘性和转化率；\r\n4.敏捷思维： 崇尚“先跑通、再优化”，具备极强的快速迭代能力。",
+    "LastUpdateTime": "2026年06月16日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2034114869342666752",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "",
+    "Introduction": "“用户为本，科技向善”，是写在每位腾讯产品人心中的一句箴言。在互联网浪潮中，大众的生活已被深刻地改变，如何为用户创造价值、创造怎样的价值，需要每位产品人花费更长时间去体会与探索。在这里，你将与同样关注细节、关注本质、关注美好的同事一道，开启你的创造性工作。",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "三年以上工作经验"
+  }
+}

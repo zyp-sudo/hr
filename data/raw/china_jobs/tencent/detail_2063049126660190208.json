@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2063049126660190208",
+    "RecruitPostId": 120413,
+    "RecruitPostName": "在研项目-关卡策划-新星引力计划",
+    "LocationId": 1,
+    "LocationName": "深圳",
+    "BGId": 956,
+    "BGName": "IEG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40003002",
+    "CategoryName": "产品",
+    "ProductName": "公共",
+    "Responsibility": "1.负责射击类游戏的关卡玩法和模式设计，能够基于产品方向探索游戏创新玩法，并实现原型关卡设计；\r\n2.负责关卡内怪物、地图、事件机制等核心模块的设计；\r\n3.负责游戏玩法内容的推进及调优。",
+    "Requirement": "1.1-3年FPS/TPS关卡策划工作经历:；\n2.熟悉关卡制作管线，能独立完成关卡的设计、落地工作；\n3.熟练使用主流 3D软件/引擎搭建关卡白盒，熟练使用UE4/5；\n4.良好的团队协作和沟通能力，表达技巧出色；\n5.游戏阅历丰富，熟悉主流射击游戏，射击游戏爱好者优先；\n6.有上线游戏项目经验者优先，有射击游戏项目开发经验者优先(可附上作品设计稿，截图或链接)。",
+    "LastUpdateTime": "2026年07月03日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2063049126660190208",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "",
+    "Introduction": "",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "一年以上工作经验"
+  }
+}

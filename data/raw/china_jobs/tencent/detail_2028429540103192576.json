@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2028429540103192576",
+    "RecruitPostId": 118080,
+    "RecruitPostName": "《王者荣耀》国际版-游戏客户端开发",
+    "LocationId": 8,
+    "LocationName": "成都",
+    "BGId": 956,
+    "BGName": "IEG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40001001",
+    "CategoryName": "技术",
+    "ProductName": "王者荣耀海外版",
+    "Responsibility": "1.负责游戏系统及玩法内容的研发；\n2.负责各类渲染管线问题跟进，渲染性能分析与优化；\n3.负责重构和优化现有系统，优化工作流程，提高研发效率；\n4.负责制作工具的开发，实现快速迭代及验证制作内容。",
+    "Requirement": "1.本科及以上学历，计算机相关专业，编程基础扎实、熟悉算法和数据结构；\n2.有一定Unity使用经验，熟悉Unity常用组件；\n3.熟悉计算图形学、有opengl、shader编程经验；\n4.责任心强，善于沟通，对游戏前沿技术有热情；\n5.有移动游戏优化经验，掌握移动端图形优化技巧优先。",
+    "LastUpdateTime": "2026年07月02日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2028429540103192576",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "",
+    "Introduction": "在腾讯，作为一位游戏客户端开发，你始终身处科技前沿，与同样具备满分热情的策划、美术等团队紧密协作，助力新世界的诞生、运作，持续打造极致体验。你可以善用自己的全局观察能力，不断打开技术视野，与靠谱的团队一起做出真正有趣的新事物。",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "不限"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2043620714690543616",
+    "RecruitPostId": 119262,
+    "RecruitPostName": "采购业务管理数据 BI ",
+    "LocationId": 1,
+    "LocationName": "深圳",
+    "BGId": 29294,
+    "BGName": "CSIG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40010",
+    "CategoryName": "行政支持",
+    "ProductName": "腾讯云",
+    "Responsibility": "1.搭建采购全链路数据 BI 体系，主导 Tableau 可视化看板搭建、统一指标体系建设与数据标准化治理；\r\n2.深耕采购业务开展量化分析与数据建模，通过数据洞察识别业务优化机会，输出业务预测、异常监控机制及落地性增效解决方案；\r\n3.负责AI 全栈开发落地，覆盖 RAG 知识库、智能问答、自动化报表等产品形态，独立完成模型开发、接口封装、工程部署与持续迭代优化。",
+    "Requirement": "1.本科及以上学历，3 年及以上供应链采购方向数据 BI+AI 全栈落地实战经验；熟练掌握 SQL、Tableau、Python 数据分析工具；具备 LLM 大模型、RAG 检索增强体系落地及 AI 工程化实操能力；\r\n2.优秀跨部门协同沟通能力，可同步推进多条业务线项目，保障数据与 AI 项目按时高质量交付；\r\n3.认同公司文化，具备优秀多任务统筹能力与快速适配业务迭代的学习力，乐于在高速成长的业务环境中持续创造数据价值。",
+    "LastUpdateTime": "2026年06月24日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2043620714690543616",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "1.在同等条件下，通过腾讯云认证或取得同等资格认证的候选人，我们会优先考虑。",
+    "Introduction": "作为业务发展的战略支撑者与资源连接者，我们以采购驱动价值创造。依托腾讯生态与技术优势，你将通过全球资源整合、供应商生态协同及全链路数字化工具，在支撑海量业务需求的同时，推动商业创新与可持续发展。在这里，每一份谈判智慧与成本洞见，都将转化为推动万亿生态增长的关键力量。",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "三年以上工作经验"
+  }
+}

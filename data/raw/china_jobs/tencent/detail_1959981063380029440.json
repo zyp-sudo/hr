@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "1959981063380029440",
+    "RecruitPostId": 114374,
+    "RecruitPostName": "微信视频号-后台开发高级工程师（大模型技术方向）",
+    "LocationId": 5,
+    "LocationName": "广州",
+    "BGId": 14129,
+    "BGName": "WXG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40001001",
+    "CategoryName": "技术",
+    "ProductName": "视频号短视频",
+    "Responsibility": "随着视频号业务发展以及大模型 AI 能力的突破，视频号业务与大模型结合努力尝试，希望在视频创作等场景进行结合落地。为了保证需求快速高质量的迭代，希望邀请热爱技术的你，一起攻克这些难题。\n\n1.为推荐场景提供高性能的可靠特征计算能力；\n2.对模型服务性能做极致优化，保证需求的快速迭代和高质量稳定运行；\n3.结合业务场景对模型进行管理调度以及针对性优化，提升业务的稳定性；\n4.完成内部AI应用研效工具建设，帮助产品迅速落地想法，提升迭代效率。",
+    "Requirement": "1.本科以上学历，计算机相关专业，有2年或以上服务端开发经验；\n2.熟练掌握常见的编程语言（如 C++，Python、Java、Go 等），熟练掌握深度学习框架（如 TensorFlow、PyTorch）；\n3.有海量服务开发、网络通信优化、计算性能优化经验者优先；\n4.有大模型应用经验，能够运用大语言模型（如 GPT、BERT）进行实际场景开发与优化，在学术界/工程界有落地的实践经验者优先；\n5.强烈的自我驱动能力，独立推进技术研发并解决实际问题。",
+    "LastUpdateTime": "2026年06月29日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=1959981063380029440",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "",
+    "Introduction": "",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "三年以上工作经验"
+  }
+}

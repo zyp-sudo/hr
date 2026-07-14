@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2046593430779490304",
+    "RecruitPostId": 119540,
+    "RecruitPostName": "微信小程序-大模型算法工程师-智能体方向",
+    "LocationId": 5,
+    "LocationName": "广州",
+    "BGId": 14129,
+    "BGName": "WXG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40001005",
+    "CategoryName": "技术",
+    "ProductName": "小程序",
+    "Responsibility": "1.负责小程序智能体的 SFT、RL 等模型的训练工作，提升大模型在工具调用、对话理解的表现；\n2.建立评估体系，多维度评测量化智能体的执行质量。",
+    "Requirement": "1.熟练掌握 SFT、RL 等模型训练方法，有丰富的模型调优和部署经验；\n2.对大模型的运作机制有深入理解，熟悉常用算法和框架（如 PyTorch、TensorFlow ）；\n3.除了对业界先进论文跟进外，能够创新性提出不一样的解法；\n4.优秀的逻辑思维能力和问题解决能力，良好的团队协作和沟通能力。",
+    "LastUpdateTime": "2026年06月24日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2046593430779490304",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "1.在顶级学术会议（如NeurIPS、ICML等）以第一作者发表过相关论文；\n2.有知名互联网公司 AI 算法相关工作经验。",
+    "Introduction": "渴望为世界带来新意的人，早已对描绘未来的“热词”不陌生——人工智能、机器学习、数据科学等等。腾讯始终在业界前沿不断探索，积极布局，并为优秀的你提供无限广阔的舞台。我们坚信科技的不断革新，最终能带来美好的、撼动人心的改变。",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "两年以上工作经验"
+  }
+}

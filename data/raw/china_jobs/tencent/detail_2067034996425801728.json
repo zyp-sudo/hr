@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2067034996425801728",
+    "RecruitPostId": 120600,
+    "RecruitPostName": "微信小游戏-客户端工程师(Unity/UE引擎方向）",
+    "LocationId": 5,
+    "LocationName": "广州",
+    "BGId": 14129,
+    "BGName": "WXG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40001001",
+    "CategoryName": "技术",
+    "ProductName": "小游戏",
+    "Responsibility": "1.帮助更多的高品质Unity游戏以更低研发成本及较好运行性能进入微信小游戏平台，主要负责：完善适配工具，持续补充新能力，降低开发者适配成本，提升开发效率；\n2.提升游戏性能，协助优化内存、提升渲染性能、运行体验及启动性能；\n3.开发者技术支持，协助微信小游戏平台的开发者进行性能分析与调优；\n4.游戏原型制作及能力开放，验证平台基础能力。",
+    "Requirement": "1.熟悉常用的算法和数据结构，熟练掌握一门游戏开发语言（C++、C#等）；\r\n2.参与过大型3D游戏开发，具有1年以上游戏引擎(Unity、UE或自研）渲染相关开发和优化经验，对3D图形渲染技术有一定理解和掌握；\r\n3.良好的团队协作能力，有较强的主动性和分析解决问题的能力；\r\n4.对游戏前沿技术抱有热情，对Unity/UE等引擎或图像渲染理论有深入研究者优先。",
+    "LastUpdateTime": "2026年07月01日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2067034996425801728",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "",
+    "Introduction": "",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "两年以上工作经验"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2026648849275322368",
+    "RecruitPostId": 117939,
+    "RecruitPostName": "企业微信-大模型算法工程师-企业应用（广州/北京）",
+    "LocationId": 8,
+    "LocationName": "成都",
+    "BGId": 14129,
+    "BGName": "WXG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40001005",
+    "CategoryName": "技术",
+    "ProductName": "企业微信SaaS",
+    "Responsibility": "1.负责机器学习模型、深度学习模型的应用落地，包括但不限于对大模型的RL、SFT；\r\n2.负责探索与跟进AIGC前沿技术，推动技术框架持续迭代升级，保持行业同类竞品前沿水平；\r\n3.将LLM、RAG的最新技术并用于业务落地，包括但不限于AI搜索、知识抽取等场景。",
+    "Requirement": "1.计算机、机器学习等相关专业，硕士及以上学历，具备良好的计算机基础和算法基础；\n2.熟悉LLM、Bert等自然语言处理方向基础的理论和方法，2年以上深度学习、机器学习开发经验；\n3.熟悉深度学习训练/推理框架，包括Post-Training、精调(SFT)、强化(DPO,PPO)、蒸馏等技术的落地；\n4.有利用大模型从非结构化数据挖掘结构化知识的业务应用经验优先；\n5.在ACL、EMNLP、NeurIPS等顶尖会议等发表过文章或机器学习优秀开源项目贡献者优先；\n6.该岗位可 base广州/成都/北京。",
+    "LastUpdateTime": "2026年06月25日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2026648849275322368",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "",
+    "Introduction": "渴望为世界带来新意的人，早已对描绘未来的“热词”不陌生——人工智能、机器学习、数据科学等等。腾讯始终在业界前沿不断探索，积极布局，并为优秀的你提供无限广阔的舞台。我们坚信科技的不断革新，最终能带来美好的、撼动人心的改变。",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "两年以上工作经验"
+  }
+}

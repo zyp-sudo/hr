@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2053829015323717632",
+    "RecruitPostId": 119944,
+    "RecruitPostName": "腾讯云-云网络控制面 SRE 工程师",
+    "LocationId": 2,
+    "LocationName": "北京",
+    "BGId": 29294,
+    "BGName": "CSIG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40001003",
+    "CategoryName": "技术",
+    "ProductName": "腾讯云",
+    "Responsibility": "1.负责腾讯云网络控制面的日常运维、需求沟通及架构设计等工作；\r\n2.负责腾讯云网络控制面自动化运维体系的建设，依托运维经验提供有效的建议及支撑；\r\n3.制定并实施系统可靠性提升方案，优化系统架构与部署，增强系统在高并发场景下的可用性和容错能力。",
+    "Requirement": "1.计算机/通信相关专业本科以上学历，5 年以上工作经验；有大型互联网业务 系统、高并发、高可用系统的运维/开发经验；\r\n2.熟悉常见的开源技术组件（Redis、Kafka、MySQL、ZK、ES等）；熟练使用Git、CI/CD等工具；\r\n3.熟悉 GO语言，有扎实的算法基础，熟悉常见的数据结构；有自动化运维工具开发经验优先；\r\n4.有大规模 ZooKeeper 集群运维经验或自动化运维平台开发经验优先；\r\n5.有良好的团队合作能力，具备良好的自驱力，执行力，善于沟通, 对技术有强烈的好奇心；\r\n6.通过腾讯云从业资格证或同等资格认证的优先录取。",
+    "LastUpdateTime": "2026年05月19日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2053829015323717632",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "",
+    "Introduction": "在腾讯，优秀的技术运营工程师始终赋能业务，关注技术运营的质量、成本、效率和安全。他们不仅是经验丰富的问题解决者，更是具有全局视角的架构师，通过自动化工具的建设，强力提升平台效能，助力业务发展。",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "三年以上工作经验"
+  }
+}

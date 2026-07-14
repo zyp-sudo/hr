@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2002942193895100416",
+    "RecruitPostId": 1200439755703169024,
+    "RecruitPostName": "后台开发 106516",
+    "LocationId": 501,
+    "LocationName": "阿姆斯特丹",
+    "BGId": 956,
+    "BGName": "IEG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40001001",
+    "CategoryName": "技术",
+    "ProductName": "",
+    "Responsibility": "About the Hiring Team\nLevel Infinite is Tencent’s global gaming brand. It is a global game publisher offering a comprehensive network of services for games, development teams, and studios around the world.\nWe are dedicated to delivering engaging and original gaming experiences to a worldwide audience, whenever and wherever they choose to play while building a community that fosters inclusivity, connection, and accessibility. Level Infinite also provides a wide range of services and resources to our network of developers and partner studios around the world to help them unlock the true potential of their games.\n\nWhat the Role Entails\n1.负责海外网红系统后台服务模块（包括平台基础能力、支付系统、数据洞察分析等）的持续开发和优化；\n2.负责系统各模块及整体架构的性能优化与日常运维，保障高可用性。\n \n\nWho We Look For\n1.本科及以上学历，计算机或相关专业；\n2.熟练掌握C++/Golang，扎实的算法和数据结构基础；\n3.熟悉SQL和NoSQL数据库（如MySQL、Redis）；\n4.熟悉TCP/UDP网络编程，能使用Python/Shell脚本进行服务的维护和辅助开发等工作；\n5.有大容量、高并发分布式系统开发经验者优先；\n6.具备优秀的学习能力、沟通能力、团队协作能力，以及问题分析与解决能力，责任心强。\n\nEqual Employment Opportunity at Tencent\nAs an equal opportunity employer, we firmly believe that diverse voices fuel our innovation and allow us to better serve our users and the community. We foster an environment where every employee of Tencent feels supported and inspired to achieve individual and common goals.\r\nWork Location: Netherlands-Amsterdam",
+    "Requirement": "岗位要求详情请见上方岗位职责内说明",
+    "LastUpdateTime": "2025年12月21日",
+    "PostURL": "https://tencent.wd1.myworkdayjobs.com/Tencent_Careers/job/Netherlands-Amsterdam/_R106516",
+    "SourceID": 4,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "",
+    "Introduction": "",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": ""
+  }
+}

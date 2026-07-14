@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2052676740161122304",
+    "RecruitPostId": 119849,
+    "RecruitPostName": "腾讯营销-数据Agent产品经理(深圳/上海)",
+    "LocationId": 1,
+    "LocationName": "深圳",
+    "BGId": 953,
+    "BGName": "CDG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40003001",
+    "CategoryName": "产品",
+    "ProductName": "腾讯广告",
+    "Responsibility": "1.负责营销业务数据智能体产品的规划和落地。围绕营销数据资产管理和应用全链路建设智能体产品；\r\n2.构建智能体产品评测和迭代的闭环体系，与工程和算法团队协作，持续推动智能体产品质量持续提升；\r\n3.封装和优化面向 Agent 的各类基础数据工具，总结沉淀各类业务知识、分析诊断 SKILLS；\r\n4.结合AI和 Agent 技术的发展趋势，探索 AI 在数据赋能和工作提效中的新应用，扩展产品形态和能力边界。",
+    "Requirement": "1.计算机、统计学、数学等相关专业优先；\r\n2.有数据平台产品经验，具备扎实的数据分析能力。对数仓开发、数据挖掘、机器学习有一定了解的加分；\r\n3.有 AI 应用产品经验。熟悉 LLM、Agent、RAG、PE 原理和实践，有实际智能体产品搭建经验。有 BI+AI 经验、熟练使用 openclaw、claude code、codex等产品的加分；\r\n4.工作主动积极、勤奋踏实，强烈的进取心和主人翁意识；有良好的沟通协作能力。",
+    "LastUpdateTime": "2026年05月21日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2052676740161122304",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "",
+    "Introduction": "“用户为本，科技向善”，是写在每位腾讯产品人心中的一句箴言。在互联网浪潮中，大众的生活已被深刻地改变，如何为用户创造价值、创造怎样的价值，需要每位产品人花费更长时间去体会与探索。在这里，你将与同样关注细节、关注本质、关注美好的同事一道，开启你的创造性工作。",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "一年以上工作经验"
+  }
+}

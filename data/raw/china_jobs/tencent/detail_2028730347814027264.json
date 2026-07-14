@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2028730347814027264",
+    "RecruitPostId": 118124,
+    "RecruitPostName": "高性能计算专家（深圳/北京）",
+    "LocationId": 2,
+    "LocationName": "北京",
+    "BGId": 958,
+    "BGName": "TEG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40001001",
+    "CategoryName": "技术",
+    "ProductName": "大数据(数据计算平台部)",
+    "Responsibility": "1.负责算力（NVIDIA/昇腾/Intel/AMD等）的底层性能优化与调优，构建业界领先的高性能算力平台；\r\n2.负责GPU、NPU等多卡型算力的硬件、驱动和计算库的疑难问题攻关，引领技术突破性进展；\r\n3.参与学术研究项目，发表论文并参与学术会议，提升领域的声誉和影响力；\r\n4.探索跟踪最新的技术和发展趋势，评估其在现有系统中的应用潜力，推动技术的创新。",
+    "Requirement": "1.人工智能、计算机、数学等相关专业；\r\n2.8年以上GPU研发或项目经验,有学术研究成果优先；\r\n3.深入了解GPU硬件架构特性，具备算力诊断调优经验，场景覆盖训推程序的功能和性能异常，以及算力的性能异常；\r\n4.熟悉NVIDIA CUDA/AMD ROCm编程，具备GPU内核虚拟化经验（如算力绝对抢占优化，kernel使用预测等）；\r\n5.熟悉深度学习框架(Pytorch, Tensorflow等)，深度优化算力的运行效率；\r\n6.有管理能力，对人工智能技术及行业有前瞻性思考。",
+    "LastUpdateTime": "2026年07月06日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2028730347814027264",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "",
+    "Introduction": "在腾讯，后台开发工程师不仅是“又快又稳”的问题解决专家，更是生态共创者。你将与技术团队一同沉淀优质代码，让它成为我们共有的宝贵资产。在不同的业务场景和技术发展阶段，你的架构思维也将帮助更多协作团队拓展新的思考。我们也珍视你的挑战精神，同时欢迎你一起参与团队愿景、文化和产品方向的探讨。",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "三年以上工作经验"
+  }
+}

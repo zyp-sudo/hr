@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2071775874277093376",
+    "RecruitPostId": 120805,
+    "RecruitPostName": "自研IP二次元项目-游戏客户端工程师-新星引力计划",
+    "LocationId": 3,
+    "LocationName": "上海",
+    "BGId": 956,
+    "BGName": "IEG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40001001",
+    "CategoryName": "技术",
+    "ProductName": "预研产品-手游APP-SMG-海外",
+    "Responsibility": "1.负责二次元游戏玩法相关内容的研发；\n2.产品需求的技术可行性评估, 程序框架及技术方案的设计和具体实现；\n3.协助美术/策划建立高效的游戏内容制作流程, 完善并持续优化工具链。",
+    "Requirement": "1.2年以上游戏客户端研发经验,对游戏研发技术领域有较为全面的了解和关注；\n2.熟悉软件研发领域知识(计算机系统, OS、数据结构等), 熟练使用C/C++, lua；\n3.具备良好的问题分析解决能力, 责任心强, 有较高的自我管理和任务跟进推动能力；\n4.有UE4引擎开发游戏的实践经验的优先；\n5.出色的学习和技术研究应用的能力, 良好的团队协作能力, 善于沟通, 敬业专注。",
+    "LastUpdateTime": "2026年06月30日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2071775874277093376",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "",
+    "Introduction": "",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "两年以上工作经验"
+  }
+}

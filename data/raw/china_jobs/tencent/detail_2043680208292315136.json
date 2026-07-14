@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2043680208292315136",
+    "RecruitPostId": 119296,
+    "RecruitPostName": "自研-资深战斗策划（PVE & 怪物设计方向）",
+    "LocationId": 1,
+    "LocationName": "深圳",
+    "BGId": 956,
+    "BGName": "IEG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40003002",
+    "CategoryName": "产品",
+    "ProductName": "自研体系管理部-部门公共",
+    "Responsibility": "1.负责 PVE 敌人的全流程设计。包括怪物战斗模组、移动逻辑以及具有多阶段切换的 BOSS 战时间轴编排；\r\n2.深度拆解优秀产品的怪物设计案例，建立设计标准与方法论，确保产出的稳定性；\r\n3.熟练UE进行战斗模式原型、角色技能、战术道具及基础 AI 行为的逻辑搭建与配置；\r\n4.与美术，程序等团队紧密合作，推动设计落地并持续优化。",
+    "Requirement": "1.5年以上射击游戏战斗策划经验，枪械，敌人AI模块等至少有一块从0到1参与完整制作；\r\n2.熟练使用 UE5引擎（动画蓝图/Data Asset/Motion Matching等）能独立在引擎内完成功能配置与手感调试；\r\n3.拥有深厚的 FPS/TPS 游戏阅历，能够深度拆解各类射击游戏的战斗核心；\r\n4.强烈的学习热情：对新技术有极强的好奇心，能熟练运用 AI 辅助工具解决问题；\r\n5.加分项：具备良好的英文读写能力，有良好的口语沟通能力者优先考虑。",
+    "LastUpdateTime": "2026年06月30日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2043680208292315136",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "",
+    "Introduction": "【腾讯游戏｜这一局，由你主导】\n腾讯游戏，致力于以顶尖技术创造丰富优质的游戏体验，用创新玩法点燃玩家情感共鸣，深度打磨每处游戏细节。加入我们，用创造力拓展游戏的边界，为用户创造高品质数字生活体验！",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "五年以上工作经验"
+  }
+}

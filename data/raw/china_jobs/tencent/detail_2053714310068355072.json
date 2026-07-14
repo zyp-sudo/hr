@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2053714310068355072",
+    "RecruitPostId": 119919,
+    "RecruitPostName": "UE微恐轻动作项目-资深关卡策划(PVEVP方向)",
+    "LocationId": 1,
+    "LocationName": "深圳",
+    "BGId": 956,
+    "BGName": "IEG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40003002",
+    "CategoryName": "产品",
+    "ProductName": "预研产品-手游APP-Project Metro",
+    "Responsibility": "1.负责微恐轻动作PVEVP大地图的关卡设计、节奏规划与体验交付；\n2.主导地图分区、资源点位、AI压力、出入口动线、撤离点与对抗节奏的整体设计；\n3.持续对局内数据、热力图、对抗频率、撤离成功率等数据进行分析并指导迭代；\n4.与战斗、AI、系统、美术、音频等模块紧密协作，保证PVEVP关卡的对抗公平性与氛围沉浸感；\n5.规划赛季化地图更新节奏，沉淀大地图设计方法论及外包协作标准。",
+    "Requirement": "1.资深PVEVP/搜索撤离类大地图设计经验，至少主导过一款同类产品大地图从设计到上线的完整流程；\n2.具备数据驱动的关卡调优能力，熟悉以热力图、胜率、对抗路径等数据指导设计迭代；\n3.熟练使用UE编辑器、蓝图与相关场景工具，有 World Partition / 大世界分区经验者优先；\n4.对动作/射击/生存恐怖/搜索撤离产品有深入研究，具备氛围化大地图的设计理念；\n5.具备优秀的跨部门沟通推动能力，能够在多模块协同中把控质量与进度。",
+    "LastUpdateTime": "2026年05月11日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2053714310068355072",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "",
+    "Introduction": "",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "三年以上工作经验"
+  }
+}

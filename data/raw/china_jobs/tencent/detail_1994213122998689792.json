@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "1994213122998689792",
+    "RecruitPostId": 116277,
+    "RecruitPostName": "RPG\\卡牌小游戏策划-数值方向",
+    "LocationId": 1,
+    "LocationName": "深圳",
+    "BGId": 956,
+    "BGName": "IEG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40003002",
+    "CategoryName": "产品",
+    "ProductName": "公共",
+    "Responsibility": "1.系统与玩法规划：主导设计RPG类小游戏以卡牌收集、养成、组合及角色成长为核心的游戏玩法；可独立改造现有主流玩法为更轻度休闲的模式；\r\n2.关卡设计：主导RPG类小游戏在固定玩法框架下的单关卡设计，包括难度曲线设计、战斗系统、核心体验循环构建等内容；\r\n3.文档撰写：撰写系统设计文档、功能需求文档，清晰描述角色技能、角色成长、战斗规则等设计细节，确保研发、美术团队准确理解实现；\r\n4.数据驱动调整：配合数据分析师，跟踪分析游戏上线后的关键数据，并基于数据对数值和系统进行持续优化；\r\n5.跨部门协作：协同程序、美术、测试团队，跟进系统开发、资源制作及测试验证，确保功能实现符合设计预期与最终品质。",
+    "Requirement": "1.学历与专业：本科及以上学历，数学、统计学、计算机或相关专业优先；\r\n2.行业经验：2年以上游戏玩法或系统策划经验，有成功上线的RPG或卡牌类小游戏（如微信小游戏、QQ小游戏等）项目经验者优先；\r\n3.专业技能：能独立完成关卡设计、战斗系统设计，精通角色/卡牌养成曲线、战斗公式、概率模型设计；熟悉概率论、统计学知识，具备较强的数据分析和逻辑思维能力。",
+    "LastUpdateTime": "2026年06月09日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=1994213122998689792",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "",
+    "Introduction": "",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "不限"
+  }
+}

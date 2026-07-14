@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2008815464213536768",
+    "RecruitPostId": 117094,
+    "RecruitPostName": "腾讯营销-多模态大模型算法工程师",
+    "LocationId": 3,
+    "LocationName": "上海",
+    "BGId": 953,
+    "BGName": "CDG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40001005",
+    "CategoryName": "技术",
+    "ProductName": "腾讯广告",
+    "Responsibility": "1.参与商业化领域的多模态基础大模型的研发，包含领域数据挖掘、模型结构设计和训练机制优化等；\r\n2.将商业化领域的多模态大模型应用于用户/内容/广告/商品理解、个性化内容生成、广告搜推等业务领域，提升业务效果；\r\n3.跟踪前沿算法研究（如预训练、后训练、强化学习、持续学习、理解&生成统一模型、图像/视频生成等），在商业化场景进行技术验证与落地。",
+    "Requirement": "1.计算机相关专业硕士及以上学历，博士优先，具有扎实的计算机和机器学习基础，拥有优秀的的编程能力和工程能力；\r\n2.在计算机视觉、多模态、NLP、AIGC、机器学习等一个或多个领域有较深入的研究，包括但不限于LLM/MLLM、商品理解、视频内容理解、图像检索、目标检测、图像生成/编辑、视频生成/编辑、语言理解和生成；\r\n3.具有较强的实践能力，发表过高水平学术会议论文或者有竞赛经验者优先，包括不限于CVPR、ICCV、ECCV、ACL、 EMNLP、NeurIPS、ICLR等；\r\n4.有广告/内容/商品理解、广告创意生成等广告/电商经验者优先，有LLM/MLLM相关实践经验者优先；\r\n5.学习能力强，具备良好的团队协作意识和主动性。",
+    "LastUpdateTime": "2026年06月12日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2008815464213536768",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "",
+    "Introduction": "渴望为世界带来新意的人，早已对描绘未来的“热词”不陌生——人工智能、机器学习、数据科学等等。腾讯始终在业界前沿不断探索，积极布局，并为优秀的你提供无限广阔的舞台。我们坚信科技的不断革新，最终能带来美好的、撼动人心的改变。",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "三年以上工作经验"
+  }
+}

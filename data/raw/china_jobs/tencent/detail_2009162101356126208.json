@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2009162101356126208",
+    "RecruitPostId": 117137,
+    "RecruitPostName": "《异人之下》游戏客户端开发工程师（引擎Crash分析优化）",
+    "LocationId": 1,
+    "LocationName": "深圳",
+    "BGId": 956,
+    "BGName": "IEG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40001001",
+    "CategoryName": "技术",
+    "ProductName": "UC-手游APP",
+    "Responsibility": "1.负责分析定位引擎Crash问题以及底层BUG，并解决优化；\r\n2.负责引擎性能分析和优化，包括卡顿，内存，功耗，并制定规范推动落地；\r\n3.负责研效提升，分析定位卡点，优化工具链和管线，制定相应标准和规范；\r\n4.关注业界发展和前沿技术，预研和验证新技术的可行性和落地效果。",
+    "Requirement": "1.本科以上计算机相关专业，扎实的数学和算法基础；\r\n2.扎实的计算机基础，熟悉操作系统，编译原理，汇编指令；\r\n3.有逆向经验，熟悉分析调试工具(IDA/JEB/LLDB/Substrate/Frida/Xposed等)。",
+    "LastUpdateTime": "2026年06月08日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2009162101356126208",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "",
+    "Introduction": "在腾讯，作为一位游戏客户端开发，你始终身处科技前沿，与同样具备满分热情的策划、美术等团队紧密协作，助力新世界的诞生、运作，持续打造极致体验。你可以善用自己的全局观察能力，不断打开技术视野，与靠谱的团队一起做出真正有趣的新事物。",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "五年以上工作经验"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2031314156522733568",
+    "RecruitPostId": 10002629,
+    "RecruitPostName": "Senior Technical Artist (Generalist)",
+    "LocationId": 1301,
+    "LocationName": "新加坡",
+    "BGId": 956,
+    "BGName": "IEG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40002002",
+    "CategoryName": "设计",
+    "ProductName": "",
+    "Responsibility": "About the Hiring Team\nLevel Infinite is Tencent’s global gaming brand. It is a global game publisher offering a comprehensive network of services for games, development teams, and studios around the world.\nWe are dedicated to delivering engaging and original gaming experiences to a worldwide audience, whenever and wherever they choose to play while building a community that fosters inclusivity, connection, and accessibility. Level Infinite also provides a wide range of services and resources to our network of developers and partner studios around the world to help them unlock the true potential of their games.\n\nWhat the Role Entails\nAs a Senior Technical Artist within Level Infinite’s internal creative studio, you are the critical bridge between artistic vision and technical execution. You will design and implement the technical foundations that allow our artists to deliver world-class cinematics and marketing content across a diverse portfolio of AAA titles.\nYou are a generalist problem-solver, comfortable navigating Unreal Engine 5 as well as various proprietary game engines to ensure high-fidelity visual assets are production-ready, scalable, and efficiently integrated across all projects. This role will support a rare combination of traditional pre-rendered workflows and cutting-edge Realtime technologies. An ideal candidate will be someone with a background in Cinematics or CGI moving content.Design, implement, and maintain efficient, high-performance art pipelines across Unreal Engine 5 and proprietary engines\nDevelop custom procedural tools and scripts (Python, Blueprints, Houdini) to automate repetitive tasks and reduce manual workload for the ICC artists\nProfile and optimize performance for both real-time and pre-rendered workflows, ensuring visual assets meet high-fidelity benchmarks for trailers and key art\nAuthor shader networks and material functions that execute on the creative vision of our projects across different engine environments\nDemonstrate creative problem-solving by addressing technical bottlenecks and issues with incomplete, buggy, or non-standardized game assets\nAct as the primary technical contact between internal artists, studios and external vendors to solve complex integration problems\nDocument progress and findings regularly and add to the growing knowledge base of the team\nAppraise, rig, construct and consult on a variety of game assets to help both the team’s output and Studio production\nNurture an interest in simulations like coth sims, water and destruction\n\nWho We Look For\nExperience: +6  years of technical art experience in Games with a history of shipping high-profile titles.\nArtistic Eye: A demonstrable \"artistic eye\" for detail and high-quality production, ensuring technical solutions never compromise aesthetic goals.\nTechnical Mastery: Deep proficiency in Unreal Engine 5 (Sequencer, lighting, animation, and cameras).\nStrong knowledge of proprietary engines and the ability to adapt to new technical environments quickly.\nExperience in 3D Character Art pipelines, including modelling, texturing, and grooming\nStrong scripting proficiency in Python, Blueprints, or C#.\nProblem Solving: Exceptional creative problem-solving skills, particularly in addressing complex technical bottlenecks in shifting production environments.\nAttributes: Mature, selfless and capable of giving and receiving feedback with professional grace.\nIndustry Passion: A deep affinity for video games, film, and the pursuit of technical excellence.\n\nEqual Employment Opportunity at Tencent\nAs an equal opportunity employer, we firmly believe that diverse voices fuel our innovation and allow us to better serve our users and the community. We foster an environment where every employee of Tencent feels supported and inspired to achieve individual and common goals.\r\nWork Location: Singapore-CapitaSky",
+    "Requirement": "岗位要求详情请见上方岗位职责内说明",
+    "LastUpdateTime": "2026年03月10日",
+    "PostURL": "https://tencent.wd1.myworkdayjobs.com/Tencent_Careers/job/Singapore-CapitaSky/Senior-Technical-Artist--Generalist-_R106956-1",
+    "SourceID": 4,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "",
+    "Introduction": "",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": ""
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "1967437996580032512",
+    "RecruitPostId": 114813,
+    "RecruitPostName": "《异人之下》游戏客户端开发工程师（GamePlay方向）",
+    "LocationId": 1,
+    "LocationName": "深圳",
+    "BGId": 956,
+    "BGName": "IEG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40001001",
+    "CategoryName": "技术",
+    "ProductName": "UC-手游APP",
+    "Responsibility": "1.负责帧同步框架的开发，以及动作、技能、关卡流程、过场表演等关键模块的开发维护；\r\n2.负责场景管线的构建，包括制作规范、性能规范以及部署发布等工具链提效优化；\r\n3.负责Gameplay相关的管线开发、工具链开发以及相关的标准制定和落地；\r\n4.负责战斗内各种疑难问题的跟进和解决。",
+    "Requirement": "1.本科以上计算机相关专业，3年以上游戏开发经验；\r\n2.熟练使用C++，熟悉C#语言, 具备扎实的数学、数据结构和算法基础，熟悉常用设计模式；\r\n3.熟悉帧同步和状态同步的技术差异，以及核心技术难点；\r\n4.有帧同步开发经验、大型3D动作游戏开发经验优先；\r\n5.有Unity DOTS开发经验，大世界开发经验优先；\r\n6.具备良好的沟通和学习能力，善于分析问题和解决问题，责任心强。",
+    "LastUpdateTime": "2026年06月29日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=1967437996580032512",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "",
+    "Introduction": "",
+    "DepartmentIntroduction": "魔方工作室群（Morefun Studios）成立于2010年 ，腾讯IEG（互动娱乐事业群）四大工作室群之一。\n知名产品包括《火影忍者》《暗区突围》《洛克王国》《一人之下》《王牌战士》等。魔方以“创造一个时代的游戏记忆”为愿景，将“风骚、狂热、极致、专精”融入每一位魔方人心中，在动作、射击、开放世界RPG等多个游戏品类赛道持续探索开拓，致力于完成“创作令人惊叹的游戏”的使命！\n欢迎有脑洞、奇思妙想的你，欢迎敢于挑战权威和专业的你，欢迎拥有技术黑科技不断尝试突破的你，新生代的你们构成了魔方的每一个立体切面。满怀热枕！爱与梦想兼顾！在魔方，你可以成为任何你想成为的人。\n加入魔方，JUST MOREFUN！JUST YOU!",
+    "RequireWorkYearsName": "三年以上工作经验"
+  }
+}

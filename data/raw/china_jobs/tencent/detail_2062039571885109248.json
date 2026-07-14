@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2062039571885109248",
+    "RecruitPostId": 120366,
+    "RecruitPostName": "Project T-游戏战斗策划（AI方向）",
+    "LocationId": 1,
+    "LocationName": "深圳",
+    "BGId": 956,
+    "BGName": "IEG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40003002",
+    "CategoryName": "产品",
+    "ProductName": "Project T",
+    "Responsibility": "1.负责单机主机游戏中敌人AI战斗行为体系设计，包括个体决策、队伍协同、世界感知，实现智能化敌人行为；\r\n2.参与核心战斗循环设计，确保不同兵种、不同地形、不同玩家风格下的战斗体验均成立；\r\n3.输出可落地的敌人行为文档：包含设计目标、玩家体验、逻辑编排、边界条件、调参杠杆；\r\n4.与AI程序协作定义状态树架构，确保设计意图能被工程稳定实现；\r\n5.与关卡策划合作，针对不同战斗形态调整AI行为策略，确保体验成立；\r\n6.与动画团队对接行为表现层，确保AI决策与动画反馈节奏一致，包括开火预警、走位过渡、受击应变等。",
+    "Requirement": "1.三年以上工作经验，至少完整参与1款已上线的动作 / 射击 / 第三人称冒险类项目，至少参与过一款项目的敌人AI战斗系统设计；\r\n2.熟悉UE5引擎及相关AI模块；\r\n3.对敌人AI的行为逻辑实现与动作表现有极致追求，具备玩家心理与战斗节奏的设计直觉；\r\n4.资深3A游戏玩家，涉猎广泛，对第三人称动作冒险游戏有浓厚兴趣和深度理解者优先。",
+    "LastUpdateTime": "2026年06月30日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2062039571885109248",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "",
+    "Introduction": "【腾讯游戏｜这一局，由你主导】\n腾讯游戏，致力于以顶尖技术创造丰富优质的游戏体验，用创新玩法点燃玩家情感共鸣，深度打磨每处游戏细节。加入我们，用创造力拓展游戏的边界，为用户创造高品质数字生活体验！",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "不限"
+  }
+}

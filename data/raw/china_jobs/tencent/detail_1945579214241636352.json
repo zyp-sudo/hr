@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "1945579214241636352",
+    "RecruitPostId": 10002194,
+    "RecruitPostName": "Senior Site Reliability Engineer",
+    "LocationId": 1301,
+    "LocationName": "新加坡",
+    "BGId": 958,
+    "BGName": "TEG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40001003",
+    "CategoryName": "技术",
+    "ProductName": "",
+    "Responsibility": "Business Unit\nTechnology Engineering Group (TEG) is responsible for supporting the company and its business groups on technology and operational platforms, as well as the construction and operation of R&D management and data centers, TEG provides users with a full range of customer services. As the operator of the largest networking, devices, and data center in Asia,TEG also leads the Tencent Technology Committee in strengthening infrastructure R&D through internal and distributed open source collaboration, constructing new platforms and supporting business innovation.\n\nWhat the Role Entails\n1.  Responsible for the operation and maintenance of overseas model services at Hunyuan, ensuring stable, reliable, and efficient service operations;\n2.  Responsible for capacity management and planning, resource cost optimization, ensuring reasonable online service capacity and improving resource efficiency;\n3.  Responsible for continuous integration and delivery, efficient and automated operational optimization, enhancing service stability and research and development efficiency;\n4.  Participate in the design of online systems and various service architectures, providing professional solutions for stability and architecture improvement;\n5.  Analyze and deeply explore the shortcomings of existing systems, data-driven to find weak points, and promote system optimization implementation and improvement;\n6.  Pay attention to industry front-end technology trends, explore technologies and directions for automation and intelligence in the operation and maintenance of complex business systems.\n\nWho We Look For\n1.  Bachelor's degree or above, with 2 years or more experience in internet operations and maintenance;\n2.  Familiar with Linux operating system, with solid system management and network knowledge;\n3.  Familiar with deploying, configuring, and tuning components such as Nginx, Redis, MySQL;\n4.  Proficient in monitoring systems such as Zabbix, Prometheus, Grafana, real-time grasping the running status of overseas systems;\n5.  Proficient in at least one programming language (such as Python, Go, Shell, etc.), with experience in developing automated operational tools to meet the needs of complex and variable overseas operations and maintenance;\n6.  Familiar with mainstream public cloud operations and maintenance management overseas (such as AWS, Azure, etc.), with experience in containerization and microservices architecture, able to cope with the characteristics and differences of local cloud services; \n7.  Strong sense of work responsibility, good communication skills, learning ability, and team spirit;\n8.  Proficient in English and Chinese, in listening, speaking, reading, and writing, timely writing updated workflow and technical documents as required.\n\nEqual Employment Opportunity at Tencent\nAs an equal opportunity employer, we firmly believe that diverse voices fuel our innovation and allow us to better serve our users and the community. We foster an environment where every employee of Tencent feels supported and inspired to achieve individual and common goals.\r\nWork Location: Malaysia-Kuala Lumpur | Singapore-CapitaSky",
+    "Requirement": "岗位要求详情请见上方岗位职责内说明",
+    "LastUpdateTime": "2025年12月23日",
+    "PostURL": "https://tencent.wd1.myworkdayjobs.com/Tencent_Careers/job/Singapore-CapitaSky/Hunyuan-LLM-Site-Reliability-Engineer_R105766-1",
+    "SourceID": 4,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "",
+    "Introduction": "",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": ""
+  }
+}

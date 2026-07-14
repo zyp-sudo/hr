@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "1998689729905844224",
+    "RecruitPostId": 116522,
+    "RecruitPostName": "腾讯视频-AIGC算法研究员-(深圳)(杭州)",
+    "LocationId": 2,
+    "LocationName": "北京",
+    "BGId": 29292,
+    "BGName": "PCG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40001005",
+    "CategoryName": "技术",
+    "ProductName": "腾讯视频",
+    "Responsibility": "1.通过对生成模型（图像/音视频/多模态/3D视觉等）的研究，解决目前算法在生成质量、多样性、可控性、生成效率等上的问题，探索生成模型的突破性技术；\r\n2.从事图像/音视频/多模态/3D视觉领域算法模型的训练和研发，应用于腾讯视频相关的内容创作和用户体验提升；\r\n3.结合自有产品和业务需求，从生成模型迭代、可控模块研发，性能加速等方面优化模型，解决面向业务场景的应用和落地时的关键算法问题，并最终有效改善用户体验和生产效能，协助算法的产品化落地。",
+    "Requirement": "1.计算机、人工智能、数学等相关专业的全日制本科（优先），研究生及以上学历；\r\n2.具有扎实的计算机视觉或机器学习算法基础，有相关方向顶级论文者优先；\r\n3.熟练掌握机器学习和深度学习的基本原理，熟悉常见的生成模型组件和框架，包括 GAN、VAE、Transformer、Diffusion Model等；\r\n4.熟悉模型的可控生成，在图像、音视频、3D视觉等可控生成方向有具体实践经验者优先；\r\n5.熟悉CLIP、MLLM等跨模态表征模型，有NLP、多模态等方向上实践经验优先；\r\n6.具备较强的学习能力、清晰的逻辑思维能力和出色的沟通能力，有强烈的好奇心。",
+    "LastUpdateTime": "2026年07月06日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=1998689729905844224",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "",
+    "Introduction": "渴望为世界带来新意的人，早已对描绘未来的“热词”不陌生——人工智能、机器学习、数据科学等等。腾讯始终在业界前沿不断探索，积极布局，并为优秀的你提供无限广阔的舞台。我们坚信科技的不断革新，最终能带来美好的、撼动人心的改变。",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "五年以上工作经验"
+  }
+}

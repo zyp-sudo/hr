@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "1988582578269085696",
+    "RecruitPostId": 1186080139573833728,
+    "RecruitPostName": "AI Agent Research & Application Intern 106432",
+    "LocationId": 1401,
+    "LocationName": "伦敦",
+    "BGId": 956,
+    "BGName": "IEG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40001005",
+    "CategoryName": "技术",
+    "ProductName": "",
+    "Responsibility": "About the Hiring Team\nLevel Infinite is Tencent’s global gaming brand. It is a global game publisher offering a comprehensive network of services for games, development teams, and studios around the world.\nWe are dedicated to delivering engaging and original gaming experiences to a worldwide audience, whenever and wherever they choose to play while building a community that fosters inclusivity, connection, and accessibility. Level Infinite also provides a wide range of services and resources to our network of developers and partner studios around the world to help them unlock the true potential of their games.\n\nWhat the Role Entails\nThis role focuses on advancing AI Agent architecture, reasoning, and autonomy through applied research and experimentation. Interns will work on cutting-edge projects involving foundation models, planning algorithms, and multi-agent systems, contributing to both theoretical innovation and practical applications.\nKey Responsibilities\n• Conduct research on AI foundation models to enhance reasoning and data-driven analytical capabilities.\n• Design and develop advanced planning and decision-making algorithms that enable Agents to autonomously perform complex tasks and improve operational efficiency.\n• Investigate tool-use mechanisms to allow Agents to effectively integrate and utilize diverse data analysis and system tools for greater adaptability in real-world environments.\n• Explore and implement end-to-end reinforcement learning frameworks and multi-agent collaboration algorithms to improve coordination and optimization across intelligent systems.\n\nWho We Look For\nQualifications \n• Master’s or PhD student in Computer Science, Mathematics, Statistics, Artificial Intelligence, or a related field.\n• Strong foundation in mathematics (linear algebra, probability, statistics) and excellent problem-solving skills.\n• Solid understanding of machine learning and deep learning algorithms (e.g., neural networks, decision trees, SVMs, reinforcement learning), with hands-on implementation experience.\n• Proficiency in Python and familiarity with mainstream ML/DL frameworks such as TensorFlow and PyTorch, with the ability to independently develop and train models.\nPreferred Qualities:\n• Deep curiosity and passion for autonomous systems, reasoning, and multi-agent collaboration.\n• Ability to bridge theoretical research and practical application.\n• Experience with reinforcement learning, tool-augmented LLMs, or agentic workflows is a strong plus.\n• Proficiency in both English and Mandarin will be a plus.\n• Minimum 6-month full-time internship preferred.\n#LI-RL1\n\nEqual Employment Opportunity at Tencent\nAs an equal opportunity employer, we firmly believe that diverse voices fuel our innovation and allow us to better serve our users and the community. We foster an environment where every employee of Tencent feels supported and inspired to achieve individual and common goals.\r\nWork Location: UK-London",
+    "Requirement": "岗位要求详情请见上方岗位职责内说明",
+    "LastUpdateTime": "2026年05月19日",
+    "PostURL": "https://tencent.wd1.myworkdayjobs.com/Tencent_Careers/job/UK-London/AI-Agent-Research---Application-Intern_R106432-1",
+    "SourceID": 4,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "",
+    "Introduction": "",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": ""
+  }
+}

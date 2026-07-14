@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "1986617845269815296",
+    "RecruitPostId": 115877,
+    "RecruitPostName": "Supercell《荒野乱斗》-技术美术-角色材质渲染",
+    "LocationId": 1,
+    "LocationName": "深圳",
+    "BGId": 956,
+    "BGName": "IEG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40002002",
+    "CategoryName": "设计",
+    "ProductName": "荒野乱斗",
+    "Responsibility": "1.和美术人员及引擎程序员一起设计渲染方案，编写Shader，实现美术效果；\r\n2.为场景和角色美术搭建Lookdev环境，确保美术资产在不同光照环境下的效果表现；\r\n3.优化美术pipeline并开发工具提高美术工作流效率，支持美术和开发团队解决生产中遇到的问题；\r\n4.编写并维护技术文档，向美术推广新工具和最佳实践。",
+    "Requirement": "1.3年以上游戏项目经验，有至少一个成功上线项目 ，同时具备端游手游经验更佳；\r\n2.熟悉色彩和物理灯光相关知识，了解PBR理论。具备图形学基础及高等数学知识，熟悉实时渲染管线；\r\n3.丰富的游戏角色渲染效果制作经验，熟悉主流端手游戏角色游相关材质渲染方案，能针对已有方案提出改进建议；\r\n4.熟练掌握GLSL, HLSL, CG等至少一门Shader编程语言，能够编写高效可维护的Shader代码，精通DCC软件（3dsmax/Maya，SD/SP等）；\r\n5.熟悉OpenGL ES及当前移动平台上的技术限制，能够针对移动平台进行优化；\r\n6.具备良好的书面和口头沟通能力，有审美和逻辑思维能力，能够独立解决问题。",
+    "LastUpdateTime": "2026年06月10日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=1986617845269815296",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "1.大MAU产品；\r\n2.国际视野。",
+    "ImportantItem": "1.有卡通渲染项目经验；\r\n2.拥有良好的英语水平。",
+    "Introduction": "【腾讯游戏｜这一局，由你主导】\n用画笔创造玩家热爱的世界。在腾讯游戏，你将主导角色设计、场景搭建或风格定义，用扎实的美术功底与独特创意，打造真正触动人心的视觉体验。这里有成熟的技术支持、丰富的项目机会，你的作品将随国民级游戏走进亿万玩家视野。加入我们，让艺术真正“玩”出价值。",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "三年以上工作经验"
+  }
+}

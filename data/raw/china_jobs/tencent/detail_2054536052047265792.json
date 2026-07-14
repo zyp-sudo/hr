@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2054536052047265792",
+    "RecruitPostId": 120015,
+    "RecruitPostName": "腾讯云-AI Agent测试工程师",
+    "LocationId": 1,
+    "LocationName": "深圳",
+    "BGId": 29294,
+    "BGName": "CSIG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40001002",
+    "CategoryName": "技术",
+    "ProductName": "腾讯云",
+    "Responsibility": "1.设计并落地面向云产品测试场景的多 Agent 协作架构与 Testing Harness 工程体系，支撑用例生成、代码转化、缺陷修复、自我评估等能力协同运行；\n2.将用例生成、执行转化、运行校验、置信度评估、根因定位、报告洞察等能力封装为标准化 Skill / MCP，建设跨产品线复用的智能测试能力底座；\n3.建设 Agent Context Learning 与端到端评测体系，量化 AI 对测试效率、质量和 Agent 能力表现的实际提升；\n4.推动 AI 能力集成到 CI/CD 流水线，形成智能化测试左移与右移闭环；\n5.沉淀 AI 时代云产品测试方法论、工程规范和最佳实践，推动团队测试模式升级。",
+    "Requirement": "1.计算机相关专业本科及以上学历，5年以上测试开发或 AI 工程经验，其中 1 年以上 LLM / Agent 工程实践经验；\n2.工程基础扎实，熟练掌握 Python / Go / Java 至少一门，具备中大型系统架构设计与落地经验；\n3.熟悉 LangGraph / AutoGen / MCP 等 Agent 框架，理解 Context Engineering、RAG、Planning、Reflection、Harness Engineering 等核心范式；\n4.熟悉主流大模型能力特点，具备 LLM / Agent 评测体系或 Testing Harness 从 0 到 1 建设经验；\n5.具备自动化测试、覆盖率分析、质量度量、缺陷分析等测试基础；有云产品 / 分布式系统测试、eBPF、开源项目、论文或专利经验者优先。",
+    "LastUpdateTime": "2026年06月03日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2054536052047265792",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "",
+    "Introduction": "在腾讯，优秀的技术质量管理，保证腾讯每一个的产品与服务能更加稳定、顺畅、安心地被用户使用和体验。与技艺高超的同事们一同深化对架构设计、数据和产品的理解，在美好向善的世界里，成为一块闪耀的基石。",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "五年以上工作经验"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "1971477039080951808",
+    "RecruitPostId": 115051,
+    "RecruitPostName": "《火影忍者》手游-客户端开发-系统开发方向",
+    "LocationId": 1,
+    "LocationName": "深圳",
+    "BGId": 956,
+    "BGName": "IEG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40001001",
+    "CategoryName": "技术",
+    "ProductName": "火影忍者-手游",
+    "Responsibility": "1.负责游戏日常系统运营等模块的开发与维护；\n2.负责相关工具链的开发与维护；\n3.负责分析、定位、解决项目的疑难问题，以及对体验和性能方面的调优。",
+    "Requirement": "1.3年以上游戏客户端开发经验；\r\n2.具备扎实的计算机专业基础知识(计算机系统、OS、数据结构等)，熟练使用C#, lua, C/C++；\r\n3.丰富的Unity3D引擎实践经验，熟悉其框架和主要模块的功能特性；\r\n4.出色的学习能力，良好的问题分析解决能力；\r\n5.责任心强，有较高的团队协作和任务跟进能力，善于沟通；\r\n6.热爱游戏，关注用户体验者优先。",
+    "LastUpdateTime": "2026年06月16日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=1971477039080951808",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "",
+    "Introduction": "",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "两年以上工作经验"
+  }
+}

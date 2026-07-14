@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2065271902099914752",
+    "RecruitPostId": 120550,
+    "RecruitPostName": "J3-UE5微恐射击-怪物策划",
+    "LocationId": 1,
+    "LocationName": "深圳",
+    "BGId": 956,
+    "BGName": "IEG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40003002",
+    "CategoryName": "产品",
+    "ProductName": "CFH-端游-国际版",
+    "Responsibility": "1.负责射击PVPVE大地图内怪物及BOSS的玩法设计及落地跟进；\r\n2.产出怪物相关的玩法设计文档，能够利用蓝图实现基础的玩法原型；\r\n3.负责怪物相关行为树及战斗系统的设计调试和后续维护，根据测试反馈不断调优；\r\n4.和其他模块合作，跟进怪物概念设计及功能开发、动作、特效全流程，对怪物的最终质量负责。",
+    "Requirement": "1.3年以上怪物设计相关经验，对射击游戏有深度了解，主导过射击PVE或者PVPVE的相关怪物设计者优先（可附上相关设计稿，截图、视频或者链接）；\n2.熟练使用UE蓝图，深度掌握怪物行为树设计，能够独立制作怪物玩法原型；\n3.熟悉怪谈/恐怖/SCP类题材者优先，能够将诉求转化为清晰明确的参考内容，具备一定的美学鉴赏能力；\n4.逻辑思维缜密，能抗压，沟通力强。有较强的游戏拆解能力，对品质有极高的自我追求；\n5.加分项：具备“怪物+关卡”的综合设计视角，能将怪物行为与关卡结构、掩体机制、环境交互进行深度融合设计者优先。",
+    "LastUpdateTime": "2026年06月29日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2065271902099914752",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "",
+    "Introduction": "【腾讯游戏｜这一局，由你主导】\n腾讯游戏，致力于以顶尖技术创造丰富优质的游戏体验，用创新玩法点燃玩家情感共鸣，深度打磨每处游戏细节。加入我们，用创造力拓展游戏的边界，为用户创造高品质数字生活体验！",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "三年以上工作经验"
+  }
+}

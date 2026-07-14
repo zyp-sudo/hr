@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "1989222729840218112",
+    "RecruitPostId": 116002,
+    "RecruitPostName": "AI infra规划架构师",
+    "LocationId": 1,
+    "LocationName": "深圳",
+    "BGId": 958,
+    "BGName": "TEG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40001003",
+    "CategoryName": "技术",
+    "ProductName": "运营管理（运营管理部）",
+    "Responsibility": "1.负责公司整体AI平台架构设计和AI工程化技术。通过AI基础设施和软硬件协同优化来提升公司大模型训练和推理的效率。负责前沿异构计算芯片、大模型推理优化、大规模训练的技术演进跟踪和落地。",
+    "Requirement": "1.2年以上相关开发经验，熟悉Go/C++/Python/Java等至少两门语言；\r\n2.有TensorFlow、Pytorch使用或者优化经验，有机器学习平台开发经验优先；\r\n3.了解GPU、CUDA、神经网络、RAG等技术，有大模型分布式训练和推理优化经验优先；\r\n4.对AI底层硬软件基础设施，AI工程化和大模型推理优化感兴趣。",
+    "LastUpdateTime": "2026年06月16日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=1989222729840218112",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "",
+    "Introduction": "在腾讯，优秀的技术运营工程师始终赋能业务，关注技术运营的质量、成本、效率和安全。他们不仅是经验丰富的问题解决者，更是具有全局视角的架构师，通过自动化工具的建设，强力提升平台效能，助力业务发展。",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "五年以上工作经验"
+  }
+}

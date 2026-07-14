@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2072205578725404672",
+    "RecruitPostId": 120845,
+    "RecruitPostName": "《逆战：未来》战斗策划（3C机甲向）",
+    "LocationId": 1,
+    "LocationName": "深圳",
+    "BGId": 956,
+    "BGName": "IEG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40003002",
+    "CategoryName": "产品",
+    "ProductName": "code-z",
+    "Responsibility": "1.基于战斗，玩法和品质需求，独立设计并推进角色/机甲动画的效果迭代；\r\n2.设计并推进战斗与演出时的镜头设计与落地，镜头功能的建设；\r\n3.设计并推进局内角色基础逻辑，包括角色状态机，角色模型，动画，演出资源等初始化；\r\n4.参与角色异常状态，技能，演出等内容的制作，包含并不限于前期设计顾问，方案敲定，逻辑制作，后期维护；\r\n5.制定3C基础的规范并编写文档，同步宣讲；\r\n6.设计与制作机甲技能。",
+    "Requirement": "1.2年以上游戏项目3C策划，或3C方向技术策划经验；\r\n2.熟悉游戏镜头的设计原理与实现方式，TP镜头的基础机制；\r\n3.熟悉FP与TP动画概念与技术，能动手设计并制作动画状态机；\r\n4.热爱机甲题材，对机械结构有了解；\r\n5.熟悉多种主流射击PVE/PVP玩法，深度参与过至少一种FPS项目的研发；\r\n6.热爱游戏行业，有UE项目经验优先；\r\n7.有良好的学习和抗压、沟通协作能力。",
+    "LastUpdateTime": "2026年07月01日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2072205578725404672",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "",
+    "Introduction": "",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "两年以上工作经验"
+  }
+}

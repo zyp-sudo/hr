@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "1917415886722015232",
+    "RecruitPostId": 111743,
+    "RecruitPostName": "UE微恐轻动作项目-主关卡",
+    "LocationId": 1,
+    "LocationName": "深圳",
+    "BGId": 956,
+    "BGName": "IEG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40003002",
+    "CategoryName": "产品",
+    "ProductName": "预研产品-手游APP-Project Metro",
+    "Responsibility": "1.作为关卡方向负责人，制定合作PVE与PVEVP关卡体系、节奏曲线、空间规则和品质标准；\n2.主导关卡从主题概念、灰盒验证、玩法布点、氛围呈现、性能约束到验收上线的全流程；\n3.统筹玩法、PVE、战斗、叙事、场景、美术、音频、技术关卡等协作，确保探索、搜集、遭遇、撤离和社交协作体验闭环；\n4.建立模块化/半程序化关卡生产规范、评审机制、外包标准与复用组件库，提高版本产能和稳定性；\n5.通过数据、热区、路线、撤离、玩家反馈等信息复盘关卡质量，持续优化难度、节奏和可重玩空间。",
+    "Requirement": "1.5年以上关卡策划经验，有主关卡/关卡负责人/多人项目关卡Owner经历，至少主导过一款上线或完整测试项目的关卡体系建设；\n2.深入理解合作PVE、撤离玩法、轻动作、箱庭等关卡设计，对多人协作与多队冲突有方法论；\n3.熟练使用UE编辑器、蓝图、关卡调试工具，具备灰盒验证、模块化搭建、性能/视线/动线控制经验；\n4.有较强空间审美、节奏设计和问题诊断能力，能用作品集清晰说明从目标、布局到验证迭代的过程；\n5.具备方向管理能力，能组织评审、拆解排期、指导策划/TA/外包协作，沉淀可复制的关卡方法论。",
+    "LastUpdateTime": "2026年07月06日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=1917415886722015232",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "",
+    "Introduction": "",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "三年以上工作经验"
+  }
+}

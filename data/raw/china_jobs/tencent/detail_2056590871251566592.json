@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2056590871251566592",
+    "RecruitPostId": 120135,
+    "RecruitPostName": "QClaw-桌面端（macOS&Windows）开发工程师（广州）",
+    "LocationId": 1,
+    "LocationName": "深圳",
+    "BGId": 29294,
+    "BGName": "CSIG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40001001",
+    "CategoryName": "技术",
+    "ProductName": "安全管家",
+    "Responsibility": "1.本岗位可以base广州or深圳；\r\n2.负责macOS&Windows工具产品客户端功能的方案设计、研发实现；\r\n3.负责macOS&Windows的新特性技术预研、模块性能优化等。",
+    "Requirement": "1.本科及以上学历，计算机相关专业；\r\n2.两年以上 macOS 或 Windows 软件开发经验，一年以上跨桌面端开发能力；\r\n3.熟练掌握OC/Swift，熟练掌握 C/C++；\r\n4.熟悉macOS、Windows系统运行机制及内核原理，熟悉界面编程、网络通信、进程间通讯等相关技术；\r\n5.熟练掌握Claude Code、Codex、Codebuddy等AI编程工具与范式；\r\n6.具备良好的自驱力、沟通协调能力，分析解决问题的能力；\r\n7.有electron 等更多跨平台研发经验加分；\r\n8.有安全/AI工具产品研发经验加分。",
+    "LastUpdateTime": "2026年05月19日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2056590871251566592",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "",
+    "Introduction": "在腾讯客户端开发的字典里，“敏捷高效”与“精益求精”并不互斥，追求技术的深度是我们共同的信仰。希望你也能在足够广阔的平台上尽情的施展拳脚。",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "三年以上工作经验"
+  }
+}

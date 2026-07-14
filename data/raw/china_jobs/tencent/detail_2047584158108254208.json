@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2047584158108254208",
+    "RecruitPostId": 119628,
+    "RecruitPostName": "《王者荣耀》UGC-研发项目管理",
+    "LocationId": 1,
+    "LocationName": "深圳",
+    "BGId": 956,
+    "BGName": "IEG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40003003",
+    "CategoryName": "产品",
+    "ProductName": "王者荣耀",
+    "Responsibility": "1.负责游戏UGC管线管理：制定研发排期和版本计划，协调上下游策划、开发、美术等岗位按计划达成版本目标；\r\n2.流程优化：结合UGC管线生产特殊性，制定与其匹配的研发流程，并持续优化；\r\n3.跨团队、跨版本协同：统筹UGC管线、外包研发/美术产能 与游戏主版本、跨职能的高效协同工作，确保版本一致性发布；\r\n4.确保UGC管线研发质量：通过流程梳理、数据监控等手段，保障版本按时高质量交付。",
+    "Requirement": "1.具备3-5年以上游戏行业项目管理经验，且有至少一个从研发立项到成功上线的完整项目经历，或管理过100人以上大型游戏研发管线；\r\n2.熟练掌握TAPD、Jira、Unity/UE、SVN/P4等游戏研发项目管理主流平台/工具；\r\n3.深刻理解游戏研发全流程，能够与程序、美术、策划团队进行无障碍技术与业务沟通；\r\n4.熟悉各个主流UGC游戏、编辑器产品，深度参与过游戏内容编辑器、工作流管线的研发与流程建设；\r\n5.具备出色的沟通协调能力、逻辑思维能力和问题解决能力，能在高压环境下保持高效与专注。",
+    "LastUpdateTime": "2026年04月24日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2047584158108254208",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "1.有UGC类玩法、编辑器研发项目管理经验者优先；\r\n2.具备一定技术策划能力或Unity/UE引擎技术理解，能与研发上下游顺畅沟通；\r\n3.有大型游戏研发管理经验、有外包管理协作经验者优先。",
+    "Introduction": "",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "三年以上工作经验"
+  }
+}

@@ -1,0 +1,21 @@
+jobId,skill,dimension,level,weight,required,sources,trend
+java-backend-engineer,Java,编程语言,advanced,10,true,seed,stable
+java-backend-engineer,Spring Boot,后端框架,advanced,9,true,seed,stable
+java-backend-engineer,MySQL,数据存储,intermediate,7,true,seed,stable
+java-backend-engineer,Redis,缓存中间件,intermediate,6,true,seed,stable
+java-backend-engineer,Microservices,系统架构,advanced,8,true,seed,rising
+ai-agent-engineer,Python,编程语言,advanced,8,true,seed,stable
+ai-agent-engineer,LLM,人工智能,advanced,10,true,seed,rising
+ai-agent-engineer,RAG,检索增强,advanced,9,true,seed,rising
+ai-agent-engineer,Vector Search,向量检索,intermediate,8,true,seed,rising
+ai-agent-engineer,Evaluation,模型评测,intermediate,7,true,seed,rising
+data-governance-engineer,SQL,数据查询,advanced,9,true,seed,stable
+data-governance-engineer,Data Warehouse,数据建模,advanced,9,true,seed,stable
+data-governance-engineer,ETL,数据工程,advanced,8,true,seed,stable
+data-governance-engineer,Data Quality,数据治理,advanced,10,true,seed,rising
+data-governance-engineer,Metadata,元数据管理,intermediate,7,true,seed,rising
+cloud-native-sre,Linux,操作系统,advanced,8,true,seed,stable
+cloud-native-sre,Docker,容器技术,intermediate,7,true,seed,stable
+cloud-native-sre,Kubernetes,云原生,advanced,10,true,seed,rising
+cloud-native-sre,DevOps,工程效率,advanced,8,true,seed,stable
+cloud-native-sre,Observability,可观测性,intermediate,7,true,seed,rising

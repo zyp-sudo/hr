@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2004172359300440064",
+    "RecruitPostId": 116846,
+    "RecruitPostName": "《穿越火线手游》-Unity高级引擎开发工程师（引擎组）",
+    "LocationId": 1,
+    "LocationName": "深圳",
+    "BGId": 956,
+    "BGName": "IEG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40001001",
+    "CategoryName": "技术",
+    "ProductName": "穿越火线：英雄",
+    "Responsibility": "1.负责以下工作的其中一到多项：；\r\n2.引擎代码维护以及版本升级工作；\r\n3.负责Unity引擎渲染底层API层的开发；\r\n4.负责开放世界相关技术的研发工作：地形，植被，光影，Houdini工具链及其它大世界关键技术；\r\n5.负责游戏中图形相关特性的开发，根据需求开发高级渲染效果，增强游戏表现力；\r\n6.负责美术资产生产标准和框架的探索制定；\r\n7.负责制定工作室研发工具管线方案，开发low-level tools和引擎功能，帮助研发团队提升研发效率；\r\n8.负责游戏中性能优化相关工作，针对需求定制增改Unity引擎底层功能；\r\n9.负责图形兼容性分析以及疑难问题的分析定位工作。",
+    "Requirement": "1.3年以上游戏引擎开发和维护经验，深刻理解3D游戏引擎架构，精通引擎接口和游戏制作流程；\r\n2.熟悉3D图形学，有良好的数学、算法基础及编程习惯；\r\n3.有开放大世界领域开发经验，如：地形，植被，光影渲染，多线程调度；\r\n4.熟练掌握3D图形渲染技术，精通Shader相关开发；\r\n5.责任心强，善于沟通，对游戏前沿技术有热情；\r\n6.有Unity引擎手游开发经验优先，对FPS游戏熟悉和热爱优先。",
+    "LastUpdateTime": "2026年06月29日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2004172359300440064",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "",
+    "Introduction": "",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "三年以上工作经验"
+  }
+}

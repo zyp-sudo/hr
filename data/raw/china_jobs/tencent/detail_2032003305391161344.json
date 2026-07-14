@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2032003305391161344",
+    "RecruitPostId": 118433,
+    "RecruitPostName": "QClaw-高级TypeScript工程师（qclaw核心引擎方向）",
+    "LocationId": 1,
+    "LocationName": "深圳",
+    "BGId": 29294,
+    "BGName": "CSIG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40001001",
+    "CategoryName": "技术",
+    "ProductName": "安全管家",
+    "Responsibility": "1.参与 OpenClaw 核心 Gateway 与 Agent Runtime 的设计与开发；\r\n2.优化消息处理流程、mutil-agent多模型调度和session会话管理机制；\r\n3.设计和开发 OpenClaw 插件（Skills）和插件 （plugins），了解OpenClaw核心引擎和生态演进；\r\n4.设计并实现高性能 WebSocket 通信协议与数据流架构；\r\n5.负责核心模块的代码质量、性能调优与技术文档编写，参与技术方案评审，推动架构演进。",
+    "Requirement": "1.年以上 TypeScript / Node.js 开发经验，前端框架使用经验（React / Vue / Svelte）；\r\n2.精通异步编程、事件驱动架构、WebSocket 通信；\r\n3.熟悉 Docker 容器化部署，了解沙箱安全隔离机制；\r\n4.对 LLM / AI Agent 领域有浓厚兴趣或实际项目经验；\r\n5.良好的开源社区参与经验优先。",
+    "LastUpdateTime": "2026年06月12日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2032003305391161344",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "1.设计和开发 OpenClaw 技能（Skills）插件（pluins），拓展智能体能力边界；\n2.开发多渠道通信适配器（微信、飞书、Telegram 等；\n3.熟悉 Playwright 或浏览器自动化技术；\n4.有 macOS 原生应用开发经验（Swift / Objective-C）。",
+    "Introduction": "作为一名前端开发工程师，你需要在快速变化的技术世界中保持一贯的敏锐与好奇，同时懂得如何将项目落地，给用户创造更多惊喜。你将与产品团队、客户端团队紧密合作，一同打造极致的用户体验。随着技术视野的不断拓宽，公司将会与你一同成长，个人职业的更多可能性亦被打开。",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "五年以上工作经验"
+  }
+}

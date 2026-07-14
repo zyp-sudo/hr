@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2026648914832293888",
+    "RecruitPostId": 117940,
+    "RecruitPostName": "企业微信-AI应用后台开发工程师-多智能体方向(成都/北京)",
+    "LocationId": 5,
+    "LocationName": "广州",
+    "BGId": 14129,
+    "BGName": "WXG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40001001",
+    "CategoryName": "技术",
+    "ProductName": "企业微信SaaS",
+    "Responsibility": "1.负责AI agent的研发与维护工作，完成各AI agent的功能实现、性能维护；\r\n2.与产品、算法、测试等团队紧密配合，搭建AI agent服务，打通企业自有数据和服务，丰富企业微信AI能力；\r\n3.持续进行系统的技术架构优化与性能优化，提升产品竞争力。",
+    "Requirement": "1.计算机/人工智能相关专业，1年以上工程开发经验；\r\n2.具备良好的编程能力，熟悉C++/Python，有1年以上Linux/Unix后台开发工作经验；\r\n3.了解大模型相关技术原理与基础知识，具备AI agent项目开发经验优先；\r\n4.能独立完成系统/功能方案设计与开发、具备良好的问题分析解决能力、责任心强；\r\n5.对于探索前沿技术有热情，具备独立探索前沿技术的能力。",
+    "LastUpdateTime": "2026年06月25日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2026648914832293888",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "",
+    "Introduction": "",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "一年以上工作经验"
+  }
+}

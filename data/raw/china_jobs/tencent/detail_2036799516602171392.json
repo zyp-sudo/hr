@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2036799516602171392",
+    "RecruitPostId": 118835,
+    "RecruitPostName": "AI金融数据工程师",
+    "LocationId": 1,
+    "LocationName": "深圳",
+    "BGId": 953,
+    "BGName": "CDG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40001001",
+    "CategoryName": "技术",
+    "ProductName": "公共",
+    "Responsibility": "1.负责AI金融数据库和MCP的规划和建设，推动大模型技术在金融AI助理、智能选基、智能投顾等金融核心场景的落地；\r\n2.负责金融行业数据库、金融画像库的规划和建设，数据技术底座建设，保障数据质量与时效性；\r\n3.负责金融量化策略的构建和开发，赋能用户的金融投资决策；\r\n4.关注AI领域的前沿技术和发展趋势，探索AI在金融数据生产和投资决策能力构建上的应用。",
+    "Requirement": "1.工作要求：；\r\n2.本科或以上学历，计算机、软件、人工智能、数据科学、数学等相关专业；\r\n3.扎实的编程功底，精通Python或Java，熟练掌握SQL及数据库编程；\r\n4.熟悉大数据生态技术（Hadoop/Spark/flink/Hive），熟悉数仓开发和MySQL技术；\r\n5.熟悉Linux/Unix操作系统，掌握网络编程，有一定系统运维能力；\r\n6.有大模型相关实践经验，熟悉主流模型核心架构和训练原理，熟悉MCP架构和原理；\r\n7.良好的学习和沟通能力，耐心细致，善于独立思考；对金融行业知识有一定了解的优先；\r\n8.富有工作激情和责任感，良好的团队协作和抗压能力。",
+    "LastUpdateTime": "2026年06月23日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2036799516602171392",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "",
+    "Introduction": "在腾讯，技术人解决问题的激情永不熄灭。无论是面对产品、程序的问题，还是生活与人的问题，腾讯技术人都力图交出漂亮的答卷。我们善用科学工具，以强大的思维之力创造世界，为卓越的产品体验保驾护航，也为公司和产品策略提出宝贵的洞见，用技术引领新的变革。这里的每位成员，既传承着长久以来的务实文化，又时刻以创新眼光瞄准大海星辰。我们十分期待你加入这样一个「技术社区」，分享团队能量，尽情发挥所长。",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "五年以上工作经验"
+  }
+}

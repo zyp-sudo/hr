@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2029496883826819072",
+    "RecruitPostId": 118231,
+    "RecruitPostName": "微信视频号-高级数据分析师",
+    "LocationId": 5,
+    "LocationName": "广州",
+    "BGId": 14129,
+    "BGName": "WXG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40001005",
+    "CategoryName": "技术",
+    "ProductName": "视频号短视频",
+    "Responsibility": "1.从平台消费体验视角出发，负责商业化广告调控、用户流量体验保护等数据科学工作，通过ab实验、因果推断等方法，构建科学严谨的评估体系，对策略收益进行评估，并提出优化建议，推动策略优化带来业务增长；\r\n2.负责日常商业化业务总体监控及归因，定期完成商业化放量测算，为业务决策、资源调配和长期规划提供数据支持；\r\n3.探索统计、机器学习、因果推断等方法论，并推动相关方法在业务落地，产生业务影响力；\r\n4.与产品，运营，推荐算法等业务方配合，通过严谨的量化及分析方法，对于商业化策略迭代提供优化意见，带来业务的实际提升增长。",
+    "Requirement": "1.熟悉广告系统原理，有两年及以上商业化分析经验；\r\n2.数据科学、统计学、应用数学、机器学习、计算机科学等领域专业硕士以上学位；\r\n3.熟练使用Python/R，有ab实验，因果推断，量化模型，短视频商业化、推荐策略分析实践经验优先；\r\n4.熟悉Hive、Spark等大数据处理环境；\r\n5.具备较好的逻辑思维能力，优秀的沟通协作能力，对有挑战的问题充满热情。",
+    "LastUpdateTime": "2026年07月03日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2029496883826819072",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "",
+    "Introduction": "",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "两年以上工作经验"
+  }
+}

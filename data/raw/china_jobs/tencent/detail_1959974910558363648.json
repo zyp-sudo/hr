@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "1959974910558363648",
+    "RecruitPostId": 114373,
+    "RecruitPostName": "微信小店-大模型算法工程师",
+    "LocationId": 5,
+    "LocationName": "广州",
+    "BGId": 14129,
+    "BGName": "WXG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40001005",
+    "CategoryName": "技术",
+    "ProductName": "微信交易平台",
+    "Responsibility": "1.探索大模型在电商场景的应用；\n2.利用大模型优化电商推荐效果，包括但不限于召回、排序等环节；\n3.跟踪大模型的前沿进展，研究数据合成、后训练等方法，推动模型在实际场景中的效果优化。",
+    "Requirement": "1.具备扎实的NLP/深度学习研发经验，有大模型应用的相关实践经历，具备RAG和问答系统经验者优先；\n2.深入理解LLM技术栈（如SFT、RM、RLHF、数据合成等）。",
+    "LastUpdateTime": "2026年06月26日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=1959974910558363648",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "1.ACL、EMNLP、NeurIPS 等顶级会议发表过大模型相关论文者优先。",
+    "Introduction": "渴望为世界带来新意的人，早已对描绘未来的“热词”不陌生——人工智能、机器学习、数据科学等等。腾讯始终在业界前沿不断探索，积极布局，并为优秀的你提供无限广阔的舞台。我们坚信科技的不断革新，最终能带来美好的、撼动人心的改变。",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "两年以上工作经验"
+  }
+}

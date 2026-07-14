@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "1976128393539899392",
+    "RecruitPostId": 115128,
+    "RecruitPostName": "企业微信-AI Agent高级评测工程师",
+    "LocationId": 5,
+    "LocationName": "广州",
+    "BGId": 14129,
+    "BGName": "WXG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40001002",
+    "CategoryName": "技术",
+    "ProductName": "企业微信SaaS",
+    "Responsibility": "1.负责评测体系建设：设计并持续优化 AI Agent 评测框架，覆盖任务完成率、多轮对话质量、工具调用准确性等核心维度\n2.评测执行与分析：针对企业微信 AI Agent 场景（总结、搜索、销售、审批、日程助理等）制定测试用例，执行自动化与人工评测，输出量化分析报告\n3. Benchmark 研究与构建：跟踪业界主流 Agent 评测基准（如 AgentBench、PinchBench、TAU-bench等），结合企业微信业务场景进行改造与落地\n4.数据治理：推动数据标注规范制定和标注质量管控\n5. 问题定位与反馈：深度分析 Agent 失败案例，精准定位规划、记忆、工具调用等模块的能力短板，与研发/产品团队闭环跟进",
+    "Requirement": "1.计算机/AI 相关专业本科及以上，熟悉 LLM 基础原理，了解 RAG、Function Calling、Multi-Agent 等主流 Agent 技术架构\n2.有 NLP 模型评测、ASR评测或 AI 产品质量保障工作经验，熟悉自动化测试框架者优先\n3.有数据标注规范设计或标注平台使用经验者加分\n4.具备企业协作软件或 ToB 产品的测试经验，能将业务场景转化为可量化的评测指标\n5.逻辑清晰，善于结构化表达，能在研发、产品、运营等多角色间高效协作，推动问题闭环落地",
+    "LastUpdateTime": "2026年06月12日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=1976128393539899392",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "",
+    "Introduction": "",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "两年以上工作经验"
+  }
+}

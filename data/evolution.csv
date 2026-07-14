@@ -1,0 +1,17 @@
+jobId,period,skill,demand
+java-backend-engineer,2024Q1,Java,78
+java-backend-engineer,2024Q2,Spring Boot,74
+java-backend-engineer,2024Q3,Microservices,82
+java-backend-engineer,2024Q4,Redis,68
+ai-agent-engineer,2024Q1,LLM,72
+ai-agent-engineer,2024Q2,RAG,80
+ai-agent-engineer,2024Q3,Vector Search,86
+ai-agent-engineer,2024Q4,Evaluation,79
+data-governance-engineer,2024Q1,SQL,75
+data-governance-engineer,2024Q2,Data Warehouse,78
+data-governance-engineer,2024Q3,Data Quality,84
+data-governance-engineer,2024Q4,Metadata,76
+cloud-native-sre,2024Q1,Linux,74
+cloud-native-sre,2024Q2,Docker,72
+cloud-native-sre,2024Q3,Kubernetes,88
+cloud-native-sre,2024Q4,Observability,81

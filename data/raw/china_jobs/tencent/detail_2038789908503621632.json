@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2038789908503621632",
+    "RecruitPostId": 118958,
+    "RecruitPostName": "机器学习平台专家/架构师（深圳/北京/上海）",
+    "LocationId": 1,
+    "LocationName": "深圳",
+    "BGId": 958,
+    "BGName": "TEG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40001001",
+    "CategoryName": "技术",
+    "ProductName": "大数据(数据计算平台部)",
+    "Responsibility": "1.负责腾讯混元机器学习平台的设计与开发，包括：性能优化，持续提升训练性能，包括多机多卡大规模训练优化，数据交换优化等；\n2.深入理解跟踪业界AIGC动态，优化平台技术方案，提升平台易用性，降低大模型研发门槛，不断推进平台的LLMOps能力升级；\n3.积极追踪业内AI动态，优化内部技术方案，改进产品性能，不断推进AI架构升级。",
+    "Requirement": "1.熟练掌握TensorFlow、Pytorch、deepSpeed等主流深度学习框架中的一种或多种，并有具体的项目应用经验(包括但不限于模型训练优化、模型服务优化等经验)；\n2.熟练使用Java/Go/Python至少一种编程语言，良好的软件设计和开发能力；\n3.具备owner意识，能主动推进项目进展，承担更多责任，具备团队协作意识。",
+    "LastUpdateTime": "2026年07月06日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2038789908503621632",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "",
+    "Introduction": "在腾讯，后台开发工程师不仅是“又快又稳”的问题解决专家，更是生态共创者。你将与技术团队一同沉淀优质代码，让它成为我们共有的宝贵资产。在不同的业务场景和技术发展阶段，你的架构思维也将帮助更多协作团队拓展新的思考。我们也珍视你的挑战精神，同时欢迎你一起参与团队愿景、文化和产品方向的探讨。",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "五年以上工作经验"
+  }
+}

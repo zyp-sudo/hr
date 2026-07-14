@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2037000036419796992",
+    "RecruitPostId": 118848,
+    "RecruitPostName": "数据中心电气产品研发工程师",
+    "LocationId": 1,
+    "LocationName": "深圳",
+    "BGId": 958,
+    "BGName": "TEG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40001003",
+    "CategoryName": "技术",
+    "ProductName": "IDC研发",
+    "Responsibility": "1.负责数据中心电气类、电力电子类产品技术路线制定；\r\n2.负责产品规格定义，深度参与产品研发、测试、问题整改等过程管理及产品全生命周期管理；\r\n3.负责带领和推动数据中心电气类产品研发并持续落地；\r\n4.负责持续优化数据中心电力架构，提升数据中心供电可靠性，降低运营成本。",
+    "Requirement": "1.硕士及以上学历，电气工程、自动化或相关专业；\r\n2.五年以上开关电源研发工作经验，有过UPS、HVDC等大功率电力电子产品研发经验者优先，有国内外头部电源厂商研发经验优先；\r\n3.具备良好的带项目的能力，作为项目负责人或主要技术负责人承担过2款以上电源产品研发，市场使用数量不少于1000套；\r\n4.精通产品开发/测试/验证/交付流程和关键节点过程控制，熟悉产品运维流程建立；\r\n5.熟悉数据中心供电架构、电气类产品供应链状况，了解行业主流厂家的产品与解决方案；\r\n6.严谨认真的工作态度、良好的团队合作精神和沟通协调能力。",
+    "LastUpdateTime": "2026年06月25日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2037000036419796992",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "",
+    "Introduction": "",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "五年以上工作经验"
+  }
+}

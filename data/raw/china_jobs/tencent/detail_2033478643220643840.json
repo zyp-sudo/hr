@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2033478643220643840",
+    "RecruitPostId": 118554,
+    "RecruitPostName": "混元多模态大模型技术美术（资产制作/渲染方向）（北京）",
+    "LocationId": 1,
+    "LocationName": "深圳",
+    "BGId": 958,
+    "BGName": "TEG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40002002",
+    "CategoryName": "设计",
+    "ProductName": "AI",
+    "Responsibility": "1.负责制作或优化项目中使用的三维物体、场景的模型和贴图；\r\n2.对场景中美术资源进行管理和优化，降低资源占用，提高项目整体运行效率；\r\n3.负责输出符合项目要求的高质量静态和动态渲染资源；\r\n4.负责图形兼容性分析以及疑难问题的分析定位。",
+    "Requirement": "1.本科以上学历，3-5年以上工作经验；\r\n2.熟练运用 UE 引擎，对材质、特效、场景效能优化、UI、动画有较深的研究；\r\n3.美术、动画、设计相关专业；良好的美术功底，具有较强的审美能力；\r\n4.熟悉 PBR 流程，精通节点着色器，能够根据美术效果需求编写 shader；\r\n5.具备写实类优先经验者优先。动画、设计相关专业；\r\n6.良好的美术功底，具有较强的审美能力。",
+    "LastUpdateTime": "2026年06月15日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2033478643220643840",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "",
+    "Introduction": "",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "两年以上工作经验"
+  }
+}

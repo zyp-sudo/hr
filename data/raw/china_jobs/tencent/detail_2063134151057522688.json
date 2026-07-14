@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2063134151057522688",
+    "RecruitPostId": 120414,
+    "RecruitPostName": "Project T-游戏动画（UE5单机方向）",
+    "LocationId": 1,
+    "LocationName": "深圳",
+    "BGId": 956,
+    "BGName": "IEG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40002002",
+    "CategoryName": "设计",
+    "ProductName": "Project T",
+    "Responsibility": "1.动画制作与表演设计：负责游戏中角色、NPC、生物及场景交互的动画设计与制作，确保动作流畅、自然，符合写实风格的动作节奏和叙事表现；根据剧情需求，独立完成动画的绑定（Rigging）、关键帧动画（Keyframe Animation）或动作捕捉数据（Motion Capture）的后期精修，注重表情、肢体语言及情绪传达；设计并实现高难度动作（如攀爬、战斗、环境互动等），确保动画与场景物理效果（如碰撞、布料模拟）完美结合；\n2.模型贴图程序化制作：配合模型师进行角色、道具的模型优化，确保低多边形模型（Low Poly）与高模（High Poly）的拓扑结构合理，适配动画变形需求；制作PBR材质贴图（如Base Color、Normal、Metallic、Roughness等），通过Substance Painter/Designer等工具实现材质的程序化生成，提升资源复用性与美术表现；开发或优化程序化贴图工具，实现材质参数化调整（如磨损、污渍、材质混合），满足不同场景的美术需求；\n3.技术优化与流程管理：优化动画文件大小、骨骼权重、蒙皮精度，确保动画在PS5/XSX/PC平台的高性能运行；制定并维护动画资产制作规范，包括命名规则、版本控制、管线流程标准化；与程序、技术美术、关卡设计团队紧密协作，解决动画在引擎中的技术问题（如穿插、延迟、性能瓶颈）；\n4.创意迭代与品质把控：参与动画评审会，根据反馈快速迭代优化动画质量；研究行业前沿动画技术（如AI动画生成、实时动画合成），探索技术创新并落地应用。",
+    "Requirement": "1.5年以上游戏动画经验，至少参与过1款已上线的3A级主机/PC游戏项目，有《神秘海域》系列或同类型动作冒险游戏经验者优先；\n2.核心技能：精通Maya、3D Max等动画软件，熟练使用Motion Builder、Blend Shape等工具；熟悉PBR流程及Substance Painter/Designer等贴图工具，具备程序化材质制作能力；掌握虚幻引擎5（Unreal Engine 5）或Unity，能编写蓝图/脚本实现动画逻辑；具备模型拓扑、UV拆分、贴图烘焙能力，熟悉动画资产管线优化；熟悉动画模块化开发，有程序化生成或资产自动化工具开发经验者优先。",
+    "LastUpdateTime": "2026年06月08日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2063134151057522688",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "1.有动作捕捉数据处理经验，能处理并优化真人动作数据；\n2.熟悉角色物理模拟（如布料、头发），能结合物理系统实现动画细节；\n3.掌握Python、C++等编程语言，能开发自定义工具或优化管线；\n4.具备技术美术思维，能独立解决美术与程序之间的技术问题；\n5.有独立作品或知名项目经验者优先。",
+    "Introduction": "",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "五年以上工作经验"
+  }
+}

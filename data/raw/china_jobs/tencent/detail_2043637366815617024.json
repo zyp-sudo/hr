@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2043637366815617024",
+    "RecruitPostId": 119285,
+    "RecruitPostName": "腾讯游戏MagicAI -AI Agent开发工程师-游戏领域",
+    "LocationId": 3,
+    "LocationName": "上海",
+    "BGId": 956,
+    "BGName": "IEG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40001001",
+    "CategoryName": "技术",
+    "ProductName": "AI渲染",
+    "Responsibility": "1.负责游戏领域专业Agent的整体架构设计与研发，打造能理解游戏开发意图、自主调用引擎原子能力生成完整游戏的智能体；\n2.设计并实现跨语言的Godot Agent SDK，封装引擎通信细节，提供面向LLM的标准化工具调用接口；\n3.设计游戏领域专用的工具调用Schema与增量状态管理机制，优化Agent的工具调用准确率与执行效率；\n4.构建多模态视觉-动作闭环系统，实现Agent对引擎渲染结果的理解、评估与反馈迭代；\n5.构建游戏领域知识库与RAG系统，沉淀游戏开发最佳实践、引擎API文档与常见问题解决方案；\n6.负责Agent推理流程的设计与优化，包括任务规划、自我反思、长期记忆、工具编排等核心模块；\n7.探索意图驱动的游戏生成技术，将模糊的自然语言需求拆解为可执行的引擎原子操作序列；\n8.跟踪大模型与Agent技术前沿，将最新技术成果（如多模态大模型、规划算法）落地到游戏开发场景。",
+    "Requirement": "1.计算机科学、人工智能、软件工程等相关专业，本科及以上学历；\n2.扎实的算法、数据结构、机器学习等基础知识；\n3.精通Python编程语言，熟悉C++者优先；\n4.深入理解LLM Agent架构，有丰富的Function Calling、RAG、多模态Agent开发经验；\n5.熟悉完整的游戏开发流程，了解游戏引擎的基本原理与核心模块；\n6.良好的数学和英文阅读功底，能快速阅读并理解前沿AI论文；\n7.良好的沟通表达能力和团队合作意识，具备较强的系统设计与问题解决能力；\n8.对AI生成内容（AIGC）与游戏开发的结合有深刻的理解和强烈的探索欲。",
+    "LastUpdateTime": "2026年06月01日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2043637366815617024",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "1.行业前沿，从0到1打造一款面向游戏领域的专业Agent, 降低游戏创作门槛。",
+    "ImportantItem": "1.有游戏内容生成AI、游戏自动化测试工具或关卡生成系统开发经验；\n2.有低代码平台、可视化编程工具或领域特定语言（DSL）设计经验；\n3.熟悉向量数据库、提示工程、大模型微调与对齐技术；\n4.有开源Agent框架（如LangChain、AutoGPT、LlamaIndex）贡献或深度二次开发经验；\n5.有独立游戏开发经验或完整商业游戏项目经验。",
+    "Introduction": "在腾讯，作为一位游戏客户端开发，你始终身处科技前沿，与同样具备满分热情的策划、美术等团队紧密协作，助力新世界的诞生、运作，持续打造极致体验。你可以善用自己的全局观察能力，不断打开技术视野，与靠谱的团队一起做出真正有趣的新事物。",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "不限"
+  }
+}

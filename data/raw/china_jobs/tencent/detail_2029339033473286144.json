@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2029339033473286144",
+    "RecruitPostId": 118182,
+    "RecruitPostName": "元宝-大模型后训练算法工程师",
+    "LocationId": 3,
+    "LocationName": "上海",
+    "BGId": 29294,
+    "BGName": "CSIG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40001005",
+    "CategoryName": "技术",
+    "ProductName": "元宝",
+    "Responsibility": "1.面向AI应用场景的大模型微调，优化PostTraining (SFT/RM/RL) 算法的训练效率和实际用户体验效果；\r\n2.研究各领域高质量数据的自动化合成方法，建设高效的线上数据飞轮链路；\r\n3.配合产品和工程，探索LLM在创作、教育、金融、代码等场景下的创新应用。",
+    "Requirement": "1.研究生及以上学历，计算机、人工智能、数学等相关专业（有数学、编程竞赛加分）；\r\n2.多年NLP/深度学习研发经验，至少1年大模型应用相关实战经验；\r\n3.深入理解LLM技术栈（如SFT、RM、RLHF、数据合成等）；\r\n4.熟悉Python/PyTorch，以及Transformer、MoE等核心网络架构；具备扎实的代码能力（Python/C++）；\r\n5.在ACL/EMNLP/NeurIPS等顶会发表LLM相关论文者加分。",
+    "LastUpdateTime": "2026年06月05日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2029339033473286144",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "",
+    "Introduction": "渴望为世界带来新意的人，早已对描绘未来的“热词”不陌生——人工智能、机器学习、数据科学等等。腾讯始终在业界前沿不断探索，积极布局，并为优秀的你提供无限广阔的舞台。我们坚信科技的不断革新，最终能带来美好的、撼动人心的改变。",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "三年以上工作经验"
+  }
+}

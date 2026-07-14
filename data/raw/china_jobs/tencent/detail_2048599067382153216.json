@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2048599067382153216",
+    "RecruitPostId": 119656,
+    "RecruitPostName": "保险科技-大模型高级工程师",
+    "LocationId": 1,
+    "LocationName": "深圳",
+    "BGId": 953,
+    "BGName": "CDG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40001005",
+    "CategoryName": "技术",
+    "ProductName": "支持其他BG业务",
+    "Responsibility": "1.：负责保险大模型的Post-training全流程：包括SFT 监督微调、RLHF/DPO/GRPO 模型对齐、奖励模型（Reward Model）研发，提升模型在保险场景的专业问答、复杂推理、合规风控能力；\r\n2.：设计并建设保险领域高质量指令数据集（核保、理赔、健康咨询、保单解读、合规问答等），主导数据标注、清洗、过滤、蒸馏与质量评估，支撑模型迭代与能力升级；\r\n3.：基于Agentic-RL构建保险业务仿真环境与 API 对接体系，支持保单查询、理赔试算、核保校验、健康咨询等工具调用，提升模型在真实保险流程中的决策与执行能力；\r\n4.：搭建保险垂类自动化评测体系（事实准确率、合规率、推理深度、用户满意度），持续跟踪模型效果，驱动数据与算法迭代，保障模型在保险全链路（售前 / 售中 / 售后）的稳定落地。",
+    "Requirement": "1.：硕士及以上学历，计算机、人工智能、机器学习、NLP、统计学等相关专业，2 年以上大模型后训练 / 算法研发经验，有保险 / 金融垂类模型训练或落地经验优先；\r\n2.：精通LLM 后训练全流程：SFT、RLHF（PPO/DPO/GRPO）、Reward Model、模型对齐；熟练使用PyTorch、Transformers、DeepSpeed、Megatron-LM、vLLM等训练 / 推理框架；熟悉指令微调数据构建、偏好数据（Preference Data）建设、数据质量评估全链路；有保险 / 金融领域知识图谱、RAG、智能体（Agent）开发经验加分。",
+    "LastUpdateTime": "2026年06月09日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2048599067382153216",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "",
+    "Introduction": "渴望为世界带来新意的人，早已对描绘未来的“热词”不陌生——人工智能、机器学习、数据科学等等。腾讯始终在业界前沿不断探索，积极布局，并为优秀的你提供无限广阔的舞台。我们坚信科技的不断革新，最终能带来美好的、撼动人心的改变。",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "三年以上工作经验"
+  }
+}

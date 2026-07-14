@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "1946111390351753216",
+    "RecruitPostId": 113492,
+    "RecruitPostName": "元宝-动效设计师-产品体验方向",
+    "LocationId": 2,
+    "LocationName": "北京",
+    "BGId": 29294,
+    "BGName": "CSIG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40002001",
+    "CategoryName": "设计",
+    "ProductName": "元宝",
+    "Responsibility": "1.负责腾讯元宝的动效设计，构建符合AI助手特性的情感化设计语言，通过动态视觉提升用户认知效率与交互愉悦感；\n2.主导产品动效体系设计，包括智能反馈动效（如语音对话动态交互、AI生成状态、多模态交互响应）、微交互设计、界面过渡动画等，强化AI产品的自然交互体验；\n3.与AI算法团队协作，将技术能力（如生成式AI、实时交互）转化为可视化的动态设计表达，平衡创意表现与系统性能；\n4.建立元宝产品的动态设计规范，推动动效组件化落地，确保多端（Web/App/小程序）体验一致性；\n5.通过用户研究验证动效设计的有效性，持续优化AI助手的人格化表达与功能引导性。",
+    "Requirement": "1.动效设计：熟练掌握After Effects、Figma/Lottie/Rive等工具，能独立输出高保真动效原型；深入理解UX动效设计方法论（如功能性动效、情感化动效）；具备将复杂AI流程（如多轮对话、任务执行）转化为直观动态叙事的能力；\r\n2.AI产品理解：熟悉生成式AI产品交互范式（如Prompt输入反馈、多模态输出展示）；对AI人格化设计有见解，能通过动态视觉塑造元宝的“助手”形象；了解大模型技术基础概念（如Token消耗、生成延迟），设计时能兼顾技术边界。",
+    "LastUpdateTime": "2026年06月26日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=1946111390351753216",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "",
+    "Introduction": "设计，决定了用户体验的上限。在“一切以用户价值为依归”的腾讯，设计师们始终以开放、严谨的专业态度，持续传递设计的价值。加入我们，与极富想象力和专业能力的同事一起，探索体验，设计未来。",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "三年以上工作经验"
+  }
+}

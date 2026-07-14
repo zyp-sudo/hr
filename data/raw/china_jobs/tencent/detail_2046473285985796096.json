@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2046473285985796096",
+    "RecruitPostId": 119520,
+    "RecruitPostName": "《洛克王国：世界》-高级游戏策划-PVP方向",
+    "LocationId": 1,
+    "LocationName": "深圳",
+    "BGId": 956,
+    "BGName": "IEG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40003002",
+    "CategoryName": "产品",
+    "ProductName": "NRC-手游APP",
+    "Responsibility": "1.负责洛克王国手游PVP玩法相关系统的设计落地，对相关玩法数据负责；\r\n2.优化相关玩法匹配规则，平滑玩家游戏体验；\r\n3.针对外网pvp数据进行多维度的分析，为组内其他同事提供有效的数据支撑。",
+    "Requirement": "1.竞技型玩家，5年以上竞技类游戏系统策划经验；\r\n2.对市面主流竞技游戏的匹配算法有深入研究和理解，能够结合游戏特性，提出合理的匹配规则优化方案；\r\n3.数据驱动型思维，具备扎实的数据分析能力，擅长通过数据挖掘问题、量化环境平衡，基于数据输出可落地的优化建议；\r\n4.精灵收集类游戏硬核玩家或者回合制游戏专家优先。",
+    "LastUpdateTime": "2026年05月12日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2046473285985796096",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "",
+    "Introduction": "【腾讯游戏｜这一局，由你主导】\n腾讯游戏，致力于以顶尖技术创造丰富优质的游戏体验，用创新玩法点燃玩家情感共鸣，深度打磨每处游戏细节。加入我们，用创造力拓展游戏的边界，为用户创造高品质数字生活体验！",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "五年以上工作经验"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2030831084878594048",
+    "RecruitPostId": 118325,
+    "RecruitPostName": "《王者荣耀世界》UE客户端开发工程师-编辑器效率方向",
+    "LocationId": 3,
+    "LocationName": "上海",
+    "BGId": 956,
+    "BGName": "IEG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40001001",
+    "CategoryName": "技术",
+    "ProductName": "王者荣耀",
+    "Responsibility": "1.负责UE4引擎客户端的底层模块开发以及优化；\r\n2.Profiler编辑器和运行时各模块卡顿问题并解决，提升编辑器使用效率；\r\n3.排查并解决UE编辑器的崩溃问题以及其他疑难杂症，提升编辑器稳定性；\r\n4.参与部分性能和内存优化工作。",
+    "Requirement": "1.本科及以上学历，有三年以上UE游戏客户端开发或者UE引擎维护经验, 对游戏研发相关技术有系统的掌握并保持学习和关注；\r\n2.熟练掌握UE引擎，对引擎源码有较高的熟悉度；\r\n3.有丰富的性能优化经验或者引擎开发工作（基于UE引擎）；\r\n4.对游戏开发充满热情，能够与他人良好配合、协作同时善于独立解决问题；\r\n5.有较强的抗压能力，面对疑难杂症时需要有使命必达的决心；\r\n6.有良好的技术视野，对技术有极客精神。",
+    "LastUpdateTime": "2026年06月08日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2030831084878594048",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "",
+    "Introduction": "在腾讯，作为一位游戏客户端开发，你始终身处科技前沿，与同样具备满分热情的策划、美术等团队紧密协作，助力新世界的诞生、运作，持续打造极致体验。你可以善用自己的全局观察能力，不断打开技术视野，与靠谱的团队一起做出真正有趣的新事物。",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "五年以上工作经验"
+  }
+}

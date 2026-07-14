@@ -1,0 +1,4 @@
+id,name,type,count,score,freshness,note
+seed_samples,Seed Samples,local_seed,4,0.70,on_demand,用于前端和后端基础演示的种子数据
+source_registry,Source Registry,metadata,7,0.90,on_demand,记录可运行和计划接入的数据源
+etl_outputs,ETL Outputs,derived,0,0.00,generated,由 scripts/etl_unify_jobs.py 生成

@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2061270002140626944",
+    "RecruitPostId": 120315,
+    "RecruitPostName": "微恐轻度搜撤项目-资深关卡策划",
+    "LocationId": 3,
+    "LocationName": "上海",
+    "BGId": 956,
+    "BGName": "IEG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40003002",
+    "CategoryName": "产品",
+    "ProductName": "元梦之星-手游APP",
+    "Responsibility": "1.负责微恐轻度搜撤项目的核心关卡设计，搭建完整的关卡设计框架与量产标准；\r\n2.主导核心关卡体验设计，包括探索路线、资源分布、怪物压力、异常事件、撤离节奏与风险收益结构；\r\n3.结合微恐世界观背景，推动关卡在空间、视觉、声音、交互和叙事层面的统一表达；\r\n4.负责关卡从概念、平面图、白盒、玩法验证到最终落地的完整流程，确保关卡体验可玩、易懂、有记忆点；\r\n5.与各相关团队协作，推动关卡相关需求落地；\r\n6.建立关卡评审机制与设计规范，根据线上反馈不断调优；\r\n7.指导关卡策划团队，提升关卡产能、设计质量和版本交付稳定性。",
+    "Requirement": "1.具备 5 年以上游戏关卡策划经验，有完整负责中大型项目关卡体系或关卡团队的经历；\r\n2.熟悉 PVE、PVEVP、FPS、搜打撤类游戏，对关卡节奏和风险收益有成熟理解；\r\n3.能独立构建关卡设计方法论，清楚如何通过空间结构、资源密度、怪物压力、事件触发和撤离目标塑造玩家体验；\r\n4.熟练使用 UE 编辑器，能熟练搭建白盒，制定关卡结构，核心Gameplay验证；\r\n5.对大盘用户，泛用户有一定的理解；\r\n6.具备优秀的跨团队沟通能力和审美判断，能推动美术、音频、叙事、程序共同完成关卡体验。",
+    "LastUpdateTime": "2026年06月23日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2061270002140626944",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "",
+    "Introduction": "",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "五年以上工作经验"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2031303566232285184",
+    "RecruitPostId": 118388,
+    "RecruitPostName": "PUBG Mobile-技术策划 (UGC AI方向)-新星引力计划",
+    "LocationId": 1,
+    "LocationName": "深圳",
+    "BGId": 956,
+    "BGName": "IEG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40003002",
+    "CategoryName": "产品",
+    "ProductName": "PUBG Mobile-全球不分明细",
+    "Responsibility": "1.负责UGC编辑器的功能设计与迭代规划，深入挖掘和分析UGC创作者在各个创作环节的需求痛点，结合AI能力设计合理、易用的编辑器功能；\n2.参与地图编辑器、技能编辑器等现有创作工具的需求梳理与优化，将AI能力融合进现有的工具链中，推动工具的持续优化；\n3.持续追踪业界前沿的AI热点及技术风向，评估其在UGC场景下的可行性，并主导推动前沿AI能力在UGC编辑器中的产品化落地；\n4.连接程序和策划，能从“开发者”和“UGC创作者”的多重角度分析问题，提供兼具技术可行性与良好用户体验的解决方案。",
+    "Requirement": "1.熟练掌握至少一款主流商业引擎（UE / Unity 等），理解节点式/蓝图编程范式，对可视化编程、事件驱动架构有深入理解；\n2.有一定的脚本编程能力（Lua、Python、Blueprint等），能理解数据结构、算法逻辑，具备计算机相关背景者优先；\n3.有不错的动手能力和问题解决能力，能独立完成游戏原型功能设计与实现。熟练使用一款或多款 UGC 游戏编辑器（如 Roblox Studio、War3 编辑器、Dota2 编辑器、元梦之星、蛋仔派对等）者优先，有成熟玩法作品的地图作者优先；\n4.对AI前沿技术（LLM、PCG等）保持关注，有将 AI 能力融入工具链的思考或实践经验者优先。",
+    "LastUpdateTime": "2026年06月08日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2031303566232285184",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "1.PUBGM重点业务模块，未来发展的新赛道。",
+    "ImportantItem": "",
+    "Introduction": "",
+    "DepartmentIntroduction": "光子工作室群，一个对游戏狂热的全球知名开发团队，在全球10余个国家和地区研发布局，旗下包括《和平精英》《PUBG Moblie》《欢乐斗地主》《最强NBA》等超出50款端手游产品。多款产品曾获得超过15个奖项荣誉，其中，《PUBG Mobile》上线一周内登顶105个国家和地区App Store榜首。\n光子为每位员工量身定制成长舞台，针对游戏策划有武林师徒项目、针对开发有程序精品课、针对美术有大咖沙龙；如果你怀抱游戏初心，可以借光子的大平台孵化独立游戏如《末剑》；若希望声音被听到，可以借光子内部的《游你百家谈》节目彰显智慧。此外，光子建立了全球前沿技术协同发展的研发团队，持续推动游戏品质向次世代升华。\n光子未来还将持续面向全球，探索大型游戏和创新游戏等领域，欢迎热爱游戏的你加入！",
+    "RequireWorkYearsName": "一年以上工作经验"
+  }
+}

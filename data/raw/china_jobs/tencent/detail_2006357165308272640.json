@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2006357165308272640",
+    "RecruitPostId": 116960,
+    "RecruitPostName": "金融科技-文本大模型算法工程师",
+    "LocationId": 1,
+    "LocationName": "深圳",
+    "BGId": 953,
+    "BGName": "CDG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40001005",
+    "CategoryName": "技术",
+    "ProductName": "微信支付-基础平台",
+    "Responsibility": "1.负责文本大模型在AI编程垂直领域（如代码生成、工具调用、接口测试）的数据构造、Post-Training与评估全流程；\r\n2.深入代码大模型与文本推理方向，进行模型调优与能力创新，覆盖代码补全、流水线自动化、测试用例生成等场景；开展大模型智能体（Agent）的开发与设计，包括智能体工作流编排、工具调用规划、复杂任务分解与执行等；\r\n3.负责文本上下文压缩技术的研究，并在代码检索、知识库问答领域的落地，包括Embedding压缩、长上下文（Long-context）优化、结构化文本处理等；\r\n4.负责基于大模型的知识检索问答（如RAG）系统的研发与优化，包括领域知识库构建、检索增强生成技术应用、问答准确性提升等；\r\n5.跟踪文本大模型、程序语言处理及智能体技术领域的技术进展，评估其在研发效能提升方面的应用潜力。",
+    "Requirement": "1.熟练掌握PyTorch、Swift、Verl等一种或多种大模型训练框架，具备文本大模型（如代码大模型、对话模型）及大模型智能体（Agent）系统的开发与调优经验；\r\n2.熟悉大模型训练范式，包括增量预训练（CPT）、有监督微调（SFT）、强化学习（RL）等，具备分布式训练经验；\r\n3.熟悉RLVR（可验证奖励强化学习）或者Agentic-RL的流程，有文本任务强化学习、代码生成或智能体决策相关项目经验者优先；\r\n4.具备自然语言处理、程序语言处理或代码智能相关项目经验，熟悉常见文本大模型与代码评测数据集；具备知识检索与问答（RAG）系统开发经验，熟悉相关技术栈（如向量数据库、检索器、重排序等）者优先；\r\n5.计算机科学、人工智能、软件工程等相关专业硕士及以上学历，或在ACL、EMNLP、NeurIPS、ICML、ICLR等AI/NLP/代码相关顶会发表论文者优先。",
+    "LastUpdateTime": "2026年06月05日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2006357165308272640",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "",
+    "Introduction": "",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "三年以上工作经验"
+  }
+}

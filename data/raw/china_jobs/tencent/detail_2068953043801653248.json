@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2068953043801653248",
+    "RecruitPostId": 120692,
+    "RecruitPostName": "微信输入法/秒剪-大模型推理优化工程师-NLP 方向",
+    "LocationId": 2,
+    "LocationName": "北京",
+    "BGId": 14129,
+    "BGName": "WXG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40001001",
+    "CategoryName": "技术",
+    "ProductName": "微信输入法",
+    "Responsibility": "1.配合算法工程师，推动大模型相关算法的落地，打造高吞吐、低延迟的推理系统，在产品上实现快与准的交互体验；\r\n2.探索面向高并发场景下（千万量级）的高性能推理服务架构，针对NVIDIA GPU、NPU等国产算力进行性能调优，包括算子融合、显存管理、计算图编译优化、Batching、KVCache管理，打造高效的推理服务架构，结合LLM能力实现业务的高效运转；\r\n3.持续跟进业界最新Infra技术，如高效通信库、量化、稀疏蒸馏等训练部署方案，配合实际业务进行技术预研；\r\n4.结合推理引擎和业务服务，优化动态流量调度、资源管理等结合业务实际情况的后台策略。",
+    "Requirement": "1.具备扎实的编程语言基础，掌握 C++/Python/Golang 至少一门语言，熟悉Linux开发环境；\r\n2.有vllm/sglang/Tensorrt-llm/FasterTransformer等大模型推理框架的实际使用经验；\r\n3.熟悉CPU/GPU异构加速瓶颈分析方法，有服务器端/手机端AI芯片、GPU加速经验优先；\r\n4.熟悉常用推理加速方法，有超大模型分布式部署经验优先。",
+    "LastUpdateTime": "2026年06月29日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2068953043801653248",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "1.在计算机体系结构、分布式计算、或NLP相关高水平会议/期刊发表过论文；\r\n2.获得过国际重大比赛奖项。",
+    "Introduction": "",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "一年以上工作经验"
+  }
+}

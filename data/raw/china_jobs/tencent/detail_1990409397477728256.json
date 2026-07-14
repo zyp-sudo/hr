@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "1990409397477728256",
+    "RecruitPostId": 116036,
+    "RecruitPostName": "微信读书/输入法/秒剪-大模型数据与评测工程师 -NLP&多模态方向",
+    "LocationId": 2,
+    "LocationName": "北京",
+    "BGId": 14129,
+    "BGName": "WXG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40001005",
+    "CategoryName": "技术",
+    "ProductName": "微信秒剪",
+    "Responsibility": "1.负责微信输入法 NLP 大模型的 SFT、RL 等核心训练数据集的构建与策略优化，持续提升数据质量；\n2.负责微信秒剪多模态理解和多模态生成大模型数据构建，包括但不限于视频理解、文生图、视频生成等方向，参与 AIGC 多样性数据集的构建与优化；\n3.负责搭建大模型效果评测体系，设计评测维度、构建评测基准，并深入分析 Bad Case 以驱动大模型迭代。",
+    "Requirement": "1.具备NLP或多模态领域算法基础，能深刻理解大模型工作原理；\n2.具备优秀的数据分析与处理能力，对数据敏感，能针对不同模型特点制定数据策略；\n3.熟练使用 Python 及 Pandas、NumPy、Spark 等数据处理工具；熟悉 PyTorch 或 TensorFlow 者优先；\n4.具备良好的逻辑思维与问题拆解能力，能设计严谨、可量化的评测方案。",
+    "LastUpdateTime": "2026年06月29日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=1990409397477728256",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "1.有视频理解、AIGC（图像/视频生成）等相关项目的数据处理或评测经验；\r\n2.主导或深度参与过大模型评测基准（Benchmark）构建；\r\n3.对AIGC生成内容有良好审美和判断力。",
+    "Introduction": "",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "一年以上工作经验"
+  }
+}

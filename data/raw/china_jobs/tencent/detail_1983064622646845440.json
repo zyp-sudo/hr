@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "1983064622646845440",
+    "RecruitPostId": 115612,
+    "RecruitPostName": "无畏契约手游-游戏AI算法工程师-新星引力计划",
+    "LocationId": 1,
+    "LocationName": "深圳",
+    "BGId": 956,
+    "BGName": "IEG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40001005",
+    "CategoryName": "技术",
+    "ProductName": "CodeV-手游APP",
+    "Responsibility": "1.参与腾讯游戏内AI的算法研究和应用，包括但不限于AIBot研发和投放、匹配系统、数据挖掘、社交商业化推荐等；\n2.参与机器学习训练全链路平台的搭建和线上落地，运用大数据+AI为项目带来实际收益；\n3.跟进前沿技术研究，识别技术有效性，并快速应用到游戏项目中。",
+    "Requirement": "1.精通常用机器学习和深度学习算法及其原理，对算法特点和适用场景等有比较深刻的理解，能够快速进行算法实现和迭代；\n2.具有良好的工程实现能力，熟练掌握pytorch以及一门编程语言（go/Python等）；\n3.热爱游戏，有较好的沟通能力、团队协作能力，积极主动，愿意接受挑战。",
+    "LastUpdateTime": "2026年06月29日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=1983064622646845440",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "",
+    "Introduction": "渴望为世界带来新意的人，早已对描绘未来的“热词”不陌生——人工智能、机器学习、数据科学等等。腾讯始终在业界前沿不断探索，积极布局，并为优秀的你提供无限广阔的舞台。我们坚信科技的不断革新，最终能带来美好的、撼动人心的改变。",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "一年以上工作经验"
+  }
+}

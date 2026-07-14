@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2046932836338003968",
+    "RecruitPostId": 119570,
+    "RecruitPostName": "魂斗罗-服务器开发工程师-新星引力计划",
+    "LocationId": 1,
+    "LocationName": "深圳",
+    "BGId": 956,
+    "BGName": "IEG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40001001",
+    "CategoryName": "技术",
+    "ProductName": "魂斗罗-手游",
+    "Responsibility": "1.负责游戏服务器端的架构设计与优化工作；\n2.承担游戏服务器端的逻辑功能模块的开发、测试和发布工作；\n3.对游戏服务器端的线上问进行定位与修复；\n4.持续优化游戏服务器端性能，确保高并发场景下的稳定运行；\n5.开发和维护服务器端研发效能工具，提升团队开发效率。",
+    "Requirement": "1.本科及以上学历，计算机相关专业，1年以上游戏服务器开发经验；\n2.熟练掌握C/C++编程语言，熟悉shell脚本和Linux开发环境；\n3.具备扎实的计算机基础，良好的编程规范和工程开发能力；\n4.具备优秀的沟通协作能力，能够与团队高效配合。",
+    "LastUpdateTime": "2026年06月22日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2046932836338003968",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "1.熟悉Lua、Golang编程语言者优先；\n2.热爱游戏，对游戏有较深刻理解者优先；\n3.具备游戏开发经验者优先。",
+    "Introduction": "在腾讯，后台开发工程师不仅是“又快又稳”的问题解决专家，更是生态共创者。你将与技术团队一同沉淀优质代码，让它成为我们共有的宝贵资产。在不同的业务场景和技术发展阶段，你的架构思维也将帮助更多协作团队拓展新的思考。我们也珍视你的挑战精神，同时欢迎你一起参与团队愿景、文化和产品方向的探讨。",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "两年以上工作经验"
+  }
+}

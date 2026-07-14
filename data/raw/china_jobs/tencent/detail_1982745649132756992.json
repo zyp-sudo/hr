@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "1982745649132756992",
+    "RecruitPostId": 115598,
+    "RecruitPostName": "腾讯游戏-编译器工程师-AI方向",
+    "LocationId": 7,
+    "LocationName": "杭州",
+    "BGId": 956,
+    "BGName": "IEG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40001001",
+    "CategoryName": "技术",
+    "ProductName": "公共",
+    "Responsibility": "1.AI推理框架的研发与性能优化工作；\n2.AI研发提效方向的产品研发与优化工作；\n3.通过研发与优化底层工具链，助力业务提高运行性能。",
+    "Requirement": "1.计算机相关本科及以上学历；\n2.具有2年以上编程语言或编译器研发经验；\n3.具备3年以上C++编程经验；\n4.熟悉CPU/GPU/NPU组织结构；\n5.具备良好的团队合作精神，善于协调沟通。",
+    "LastUpdateTime": "2026年07月03日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=1982745649132756992",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "1.熟悉AI推理框架；\n2.熟悉LLVM；\n3.善于使用AI辅助工作提效；\n4.热爱游戏。",
+    "Introduction": "在腾讯，后台开发工程师不仅是“又快又稳”的问题解决专家，更是生态共创者。你将与技术团队一同沉淀优质代码，让它成为我们共有的宝贵资产。在不同的业务场景和技术发展阶段，你的架构思维也将帮助更多协作团队拓展新的思考。我们也珍视你的挑战精神，同时欢迎你一起参与团队愿景、文化和产品方向的探讨。",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "两年以上工作经验"
+  }
+}

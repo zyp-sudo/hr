@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "1976884159108501504",
+    "RecruitPostId": 115214,
+    "RecruitPostName": "腾讯营销-大模型推荐算法负责人",
+    "LocationId": 1,
+    "LocationName": "深圳",
+    "BGId": 953,
+    "BGName": "CDG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40001005",
+    "CategoryName": "技术",
+    "ProductName": "腾讯广告",
+    "Responsibility": "1.负责广告基础推荐算法方向，如基础大模型、模型 scaling up、多模态推荐等方向，通过千亿样本、特征，结合模型 scaling up和多模态技术，持续推动建模技术升级突破；\n2.基础大模型建模和优化，基于千亿样本、特征，构建基座大模型，并研发Embedding迁移框架及模型蒸馏等技术，实现基座大模型能力向推荐系统的有效迁移，驱动广告CTR/CVR等核心指标持续提升；\n3.通过特征、样本、模型的scaling up，持续探索模型scaling law 的天花板；\n4.将多模态技术融入广告推荐建模中，通过更丰富信息、更泛化的表达，持续提升模型效果；\n5.积极跟进AI学术界和业界的最新动态，优化内部技术方案，不断推进广告算法设计升级。",
+    "Requirement": "1.具备扎实的数据结构和算法功底，熟悉掌握常见有监督、无监督等算法模型的原理、优缺点、适用场景等基础知识；\r\n2.有机器学习算法优化理论的研究经验，熟悉Tensorflow或者PyTorch机器学习框架，并有实际的模型训练、调优的项目经验；\r\n3.具有大规模机器学习训练、推理平台开发或LLM/多模态大模型开发经验优先；\r\n4.优秀的分析问题、解决问题能力和团队合作意识。",
+    "LastUpdateTime": "2026年06月16日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=1976884159108501504",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "",
+    "Introduction": "渴望为世界带来新意的人，早已对描绘未来的“热词”不陌生——人工智能、机器学习、数据科学等等。腾讯始终在业界前沿不断探索，积极布局，并为优秀的你提供无限广阔的舞台。我们坚信科技的不断革新，最终能带来美好的、撼动人心的改变。",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "五年以上工作经验"
+  }
+}

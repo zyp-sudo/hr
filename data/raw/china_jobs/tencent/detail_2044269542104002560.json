@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2044269542104002560",
+    "RecruitPostId": 1241767103832379392,
+    "RecruitPostName": "Software Engineering Intern 107328",
+    "LocationId": 1301,
+    "LocationName": "新加坡",
+    "BGId": 953,
+    "BGName": "CDG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40001001",
+    "CategoryName": "技术",
+    "ProductName": "",
+    "Responsibility": "Business Unit\nCorporate Development Group (CDG) as the platform for the company's new business incubation and new business exploration, CDG is responsible for promoting development and innovation for important areas such as financial technology and advertising, as well as marketing services, including payment and financial applications. As a professional support platform, CDG also supports the company and various business groups in strategic planning, investments and mergers, investor relations and corporate global communications, marketing and public relations, and more.\n\nWhat the Role Entails\nCloud-Native System Development: Assist in building, testing, and maintaining advertising data services on AWS, gaining exposure to technologies like EKS, MSK, and S3.\nLarge-Scale Data Engineering: Participate in the development and optimization of real-time and batch processing pipelines using Flink, Spark, and HBase to handle massive ad-log flows.\nSystem Reliability & Testing: Write robust unit and integration tests. Assist in monitoring system stability and troubleshooting basic performance bottlenecks under the guidance of senior engineers.\nFeature Implementation: Collaborate with the team to implement features that support mission-critical, 24/7 ad-tech operations with high traffic and low latency.\nData Compliance: Support the team in developing technical solutions that enforce strict data isolation and regional compliance for global users.\n\nWho We Look For\nEducation: Currently pursuing a Bachelor’s, Master’s, or PhD degree in Computer Science, Software Engineering, or a related technical field.\nBackend Foundation: Solid programming skills in Java, with a strong understanding of data structures, algorithms, and object-oriented design. Basic knowledge of multithreading and JVM is a plus.\nBig Data Interest: Academic or personal project experience with, or a strong desire to learn, big data frameworks (e.g., Flink, Spark, HBase).\nCloud/Infrastructure: Basic understanding of cloud computing concepts. Familiarity with Linux environments, Git, and containerization (Docker/Kubernetes) is highly preferred.\nProblem Solving: Strong analytical skills with the ability to debug code and solve complex technical problems effectively.\nAI-Assisted Development: Familiarity with AI coding tools (e.g., GitHub Copilot, Cursor, ChatGPT) and a proactive mindset to leverage them for enhancing coding efficiency, generating tests, and debugging.\nIndustry Interest: A strong interest in the AdTech industry (e.g., Attribution, Tracking, or RTB systems).\nDrive & Passion: A passion for exploring new technologies and a proactive, self-driven approach to learning.\nCommunication: Good communication skills in English and/or Mandarin to collaborate effectively with cross-border teams.\n\nEqual Employment Opportunity at Tencent\nAs an equal opportunity employer, we firmly believe that diverse voices fuel our innovation and allow us to better serve our users and the community. We foster an environment where every employee of Tencent feels supported and inspired to achieve individual and common goals.\r\nWork Location: Singapore-CapitaSky",
+    "Requirement": "岗位要求详情请见上方岗位职责内说明",
+    "LastUpdateTime": "2026年04月14日",
+    "PostURL": "https://tencent.wd1.myworkdayjobs.com/Tencent_Careers/job/Singapore-CapitaSky/Software-Engineering-Intern_R107328",
+    "SourceID": 4,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "",
+    "Introduction": "",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": ""
+  }
+}

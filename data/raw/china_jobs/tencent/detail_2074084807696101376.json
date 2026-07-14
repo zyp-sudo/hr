@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2074084807696101376",
+    "RecruitPostId": 120966,
+    "RecruitPostName": "FOC运营工程师",
+    "LocationId": 1,
+    "LocationName": "深圳",
+    "BGId": 958,
+    "BGName": "TEG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40001003",
+    "CategoryName": "技术",
+    "ProductName": "IDC运维",
+    "Responsibility": "1.负责根据业务发展需要，梳理和不断完善数据中心集中化监控运营体系，保障数据中心服务台集中化工作的高效运转；\r\n2.负责IDC基础设施日常的监控、事件、变更的流程运营，推动设施运营向集中化、平台化、自动化、智能化转型；\r\n3.负责从运营案例中不断进行提炼，发现和分析运营流程及平台的问题，形成方案，有效驱动产研部门对产品及平台进行优化迭代；\r\n4.负责推动FRE模式落地，从一线运营角度，通过业务+代码思维，推动监控、事件、变更业务平台化数据运营。",
+    "Requirement": "1.全日制本科以上学历，电力、自动化、暖通、机电类优先；\r\n2.3年以上大型企业流程运营或服务管理经验，有数据中心、IT行业运营服务管理经验者优先；\r\n3.有监控管理类经验，熟悉itil、项目管理、数据中心技术、SRE、DevOps经验的优先；\r\n4.具有优秀的大局观和问题分析能力，主动积极，具有跨部门合作经历，问题协调推动能力强。",
+    "LastUpdateTime": "2026年07月06日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2074084807696101376",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "",
+    "Introduction": "在腾讯，优秀的技术运营工程师始终赋能业务，关注技术运营的质量、成本、效率和安全。他们不仅是经验丰富的问题解决者，更是具有全局视角的架构师，通过自动化工具的建设，强力提升平台效能，助力业务发展。",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "三年以上工作经验"
+  }
+}

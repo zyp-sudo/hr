@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2021936632051167232",
+    "RecruitPostId": 117883,
+    "RecruitPostName": "微信输入法-大模型评测数据科学分析师",
+    "LocationId": 5,
+    "LocationName": "广州",
+    "BGId": 14129,
+    "BGName": "WXG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40001005",
+    "CategoryName": "技术",
+    "ProductName": "微信输入法",
+    "Responsibility": "1.数据体系设计：围绕评测业务，设计端到端的数据生产链路，包括 query 采集、分层抽样、标注体系、质检方案、版本管理；\r\n2.评测数据集构建：主导高质量评测集（含 SFT 评测集、安全评测集、业务评测集）的建设，确保覆盖度、区分度与稳定性；\r\n3.数据分析与洞察：基于评测结果做多维度数据分析（模型对比、版本对比、Bad Case 聚类、能力雷达图），为算法和业务决策提供量化依据；\r\n4.标注体系搭建：设计标注规范、培训外包/众包团队、构建一致性指标（Kappa、IAA），持续提升标注质量；\r\n5.指标体系建设：与算法、产品共建评测指标体系（自动指标 + 人工指标 + 业务指标），并推动指标上线与监控。",
+    "Requirement": "1.数学/统计/计算机/数据科学相关专业本科及以上；\r\n2.1 年以上数据科学 / 数据分析 / 数据标注体系经验，有 NLP 或大模型相关背景优先；\r\n3.熟练使用 Python（pandas / numpy / sklearn）、SQL，能独立完成数据 pipeline；\r\n4.熟悉常见统计方法（假设检验、置信区间、Bootstrap、相关性分析）；\r\n5.对数据质量极其敏感，具备良好的抽样设计、偏差分析、异常检测能力；\r\n6.有大模型评测集 / 标注平台 / Bad Case 分析经验者优先。",
+    "LastUpdateTime": "2026年06月25日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2021936632051167232",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "",
+    "Introduction": "",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "一年以上工作经验"
+  }
+}

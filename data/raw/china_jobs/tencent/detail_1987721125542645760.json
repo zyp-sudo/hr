@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "1987721125542645760",
+    "RecruitPostId": 115926,
+    "RecruitPostName": "机器人具身智能研究员 - 大模型方向",
+    "LocationId": 1,
+    "LocationName": "深圳",
+    "BGId": 958,
+    "BGName": "TEG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40001005",
+    "CategoryName": "技术",
+    "ProductName": "机器人大模型",
+    "Responsibility": "1.负责机器人具身智能大模型（如规划模型、奖励模型、世界模型、通用框架）的研究与开发；\r\n2.探索并实现大模型（LLM/VLM）在机器人任务中的规划与推理能力，包括长程任务理解、分解、执行与反思；\r\n3.设计并优化具身智能训练体系，结合强化学习、模仿学习等方法提升模型的泛化与决策能力；\r\n4.参与具身智能系统的整体架构设计与落地，实现从感知到行动的闭环智能；\r\n5.跟踪并研究业界在大模型、强化学习及具身智能方向的最新进展，并推动其在实际机器人系统中的应用。",
+    "Requirement": "1.计算机科学、人工智能、机器人、控制、自动化等相关专业硕士及以上学历，或具备同等实践经验；\r\n2.具备大模型训练与调优经验，熟悉LLM或VLM的架构、微调方法及推理机制；\r\n3.熟悉强化学习、模仿学习、决策模型等核心算法，并能应用于机器人或智能体任务；\r\n4.具备系统构建经验，理解基于LLM的任务规划、推理与执行机制（如ReAct、Tool-use等）；\r\n5.精通Python，熟悉至少一种主流深度学习框架（PyTorch / TensorFlow / JAX等）；\r\n6.熟悉机器人仿真与控制系统（如Isaac / Mujoco / Habitat等），具备一定的机器人实验经验；\r\n7.优秀的中英文文献阅读与技术写作能力，能持续跟进并吸收领域前沿研究；\r\n8.具备良好的合作意识与自驱力，能在跨学科团队中推进复杂项目。",
+    "LastUpdateTime": "2026年06月26日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=1987721125542645760",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "1.在NeurIPS、ICLR、ICML、CoRL、RSS、ICRA、IROS、TRO、CVPR、ECCV、Science Robotics等顶级会议或期刊以第一作者发表过论文；\r\n2.有具身智能框架、多模态大模型训练、机器人强化学习系统等实战项目经验；\r\n3.具备跨模态世界模型、策略学习或大规模仿真训练系统搭建经验。",
+    "Introduction": "渴望为世界带来新意的人，早已对描绘未来的“热词”不陌生——人工智能、机器学习、数据科学等等。腾讯始终在业界前沿不断探索，积极布局，并为优秀的你提供无限广阔的舞台。我们坚信科技的不断革新，最终能带来美好的、撼动人心的改变。",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "五年以上工作经验"
+  }
+}

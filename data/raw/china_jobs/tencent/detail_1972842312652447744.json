@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "1972842312652447744",
+    "RecruitPostId": 115097,
+    "RecruitPostName": "《王者荣耀世界》技术策划(AI方向)-新星引力计划",
+    "LocationId": 3,
+    "LocationName": "上海",
+    "BGId": 956,
+    "BGName": "IEG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40003002",
+    "CategoryName": "产品",
+    "ProductName": "NGR-手游APP",
+    "Responsibility": "1.熟练使用UE蓝图和行为树等工具，上手实现NPC和怪物AI的行为表现功能；\r\n2.和程序策划密切配合，维护AI功能框架，应对复杂逻辑，包括决策框架，行为树，状态机，寻路系统等内容；\r\n3.有独立Debug能力和经验，能从AI表现判断实际的功能和设计问题，灵活使用各种debug手段。",
+    "Requirement": "1.熟练掌握UE-AI核心模块，能独立调试问题；\r\n2.有策划设计背景，能灵活应用AI相关技术框架，准确解决问题；\r\n3.对行业通用AI框架和解决方案，决策模型，寻路导航方案，性能优化等模块有一定了解；\r\n4.有负责GameBot、强化学习，或者在游戏中落地应用大模型相关经验者优先。",
+    "LastUpdateTime": "2026年06月08日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=1972842312652447744",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "",
+    "Introduction": "",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "一年以上工作经验"
+  }
+}

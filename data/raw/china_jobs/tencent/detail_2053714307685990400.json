@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2053714307685990400",
+    "RecruitPostId": 119918,
+    "RecruitPostName": "UE微恐轻动作项目-资深关卡策划(玩法设计)",
+    "LocationId": 1,
+    "LocationName": "深圳",
+    "BGId": 956,
+    "BGName": "IEG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40003002",
+    "CategoryName": "产品",
+    "ProductName": "预研产品-手游APP-Project Metro",
+    "Responsibility": "1.负责微恐轻动作合作PVE、PVEVP等玩法关卡的创意设计、原型制作与全流程落地；\n2.独立产出关卡玩法方案、机制组合、特殊事件以及基于区域的特殊关卡体验；\n3.运用UE蓝图快速搭建玩法原型并敏捷迭代，验证新机制在微恐氛围下的可行性与乐趣点；\n4.推进关卡平衡性、战斗节奏、搜集曲线与撤离体验的调优，保证关卡在多人协作下的体验稳定；\n5.与主题美术、叙事、战斗、音频等模块紧密配合，强化关卡在微恐轻动作调性下的整体表达。",
+    "Requirement": "1.资深关卡/玩法策划经验，具备动作/射击/生存恐怖/大世界/搜索撤离等类型关卡设计经历，需提供作品集；\n2.能够独立使用UE蓝图搭建关卡原型，有半自动/程序化拼接、随机化资源组合经验者优先；\n3.对合作PVE、生存恐怖、Roguelite、规则怪谈等类型有深入理解与成功案例；\n4.对民俗、怪谈、都市异境等微恐题材有浓厚兴趣，能够贡献具差异化的玩法创意；\n5.具备优秀的审美与跨专业协作能力，有导演、建筑、电影等相关专业背景或爱好者优先。",
+    "LastUpdateTime": "2026年05月11日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2053714307685990400",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "",
+    "Introduction": "",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "三年以上工作经验"
+  }
+}

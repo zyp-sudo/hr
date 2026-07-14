@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2037101981088251904",
+    "RecruitPostId": 118870,
+    "RecruitPostName": "AI Infra研发工程师",
+    "LocationId": 1,
+    "LocationName": "深圳",
+    "BGId": 29294,
+    "BGName": "CSIG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40001001",
+    "CategoryName": "技术",
+    "ProductName": "腾讯云",
+    "Responsibility": "1.虚拟化平台异构计算方向功能、性能优化；\r\n2.异构计算方向虚拟化能力适配；\r\n3.异构计算方向虚拟化相关软件生态适配；\r\n4.前瞻性技术预研。",
+    "Requirement": "1.3年以上相关工作经验；\r\n2.深入理解KVM虚拟化技术，具备内核开发，性能分析能力，Debug能力；\r\n3.深入理解IOMMU，PCIe，硬件辅助虚拟化技术，熟悉GPU/NPU/DPU相关的技术解决方案；\r\n4.深入理解主流GPU/NPU硬件架构，了解业界发展方向与最新进程；\r\n5.熟悉上层AI方向主流框架，具备硬件调优经验。",
+    "LastUpdateTime": "2026年06月26日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2037101981088251904",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "1.开源贡献或相关论文；\r\n2.业界相关领先解决方案；\r\n3.了解主流的大模型推理框架及其加速技术原理，如vLLM、SGLang、TensorRT-LLM、ComfyUI等优先；\r\n4.了解ONNX/TensorRT等框架及了解GPU编解码等实现。",
+    "Introduction": "在腾讯，后台开发工程师不仅是“又快又稳”的问题解决专家，更是生态共创者。你将与技术团队一同沉淀优质代码，让它成为我们共有的宝贵资产。在不同的业务场景和技术发展阶段，你的架构思维也将帮助更多协作团队拓展新的思考。我们也珍视你的挑战精神，同时欢迎你一起参与团队愿景、文化和产品方向的探讨。",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "三年以上工作经验"
+  }
+}

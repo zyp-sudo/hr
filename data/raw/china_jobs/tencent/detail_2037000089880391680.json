@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2037000089880391680",
+    "RecruitPostId": 118850,
+    "RecruitPostName": "海外数据中心架构设计及解决方案工程师",
+    "LocationId": 1,
+    "LocationName": "深圳",
+    "BGId": 958,
+    "BGName": "TEG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40001003",
+    "CategoryName": "技术",
+    "ProductName": "IDC设计&优化",
+    "Responsibility": "1.海外架构适配：负责海外（如东南亚、欧洲等）数据中心架构体系规划，确保设计方案适配当地电力供应稳定性、气候环境及资源成本；\r\n2.全球合规交付：主导海外项目方案评审，确保技术架构符合国际主流标准及当地法律、防火、环保等准入要求；\r\n3.供应链敏捷化：推动预制化、模组化技术在海外落地，结合腾讯现有数据中心技术体系及方法论，实现全球算力节点的快速交付；\r\n4.跨国技术对接：代表腾讯与海外运营商、总包商及设备供应商进行技术谈判与方案对标，确保全球部署的一致性。",
+    "Requirement": "1.专业背景：电气、暖通等专业本科，5年以上 IDC 经验，有海外完整项目从设计到交付的全生命周期经验；\r\n2.国际化能力：精通国际标准，具备优秀的英语沟通及技术文档编写能力；\r\n3.适应性：熟悉海外 IDC 市场供应链特点，能平衡不同区域的技术差异与交付风险。",
+    "LastUpdateTime": "2026年06月24日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2037000089880391680",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "",
+    "Introduction": "在腾讯，优秀的技术运营工程师始终赋能业务，关注技术运营的质量、成本、效率和安全。他们不仅是经验丰富的问题解决者，更是具有全局视角的架构师，通过自动化工具的建设，强力提升平台效能，助力业务发展。",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "五年以上工作经验"
+  }
+}

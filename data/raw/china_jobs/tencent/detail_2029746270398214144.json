@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2029746270398214144",
+    "RecruitPostId": 118270,
+    "RecruitPostName": "大模型训推优化工程师（深圳/北京）",
+    "LocationId": 2,
+    "LocationName": "北京",
+    "BGId": 958,
+    "BGName": "TEG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40001001",
+    "CategoryName": "技术",
+    "ProductName": "大数据(数据计算平台部)",
+    "Responsibility": "1.支持算力引入评估，负责大模型训练、推理在新硬件上的评测及调优工作；\r\n2.主导建设大模型训推稳定性体系，解决模型生产中的技术难题，提升大规模训推的稳定性和效率；\r\n3.深入分析大模型训推特性，结合AI芯片和整机硬件系统，软硬协同充分发挥硬件效能。",
+    "Requirement": "1.精通主流大模型训练框架（DeepSpeed、Megatron等）和训练流程，熟悉分布式训练的底层通信机制、内存管理和优化策略、并行调度逻辑，有训练调参和性能评测经验；\n2.熟悉主流大模型推理框架（vLLM、SGLang等），具备在推理上进行通信优化、并行计算、存储优化等调优能力；\n3.熟悉主流AI芯片（GPU H100、Ascent）架构特性和相关profiling工具，有CUDA编程、编译分析、运行时分析等经验；\n4.熟悉大规模训推的可观测建设、诊断分析、故障解决，有稳定性治理经验优先；\n5.有良好的沟通、解决问题能力，能主动探索业界前沿技术。",
+    "LastUpdateTime": "2026年06月08日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2029746270398214144",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "",
+    "Introduction": "在腾讯，后台开发工程师不仅是“又快又稳”的问题解决专家，更是生态共创者。你将与技术团队一同沉淀优质代码，让它成为我们共有的宝贵资产。在不同的业务场景和技术发展阶段，你的架构思维也将帮助更多协作团队拓展新的思考。我们也珍视你的挑战精神，同时欢迎你一起参与团队愿景、文化和产品方向的探讨。",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "三年以上工作经验"
+  }
+}

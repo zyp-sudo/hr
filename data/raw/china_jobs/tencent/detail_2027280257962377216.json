@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2027280257962377216",
+    "RecruitPostId": 117981,
+    "RecruitPostName": "AI产品经理",
+    "LocationId": 1,
+    "LocationName": "深圳",
+    "BGId": 29292,
+    "BGName": "PCG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40003001",
+    "CategoryName": "产品",
+    "ProductName": "应用宝",
+    "Responsibility": "1.利用端侧的本地AI模型，挖掘并解决用户在PC端侧办公学习场景下的问题和需求；\n2.理解电脑硬件、AIPC的迭代和原理；理解大模型的技术原理和能力边界，深刻理解模型进化带来的解决方式的改变，并充分应用在产品设计中。平衡模型效果和运行性能，并极致优化用户体验；\n3.设计产品架构和迭代节奏，把握市场机遇，协同各端研发共同确保结果交付；\n4.持续维护并发挥与合作伙伴等战略合作和规模优势。",
+    "Requirement": "1.对AI在PC生态下的独特价值有想法，有思考，有想象力；有C端相关经验优先；\n2.具备本源性思考能力，极强的推动执行力，积极自驱，实事求是，坦率负责；\n3.对AI产品和大模型前沿技术，有学习能力和深刻理解；具备动手能力，可以自己用AI工具生产原型、处理并解决问题；\n4.具备优秀的数据分析和理解力，能系统性思考、精准拆解复杂问题；逻辑清晰严谨，能有效利用数据驱动决策。",
+    "LastUpdateTime": "2026年06月17日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2027280257962377216",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "1.有C端 AI 相关产品经验优先。",
+    "Introduction": "“用户为本，科技向善”，是写在每位腾讯产品人心中的一句箴言。在互联网浪潮中，大众的生活已被深刻地改变，如何为用户创造价值、创造怎样的价值，需要每位产品人花费更长时间去体会与探索。在这里，你将与同样关注细节、关注本质、关注美好的同事一道，开启你的创造性工作。",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "两年以上工作经验"
+  }
+}

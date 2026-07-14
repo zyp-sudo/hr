@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2020809543059144704",
+    "RecruitPostId": 117828,
+    "RecruitPostName": "元宝自动化测试工程师",
+    "LocationId": 1,
+    "LocationName": "深圳",
+    "BGId": 29294,
+    "BGName": "CSIG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40001001",
+    "CategoryName": "技术",
+    "ProductName": "元宝",
+    "Responsibility": "1.设计并落地覆盖 APP/PC/Web 多终端及后台接口的自动化测试体系，制定统一的自动化规范与执行标准，支撑产品快速迭代；\r\n2.深耕 AI + 自动化场景，研发智能测试工具（如 LLM 辅助用例生成、多模态控件推理和数据构造、测试结果 AI 校验），解决传统自动化高维护成本的痛点；\r\n3.维护自动化脚本与测试环境，适配 AI 模型迭代与产品功能更新，保障自动化执行稳定性与结果准确性；\r\n4.优化自动化测试流程，提升脚本复用率与执行效率，推动测试左移（研发自测）与右移（线上监控），构建全链路自动化质量保障；\r\n5.智能化分析自动化测试数据，输出质量报告，定位性能瓶颈与功能缺陷，推动研发团队优化，提升产品稳定性。",
+    "Requirement": "1.精通 Python/GO，熟练掌握自动化测试框架（如 Pytest）或多终端测试工具（Appium/Selenium）、接口测试工具（JMeter/Postman）；\r\n2.AI+UI自动化框架经验：有将计算机视觉（CV）、大语言模型（LLM）、多模态等AI技术应用于UI自动化测试的实际项目经验，例如UITARS、MAI Agent、GLM Agent等UI Agent解决方案者，解决过传统框架无法处理的难题（如动态内容断言、智能等待、复杂场景路径记忆）；\r\n3.智能体（Agent）设计与落地经验：深入参与过AI Agent类产品的设计、开发或测试，理解其架构（如ReAct， CoT）、工作流程，并能系统性设计其测试方案。",
+    "LastUpdateTime": "2026年06月10日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2020809543059144704",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "",
+    "Introduction": "在腾讯，测试开发工程师的工作是项目质量保证的关键一环，它贯穿了产品研发到上线的全流程。我们始终通过敏锐的洞察，寻找到效率提升的关键节点，开发工具优化，助力业务取得成功。",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "三年以上工作经验"
+  }
+}

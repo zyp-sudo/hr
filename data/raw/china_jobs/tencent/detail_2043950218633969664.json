@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2043950218633969664",
+    "RecruitPostId": 119322,
+    "RecruitPostName": "休闲游戏项目-技术美术-(渲染/综合向)",
+    "LocationId": 1,
+    "LocationName": "深圳",
+    "BGId": 956,
+    "BGName": "IEG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40002002",
+    "CategoryName": "设计",
+    "ProductName": "IEG公共",
+    "Responsibility": "1.负责光子艺术部技术美术组的高级技术美术工作，聚焦于渲染方向；主要负责欢乐游戏工作室的相关支持，包括上线项目及部分预研项目等；\n2.与产品和设计、引擎团队紧密协作，确保视觉效果与游戏性能的平衡，实现游戏内表现向效果需求；\n3.优化美术pipeline，并设计工具提高美术工作流效率支持美术和开发团队，解决生产中遇到的问题；\n4.编写并维护团队的技术文档，向美术团队及时推广新工具、技术和最佳实践，与团队共同成长。",
+    "Requirement": "1.具备扎实的图形学基础和数学知识， 熟悉实时渲染管线，对渲染性能有深入理解；\n2.熟练掌握GLSL, HLSL, CG等至少一门Shader编程语言，具备良好的可维护性；\n3.熟悉OpenGL ES，Vulkan及当前移动平台上的技术限制，掌握性能分析工具，能够针对移动平台进行优化；\n4.熟悉Unreal或Unity引擎的灯光渲染模块，能够充分利用引擎特性实现优质效果；\n5.熟悉DCC软件（Maya/3DMax/Blender，SD/SP，Houdini等）；\n6.具备良好的审美和逻辑思维能力，独立解决问题的能力；\n7.对游戏行业充满热情，对技术创新有持续追求。",
+    "LastUpdateTime": "2026年05月13日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2043950218633969664",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "1.光子头部运营期项目，良好的合作、工作氛围；\r\n2.和各细分领域TA都有充分的交流、学习机会与良好的TA团队内部沟通氛围，助力全方位成长。",
+    "ImportantItem": "1.手游项目有商业化相关经验者优先；\r\n2.AI相关游戏落地经验者优先。",
+    "Introduction": "【腾讯游戏｜这一局，由你主导】\n用画笔创造玩家热爱的世界。在腾讯游戏，你将主导角色设计、场景搭建或风格定义，用扎实的美术功底与独特创意，打造真正触动人心的视觉体验。这里有成熟的技术支持、丰富的项目机会，你的作品将随国民级游戏走进亿万玩家视野。加入我们，让艺术真正“玩”出价值。",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "两年以上工作经验"
+  }
+}

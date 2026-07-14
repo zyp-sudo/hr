@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2066729979240165376",
+    "RecruitPostId": 120589,
+    "RecruitPostName": "《三角洲行动》-3D特效设计师 ",
+    "LocationId": 1,
+    "LocationName": "深圳",
+    "BGId": 956,
+    "BGName": "IEG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40002002",
+    "CategoryName": "设计",
+    "ProductName": "ProjectD-手游APP",
+    "Responsibility": "1.使用UE4制作高品质特效，结合概念、玩法及项目风格进行效果调整及二次设计；\n2.使用UE4制作低性能开销手游特效，在玩法不变的情况下实现端手效果一致；\n3.负责商业化特效设计和制作，与引擎TA配合制定特效相关材质效果、攻克各种技术难题，提升特效品质；\n4.配合程序完成性能优化，确保特效在不同机型上稳定运行。",
+    "Requirement": "1.美术相关专业，3年以上UE特效研发经验，熟悉次世代端游特效研发流程，有手游研发经验更佳；\n2.熟练掌握Cascade粒子系统、材质系统、特效相关功能模块，熟练掌握特效相关软件如3dmax，Photoshop等，有houdini或embergen等特效软件经验优先；\n3.有扎实的美术功底，优秀的设计和造型能力，对构图、色彩、光影，氛围均有优秀的审美；\n4.对性能优化有足够的经验和敏感度，可以完成性能优化方案的落地；\n5.有射击品类研发经验者优先；\n6.热爱游戏，喜爱游戏文化；\n7.有较强的学习能力和自驱力，勤于思考，对工作有极致的追求，具备良好的抗压能力以及团队协作能力。",
+    "LastUpdateTime": "2026年06月23日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2066729979240165376",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "",
+    "Introduction": "",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "三年以上工作经验"
+  }
+}

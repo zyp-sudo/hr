@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2061648564802732032",
+    "RecruitPostId": 120346,
+    "RecruitPostName": "应用宝-广告工程师",
+    "LocationId": 1,
+    "LocationName": "深圳",
+    "BGId": 29292,
+    "BGName": "PCG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40001001",
+    "CategoryName": "技术",
+    "ProductName": "应用宝",
+    "Responsibility": "1.负责移动广告系统后台架构和链路优化，提升系统稳定性和商业变现效率；\r\n2.负责PC商业生态系统架构设计与能力规划，包括服务性能、链路耗时、迭代效率等优化；\r\n3.与运营/产品团队紧密配合，做好需求和项目管理，协调多模块团队，确保项目落地并达成业务目标；\r\n4.研究前沿技术（如AI广告），主导技术预研与创新方案落地。",
+    "Requirement": "1.计算机及相关专业本科以上学历，编程能力强，熟练掌握c++/golang中一门语言，6年以上工作经验 ；\r\n2.具备优秀的系统规划能力、架构设计能力、项目管理能力 ；\r\n3.有软件广告商业化从业经验优先。",
+    "LastUpdateTime": "2026年06月03日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2061648564802732032",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "",
+    "Introduction": "在腾讯，后台开发工程师不仅是“又快又稳”的问题解决专家，更是生态共创者。你将与技术团队一同沉淀优质代码，让它成为我们共有的宝贵资产。在不同的业务场景和技术发展阶段，你的架构思维也将帮助更多协作团队拓展新的思考。我们也珍视你的挑战精神，同时欢迎你一起参与团队愿景、文化和产品方向的探讨。",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "五年以上工作经验"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2039181783093903360",
+    "RecruitPostId": 119007,
+    "RecruitPostName": "魔方技术中心-游戏测试工程师-客户端性能测试方向",
+    "LocationId": 1,
+    "LocationName": "深圳",
+    "BGId": 956,
+    "BGName": "IEG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40001002",
+    "CategoryName": "技术",
+    "ProductName": "IEG公共",
+    "Responsibility": "1.负责游戏客户端性能测试工作，包括测试方案设计和执行、性能问题分析、流程和自动化建设等；\n2.负责开发、优化客户端性能测试相关的执行或分析类工具，提升测试质量和效率；\n3.负责收集和分析业务性能测试需求，探索更多的测试方法；\n4.管理性能测试团队。",
+    "Requirement": "1.本科以上学历，3年及以上客户端(游戏或应用)性能测试或测试开发经验；\r\n2.熟悉至少一门开发语言，包括C/C++、Python、Java，能独立完成测试工具的开发工作；\r\n3.熟练使用各类性能分析工具，包括Systrace、SnapDragon、Instruments、Renderdoc、Intel GPA等。",
+    "LastUpdateTime": "2026年06月30日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2039181783093903360",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "1.加入腾讯游戏，参与全球热门游戏的研发过程，体验游戏产业的魅力；\r\n2.与优秀的团队成员一起工作，共同成长，提升专业技能；\r\n3.享有腾讯公司完善的福利制度，包括五险一金、带薪年假、员工培训等；\r\n4.充满挑战和机遇的工作环境，为您提供广阔的职业发展空间。",
+    "ImportantItem": "1.熟悉计算机图形学或游戏引擎者优先；\n2.熟悉UE/Unity优先；\n3.具有游戏开发或者Android/IOS开发经验者优先。",
+    "Introduction": "",
+    "DepartmentIntroduction": "魔方工作室群（Morefun Studios）成立于2010年 ，腾讯IEG（互动娱乐事业群）四大工作室群之一。\n知名产品包括《火影忍者》《暗区突围》《洛克王国》《一人之下》《王牌战士》等。魔方以“创造一个时代的游戏记忆”为愿景，将“风骚、狂热、极致、专精”融入每一位魔方人心中，在动作、射击、开放世界RPG等多个游戏品类赛道持续探索开拓，致力于完成“创作令人惊叹的游戏”的使命！\n欢迎有脑洞、奇思妙想的你，欢迎敢于挑战权威和专业的你，欢迎拥有技术黑科技不断尝试突破的你，新生代的你们构成了魔方的每一个立体切面。满怀热枕！爱与梦想兼顾！在魔方，你可以成为任何你想成为的人。\n加入魔方，JUST MOREFUN！JUST YOU!",
+    "RequireWorkYearsName": "三年以上工作经验"
+  }
+}

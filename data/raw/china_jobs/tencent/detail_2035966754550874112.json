@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2035966754550874112",
+    "RecruitPostId": 118751,
+    "RecruitPostName": "腾讯视频-AI短剧创作人",
+    "LocationId": 2,
+    "LocationName": "北京",
+    "BGId": 29292,
+    "BGName": "PCG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40006",
+    "CategoryName": "内容",
+    "ProductName": "腾讯视频",
+    "Responsibility": "1.负责腾讯视频AI短剧项目的全流程制作，独立或带领团队完成从创意构思、剧本分镜、AI视觉生成（图生视频/文生视频）、音频制作到最终剪辑合成的全过程；\r\n2.负责把控AI短剧的整体视觉美学风格，包括但不限于角色形象统一性、场景氛围营造、色彩光影调性等，解决AI生成视频中常见的“角色一致性”和“画面闪烁”等技术难题，确保成片具备电影级质感；\r\n3.持续探索国内外最前沿的视频生成模型、多模态AI工具及工作流插件，不断测试和优化制作工艺，搭建可复用的标准化AI短剧生产管线，提升内容生产的效率与品质；\r\n4.探索传统实拍无法实现的“想象力内容”，利用AI技术的特性，创作具有独特视觉奇观和创新叙事方式的短剧作品，抢占AI内容赛道的先机。",
+    "Requirement": "1.本科及以上学历，数字媒体艺术、动画、影视制作、计算机图形学等相关专业优先。具有独立完成的AI短片作品，且有相关创作经验者优先；\r\n2.精通至少2-3种主流AI视频生成工具（如可灵AI、Luma、Runway、Pika等），熟悉图像生成工具（Midjourney/Stable Diffusion），了解音频生成与剪辑软件（如剪映、PR、AU等）的协同工作流；\r\n3.具备优秀的导演思维和镜头语言表达能力，懂视听语言、懂剪辑节奏、懂色彩构成，能够通过技术手段精准实现艺术构想；\r\n4.具备极强的技术探索精神和动手能力，善于解决AI生成过程中的各类突发现实问题，对新技术有极度的好奇心和快速学习能力，能适应高速迭代的技术环境。",
+    "LastUpdateTime": "2026年06月22日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2035966754550874112",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "",
+    "Introduction": "",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "两年以上工作经验"
+  }
+}

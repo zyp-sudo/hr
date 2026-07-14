@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2003796583476518912",
+    "RecruitPostId": 116812,
+    "RecruitPostName": "微信秒剪-多模态强化学习训练框架开发工程师",
+    "LocationId": 2,
+    "LocationName": "北京",
+    "BGId": 14129,
+    "BGName": "WXG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40001005",
+    "CategoryName": "技术",
+    "ProductName": "微信读书",
+    "Responsibility": "1.负责视频生成模型与强化学习相结合的训练框架设计、开发与性能优化；\r\n2.负责多模态强化学习训练流程的优化，包括环境搭建、奖励函数优化、分布式训练及推理性能优化；\r\n3.深入分析和优化视频生成模型训练全链路流程，包括数据加载、显存管理、通信效率等，显著提升训练速度与吞吐量；\r\n4.主导解决大规模分布式训练中的系统瓶颈，优化训练过程中多机多卡数据通信开销。",
+    "Requirement": "1.具备大模型分布式训练框架开发经验，并有成功优化复杂训练流程的经验；\r\n2.对强化学习有深入的理论与实践理解，能够独立推进相关算法的创新与落地；\r\n3.熟悉主流生成模型的原理，在AIGC相关领域具备实际项目经验；\r\n4.具备优秀的系统性分析和解决复杂工程问题的能力，善于定位和解决分布式环境下的性能、显存和收敛性等疑难杂症。",
+    "LastUpdateTime": "2026年06月26日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2003796583476518912",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "",
+    "Introduction": "渴望为世界带来新意的人，早已对描绘未来的“热词”不陌生——人工智能、机器学习、数据科学等等。腾讯始终在业界前沿不断探索，积极布局，并为优秀的你提供无限广阔的舞台。我们坚信科技的不断革新，最终能带来美好的、撼动人心的改变。",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "两年以上工作经验"
+  }
+}

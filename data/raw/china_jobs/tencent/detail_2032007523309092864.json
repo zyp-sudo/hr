@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2032007523309092864",
+    "RecruitPostId": 118436,
+    "RecruitPostName": "QClaw-产品策划-AI工具方向",
+    "LocationId": 1,
+    "LocationName": "深圳",
+    "BGId": 29294,
+    "BGName": "CSIG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40003001",
+    "CategoryName": "产品",
+    "ProductName": "安全管家",
+    "Responsibility": "1.负责QClaw-AI工具方向产品策划工作。",
+    "Requirement": "1.必须具备：；\r\n2.本科及以上学历，3年以上互联网产品策划经验；\r\n3.有完整的C端产品从0到1或从1到10经验，熟悉需求分析→PRD→上线→迭代全流程；\r\n4.具备较强的用户同理心和场景化思维，能从用户真实痛点出发定义产品方案，而非堆功能；\r\n5.逻辑清晰，沟通能力强，能独立推动跨职能团队（研发/设计/测试/运营）高效协作；\r\n6.数据驱动意识好，熟悉A/B测试、漏斗分析、用户行为分析等方法。",
+    "LastUpdateTime": "2026年07月01日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2032007523309092864",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "1.有AI产品/智能助手/对话式交互/RPA/自动化工具相关产品经验；\r\n2.对大语言模型（LLM）有基本理解，了解Prompt Engineering、Agent、Function Calling等概念；\r\n3.有工具类产品经验（效率工具、文件管理、远程协作等），理解工具产品的留存逻辑；\r\n4.有开源社区运营或开发者生态建设经验；\r\n5.自己是AI工具的深度用户，日常使用各类AI Agent/Copilot产品。1.有桌面端（Windows/macOS）产品经验，了解客户端产品的特殊性；\r\n6.有商业化产品策划经验（订阅制/增值服务/定价策略）。",
+    "Introduction": "“用户为本，科技向善”，是写在每位腾讯产品人心中的一句箴言。在互联网浪潮中，大众的生活已被深刻地改变，如何为用户创造价值、创造怎样的价值，需要每位产品人花费更长时间去体会与探索。在这里，你将与同样关注细节、关注本质、关注美好的同事一道，开启你的创造性工作。",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "三年以上工作经验"
+  }
+}

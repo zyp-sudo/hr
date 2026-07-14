@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2046475996839968768",
+    "RecruitPostId": 119522,
+    "RecruitPostName": "魔方工作室-UE技术向渲染TA",
+    "LocationId": 1,
+    "LocationName": "深圳",
+    "BGId": 956,
+    "BGName": "IEG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40002002",
+    "CategoryName": "设计",
+    "ProductName": "SO-手游APP",
+    "Responsibility": "1.负责UE/UE5引擎的画面渲染品质优化与提升，主导高质量Shader的设计与开发，结合最新图形学算法实现电影级美术效果；\r\n2.深度参与项目渲染方案设计，与美术团队、TA及开发团队紧密协作，确保复杂场景在不同光照条件下的视觉表现高度统一；\r\n3.主动分析并解决美术生产流程中的技术瓶颈，开发高效的DCC工具与引擎内自动化工具链，显著提升美术团队迭代效率；\r\n4.跟进项目工程版本迭代，快速定位并修复渲染相关Bug，配合引擎程序进行深度性能剖析，优化渲染管线与美术资源效率；\r\n5.编写标准化技术文档，制定Shader开发规范与美术生产流程指南，推动团队技术知识的沉淀与最佳实践的落地执行。",
+    "Requirement": "1.5年以上游戏开发或引擎渲染相关工作经验，完整参与过至少2款3A级或高画质手游项目的渲染管线搭建或优化；\r\n2.具备卓越的美术鉴赏能力与扎实的美术基础，能精准理解并还原策划与美术团队的视觉需求；\r\n3.精通计算机图形学原理与数学基础，深入掌握UE实时渲染管线（如Nanite、Lumen、虚拟阴影等）及主流渲染算法；\r\n4.熟练使用C++/Python/C#等编程语言，具备扎实的代码能力与快速学习新技术的能力，能独立完成复杂功能模块开发；\r\n5.精通HLSL/GLSL等Shader编程语言，能编写高性能、可扩展且易于维护的Shader代码，适配多平台渲染需求；\r\n6.熟练使用RenderDoc、PIX、Unreal Insights等Profiling工具，掌握DrawCall合并、Shader优化、纹理压缩与内存管理等核心性能调优技术；\r\n7.具备全局视角，能识别项目全流程中的效率痛点，设计并落地针对性的技术解决方案，推动研发效能提升；\r\n8.责任心强，主动性强，具备优秀的团队协作精神与抗压能力，能在高压环境下保持高效输出；\r\n9.自驱力突出，对前沿图形技术（如路径追踪、AI降噪、实时全局光照等）保持高度敏感，持续探索并引入创新方案；\r\n10.计算机科学、数字媒体技术、图形学等相关专业优先，有渲染技术专项研究或行业领先实践经验者更佳；\r\n11.英语读写能力优秀，能流畅阅读SIGGRAPH、GDC等技术会议论文及引擎官方文档，跟踪国际前沿技术趋势。",
+    "LastUpdateTime": "2026年05月07日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2046475996839968768",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "",
+    "Introduction": "",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "三年以上工作经验"
+  }
+}

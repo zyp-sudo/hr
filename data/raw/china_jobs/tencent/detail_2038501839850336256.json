@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2038501839850336256",
+    "RecruitPostId": 118937,
+    "RecruitPostName": "企业微信-产品策划-智能文档",
+    "LocationId": 5,
+    "LocationName": "广州",
+    "BGId": 14129,
+    "BGName": "WXG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40003001",
+    "CategoryName": "产品",
+    "ProductName": "企业微信SaaS",
+    "Responsibility": "1.负责企业微信文档（SaaS侧）核心功能的全流程策划与产品定义，包括需求调研、功能规划、产品设计及上线推动；\n2.深度打磨在线文档、表格、智能表格等文档形态的跨平台编辑体验，持续优化企业级协同创作与知识管理平台的易用性与流畅性；\n3.探索AI技术在企业知识沉淀与检索等场景的应用，推动AI能力与文档产品的深度融合；\n4.主导跨团队协作，与研发、设计、运营及商业化团队紧密配合，高效推进项目全生命周期管理，确保产品高质量交付；\n5.基于用户反馈与业务数据，持续迭代产品功能，提升用户满意度和产品竞争力。",
+    "Requirement": "1.具备扎实的产品策划能力，能独立完成高质量PRD撰写与产品原型设计，对产品细节和用户体验有极致追求；\r\n2.拥有极强的系统性逻辑思维与业务抽象能力，能快速理解复杂业务场景并转化为清晰的产品方案；\r\n3.对AI Agent架构及大模型底层逻辑有一定理解，能敏锐识别技术趋势并将其转化为具备商业价值的产品功能；\r\n4.具备优秀的数据分析能力，能通过数据指标定位问题并制定有效的产品迭代策略。",
+    "LastUpdateTime": "2026年06月29日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2038501839850336256",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "1.是AI效率工具的深度使用者，研究过主流大模型产品及开发框架，对AI应用场景有独到见解；\n2.熟悉Obsidian、NotebookLM等知识管理工具，对极简设计理念与自动化工作流有实践经验；\n3.有企业级SaaS产品或协同办公产品策划经验，了解企业用户需求与痛点；\n4.有成功推动AI功能落地的案例，熟悉大语言模型在文档场景的应用实践。",
+    "Introduction": "",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "三年以上工作经验"
+  }
+}

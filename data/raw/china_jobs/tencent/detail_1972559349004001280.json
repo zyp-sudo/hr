@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "1972559349004001280",
+    "RecruitPostId": 115092,
+    "RecruitPostName": "海外网络规划工程师",
+    "LocationId": 1,
+    "LocationName": "深圳",
+    "BGId": 958,
+    "BGName": "TEG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40001003",
+    "CategoryName": "技术",
+    "ProductName": "公共",
+    "Responsibility": "1.负责腾讯云海外网络规划设计，寻找合适网络资源和供应商，联合各团队快速完成具备竞争力的网络方案设计；\r\n2.负责海外网络建设流程优化，协调运营商和内部建设团队，快速完成网络建设交付；\r\n3.积极拓展海外网络资源，和运营商建立多渠道沟通体系，建立健全自动化业务开通和报障等系统。",
+    "Requirement": "1.丰富的全球网络规划和建设经验，掌握一定运营商资源，有TOP云计算服务提供商和运营商工作经验者优先；\r\n2.本科及以上学历，5年以上工作经验，熟悉大型运营商网络或者云网络，有实际海外网络建设和运营经历；\r\n3.极强的责任心和上进心，长期保持积极的学习态度，能紧跟云网络的快速发展；\r\n4.英语流利，具备较好的沟通和协作能力。",
+    "LastUpdateTime": "2026年06月05日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=1972559349004001280",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "",
+    "Introduction": "在腾讯，优秀的技术运营工程师始终赋能业务，关注技术运营的质量、成本、效率和安全。他们不仅是经验丰富的问题解决者，更是具有全局视角的架构师，通过自动化工具的建设，强力提升平台效能，助力业务发展。",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "五年以上工作经验"
+  }
+}

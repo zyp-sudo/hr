@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2020809468387946496",
+    "RecruitPostId": 117827,
+    "RecruitPostName": "元宝全链路高级测试工程师",
+    "LocationId": 1,
+    "LocationName": "深圳",
+    "BGId": 29294,
+    "BGName": "CSIG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40001001",
+    "CategoryName": "技术",
+    "ProductName": "元宝",
+    "Responsibility": "1.负责 Agent 服务及底层分布式系统的功能正确性、高可用性及性能压测，确保在复杂长链路下的系统稳定与响应效率；\r\n2.针对 Prompt、RAG、Tool Use 等核心环节，研发自动化评估工具（如 LLM-as-a-Judge），将模糊的生成式体验转化为可量化的技术指标；\r\n3.分析从代码变更、架构调整到模型策略优化全过程中的工程与算法风险，建立覆盖全链路的异常检测与预警机制；\r\n4.通过对线上/线下数据的建模与分析，定位链路瓶颈与模型失效点，驱动工程架构与算法策略的持续优化。",
+    "Requirement": "1.精通 Python 或 Go，具备扎实的计算机基础，有大型复杂系统测试开发经验，熟悉性能调优、全链路追踪或自动化基建者优先；\r\n2.理解大模型基本原理，有 Agent 架构或策略质量保障经验，能独立设计效果度量标准；\r\n3.能解决传统的逻辑缺陷、性能瓶颈等确定性问题，也能通过数据驱动、概率统计等手段应对模型输出的不确定性挑战；\r\n4.具备良好的业务体感与数据敏感度，能够快速跟进 AI 领域前沿技术并转化为实际的质量保障手段。",
+    "LastUpdateTime": "2026年06月15日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2020809468387946496",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "",
+    "Introduction": "在腾讯，测试开发工程师的工作是项目质量保证的关键一环，它贯穿了产品研发到上线的全流程。我们始终通过敏锐的洞察，寻找到效率提升的关键节点，开发工具优化，助力业务取得成功。",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "三年以上工作经验"
+  }
+}

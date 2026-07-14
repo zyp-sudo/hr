@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2044415713061535744",
+    "RecruitPostId": 119381,
+    "RecruitPostName": "腾讯云-大模型推理优化专家",
+    "LocationId": 1,
+    "LocationName": "深圳",
+    "BGId": 29294,
+    "BGName": "CSIG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40001001",
+    "CategoryName": "技术",
+    "ProductName": "腾讯云",
+    "Responsibility": "1.负责大模型推理引擎KV Cache子系统的设计，实现与维护；\r\n2.负责KV Cache在新型大模型、异构硬件平台与新技术特性上的深度适配、兼容打通与底层调；\r\n3.负责优化显存占用、碎片、复用率、命中率、延迟、吞吐核心指标提升性能，降低成本；\r\n4.深度探索KV Cache业界与行业前沿技术，并能结合业务特点转换成业务价值。",
+    "Requirement": "1.本科及以上学历，丰富的推理场景KV Cache相关研发经验，对相关优化技术有深刻的理解和见解；\n2.曾参与过线上大规模KV Cache统的研发及演进；\n3.技术有极致追求，对业界趋势有敏锐洞察力；\n4.良好自驱力， 责任心和团队合作能力；\n5.分布式存储、高性能网络，缓存系统经验优先。",
+    "LastUpdateTime": "2026年04月15日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2044415713061535744",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "",
+    "Introduction": "在腾讯，后台开发工程师不仅是“又快又稳”的问题解决专家，更是生态共创者。你将与技术团队一同沉淀优质代码，让它成为我们共有的宝贵资产。在不同的业务场景和技术发展阶段，你的架构思维也将帮助更多协作团队拓展新的思考。我们也珍视你的挑战精神，同时欢迎你一起参与团队愿景、文化和产品方向的探讨。",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "三年以上工作经验"
+  }
+}

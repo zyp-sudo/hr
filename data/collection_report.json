@@ -1,0 +1,48 @@
+{
+  "generated_at": "2026-07-07T20:17:30+08:00",
+  "target": 50000,
+  "write_mode": "merge",
+  "existing_records_before_run": 5190,
+  "new_records_this_run": 50000,
+  "actual_records": 55110,
+  "actual_skill_records": 69275,
+  "active_sources": [
+    "Baidu Careers",
+    "Huawei Careers",
+    "JobOnline Public Employment Service",
+    "Meituan Careers",
+    "National College Student Employment Service",
+    "Tencent Careers"
+  ],
+  "active_source_count": 6,
+  "active_source_types": [
+    "official_enterprise_api",
+    "official_enterprise_site",
+    "public_employment_service"
+  ],
+  "active_source_type_count": 3,
+  "source_counts": {
+    "Tencent Careers": 2304,
+    "Meituan Careers": 2318,
+    "Huawei Careers": 378,
+    "Baidu Careers": 10,
+    "National College Student Employment Service": 100,
+    "JobOnline Public Employment Service": 50000
+  },
+  "region_counts": {
+    "china": 55110,
+    "foreign": 0
+  },
+  "gap": 0,
+  "target_met": true,
+  "source_errors": [],
+  "outputs": {
+    "jobs": "data\\collected_jobs.csv",
+    "china_jobs": "data\\china_jobs.csv",
+    "foreign_jobs": "data\\foreign_jobs.csv",
+    "skills": "data\\collected_job_skills.csv",
+    "sources": "data\\collected_sources.csv",
+    "etl_manifest": "data/etl/etl_manifest.json"
+  },
+  "note": "The pipeline never duplicates postings just to hit 100k. If target_met is false, add more lawful source adapters or CSV imports under data/imports/."
+}

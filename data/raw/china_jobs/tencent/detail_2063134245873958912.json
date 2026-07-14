@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2063134245873958912",
+    "RecruitPostId": 120417,
+    "RecruitPostName": "AI 宠物-后台工程师",
+    "LocationId": 5,
+    "LocationName": "广州",
+    "BGId": 956,
+    "BGName": "IEG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40001001",
+    "CategoryName": "技术",
+    "ProductName": "Clawpet-端游",
+    "Responsibility": "1.负责ClawPet桌面Agent产品的后台服务核心研发工作，构建高可靠、低延迟、可扩展的Go服务端技术体系；\r\n2.主导实时连接管理、分布式状态同步、异步任务调度及数据持久化等基础服务模块的设计与实现；\r\n3.优化面向海量在线设备的状态管理系统架构，重点提升高并发处理能力、数据强一致性保障及故障快速恢复机制；\r\n4.搭建Agent后台基础设施，包括长任务执行引擎、跨工具协议适配层、用户记忆库管理及大模型能力集成方案；\r\n5.全流程负责服务开发、灰度发布、自动化监控告警及线上异常根因分析，持续提升系统SLA稳定性；\r\n6.深度协同客户端开发、算法团队及产品经理，完成从需求分析、技术方案设计到效果验证的全链路闭环交付。",
+    "Requirement": "1.计算机相关专业本科及以上学历，3年以上后端服务开发经验，有高并发系统实战经验者优先；\r\n2.精通Go语言开发，深入理解Goroutine调度、Channel通信、内存管理等并发编程模型，具备复杂业务逻辑实现能力；\r\n3.熟练掌握RESTful API/WebSocket协议开发，精通JWT/OAuth2.0认证体系，熟悉MySQL/PostgreSQL索引优化与事务处理；\r\n4.具备实时在线系统架构经验，熟悉分布式ID生成、消息队列削峰填谷、分布式锁等常见模式设计；\r\n5.了解LLM应用开发范式，熟悉Function Calling、工具调用链设计、上下文记忆管理等Agent关键技术；\r\n6.拥有大型服务系统设计能力，能在业务需求、性能指标与代码可维护性之间制定合理技术方案；\r\n7.严格遵循工程化规范，具备完善的单元测试意识，熟练运用APM工具进行性能调优与故障诊断。",
+    "LastUpdateTime": "2026年06月08日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2063134245873958912",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "1.参与前沿桌面Agent产品研发，打造下一代智能化桌面操作系统核心服务底座；\r\n2.接触LLM+Agent技术全链路场景，从模型推理调度到底层服务架构均有深度实践机会；\r\n3.扁平化技术团队氛围，与AI研究员、资深架构师共同攻克高难度技术挑战；\r\n4.完善的研发基础设施，配备先进的CI/CD流水线、压测平台和可观测性监控体系；\r\n5.具有市场竞争力的薪酬包，包含技术成长奖金与创新成果激励计划。",
+    "ImportantItem": "1.有千万级长连接服务、MMORPG游戏后台、实时IM系统或复杂状态机引擎开发经验；\r\n2.参与过AI Agent平台建设，包含模型网关路由、RAG检索增强、异步任务编排或全链路可观测性方案落地；\r\n3.熟悉云原生技术栈，包括K8s容器编排、Service Mesh服务治理、Prometheus监控体系或GitOps持续交付；\r\n4.有桌面应用配套服务、游戏化交互系统或社交关系链后台的完整项目交付经验；\r\n5.持续关注AI技术前沿，有RAG优化、Agent工具链开发或大模型性能调优实践案例。",
+    "Introduction": "",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "三年以上工作经验"
+  }
+}

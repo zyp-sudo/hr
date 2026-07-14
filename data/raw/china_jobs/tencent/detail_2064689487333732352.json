@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2064689487333732352",
+    "RecruitPostId": 120499,
+    "RecruitPostName": "《王者荣耀世界》资深怪物策划(副本向)",
+    "LocationId": 3,
+    "LocationName": "上海",
+    "BGId": 956,
+    "BGName": "IEG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40003002",
+    "CategoryName": "产品",
+    "ProductName": "NGR-手游APP",
+    "Responsibility": "1.负责游戏多人副本的架构和内容设计，包括战斗核心机制、BOSS技能设计、AI行为树等内容落地；\n2.构建和维护副本内容的生产管线和工具链，提出优化建议方案，提高开发效率及易用性；\n3.与剧情、数值、系统、关卡等模块紧密协作，推动副本相关需求的整体方案设计与联调落地。",
+    "Requirement": "1.有5年以上MMO、ARPG类战斗策划工作经验，有成功上线项目开发经历者优先；\n2.对UE蓝图、行为树AI、技能逻辑与表现有深入经验，具备调优管线效率能力；\n3.对多人BOSS设计、战斗核心机制有较深的认知和要求；\n4.具备优秀的跨团队沟通协作能力，能推动复杂需求的多方协作落地；\n5.热爱游戏，在游戏阅历上具备深度和广度，以MMO和ARPG类游戏深度爱好者优先。",
+    "LastUpdateTime": "2026年06月29日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2064689487333732352",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "",
+    "Introduction": "",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "五年以上工作经验"
+  }
+}

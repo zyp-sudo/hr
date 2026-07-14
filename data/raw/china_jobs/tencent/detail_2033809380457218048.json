@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2033809380457218048",
+    "RecruitPostId": 118581,
+    "RecruitPostName": "《灰境行者》-游戏引擎开发（通用向）",
+    "LocationId": 3,
+    "LocationName": "上海",
+    "BGId": 956,
+    "BGName": "IEG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40001001",
+    "CategoryName": "技术",
+    "ProductName": "Maple-端游-国内",
+    "Responsibility": "1.负责游戏引擎中的通用模块（如物理系统、性能优化、pipeline等非图形渲染类模块）的开发与维护；\r\n2.对游戏引擎进行整体性能分析，定位并解决除图形渲染外的其他性能瓶颈问题，例如内存管理、CPU调度等方面的问题；\r\n3.与策划、客户端开发团队紧密合作，确保引擎的通用功能满足项目需求，如游戏的逻辑运行、资源管理等；\r\n4.持续跟踪行业前沿技术，探索并引入新技术提升引擎的整体表现力与效率，包括但不限于引擎架构优化、跨平台支持等方面。",
+    "Requirement": "1.计算机相关专业本科及以上学历，1年以上游戏引擎通用模块开发经验；\r\n2.精通C++编程，具备扎实的计算机基础，深入理解计算机原理（如操作系统、计算机体系结构等）；\r\n3.具备良好的问题分析与解决能力，能够独立完成复杂通用模块的设计与开发；\r\n4.责任心强，主动性强，对游戏开发充满热情，持续追求技术卓越。",
+    "LastUpdateTime": "2026年06月17日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2033809380457218048",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "1.热衷于玩游戏并熟悉UE5引擎的整体开发流程（包括但不限于通用模块相关流程）；\r\n2.对计算机科学有浓厚兴趣，喜欢研究底层原理与新技术（如引擎架构、跨平台技术等）；\r\n3.学习能力强，能够快速掌握新工具、新框架与新领域知识（如新的引擎架构设计理念、跨平台开发技术等）。",
+    "Introduction": "",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "一年以上工作经验"
+  }
+}

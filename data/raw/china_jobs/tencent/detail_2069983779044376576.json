@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2069983779044376576",
+    "RecruitPostId": 120740,
+    "RecruitPostName": "腾讯云数据库运维DBA ",
+    "LocationId": 8,
+    "LocationName": "成都",
+    "BGId": 29294,
+    "BGName": "CSIG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40001003",
+    "CategoryName": "技术",
+    "ProductName": "腾讯云-数据库",
+    "Responsibility": "1.负责腾讯云内部业务MySQL、Redis、MongoDB和PG等数据库，包括运维支持、性能优化、容量规划等；能快速定位问题并制定应急预案；\r\n2.负责业务数据库选型和架构设计，解决业务数据库问题，提高业务高可用能力和稳定性；\r\n3.通过自身的专业技术能力，解决方案思路，对业务数据库运维的需求进行洞察和挖掘，并形成产品的后续能力补充。",
+    "Requirement": "1.精通MySQL数据库的运行机制和架构体系，精通数据库架构与设计，对数据库解决方案的优劣和适用场景有深入的理解，能够根据具体场景合理进行数据库选型和架构设计；\r\n2.熟悉Redis、MongoDB和PG等数据库的原理和运维尤佳；\r\n3.熟悉Linux，熟练掌握Java/Python/Perl/Golang等语言中的一种，可以通过编写程序解决工作中遇到的问题，具备良好的编程风格；\r\n4.熟练掌握数据库性能优化技巧，能够定位全链路上的性能瓶颈（网络、CPU、IO、操作系统等），并推动解决问题；\r\n5.具有娴熟的沟通技巧，执行力强，具有优秀的团队合作精神、敬业精神；对互联网与云计算行业有清晰的认知和热情；\r\n6.具备较强的抗压能力，有良好的服务意识；\r\n7.良好的团队协作能力，喜欢有挑战的工作。",
+    "LastUpdateTime": "2026年06月25日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2069983779044376576",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "",
+    "Introduction": "在腾讯，优秀的技术运营工程师始终赋能业务，关注技术运营的质量、成本、效率和安全。他们不仅是经验丰富的问题解决者，更是具有全局视角的架构师，通过自动化工具的建设，强力提升平台效能，助力业务发展。",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "三年以上工作经验"
+  }
+}

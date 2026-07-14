@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2010621139876995072",
+    "RecruitPostId": 117244,
+    "RecruitPostName": "大模型算法应用工程师（教育方向）",
+    "LocationId": 2,
+    "LocationName": "北京",
+    "BGId": 29294,
+    "BGName": "CSIG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40001005",
+    "CategoryName": "技术",
+    "ProductName": "元宝",
+    "Responsibility": "1.负责LLM和多模态大模型在教育领域能力提升，优化元宝教育应用效果，包括但不限于：CPT、SFT、Reward设计与RL训练等；\r\n2.应用大模型技术，设计并优化教育场景AI Agent的核心能力，例如思路规划、Memory机制、工具调用以及多Agent协作，推动Agent技术在教育领域的应用；\r\n3.基于教育领域模型应用特点，构建精准的模型自动评测能力，持续优化模型领域评测集与评测效果；\r\n4.主导算法从需求分析、方案设计、数据处理、模型训练评估与上线的全流程，确保算法高效、稳定地服务于产品。",
+    "Requirement": "1.理解LLM和VLM的在教育领域的前沿应用技术，对AI+教育行业应用有浓厚的兴趣，有解题、批改、AI Tutor等应用落地经验者优先；\r\n2.熟悉大模型训练优化方法，有多模态大模型训练经验者优先；\r\n3.具备优秀的编程能力和良好的工程实践习惯，代码风格清晰简洁；\r\n4.拥有计算机科学、人工智能、电子工程、数学或统计学等相关专业的硕士及以上学历；\r\n5.具备良好的沟通能力，能够与合作方高效协作并推动项目落地；\r\n6.具备一定的创新能力和技术深度，作为第一作者在NeurIPS、ICML、ICLR、CVPR、ACL等会议上发表过高水平论文者优先。",
+    "LastUpdateTime": "2026年06月12日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2010621139876995072",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "",
+    "Introduction": "渴望为世界带来新意的人，早已对描绘未来的“热词”不陌生——人工智能、机器学习、数据科学等等。腾讯始终在业界前沿不断探索，积极布局，并为优秀的你提供无限广阔的舞台。我们坚信科技的不断革新，最终能带来美好的、撼动人心的改变。",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "三年以上工作经验"
+  }
+}

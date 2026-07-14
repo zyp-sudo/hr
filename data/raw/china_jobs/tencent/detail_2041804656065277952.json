@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2041804656065277952",
+    "RecruitPostId": 119141,
+    "RecruitPostName": "ARC Raiders-主程序",
+    "LocationId": 3,
+    "LocationName": "上海",
+    "BGId": 956,
+    "BGName": "IEG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40001001",
+    "CategoryName": "技术",
+    "ProductName": "生态二方赋能-其他(IEG)-摘星（ARC端游）",
+    "Responsibility": "1.带领程序开发团队，按质按量完成UE5射击项目的开发内容，并确保所有内容实装落地的交付情况；\n2.协调策划、美术、服务器等职能团队，推动跨部门协作，确保每个版本高品质交付完成；\n3.培养与指导团队成员，提升整体技术水平，建立高效的技术开发方式与团队文化；\n4.持续跟踪行业发展，探索并引入适合项目需求的新技术和工具，包括但不限于合理使用AI提速增效。",
+    "Requirement": "1.10年及以上开发经验，有完整的大型3D游戏项目带队经验，其中必须有UE项目，射击类优先；\n2.熟悉UE引擎架构，对客户端核心模块(如网络、DS、动画、物理、AI、技能、资源管理等)有深入理解；\n3.有充分的性能优化意识，熟悉引擎常用的性能分析工具的原理与方法；\n4.有成熟的团队管理经验，做为项目主程序，或至少模块负责人/组长，管理过10人以上的团队3年及以上；\n5.优秀的沟通能力和团队合作精神，能够主动推动项目进展并协调资源，具备很强的责任心和自驱力。",
+    "LastUpdateTime": "2026年06月08日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2041804656065277952",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "",
+    "Introduction": "",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "五年以上工作经验"
+  }
+}

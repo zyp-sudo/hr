@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2020723056925900800",
+    "RecruitPostId": 117799,
+    "RecruitPostName": "微信 -WeLM 算子开发工程师（深圳、上海）",
+    "LocationId": 2,
+    "LocationName": "北京",
+    "BGId": 14129,
+    "BGName": "WXG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40001001",
+    "CategoryName": "技术",
+    "ProductName": "WXG公共",
+    "Responsibility": "1.针对 Hopper / Blackwell 架构进行 Kernel 开发与优化；\n2.基于 CUDA / PTX / Triton 设计和实现大模型训练中的核心算子 Kernel：；\n3.结合 Hopper / Blackwell 特性，在线程组织、访存路径、寄存器/共享内存使用、Tensor Core 调度等层面做深度优化；\n4.构建高性能训练算子库；\n5.针对 WeLM 模型结构进行算子设计与融合，降低 Kernel 调度和访存开销；\n6.参与 WeLM 内部高性能算子库的建设，与 PyTorch 及 cuBLAS、cuDNN、CUTLASS 等库进行集成或替换；\n7.Kernel 性能分析与瓶颈优化；\n8.使用 Nsight Compute / Nsight Systems / nvprof 等工具做 Kernel 级性能剖析；\n9.分析 SM 利用率、Tensor Core 利用率、访存带宽、指令吞吐、分支发散等指标，持续迭代 Kernel 实现；\n10.为上层训练框架提供关于 batch 设计、sequence length、并行策略等与性能相关的技术建议；\n11.前沿技术跟踪与工程落地；\n12.跟踪 GPU 新架构、新指令、新库（如最新 CUTLASS、NCCL 等）；\n13.学习业界优秀实现（Megatron-LM、DeepSpeed、Deepseek 等）的 Kernel/算子方案，并在 WeLM 体系内做工程化落地。",
+    "Requirement": "1.计算机、电子工程、数学、物理等相关专业，本科及以上学历（硕士/博士优先）；\r\n2.扎实的C/C++ 编程能力，良好的代码风格和工程习惯；\r\n3.熟练使用CUDA 进行 GPU 编程，有亲自写过或优化过 Kernel 的实战经验：；\r\n4.理解 warp/block/grid、共享内存、寄存器分配、协同访存等基本概念；\r\n5.能根据 profiler 结果定位性能瓶颈，并有针对性地改进 Kernel；\r\n6.对GPU 架构与并行计算有较深入理解，熟悉以下至少一项：；\r\n7.CUDA 核心库（cuBLAS / cuDNN 等）或 CUTLASS；\r\n8.Triton 等高性能算子开发框架；\r\n9.Nsight Compute / Nsight Systems / nvprof 等性能分析工具；\r\n10.对数值计算 / 深度学习基础算子 有一定理解，如矩阵乘法、归一化、激活函数、Embedding 等。",
+    "LastUpdateTime": "2026年06月12日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2020723056925900800",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "1.为 PyTorch / TensorFlow / JAX 等框架开发过自定义 CUDA 算子，或参与高性能算子/Kernel 相关开源项目；\n2.使用过 H100 等数据中心 GPU 做过中大型模型训练性能调优，对实际集群环境中的性能问题有经验；\n3.熟悉 PTX / SASS，能阅读并适度调整编译生成代码以做进一步优化；\n4.在 GPU / HPC / 深度学习系统方向有高质量论文或开源成果者优先。",
+    "Introduction": "",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "两年以上工作经验"
+  }
+}

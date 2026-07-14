@@ -1,0 +1,1190 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>岗位能力图谱系统</title>
+  <style>
+    :root {
+      --bg: #f6f7f9;
+      --surface: #ffffff;
+      --surface-alt: #f9fafb;
+      --ink: #172033;
+      --ink-light: #4b5563;
+      --muted: #6b7280;
+      --border: #dfe3ea;
+      --border-light: #eef1f5;
+
+      --blue: #2563eb;
+      --blue-bg: #eff6ff;
+      --green: #059669;
+      --green-bg: #ecfdf5;
+      --amber: #d97706;
+      --amber-bg: #fffbeb;
+      --red: #dc2626;
+      --red-bg: #fef2f2;
+      --purple: #7c3aed;
+      --purple-bg: #f5f3ff;
+      --pink: #be185d;
+      --pink-bg: #fdf2f8;
+      --cyan: #0891b2;
+      --cyan-bg: #ecfeff;
+      --indigo: #4f46e5;
+      --indigo-bg: #eef2ff;
+
+      --sidebar-w: 220px;
+      --sidebar-bg: #ffffff;
+      --sidebar-hover: #f3f6fb;
+      --sidebar-active: #eef4ff;
+      --sidebar-text: #5b6473;
+      --sidebar-text-active: #17346b;
+
+      --header-h: 56px;
+      --radius: 8px;
+      --radius-sm: 6px;
+      --radius-lg: 8px;
+      --shadow-sm: 0 1px 2px rgba(15,23,42,0.04);
+      --shadow: 0 1px 3px rgba(15,23,42,0.06);
+      --shadow-md: 0 8px 20px rgba(15,23,42,0.08);
+      --shadow-lg: 0 10px 24px rgba(15,23,42,0.10);
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      color: var(--ink);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft YaHei", "PingFang SC", Arial, sans-serif;
+      background:
+        linear-gradient(180deg, #ffffff 0, var(--bg) 220px);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* ── Header ── */
+    header {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+      height: var(--header-h);
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 0 30px;
+      background: rgba(255,255,255,0.94);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      border-bottom: 1px solid var(--border);
+    }
+    .brand {
+      font-size: 16px; font-weight: 700;
+      display: flex; align-items: center; gap: 10px;
+      color: var(--ink);
+    }
+    .brand-dot {
+      width: 10px; height: 10px; border-radius: 3px;
+      background: var(--blue);
+      box-shadow: 0 0 0 4px var(--blue-bg);
+    }
+    .header-right { display: flex; align-items: center; gap: 16px; }
+    .api-badge {
+      font-size: 11px; color: var(--ink-light);
+      background: var(--surface-alt); padding: 5px 10px;
+      border-radius: 999px; border: 1px solid var(--border);
+      font-family: "SF Mono", "Fira Code", "Consolas", monospace;
+    }
+    .status-dot {
+      display: inline-block; width: 7px; height: 7px; border-radius: 50%;
+      background: var(--green); margin-right: 5px;
+      box-shadow: 0 0 6px rgba(16,185,129,0.6);
+    }
+
+    /* ── Layout ── */
+    main {
+      min-height: 100vh;
+      padding-top: var(--header-h);
+    }
+
+    /* ── Sidebar ── */
+    nav {
+      background: var(--sidebar-bg);
+      padding: 18px 12px;
+      overflow-y: auto;
+      position: fixed;
+      top: var(--header-h);
+      left: 0;
+      width: var(--sidebar-w);
+      height: calc(100vh - var(--header-h));
+      z-index: 90;
+      border-right: 1px solid var(--border);
+    }
+    nav a {
+      display: flex; align-items: center; gap: 10px;
+      color: var(--sidebar-text);
+      text-decoration: none;
+      padding: 9px 12px;
+      border-radius: var(--radius);
+      margin-bottom: 4px;
+      font-size: 13.5px;
+      font-weight: 500;
+      transition: background 0.15s, color 0.15s;
+      position: relative;
+    }
+    .nav-icon {
+      width: 24px; height: 24px; border-radius: 6px;
+      display: inline-flex; align-items: center; justify-content: center;
+      flex-shrink: 0;
+      background: #f1f5f9;
+      color: #64748b;
+      font-size: 12px; font-weight: 700;
+    }
+    nav a:hover {
+      background: var(--sidebar-hover);
+      color: var(--sidebar-text-active);
+    }
+    nav a.active {
+      background: var(--sidebar-active);
+      color: var(--sidebar-text-active);
+      font-weight: 600;
+      box-shadow: none;
+      border: 1px solid #cfe0ff;
+      padding: 8px 11px;
+    }
+    nav a.active .nav-icon { background: var(--blue); color: #fff; }
+    nav a.active::before {
+      content: '';
+      position: absolute; right: 8px; top: 50%;
+      width: 6px; height: 6px; border-radius: 999px;
+      background: var(--blue);
+      transform: translateY(-50%);
+    }
+    .nav-section {
+      font-size: 10px; text-transform: uppercase; letter-spacing: 0.08em;
+      color: #9aa3b2; padding: 10px 12px 8px; font-weight: 700;
+    }
+
+    /* ── Content ── */
+    section {
+      margin-left: var(--sidebar-w);
+      padding: 30px 38px 48px;
+      overflow-y: auto;
+      max-width: 1480px;
+    }
+    h1 {
+      font-size: 24px; margin: 0 0 22px;
+      font-weight: 700; color: var(--ink);
+      letter-spacing: 0;
+      display: flex; align-items: center; gap: 10px;
+    }
+    h1 .emoji { font-size: 22px; filter: grayscale(1); opacity: 0.85; }
+    h2 {
+      font-size: 15px; margin: 0 0 12px;
+      font-weight: 600; color: var(--ink);
+    }
+    h3 {
+      font-size: 12px; margin: 0 0 8px;
+      font-weight: 600; color: var(--muted);
+      text-transform: uppercase; letter-spacing: 0.05em;
+    }
+
+    /* ── Grid ── */
+    .grid { display: grid; gap: 14px; }
+    .cols-2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .cols-3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+    .cols-4 { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+
+    /* ── Card ── */
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 20px;
+      box-shadow: var(--shadow-sm);
+      transition: border-color 0.15s, box-shadow 0.15s;
+    }
+    .card:hover {
+      box-shadow: var(--shadow);
+      border-color: #cbd5e1;
+    }
+    .card.flat { box-shadow: none; }
+    .card.flat:hover { box-shadow: var(--shadow); transform: none; }
+
+    /* ── Stat card ── */
+    .stat-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 18px 20px;
+      box-shadow: var(--shadow-sm);
+      transition: border-color 0.15s, box-shadow 0.15s;
+      position: relative; overflow: hidden;
+    }
+    .stat-card:hover {
+      box-shadow: var(--shadow);
+      border-color: #cbd5e1;
+    }
+    .stat-card .stat-icon {
+      display: none;
+    }
+    .stat-card .stat-value {
+      font-size: 32px; font-weight: 750; margin-bottom: 4px;
+      letter-spacing: 0; color: var(--ink);
+      line-height: 1.1;
+    }
+    .stat-card .stat-label {
+      font-size: 12.5px; color: var(--muted); font-weight: 600;
+    }
+    .stat-card .stat-note {
+      margin-top: 6px;
+      color: var(--ink-light);
+      font-size: 12px;
+      line-height: 1.45;
+    }
+    .stat-card .stat-accent {
+      position: absolute; top: 0; left: 0; right: 0; height: 3px;
+    }
+    .accent-blue { background: var(--blue); }
+    .accent-green { background: var(--green); }
+    .accent-purple { background: var(--purple); }
+    .accent-amber { background: var(--amber); }
+    .accent-pink { background: var(--pink); }
+    .accent-indigo { background: var(--indigo); }
+
+    /* ── Metric ── */
+    .metric {
+      font-size: 32px; font-weight: 700; margin-bottom: 8px;
+      letter-spacing: -0.02em;
+    }
+    .metric.blue { color: var(--blue); }
+    .metric.green { color: var(--green); }
+    .metric.purple { color: var(--purple); }
+    .metric.amber { color: var(--amber); }
+    .metric.pink { color: var(--pink); }
+    .metric.cyan { color: var(--cyan); }
+
+    /* ── Tags ── */
+    .muted { color: var(--muted); font-size: 13px; }
+    .tag {
+      display: inline-block; padding: 3px 8px; border-radius: 6px;
+      font-size: 12px; margin: 3px 5px 3px 0;
+      font-weight: 600; transition: background 0.15s;
+      white-space: nowrap;
+    }
+    .tag { background: var(--blue-bg); color: var(--blue); }
+    .tag:hover { filter: brightness(0.98); }
+    .tag.green { background: var(--green-bg); color: #059669; }
+    .tag.amber { background: var(--amber-bg); color: #d97706; }
+    .tag.purple { background: var(--purple-bg); color: var(--purple); }
+    .tag.pink { background: var(--pink-bg); color: #db2777; }
+    .tag.cyan { background: var(--cyan-bg); color: #0891b2; }
+    .tag.red { background: var(--red-bg); color: #dc2626; }
+
+    /* ── Buttons & Inputs ── */
+    .row { display: flex; gap: 12px; align-items: center; flex-wrap: wrap; }
+    input, select, textarea, button {
+      font: inherit; border-radius: var(--radius); letter-spacing: inherit;
+    }
+    input, select, textarea {
+      border: 1px solid var(--border); padding: 10px 12px;
+      background: var(--surface); transition: all 0.2s;
+      font-size: 14px;
+    }
+    input:focus, select:focus, textarea:focus {
+      outline: none; border-color: var(--blue);
+      box-shadow: 0 0 0 3px rgba(59,130,246,0.12);
+    }
+    textarea { width: 100%; min-height: 180px; resize: vertical; }
+    button {
+      background: var(--blue);
+      color: white; border: none; cursor: pointer;
+      font-weight: 600; font-size: 14px; padding: 10px 20px;
+      transition: all 0.2s;
+      box-shadow: none;
+    }
+    button:hover {
+      background: #1d4ed8;
+      box-shadow: var(--shadow);
+    }
+    button:active { transform: translateY(0); }
+    button.secondary {
+      background: var(--surface); color: var(--ink);
+      border: 1px solid var(--border); box-shadow: var(--shadow-sm);
+    }
+    button.secondary:hover { box-shadow: var(--shadow-md); }
+    button.small { font-size: 12px; padding: 5px 12px; }
+    button.link-button {
+      background: transparent; color: var(--blue);
+      border: 1px solid transparent; box-shadow: none;
+      padding: 5px 8px; font-size: 12px;
+    }
+    button.link-button:hover { background: var(--blue-bg); box-shadow: none; }
+
+    .toolbar {
+      display: grid;
+      grid-template-columns: minmax(220px, 1fr) minmax(160px, 220px) minmax(180px, 240px) auto;
+      gap: 10px;
+      align-items: center;
+    }
+    .toolbar input, .toolbar select { width: 100%; }
+    .toolbar-count { color: var(--muted); font-size: 13px; white-space: nowrap; }
+    .chip-button {
+      display: inline-flex; align-items: center; gap: 6px;
+      border: 1px solid var(--border);
+      background: var(--surface);
+      color: var(--ink-light);
+      border-radius: 999px;
+      padding: 5px 10px;
+      margin: 3px 5px 3px 0;
+      font-size: 12px;
+      font-weight: 600;
+      cursor: pointer;
+    }
+    .chip-button:hover { border-color: #bfd3f8; background: var(--blue-bg); color: var(--blue); }
+    .overview-detail {
+      min-width: 0;
+    }
+    .overview-detail > summary {
+      display: block;
+      list-style: none;
+      cursor: pointer;
+    }
+    .overview-detail > summary::-webkit-details-marker { display: none; }
+    .overview-detail[open] > summary {
+      border-color: #bfd3f8;
+      box-shadow: var(--shadow);
+    }
+    .stat-hint {
+      margin-top: 10px;
+      color: var(--blue);
+      font-size: 12px;
+      font-weight: 700;
+    }
+    .overview-panel {
+      margin-top: 10px;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      background: var(--surface);
+      padding: 12px;
+      box-shadow: var(--shadow-sm);
+    }
+    .scale-overview {
+      display: grid;
+      grid-template-columns: minmax(260px, 0.9fr) minmax(420px, 1.4fr);
+      gap: 18px;
+      align-items: stretch;
+    }
+    .scale-headline {
+      border-left: 3px solid var(--blue);
+      padding-left: 16px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      min-height: 176px;
+    }
+    .scale-number {
+      font-size: 42px;
+      font-weight: 800;
+      line-height: 1.05;
+      color: var(--ink);
+      letter-spacing: 0;
+    }
+    .scale-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 10px;
+    }
+    .scale-item {
+      border: 1px solid var(--border-light);
+      border-radius: var(--radius);
+      padding: 12px;
+      background: #fbfcfe;
+    }
+    .scale-item strong {
+      display: block;
+      font-size: 18px;
+      color: var(--ink);
+      margin-bottom: 2px;
+    }
+    .scale-item span {
+      display: block;
+      color: var(--muted);
+      font-size: 12px;
+      margin-bottom: 8px;
+    }
+    .scale-bar {
+      height: 8px;
+      border-radius: 999px;
+      background: var(--border-light);
+      overflow: hidden;
+    }
+    .scale-bar i {
+      display: block;
+      height: 100%;
+      border-radius: inherit;
+      background: var(--blue);
+    }
+    .arch-flow {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 12px;
+    }
+    .arch-stage {
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      background: var(--surface);
+      min-width: 0;
+      overflow: hidden;
+    }
+    .arch-stage > summary {
+      list-style: none;
+      cursor: pointer;
+      padding: 14px;
+      min-height: 138px;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+    .arch-stage > summary::-webkit-details-marker { display: none; }
+    .arch-stage[open] {
+      border-color: #bfd3f8;
+      box-shadow: var(--shadow);
+    }
+    .arch-step {
+      width: 26px;
+      height: 26px;
+      border-radius: 999px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      background: var(--blue-bg);
+      color: var(--blue);
+      font-size: 12px;
+      font-weight: 800;
+    }
+    .arch-title {
+      font-size: 15px;
+      font-weight: 750;
+      color: var(--ink);
+    }
+    .arch-desc {
+      color: var(--muted);
+      font-size: 12px;
+      line-height: 1.55;
+    }
+    .arch-meta {
+      display: flex;
+      gap: 6px;
+      flex-wrap: wrap;
+      margin-top: auto;
+    }
+    .arch-detail {
+      border-top: 1px solid var(--border-light);
+      background: #fbfcfe;
+      padding: 12px 14px;
+    }
+    .arch-detail-row {
+      display: grid;
+      grid-template-columns: 76px minmax(0, 1fr);
+      gap: 10px;
+      font-size: 12.5px;
+      margin-bottom: 8px;
+    }
+    .arch-detail-row span:first-child {
+      color: var(--muted);
+      font-weight: 700;
+    }
+    .artifact-list {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 10px;
+    }
+    .artifact-item {
+      border: 1px solid var(--border-light);
+      border-radius: var(--radius);
+      padding: 12px;
+      background: #fbfcfe;
+      min-width: 0;
+    }
+    .artifact-path {
+      margin-top: 6px;
+      color: var(--muted);
+      font-family: "SF Mono", "Fira Code", "Consolas", monospace;
+      font-size: 11.5px;
+      word-break: break-all;
+    }
+    .command-strip {
+      background: #f8fafc;
+      border: 1px solid var(--border);
+      border-left: 3px solid var(--blue);
+      border-radius: var(--radius);
+      padding: 12px;
+      font-family: "SF Mono", "Fira Code", "Consolas", monospace;
+      font-size: 12px;
+      color: var(--ink-light);
+      word-break: break-all;
+    }
+    .kg-workspace {
+      display: grid;
+      grid-template-columns: 260px minmax(0, 1fr) 300px;
+      gap: 14px;
+      align-items: stretch;
+    }
+    .kg-panel {
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      background: var(--surface);
+      min-width: 0;
+      overflow: hidden;
+    }
+    .kg-panel-head {
+      padding: 14px 16px;
+      border-bottom: 1px solid var(--border-light);
+      background: #fbfcfe;
+    }
+    .kg-panel-body {
+      padding: 14px;
+    }
+    .kg-search {
+      width: 100%;
+      padding: 9px 10px;
+      font-size: 13px;
+      margin-bottom: 10px;
+    }
+    .kg-role-list {
+      display: grid;
+      gap: 8px;
+      max-height: 620px;
+      overflow: auto;
+      padding-right: 2px;
+    }
+    .kg-role-button {
+      display: block;
+      width: 100%;
+      text-align: left;
+      background: #fbfcfe;
+      color: var(--ink);
+      border: 1px solid var(--border-light);
+      border-radius: var(--radius);
+      padding: 10px;
+      box-shadow: none;
+    }
+    .kg-role-button:hover {
+      background: var(--blue-bg);
+      border-color: #bfd3f8;
+      box-shadow: none;
+    }
+    .kg-role-button.active {
+      background: var(--blue-bg);
+      border-color: #93c5fd;
+      color: var(--sidebar-text-active);
+    }
+    .kg-role-title {
+      font-weight: 750;
+      font-size: 13px;
+      margin-bottom: 4px;
+    }
+    .kg-role-meta {
+      color: var(--muted);
+      font-size: 11.5px;
+    }
+    .kg-map-head {
+      display: flex;
+      justify-content: space-between;
+      gap: 14px;
+      align-items: flex-start;
+      flex-wrap: wrap;
+      margin-bottom: 12px;
+    }
+    .kg-path-grid {
+      display: grid;
+      grid-template-columns: minmax(170px, 0.9fr) minmax(260px, 1.4fr) minmax(220px, 1.1fr);
+      gap: 12px;
+      align-items: stretch;
+    }
+    .kg-column {
+      border: 1px solid var(--border-light);
+      border-radius: var(--radius);
+      background: #fbfcfe;
+      padding: 12px;
+      min-width: 0;
+    }
+    .kg-column-title {
+      color: var(--muted);
+      font-size: 11px;
+      font-weight: 800;
+      margin-bottom: 10px;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+    }
+    .kg-focus-role {
+      border-left: 3px solid var(--blue);
+      background: var(--surface);
+      padding: 12px;
+      border-radius: var(--radius);
+      box-shadow: var(--shadow-sm);
+    }
+    .kg-skill-list {
+      display: grid;
+      gap: 8px;
+    }
+    .kg-skill-row {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) auto;
+      gap: 10px;
+      align-items: center;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      background: var(--surface);
+      padding: 9px 10px;
+      cursor: pointer;
+    }
+    .kg-skill-row:hover, .kg-skill-row.active {
+      border-color: #93c5fd;
+      background: var(--blue-bg);
+    }
+    .kg-skill-name {
+      font-size: 13px;
+      font-weight: 750;
+      color: var(--ink);
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+    .kg-skill-dim {
+      color: var(--muted);
+      font-size: 11.5px;
+      margin-top: 2px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+    .kg-relation {
+      color: var(--blue);
+      background: var(--blue-bg);
+      border-radius: 999px;
+      padding: 2px 7px;
+      font-size: 11px;
+      font-weight: 800;
+      white-space: nowrap;
+    }
+    .kg-relation.bonus {
+      color: var(--green);
+      background: var(--green-bg);
+    }
+    .kg-capability-list {
+      display: grid;
+      gap: 8px;
+    }
+    .kg-capability-card {
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      background: var(--surface);
+      padding: 10px;
+    }
+    .kg-capability-card.active {
+      border-color: #fbbf24;
+      background: var(--amber-bg);
+    }
+    .kg-cap-title {
+      font-weight: 750;
+      font-size: 13px;
+      margin-bottom: 6px;
+    }
+    .kg-mini-tags {
+      display: flex;
+      gap: 4px;
+      flex-wrap: wrap;
+    }
+    .kg-mini-tag {
+      color: var(--ink-light);
+      background: #f1f5f9;
+      border-radius: 999px;
+      padding: 2px 7px;
+      font-size: 11px;
+      font-weight: 650;
+    }
+    .kg-detail-title {
+      font-size: 16px;
+      font-weight: 800;
+      margin-bottom: 6px;
+    }
+    .kg-detail-section {
+      border-top: 1px solid var(--border-light);
+      padding-top: 12px;
+      margin-top: 12px;
+    }
+    .kg-stat-strip {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 10px;
+      margin-bottom: 14px;
+    }
+    .kg-stat {
+      border: 1px solid var(--border-light);
+      border-radius: var(--radius);
+      padding: 10px 12px;
+      background: #fbfcfe;
+    }
+    .kg-stat strong {
+      display: block;
+      font-size: 20px;
+      line-height: 1.1;
+      color: var(--ink);
+    }
+    .kg-stat span {
+      display: block;
+      margin-top: 4px;
+      color: var(--muted);
+      font-size: 11.5px;
+      font-weight: 700;
+    }
+    .category-list {
+      display: grid;
+      gap: 10px;
+    }
+    .category-detail {
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      background: var(--surface);
+      padding: 12px 14px;
+    }
+    .category-detail summary {
+      cursor: pointer;
+      list-style: none;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      font-weight: 700;
+    }
+    .category-detail summary::-webkit-details-marker { display: none; }
+    .category-summary-meta {
+      color: var(--muted);
+      font-size: 12px;
+      font-weight: 600;
+      white-space: nowrap;
+    }
+    .category-jobs {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 10px;
+      margin-top: 12px;
+    }
+    .category-job {
+      border: 1px solid var(--border-light);
+      border-radius: var(--radius);
+      background: #fbfcfe;
+      padding: 12px;
+      min-width: 0;
+    }
+    .category-job-title {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 8px;
+      margin-bottom: 6px;
+      font-weight: 700;
+    }
+    .inline-skill-detail {
+      display: inline-block;
+      position: relative;
+      margin-right: 4px;
+    }
+    .inline-skill-detail summary {
+      display: inline-block;
+      list-style: none;
+      cursor: pointer;
+    }
+    .inline-skill-detail summary::-webkit-details-marker { display: none; }
+    .inline-skill-detail[open] summary .tag {
+      box-shadow: 0 0 0 2px rgba(37,99,235,0.14);
+    }
+    .inline-detail-panel {
+      margin: 6px 0 8px;
+      min-width: 240px;
+      max-width: 360px;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      background: var(--surface);
+      padding: 10px;
+      box-shadow: var(--shadow);
+      color: var(--ink-light);
+      font-size: 12px;
+      line-height: 1.6;
+    }
+    .detail-grid.compact {
+      min-width: 0;
+      max-width: none;
+      grid-template-columns: 1fr;
+    }
+    .mini-table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    .mini-table td {
+      padding: 7px 0;
+      border-bottom: 1px solid var(--border-light);
+      font-size: 12px;
+    }
+    .mini-table tr:last-child td { border-bottom: none; }
+    .is-hidden { display: none !important; }
+
+    /* ── Tables ── */
+    .table-wrap {
+      border: 1px solid var(--border); border-radius: var(--radius);
+      overflow: hidden;
+      box-shadow: none;
+    }
+    table { width: 100%; border-collapse: collapse; }
+    th, td {
+      text-align: left; padding: 10px 12px; font-size: 13px;
+      vertical-align: top;
+    }
+    th {
+      color: var(--ink-light); font-weight: 700;
+      background: #f8fafc;
+      font-size: 11.5px; text-transform: uppercase;
+      letter-spacing: 0.03em;
+      border-bottom: 1px solid var(--border);
+    }
+    td { border-bottom: 1px solid var(--border-light); }
+    tr:last-child td { border-bottom: none; }
+    tbody tr { transition: background 0.15s; }
+    tbody tr:hover { background: #f8fbff; }
+    tbody tr:nth-child(even) { background: rgba(248,249,251,0.6); }
+    tbody tr:nth-child(even):hover { background: #f8fbff; }
+    .sample-detail {
+      min-width: 150px;
+    }
+    .sample-detail summary {
+      cursor: pointer;
+      color: var(--blue);
+      font-weight: 700;
+      user-select: none;
+      white-space: nowrap;
+    }
+    .sample-detail[open] summary {
+      margin-bottom: 10px;
+    }
+    .detail-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 10px;
+      min-width: 520px;
+      max-width: 760px;
+    }
+    .detail-item {
+      border: 1px solid var(--border-light);
+      background: #fbfcfe;
+      border-radius: 8px;
+      padding: 10px;
+      min-width: 0;
+    }
+    .detail-item.wide {
+      grid-column: 1 / -1;
+    }
+    .detail-label {
+      color: var(--muted);
+      font-size: 11px;
+      font-weight: 700;
+      margin-bottom: 4px;
+    }
+    .detail-value {
+      color: var(--ink);
+      font-size: 12.5px;
+      word-break: break-word;
+    }
+    .detail-value.multiline {
+      white-space: pre-wrap;
+      line-height: 1.7;
+      max-height: 180px;
+      overflow: auto;
+    }
+    .accent-cyan { background: var(--cyan); }
+
+    /* ── Progress bar ── */
+    .bar {
+      height: 8px; background: var(--border-light);
+      border-radius: 999px; overflow: hidden;
+      min-width: 80px;
+    }
+    .bar span {
+      display: block; height: 100%;
+      background: var(--blue);
+      border-radius: 999px; transition: width 0.5s ease;
+    }
+
+    /* ── Misc ── */
+    .error { color: var(--red); font-weight: 600; }
+    a { color: var(--blue); text-decoration: none; transition: all 0.2s; }
+    a:hover { color: #1d4ed8; }
+    .divider {
+      height: 1px; background: var(--border);
+      margin: 20px 0;
+    }
+    .empty-state {
+      text-align: center; padding: 40px 20px;
+      color: var(--muted);
+    }
+    .badge {
+      display: inline-block; padding: 2px 8px; border-radius: 12px;
+      font-size: 11px; font-weight: 600;
+    }
+    .badge.green { background: var(--green-bg); color: #059669; }
+    .badge.amber { background: var(--amber-bg); color: #d97706; }
+    .badge.red { background: var(--red-bg); color: #dc2626; }
+
+    /* ── Responsive ── */
+    @media (max-width: 1024px) {
+      nav {
+        display: flex; overflow-x: auto;
+        position: relative; width: 100%;
+        height: auto; top: 0;
+        padding: 10px;
+      }
+      nav a { white-space: nowrap; flex-shrink: 0; }
+      nav a.active::before { display: none; }
+      nav a.active { box-shadow: none; }
+      .cols-2, .cols-3, .cols-4 { grid-template-columns: 1fr; }
+      .scale-overview, .scale-grid { grid-template-columns: 1fr; }
+      .arch-flow, .artifact-list { grid-template-columns: 1fr; }
+      .kg-workspace, .kg-path-grid, .kg-stat-strip { grid-template-columns: 1fr; }
+      .category-jobs { grid-template-columns: 1fr; }
+      .toolbar { grid-template-columns: 1fr; }
+      section { margin-left: 0; padding: 20px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="brand">
+      <div class="brand-dot"></div>
+      XH-202621 岗位能力图谱
+    </div>
+    <div class="header-right">
+      <div class="api-badge"><span class="status-dot"></span>API http://localhost:8080</div>
+    </div>
+  </header>
+  <main>
+    <nav>
+      <div class="nav-section">导航</div>
+      <a class="" href="/?page=dashboard"><span class="nav-icon">总</span>总览</a><a class="" href="/?page=results"><span class="nav-icon">果</span>统一结果</a><a class="" href="/?page=architecture"><span class="nav-icon">架</span>架构落地</a><a class="active" href="/?page=graph"><span class="nav-icon">图</span>能力图谱</a><a class="" href="/?page=match"><span class="nav-icon">配</span>人岗匹配</a><a class="" href="/?page=evolution"><span class="nav-icon">趋</span>动态演化</a><a class="" href="/?page=quality"><span class="nav-icon">质</span>数据质量</a><a class="" href="/?page=etl"><span class="nav-icon">治</span>ETL治理</a><a class="" href="/?page=samples"><span class="nav-icon">样</span>样本数据</a><a class="" href="/?page=real_jobs"><span class="nav-icon">岗</span>采集岗位</a><a class="" href="/?page=settings"><span class="nav-icon">设</span>系统设置</a>
+    </nav>
+    <section>
+      <h1>能力图谱</h1>
+      <div class="kg-stat-strip">
+        <div class="kg-stat"><strong>4</strong><span>岗位节点</span></div>
+        <div class="kg-stat"><strong>20</strong><span>技能节点</span></div>
+        <div class="kg-stat"><strong>46</strong><span>能力维度</span></div>
+        <div class="kg-stat"><strong>56</strong><span>图谱关系</span></div>
+      </div>
+      <div class="kg-workspace">
+        <aside class="kg-panel">
+          <div class="kg-panel-head">
+            <h2 style="margin:0 0 4px;">岗位</h2>
+            <p class="muted" style="margin:0;">选择岗位查看能力结构</p>
+          </div>
+          <div class="kg-panel-body">
+            <input id="kg-search" class="kg-search" type="search" placeholder="搜索岗位">
+            <div id="kg-role-list" class="kg-role-list"></div>
+          </div>
+        </aside>
+        <main class="kg-panel">
+          <div class="kg-panel-head">
+            <div class="kg-map-head">
+              <div>
+                <h2 id="kg-map-title" style="margin:0 0 4px;">岗位能力结构</h2>
+                <p id="kg-map-subtitle" class="muted" style="margin:0;">岗位 -> 技能 -> 能力维度</p>
+              </div>
+              <div>
+                <span class="tag green">requires 必备</span>
+                <span class="tag cyan">bonus 加分</span>
+              </div>
+            </div>
+          </div>
+          <div class="kg-panel-body">
+            <div class="kg-path-grid">
+              <section class="kg-column">
+                <div class="kg-column-title">Role</div>
+                <div id="kg-role-focus" class="kg-focus-role"></div>
+              </section>
+              <section class="kg-column">
+                <div class="kg-column-title">Skills</div>
+                <div id="kg-skill-list" class="kg-skill-list"></div>
+              </section>
+              <section class="kg-column">
+                <div class="kg-column-title">Capabilities</div>
+                <div id="kg-capability-list" class="kg-capability-list"></div>
+              </section>
+            </div>
+          </div>
+        </main>
+        <aside class="kg-panel">
+          <div class="kg-panel-head">
+            <h2 style="margin:0 0 4px;">详情</h2>
+            <p class="muted" style="margin:0;">点击技能或能力维度查看</p>
+          </div>
+          <div id="kg-detail" class="kg-panel-body"></div>
+        </aside>
+      </div>
+      <script>
+        const kgModel = {"jobs": [{"id": "job-ai-agent-engineer", "label": "AI Agent 工程师", "skills": [{"id": "skill-python", "label": "Python", "relation": "requires", "dimensions": [{"id": "cap-编程语言", "label": "编程语言"}]}, {"id": "skill-llm", "label": "LLM", "relation": "requires", "dimensions": [{"id": "cap-人工智能", "label": "人工智能"}]}, {"id": "skill-rag", "label": "RAG", "relation": "requires", "dimensions": [{"id": "cap-检索增强", "label": "检索增强"}]}, {"id": "skill-vector-search", "label": "Vector Search", "relation": "requires", "dimensions": [{"id": "cap-向量检索", "label": "向量检索"}]}, {"id": "skill-evaluation", "label": "Evaluation", "relation": "requires", "dimensions": [{"id": "cap-模型评测", "label": "模型评测"}]}], "capabilities": [{"id": "cap-编程语言", "label": "编程语言", "skills": ["Python"]}, {"id": "cap-人工智能", "label": "人工智能", "skills": ["LLM"]}, {"id": "cap-检索增强", "label": "检索增强", "skills": ["RAG"]}, {"id": "cap-向量检索", "label": "向量检索", "skills": ["Vector Search"]}, {"id": "cap-模型评测", "label": "模型评测", "skills": ["Evaluation"]}]}, {"id": "job-java-backend-engineer", "label": "Java 后端工程师", "skills": [{"id": "skill-java", "label": "Java", "relation": "requires", "dimensions": [{"id": "cap-编程语言", "label": "编程语言"}]}, {"id": "skill-spring-boot", "label": "Spring Boot", "relation": "requires", "dimensions": [{"id": "cap-后端框架", "label": "后端框架"}]}, {"id": "skill-mysql", "label": "MySQL", "relation": "requires", "dimensions": [{"id": "cap-数据存储", "label": "数据存储"}]}, {"id": "skill-redis", "label": "Redis", "relation": "requires", "dimensions": [{"id": "cap-缓存中间件", "label": "缓存中间件"}]}, {"id": "skill-microservices", "label": "Microservices", "relation": "requires", "dimensions": [{"id": "cap-系统架构", "label": "系统架构"}]}], "capabilities": [{"id": "cap-编程语言", "label": "编程语言", "skills": ["Java"]}, {"id": "cap-后端框架", "label": "后端框架", "skills": ["Spring Boot"]}, {"id": "cap-数据存储", "label": "数据存储", "skills": ["MySQL"]}, {"id": "cap-缓存中间件", "label": "缓存中间件", "skills": ["Redis"]}, {"id": "cap-系统架构", "label": "系统架构", "skills": ["Microservices"]}]}, {"id": "job-cloud-native-sre", "label": "云原生 SRE 工程师", "skills": [{"id": "skill-linux", "label": "Linux", "relation": "requires", "dimensions": [{"id": "cap-操作系统", "label": "操作系统"}]}, {"id": "skill-docker", "label": "Docker", "relation": "requires", "dimensions": [{"id": "cap-容器技术", "label": "容器技术"}]}, {"id": "skill-kubernetes", "label": "Kubernetes", "relation": "requires", "dimensions": [{"id": "cap-云原生", "label": "云原生"}]}, {"id": "skill-devops", "label": "DevOps", "relation": "requires", "dimensions": [{"id": "cap-工程效率", "label": "工程效率"}]}, {"id": "skill-observability", "label": "Observability", "relation": "requires", "dimensions": [{"id": "cap-可观测性", "label": "可观测性"}]}], "capabilities": [{"id": "cap-操作系统", "label": "操作系统", "skills": ["Linux"]}, {"id": "cap-容器技术", "label": "容器技术", "skills": ["Docker"]}, {"id": "cap-云原生", "label": "云原生", "skills": ["Kubernetes"]}, {"id": "cap-工程效率", "label": "工程效率", "skills": ["DevOps"]}, {"id": "cap-可观测性", "label": "可观测性", "skills": ["Observability"]}]}, {"id": "job-data-governance-engineer", "label": "数据治理工程师", "skills": [{"id": "skill-sql", "label": "SQL", "relation": "requires", "dimensions": [{"id": "cap-数据查询", "label": "数据查询"}]}, {"id": "skill-data-warehouse", "label": "Data Warehouse", "relation": "requires", "dimensions": [{"id": "cap-数据建模", "label": "数据建模"}]}, {"id": "skill-etl", "label": "ETL", "relation": "requires", "dimensions": [{"id": "cap-数据工程", "label": "数据工程"}]}, {"id": "skill-data-quality", "label": "Data Quality", "relation": "requires", "dimensions": [{"id": "cap-数据治理", "label": "数据治理"}]}, {"id": "skill-metadata", "label": "Metadata", "relation": "requires", "dimensions": [{"id": "cap-元数据管理", "label": "元数据管理"}]}], "capabilities": [{"id": "cap-数据查询", "label": "数据查询", "skills": ["SQL"]}, {"id": "cap-数据建模", "label": "数据建模", "skills": ["Data Warehouse"]}, {"id": "cap-数据工程", "label": "数据工程", "skills": ["ETL"]}, {"id": "cap-数据治理", "label": "数据治理", "skills": ["Data Quality"]}, {"id": "cap-元数据管理", "label": "元数据管理", "skills": ["Metadata"]}]}], "stats": {"jobs": 4, "skills": 20, "capabilities": 46, "edges": 56}};
+        let selectedJobId = kgModel.jobs[0] ? kgModel.jobs[0].id : null;
+        let selectedSkillId = null;
+        let selectedCapabilityId = null;
+
+        const roleList = document.getElementById('kg-role-list');
+        const search = document.getElementById('kg-search');
+        const mapTitle = document.getElementById('kg-map-title');
+        const mapSubtitle = document.getElementById('kg-map-subtitle');
+        const roleFocus = document.getElementById('kg-role-focus');
+        const skillList = document.getElementById('kg-skill-list');
+        const capabilityList = document.getElementById('kg-capability-list');
+        const detail = document.getElementById('kg-detail');
+
+        function escapeHtml(value) {
+          return String(value || '').replace(/[&<>"']/g, ch => ({
+            '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;'
+          }[ch]));
+        }
+
+        function selectedJob() {
+          return kgModel.jobs.find(job => job.id === selectedJobId) || kgModel.jobs[0];
+        }
+
+        function renderRoles() {
+          const q = (search.value || '').trim().toLowerCase();
+          const jobs = kgModel.jobs.filter(job => !q || job.label.toLowerCase().includes(q));
+          roleList.innerHTML = jobs.map(job => `
+            <button type="button" class="kg-role-button ${job.id === selectedJobId ? 'active' : ''}" data-job="${escapeHtml(job.id)}">
+              <div class="kg-role-title">${escapeHtml(job.label)}</div>
+              <div class="kg-role-meta">${job.skills.length} 个技能 / ${job.capabilities.length} 个能力维度</div>
+            </button>
+          `).join('') || '<div class="muted">没有匹配岗位</div>';
+          roleList.querySelectorAll('[data-job]').forEach(button => {
+            button.addEventListener('click', () => {
+              selectedJobId = button.dataset.job;
+              selectedSkillId = null;
+              selectedCapabilityId = null;
+              renderAll();
+            });
+          });
+        }
+
+        function renderMap() {
+          const job = selectedJob();
+          if (!job) {
+            roleFocus.innerHTML = '<div class="muted">暂无图谱数据</div>';
+            skillList.innerHTML = '';
+            capabilityList.innerHTML = '';
+            detail.innerHTML = '';
+            return;
+          }
+          mapTitle.textContent = job.label;
+          mapSubtitle.textContent = `${job.skills.length} 个技能连接到 ${job.capabilities.length} 个能力维度`;
+          roleFocus.innerHTML = `
+            <div class="kg-detail-title">${escapeHtml(job.label)}</div>
+            <div class="muted">当前岗位的能力路径从技能证据汇总到能力维度。</div>
+            <div class="kg-detail-section">
+              <span class="tag green">${job.skills.filter(s => s.relation === 'requires').length} 必备</span>
+              <span class="tag cyan">${job.skills.filter(s => s.relation !== 'requires').length} 加分</span>
+            </div>
+          `;
+
+          skillList.innerHTML = job.skills.map(skill => {
+            const dimText = skill.dimensions.map(dim => dim.label).join(' / ') || '未映射能力维度';
+            const relationClass = skill.relation === 'requires' ? '' : 'bonus';
+            const relationText = skill.relation === 'requires' ? 'requires' : 'bonus';
+            return `
+              <div class="kg-skill-row ${skill.id === selectedSkillId ? 'active' : ''}" data-skill="${escapeHtml(skill.id)}">
+                <div>
+                  <div class="kg-skill-name">${escapeHtml(skill.label)}</div>
+                  <div class="kg-skill-dim">${escapeHtml(dimText)}</div>
+                </div>
+                <span class="kg-relation ${relationClass}">${relationText}</span>
+              </div>
+            `;
+          }).join('') || '<div class="muted">暂无技能关系</div>';
+
+          skillList.querySelectorAll('[data-skill]').forEach(row => {
+            row.addEventListener('click', () => {
+              selectedSkillId = row.dataset.skill;
+              selectedCapabilityId = null;
+              renderAll();
+            });
+          });
+
+          capabilityList.innerHTML = job.capabilities.map(cap => `
+            <div class="kg-capability-card ${cap.id === selectedCapabilityId ? 'active' : ''}" data-cap="${escapeHtml(cap.id)}">
+              <div class="kg-cap-title">${escapeHtml(cap.label)}</div>
+              <div class="kg-mini-tags">
+                ${cap.skills.slice(0, 6).map(skill => `<span class="kg-mini-tag">${escapeHtml(skill)}</span>`).join('')}
+              </div>
+            </div>
+          `).join('') || '<div class="muted">暂无能力维度</div>';
+
+          capabilityList.querySelectorAll('[data-cap]').forEach(card => {
+            card.addEventListener('click', () => {
+              selectedCapabilityId = card.dataset.cap;
+              selectedSkillId = null;
+              renderAll();
+            });
+          });
+        }
+
+        function renderDetail() {
+          const job = selectedJob();
+          if (!job) {
+            detail.innerHTML = '<div class="muted">暂无详情</div>';
+            return;
+          }
+          if (selectedSkillId) {
+            const skill = job.skills.find(item => item.id === selectedSkillId);
+            if (skill) {
+              detail.innerHTML = `
+                <div class="kg-detail-title">${escapeHtml(skill.label)}</div>
+                <span class="tag ${skill.relation === 'requires' ? 'green' : 'cyan'}">${skill.relation === 'requires' ? '必备技能' : '加分技能'}</span>
+                <div class="kg-detail-section">
+                  <div class="detail-label">连接岗位</div>
+                  <div class="detail-value">${escapeHtml(job.label)}</div>
+                </div>
+                <div class="kg-detail-section">
+                  <div class="detail-label">能力维度</div>
+                  <div>${skill.dimensions.map(dim => `<span class="tag purple">${escapeHtml(dim.label)}</span>`).join('') || '<span class="muted">暂无映射</span>'}</div>
+                </div>
+              `;
+              return;
+            }
+          }
+          if (selectedCapabilityId) {
+            const cap = job.capabilities.find(item => item.id === selectedCapabilityId);
+            if (cap) {
+              detail.innerHTML = `
+                <div class="kg-detail-title">${escapeHtml(cap.label)}</div>
+                <div class="muted">该能力维度由 ${cap.skills.length} 个技能共同支撑。</div>
+                <div class="kg-detail-section">
+                  ${cap.skills.map(skill => `<span class="tag">${escapeHtml(skill)}</span>`).join('')}
+                </div>
+              `;
+              return;
+            }
+          }
+          detail.innerHTML = `
+            <div class="kg-detail-title">${escapeHtml(job.label)}</div>
+            <div class="muted">选择中间技能或右侧能力维度，查看具体连接。</div>
+            <div class="kg-detail-section">
+              <div class="detail-grid compact">
+                <div class="detail-item"><div class="detail-label">技能数量</div><div class="detail-value">${job.skills.length}</div></div>
+                <div class="detail-item"><div class="detail-label">能力维度</div><div class="detail-value">${job.capabilities.length}</div></div>
+              </div>
+            </div>
+          `;
+        }
+
+        function renderAll() {
+          renderRoles();
+          renderMap();
+          renderDetail();
+        }
+        search.addEventListener('input', renderRoles);
+        renderAll();
+      </script>
+    </section>
+  </main>
+</body>
+</html>

@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "1987769299112185856",
+    "RecruitPostId": 115935,
+    "RecruitPostName": "业务安全情报高级工程师",
+    "LocationId": 1,
+    "LocationName": "深圳",
+    "BGId": 958,
+    "BGName": "TEG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40001004",
+    "CategoryName": "技术",
+    "ProductName": "业务安全",
+    "Responsibility": "1.负责黑灰产调查与研究工作，涉及情报资源、黑产工具、黑灰产产业链的研究；\n2.结合业务场景分析和复现黑灰产手法，挖掘作弊特征，支撑风控策略的设计和迭代；\n3.研究大模型等前沿技术，并探索落地应用与业务赋能，包含但不限于基于LLM Agent的自动化情报服务研发等方面。",
+    "Requirement": "1.本科及以上学历，计算机、网络安全与人工智能相关专业优先；\r\n2.具有黑灰产技术研究和对抗的相关经验，有自动机/电商/广告场景风控经验优先；\r\n3.掌握一门或多门编程语言，如sql / python / java等，有基于AI大模型落地实践经验者优先；\r\n4.关注业界新技术，具备良好的沟通和解决问题的能力，对安全攻防有较高的兴趣，加分项：在安全顶会发表过论文、演讲或在知名CTF比赛有获奖经历者优先；有互联网业务渗透测试经验者优先。",
+    "LastUpdateTime": "2026年06月22日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=1987769299112185856",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "",
+    "Introduction": "相信你与所有腾讯安全人一样，都认为抵抗邪恶是一件极其热血的事。希望你与我们一起，守护用户的安全，守护产品的安全，守护科技向善的不变初心。",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "五年以上工作经验"
+  }
+}

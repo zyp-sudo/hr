@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2032007525255249920",
+    "RecruitPostId": 118437,
+    "RecruitPostName": "QClaw-产品策划-存储方向",
+    "LocationId": 1,
+    "LocationName": "深圳",
+    "BGId": 29294,
+    "BGName": "CSIG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40003001",
+    "CategoryName": "产品",
+    "ProductName": "安全管家",
+    "Responsibility": "1.负责QClaw存储方向产品策划工作。",
+    "Requirement": "1.本科及以上学历，3年以上互联网产品策划经验；\r\n2.有云存储/网盘/备份/文件管理/数据同步相关产品经验，理解文件系统、存储层级、同步冲突等核心概念；\r\n3.具备较强的技术理解力，能与后台研发团队深入讨论API设计、架构方案，而非只画原型；\r\n4.逻辑清晰，擅长梳理复杂系统的模块关系和依赖链路，能独立输出系统级PRD；\r\n5.数据驱动意识好，能定义存储类产品的核心指标（激活率、传输成功率、同步冲突率等）。",
+    "LastUpdateTime": "2026年06月12日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2032007525255249920",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "1.有云盘/网盘类产品经验，熟悉存储产品的核心交互和技术架构；\r\n2.有备份类产品经验（手机备份/PC备份/企业备份），理解全量/增量备份、版本管理、恢复流程；\r\n3.有端到端加密、隐私安全相关产品设计经验；\r\n4.对AI/大模型有深入了解，理解Agent记忆、上下文管理、RAG等概念；\r\n5.有商业化产品经验，做过存储容量分级、订阅定价等付费模型设计；\r\n6.有分布式存储、对象存储（COS/S3/OSS）的技术背景或深度合作经验；\r\n7.有多端同步产品经验（跨PC/Mac/手机/平板的文件同步方案设计）；\r\n8.有便携式存储/NAS相关产品规划经验。",
+    "Introduction": "“用户为本，科技向善”，是写在每位腾讯产品人心中的一句箴言。在互联网浪潮中，大众的生活已被深刻地改变，如何为用户创造价值、创造怎样的价值，需要每位产品人花费更长时间去体会与探索。在这里，你将与同样关注细节、关注本质、关注美好的同事一道，开启你的创造性工作。",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "三年以上工作经验"
+  }
+}

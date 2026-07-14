@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2039993957664059392",
+    "RecruitPostId": 119055,
+    "RecruitPostName": "雪中悍刀行-资深游戏特效设计师",
+    "LocationId": 7,
+    "LocationName": "杭州",
+    "BGId": 956,
+    "BGName": "IEG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40002002",
+    "CategoryName": "设计",
+    "ProductName": "雪中悍刀行-端手互通",
+    "Responsibility": "1.负责不同类型如场景，角色，怪物，道具，UE5引擎内的特效制作；\r\n2.负责游戏中的特效品质的审核修改及外包团队的培养，与团队成员一起解决技术难题和其他挑战；\r\n3.负责梳理特效模块制作流程，优化和提升特效团队的制作效率；\r\n4.具有手绘特效设计稿能力者/houdini熟练使用者优先；\r\n5.与动画，策划，程序进行良好的沟通和对接，对项目推进中遇到的问题进行汇总归纳并及时处理。",
+    "Requirement": "1.5年以上相关工作经验；\n2.具备良好审美，特效设计有自己的想法；\n3.能熟练使用UE5进行特效制作；\n4.熟练使用Niagara编写特效所需材质以及Niagara Module脚本；\n5.有很好的学习能力，有扎实的美术功底；对动作类/魂系游戏特效有一定研究；\n6.熟悉shader，在技术选型和设计方案制定上有准确判断；\n7.对编辑器中的特效资源能做到规范的整合，有良好的沟通能力，与技术人员一起优化和完善特效资源，在保证美术效果的前提下，尽可能降低性能消耗；\n8.追求卓越，有创新精神，具有较强的抗压能力，注重团队协作。",
+    "LastUpdateTime": "2026年07月02日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2039993957664059392",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "",
+    "Introduction": "【腾讯游戏｜这一局，由你主导】\n用画笔创造玩家热爱的世界。在腾讯游戏，你将主导角色设计、场景搭建或风格定义，用扎实的美术功底与独特创意，打造真正触动人心的视觉体验。这里有成熟的技术支持、丰富的项目机会，你的作品将随国民级游戏走进亿万玩家视野。加入我们，让艺术真正“玩”出价值。",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "五年以上工作经验"
+  }
+}

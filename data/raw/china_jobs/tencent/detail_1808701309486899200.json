@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "1808701309486899200",
+    "RecruitPostId": 106323,
+    "RecruitPostName": "混元AIGC算法研究员（文生3D）（深圳/北京/上海）",
+    "LocationId": 1,
+    "LocationName": "深圳",
+    "BGId": 958,
+    "BGName": "TEG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40001005",
+    "CategoryName": "技术",
+    "ProductName": "AI",
+    "Responsibility": "1.研发新一代3D资产生成大模型，突破生成质量、速度与可控性的技术边界；\n2.构建工业级3D AI生成管线，解决几何拓扑优化、材质贴图生成、物理合理性等核心问题。",
+    "Requirement": "1.计算机、人工智能、数学等相关专业硕士及以上学历，有AIGC方向顶级论文者优先；\n2.满足以下任意一种技术栈要求：\n1）.3D表达技术：熟悉几何处理管线（Mesh操作/UV映射等），熟悉NeRF、SDF、Gaussian Splatting等表示方法；\n2）.生成式模型：深入理解Diffusion类模型、或自回归AR类模型原理，有3D生成经验者优先；\n3）.后训练技术：对post-training、强化学习、多模态理解与生成有丰富经验；\n4）.纹理材质技术：了解3D贴图、3D材质生成等技术；\n3.代码能力强，能快速实现idea，有扎实工程能力；\n4.具备较强的自驱力、学习能力、沟通能力、团队意识。",
+    "LastUpdateTime": "2026年06月10日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=1808701309486899200",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "",
+    "Introduction": "",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "三年以上工作经验"
+  }
+}

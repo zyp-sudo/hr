@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2034117544100655104",
+    "RecruitPostId": 118617,
+    "RecruitPostName": "大语言模型应用工程师（Agent方向）",
+    "LocationId": 1,
+    "LocationName": "深圳",
+    "BGId": 29294,
+    "BGName": "CSIG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40001001",
+    "CategoryName": "技术",
+    "ProductName": "腾讯云",
+    "Responsibility": "1.围绕研发可用性/开发环境治理/AIOps等方向进行Agent原生开发平台设计工作，推动AI技术在相关场景的落地与突破；\r\n2.构建并维护团队内部知识库，集成技术方案、产品文档、运维手册等专业知识，赋能垂直领域智能体；\r\n3.将大模型能力与内部工具链、API接口相结合，封装为可复用的智能工具与组件，逐步构建团队AI能力中台，提升整体研发与运营效率。",
+    "Requirement": "1.计算机科学、人工智能、软件工程或相关专业本科及以上学历；\r\n2.具备一年及以上大语言模型应用开发经验，有实际的AI Agent或RAG项目实践经验；\r\n3.掌握AI Agent开发、RAG优化、MCP、OpenClaw及工具开发等技术原理及落地经验，熟悉从数据处理、向量化到智能生成的全流程；\r\n4.对AI技术驱动业务提效有强烈热情，拥有优秀的自主学习能力、逻辑思维与跨团队沟通协作能力。",
+    "LastUpdateTime": "2026年06月16日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2034117544100655104",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "",
+    "Introduction": "在腾讯，后台开发工程师不仅是“又快又稳”的问题解决专家，更是生态共创者。你将与技术团队一同沉淀优质代码，让它成为我们共有的宝贵资产。在不同的业务场景和技术发展阶段，你的架构思维也将帮助更多协作团队拓展新的思考。我们也珍视你的挑战精神，同时欢迎你一起参与团队愿景、文化和产品方向的探讨。",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "三年以上工作经验"
+  }
+}

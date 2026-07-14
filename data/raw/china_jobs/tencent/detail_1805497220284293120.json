@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "1805497220284293120",
+    "RecruitPostId": 106137,
+    "RecruitPostName": "腾讯地图-多模态大模型建图算法专家​",
+    "LocationId": 2,
+    "LocationName": "北京",
+    "BGId": 29294,
+    "BGName": "CSIG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40001005",
+    "CategoryName": "技术",
+    "ProductName": "腾讯地图位置服务产品",
+    "Responsibility": "1.参与地图自动化制图系统的核心算法研发，包括遥感/街景/轨迹等多源数据下的2D/3D目标检测、语义分割、矢量要素提取、拓扑关系建模等任务；\r\n2.探索多模态大模型与AIGC技术在地图内容生成、编辑与更新中的应用，如：基于视觉-语言模型的地图要素理解，利用AIGC技术进行地图要素的自动化标注与矢量生成，端到端地图构建技术（如MapTR、VectorMapNet等）的研发与优化；\r\n3.将感知与大模型算法落地于轻量化地图产品或车道级地图生产流程，实现高效率、低成本的自动化建图系统；\r\n4.参与地图构建全流程的算法优化，包括数据清洗、坐标校准、多源数据融合、地图更新等环节的系统性提升。",
+    "Requirement": "1.硕士及以上学历，具备5年以上计算机视觉、地图构建或相关算法研发经验，拥有大模型相关项目经验者优先；\r\n2.扎实的深度学习与CV基础，精通PyTorch等主流框架，具备大模型训练/微调经验（如多模态模型、LLM、AIGC模型）；\r\n3.熟悉大模型相关技术栈，具备出色的编程能力，熟练使用Python或C++，具备良好的工程实现和算法优化能力；\r\n4.具备大型地图数据生产系统或在线服务系统的落地经验，理解地图数据的生命周期与质量体系；\r\n5.对地理空间智能有浓厚兴趣，具备系统思维、产品意识和跨团队协作能力，能将前沿AI技术转化为可用的地图服务。",
+    "LastUpdateTime": "2026年06月12日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=1805497220284293120",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "1.在同等条件下，通过腾讯云认证或取得同等资格认证的候选人，我们会优先考虑。",
+    "Introduction": "",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "五年以上工作经验"
+  }
+}

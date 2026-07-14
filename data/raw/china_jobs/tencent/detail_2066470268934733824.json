@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2066470268934733824",
+    "RecruitPostId": 120577,
+    "RecruitPostName": "《王者荣耀》UGC-技术美术（TA）",
+    "LocationId": 1,
+    "LocationName": "深圳",
+    "BGId": 956,
+    "BGName": "IEG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40002002",
+    "CategoryName": "设计",
+    "ProductName": "王者荣耀",
+    "Responsibility": "1.开发面向非专业开发者的UGC游戏编辑器；\r\n2.主导非专业用户创作工具链搭建、美术资产模块化与玩法生态构建、内容性能与规范保障三大方向。",
+    "Requirement": "1.精通Unity引擎（必备），熟悉编辑器扩展开发（Editor Scripting）、AssetDatabase资源管理、Shader开发（HLSL/CG）；\r\n2.掌握模块化架构设计：有玩法模块拆分、控制器抽象化、驱动单元封装经验，能独立设计“模块-资产-表现”映射关系；\r\n3.熟悉自动化优化管线：能开发资源质检脚本（Python/C#），有跨平台（移动端优先）性能优化经验；\r\n4.美术资产管理能力：精通资产生产流程、优化方案，熟悉引擎资源管线，开发自动化脚本/工具，对资源进行强制标准化。",
+    "LastUpdateTime": "2026年06月15日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2066470268934733824",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "1.有“Ugc游戏”项目经验者；\r\n2.有“模块化玩法编辑工具”开发案例（如独立设计控制器映射系统、驱动单元库）；\r\n3.熟悉AI辅助模块化设计（如AI生成玩法模块草稿、自动匹配资产组合）。",
+    "Introduction": "",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "三年以上工作经验"
+  }
+}

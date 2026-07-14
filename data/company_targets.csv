@@ -1,0 +1,5 @@
+region,adapter,source,company,country,url,enabled,note
+china,official_html,Alibaba Careers,Alibaba,China,https://talent.alibaba.com/,1,Alibaba official careers page
+china,official_html,NetEase Careers,NetEase,China,https://hr.163.com/,1,NetEase official careers page
+foreign,official_html,Google Careers,Google,United States,https://www.google.com/about/careers/applications/jobs/results/,1,Google official careers page
+foreign,official_html,Apple Jobs,Apple,United States,https://jobs.apple.com/en-us/search,1,Apple official jobs page

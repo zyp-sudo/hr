@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2015744556187934720",
+    "RecruitPostId": 117529,
+    "RecruitPostName": "《三角洲行动》-经济数值（国服）",
+    "LocationId": 1,
+    "LocationName": "深圳",
+    "BGId": 956,
+    "BGName": "IEG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40003002",
+    "CategoryName": "产品",
+    "ProductName": "ProjectD-手游APP",
+    "Responsibility": "1.负责烽火地带模式的物资产销和交易流转设计，对经济系统的长期稳定性负责；\n2.负责游戏内产销数值的设计和实现，支持合作模块的内容设计和落地；\n3.和战斗、系统等模块合作，优化战斗相关内容的平衡性、产销关系和物价表现，并对最终线上体验负责。",
+    "Requirement": "1.至少5年以上数值经验，参与过完整的线上项目流程者；\r\n2.熟悉搜打撤品类的经济循环设计，善于从数据中发掘问题，并结合实际体验和玩家反馈进行校验；\r\n3.具有较强的数值建模和分析能力，对战斗平衡性和玩家对局行为变化敏感；\r\n4.有较强的团队合作意识，抗压能力强；\r\n5.热爱射击游戏，熟悉主流撤离射击游戏玩法者优先。",
+    "LastUpdateTime": "2026年07月01日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2015744556187934720",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "",
+    "Introduction": "",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "五年以上工作经验"
+  }
+}

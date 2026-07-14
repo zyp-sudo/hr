@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2060193134817755136",
+    "RecruitPostId": 120292,
+    "RecruitPostName": "《逆战：未来》客户端开发工程师（研效）",
+    "LocationId": 1,
+    "LocationName": "深圳",
+    "BGId": 956,
+    "BGName": "IEG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40001001",
+    "CategoryName": "技术",
+    "ProductName": "code-z",
+    "Responsibility": "1.负责PC版本的内存分析优化以及版本的Crash，底层疑难问题解决；\n2.负责建立内存监控体系，制定内存标准和制作规范，持续完善、优化工具链及工作流，提高分析优化效率；\n3.负责研发环境相关的流程与工具的开发、迭代和维护；\n4.与团队成员紧密合作，解决技术疑难问题，推动项目进展。",
+    "Requirement": "1.熟悉UE开发，有3年及以上游戏引擎开发/性能优化/CI构建相关经验；\r\n2.熟练掌握C++，至少掌握一门脚本语言,  计算机相关基础扎实；\r\n3.具备良好的问题分析和解决能力，能够独立解决复杂技术问题；\r\n4.积极响应和处理项目研发流程中的各种问题,开发自定义工具和插件，提升团队工作效率；\r\n5.责任心强，对游戏新技术能保持热情与敏感；\r\n6.有UE引擎PC、移动双端开发及引擎/内存优化经验者优先。",
+    "LastUpdateTime": "2026年05月29日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2060193134817755136",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "",
+    "Introduction": "在腾讯，作为一位游戏客户端开发，你始终身处科技前沿，与同样具备满分热情的策划、美术等团队紧密协作，助力新世界的诞生、运作，持续打造极致体验。你可以善用自己的全局观察能力，不断打开技术视野，与靠谱的团队一起做出真正有趣的新事物。",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "三年以上工作经验"
+  }
+}

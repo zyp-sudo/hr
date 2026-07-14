@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2052374781944315904",
+    "RecruitPostId": 119828,
+    "RecruitPostName": "公益平台-推荐算法",
+    "LocationId": 1,
+    "LocationName": "深圳",
+    "BGId": 953,
+    "BGName": "CDG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40001005",
+    "CategoryName": "技术",
+    "ProductName": "公共",
+    "Responsibility": "1.负责腾讯公益产品推荐系统建设，实现推荐系统的召回、粗排、精排、重排全链路的设计与优化，持续提升捐赠转化、内容消费、用户留存等核心指标；\r\n2.探索大语言模型在公益推荐中的应用，包括语义召回、项目理解、个性化文案生成、Agent 式推荐交互等方向，推动生成式推荐在公益场景落地；\r\n3.与产品协作设计推荐用户的终端体验和数据回收，进一步提高推荐系统的准确性。",
+    "Requirement": "1.本科以上学历，计算机、人工智能、机器学习、应用数学等相关专业；\r\n2.3年以上推荐算法工程实战经验，完整负责或主导过推荐系统至少一个核心模块（召回/排序/重排），具备从 0 到 1 或从 1 到 N 的系统建设经验；\r\n3.具备良好的业务理解力与跨团队协作能力，能独立推进推荐算法在复杂业务场景中的应用落地。",
+    "LastUpdateTime": "2026年06月10日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2052374781944315904",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "",
+    "Introduction": "渴望为世界带来新意的人，早已对描绘未来的“热词”不陌生——人工智能、机器学习、数据科学等等。腾讯始终在业界前沿不断探索，积极布局，并为优秀的你提供无限广阔的舞台。我们坚信科技的不断革新，最终能带来美好的、撼动人心的改变。",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "三年以上工作经验"
+  }
+}

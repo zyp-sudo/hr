@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2051914910073532416",
+    "RecruitPostId": 119790,
+    "RecruitPostName": "企业微信-数据分析师",
+    "LocationId": 5,
+    "LocationName": "广州",
+    "BGId": 14129,
+    "BGName": "WXG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40003001",
+    "CategoryName": "产品",
+    "ProductName": "企业微信SaaS",
+    "Responsibility": "1.负责企业微信核心业务数据分析与监控，搭建并维护关键指标体系和数据看板；\r\n2.基于用户行为、留存、转化等多维度分析，挖掘业务问题与增长机会，输出策略建议；\r\n3.负责专题分析和经营分析报告，清晰呈现数据结论，支持业务决策；\r\n4.协同产品、运营、研发等团队，推动数据结论落地，并使用 AI 工具提升分析和报告效率。",
+    "Requirement": "1.本科及以上学历，3 年以上数据分析经验，ToB / SaaS 背景优先；\r\n2.熟练掌握 SQL，熟悉 Python / R、常用 BI 工具及 AI 辅助分析工具；\r\n3.具备较强业务理解、逻辑分析和结构化表达能力，能从复杂数据中提炼结论；\r\n4.具备良好的跨团队沟通与推动能力，能推动分析结论落地。",
+    "LastUpdateTime": "2026年05月13日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2051914910073532416",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "",
+    "Introduction": "",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "三年以上工作经验"
+  }
+}

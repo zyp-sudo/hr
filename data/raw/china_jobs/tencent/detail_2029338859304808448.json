@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2029338859304808448",
+    "RecruitPostId": 118178,
+    "RecruitPostName": "腾讯云乐享-全栈Agent研发工程师",
+    "LocationId": 1,
+    "LocationName": "深圳",
+    "BGId": 29294,
+    "BGName": "CSIG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40001001",
+    "CategoryName": "技术",
+    "ProductName": "企业中台SaaS",
+    "Responsibility": "1.核心做context management为核心工作内容的Agent研发；\r\n2.负责腾讯云乐享在垂直子领域的全链路研发工作，涵盖需求分析、架构设计、前后端开发及模型集成；\r\n3.主导技术方案规划与评审，精心输出高质量设计文档，全力协调前后端及算法团队达成技术方案落地实施；\r\n4.积极推动研发流程标准化，合理制定迭代计划并精准把控交付节奏，保证功能按时且高质量交付；\r\n5.构建代码质量监控体系，主导性能优化与体验提升工作，有效提高产品内建质量与生成效果；\r\n6.深度参与 AI 模型工程化落地，巧妙设计模型服务接口与数据交互方案，大力优化推理效率与资源消耗。",
+    "Requirement": "1.计算机相关专业本科及以上学历，拥有 3 年以上全栈开发经验，并主导过复杂系统全生命周期研发；\r\n2.精通至少两种技术栈组合，如 TypeScript+Node.js+Python/Java+React+Go，具备跨平台开发经验者优先；\r\n3.熟悉分布式系统设计，熟练掌握微服务、容器化、CI/CD 等工程实践，有高并发场景优化经验；\r\n4.具备出色的技术方案规划能力，能够输出符合 Clean Architecture/Domain-Driven Design 原则的设计文档；\r\n5.熟悉 AI 工程化流程，有 Prompt 工程、RAG 应用或大模型微调经验者优先；\r\n6.强烈的 owner 意识，具备优秀的跨团队协同能力，主导过 5 人以上研发团队协作经验优先。",
+    "LastUpdateTime": "2026年07月03日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2029338859304808448",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "",
+    "Introduction": "作为一名前端开发工程师，你需要在快速变化的技术世界中保持一贯的敏锐与好奇，同时懂得如何将项目落地，给用户创造更多惊喜。你将与产品团队、客户端团队紧密合作，一同打造极致的用户体验。随着技术视野的不断拓宽，公司将会与你一同成长，个人职业的更多可能性亦被打开。",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "三年以上工作经验"
+  }
+}

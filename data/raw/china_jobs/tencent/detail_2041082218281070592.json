@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2041082218281070592",
+    "RecruitPostId": 119071,
+    "RecruitPostName": "Future项目-UE5游戏客户端开发-(引擎研效方向)",
+    "LocationId": 1,
+    "LocationName": "深圳",
+    "BGId": 956,
+    "BGName": "IEG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40001001",
+    "CategoryName": "技术",
+    "ProductName": "公共",
+    "Responsibility": "1.负责以下工作中的若干个方向；\r\n2.负责游戏性能优化和底层Bug、Crash等疑难问题；\r\n3.负责渲染管线的优化和定制开发，并且推动落地；\r\n4.负责版本构建、更新以及相关流程工具的建设；\r\n5.负责建立性能监控体系，分析工具和相关流程建设；\r\n6.对前沿技术进行预研，评估技术方案的可行性以及落地实现。",
+    "Requirement": "1.本科以上学历，3年以上基于UE引擎的开发和维护经验，深刻理解现代游戏架构和制作流程；\r\n2.熟练掌握C++，了解常用脚本(Python/TypeScript)的基本原理和用法，善于使用CodeBuddy/Cursor等现代AI编程工具；\r\n3.对3D渲染/性能优化/内存优化/资源管理/版本构建/AgenticAI 中的一到多项有深刻理解；\r\n4.关注行业技术发展，具备良好的沟通和学习能力，善于基于数据分析问题、解决问题，能够针对游戏特点提出优化方案；\r\n5.积极响应和处理项目研发流程中的各种问题,开发自定义工具和插件，提升团队工作效率；\r\n6.具备良好的团队合作精神和沟通能力、责任心强，对游戏前沿技术有热情。",
+    "LastUpdateTime": "2026年07月01日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2041082218281070592",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "",
+    "Introduction": "在腾讯，作为一位游戏客户端开发，你始终身处科技前沿，与同样具备满分热情的策划、美术等团队紧密协作，助力新世界的诞生、运作，持续打造极致体验。你可以善用自己的全局观察能力，不断打开技术视野，与靠谱的团队一起做出真正有趣的新事物。",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "三年以上工作经验"
+  }
+}

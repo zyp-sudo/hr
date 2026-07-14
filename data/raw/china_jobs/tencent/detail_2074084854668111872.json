@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2074084854668111872",
+    "RecruitPostId": 120967,
+    "RecruitPostName": "规划架构师-AI算力配套优化",
+    "LocationId": 1,
+    "LocationName": "深圳",
+    "BGId": 958,
+    "BGName": "TEG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40001003",
+    "CategoryName": "技术",
+    "ProductName": "运营管理（运营管理部）",
+    "Responsibility": "1.负责公司AI配套基础设施的规划和性能优化，包括网络专线、内存、磁盘、CPU算力；\r\n2.推动公司整体CPU和内存使用效能提升，包括RL框架和KV Cache的内存压缩优化，大规模K8S集群的CPU超卖和内存压缩能力建设。",
+    "Requirement": "1.3年以上相关开发经验，熟悉Go/C++/Python/Java等至少两门语言；\r\n2.熟悉Linux、虚拟化技术、K8S、Docker；有KVM或K8S集群优化经验优先，有混部技术经验优先；\r\n3.了解x86、ARM架构，了解计算机系统底层硬件，有相关网络基础知识；有服务器CPU、网络、存储性能调优，内存压缩优化等经验优先；\r\n4.对AI基础设施感兴趣，熟悉AI所需的周边配套资源，了解AI算法原理和深度学习框架优先。",
+    "LastUpdateTime": "2026年07月06日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2074084854668111872",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "",
+    "Introduction": "在腾讯，优秀的技术运营工程师始终赋能业务，关注技术运营的质量、成本、效率和安全。他们不仅是经验丰富的问题解决者，更是具有全局视角的架构师，通过自动化工具的建设，强力提升平台效能，助力业务发展。",
+    "DepartmentIntroduction": "腾讯运营管理部负责提升公司资源运营效率、技术运营水平，完善的业务架构评审、业务预核算管理、资源规划、资源供应链、产品体验和运营优化的IDC资源全生命周期精细化技术运营体系。目前在全球26个国家和地区拥有100多个可用区，共百 T 带宽和超百万台服务器资源，并持续进行有效的成本优化，为业务实现低成本高效率发展保驾护航。",
+    "RequireWorkYearsName": "三年以上工作经验"
+  }
+}

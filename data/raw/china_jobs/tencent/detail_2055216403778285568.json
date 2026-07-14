@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2055216403778285568",
+    "RecruitPostId": 120069,
+    "RecruitPostName": "在研日漫动作游戏-资深特效设计师",
+    "LocationId": 1,
+    "LocationName": "深圳",
+    "BGId": 956,
+    "BGName": "IEG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40002002",
+    "CategoryName": "设计",
+    "ProductName": "US-手游APP",
+    "Responsibility": "1.负责游戏内技能 CG 场景 UI特效 设计与制作，确保产品风格与品质；\r\n2.基于Unity或UE引擎实现高质量特效（粒子 Shader 动画等） 对计算原理性能等有深入理解；\r\n3.对前沿特效技术（如Houdini HDRP管线），有深厚的理解，提升团队技术能力；\r\n4.能够带领一条特效管线，指导初级特效设计师 完成特效落地；推动团队技术沉淀与效率提升；\r\n5.与程序策划 协作配合，保证产品的高品质落地；\r\n6.能够跟进CP流程，带领CP团队完成项目内容。",
+    "Requirement": "1.本科及以上学历，动画 等艺术类专业优先；\r\n2.5年以上游戏特效经验，有成功上线项目案例；\r\n3.精通Unity或UE特效全流程（粒子、Shader编写、VFX Graph等）；\r\n4.熟练使用Maya/3ds Max/Houdini等工具，熟悉HDRP/URP管线；\r\n5.美术功底扎实，对色彩、光影、节奏感把控敏锐；\r\n6.具备技术创新意识、跨部门协作能力及团队管理经验。",
+    "LastUpdateTime": "2026年05月15日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2055216403778285568",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "",
+    "Introduction": "【腾讯游戏｜这一局，由你主导】\n用画笔创造玩家热爱的世界。在腾讯游戏，你将主导角色设计、场景搭建或风格定义，用扎实的美术功底与独特创意，打造真正触动人心的视觉体验。这里有成熟的技术支持、丰富的项目机会，你的作品将随国民级游戏走进亿万玩家视野。加入我们，让艺术真正“玩”出价值。",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "五年以上工作经验"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "1925098614900785152",
+    "RecruitPostId": 112218,
+    "RecruitPostName": "腾讯游戏-多模态模型算法工程师-新星引力计划",
+    "LocationId": 1,
+    "LocationName": "深圳",
+    "BGId": 956,
+    "BGName": "IEG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40001005",
+    "CategoryName": "技术",
+    "ProductName": "腾讯游戏",
+    "Responsibility": "1.负责使用机器学习等方法，对 3D 模型、角色动画等游戏美术资产进行深层次、细粒度的理解；\n2.负责上述各模态数据的预训练，为应用类任务提供特征提取、编解码、模态对齐等基础能力。",
+    "Requirement": "1.硕士及以上学历，2年以上算法相关的工作经验，具备扎实的机器学习/深度学习算法功底；\n2.有较强的编程能力，熟练掌握 Python 和 PyTorch；\n3.具备优秀的逻辑思维能力，善于分析和解决问题；\n4.具备良好的沟通表达能力与团队协作能力。",
+    "LastUpdateTime": "2026年06月01日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=1925098614900785152",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "1.有计算机图形学（几何、动画、渲染任一）基础和实践经验者优先；\n2.有 DCC 软件如 Blender、Maya 使用或开发经验者优先。",
+    "Introduction": "渴望为世界带来新意的人，早已对描绘未来的“热词”不陌生——人工智能、机器学习、数据科学等等。腾讯始终在业界前沿不断探索，积极布局，并为优秀的你提供无限广阔的舞台。我们坚信科技的不断革新，最终能带来美好的、撼动人心的改变。",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "两年以上工作经验"
+  }
+}

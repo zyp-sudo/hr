@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2046088822630019072",
+    "RecruitPostId": 119478,
+    "RecruitPostName": "J3-UE5微恐射击-资深3D动作（怪物向）",
+    "LocationId": 1,
+    "LocationName": "深圳",
+    "BGId": 956,
+    "BGName": "IEG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40002002",
+    "CategoryName": "设计",
+    "ProductName": "CFH-手游APP-国际版",
+    "Responsibility": "1.主导怪物角色及武器动作设计，重点针对射击、近战、闪避、技能释放等核心系统，确保动作设计与游戏玩法紧密结合；\r\n2.协助策划与程序制定状态机及物理交互系统，优化动作流畅度与打击感反馈，提升游戏体验；\r\n3.统筹动作团队的工作产出，制定并执行开发规范，推动动捕数据修复、动画分层、IK适配等关键技术的实施；\r\n4.与程序、策划、特效团队紧密合作，设计创新动作机制，如环境互动、技能融合等，增强游戏的动作表现力；\r\n5.把控整体动作风格，平衡写实与夸张的表现手法，确保动作设计与游戏世界观及角色设定高度契合。",
+    "Requirement": "1.具备5年以上游戏动作设计经验，至少参与过1款完整的3A或高品质动作/射击类项目；\r\n2.精通UE5动画系统，包括Motion Warping、Motion Matching、Control Rig、物理动画等，熟悉动作技术管线的优化流程；\r\n3.对FPS/TPS战斗节奏、受击反馈、镜头运镜有深刻理解，能够通过动作设计提升玩家的操作沉浸感；\r\n4.具备团队管理经验，擅长沟通与协作，能够快速定位并解决开发过程中的技术瓶颈。",
+    "LastUpdateTime": "2026年05月26日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2046088822630019072",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "",
+    "Introduction": "",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "五年以上工作经验"
+  }
+}

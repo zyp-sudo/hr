@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "1554352375597113344",
+    "RecruitPostId": 92143,
+    "RecruitPostName": "操作系统高级研发工程师（深圳/北京/上海）",
+    "LocationId": 1,
+    "LocationName": "深圳",
+    "BGId": 958,
+    "BGName": "TEG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40001001",
+    "CategoryName": "技术",
+    "ProductName": "",
+    "Responsibility": "1.负责操作系统基础软件源码维护，需求开发，上游反馈等；\r\n2.负责操作系统核心组件设计和研发，腾讯自研软件开发和支持；\r\n3.负责软件包分析，打包和编译，软件包依赖解决；\r\n4.参与社区互动，协同开发，开发者交流等。",
+    "Requirement": "1.硕士及以上学历，精通一种或者多种软件开发语言（C/C++、Python、Go等），五年及以上系统软件或者平台软件开发经验；\r\n2.熟悉操作系统架构设计和核心组件，具备主导系统软件设计和核心组件开发；\r\n3.熟悉Linux系统，有操作系统软件开发经验者优先；\r\n4.有开源代码开发经验值者优先，比如systemd，glibc，gcc等；\r\n5.有开源linux社区经验者优先，熟悉CentOS，Suse，fedora等；\r\n6.具备较强的分析能力，善于快速定位问题和解决问题，熟悉敏捷开发，适应快速迭代的开发节奏，具备较强的中/英文沟通能力和文档编写能力。",
+    "LastUpdateTime": "2026年06月05日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=1554352375597113344",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "",
+    "Introduction": "",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "五年以上工作经验"
+  }
+}

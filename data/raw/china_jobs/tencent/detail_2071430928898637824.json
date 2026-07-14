@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2071430928898637824",
+    "RecruitPostId": 120796,
+    "RecruitPostName": "企业微信文档-全栈研发工程师",
+    "LocationId": 5,
+    "LocationName": "广州",
+    "BGId": 14129,
+    "BGName": "WXG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40001001",
+    "CategoryName": "技术",
+    "ProductName": "企业微信协作工具SaaS",
+    "Responsibility": "1.负责企业微信生态内在线文档（表格/文档/智能表格/智能文档）核心模块开发；\n2.深度参与文档协同编辑，跨端高效渲染等核心体验优化；\n3.深度参与 AI 模型全客户端工程化落地，具备大模型应用落地（如Prompt Engineering、RAG、Agent开发）的实践经验；\n4.深度参与团队 AI 工程化流程建设，提升团队研发效率",
+    "Requirement": "1.具备扎实的前端开发技能或者客户端开发技能；\n2.了解大模型技术原理，熟悉智能体常见范式，有智能体上下文工程开发经验，熟悉至少一种主流 Agent 框架；\n3.熟悉微服务、容器化、CI/CD 等工程实践，有高并发场景优化经验",
+    "LastUpdateTime": "2026年07月06日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2071430928898637824",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "1.有客户端复杂项目跨平台工作经验；\n2.具备WebAssembly性能优化或TensorFlow.js应用经验；\n3.深度了解跨端渲染引擎开发（如Flutter/Skia）",
+    "Introduction": "",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "三年以上工作经验"
+  }
+}

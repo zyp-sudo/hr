@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2001054760110809088",
+    "RecruitPostId": 10002482,
+    "RecruitPostName": "Hunyuan AIGC Algorithm Researcher (World Model Foundation Direction)",
+    "LocationId": 401,
+    "LocationName": "帕罗奥多",
+    "BGId": 958,
+    "BGName": "TEG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40001005",
+    "CategoryName": "技术",
+    "ProductName": "",
+    "Responsibility": "Business Unit\nTechnology Engineering Group (TEG) is responsible for supporting the company and its business groups on technology and operational platforms, as well as the construction and operation of R&D management and data centers, TEG provides users with a full range of customer services. As the operator of the largest networking, devices, and data center in Asia,TEG also leads the Tencent Technology Committee in strengthening infrastructure R&D through internal and distributed open source collaboration, constructing new platforms and supporting business innovation.\n\nWhat the Role Entails\n1.  Engage in the research and development of large-scale video world models, including the design and construction of training datasets, foundational model algorithm design, optimization related to pre-training, SFT, and RL, model capability evaluation, and exploration of downstream application scenarios.\n2.  Analyze R&D challenges scientifically, identify performance bottlenecks, and develop solutions based on first principles to accelerate the development and iteration of world models, ensuring competitiveness and leadership.\n3.  Explore diverse paradigms for world model implementation, research next-generation model architectures, and push the boundaries of world model capabilities.\n\nWho We Look For\n1.  Bachelor’s degree or higher (preferred) in Computer Science, Artificial Intelligence, Mathematics, or a related field.\n2.  Solid foundation in deep learning algorithms and proven experience in large model R&D. Candidates with experience in Diffusion Models and Autoregressive Models, publications in top-tier conferences, or practical experience in text-to-image/text-to-video generation are preferred.\n3.  Familiarity with implementation details of deep learning networks and operators, model tuning for training/inference, CPU/GPU acceleration, and distributed training/inference optimization. Hands-on experience is a plus.\n4.  Participation in ACM/NOIP competitions is highly desirable.\n5.  Strong learning, communication, and teamwork skills, coupled with a keen sense of curiosity.\nLocation State(s)\nUS-California-Palo Alto\nThe expected base pay range for this position in the location(s) listed above is $149,000.00 to $279,800.00 per year. Actual pay may vary depending on job-related knowledge, skills, and experience.\nEmployees hired for this position may be eligible for a sign on payment, relocation package, and restricted stock units, which will be evaluated on a case-by-case basis.\nSubject to the terms and conditions of the plans in effect, hired applicants are also eligible for medical, dental, vision, life and disability benefits, and participation in the Company’s 401(k) plan. The Employee is also eligible for up to 15 to 25 days of vacation per year (depending on the employee’s tenure), up to 13 days of holidays throughout the calendar year, and up to 10 days of paid sick leave per year.\nYour benefits may be adjusted to reflect your location, employment status, duration of employment with the company, and position level. Benefits may also be pro-rated for those who start working during the calendar year.\n\nEqual Employment Opportunity at Tencent\nAs an equal opportunity employer, we firmly believe that diverse voices fuel our innovation and allow us to better serve our users and the community. We foster an environment where every employee of Tencent feels supported and inspired to achieve individual and common goals.\r\nWork Location: US-California-Palo Alto",
+    "Requirement": "岗位要求详情请见上方岗位职责内说明",
+    "LastUpdateTime": "2026年07月02日",
+    "PostURL": "https://tencent.wd1.myworkdayjobs.com/Tencent_Careers/job/US-California-Palo-Alto/Hunyuan-AIGC-Algorithm-Researcher--World-Model-Foundation-Direction-_R106612",
+    "SourceID": 4,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "",
+    "Introduction": "",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": ""
+  }
+}

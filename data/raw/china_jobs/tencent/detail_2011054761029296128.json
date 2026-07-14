@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2011054761029296128",
+    "RecruitPostId": 117277,
+    "RecruitPostName": "英雄联盟手游-游戏客户端开发工程师-新星引力计划",
+    "LocationId": 1,
+    "LocationName": "深圳",
+    "BGId": 956,
+    "BGName": "IEG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40001001",
+    "CategoryName": "技术",
+    "ProductName": "Lgame",
+    "Responsibility": "1.负责英雄联盟手游客户端的开发工作，基于Unity3D引擎进行功能实现与优化；\n2.参与游戏客户端各模块功能开发及迭代，包括但不限于商业化系统、Gameplay机制、AIBot、UGC工具、引擎优化、研效工具链等模块；\n3.主要负责以下模块之一：（1）负责陪玩Bot技术的研发和落地，包括行为树AI，状态机，强化学习、模仿学习等，持续探索AI+Gameplay游戏玩法；(2）GamePlay、UGC工具开发；(3) 商业化系统开发和优化；（4）参与性能优化并结合业务特征优化引擎特性；\n4.跟进项目需求，快速响应设计变更，保证开发进度与质量。",
+    "Requirement": "1.本科及以上学历，计算机相关专业，3年左右游戏客户端开发经验，有完整项目周期经验优先；\n2.精通C++、C#编程，具备系统框架设计与优化能力；\n3.熟练掌握以下技能之一：（1）熟悉Unity3D引擎架构及核心模块（如UI系统、动画系统、网络同步等），并有实际Gameplay开发经验；（2）深入理解游戏客户端开发流程，有商业化系统、UI框架设计或UGC工具开发经验者优先；（3）掌握机器学习、强化学习、最优化理论等算法原理，并对及其在游戏中的应用有深入的理解和浓厚的兴趣；（4）性能和引擎优化工作，参与过Unity 3D引擎定制开发；\n4.自驱力强，对游戏行业充满热情，具备优秀的逻辑思维、问题分析与解决能力。",
+    "LastUpdateTime": "2026年06月18日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2011054761029296128",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "1.有成功的商业游戏项目开发经验，尤其是MOBA或竞技类游戏；\r\n2.熟悉Unreal Engine或其他主流游戏引擎，有跨引擎开发经验；\r\n3.有AIBot、UGC工具或复杂商业化系统独立开发经验。",
+    "Introduction": "",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "一年以上工作经验"
+  }
+}

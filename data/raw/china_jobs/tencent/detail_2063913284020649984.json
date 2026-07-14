@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2063913284020649984",
+    "RecruitPostId": 120449,
+    "RecruitPostName": "《三角洲行动》-客户端开发工程师（编辑器开发与资源管理）-UGC",
+    "LocationId": 1,
+    "LocationName": "深圳",
+    "BGId": 956,
+    "BGName": "IEG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40001001",
+    "CategoryName": "技术",
+    "ProductName": "ProjectD-手游APP",
+    "Responsibility": "1.参与UGC编辑的工具开发；\n2.参与UGC编辑器构建流程设计与实现；\n3.参与UGC产生内容的打包与发布的流程设计与实现；\n4.参与UGC编辑器对外的资源管理与相应的工具流程建设；\n5.参与UGC相关开发方案设计,性能优化,AI提效与安全相关等工作。",
+    "Requirement": "1.编程基础扎实,熟悉C++,熟练掌握至少一门脚本语言如Lua或TypeScript；\n2.具有至少1年的UE4构建相关经验；\n3.有UGC的编辑器开发经验者优先；\n4.熟悉掌握AI Coding的能力，对AI Coding有较深刻的认知；\n5.对FPS游戏熟悉和热爱者优先；\n6.有优秀的学习能力，善于沟通，热爱游戏事业。",
+    "LastUpdateTime": "2026年06月08日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2063913284020649984",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "",
+    "Introduction": "",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "两年以上工作经验"
+  }
+}

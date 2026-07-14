@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2056229046550966272",
+    "RecruitPostId": 120114,
+    "RecruitPostName": "无畏契约手游-高级动效设计师-重构",
+    "LocationId": 1,
+    "LocationName": "深圳",
+    "BGId": 956,
+    "BGName": "IEG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40002002",
+    "CategoryName": "设计",
+    "ProductName": "CodeV-手游APP",
+    "Responsibility": "1.能够处理较为简单清晰的动效效果表现，并能进准控制各个控件的状态以方便蓝图布局；\n2.对UE引擎内材质应用有理解，熟悉UE材质系统；\n3.能够使用UMG控件开发各类型UMG界面并且对各机型的适配处理。并能基于UX交互逻辑实现其功能性的美术表现；\n4.能够清晰准确的对资产进行有效的性能向优化，并可编写项目文档、优化实现规范和落地效率；\n5.对接外部CP，沟通资产内容和蓝图控件的调整合入。",
+    "Requirement": "1.两年以上相关从业经验。动画、特效设计类相关专业优先；较强的美术功底和素养，善于沟通与传达，能清晰的表达设计逻辑；\n2.审美良好，有一定的游戏U视觉基础，具备基础交互思维；\n3.有较强的逻辑思维和自学能力，有热情，善于沟通，能够承担一定的工作压力；\n4.熟练掌握Photoshop，AE等工具软件。熟悉figma更加；\n5.有UE4或者U3D引擎经验者优先。",
+    "LastUpdateTime": "2026年05月26日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2056229046550966272",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "",
+    "Introduction": "【腾讯游戏｜这一局，由你主导】\n用画笔创造玩家热爱的世界。在腾讯游戏，你将主导角色设计、场景搭建或风格定义，用扎实的美术功底与独特创意，打造真正触动人心的视觉体验。这里有成熟的技术支持、丰富的项目机会，你的作品将随国民级游戏走进亿万玩家视野。加入我们，让艺术真正“玩”出价值。",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "两年以上工作经验"
+  }
+}

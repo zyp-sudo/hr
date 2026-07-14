@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2053714315432865792",
+    "RecruitPostId": 119921,
+    "RecruitPostName": "UE微恐轻动作项目-主系统",
+    "LocationId": 1,
+    "LocationName": "深圳",
+    "BGId": 956,
+    "BGName": "IEG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40003002",
+    "CategoryName": "产品",
+    "ProductName": "预研产品-手游APP-Project Metro",
+    "Responsibility": "1.作为系统方向负责人，规划基础系统、社交、成长、赛季、活动、商业化承接等体系架构，对长期可扩展性和体验一致性负责；\n2.主导系统间资源、数据、行为目标、界面流程和运营节奏的耦合关系，保证主循环与长线循环互相支撑；\n3.定义核心系统的方案结构、数值/规则边界、埋点指标、验收标准和版本演进路线；\n4.推动复杂系统从需求澄清、方案评审、原型验证、开发跟进、QA验收到上线复盘的闭环；\n5.建立系统策划文档模板、评审流程、风险清单和新人培养机制，提升团队方案质量与协作效率。",
+    "Requirement": "1.5年以上系统策划经验，有主系统/系统负责人经历，负责过3个以上中大型系统从设计到上线/测试的完整落地；\n2.具备在线游戏长线运营、成长/经济/社交/赛季/活动等系统架构经验，理解内容消耗、留存、付费和社交行为的关系；\n3.逻辑抽象、文档表达和规则推演能力强，能处理复杂数据结构、系统联动、边界条件和异常流程；\n4.熟悉UE或同类引擎项目的研发协作方式，能与程序、交互、运营、数据、美术高效推进系统落地；\n5.具备产品判断、数据复盘、优先级取舍和团队辅导能力，能在快速迭代中保持系统一致性和长期扩展空间。",
+    "LastUpdateTime": "2026年07月06日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2053714315432865792",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "",
+    "Introduction": "",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "三年以上工作经验"
+  }
+}

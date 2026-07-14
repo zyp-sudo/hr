@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "1939932008138539008",
+    "RecruitPostId": 10002162,
+    "RecruitPostName": "リギングテクニカルアーティスト｜Rigging Technical Artist",
+    "LocationId": 263,
+    "LocationName": "大阪",
+    "BGId": 956,
+    "BGName": "IEG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40002002",
+    "CategoryName": "设计",
+    "ProductName": "",
+    "Responsibility": "チーム紹介/About the Hiring Team\nライトスピード・ジャパンは、世界中のオーディエンス向けにオリジナルのAAA級アクションゲームタイトルの制作に特化しているゲーム開発スタジオです。著名なゲームディレクターとして知られる伊津野英昭（いつの ひであき）が率いる当スタジオは、東京と大阪の2つの拠点で活動しています。\n柔軟で包括的な職場環境を提供し、ゲーム制作の限界を押し広げる才能と情熱にあふれるゲームクリエイターの参加を非常に歓迎しています。\nLightSpeed Japan Studio is a game development studio dedicated to crafting original AAA action game titles for global audiences. Led by industry veteran Hideaki Itsuno, the studio operates across two locations in Tokyo and Osaka.\nThe studio offers a flexible and inclusive work environment and actively welcomes game creators who are full of talent and passion for pushing the boundaries of game development.\n\n仕事内容/What the Role Entails\n仕事内容\nチームのリギング関連の責任者として、アニメーターをサポートし、外部ベンダーと連携しながら高品質なリギングの制作を担当します。\n具体的な業務内容は以下の通りです：\n①既存のリグ案を検証し、プロジェクトにおける最終的なリグ仕様・方針を策定する\n②外部ベンダーによるリグ作業の品質を管理し、プロジェクトの要件を満たすようにする\n③リグ関連のツールを開発・保守する\n④MocapからMaya、最終的にUnreal Engineへの実装フローにおける課題をツール開発によって解決する（※オプション）\n⑤既存のツールをベースに、LiveLinkのツールフローを構築・保守する（※オプション）\n\nJob Description\nAs the Rigging Lead, you will support animators and collaborate with external vendors to produce high-quality rigs. Your main responsibilities include:\n1. Reviewing existing rig proposals and establishing the final rig specifications and direction for the project.\n2. Managing the quality of rigging work provided by external vendors to ensure it meets project requirements.\n3. Developing and maintaining rigging-related tools.\n4. (Optional) Solving issues in the pipeline from motion capture to Maya to Unreal Engine through tool development.\n5. (Optional) Building and maintaining the LiveLink tool workflow based on existing tools.\n\n応募資格/Who We Look For\n応募条件\n必須スキル：\n・Mayaにおけるリギング関連ツールの開発経験\n・Mayaを用いたリギングの実務経験（3年）\n・Perforce等のバージョン管理ツールの使用経験\n歓迎スキル（オプション）：\n・Unreal Engine用プラグインの開発経験\n・モーションキャプチャシステムの使用経験\n・補助骨、Blendshape、Pose Driver等のMayaおよびUEへの実装経験\n\nApplication Requirements\nRequired Skills:\nExperience developing rigging-related tools in Maya\nAt least 3 years of hands-on rigging experience using Maya\nExperience using version control tools such as Perforce\n\nPreferred Skills (Optional):\nExperience developing plugins for Unreal Engine\nExperience using motion capture systems\nExperience implementing helper bones, blendshapes, and pose drivers in both Maya and Unreal Engine\n\n一緒に働く魅力/Why Join Us?\n勤務地\n大阪（JR大阪駅JP TOWER OSAKA）、東京（虎ノ門ヒルズビジネスタワー）※希望に添います\n賃金\n年収額：応相談（昇給/賞与あり）\n※経験・スキル等を考慮し、当社規定により優遇します。\n※一般社員の場合、固定残業代月35時間分が含まれます。\n管理職の場合、固定残業代10時間分が含まれます。\n労働時間・休日\n就業時間 09:30 ~ 18:30　 休憩時間 60分\nフレックスタイムあり\n完全週休２日制（土日・祝日）\n有給休暇：入社初年度は、入社月により期間按分付与。在籍年数踏まえて最大22日\n年末年始休暇（12/30～1/3）\n病気休暇（有給）：12日/年（有給休暇とは別途付与）\n福利厚生\n＜各種保険＞\n健康保険 、雇用保険、 労災保険、 厚生年金保険、 総合福祉団体定期保険（GTL）\n業務災害安心総合保険（GPA）、団体長期障害所得補償保険（GLTD）\n海外旅行保険\n＜各種手当＞\n通勤手当(上限5万円/月) 、通信手当（上限1万円/月）、 自己啓発手当（上限2万円/月）、 平日に出社した場合食事補助1800円/日、定期健診手当（上限7万5千円/年1回）\n＜支援制度・その他待遇＞\nフリードリンクコーナー 、ギフトカード（お盆、正月の2回支給、2万円/1回）\n従業員支援プログラム(EAP) 、慶弔見舞金 、永年勤続賞/休暇\nこの求人広告に記載されているポリシー（給与、福利厚生、労働条件などを含むがこれに限らない）は、会社のリアルタイムポリシーに応じて調整される可能性があります。\n\n平等な雇用機会を重視するテンセント/Equal Employment Opportunity at Tencent\nテンセントは、雇用機会の均等を最重要視しています。私たちは、多様性がイノベーションを促進し、ユーザーやコミュニティに対してより良いサービスを提供する原動力になると確信しています。\n社員一人ひとりが十分なサポートを受け、自身の目標と会社の目標を共に達成できるよう、モチベーションを高められる環境づくりを大切にしています。\nAs an equal opportunity employer, we firmly believe that diverse voices fuel our innovation and allow us to better serve our users and the community. We foster an environment where every employee of Tencent feels supported and inspired to achieve individual and common goals.\r\nWork Location: Japan-Osaka | Japan-Tokyo-Business Tower",
+    "Requirement": "岗位要求详情请见上方岗位职责内说明",
+    "LastUpdateTime": "2025年09月15日",
+    "PostURL": "https://tencent.wd1.myworkdayjobs.com/Tencent_Careers/job/Japan-Osaka/-Rigging-Technical-Artist_R105688-6",
+    "SourceID": 4,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "",
+    "Introduction": "",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": ""
+  }
+}

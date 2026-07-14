@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2003325251534082048",
+    "RecruitPostId": 116774,
+    "RecruitPostName": "腾讯云-运维工程师(北京)(成都)",
+    "LocationId": 1,
+    "LocationName": "深圳",
+    "BGId": 29294,
+    "BGName": "CSIG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40001003",
+    "CategoryName": "技术",
+    "ProductName": "腾讯云",
+    "Responsibility": "1.负责腾讯云变更治理专项工作，参与腾讯云变更流程、变更规范、变更实施改进优化；\r\n2.参与变更平台需求设计，推动变更平台能力完善；\r\n3.从灰度、回滚、故障隔离、变更管控、变更演练等维度保障业务的变更流程稳定性；\r\n4.制定和完善变更流程规范，保障业务的高可用性和变更流程稳定性。",
+    "Requirement": "1.计算机科学或相关领域本科及以上学历；\r\n2.3年以上运维经验，有丰富的运维实操经验，熟悉运维变更流程；\r\n3.具备良好的问题分析和解决能力，能够快速定位并解决问题，熟悉Linux操作系统、网络协议及常见运维工具；\r\n4.学习能力强，善于接受新知识，具备良好的沟通能力和团队协作精神；\r\n5.有参与过变更治理，变更规范制定者优先。",
+    "LastUpdateTime": "2026年06月26日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2003325251534082048",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "1.加入腾讯云团队，参与云计算领域的运维工作，拓宽职业发展道路；\r\n2.与优秀的产品和技术团队合作，共同提升腾讯云产品的质量和用户体验；\r\n3.提供丰富的培训和学习机会，助力个人技能提升和职业发展。",
+    "ImportantItem": "1.参与过运维工具的设计，有运维平台产品经理经验者加分；\r\n2.熟悉腾讯云服务，有相关运维经验者优先；\r\n3.掌握至少一种编程语言，如Python、Shell等，能够编写自动化脚本；\r\n4.了解容器化技术，如Docker、Kubernetes等，有实际应用经验者优先。",
+    "Introduction": "",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "三年以上工作经验"
+  }
+}

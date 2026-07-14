@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2061001584745299968",
+    "RecruitPostId": 120307,
+    "RecruitPostName": "AI协作工具产品客户端研发高级工程师岗位",
+    "LocationId": 1,
+    "LocationName": "深圳",
+    "BGId": 29294,
+    "BGName": "CSIG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40001001",
+    "CategoryName": "技术",
+    "ProductName": "腾讯文档B端",
+    "Responsibility": "1.负责AI协作工具产品跨平台核心产品功能的全链路研发与迭代，保障 Web 端、桌面客户端（Windows/Mac）及移动端（iOS/Android）的功能一致性与极致用户体验；\r\n2.参与大前端跨平台技术架构（如 Electron、Flutter、C++跨平台底层业务库等）的设计、开发与维护，沉淀通用组件与多端复用逻辑，提升整体研发效能；\r\n3.负责AI协作工具产品多端产品的性能优化，攻克海量文件列表渲染、复杂交互卡顿、冷启动速度、内存占用及弱网环境下的传输瓶颈；\r\n4.深入操作系统底层，解决文件同步、离线存储、本地缓存、多端状态同步及跨端通信等核心场景下的兼容性与技术难题；\r\n5.协同产品、设计及后端团队，深度参与需求评审与技术方案设计，推动高质量的端到端技术交付与问题闭环；\r\n6.跟踪大前端及前沿技术（如 WebGPU、WebAssembly、端侧 AI Agent 技能集成等），探索其在网盘高要求业务场景下的技术原型与落地可能。",
+    "Requirement": "1.本科及以上学历，计算机或软件工程相关专业，3-5年互联网研发经验，有网盘、云存储、大型协作办公软件或复杂工具类产品经验者优先；\r\n2.扎实的前端基础，精通 HTML5/CSS3/JavaScript/TypeScript，熟练掌握 React 或 Vue 及其生态，具备优秀的工程化与前端架构能力；\r\n3.具备桌面端（Windows/Mac）或移动端（iOS/Android）至少一到两个平台的实际开发经验；\r\n4.熟悉 C/C++、Objective-C、Swift 或 Java/Kotlin 至少一门语言；\r\n5.有 Chromium 架构、Electron、CEF 或 Flutter 等跨平台框架的实际项目落地及踩坑经验；\r\n6.深入理解计算机体系结构、操作系统运行原理与网络协议（HTTP/TCP/UDP），精通多线程/多进程编程与内存管理；\r\n7.具备体系化的性能调优思路，有实际解决 UI 渲染掉帧、内存泄漏、包体积缩减等疑难杂症的成功经验；\r\n8.自驱力强，具备良好的逻辑思维与跨团队沟通协作能力，能独立承担具备挑战性的技术攻坚任务，有强烈的主人翁意识。",
+    "LastUpdateTime": "2026年07月02日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2061001584745299968",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "",
+    "Introduction": "在腾讯客户端开发的字典里，“敏捷高效”与“精益求精”并不互斥，追求技术的深度是我们共同的信仰。希望你也能在足够广阔的平台上尽情的施展拳脚。",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "三年以上工作经验"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "1984169735352377344",
+    "RecruitPostId": 115718,
+    "RecruitPostName": "海外技术支持-售前",
+    "LocationId": 6,
+    "LocationName": "武汉",
+    "BGId": 29294,
+    "BGName": "CSIG",
+    "ComCode": "YUNZHI",
+    "ComName": "腾讯云智研发子公司",
+    "OuterPostTypeID": "40003001",
+    "CategoryName": "产品",
+    "ProductName": "腾讯云",
+    "Responsibility": "1.AI解决方案交付：负责AI产品售前、交付等环节的标准化建设与链路优化，推动产品的标准化制定与落地，提升产品交付效率，保障产品的交付质量；\r\n2.DevOps体系建设：参与设计和优化持续集成/持续部署（CI/CD）流程，推动自动化运维平台的建设；\r\n3.技术支持与保障：及时响应并处理线上问题，为用户提供专业的技术支持，保障系统稳定运行；\r\n4.内容沉淀：编写严谨的技术文档，沉淀技术方案与最佳实践，并与产品、业务团队紧密协作，推动技术方案的产品化落地。",
+    "Requirement": "1.熟悉 Kubernetes、Docker 及 Helm 等云原生技术，具备集群运维管理和故障排查能力；\r\n2.熟练使用 Shell 和 Python 进行自动化脚本/工具开发，有扎实的编码实践；\r\n3.掌握 Linux 操作系统原理，能够进行性能调优及常见故障诊断；\r\n4.了解 TCP/IP、HTTP/HTTPS 等网络协议，具备基本的网络问题定位能力；\r\n5.了解物联网协议，如USB, Wiegand, RS485等相关串口协议；\r\n6.熟悉支付、会员系统集成及交付技术细节；\r\n7.具备运维或 DevOps 相关工作经验，有私有化交付或 To B 项目经验者优先；\r\n8.具备一年及以上大模型或其工具（如Claude code、Codex、Codebuddy等）应用或ai coding开发经验；\r\n9.责任心强，具备良好的沟通协作能力，能适应项目型工作节奏；\r\n10.拥有海外业务支持经验，具备良好的英语书面或口语沟通能力；\r\n11.注：此岗位为云智主体正式岗位。",
+    "LastUpdateTime": "2026年07月02日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=1984169735352377344",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "1.在同等条件下，通过腾讯云认证或取得同等资格认证的候选人，我们会优先考虑。",
+    "Introduction": "“用户为本，科技向善”，是写在每位腾讯产品人心中的一句箴言。在互联网浪潮中，大众的生活已被深刻地改变，如何为用户创造价值、创造怎样的价值，需要每位产品人花费更长时间去体会与探索。在这里，你将与同样关注细节、关注本质、关注美好的同事一道，开启你的创造性工作。",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "三年以上工作经验"
+  }
+}

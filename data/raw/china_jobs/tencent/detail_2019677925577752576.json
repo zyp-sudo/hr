@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2019677925577752576",
+    "RecruitPostId": 117774,
+    "RecruitPostName": "服务器DCDC电源设计专家",
+    "LocationId": 1,
+    "LocationName": "深圳",
+    "BGId": 29294,
+    "BGName": "CSIG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40001001",
+    "CategoryName": "技术",
+    "ProductName": "腾讯云",
+    "Responsibility": "1.负责服务器系统中DC-DC电源模块的电路设计、仿真、调试及优化，包括但不限于POL、VRM多相并联电源等；\n2.设计高效率、高功率密度、高可靠性的DC-DC电源方案，满足服务器系统对电源的严苛需求（如动态响应、低纹波、散热性能等）；\n3.制定电源模块的测试方案，完成电气性能测试（效率、纹波、瞬态响应等）、可靠性测试（高温、低温、老化、EMC等）及故障分析；\n4.与硬件系统工程师、PCB Layout工程师、结构工程师及热设计工程师协作，优化电源模块的布局、布线及散热设计。",
+    "Requirement": "1.本科及以上学历，5年以上DC-DC电源设计经验，有服务器、数据中心、通信设备等高功率电源开发经验者优先；\n2.精通DC-DC电源拓扑原理及设计方法，熟悉环路稳定性分析、磁性元件设计、热设计等；\n3.熟练使用仿真工具（如PSpice、LTspice、SIMPLIS、Saber等）及PCB设计软件（Altium Designer、Cadence等）；\n4.熟悉电源相关国际标准（如80Plus、IPC-9592、IEC/UL安规等）；\n5.具备良好的问题分析与解决能力，能独立完成复杂技术攻关。",
+    "LastUpdateTime": "2026年06月08日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2019677925577752576",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "1.在同等条件下，通过腾讯云认证或取得同等资格认证的候选人，我们会优先考虑。",
+    "Introduction": "在腾讯，技术人解决问题的激情永不熄灭。无论是面对产品、程序的问题，还是生活与人的问题，腾讯技术人都力图交出漂亮的答卷。我们善用科学工具，以强大的思维之力创造世界，为卓越的产品体验保驾护航，也为公司和产品策略提出宝贵的洞见，用技术引领新的变革。这里的每位成员，既传承着长久以来的务实文化，又时刻以创新眼光瞄准大海星辰。我们十分期待你加入这样一个「技术社区」，分享团队能量，尽情发挥所长。",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "五年以上工作经验"
+  }
+}

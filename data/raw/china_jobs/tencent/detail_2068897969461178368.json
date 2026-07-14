@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2068897969461178368",
+    "RecruitPostId": 120681,
+    "RecruitPostName": "微信读书/输入法/秒剪-大模型评测算法工程师-Agent方向",
+    "LocationId": 2,
+    "LocationName": "北京",
+    "BGId": 14129,
+    "BGName": "WXG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40001005",
+    "CategoryName": "技术",
+    "ProductName": "微信读书",
+    "Responsibility": "1.评测体系建设：负责大语言模型（LLM）及多模态模型（语音/视频/图片）的评测体系设计与搭建；\r\n2.评测方案设计与执行: 构建自动化、可扩展的评测工具链，支持模型快速迭代验证。探索前沿评测方法，包括但不限于 LLM-as-a-Judge、动态评测、Arena 对战、复杂推理评估等；\r\n3.模型能力诊断与优化协同：通过量化分析定位模型短板，与算法团队紧密协作，推动模型能力持续提升。",
+    "Requirement": "1.计算机科学、人工智能、数学、统计学等相关专业硕士及以上学历；\r\n2.精通 Python，熟悉 PyTorch/HuggingFace 生态。深入理解 Transformer 架构及大模型训练流程（预训练、SFT、RLHF/DPO）；\r\n3.熟悉主流评测框架（如 OpenCompass、lm-evaluation-harness、HF Evaluate 等）及常用指标（BLEU、ROUGE、Pass@k、ELO 等）；\r\n4.具备优秀的数据分析能力和系统化思维。良好的跨团队沟通协作能力，能清晰表达复杂评测结论。对 AI 评测方法论有热情，关注行业最新进展。",
+    "LastUpdateTime": "2026年06月29日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2068897969461178368",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "1.有 OpenCompass、HELM、Chatbot Arena 等知名评测项目贡献经验；\r\n2.有 Critic Model / Reward Model 训练经验；\r\n3.有顶会论文（ACL/EMNLP/NeurIPS/ICLR 等）发表。",
+    "Introduction": "",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "一年以上工作经验"
+  }
+}

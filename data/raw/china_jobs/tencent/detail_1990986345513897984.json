@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "1990986345513897984",
+    "RecruitPostId": 116074,
+    "RecruitPostName": "《逆战：未来》技术美术（灯光）",
+    "LocationId": 1,
+    "LocationName": "深圳",
+    "BGId": 956,
+    "BGName": "IEG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40002002",
+    "CategoryName": "设计",
+    "ProductName": "code-z",
+    "Responsibility": "1.使用灯光来增强游戏场景美术效果或游戏性，搭建整个游戏的场景环境氛围，天气系统，TOD（Time of Day）等；\r\n2.与美术总监，场景美术，技术美术和策划合作，为游戏的各个方面提供灯光需求；\r\n3.理解和遵循游戏的风格和主题，以及完整的游戏流程；通过专有软件创建预烘焙和实时照明；\r\n4.创建贴图材质和Shader (基于物理的渲染)，通过可用的图形工具来创建灯光；确保灯光系统符合整个游戏性能的标准和要求；\r\n5.与引擎组有效沟通和交流，提升游戏效率和性能，解决灯光关于工具和性能方面的技术问题。",
+    "Requirement": "1.艺术相关学科教育背景，例如视觉效果，计算机动画，电影制作，摄影等；有在游戏行业的灯光经验，开放世界项目最佳；\r\n2.具有一个或多个写实游戏的经验；具有优秀的美术审美，光影造诣强；\r\n3.对基于PBR的照明技术有深入的了解；对基于PBR的渲染管道的材质创作有丰富的经验；\r\n4.熟悉了解UE4/5或其他的相关的游戏引擎；精通至少一种相关的3D美术制作工具（如Maya，Houdini，XSI，3D Studio Max和Lightwave等）；\r\n5.有TOD动态照明的经验；较好的色彩校正和后期效果调试能力；\r\n6.有较强的复杂场景灯光制作能力；有使用脚本语言的经验为佳；\r\n7.优秀的书面和口头交流能力，与大型团队中的美术，策划和引擎进行有效沟通的能力；有学习新工具和新技术的意愿；解决问题的主动性，独创性和机智的意识。",
+    "LastUpdateTime": "2026年07月01日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=1990986345513897984",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "",
+    "Introduction": "",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "两年以上工作经验"
+  }
+}

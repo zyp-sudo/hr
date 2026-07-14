@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2054869950442680320",
+    "RecruitPostId": 120031,
+    "RecruitPostName": "QClaw-模型服务开发工程师（北京）",
+    "LocationId": 1,
+    "LocationName": "深圳",
+    "BGId": 29294,
+    "BGName": "CSIG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40001001",
+    "CategoryName": "技术",
+    "ProductName": "QClaw",
+    "Responsibility": "1.设计并实现高可用大模型 API 网关，兼容 OpenAI 协议，支持多模型接入与流量控制；\r\n2.基于主流推理框架优化大模型推理链路，提升系统吞吐量，降低推理延迟与成本；\r\n3.研发可扩展的 Agent 运行时内核，支持百万级实例并发与故障自动恢复；\r\n4.构建统一工具调用执行引擎与全链路监控体系，保障系统安全稳定运行；\r\n5.基于云原生技术实现服务容器化部署与弹性伸缩，建设自动化 CI/CD 流水线。",
+    "Requirement": "1.本科及以上学历，计算机相关专业，3 年以上后端开发经验；\r\n2.精通 Go 或 Python 编程语言，有大型分布式高并发系统开发经验；\r\n3.深入理解 OpenAI API 协议，有大模型服务或推理系统开发经验；\r\n4.熟练使用 Docker、Kubernetes 等云原生技术与主流数据库；\r\n5.具备良好的系统设计能力与问题排查能力。",
+    "LastUpdateTime": "2026年05月21日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2054869950442680320",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "",
+    "Introduction": "在腾讯，后台开发工程师不仅是“又快又稳”的问题解决专家，更是生态共创者。你将与技术团队一同沉淀优质代码，让它成为我们共有的宝贵资产。在不同的业务场景和技术发展阶段，你的架构思维也将帮助更多协作团队拓展新的思考。我们也珍视你的挑战精神，同时欢迎你一起参与团队愿景、文化和产品方向的探讨。",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "三年以上工作经验"
+  }
+}

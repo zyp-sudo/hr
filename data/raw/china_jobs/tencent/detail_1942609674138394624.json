@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "1942609674138394624",
+    "RecruitPostId": 113232,
+    "RecruitPostName": "微信-大模型算法专家岗",
+    "LocationId": 2,
+    "LocationName": "北京",
+    "BGId": 14129,
+    "BGName": "WXG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40001005",
+    "CategoryName": "技术",
+    "ProductName": "WXG公共",
+    "Responsibility": "1.参与微信大规模语言模型（WeLM）的建设，涵盖基座模型训练、模型价值对齐、推理模型研发、智能体研发等环节；\r\n2.设计、实现、优化大规模分布式模型训练各环节的效率；\r\n3.独立或与其他研究员合作进行前沿领域研究；\r\n4.与产品团队、数据团队合作研发有竞争力的AI应用。",
+    "Requirement": "1.有大型自然语言处理项目研发经历并取得过优秀成果；\r\n2.对于学习和参与搭建大规模的复杂AI系统充满热情；\r\n3.计算机科学、数学、物理或相关领域学位。",
+    "LastUpdateTime": "2026年07月06日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=1942609674138394624",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "1.人工智能可能是这个时代最令人兴奋的技术之一，在微信AI，我们将探索其前沿技术；\r\n2.汇聚一支优秀研究员、算法工程师、分布式系统专家、产品人员、数据标注人员的紧密合作团队；\r\n3.探索如何释放大模型在国民级应用中的巨大潜力。",
+    "ImportantItem": "1.能在快速变化的环境中自主推动新研究想法，从概念构思、实验到产品化的全过程；\r\n2.有GPU编程经验者优先；\r\n3.有分布式系统开发经验者优先。",
+    "Introduction": "",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "一年以上工作经验"
+  }
+}

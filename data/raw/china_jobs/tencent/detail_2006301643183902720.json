@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2006301643183902720",
+    "RecruitPostId": 116953,
+    "RecruitPostName": "《三角洲行动》-客户端开发工程师-新星引力计划",
+    "LocationId": 3,
+    "LocationName": "上海",
+    "BGId": 956,
+    "BGName": "IEG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40001001",
+    "CategoryName": "技术",
+    "ProductName": "ProjectD-手游APP",
+    "Responsibility": "1.负责以下工作的其中一到多项；\r\n2.负责UE4射击类游戏玩法框架的架构设计与落地；\r\n3.负责UE4射击类游戏的核心战斗模块设计与复杂玩法实现；\r\n4.负责UE4射击类游戏的交互相关功能架构设计与实现。",
+    "Requirement": "1.熟练掌握C++，熟悉UE4引擎开发框架；\r\n2.熟悉UE4的Gameplay框架,角色框架,输入，相机，网络同步等模块；\r\n3.有3C、技能、动画或者其他模块深度优化经验者优先；\r\n4.能合理评估工作量，与策划设计人员进行良好沟通，持续跟进性能与体验优化；\r\n5.对FPS游戏熟悉和热爱者优先；\r\n6.有优秀的学习能力和强烈的责任感，善于沟通，热爱游戏事业。",
+    "LastUpdateTime": "2026年07月06日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2006301643183902720",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "",
+    "Introduction": "",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "一年以上工作经验"
+  }
+}

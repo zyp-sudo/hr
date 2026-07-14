@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2036695421274976256",
+    "RecruitPostId": 118820,
+    "RecruitPostName": "《洛克王国：世界》-开放世界手游服务器开发工程师",
+    "LocationId": 1,
+    "LocationName": "深圳",
+    "BGId": 956,
+    "BGName": "IEG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40001001",
+    "CategoryName": "技术",
+    "ProductName": "NRC-手游APP",
+    "Responsibility": "1.负责洛克手游服务器端Gameplay相关研发工作；\n2.负责服务器端基础组件研发和性能优化工作。",
+    "Requirement": "1.熟练使用C/C++或Go，熟悉Linux开发环境；\n2.熟练掌握网络编程原理，具备良好的工程研发与落地能力；\n3.有分布式系统的设计与落地经验；\n4.具备良好的分析解决问题能力、出色的学习和技术研究能力；\n5.开放的心态、良好的沟通与团队协作能力。",
+    "LastUpdateTime": "2026年06月25日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2036695421274976256",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "1.熟悉游戏Gameplay、回合制战斗 或UE DS研发者优先；\n2.有开放世界项目经验者优先。",
+    "Introduction": "",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "三年以上工作经验"
+  }
+}

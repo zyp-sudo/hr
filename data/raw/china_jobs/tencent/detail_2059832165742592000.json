@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2059832165742592000",
+    "RecruitPostId": 120253,
+    "RecruitPostName": "混元大模型数据策略产品经理-AI Agent / Coding方向（深圳/北京）",
+    "LocationId": 2,
+    "LocationName": "北京",
+    "BGId": 958,
+    "BGName": "TEG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40003001",
+    "CategoryName": "产品",
+    "ProductName": "混元-公共支持",
+    "Responsibility": "1.Agent与代码数据策略：负责大模型 Coding 与 AI Agent 方向的数据需求设计与配比策略，针对代码生成、代码补全、复杂任务规划、工具调用等核心能力，制定数据分布、采样及难度分级策略；\r\n2.优化数据生产链路：设计并推进高效、高质量的数据生产方案，制定针对复杂模型任务的数据标准，打通数据流转与模型迭代的闭环链路；\r\n3.评测体系与场景验证：基于复杂交互场景构建科学的动态评测集，参与搭建前沿模型训练所需的底层验证与交互环境，持续驱动模型能力上限的突破。",
+    "Requirement": "1.教育与背景：本科及以上学历（计算机、数学等理工科专业优先），具备 AI Agent、代码生成大模型或高难度逻辑推理数据/评测集构建相关经验；\r\n2.工程编程能力：具备扎实的工程开发能力，熟练掌握 Python 等主流编程语言，能独立编写代码完成数据清洗、流水线搭建及自动化脚本开发，深入理解软件工程体系与规范；\r\n3.底层认知与综合素养：具备良好的产品思维和极客精神，对 SFT/RLHF 等模型训练机制有深入认知，英语可作为工作语言。",
+    "LastUpdateTime": "2026年06月04日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2059832165742592000",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "1.有构建RL Environment，GDPval以及其他前沿benchmark构建经验者优先；\r\n2.重度依赖且习惯使用 Cursor、Claude Code 等前沿 AI 编程辅助工具者优先。",
+    "Introduction": "“用户为本，科技向善”，是写在每位腾讯产品人心中的一句箴言。在互联网浪潮中，大众的生活已被深刻地改变，如何为用户创造价值、创造怎样的价值，需要每位产品人花费更长时间去体会与探索。在这里，你将与同样关注细节、关注本质、关注美好的同事一道，开启你的创造性工作。",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "一年以上工作经验"
+  }
+}

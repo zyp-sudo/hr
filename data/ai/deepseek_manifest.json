@@ -1,0 +1,14 @@
+{
+  "generated_at": "2026-07-07T14:26:37+08:00",
+  "mode": "dry_run",
+  "model": "rule_based",
+  "input": "data/etl/unified_jobs.csv",
+  "output": "data/ai/deepseek_extractions.jsonl",
+  "requested_records": 30,
+  "success": 30,
+  "failed": 0,
+  "notes": [
+    "Set DEEPSEEK_API_KEY to call the real DeepSeek API.",
+    "Without a key the script writes deterministic dry-run JSON so the pipeline remains runnable."
+  ]
+}

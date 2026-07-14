@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2021936758979194880",
+    "RecruitPostId": 117884,
+    "RecruitPostName": "微信秒剪-音视频SDK研发工程师",
+    "LocationId": 2,
+    "LocationName": "北京",
+    "BGId": 14129,
+    "BGName": "WXG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40001001",
+    "CategoryName": "技术",
+    "ProductName": "微信读书",
+    "Responsibility": "1.负责音视频 SDK 中渲染引擎底层机制的研发与维护，支持 iOS/macOS/Android/Linux/Windows 等多个平台；\r\n2.负责音视频 SDK 中视频剪辑、拍摄新能力的研发，包括从结构设计到具体实现的一系列工作。",
+    "Requirement": "1.熟悉常见视频剪辑与拍摄渲染效果实现方案，熟悉图形 API（OpenGL/Metal/Vulkan 等）；\r\n2.两年以上相关工作经验，熟练使用 C++ 编程语言，具备理解、调试较大规模 C++ 代码库的能力，有 C++ 跨平台 SDK 研发经验者优先；\r\n3.具有良好的工程素养，包括但不限于文档撰写能力、单元测试能力、版本管理能力、良好的沟通能力、工作认真负责。",
+    "LastUpdateTime": "2026年06月29日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2021936758979194880",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "",
+    "Introduction": "在腾讯客户端开发的字典里，“敏捷高效”与“精益求精”并不互斥，追求技术的深度是我们共同的信仰。希望你也能在足够广阔的平台上尽情的施展拳脚。",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "两年以上工作经验"
+  }
+}

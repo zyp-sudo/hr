@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "1966332041217859584",
+    "RecruitPostId": 114781,
+    "RecruitPostName": "腾讯游戏-产品经理（游戏发行AI方向）-新星引力计划",
+    "LocationId": 1,
+    "LocationName": "深圳",
+    "BGId": 956,
+    "BGName": "IEG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40003001",
+    "CategoryName": "产品",
+    "ProductName": "腾讯游戏来联",
+    "Responsibility": "1.负责相关外部平台基于AI进行发行能力或内容生态能力建设；\n2.充分调研 IEG内部各游戏对外合作诉求，包括营销，内容，运营，拉新、回流等方向，基于AI提供相应工具支持；\n3.结合AI优化现有活动及发行工具的提效， 实现全链路自动化。",
+    "Requirement": "1.具备1年以上AI产品实践经验，2年以上游戏行业经验，有成功的AI项目落地优先；\n2.深入理解人工智能技术，熟悉机器学习、大模型、AIGC等领域概念，具备良好的技术协作与沟通能力；\n3.能够洞察行业趋势与用户需求，完成从需求分析、产品规划到落地及迭代优化的全流程工作；\n4.熟练运用数据驱动方法，定义核心指标，通过A/B测试与数据分析驱动产品决策和持续优化；\n5.熟悉常见的AI开发工具与平台（如LangChain、Coze、Dify等），具备一定的Prompt工程能力；\n6.逻辑清晰，自驱力强，具备出色的跨团队协作能力，能适应快速变化的业务环境。",
+    "LastUpdateTime": "2026年06月22日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=1966332041217859584",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "",
+    "Introduction": "",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "三年以上工作经验"
+  }
+}

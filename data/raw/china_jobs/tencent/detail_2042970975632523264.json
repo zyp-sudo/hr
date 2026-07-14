@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2042970975632523264",
+    "RecruitPostId": 10002700,
+    "RecruitPostName": "Tencent Cloud- Big Data Migration Architect (Malaysia)",
+    "LocationId": 1201,
+    "LocationName": "吉隆坡",
+    "BGId": 29294,
+    "BGName": "CSIG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40003001",
+    "CategoryName": "产品",
+    "ProductName": "",
+    "Responsibility": "Business Unit\nCloud & Smart Industries Group (CSIG) is responsible for promoting the company's cloud and industry Internet strategy. CSIG explores the interactions between users and industries to create innovative solutions for smart industries via technological advancements such as cloud, AI, and network security. While driving the digitalization of retail, medical, education, transportation and other industries, CSIG helps companies serve users in smarter ways, building a new ecosystem of intelligent industries that connect users and businesses.\n\nWhat the Role Entails\n1. Migration Architecture Design & Hands-on Implementation:\nDesign architecture migration solutions for public cloud customers. Focus on deep technical implementation for migrating overseas mainstream stacks (BigQuery, Databricks, Snowflake, etc.) to Tencent Cloud WeData + DLC/EMR (storage-compute separation architecture). Deploy migration environments, execute data synchronization, and perform business cutovers on the front line.\n2. End-to-End Project Management & Delivery: Take ownership of the overall project schedule, risk control, and technical solution governance. Coordinate internal and external resources to overcome organizational and technical barriers, ensuring the successful final delivery of the migration project.\n3. Process Assurance & Technical Support: Act as the primary technical point of contact for troubleshooting and resolving complex issues during migration. Ensure a fast and smooth transition to the cloud by managing data consistency, business continuity, and providing comprehensive technical guidance.\n4. Deep Technical Optimization: Provide full-stack technical support, including but not limited to SQL syntax automated conversion/rewriting, Spark/Flink operator tuning, and post-migration performance benchmarking. Ensure that business performance on Tencent Cloud meets or exceeds expectations.\n5. Product-Research Collaboration & Best Practices: Work closely with Solution Architects (SA) to professionally summarize and feed back real-world customer requirements, pain points, and tool defects. Assist SAs in refining migration roadmaps and co-authoring \"Best Practice Manuals\" for migrating from overseas cloud platforms to Tencent Cloud.\n\nWho We Look For\n1. Hardcore Technical Background: Bachelor’s degree or above in Computer Science or related fields; 5+ years of experience in Big Data. Proficient in at least one programming language (Java, Scala, or Python) with strong coding skills and logic conversion capabilities.\n2. Overseas Stack Expertise: Familiar with the architecture and use cases of at least one major product: BigQuery, Databricks, or Snowflake. Understand the differences between these and open-source ecosystems (Spark, Hive); cross-cloud migration experience is a plus.\n3. System Analysis & Large-scale Management: Strong capability in system problem analysis and resolving complex architectural issues. Proven experience in cluster performance tuning, troubleshooting, source code optimization, and version upgrades; experience managing large-scale clusters (1000+ nodes) is preferred.\n4. Migration Delivery Experience: Extensive experience in Big Data migration implementation and management. Master common migration workflows and methodologies for big data components. Familiar with mainstream vendor platforms and a proven track record of delivering large-scale cloud migration projects (PB-level).\n5. Core Component Principles: Deep understanding of the Hadoop ecosystem, with source-code level or deep tuning experience in HDFS, Yarn, Spark, Hive, Flink, Doris, Iceberg/Hudi, etc. Capable of handling underlying compatibility issues in heterogeneous environments.\n6. Soft Skills & Professionalism: Excellent customer service awareness, communication, and resource coordination skills. Proactive, self-driven, and highly responsible. Able to thrive under pressure in cross-cloud and overseas migration scenarios.\n\nEqual Employment Opportunity at Tencent\nAs an equal opportunity employer, we firmly believe that diverse voices fuel our innovation and allow us to better serve our users and the community. We foster an environment where every employee of Tencent feels supported and inspired to achieve individual and common goals.\r\nWork Location: Malaysia-Kuala Lumpur",
+    "Requirement": "岗位要求详情请见上方岗位职责内说明",
+    "LastUpdateTime": "2026年06月29日",
+    "PostURL": "https://tencent.wd1.myworkdayjobs.com/Tencent_Careers/job/Malaysia-Kuala-Lumpur/Tencent-Cloud--Big-Data-Migration-Architect--Malaysia-_R107242",
+    "SourceID": 4,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "",
+    "Introduction": "",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": ""
+  }
+}

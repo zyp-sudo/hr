@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2029453078671032320",
+    "RecruitPostId": 118216,
+    "RecruitPostName": "《王者荣耀世界》资深剧情特效师",
+    "LocationId": 3,
+    "LocationName": "上海",
+    "BGId": 956,
+    "BGName": "IEG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40002002",
+    "CategoryName": "设计",
+    "ProductName": "王者荣耀",
+    "Responsibility": "1.参与游戏过场特效设计制作;与上游环节同事合作，按照影视化CG生产流程完成ingame接入形式的UE特效制作和长线效果维护；\r\n2.UE IN-GAME CINEMATIC PIPELINE（UE实时过场动画管线）运作全流程跟进，包含：粒子系统/材质系统/移动端特效优化/性能限定下的特效实现方案落地/特效库/效率平台等；\r\n3.参与史诗级视效呈现的品质提升和特效全平台生产管线实操跟进；管线稳定性维护；外部产能管线的量产品控与审核闭环。",
+    "Requirement": "1.热爱游戏，对CG/ 剧情类表演有较高的创作热情；具有卓越的美术审美，对特效色彩、节奏、氛围有较好的控制力；\r\n2.熟练掌握UE4、5特效模块和材质系统，精通Niagara系统，能够独立制作复杂的表现向特效、基于镜头构图、调度的影视类特效呈现；\r\n3.思维敏捷、有较强的分层拆解能力，基于ingame管线逻辑，有清晰得特效分层实现方法论总结；\r\n4.对镜头语言、叙事、构图有良好理解能力和视效落地、解构能力；\r\n5.基础工具技能：UE-Niagara系统（必备）；Houdini等DCC制作工具（可选）；\r\n6.有CG影视行业特效经验者优先；会用Niagara Module Script编写复杂效果者优先，有UE SEQ/BP/VAT格式/abc（Alembic）/PivotPaint等特殊效果制作方案，开发经验优先。",
+    "LastUpdateTime": "2026年07月03日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2029453078671032320",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "",
+    "Introduction": "【腾讯游戏｜这一局，由你主导】\n用画笔创造玩家热爱的世界。在腾讯游戏，你将主导角色设计、场景搭建或风格定义，用扎实的美术功底与独特创意，打造真正触动人心的视觉体验。这里有成熟的技术支持、丰富的项目机会，你的作品将随国民级游戏走进亿万玩家视野。加入我们，让艺术真正“玩”出价值。",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "五年以上工作经验"
+  }
+}

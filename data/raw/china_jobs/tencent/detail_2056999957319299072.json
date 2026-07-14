@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2056999957319299072",
+    "RecruitPostId": 120161,
+    "RecruitPostName": "IDC数字化交付工程师",
+    "LocationId": 1,
+    "LocationName": "深圳",
+    "BGId": 958,
+    "BGName": "TEG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40001003",
+    "CategoryName": "技术",
+    "ProductName": "IDC运维",
+    "Responsibility": "1.参与数据中心从数字化设计到深化设计再到施工交付全流程的规划设计及运营，负责对深化设计方案中的工艺要求、技术标准制定和改进，并通过数字化的手段进行推动设计方案的落地和管控；\r\n2.负责集中化交付平台的规划、建设与持续改进，推动IDC建设的现场执行团队按工单和流程执行与落地，通过线上化平台化的手段提升精细化管理水平，管控交付质量和风险。",
+    "Requirement": "1.全日制本科及以上学历，计算机、电子、通信及自动化相关专业；\r\n2.五年以上数据中心设计、建设、监理或运营管理经验，有大型设计院或IDC总集公司架构深化设计或项目PM管理经验的优先；\r\n3.具备数字化平台规划、建设和运营能力与经验，有大型ITSM平台规划建设经验者优先；\r\n4.具有良好的大局观和解决复杂问题能力，积极主动推动跨部门跨团队合作，推动业务目标达成。",
+    "LastUpdateTime": "2026年05月20日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2056999957319299072",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "",
+    "Introduction": "在腾讯，优秀的技术运营工程师始终赋能业务，关注技术运营的质量、成本、效率和安全。他们不仅是经验丰富的问题解决者，更是具有全局视角的架构师，通过自动化工具的建设，强力提升平台效能，助力业务发展。",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "五年以上工作经验"
+  }
+}

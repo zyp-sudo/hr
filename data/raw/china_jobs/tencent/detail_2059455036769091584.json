@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2059455036769091584",
+    "RecruitPostId": 120233,
+    "RecruitPostName": "混元 AI 产品经理（北京/深圳）",
+    "LocationId": 2,
+    "LocationName": "北京",
+    "BGId": 958,
+    "BGName": "TEG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40003001",
+    "CategoryName": "产品",
+    "ProductName": "公共",
+    "Responsibility": "1.围绕大模型、Agent、Context、Memory、工作流、人机协作等方向，参与产品方向设计与关键路径判断； 将模型能力与用户场景结合，完成需求抽象、产品方案设计和版本推进；\r\n2.深入理解用户在创作、决策、协同、知识沉淀、效率提升等场景中的真实需求，形成产品判断；\r\n3.联动算法、工程等团队，推动产品高质量落地；\r\n4.基于用户反馈、行为数据和案例分析，持续优化产品体验与核心机制；\r\n5.对AI 产品进行评估体系的搭建和执行，能够从模型效果、任务完成度、用户价值、稳定性等维度设计评估方法，推动产品持续迭代；\r\n6.总结 AI 产品方法论，沉淀可复用的产品认知与工作框架。",
+    "Requirement": "1.本科及以上学历，国内外优秀院校优先；\r\n2.数学、计算机、工程、物理、认知科学、心理学、哲学等相关背景优先；\r\n3.有大模型、Agent、AI 应用、Copilot、搜索/知识、工作流等相关产品经验优先；\r\n4.有较强工程理解力，能够和算法、工程团队进行高质量协作；\r\n5.有较强结构化思考能力，能把复杂问题讲清楚、拆明白；\r\n6.具备 AI 产品评估意识和能力，能判断产品效果、定位问题，并推动优化闭环；\r\n7.自驱力强，有 ownership，能在高不确定性中持续推进。",
+    "LastUpdateTime": "2026年07月06日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2059455036769091584",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "1.有技术背景、编程经验、研究经历或创业经历；\r\n2.对 Context、Memory、Agent、Generative UI、人机协作等方向有持续思考；\r\n3.能从产品、技术、用户、商业多个维度做综合判断。",
+    "Introduction": "“用户为本，科技向善”，是写在每位腾讯产品人心中的一句箴言。在互联网浪潮中，大众的生活已被深刻地改变，如何为用户创造价值、创造怎样的价值，需要每位产品人花费更长时间去体会与探索。在这里，你将与同样关注细节、关注本质、关注美好的同事一道，开启你的创造性工作。",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "两年以上工作经验"
+  }
+}

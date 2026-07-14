@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2034870074468368384",
+    "RecruitPostId": 118690,
+    "RecruitPostName": " 在研剑来IP单机游戏-场景美术师",
+    "LocationId": 1,
+    "LocationName": "深圳",
+    "BGId": 956,
+    "BGName": "IEG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40002002",
+    "CategoryName": "设计",
+    "ProductName": "JGame-端游",
+    "Responsibility": "1.基于UE5引擎搭建高精度仙侠场景，包括地形雕刻、光影构图、建筑布局、植被生态及氛围渲染；\r\n2.运用程序化生成工具 （Houdini、World Machine）批量制作自然景观，并适配动态天气系统；\r\n3.优化场景资源性能，熟练应用Nanite虚拟几何体、Lumen全局光照技术，平衡视觉效果与运行效率；\r\n4.协同材质团队开发场景Shader（如古建筑瓦片、竹林植被、水体质感），提升场景细节表现力。",
+    "Requirement": "1.3年以上游戏地编经验，必须熟悉UE5引擎场景编辑全流程 （地形系统、Foliage工具、光照烘焙）；\r\n2.精通Quixel Megascans资产库及Substance工具链，能高效实现写实仙侠场景材质；\r\n3.具备扎实的美术功底，擅长通过构图、光影营造仙侠氛围；\r\n4.有性能优化经验，熟悉Draw Call控制。",
+    "LastUpdateTime": "2026年07月06日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2034870074468368384",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "",
+    "Introduction": "【腾讯游戏｜这一局，由你主导】\n用画笔创造玩家热爱的世界。在腾讯游戏，你将主导角色设计、场景搭建或风格定义，用扎实的美术功底与独特创意，打造真正触动人心的视觉体验。这里有成熟的技术支持、丰富的项目机会，你的作品将随国民级游戏走进亿万玩家视野。加入我们，让艺术真正“玩”出价值。",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "三年以上工作经验"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2038553631502004224",
+    "RecruitPostId": 118945,
+    "RecruitPostName": "微信输入法-语音大模型算法研究员-语音合成方向",
+    "LocationId": 2,
+    "LocationName": "北京",
+    "BGId": 14129,
+    "BGName": "WXG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40001005",
+    "CategoryName": "技术",
+    "ProductName": "微信输入法",
+    "Responsibility": "1.负责研发具有多任务能力的语音合成（TTS）大模型；\n2.负责TTS大模型的预训练及后训练相关的数据和算法工作；\n3.推动TTS大模型在产品中应用落地（如朗读/对话/配音等场景），及针对这些场景进行模型优化。",
+    "Requirement": "1.硕士以上学历，机器学习、人工智能或相关领域的专业背景，在语音合成大模型方向有深入理解相关知识和丰富的实践经验；\n2.有很强的动手能力，熟练掌握Python或C/C++，熟悉Pytorch/DeepSpeed等模型训练框架；\n3.在TTS大模型任务上有取得SOTA成果者优先，在相关顶级会议或期刊（如NeurIPS、ICLR、ICML、ICASSP、INTERSPEECH）有发表高质量论文者优先；\n4.有强烈的自驱力和进取心，以及优秀的解决问题能力和团队合作精神。",
+    "LastUpdateTime": "2026年06月29日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2038553631502004224",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "",
+    "Introduction": "渴望为世界带来新意的人，早已对描绘未来的“热词”不陌生——人工智能、机器学习、数据科学等等。腾讯始终在业界前沿不断探索，积极布局，并为优秀的你提供无限广阔的舞台。我们坚信科技的不断革新，最终能带来美好的、撼动人心的改变。",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "三年以上工作经验"
+  }
+}

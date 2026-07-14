@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2074422249078833152",
+    "RecruitPostId": 120991,
+    "RecruitPostName": "3A级开放世界-资深服务端开发",
+    "LocationId": 7,
+    "LocationName": "杭州",
+    "BGId": 956,
+    "BGName": "IEG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40001001",
+    "CategoryName": "技术",
+    "ProductName": "公共",
+    "Responsibility": "1.负责游戏后台基础架构设计和开发；\r\n2.负责UE5 DS的优化；\r\n3.负责游戏服务端的稳定性、性能、安全性相关的工作；\r\n4.负责游戏后端系统开发。",
+    "Requirement": "1.计算机相关专业本科以上学历，3年以上相关工作经验；\r\n2.熟练掌握C++、Lua等后台开发语言；有golang经验者优先；\r\n3.熟悉各种数据库的使用，熟悉Tcaplus优先；\r\n4.熟悉游戏服务端优化、性能热点分析、分布式开发；\r\n5.具备较强的分析和解决问题能力，具备良好的代码风格和习惯；\r\n6.具有良好的沟通能力与团队合作精神，自驱力强，抗压能力强。",
+    "LastUpdateTime": "2026年07月07日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2074422249078833152",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "",
+    "Introduction": "",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "五年以上工作经验"
+  }
+}

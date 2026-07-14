@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2048937634759340032",
+    "RecruitPostId": 119687,
+    "RecruitPostName": "在研UE5射击游戏-客户端开发",
+    "LocationId": 1,
+    "LocationName": "深圳",
+    "BGId": 956,
+    "BGName": "IEG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40001001",
+    "CategoryName": "技术",
+    "ProductName": "公共",
+    "Responsibility": "1.负责 UE5 TPS 项目客户端各模块的设计、开发与优化，包括武器、技能、3C、怪物AI、关卡、HUD、系统框架等方向；\r\n2.负责相关模块的工具扩展、工具链建设与规范制定；\r\n3.主导或参与关键系统的性能优化、稳定性治理与问题排查；\r\n4.深度参与游戏方向与玩法设计讨论，与策划团队共同探索并推动玩法方案落地；\r\n5.负责相关模块的 AI Harness 建设，包括 Skill, Memory, CLI/MCP等的持续演进。",
+    "Requirement": "1.本科以上学历，3 年以上游戏客户端研发经验，2 年以上 UE 相关开发经验；\r\n2.熟练掌握 C++，熟悉 Lua 脚本语言，计算机基础扎实；\r\n3.熟悉 UE Gameplay 框架与 DS 架构，熟悉GAS、Lyra等UE框架，深度使用过UE5新的Gameplay架构者优先（MVVM、StateTree、MotionMatching等）；\r\n4.至少深入掌握以下一个领域：角色 3C / 战斗 / 技能 / AI / 动画 / 网络同步 / UI 框架 / 系统架构，有射击游戏项目经验者优先；\r\n5.具备良好的模块化设计能力，能独立负责中大型系统的架构设计；\r\n6.责任心强，沟通顺畅，能与策划、美术、服务器等团队有效协作；\r\n7.熟练使用 Codebuddy/Codex/Claude code 等 AI 编程工具，有深度实践经验者优先。",
+    "LastUpdateTime": "2026年05月12日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2048937634759340032",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "",
+    "Introduction": "",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "五年以上工作经验"
+  }
+}

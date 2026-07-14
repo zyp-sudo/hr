@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "1968170095121424384",
+    "RecruitPostId": 114864,
+    "RecruitPostName": "《王者荣耀世界》资深战斗策划(角色向)",
+    "LocationId": 3,
+    "LocationName": "上海",
+    "BGId": 956,
+    "BGName": "IEG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40003002",
+    "CategoryName": "产品",
+    "ProductName": "NGR-手游APP",
+    "Responsibility": "1.负责游戏内战斗系统的设计与优化，包括但不限于核心角色战斗设计，战斗机制、表现优化等；\n2.能够与系统、数值、怪物、副本等各模块同学沟通合作，对接需求设计、落地与优化，并为最终体验负责；\n3.能深入理解游戏的战斗管线、工具优化等开发环节，提供优化建议方案，提高开发效率及易用性。",
+    "Requirement": "1.有三年以上MMO、ACT类战斗策划工作经验，有成功上线项目开发经历优先；\n2.对UE蓝图、技能逻辑与表现、行为树AI等有深入的使用经验；\n3.多角色玩法设计、动作技巧、多人配合性设计等核心战斗体验有较深的认识及较高的要求；\n4.具有较强的逻辑思维能力、学习能力、良好的沟通能力和优秀的用户体验分析能力；\n5.热爱游戏，在游戏阅历上具备较好的深度和广度，尤其是高品质ACT及现代MMO类游戏。",
+    "LastUpdateTime": "2026年06月29日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=1968170095121424384",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "",
+    "Introduction": "",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "三年以上工作经验"
+  }
+}

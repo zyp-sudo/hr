@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2046496032824651776",
+    "RecruitPostId": 119527,
+    "RecruitPostName": "QClaw-产品策划-AI应用生态方向（应用与技能分发平台）",
+    "LocationId": 1,
+    "LocationName": "深圳",
+    "BGId": 29294,
+    "BGName": "CSIG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40003001",
+    "CategoryName": "产品",
+    "ProductName": "安全管家",
+    "Responsibility": "1.负责QClawAI应用生态方向（应用与技能分发平台）产品策划工作。",
+    "Requirement": "1.本科及以上学历，3年以上互联网产品策划经验；\r\n2.有应用市场/应用商店/内容分发平台/开发者平台相关产品经验，理解\"供给→分发→消费\"的平台逻辑；\r\n3.具备平台型产品思维，能同时兼顾供给侧（开发者/内容方）和需求侧（用户）的体验与利益平衡；\r\n4.逻辑清晰，擅长系统设计，能独立输出包含信息架构、交互流程、规则引擎的完整PRD；\r\n5.数据驱动能力强，熟悉分发类产品核心指标（DAU、搜索转化率、安装率、留存、ARPU）。",
+    "LastUpdateTime": "2026年04月21日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2046496032824651776",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "1.有PC端应用商店/软件管理/桌面端分发产品经验，熟悉桌面端分发产品的核心交互和技术架构；\r\n2.有开发者生态/开放平台建设经验，做过开发者工具链、审核流程、激励体系；\r\n3.对AI Agent/大模型应用有深入了解，理解AI技能、工作流编排、Function Calling等概念；\r\n4.有推荐系统/搜索产品经验，理解个性化推荐和意图匹配的基本逻辑；\r\n5.有商业化产品经验，做过CPC/CPA广告、订阅制、平台分成等变现模型；\r\n6.有插件市场/扩展商店类产品经验（Chrome扩展商店、VS Code Marketplace、GPTs Store等）；\r\n7.有多端同步产品经验（跨PC/Mac/手机/平板的应用同步方案设计）；\r\n8.有开源社区运营或生态建设经验。",
+    "Introduction": "“用户为本，科技向善”，是写在每位腾讯产品人心中的一句箴言。在互联网浪潮中，大众的生活已被深刻地改变，如何为用户创造价值、创造怎样的价值，需要每位产品人花费更长时间去体会与探索。在这里，你将与同样关注细节、关注本质、关注美好的同事一道，开启你的创造性工作。",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "三年以上工作经验"
+  }
+}

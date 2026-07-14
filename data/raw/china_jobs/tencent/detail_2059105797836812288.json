@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2059105797836812288",
+    "RecruitPostId": 120223,
+    "RecruitPostName": "微信安全-风控算法工程师",
+    "LocationId": 5,
+    "LocationName": "广州",
+    "BGId": 14129,
+    "BGName": "WXG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "",
+    "CategoryName": "",
+    "ProductName": "微信APP基础体验",
+    "Responsibility": "1.识别和挖掘微信业务内的风险，制定安全风控策略与解决方案，保证微信生态用户的账号和支付安全；\r\n2.完善微信安全风控体系的建设，包括但不限于RAG等知识库的构建、基于大模型和Agent的应用、风险团伙的自动化挖掘扩散和效能工具的建设等。",
+    "Requirement": "1.具备较强的业务敏感度和数据分析能力，了解大模型的原理和应用等技术，有风控相关算法模型工作经验优先；\r\n2.具有黑灰产对抗的实战经验，熟悉当下主流黑产工具和手法，具有账号支付安全和反欺诈工作经验优先；\r\n3.具备一定的代码开发能力，熟悉多种编程语言如Python、C++等，熟悉SQL语言优先；\r\n4.熟练运用多类主流AI Coding工具，有大型AI项目研发经验优先。",
+    "LastUpdateTime": "2026年06月18日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2059105797836812288",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "",
+    "Introduction": "相信你与所有腾讯安全人一样，都认为抵抗邪恶是一件极其热血的事。希望你与我们一起，守护用户的安全，守护产品的安全，守护科技向善的不变初心。",
+    "DepartmentIntroduction": "微信安全负责微信个人用户的安全使用体验和保障，致力于对微信上各类违规行为综合治理与打击，为海量微信用户保驾护航。我们聚焦于微信个人用户帐号安全、内容安全等体系建设，为用户提供投诉、举报、申诉等多项安全功能及服务；基于安全技术、实时计算平台、图计算平台、机器学习平台、规则引擎等系统制定各项安全规则和策略，解决各类安全问题。",
+    "RequireWorkYearsName": "三年以上工作经验"
+  }
+}

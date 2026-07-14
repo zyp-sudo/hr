@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2028299866760966144",
+    "RecruitPostId": 118039,
+    "RecruitPostName": "企业微信-AI Agent开发工程师-平台框架/应用（广州/北京）",
+    "LocationId": 8,
+    "LocationName": "成都",
+    "BGId": 14129,
+    "BGName": "WXG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40001001",
+    "CategoryName": "技术",
+    "ProductName": "企业微信SaaS",
+    "Responsibility": "1.负责Agent开发框架的设计与实现，构建支持多智能体系统（Multi-Agent System）的协作、决策与工具调用能力，提供高效、可扩展的框架支撑复杂任务执行；\r\n2.开发框架核心模块（如任务调度、通信协议、工具集成等），实现Agent的自主规划、推理（CoT/ToT）及上下文管理能力，优化框架的易用性与性能；\r\n3.设计并实现标准化接口与协议（如MCP、A2A、FunctionCall），支持Agent与外部系统、工具的无缝交互，提升框架的生态兼容性；\r\n4.集成与优化现有Agent架构（Multi-Agent、ReAct/PlanAct/CodeAct等），构建模块化、可插拔的框架体系，满足不同场景的定制化需求；\r\n5.负责框架的性能优化与稳定性维护，通过工程手段（如异步处理、资源调度等）提升框架的吞吐量与并发能力，降低资源消耗；\r\n6.协作算法团队落地算法成果，将研究成果转化为工程实现，推动Agent框架在业务场景中的高效部署与迭代。",
+    "Requirement": "1.计算机、软件工程等相关专业，硕士及以上学历，具备扎实的系统设计、数据结构与算法基础；\r\n2.熟悉主流Agent开发框架与技术：深入理解并具备实际开发经验，包括但不限于Eino、LangChain、AutoGPT、SuperAGI、CrewAI等，熟悉其核心组件、开发范式及工具集成能力；\r\n3.精通C++/Python/Go至少一种语言，具备扎实的工程能力，熟悉系统设计模式、模块化开发与高性能编程；\r\n4.具备复杂系统开发经验，熟悉分布式系统、消息队列、异步编程等，有大规模框架开发经验者优先；\r\n5.对多智能体系统（Multi-Agent System）有深入理解，掌握MCP、A2A、FunctionCall等交互协议，能实现Agent间的协作与通信；\r\n6.熟悉AI算法与模型的基本原理（如LLM推理流程），能高效协作算法团队完成技术落地，具备ReAct、PlanAct、CodeAct等协议的设计与实现能力；\r\n7.具备良好的团队协作与问题解决能力，能独立承担模块开发，同时推动跨团队技术对齐。",
+    "LastUpdateTime": "2026年07月01日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2028299866760966144",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "",
+    "Introduction": "在腾讯，后台开发工程师不仅是“又快又稳”的问题解决专家，更是生态共创者。你将与技术团队一同沉淀优质代码，让它成为我们共有的宝贵资产。在不同的业务场景和技术发展阶段，你的架构思维也将帮助更多协作团队拓展新的思考。我们也珍视你的挑战精神，同时欢迎你一起参与团队愿景、文化和产品方向的探讨。",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "两年以上工作经验"
+  }
+}

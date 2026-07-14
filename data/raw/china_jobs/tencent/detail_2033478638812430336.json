@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2033478638812430336",
+    "RecruitPostId": 118552,
+    "RecruitPostName": "混元多模态技术美术（AI/动画/场景渲染方向）（北京）",
+    "LocationId": 1,
+    "LocationName": "深圳",
+    "BGId": 958,
+    "BGName": "TEG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40002002",
+    "CategoryName": "设计",
+    "ProductName": "AI",
+    "Responsibility": "1.协助美术团队和AI团队制定针对各类视觉表现效果、数据生产流程需求的技术方案，并通过开发工具、制作实例、提供建议等方式在引擎中实现；\r\n2.结合效果和硬件平台限制，与程序开发、美术团队配合制定渲染效率与质量优化方案，制定资源规范；\r\n3.通过编写脚本工具，探索优化工作流程等方式，协助美术团队提升生产效率和质量；\r\n4.生产一部分技术性较强的美术资源；\r\n5.项目组工作对接和技术支持；\r\n6.关注并思考业界新的工具、趋势在工作室内项目应用的可行性，对美术等相关岗位进行新技术相关的培训。",
+    "Requirement": "1.本科及以上学历，5-8年以上工作经验；\r\n2.优秀的口头和书面表达能力，阅读英语资料无障碍；\r\n3.良好的团队协作能力，有开发大中型项目经验者优先；\r\n4.熟悉AI相关软件，对AI有一定了解者优先；\r\n5.熟练掌握商业游戏引擎（Unreal/Unity/CE等），或自研引擎经验者优先。",
+    "LastUpdateTime": "2026年06月15日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2033478638812430336",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "",
+    "Introduction": "",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "两年以上工作经验"
+  }
+}

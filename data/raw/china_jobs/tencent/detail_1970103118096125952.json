@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "1970103118096125952",
+    "RecruitPostId": 114954,
+    "RecruitPostName": "微信视频号-投放大模型算法工程师-（深圳/北京）",
+    "LocationId": 5,
+    "LocationName": "广州",
+    "BGId": 14129,
+    "BGName": "WXG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40001005",
+    "CategoryName": "技术",
+    "ProductName": "加热",
+    "Responsibility": "1.负责微信视频号投放算法的研发，包含商业化内容（电商、游戏、短剧等）和原生内容投放（短视频、直播）目标的召回和精排算法、预算控制算法、竞价机制的优化迭代；\r\n2.结合微信视频号的业务的实际特点，快速进行算法和策略迭代，不断提升投放效率。",
+    "Requirement": "1.精通常用机器学习和深度学习算法及其原理，对算法特点和适用场景等有比较深刻的理解，能够快速进行算法实现和迭代；\r\n2.对运筹学、控制论有基础知识者优先；\r\n3.有推荐系统、广告系统、搜索系统业务经验者优先；\r\n4.具有良好的工程实现能力，熟练掌握一门编程语言（C++/C/Python等）；\r\n5.有较好的沟通能力、团队协作能力，积极主动，愿意接受挑战；\r\n6.计算机、数学相关专业本科及以上学历，两年以上工作经验。",
+    "LastUpdateTime": "2026年06月26日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=1970103118096125952",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "",
+    "Introduction": "",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "两年以上工作经验"
+  }
+}

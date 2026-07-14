@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "1997839534154473472",
+    "RecruitPostId": 116423,
+    "RecruitPostName": "AIGC视频内容专家（编导方向）（北京）",
+    "LocationId": 1,
+    "LocationName": "深圳",
+    "BGId": 958,
+    "BGName": "TEG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40006",
+    "CategoryName": "内容",
+    "ProductName": "AI",
+    "Responsibility": "主要从影视工业的专业视角，主导AI视频模型在训练数据规划与生成内容质量评测方面的工作，确保其输出内容在叙事和艺术性上达到高标准。\n具体内容如下：\n1.训练数据分析与规划：​ 参与制定多模态视频模型的数据策略，从叙事结构、镜头语言等专业角度评估和指导训练数据的质量与方向；\n2.专业评测体系研究：​ 牵头构建针对AI生成视频的专业评测维度与方法论，重点关注内容的逻辑性、观赏性及艺术表现力；\n3.内容质量评估与迭代推动：​ 对模型生成结果进行专业评审，提供具象、可执行的反馈，协同技术团队推动模型效果的持续优化；\n4.AIGC应用探索：​ 主动探索并实践前沿AIGC视频工具，将实际应用洞察反哺至数据与评测策略中。",
+    "Requirement": "1.必备经验：​ 拥有影视编导、纪录片、新闻传播等相关领域的专业背景或丰富的项目实践经验，熟悉完整的内容制作流程；\r\n2.核心能力：​ 具备出色的视觉叙事能力、镜头审美和严谨的内容评判标准；\r\n3.加分项：​ 具有主流媒体、知名影视制作公司或大型活动相关工作经验者优先；\r\n4.技术亲和力：​ 对AIGC等新技术抱有浓厚兴趣，具备快速学习的能力，乐于探索科技赋能创作的新可能；\r\n5.协作精神：​ 具备优秀的沟通能力，能够与技术和产品团队高效协作，共同推进目标。",
+    "LastUpdateTime": "2026年06月10日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=1997839534154473472",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "",
+    "Introduction": "",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "三年以上工作经验"
+  }
+}

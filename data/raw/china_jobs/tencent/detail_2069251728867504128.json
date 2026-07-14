@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2069251728867504128",
+    "RecruitPostId": 120712,
+    "RecruitPostName": "微信小游戏-客户端开发工程师-全球化",
+    "LocationId": 1,
+    "LocationName": "深圳",
+    "BGId": 14129,
+    "BGName": "WXG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40001001",
+    "CategoryName": "技术",
+    "ProductName": "小游戏",
+    "Responsibility": "1.核心环境构建：负责微信小游戏运行环境在iOS/Android端的SDK封装与开发，实现高性能的游戏容器底座；\r\n2.底层技术攻坚：负责游戏引擎渲染性能优化，保证小游戏在不同的手机终端上都能流畅运行，解决跨平台环境下的兼容性痛点；\r\n3.出海适配研发：针对东南亚、欧美等海外市场，负责 SDK 在不同硬件设备及网络环境下的性能调优，包括多语言支持、广告 SDK 集成及登录支付组件适配；\r\n4.技术预研与演进：研究 WebAssembly、现代图形 API（Metal/Vulkan）在移动端容器中的应用，确保持续的技术领先性。",
+    "Requirement": "1.大学本科及以上学历，计算机相关专业，具备扎实的计算机基础，精通算法、数据结构及操作系统原理；\r\n2.3年以上iOS或Android开发经验，精通Objective-C/Swift或Java/Kotlin，有大型SDK开发或跨平台框架（如Flutter, React Native 引擎层）经验者优先；\r\n3.熟练掌握Claude Code、Codex、Codebuddy等AI编程工具与范式；\r\n4.有游戏领域经验更好，熟悉OpenGL ES/WebGL规范，对渲染流水线有理解，有Metal或Vulkan实际开发经验者，或熟悉游戏引擎Cocos, LayaAir, Unity底层原理者优先；\r\n5.具备优秀的分析和解决复杂问题的能力，对新技术充满好奇心；有良好的沟通能力和团队协作精神，能适应小团队快速迭代的节奏，有海外产品研发/性能优化经验者优先。",
+    "LastUpdateTime": "2026年07月06日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2069251728867504128",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "",
+    "Introduction": "在腾讯客户端开发的字典里，“敏捷高效”与“精益求精”并不互斥，追求技术的深度是我们共同的信仰。希望你也能在足够广阔的平台上尽情的施展拳脚。",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "不限"
+  }
+}

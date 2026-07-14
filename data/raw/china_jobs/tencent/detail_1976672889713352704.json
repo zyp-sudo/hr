@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "1976672889713352704",
+    "RecruitPostId": 115200,
+    "RecruitPostName": "刷掌-海外AI技术支持工程师-武汉/西安",
+    "LocationId": 6,
+    "LocationName": "武汉",
+    "BGId": 29294,
+    "BGName": "CSIG",
+    "ComCode": "YUNZHI",
+    "ComName": "腾讯云智研发子公司",
+    "OuterPostTypeID": "40001003",
+    "CategoryName": "技术",
+    "ProductName": "腾讯云",
+    "Responsibility": "1.AI解决方案交付：负责公司AI产品与解决方案的部署、交付与客户侧技术支持，确保项目顺利落地；\r\n2.DevOps体系建设：参与设计和优化持续集成/持续部署（CI/CD）流程，推动自动化运维平台的建设；\r\n3.技术支持与保障：及时响应并处理线上问题，为用户提供专业的技术支持，保障系统稳定运行。",
+    "Requirement": "1.熟悉 Kubernetes、Docker 及 Helm 等云原生技术，具备集群运维管理和故障排查能力；\r\n2.熟练使用 Shell 和 Python 进行自动化脚本/工具开发，有扎实的编码实践；\r\n3.掌握 Linux 操作系统原理，能够进行性能调优及常见故障诊断；\r\n4.了解 TCP/IP、HTTP/HTTPS 等网络协议，具备基本的网络问题定位能力；\r\n5.了解物联网协议，如USB, Wiegand, RS485等相关串口协议；\r\n6.熟悉支付、会员系统集成及交付技术细节；\r\n7.具备运维或 DevOps 相关工作经验，有私有化交付或 To B 项目经验者优先；\r\n8.责任心强，具备良好的沟通协作能力，能适应项目型工作节奏；\r\n9.注：此岗位为云智主体正式岗位。",
+    "LastUpdateTime": "2026年06月10日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=1976672889713352704",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "1.通过腾讯云认证或取得同等资格认证的候选人优先考虑；\r\n2.拥有海外业务支持经验，具备良好的英语书面或口语沟通能力。",
+    "Introduction": "在腾讯，优秀的技术运营工程师始终赋能业务，关注技术运营的质量、成本、效率和安全。他们不仅是经验丰富的问题解决者，更是具有全局视角的架构师，通过自动化工具的建设，强力提升平台效能，助力业务发展。",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "三年以上工作经验"
+  }
+}

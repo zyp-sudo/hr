@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2054531247396532224",
+    "RecruitPostId": 120013,
+    "RecruitPostName": "腾讯云-稳定性测试架构工程师",
+    "LocationId": 1,
+    "LocationName": "深圳",
+    "BGId": 29294,
+    "BGName": "CSIG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40001002",
+    "CategoryName": "技术",
+    "ProductName": "腾讯云",
+    "Responsibility": "1.负责腾讯云 IaaS / PaaS 产品的稳定性与容灾演练测试，包括 Region / AZ 级故障、强弱依赖故障、高负载、混沌工程和长稳测试等场景；\r\n2.设计并组织执行容灾演练方案、测试用例和集成测试计划，负责缺陷跟踪、风险识别和闭环管理；\r\n3.协同研发、运维团队评估系统容量、故障影响和恢复能力，推动高可用架构、配置和应急预案优化；\r\n4.分析稳定性测试结果，识别高价值质量问题，提升系统可靠性、可用性和资源使用效率；\r\n5.参与垂直业务测试环境的规划、部署、运营维护和持续优化。",
+    "Requirement": "1.计算机相关专业本科及以上学历，8 年以上 IaaS / PaaS 稳定性、可靠性或高可用测试相关经验；\r\n2.熟悉云产品体系，具备计算、存储、网络、容器、数据库等一个或多个领域的测试或质量保障经验；\r\n3.熟悉 Linux，掌握 Python / Shell 等脚本语言，具备测试工具、平台或自动化框架建设经验优先；\r\n4.具备大型项目质量管理、风险识别、跨团队协作和问题推动闭环能力；\r\n5.有大型互联网服务稳定性测试、混沌工程、多产品集成测试、Kubernetes / Docker 或云厂商认证经验者优先。",
+    "LastUpdateTime": "2026年06月03日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2054531247396532224",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "",
+    "Introduction": "在腾讯，优秀的技术质量管理，保证腾讯每一个的产品与服务能更加稳定、顺畅、安心地被用户使用和体验。与技艺高超的同事们一同深化对架构设计、数据和产品的理解，在美好向善的世界里，成为一块闪耀的基石。",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "八年以上工作经验"
+  }
+}

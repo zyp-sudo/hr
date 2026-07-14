@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2061742858418962432",
+    "RecruitPostId": 120359,
+    "RecruitPostName": "《洛克王国：世界》-技术美术-画面表现向",
+    "LocationId": 1,
+    "LocationName": "深圳",
+    "BGId": 956,
+    "BGName": "IEG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40002002",
+    "CategoryName": "设计",
+    "ProductName": "NRC-手游APP",
+    "Responsibility": "1.负责画面品质把控与提升，统筹模型、材质、灯光、特效、后处理等元素在场景中的表现，持续优化并提升最终画面表现；\r\n2.定期复盘游戏场景画面表现，准确定位光影、色彩、层次、质感等方面的不足，输出美术或技术优化方案并推动落地；\r\n3.熟悉资产在引擎中的视觉效果，指导场景美术团队产出，确保场景美术资产在引擎渲染下呈现良好的画面表现效果；\r\n4.统筹场景、过场播片内的特效表现，调整特效与环境光照、后处理的配合，确保整体画面和谐且氛围感符合要求；\r\n5.与程序团队协作，基于底层渲染技术（如GI、AO、阴影等）开发美术团队可直接使用的工具，提升画面表现力。",
+    "Requirement": "1.拥有良好的审美和美术功底，对色彩、构图、光影、物理材质等有一定敏感度和鉴赏力；\r\n2.精通场景美术制作管线，了解如何通过调整资产参数与结构来达到最佳美术表现，能够独自搭建并优化场景管线；\r\n3.精通引擎表现模块，熟悉引擎中的灯光系统（动态/静态光、GI）、雾效、体积光、以及后处理（ColorGrade、Bloom、曝光控制）等的各项参数与底层逻辑；\r\n4.具备良好的沟通和协作能力，能够与美术/技术团队高效沟通，将美术诉求转化为技术落地逻辑，结合程序技术方案输出美术操作标准，高效推进问题解决与效果迭代；\r\n5.具备良好的渲染与Shader知识储备，熟悉现代图形渲染管线及底层原理。",
+    "LastUpdateTime": "2026年06月02日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2061742858418962432",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "",
+    "Introduction": "",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "三年以上工作经验"
+  }
+}

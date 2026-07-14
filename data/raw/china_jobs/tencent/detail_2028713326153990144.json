@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2028713326153990144",
+    "RecruitPostId": 118106,
+    "RecruitPostName": "云原生数据库AI研发工程师",
+    "LocationId": 8,
+    "LocationName": "成都",
+    "BGId": 29294,
+    "BGName": "CSIG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40001001",
+    "CategoryName": "技术",
+    "ProductName": "腾讯云-数据库",
+    "Responsibility": "1.AI 原生架构设计： 负责云原生数据库（存算分离架构）的 AI 能力增强，设计并实现面向大规模向量数据的存储、索引及计算架构；\r\n2.高性能内核研发： 在数据库内核中注入AI特性，增强优化器，列存，HTAP以及DB自调优等核心特性；\r\n3.湖仓一体演进： 推动数据库与 Apache Iceberg 等开放表格式的融合，构建 AI 友好的湖仓基础设施，解决非结构化数据与结构化数据的关联检索难题；\r\n4.稳定性与自愈建设： 应对 Serverless 场景下的极速伸缩挑战，利用混沌工程提升分布式环境下的数据一致性与高可用性；\r\n5.前沿探索： 持续跟进 AI4DB（利用 AI 优化数据库参数/查询）与 DB4AI（数据库内置模型推理）方向的最新研究并推动工程落地。",
+    "Requirement": "1.3年以上数据库内核或分布式系统研发经验，精通 C++/Rust/Go（至少其一），对 Linux 内核及高性能网络通信（如 io_uring, RDMA）有深入理解；\r\n2.深度掌握存储计算分离架构，对 Neon、Supabase 或 AWS Aurora 的底层实现有研究，能处理冷热数据分层、多租户隔离等核心痛点；\r\n3.熟悉 PostgreSQL 或 MySQL 内核，主导过列存引擎、分布式事务或大规模索引系统的设计与优化；\r\n4.AI 领域认知： 熟悉常见的向量搜索算法（HNSW, DiskANN, IVFFlat），了解大数据生态（Iceberg/Delta Lake）与 AI 应用链路（Vector DB, RAG）；\r\n5.在SIGMOD、VLDB等会议有论文发表或技术分享；在MySQL/PostgreSQL等开源社区有核心代码贡献优先。",
+    "LastUpdateTime": "2026年07月01日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2028713326153990144",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "",
+    "Introduction": "在腾讯，后台开发工程师不仅是“又快又稳”的问题解决专家，更是生态共创者。你将与技术团队一同沉淀优质代码，让它成为我们共有的宝贵资产。在不同的业务场景和技术发展阶段，你的架构思维也将帮助更多协作团队拓展新的思考。我们也珍视你的挑战精神，同时欢迎你一起参与团队愿景、文化和产品方向的探讨。",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "三年以上工作经验"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2055555661177204736",
+    "RecruitPostId": 120088,
+    "RecruitPostName": "资深AI测试专家（云数据业务方向）",
+    "LocationId": 1,
+    "LocationName": "深圳",
+    "BGId": 29294,
+    "BGName": "CSIG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40001002",
+    "CategoryName": "技术",
+    "ProductName": "腾讯云",
+    "Responsibility": "1.针对LLM幻觉与随机性难题进行专项治理，构建确定性保障机制。确保AI生成的用例与脚本在多轮执行、异构环境下保持高度一致，建立团队对人机协同的信任基线；\r\n2.破解AI决策“黑盒”痛点，搭建覆盖“意图-生成-执行-判定”的数字孪生与追溯系统，实现过程秒级回溯，满足核心业务对合规性与安全性的严苛要求；\r\n3.将AI测试从“实验室Demo”推向生产环境，设计支持万级并发的调度引擎（可用性99.99%）。引入对抗样本与变异测试，建立AI测试本身的防篡改机制；\r\n4.抽象云底层资源，赋予AI自主管理环境生命周期的能力。通过自然语言交互实现复杂拓扑的一键拉起、故障注入与销毁，极大提升研发效能；\r\n5.基于MCP理念打磨测试脚手架，开发针对存储、数据库、大数据等业务的专属插件库（Tools/Skills），以“绿叶”精神赋能兄弟团队快速接入。",
+    "Requirement": "1.深刻理解LLM原理与局限，具备大型项目的AI HarnessEngineering或Agent落地工程实践；\r\n2.熟练掌握云原生（K8s/IaC）；对分布式存储（Ceph/HDFS）、云数据库、大数据计算（Spark/Flink）至少两个领域有源码级理解或复杂排障经验；\r\n3.熟悉自动化框架底层原理，具备白盒测试、性能压测或混沌工程的架构设计经验，懂得平衡质量、效率与成本；\r\n4.精通Python或Go/Java，具备高并发中间件或分布式系统开发经验，善于提炼总结抽象，对工程质量有极致追求；\r\n5.具备强烈自驱力，能敏锐捕捉前沿技术并转化为生产力，拥有优秀的技术影响力与跨部门协作能力。",
+    "LastUpdateTime": "2026年06月03日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2055555661177204736",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "",
+    "Introduction": "在腾讯，优秀的技术质量管理，保证腾讯每一个的产品与服务能更加稳定、顺畅、安心地被用户使用和体验。与技艺高超的同事们一同深化对架构设计、数据和产品的理解，在美好向善的世界里，成为一块闪耀的基石。",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "八年以上工作经验"
+  }
+}

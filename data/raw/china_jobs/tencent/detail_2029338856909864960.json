@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2029338856909864960",
+    "RecruitPostId": 118177,
+    "RecruitPostName": "腾讯乐享-高级产品策划 ",
+    "LocationId": 1,
+    "LocationName": "深圳",
+    "BGId": 29294,
+    "BGName": "CSIG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40003001",
+    "CategoryName": "产品",
+    "ProductName": "企业中台SaaS",
+    "Responsibility": "1.负责乐享 AI 核心能力的规划，将 AI 前沿技术与知识沉淀、办公协同场景深度融合，打造行业领先的 AI 原生企业服务方案；\r\n2.深度挖掘腾讯乐享目标客户在智能化知识生产、消费等方面的核心需求，紧密追踪 AI 在企业服务领域的动态与趋势，全方位提升产品的智能化用户体验，巩固市场竞争优势；\r\n3.建立 AI 产品评价体系，结合 AI 技术特性规划并高效梳理迭代计划，协调算法、研发等确保 AI 功能模块的有序推进；\r\n4.协同算法、工程、设计及业务团队，主导 AI 模块的生命周期管理，确保产品在保持技术领先性的同时，具备极高的易用性和商业转化率。",
+    "Requirement": "1.5 年以上产品经验，其中至少 2 年以上 AI 原生产品（LLM/RAG/Agent）的实战落地经验，主导过成熟的 AI 知识库、智能助理或搜索类产品者优先；\r\n2.理解 LLM 原理、RAG 及 Agent 架构，能够从技术原理出发判断场景可行性，确保资源的高效投入；\r\n3.具备 SaaS 或企业级产品功底，对企业权限体系、数据安全、组织协同有深刻理解，能处理 AI 与复杂 B 端逻辑的兼容挑战；\r\n4.能够从碎片化的客户反馈中抽象出普适性的 AI 需求，具备极强的逻辑拆解能力，能够输出高质量、具备可执行性的产品方案，在不确定性的 AI 探索中拿到结果。",
+    "LastUpdateTime": "2026年06月03日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2029338856909864960",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "",
+    "Introduction": "“用户为本，科技向善”，是写在每位腾讯产品人心中的一句箴言。在互联网浪潮中，大众的生活已被深刻地改变，如何为用户创造价值、创造怎样的价值，需要每位产品人花费更长时间去体会与探索。在这里，你将与同样关注细节、关注本质、关注美好的同事一道，开启你的创造性工作。",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "五年以上工作经验"
+  }
+}

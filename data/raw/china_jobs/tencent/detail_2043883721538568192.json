@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2043883721538568192",
+    "RecruitPostId": 119304,
+    "RecruitPostName": "腾讯健康-医药行业售前解决方案架构师",
+    "LocationId": 3,
+    "LocationName": "上海",
+    "BGId": 29294,
+    "BGName": "CSIG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40003001",
+    "CategoryName": "产品",
+    "ProductName": "腾讯云",
+    "Responsibility": "1.负责跨国药企（MNC）的公有云解决方案售前工作，结合腾讯云产品能力，设计面向医药行业的云架构方案，推动客户云迁移与数字化转型；\r\n2.基于对Landing Zone、Well-Architected Framework等企业级云治理体系的深入理解，在售前阶段向客户输出高阶解决方案，建立专业信任；\r\n3.负责输出可复制的医药行业标杆解决方案，持续优化行业方案体系；\r\n4.协助开展内部运营数据分析，发现销售机会，结合AI能力创新售前解决方案，实现收入突破。",
+    "Requirement": "1.本科及以上学历，具有5年以上云计算行业相关从业经验；\n2.熟悉主流公有云平台（AWS/Azure/腾讯云等），有跨国药企Landing Zone，云治理等企业级云项目设计实施经验；\n3.熟悉医药行业GXP合规要求及跨国药企的数字化转型需求；\n4.具备良好的英文工作沟通能力（口语及书面），能支持与MNC客户的日常协作；\n5.目标导向，学习能力强，能够接受较高频次出差。",
+    "LastUpdateTime": "2026年04月14日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2043883721538568192",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "1.有医药MNC客户Landing Zone或云治理项目经验者优先；\r\n2.熟悉AI工具并有实际应用经验者优先；\r\n3.有GAMP等医药行业相关合规证书持有者优先。",
+    "Introduction": "“用户为本，科技向善”，是写在每位腾讯产品人心中的一句箴言。在互联网浪潮中，大众的生活已被深刻地改变，如何为用户创造价值、创造怎样的价值，需要每位产品人花费更长时间去体会与探索。在这里，你将与同样关注细节、关注本质、关注美好的同事一道，开启你的创造性工作。",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "五年以上工作经验"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2067084378936360960",
+    "RecruitPostId": 120610,
+    "RecruitPostName": "次世代UE5战术射击端游-游戏客户端开发-3C方向",
+    "LocationId": 1,
+    "LocationName": "深圳",
+    "BGId": 956,
+    "BGName": "IEG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40001001",
+    "CategoryName": "技术",
+    "ProductName": "公共",
+    "Responsibility": "1.负责基于Unreal Engine (UE)引擎的游戏前台3C系统开发，包括角色动作、技能逻辑及战斗交互；\r\n2.实现角色核心功能模块，如动画控制、GAS等，并优化战斗体验；\r\n3.与策划、美术团队协作，确保角色设计的技术实现与视觉效果；\r\n4.参与战斗系统的性能优化与Bug修复，保障游戏运行稳定性；\r\n5.编写技术文档，支持团队开发与维护工作。",
+    "Requirement": "1.熟悉UE4/UE5引擎开发流程，精通C++或蓝图系统，具备客户端开发经验；\r\n2.理解游戏引擎架构，有物理开发、3C经验者优先；\r\n3.3年以上游戏开发经验，至少参与过1款完整项目；\r\n4.优秀的编程规范与问题解决能力，能适应高强度开发节奏。",
+    "LastUpdateTime": "2026年07月02日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2067084378936360960",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "",
+    "Introduction": "在腾讯，作为一位游戏客户端开发，你始终身处科技前沿，与同样具备满分热情的策划、美术等团队紧密协作，助力新世界的诞生、运作，持续打造极致体验。你可以善用自己的全局观察能力，不断打开技术视野，与靠谱的团队一起做出真正有趣的新事物。",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "三年以上工作经验"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2033133620071395328",
+    "RecruitPostId": 118504,
+    "RecruitPostName": "次世代特效设计师",
+    "LocationId": 1,
+    "LocationName": "深圳",
+    "BGId": 956,
+    "BGName": "IEG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40002002",
+    "CategoryName": "设计",
+    "ProductName": "和平精英手游",
+    "Responsibility": "1.负责游戏中的角色技能特效、战斗特效、环境特效等各类视觉效果的制作与优化；\r\n2.运用UE5的Niagara粒子系统创建复杂的粒子特效；\r\n3.使用Material Editor制作高质量的材质特效；\r\n4.根据策划需求和美术风格设计并实现符合项目调性的特效表现方案；\r\n5.配合程序实现特效的蓝图逻辑和性能优化，确保特效在不同平台上稳定运行；\r\n6.关注业界最新特效技术发展趋势，持续提升特效制作效率与品质；\r\n7.参与特效资产的整理归档，制定特效制作规范与工作流程。",
+    "Requirement": "1.有AAA级项目经验者优先；\r\n2.精通Unreal Engine 5引擎，熟悉Niagara粒子系统和Material Editor；\r\n3.具备扎实的美术功底，对光影、色彩、节奏有敏锐的感知和把控能力；\r\n4.熟悉特效制作的全流程，包括概念设计、贴图制作、动画编辑到引擎整合；\r\n5.具备良好的沟通能力和团队协作精神，能与策划、程序、美术紧密配合；\r\n6.热爱游戏事业，对游戏特效有强烈的兴趣和创作热情。",
+    "LastUpdateTime": "2026年06月15日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2033133620071395328",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "1.熟悉Houdini或其他DCC软件，能独立制作复杂的程序化特效资产；\r\n2.具备Shader编程能力，了解GPU原理和渲染管线；\r\n3.有UE5 Lumen、Nanite、MetaHuman等相关技术使用经验。",
+    "Introduction": "【腾讯游戏｜这一局，由你主导】\n用画笔创造玩家热爱的世界。在腾讯游戏，你将主导角色设计、场景搭建或风格定义，用扎实的美术功底与独特创意，打造真正触动人心的视觉体验。这里有成熟的技术支持、丰富的项目机会，你的作品将随国民级游戏走进亿万玩家视野。加入我们，让艺术真正“玩”出价值。",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "五年以上工作经验"
+  }
+}

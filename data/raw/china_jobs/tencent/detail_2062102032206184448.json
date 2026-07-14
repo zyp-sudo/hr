@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2062102032206184448",
+    "RecruitPostId": 1259599593700392960,
+    "RecruitPostName": "Computer Graphics Intern 107529",
+    "LocationId": 1802,
+    "LocationName": "悉尼",
+    "BGId": 956,
+    "BGName": "IEG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40001005",
+    "CategoryName": "技术",
+    "ProductName": "",
+    "Responsibility": "Business Unit\nLIGHTSPEED STUDIOS is made up of passionate players who advance the art & science of game development through great stories, great gameplay, and advanced technology. We are focused on bringing next generation experiences to gamers who want to enjoy them anywhere, anytime, across multiple genres and devices.\n\nAbout the Hiring Team\nLightspeed Tech Center is a R&D department under Lightspeed Studios which develop PUBG Mobile and other high-quality games. Our Tech Center leads the research, exploration, and discovery of innovative technologies and provides technical services for all games during all phases of life cycle, including engine, audio, QA, AI, next generation game, technical cooperation, etc.\n\nWhat the Role Entails\nWorking closely with senior engineers and scientists to research and develop real time physics simulation, such as fluid simulation, cloth simulation, deformable body and rigid body, animation, etc.\nReading and understanding the latest technical research papers, working with scientists to reproduce tech paper and improve the performance and quality.\n\nWho We Look For\nStrong mathematics skills, such as calculus, linear algebra, differential geometry, and basic numerical analysis.\nFamiliar with C++ programming.\nA strong sense of responsibility and good communication skills\nAbility to read papers and implement the code in existing engines like Unreal or Unity.\nPlus:\nFamiliar with GPU computing such as CUDA or DirectCompute.\nFamiliar with graphics APIs, such as OpenGL or DirectX\nPublications on Siggraph/TOG/Eurographics/CGF/TVCG/SCA/I3D\n\nEqual Employment Opportunity at Tencent\nAs an equal opportunity employer, we firmly believe that diverse voices fuel our innovation and allow us to better serve our users and the community. We foster an environment where every employee of Tencent feels supported and inspired to achieve individual and common goals.\r\nWork Location: Australia-New South Wales-Sydney",
+    "Requirement": "岗位要求详情请见上方岗位职责内说明",
+    "LastUpdateTime": "2026年06月03日",
+    "PostURL": "https://tencent.wd1.myworkdayjobs.com/Tencent_Careers/job/Australia-New-South-Wales-Sydney/Computer-Graphics-Intern_R107529",
+    "SourceID": 4,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "",
+    "Introduction": "",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": ""
+  }
+}

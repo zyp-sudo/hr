@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2027325894867185664",
+    "RecruitPostId": 117989,
+    "RecruitPostName": "微信基础-语音大模型算法工程师",
+    "LocationId": 2,
+    "LocationName": "北京",
+    "BGId": 14129,
+    "BGName": "WXG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40001005",
+    "CategoryName": "技术",
+    "ProductName": "微信AI助手",
+    "Responsibility": "1.研发具备通用能力的端到端语音大模型，包括多语种语音识别、语音合成、声纹识别、副语言信息理解等；\r\n2.推动上述语音技术与团队内部大语言模型 (LLM) 的深度融合，参与设计和实现智能语音交互系统架构；\r\n3.在微信AI探索业务中，基于微信场景数据提供技术解决方案，探索业界前沿技术在业务中的落地与指标优化。",
+    "Requirement": "1.硕士或博士学位，机器学习、人工智能、数字信号处理或相关领域的专业背景；\r\n2.深入理解语音音频信号处理、声学建模、语言模型和大模型架构；\r\n3.在语音合成、语音识别、声纹识别中至少一个领域有深入研究和扎实的实践经验；熟悉多个领域者优先；\r\n4.有实际推动大模型在语音识别、合成、理解等任务上取得SOTA成果或有显著性能提升经验者优先；\r\n5.高质量相关论文NeurIPS，ICML，ICLR，ICASSP，Interspeech作者优先；\r\n6.热爱探索AI前沿技术，具有团队精神和良好的沟通能力。",
+    "LastUpdateTime": "2026年07月06日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2027325894867185664",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "",
+    "Introduction": "",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "两年以上工作经验"
+  }
+}

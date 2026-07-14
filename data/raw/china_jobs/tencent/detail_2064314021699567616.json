@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2064314021699567616",
+    "RecruitPostId": 120467,
+    "RecruitPostName": "金铲铲之战-3D特效设计师",
+    "LocationId": 1,
+    "LocationName": "深圳",
+    "BGId": 956,
+    "BGName": "IEG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40002002",
+    "CategoryName": "设计",
+    "ProductName": "JK项目",
+    "Responsibility": "1.负责《金铲铲之战》项目全品类游戏特效制作，包含局内英雄技能、局外展示&抽卡、职业&阵营效果、小小英雄击打特效、选人交互、装备礼包等拾取特效、UI界面动效、棋盘场景氛围特效等；\n2.基于 Unity 引擎完成特效资源的制作、参数调试，确保特效在端游环境下表现流畅、视觉统一；\n3.配合策划、美术、程序团队，理解玩法设计逻辑，优化特效节奏、打击感与IP视觉风格辨识度，兼顾游戏策略性与观赏性需求；\n4.遵守特效制作规范，控制面数、粒子数、Draw Call，保证游戏运行稳定；\n5.跟进版本迭代，完成特效落地、测试反馈修改及品质优化。",
+    "Requirement": "1.美术/设计相关专业优先，有 3 年及以上游戏特效制作经验，熟悉端游/重度手游特效制作流程，有（MOBA/自走棋/策略对战类）游戏特效经验优先；\r\n2.精通 Unity 引擎特效制作，熟练使用 Unity 粒子系统、Shader、动画控制器、Timeline 等工具实现特效效果；\r\n3.熟练掌握特效制作软件，如 PS、AE、Spine、Blender/Maya 等，能独立完成从原画落地到引擎内最终效果全流程；\r\n4.具备良好的美术审美，对色彩、节奏、动效韵律有把控力，能做出辨识度高、层次清晰、适配对战场景的特效；\r\n5.具备基础性能优化意识，了解端游平台资源规范，能平衡视觉效果与性能消耗；\r\n6.沟通协作顺畅，责任心强，适应内部项目迭代节奏，能快速理解需求并高效落地。",
+    "LastUpdateTime": "2026年06月12日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2064314021699567616",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "1.《英雄联盟》、《云顶之弈》或《金铲铲之战》的深度体验用户，对拳头IP的特效美术风格有深刻认知；\r\n2.具备手绘特效设计能力者优先。",
+    "Introduction": "",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "三年以上工作经验"
+  }
+}

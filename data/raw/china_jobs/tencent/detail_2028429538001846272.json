@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2028429538001846272",
+    "RecruitPostId": 118079,
+    "RecruitPostName": "《王者荣耀》国际版-游戏客户端开发",
+    "LocationId": 1,
+    "LocationName": "深圳",
+    "BGId": 956,
+    "BGName": "IEG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40001001",
+    "CategoryName": "技术",
+    "ProductName": "王者荣耀海外版",
+    "Responsibility": "1.负责Moba游戏内核心玩法系统的架构与实现，英雄开发、战场逻辑开发；\n2.与策划紧密配合，将复杂的游戏规则与数值逻辑转化为稳定、可扩展的代码实现；\n3.参与性能优化，解决由复杂业务逻辑引发的性能问题。",
+    "Requirement": "1.计算机相关专业本科及以上学历，1年以上游戏开发经验；\r\n2.熟练掌握C++、C#开发语言，具备良好的系统设计能力；\r\n3.逻辑清晰，具备优秀的问题解决能力，能将抽象需求转化为可靠技术方案。",
+    "LastUpdateTime": "2026年07月01日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2028429538001846272",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "",
+    "Introduction": "在腾讯客户端开发的字典里，“敏捷高效”与“精益求精”并不互斥，追求技术的深度是我们共同的信仰。希望你也能在足够广阔的平台上尽情的施展拳脚。",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "一年以上工作经验"
+  }
+}

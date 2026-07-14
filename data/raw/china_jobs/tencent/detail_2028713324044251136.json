@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2028713324044251136",
+    "RecruitPostId": 118105,
+    "RecruitPostName": "云原生数据库内核研发工程师",
+    "LocationId": 7,
+    "LocationName": "杭州",
+    "BGId": 29294,
+    "BGName": "CSIG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40001001",
+    "CategoryName": "技术",
+    "ProductName": "腾讯云-数据库",
+    "Responsibility": "1.主导并参与TDSQL-C云原生数据库存储层的架构设计与研发，重点突破高并发场景下的分布式存储性能瓶颈和稳定性；\r\n2.设计与开发底层核心存储组件，提升数据持久化、备份恢复及跨可用区容灾能力；\r\n3.优化存储与计算节点间的网络通信机制，实现高吞吐低延时传输和并提升异常容错能力；\r\n4.联动数据库内核，推进存算分离架构的深度优化，完成产品化高级特性落地。",
+    "Requirement": "1.精通C++语言，熟悉Linux环境下的高性能编程、网络通信及操作系统原理；\r\n2.具备数据库内核或分布式存储系统开发经验，熟悉至少一种数据库存储引擎（如InnoDB，Rocksdb）或块存储系统（如Ceph、HDFS）；\r\n3.深入理解存算分离架构，熟悉日志即数据库（Log is Database）、异步I/O、数据一致性协议（如Paxos/Raft）等核心概念；\r\n4.具备大规模存储系统性能调优能力，可针对高并发、高可用场景设计解决方案；\r\n5.有大型开源软件贡献者优先。",
+    "LastUpdateTime": "2026年07月01日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2028713324044251136",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "",
+    "Introduction": "在腾讯，后台开发工程师不仅是“又快又稳”的问题解决专家，更是生态共创者。你将与技术团队一同沉淀优质代码，让它成为我们共有的宝贵资产。在不同的业务场景和技术发展阶段，你的架构思维也将帮助更多协作团队拓展新的思考。我们也珍视你的挑战精神，同时欢迎你一起参与团队愿景、文化和产品方向的探讨。",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "三年以上工作经验"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "1980548384708255744",
+    "RecruitPostId": 115473,
+    "RecruitPostName": "元宝-Android开发工程师",
+    "LocationId": 2,
+    "LocationName": "北京",
+    "BGId": 29294,
+    "BGName": "CSIG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40001001",
+    "CategoryName": "技术",
+    "ProductName": "元宝",
+    "Responsibility": "1.负责元宝Android的架构和研发，包括迭代开发、技术预研工作；\n2.负责元宝Android的稳定性和性能优化，持续优化影响用户体验的稳定性、流畅度、资源占用等问题；\n3.编写技术文档，参与跨团队协作，推动开发流程优化和工具建设。",
+    "Requirement": "1.熟悉Kotlin、C++，多年 Android 平台的开发经验，有体系化的性能调优经验；\r\n2.熟练使用 Compose 开发；\r\n3.有C++跨平台开发经验、音视频开发经验优先；\r\n4.加分项：做过markdown格式对话场景、教育场景、音视频场景的业务需求。",
+    "LastUpdateTime": "2026年06月29日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=1980548384708255744",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "",
+    "Introduction": "在腾讯客户端开发的字典里，“敏捷高效”与“精益求精”并不互斥，追求技术的深度是我们共同的信仰。希望你也能在足够广阔的平台上尽情的施展拳脚。",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "三年以上工作经验"
+  }
+}

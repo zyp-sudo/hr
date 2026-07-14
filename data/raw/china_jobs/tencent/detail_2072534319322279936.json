@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2072534319322279936",
+    "RecruitPostId": 120892,
+    "RecruitPostName": "魔方工作室-动作生成算法工程师-角色动画方向",
+    "LocationId": 1,
+    "LocationName": "深圳",
+    "BGId": 956,
+    "BGName": "IEG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40001005",
+    "CategoryName": "技术",
+    "ProductName": "IEG公共",
+    "Responsibility": "1.动作生成算法研发：设计与落地骨骼动画的生成与控制算法，覆盖locomotion、交互、战斗、过渡（in-betweening）等场景，兼顾动作质量、响应性与可控性；\r\n2.前沿方案调研与选型：跟踪并复现业界主流与最新方案（如 PFNN / MANN、Motion Matching及 Learned Motion Matching、Motion Diffusion Model 系列、自回归运动扩散、Flow Matching文本到动作等），结合项目需求做技术选型与优化；\r\n3.物理动画与神经网络结合：探索物理仿真与学习方法的融合（如 DeepMimic / AMP / ASE强化学习控制、物理引导扩散 PhysDiff / Diffuse-CLoC / PDP等），提升动作的物理合理性与鲁棒性；\r\n4.控制信号与可控生成：构建轨迹、目标点、文本、末端约束等条件信号到动作的映射与对齐，支持交互式、实时的动作控制；\r\n5.引擎集成与端侧部署：将动作模型集成进游戏引擎，完成推理加速、量化裁剪与端侧（移动端/ PC）部署，保障运行时性能与内存预算；\r\n6.工具与插件开发：在游戏引擎与 DCC 软件中开发动作相关工具与插件，打通数据采集、清洗、训练到运行时的工程链路，提升迭代效率。",
+    "Requirement": "1.计算机 / 数学 / 图形学 / 自动化相关本科及以上；3年以上角色动画、动作生成或相关算法研发经验；\r\n2.有骨骼动画生成与控制的实际项目经验，熟悉业界方案（PFNN、MANN、Motion Matching等），了解基于扩散 / VAE / Flow Matching 等生成式动作方法；\r\n3.熟悉物理动画与神经网络结合的方法，理解物理仿真、强化学习在角色控制中的应用；\r\n4.熟悉游戏引擎与 DCC 软件的使用及动作插件编写，熟悉 UE 动画蓝图（Animation Blueprint）与Unity 动画状态机（Animator / Mecanim），掌握 IK / FK、动画重定向、混合空间等方法；\r\n5.熟悉动作模型的训练全流程，具备在引擎内进行端侧部署与推理优化的经验；\r\n6.扎实的编程能力（C++ / Python），良好的工程习惯与沟通协作能力。",
+    "LastUpdateTime": "2026年07月02日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2072534319322279936",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "1.有 Learned Motion Matching、运动扩散模型、物理引导生成等前沿方案的落地或复现经验；\r\n2.熟悉动作数据管线（动捕数据清洗、重定向、标注、质量评估）与大规模动作数据集构建；\r\n3.熟悉推理框架与端侧部署工具链（ONNX / TensorRT / NCNN /引擎内推理），有模型量化、裁剪、加速经验；\r\n4.有强化学习物理控制（DeepMimic / AMP / ASE / CALM 等）落地经验；\r\n5.有多模态模型训练经验（如文本 / 音频 / 视频 / 动作等跨模态对齐与联合建模）；\r\n6.有实际上线的游戏项目动画系统研发经验，或角色动画、3D 内容生成相关背景。",
+    "Introduction": "渴望为世界带来新意的人，早已对描绘未来的“热词”不陌生——人工智能、机器学习、数据科学等等。腾讯始终在业界前沿不断探索，积极布局，并为优秀的你提供无限广阔的舞台。我们坚信科技的不断革新，最终能带来美好的、撼动人心的改变。",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "三年以上工作经验"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2052396002803105792",
+    "RecruitPostId": 119830,
+    "RecruitPostName": "微信视频号-AIGC算法工程师",
+    "LocationId": 5,
+    "LocationName": "广州",
+    "BGId": 14129,
+    "BGName": "WXG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40001005",
+    "CategoryName": "技术",
+    "ProductName": "视频号短视频",
+    "Responsibility": "1.负责视频号特效平台的生图生视频模型后训练工作，包括数据准备、模型微调、参数优化等全流程；\n2.针对短视频特效场景需求，优化生图生视频模型的生成效果，提升画面质量、风格一致性、超现实画面生成能力；\n3.设计并实现高效的训练策略和算法，解决模型训练中的过拟合、收敛慢等问题；\n4.与产品、工程团队紧密协作，将训练好的模型部署到线上环境，确保特效功能的稳定运行；\n5.跟踪前沿的AIGC技术发展，持续探索和创新生图生视频模型的优化方案。",
+    "Requirement": "1.计算机、人工智能、模式识别等相关专业硕士及以上学历，扎实的深度学习和机器学习理论基础；\n2.熟练掌握至少一种主流深度学习框架（如PyTorch、TensorFlow），有丰富的模型训练和调优经验；\n3.具备良好的代码能力和问题解决能力，能够独立完成从算法设计到工程落地的全流程；\n4.良好的沟通能力和团队合作精神，能够快速理解业务需求并推动技术方案落地；\n5.对新技术有好奇心，爱思考。",
+    "LastUpdateTime": "2026年06月03日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2052396002803105792",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "1.视频号特效发表是一个很合适的AIGC落地场景，AI特效视频可以极大降低普通人发表有趣视频的门槛，带来业务的增长。",
+    "ImportantItem": "1.有生图/生视频模型后训练经验者优先，熟悉扩散模型、GAN等生成式模型者优先；\n2.有ACM/ICPC竞赛背景或顶级学术会议论文发表者优先。",
+    "Introduction": "",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "两年以上工作经验"
+  }
+}

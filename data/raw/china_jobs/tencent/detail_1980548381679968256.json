@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "1980548381679968256",
+    "RecruitPostId": 115472,
+    "RecruitPostName": "元宝-iOS开发工程师",
+    "LocationId": 2,
+    "LocationName": "北京",
+    "BGId": 29294,
+    "BGName": "CSIG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40001001",
+    "CategoryName": "技术",
+    "ProductName": "元宝",
+    "Responsibility": "1.负责腾讯元宝App的架构和研发，提升团队的交付质量和交付效率，在保障质量的基础上快速交付业务需求；\r\n2.具备iOS应用的稳定性和性能优化经验，并持续优化影响用户体验的稳定性、流畅度、资源占用等问题；\r\n3.具备技术项目管理能力，能够主动规划、推进复杂技术项目，并拿到结果；\r\n4.热爱新技术，有较高的工程素养，能够主动发现问题并推动解决问题，持续关注业界新技术的发展并提升团队的技术水平。",
+    "Requirement": "1.熟悉Objective-C，C++，多年iOS平台的开发经验，熟悉MVVM架构，熟悉组件化，instruments性能优化，对C++跨平台有一定了解；\n2.对负责的模块的核心指标有一定的优化方法论；\n3.熟悉markdown协议解析和渲染，熟悉SSE协议；\n4.加分项：做过音视频场景，输入框，教育场景的业务需求。",
+    "LastUpdateTime": "2026年06月29日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=1980548381679968256",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "",
+    "Introduction": "在腾讯客户端开发的字典里，“敏捷高效”与“精益求精”并不互斥，追求技术的深度是我们共同的信仰。希望你也能在足够广阔的平台上尽情的施展拳脚。",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "三年以上工作经验"
+  }
+}

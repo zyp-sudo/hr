@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2008403742201892864",
+    "RecruitPostId": 117045,
+    "RecruitPostName": "《异人之下》高级关卡策划",
+    "LocationId": 1,
+    "LocationName": "深圳",
+    "BGId": 956,
+    "BGName": "IEG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40003002",
+    "CategoryName": "产品",
+    "ProductName": "UC-手游APP",
+    "Responsibility": "1.负责动作游戏的关卡2D概念图设计，3D箱庭式关卡地图设计；\n2.根据叙事需求与体验需求，设计与实现关卡流程，在引擎内搭建关卡体验白盒，持续推进关卡的实现与落地；\n3.使用编辑器驱动任务关卡中的各对象触发、表演、衔接逻辑，对关卡的整体体验负责；\n4.动作游戏中PVE相关玩法设计与实现；\n5.参与产品相关设计和优化工作，进行关卡相关编辑器的设计与优化，完善工作流程；\n6.根据测试数据与玩家反馈，持续打磨关卡，提升关卡品质。",
+    "Requirement": "1.本科及以上学历，游戏体验丰富，热爱动作游戏，5年以上游戏关卡设计经验；\n2.了解3Dmax或者maya，具备3D关卡地图设计能力，有较好的美术审美；\n3.熟悉unity引擎下的游戏开发管线；\n4.有良好的团队合作精神和沟通能力，追求高品质的游戏呈现；\n5.有成功上线的3D动作游戏的关卡设计经验者优先；\n6.熟悉一人之下IP者优先。",
+    "LastUpdateTime": "2026年06月08日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2008403742201892864",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "",
+    "Introduction": "",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "五年以上工作经验"
+  }
+}

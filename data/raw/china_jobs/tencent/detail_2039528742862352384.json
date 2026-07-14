@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2039528742862352384",
+    "RecruitPostId": 119019,
+    "RecruitPostName": "Technology Platform-UE资深技术美术-角色渲染方向",
+    "LocationId": 1,
+    "LocationName": "深圳",
+    "BGId": 956,
+    "BGName": "IEG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40002002",
+    "CategoryName": "设计",
+    "ProductName": "QQ飞车",
+    "Responsibility": "1.开发材质和工具，以满足项目对角色、生物等资产的渲染品质提升和特殊表现需求；\r\n2.根据项目美术风格，搭建可复用的角色材质方案；\r\n3.角色光照与渲染方案制定；\r\n4.配合引擎程序、美术团队，推进角色相关的资产规范化和性能优化。",
+    "Requirement": "1.具备丰富的游戏角色渲染效果制作经验；\r\n2.熟悉Unreal/Unity引擎的材质与渲染模块，了解实时渲染光照体系；\r\n3.熟练掌握角色资产制作流程及相关 DCC 工具，熟悉 3ds Max、ZBrush、Substance 等制作流程；\r\n4.有完整商业项目角色TA经验，尤其是角色渲染经验；\r\n5.对渲染品质和性能的权衡有清晰的意识；\r\n6.能够运用 AI 辅助资产生成、材质制作或工具开发，提升美术生产效率；\r\n7.有良好的团队协作和沟通能力。",
+    "LastUpdateTime": "2026年07月06日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2039528742862352384",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "1.有高品质角色项目经验；\r\n2.风格化渲染项目经验；\r\n3.具备技术沉淀意识，有文档输出、规范制定、团队培训经验。",
+    "Introduction": "",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "两年以上工作经验"
+  }
+}

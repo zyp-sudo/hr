@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2046558434547101696",
+    "RecruitPostId": 119533,
+    "RecruitPostName": "J3-技术美术组长",
+    "LocationId": 1,
+    "LocationName": "深圳",
+    "BGId": 956,
+    "BGName": "IEG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40002002",
+    "CategoryName": "设计",
+    "ProductName": "逆战",
+    "Responsibility": "1.为团队成员做全年计划、确定优先级并设定切合实际的目标；\n2.与团队核心成员合作，确定和开发美术生产流程，以满足美术在有限资源下创作高质量艺术的需求；\n3.把握项目的创意方向和技术预算限制之间保持平衡，了解项目的潜在风险，及时提醒团队并给与建设性意见；\n4.优化美术pipeline，并开发工具提高美术工作流效率支持美术和开发团队，解决生产中遇到的问题；\n5.时刻关注当前和未来图形软件和硬件的趋势和方法，以制定工具和流程的早期规划。",
+    "Requirement": "1.艺术、设计、计算机或其他相关领域的学士学位；至少 8 年技术美术经验或其他相关经验；\n2.以技术美术组长角色参与并上线至少 1 款全流程AAA游戏；\n3.精通3D 图形软件（如 3DS Max、Maya 等）；熟悉程序化生成软件（如SD，SP，Houdini等）；\n4.出色的时间管理和优先排序能力；优秀的人际关系和沟通技巧；\n5.了解数据管理软件（例如 perforce）和任务管理软件（例如jira）；\n6.使用 MaxScript、Python、C#等语言编写脚本/编程的工作知识；\n7.熟练掌握GLSL, HLSL, CG等至少一门Shader编程语言。",
+    "LastUpdateTime": "2026年04月21日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2046558434547101696",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "",
+    "Introduction": "",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "八年以上工作经验"
+  }
+}

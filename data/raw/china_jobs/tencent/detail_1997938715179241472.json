@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "1997938715179241472",
+    "RecruitPostId": 116456,
+    "RecruitPostName": "运营开发工程师-EdgeOne",
+    "LocationId": 1,
+    "LocationName": "深圳",
+    "BGId": 958,
+    "BGName": "TEG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40001001",
+    "CategoryName": "技术",
+    "ProductName": "腾讯云（TEG）",
+    "Responsibility": "1.负责边缘云健康探测系统的架构设计、核心功能开发与性能优化，保障系统高可用与高性能；\r\n2.负责国内及海外网络链路的主动探测、质量评估，实现异常链路的自动识别与剔除；\r\n3.持续提升系统稳定性和业务体验，完善监控、数据可视化能力。",
+    "Requirement": "1.计算机相关专业本科及以上学历，2年以上开发工作经验；\r\n2.具备扎实的编程能力、优秀的设计能力和代码开发能力，具有强烈的责任心；\r\n3.至少熟悉GO/RUST其中一门编程语言，掌握至少一门脚本语言；\r\n4.深入理解操作系统和网络基本原理，具备扎实的数据结构和算法基础；\r\n5.熟悉海外网络，接入领域的优先。",
+    "LastUpdateTime": "2026年06月10日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=1997938715179241472",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "",
+    "Introduction": "在腾讯，技术人解决问题的激情永不熄灭。无论是面对产品、程序的问题，还是生活与人的问题，腾讯技术人都力图交出漂亮的答卷。我们善用科学工具，以强大的思维之力创造世界，为卓越的产品体验保驾护航，也为公司和产品策略提出宝贵的洞见，用技术引领新的变革。这里的每位成员，既传承着长久以来的务实文化，又时刻以创新眼光瞄准大海星辰。我们十分期待你加入这样一个「技术社区」，分享团队能量，尽情发挥所长。",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "两年以上工作经验"
+  }
+}

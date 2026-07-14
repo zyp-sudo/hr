@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2031510438323318784",
+    "RecruitPostId": 1229008000098390016,
+    "RecruitPostName": "Hunyuan Multimodal Reinforcement Learning Research Intern 107084",
+    "LocationId": 401,
+    "LocationName": "帕罗奥多",
+    "BGId": 958,
+    "BGName": "TEG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40001005",
+    "CategoryName": "技术",
+    "ProductName": "",
+    "Responsibility": "Business Unit\n\nWhat the Role Entails\nResponsibilities:1. Conduct research on RL algorithms for multimodal models, including diffusion models for image, video, and 3D generation, autoregressive models for multimodal understanding, and potentially unified multimodal frameworks.\n2. Design and develop RL infrastructure and reward modeling strategies to enable efficient large-scale training, improve training stability, and mitigate reward hacking and related failure modes.\n3. Explore next-generation RL paradigms that more directly and effectively learn from environment feedback.\n\nWho We Look For\nRequirements:1. Currently enrolled as a PhD student in Computer Science or a closely related field.\n2. Demonstrated strong research capability, with publications in top-tier conferences such as ICML, NeurIPS, ICLR, CVPR, ICCV, ECCV, SIGGRAPH.\n3. Strong hands-on programming skills, with solid experience in deep learning system implementation, model training and inference optimization, CPU/GPU acceleration, and distributed training and inference.\n4. Prior experience with diffusion models, autoregressive models, and/or text-to-image or text-to-video generation is highly preferred.\n5. Participation in ACM/NOIP is a strong plus.\nLocation State(s)\nUS-California-Palo Alto\nThe expected base pay range for this position in the location(s) listed above is $80,168.40 to $124,800.00 per year. Actual pay may vary depending on job-related  knowledge, skills, and experience.\nThis position will be eligible for 1 hour of paid sick leave for every 30 hours worked and up to 13 paid holidays throughout the calendar year. Subject to the terms and conditions of the applicable plans then in effect, full-time interns are also eligible to enroll in the Company-sponsored medical plan.\n\nEqual Employment Opportunity at Tencent\nAs an equal opportunity employer, we firmly believe that diverse voices fuel our innovation and allow us to better serve our users and the community. We foster an environment where every employee of Tencent feels supported and inspired to achieve individual and common goals.\r\nWork Location: US-California-Palo Alto",
+    "Requirement": "岗位要求详情请见上方岗位职责内说明",
+    "LastUpdateTime": "2026年07月02日",
+    "PostURL": "https://tencent.wd1.myworkdayjobs.com/Tencent_Careers/job/US-California-Palo-Alto/Hunyuan-Multimodal-Reinforcement-Learning-Research-Intern_R107084-1",
+    "SourceID": 4,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "",
+    "Introduction": "",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": ""
+  }
+}

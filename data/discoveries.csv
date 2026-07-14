@@ -1,0 +1,3 @@
+id,name,confidence,summary,coreResponsibilities,requiredSkills,evidenceSource
+ai-agent-engineer,AI Agent 工程师,0.82,围绕大模型智能体进行工具调用 工作流编排 记忆和评测体系建设,设计智能体工作流|接入工具和知识库|构建评测与安全防控,Python|LLM|RAG|Vector Search|Evaluation,seed
+data-governance-engineer,数据治理工程师,0.76,围绕企业数据资产的数据标准 质量 指标和元数据体系建设,制定数据标准|监控数据质量|维护指标口径|治理元数据,SQL|Data Warehouse|Data Quality|Metadata,seed

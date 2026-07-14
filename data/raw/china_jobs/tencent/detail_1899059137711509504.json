@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "1899059137711509504",
+    "RecruitPostId": 110604,
+    "RecruitPostName": "UE微恐轻动作项目-游戏研发PM（版本管理）",
+    "LocationId": 1,
+    "LocationName": "深圳",
+    "BGId": 956,
+    "BGName": "IEG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40003003",
+    "CategoryName": "产品",
+    "ProductName": "预研产品-手游APP-Project Metro",
+    "Responsibility": "1.负责手游项目版本管理，确保项目团队各干系人协同工作；\n2.负责版本计划的制定、过程跟踪、风险监控，确保项目按计划完成；\n3.根据研发版本排期，独立输出并跟进版本的各项测试、部署、提审、发布等版本流程环节工作；\n4.负责研发工具建设和专项技术建设，保证项目质量的稳定，提升研发效率；\n5.负责版本构建、冒烟等Bug识别、推动修复，保证版本的按质按期交付。",
+    "Requirement": "1.本科及以上学历，计算机、通信或相关专业，2年以上游戏项目管理经验，有开发技术背景经验、或大型游戏测试经验、或版本PM经验者优先；\n2.熟悉软件项目过程管理，对敏捷项目管理有实际应用经验及理解；\n3.具备良好的沟通技巧和团队合作精神，能够建立良好的团队氛围；\n4.具有较强的风险意识，能够很好的识别项目风险，并做好风险应对；\n5.具有较强的执行力，推动团队向目标前进，善于归纳总结，能够推动团队效率不断提升；\n6.熟悉游戏正式运营期的版本管理工作，熟悉关键技术，和项目周边部门如运维、测试、安全进行沟通和协调，保证版本发布进度和稳定性。",
+    "LastUpdateTime": "2026年06月15日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=1899059137711509504",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "",
+    "Introduction": "",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "两年以上工作经验"
+  }
+}

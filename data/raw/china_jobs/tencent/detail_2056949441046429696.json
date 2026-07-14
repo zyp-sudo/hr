@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2056949441046429696",
+    "RecruitPostId": 120155,
+    "RecruitPostName": "Technology Platform-游戏引擎研发工程师-(渲染性能优化)",
+    "LocationId": 1,
+    "LocationName": "深圳",
+    "BGId": 956,
+    "BGName": "IEG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40001001",
+    "CategoryName": "技术",
+    "ProductName": "公共",
+    "Responsibility": "1.负责游戏引擎渲染管线的性能分析与深度优化，涵盖CPU/GPU全链路瓶颈定位与调优；\r\n2.主导引擎系统稳定性治理，系统性分析崩溃、内存泄漏等线上问题，建立崩溃分类与根因定位机制；\r\n3.设计并落地Draw Call合批、Shader复杂度优化、内存带宽优化等方案；\r\n4.建立性能基线与自动化性能回归体系，持续保障帧率、功耗与稳定性指标；\r\n5.与美术、TA团队协作，制定资产规格标准与LOD策略。",
+    "Requirement": "1.5年以上3D引擎开发经验，精通UE或Unity引擎渲染架构；\r\n2.扎实的数学基础（线性代数、微积分），精通计算机图形学核心算法；\r\n3.深入理解GPU/CPU体系结构、渲染管线、Tile-Based架构及缓存层级；\r\n4.具备丰富的引擎级崩溃分析与稳定性治理经验，熟悉Crash堆栈分析、内存越界/泄漏排查、GPU Hang/TDR诊断，能独立完成从线上崩溃采集到根因定位到修复验证的完整闭环；\r\n5.熟练使用RenderDoc、Snapdragon Profiler、Xcode GPU Debugger等性能分析工具；\r\n6.有多线程优化、内存优化、Shader指令级优化实战经验；\r\n7.有移动端性能优化经验者优先；\r\n8.有AI辅助编程实践经验，具备AI工程化落地的系统性方法论者加分。",
+    "LastUpdateTime": "2026年05月27日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2056949441046429696",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "",
+    "Introduction": "",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "五年以上工作经验"
+  }
+}

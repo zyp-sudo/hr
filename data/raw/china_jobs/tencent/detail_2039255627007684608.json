@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2039255627007684608",
+    "RecruitPostId": 119012,
+    "RecruitPostName": "渲染向技术指导",
+    "LocationId": 1,
+    "LocationName": "深圳",
+    "BGId": 956,
+    "BGName": "IEG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40002002",
+    "CategoryName": "设计",
+    "ProductName": "和平精英手游",
+    "Responsibility": "1.为美术提供渲染效果和材质技术支持，拆解目标效果，对接TA/图形程序，提出方案并协调落地；\r\n2.分析场景画面质量不足之处，提出建设性优化方法；\r\n3.从技术角度把控材质性能风险、规范；\r\n4.分析业界前沿效果实现方案；\r\n5.设计美术资产生产管线、制定资产规范，推动落地。",
+    "Requirement": "1.对渲染基本原理掌握清晰、现代渲染管线至少熟练掌握一种；\r\n2.熟练使用UE引擎，熟悉现代游戏常见渲染效果实现方案；\r\n3.熟悉美术DCC工具，美术资产管线，有资产管线设计经验者优先；\r\n4.热爱游戏，深度体验过多款高品质游戏产品，对其渲染效果有思考；\r\n5.对引擎技术、硬件特点、性能技术经验丰富者优先。",
+    "LastUpdateTime": "2026年07月02日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2039255627007684608",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "",
+    "Introduction": "在腾讯，作为一位游戏客户端开发，你始终身处科技前沿，与同样具备满分热情的策划、美术等团队紧密协作，助力新世界的诞生、运作，持续打造极致体验。你可以善用自己的全局观察能力，不断打开技术视野，与靠谱的团队一起做出真正有趣的新事物。",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "三年以上工作经验"
+  }
+}

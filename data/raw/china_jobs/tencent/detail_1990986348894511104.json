@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "1990986348894511104",
+    "RecruitPostId": 116075,
+    "RecruitPostName": "《逆战：未来》高级技术美术(渲染）",
+    "LocationId": 1,
+    "LocationName": "深圳",
+    "BGId": 956,
+    "BGName": "IEG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40002002",
+    "CategoryName": "设计",
+    "ProductName": "code-z",
+    "Responsibility": "1.和美术人员，引擎程序员一起设计渲染方案，编写Shader，实现美术效果；\n2.为场景和角色美术搭建Lookdev环境，确保美术资产在不同光照环境下的效果表现；\n3.研究业内新图形技术（Postprocess、Shader、VFX等）并结合项目需求，推动方案整合；\n4.创建可视化原型来验证艺术方向和效果，并推动技术方案设计；\n5.提供开发过程中和美术制作相关的解决方案；\n6.优化美术pipeline，并开发工具提高美术工作流效率支持美术和开发团队，解决生产中遇到的问题；\n7.设计美术资源规范，确保引擎规范的执行；\n8.编写并维护技术文档，向美术推广新工具和最佳实践；\n9.面对紧张的交付节点，平衡产出效率和质量。",
+    "Requirement": "1.3年以上游戏项目经验；有至少一个成功上线项目 ，同时具备端游手游经验者优先；\n2.熟悉色彩和物理灯光相关知识，了解PBR理论；\n3.具备图形学基础，及高等数学知识； 熟悉实时渲染管线；\n4.熟练掌握GLSL, HLSL, CG等至少一门Shader编程语言；\n5.熟悉OpenGL ES及当前移动平台上的技术限制者优先；\n6.精通Unreal或Unity引擎的灯光渲染模块；\n7.精通DCC软件（3dsmax/Maya，SD/SP等）；\n8.良好的书面和口头沟通能力；\n9.良好的审美和逻辑思维能力，独立解决问题的能力；\n10.良好的英语水平，可以流畅阅读英文技术文档及论文。",
+    "LastUpdateTime": "2026年06月28日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=1990986348894511104",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "",
+    "Introduction": "",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "三年以上工作经验"
+  }
+}

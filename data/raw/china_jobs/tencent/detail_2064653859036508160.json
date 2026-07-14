@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2064653859036508160",
+    "RecruitPostId": 1262151420828516352,
+    "RecruitPostName": "Research Intern — Coding LLMs 107653",
+    "LocationId": 1301,
+    "LocationName": "新加坡",
+    "BGId": 958,
+    "BGName": "TEG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40001005",
+    "CategoryName": "技术",
+    "ProductName": "",
+    "Responsibility": "Business Unit\nTechnology Engineering Group (TEG) is responsible for supporting the company and its business groups on technology and operational platforms, as well as the construction and operation of R&D management and data centers, TEG provides users with a full range of customer services. As the operator of the largest networking, devices, and data center in Asia,TEG also leads the Tencent Technology Committee in strengthening infrastructure R&D through internal and distributed open source collaboration, constructing new platforms and supporting business innovation.\n\nWhat the Role Entails\nWe are looking for research interns to work on foundational areas for coding language models, including pre-training data, mid-training data, synthetic data generation, evaluation, and agentic coding.\nResponsibilities\n* Explore data-centric methods for improving coding LLMs, including data filtering, quality assessment, deduplication, data mixture, and diversity analysis.\n* Build synthetic data and evaluation pipelines for code generation, code editing, repo-level reasoning, tool use, and multi-step coding tasks.\n* Run experiments to analyze how data, model, and training strategies affect coding capabilities.\n* Work with large-scale code corpora, developer activity data, and agentic coding trajectories.\n\nWho We Look For\n* Strong programming skills in Python.\n* Solid understanding of machine learning and large language models.\n* Familiarity with LLM pre-training, mid-training, code models, data curation, evaluation, agents, or tool use.\n* Strong experiment design, data analysis, and problem-solving skills.\n* Interest in code intelligence, software engineering automation, and agentic coding.\nPreferred Qualifications\n* Experience with code data processing, GitHub-scale data, synthetic data, LLM evaluation, semantic deduplication, or agentic coding.\n* Research experience, publications, or open-source projects in related areas are a plus.\nWhat We Offer\n* Access to large-scale real-world coding data and agentic trajectories.\n* Rich compute resources and model APIs for fast research iteration.\n* Opportunities to work on real-world coding model applications and the full model development loop.\n\nEqual Employment Opportunity at Tencent\nAs an equal opportunity employer, we firmly believe that diverse voices fuel our innovation and allow us to better serve our users and the community. We foster an environment where every employee of Tencent feels supported and inspired to achieve individual and common goals.\r\nWork Location: Singapore-CapitaSky",
+    "Requirement": "岗位要求详情请见上方岗位职责内说明",
+    "LastUpdateTime": "2026年06月30日",
+    "PostURL": "https://tencent.wd1.myworkdayjobs.com/Tencent_Careers/job/Singapore-CapitaSky/Research-Intern---Coding-LLMs_R107653-1",
+    "SourceID": 4,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "",
+    "Introduction": "",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": ""
+  }
+}

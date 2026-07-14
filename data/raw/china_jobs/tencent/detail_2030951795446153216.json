@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2030951795446153216",
+    "RecruitPostId": 1228449357179277312,
+    "RecruitPostName": "WeChat - Data Scientist (Safety Strategies) 107007",
+    "LocationId": 1301,
+    "LocationName": "新加坡",
+    "BGId": 14129,
+    "BGName": "WXG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40001005",
+    "CategoryName": "技术",
+    "ProductName": "",
+    "Responsibility": "Business Unit\n\nWhat the Role Entails\nParticipate in designing safe processes and managing safety rules to ensure account safety while improving the safety experience\nAnalyse behavioural trends to identify malicious activities and detect anomalies in the WeChat ecosystem via data analysis and machine learning\nDevise appropriate strategies to track fraudulent accounts and protect users from spam or fraudulent activity\nDeploy and maintain machine learned models to help detect malicious accounts\n\nWho We Look For\nCurrently pursuing an undergraduate or graduate degree in Computer Science, Data Science, Computer Engineering, or a related field\nAbility to communicate complex ideas to non-technical stakeholders in a way they can easily understand and appreciate.\nExperience on building machine learning or deep learning solutions\nGood knowledge of Python programming language, C/C++/Go programming language is preferred\nSelf-driven, innovative, collaborative, with good communication and presentation skills, able to translate between business and technical audiences\nFluency in both English and Mandarin to deal with international stakeholders and stakeholders who are based in HQ\n\nEqual Employment Opportunity at Tencent\nAs an equal opportunity employer, we firmly believe that diverse voices fuel our innovation and allow us to better serve our users and the community. We foster an environment where every employee of Tencent feels supported and inspired to achieve individual and common goals.\r\nWork Location: Singapore-CapitaSky",
+    "Requirement": "岗位要求详情请见上方岗位职责内说明",
+    "LastUpdateTime": "2026年03月09日",
+    "PostURL": "https://tencent.wd1.myworkdayjobs.com/Tencent_Careers/job/Singapore-CapitaSky/WeChat---Data-Scientist--Safety-Strategies-_R107007",
+    "SourceID": 4,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "",
+    "Introduction": "",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": ""
+  }
+}

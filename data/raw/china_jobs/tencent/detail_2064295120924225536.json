@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2064295120924225536",
+    "RecruitPostId": 120465,
+    "RecruitPostName": "智能体-全栈开发专家-CodeBuddy/WorkBuddy",
+    "LocationId": 1,
+    "LocationName": "深圳",
+    "BGId": 29294,
+    "BGName": "CSIG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40001001",
+    "CategoryName": "技术",
+    "ProductName": "腾讯云",
+    "Responsibility": "1.负责WorkBuddy前端架构整体规划与演进，覆盖多端形态，主导技术选型与架构决策；\r\n2.设计AI原生交互架构，包括LLM流式渲染、Agent任务编排可视化、人机协同确认与接管机制；\r\n3.构建跨端工程体系，设计桌面端核心架构与多端共享逻辑层，实现高复用率的统一研发方案；\r\n4.建设前端工程效能体系，涵盖质量基线、安全纵深防御、灰度发布与监控告警；\r\n5.培养技术骨干梯队，推动跨团队协作与行业技术输出。",
+    "Requirement": "1.10年+前端经验，3年+架构设计；精通TypeScript底层原理，深入理解React或Vue源码级实现；\r\n2.精通Electron架构，有复杂桌面应用落地经验；设计过多端统一架构方案；\r\n3.有LLM应用前端开发经验，理解流式渲染、Agent交互、MCP协议与多模态渲染；\r\n4.从0到1构建过完整前端工程化体系，有桌面应用性能调优与安全体系设计实战；\r\n5.能在AI技术快速迭代中做出高质量架构决策，有行业技术影响力与跨团队协同能力。",
+    "LastUpdateTime": "2026年06月09日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2064295120924225536",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "",
+    "Introduction": "",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "十年以上工作经验"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2052322555175550976",
+    "RecruitPostId": 119823,
+    "RecruitPostName": "智能审核平台产品经理",
+    "LocationId": 2,
+    "LocationName": "北京",
+    "BGId": 29292,
+    "BGName": "PCG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40003001",
+    "CategoryName": "产品",
+    "ProductName": "星航内容管线",
+    "Responsibility": "1.负责智能审核平台产品体系建设，参与机审、人审、管理一个或多个方向的产品规划与落地，推动内容审核从向AI 驱动型演进；\n2.深入理解审核全链路（事前机审拦截→事中人审研判→事后质检培训），完成需求分析、产品设计及项目推进；\n3.探索大模型、多模态模型及 Agent 技术在审核场景的落地应用，包括智能策略编排、辅助审核决策、自动化质检等；\n4.建立数据驱动的迭代机制，定义核心指标体系（准确率、召回率、人效比、降量率等），通过数据归因持续优化效果；\n5.与算法、工程、运营协同，推动跨 BG 的平台化能力输出与复用。",
+    "Requirement": "1.计算机相关专业，3 年以上互联网产品经验，有内容安全/审核、风控、平台型工具产品经验者优先；\r\n2.出色的系统设计能力，能独立完成复杂业务建模，善于将模糊需求转化为清晰产品架构；\r\n3.对大模型技术有浓厚兴趣，了解 LLM、Prompt Engineering、RAG、Agent 等概念，能与算法团队有效协作；\r\n4.优秀的数据敏感度，熟练 SQL 与数据归因分析，能从数据中发现瓶颈并推动解决；\r\n5.优秀的跨部门沟通与项目管理能力，适应多 BG 协作环境。",
+    "LastUpdateTime": "2026年05月15日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2052322555175550976",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "",
+    "Introduction": "“用户为本，科技向善”，是写在每位腾讯产品人心中的一句箴言。在互联网浪潮中，大众的生活已被深刻地改变，如何为用户创造价值、创造怎样的价值，需要每位产品人花费更长时间去体会与探索。在这里，你将与同样关注细节、关注本质、关注美好的同事一道，开启你的创造性工作。",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "三年以上工作经验"
+  }
+}

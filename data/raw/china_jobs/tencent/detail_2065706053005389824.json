@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2065706053005389824",
+    "RecruitPostId": 120562,
+    "RecruitPostName": "微信支付-大模型风控算法工程师",
+    "LocationId": 1,
+    "LocationName": "深圳",
+    "BGId": 14129,
+    "BGName": "WXG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40001005",
+    "CategoryName": "技术",
+    "ProductName": "微信支付",
+    "Responsibility": "1.基于大模型、行为序列等技术，完善各类业务风险的全流程风控体系，包括不限于态势感知、风险审核、策略智能体、团伙自动化挖掘等，保证用户的资金安全，提升交易生态健康度；\r\n2.基于多模态大模型、CV等技术建设业界领先的图像质检能力，包括不限于篡改检测、AIGC检测、人脸攻击识别、业务违规识别等，提升支付的反洗钱合规水平并优化客户入驻体验。",
+    "Requirement": "1.对大模型训练/风控算法/CV算法有深入的理解，在其中一个方向有较深入的项目经验；\r\n2.具备较好的开发与数据分析能力，熟练掌握Python/深度学习框架/大数据处理/后台开发其中两种及以上；\r\n3.具备良好的沟通表达和团队协作能力，自我驱动、抗压能力强并有较强的学习能力；\r\n4.有黑灰产对抗的实战经验，熟悉黑产主要作恶手法，有支付风控、反欺诈工作经验优先；\r\n5.有AI/CV/NLP顶会发表经历者优先；有业界知名开源项目开发维护/竞赛（ACM、业界知名AI竞赛）获奖经历者优先。",
+    "LastUpdateTime": "2026年07月02日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2065706053005389824",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "",
+    "Introduction": "渴望为世界带来新意的人，早已对描绘未来的“热词”不陌生——人工智能、机器学习、数据科学等等。腾讯始终在业界前沿不断探索，积极布局，并为优秀的你提供无限广阔的舞台。我们坚信科技的不断革新，最终能带来美好的、撼动人心的改变。",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "五年以上工作经验"
+  }
+}

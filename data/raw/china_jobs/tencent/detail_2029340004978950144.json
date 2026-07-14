@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2029340004978950144",
+    "RecruitPostId": 118186,
+    "RecruitPostName": "SSD固件开发高级工程师",
+    "LocationId": 1,
+    "LocationName": "深圳",
+    "BGId": 29294,
+    "BGName": "CSIG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40001001",
+    "CategoryName": "技术",
+    "ProductName": "腾讯云",
+    "Responsibility": "1.负责企业级SSD产品的固件设计和开发工作；\r\n2.基于产品需求，负责企业级SSD固件的架构设计，确保系统的高性能和高可靠性；\r\n3.设计和优化SSD固件相关算法，以提升产品性能，稳定性和可靠性；\r\n4.负责SSD固件代码的开发和测试，编写自动化测试脚本，验证固件模块功能，性能和可靠性；\r\n5.解决产品测试验证过程中与固件相关的技术问题；\r\n6.与硬件开发团队合作，确保固件与硬件的兼容性；\r\n7.与上层业务进行协同开发，确保固件与主机驱动的兼容性，交付业务定制化的软硬件结合固件特性。",
+    "Requirement": "1.计算机、电子工程或相关专业的本科或以上学历；\r\n2.熟练掌握C/C++，Python/Shell等编程语言，具备良好的编程习惯和代码风格；\r\n3.5年以上嵌入式系统固件开发经验；\r\n4.深入理解SSD架构、NAND闪存特性和FTL算法；\r\n5.良好的团队合作和沟通能力。",
+    "LastUpdateTime": "2026年07月03日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2029340004978950144",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "1.在同等条件下，通过腾讯云认证或取得同等资格认证的候选人，我们会优先考虑。",
+    "Introduction": "在腾讯，技术人解决问题的激情永不熄灭。无论是面对产品、程序的问题，还是生活与人的问题，腾讯技术人都力图交出漂亮的答卷。我们善用科学工具，以强大的思维之力创造世界，为卓越的产品体验保驾护航，也为公司和产品策略提出宝贵的洞见，用技术引领新的变革。这里的每位成员，既传承着长久以来的务实文化，又时刻以创新眼光瞄准大海星辰。我们十分期待你加入这样一个「技术社区」，分享团队能量，尽情发挥所长。",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "五年以上工作经验"
+  }
+}

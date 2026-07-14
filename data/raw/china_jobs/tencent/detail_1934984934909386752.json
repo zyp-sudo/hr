@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "1934984934909386752",
+    "RecruitPostId": 112766,
+    "RecruitPostName": "微信读书/输入法/秒剪-大模型算法研究员-Agent方向",
+    "LocationId": 2,
+    "LocationName": "北京",
+    "BGId": 14129,
+    "BGName": "WXG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40001005",
+    "CategoryName": "技术",
+    "ProductName": "微信读书",
+    "Responsibility": "1.负责 Agent Harness 算法侧的核心建模与迭代，围绕通用 Agent 框架开展 LLM 训练与落地，推动模型在几十轮甚至上百轮工具调用场景下的稳定性、任务完成率与推理质量；\r\n2.负责 Long Context 算法研究：长上下文训练数据构建、上下文压缩与蒸馏、跨会话记忆建模，在百万 token 级别场景做端到端优化；\r\n3.负责 Memory 系统算法：包括记忆写入 / 组织 / 检索 / 生命周期管理，salience 评估，memory evolution 数据生产；\r\n4.负责 Agent Post-Training：结合 SFT、DPO、Agentic RL、RLVR、Generative Reward Model，完成多轮 Tool Use、Planning、Reflection 相关能力的模型训练与调优；\r\n5.负责 Skills 体系算法设计: trace 蒸馏、Skill 自动抽取、Skill 组合策略、渐进式披露（progressive disclosure）机制。",
+    "Requirement": "1.计算机、人工智能、数学、自动化相关专业，硕士及以上学历（实习岗可放宽本科）；\r\n2.具备扎实的 LLM / NLP 算法基础，熟悉 Transformer、Attention、长上下文外推、KV Cache 等底层机制；\r\n3.至少深入一个方向并有 落地或论文产出：Agent 调度与任务规划 / Tool Use 与 Function Calling / Long Context 建模 / Memory 系统 / Agentic RL / Reward Model；\r\n4.熟悉 PyTorch / transformers / vLLM / TRL / verl / OpenRLHF 等训练推理框架，具备 SFT / DPO / GRPO / PPO 调优经验；\r\n5.具备良好的 Vibe Coding 能力，重度使用 Claude Code / Cursor / Codex 做研究迭代；\r\n6.对前沿技术有强烈好奇心，能快速阅读 arXiv 论文、独立提出方案并完成验证。",
+    "LastUpdateTime": "2026年06月26日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=1934984934909386752",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "1.在 NeurIPS / ICML / ICLR / ACL / EMNLP / COLM 发表 Agent / Memory / Long-context / RL 相关一作或核心作者论文；\r\n2.在 HuggingFace / GitHub 有突出开源贡献，或在 MemGPT / Letta / mem0 / LangGraph / OpenClaw 等项目有 merged PR；\r\n3.有 Computer-Use Agent（CLI 或 GUI） 训练与落地经验；\r\n4.有 Deep Research / Search Agent 相关算法经验，熟悉 Mid-Train / 多轮检索数据构建。",
+    "Introduction": "渴望为世界带来新意的人，早已对描绘未来的“热词”不陌生——人工智能、机器学习、数据科学等等。腾讯始终在业界前沿不断探索，积极布局，并为优秀的你提供无限广阔的舞台。我们坚信科技的不断革新，最终能带来美好的、撼动人心的改变。",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "两年以上工作经验"
+  }
+}

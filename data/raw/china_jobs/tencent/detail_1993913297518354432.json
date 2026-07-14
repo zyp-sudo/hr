@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "1993913297518354432",
+    "RecruitPostId": 116244,
+    "RecruitPostName": "无畏契约手游-游戏AI算法工程师-数据挖掘",
+    "LocationId": 1,
+    "LocationName": "深圳",
+    "BGId": 956,
+    "BGName": "IEG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40001005",
+    "CategoryName": "技术",
+    "ProductName": "CodeV-手游APP",
+    "Responsibility": "1.负责大数据在游戏AIBot投放领域的算法与产品化工作，包括但不限于如下方向:用户增长、因果推断、归因分析、千人千面体验流等；\r\n2.负责前沿技术跟进，能够识别技术的有效性并快速应用；\r\n3.负责具体项目落地，运用大数据+AI为项目带来可观的收益。",
+    "Requirement": "1.精通常用机器学习和深度学习算法及其原理，对算法特点和适用场景等有比较深刻的理解，能够快速进行算法实现和迭代；\r\n2.有游戏AIBot投放业务经验者优先；\r\n3.具有良好的工程实现能力，熟练掌握一门编程语言（C++/C/Python等）；\r\n4.有较好的沟通能力、团队协作能力，积极主动，愿意接受挑战。",
+    "LastUpdateTime": "2026年06月29日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=1993913297518354432",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "",
+    "Introduction": "渴望为世界带来新意的人，早已对描绘未来的“热词”不陌生——人工智能、机器学习、数据科学等等。腾讯始终在业界前沿不断探索，积极布局，并为优秀的你提供无限广阔的舞台。我们坚信科技的不断革新，最终能带来美好的、撼动人心的改变。",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "三年以上工作经验"
+  }
+}

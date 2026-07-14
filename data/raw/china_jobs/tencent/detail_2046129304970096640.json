@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2046129304970096640",
+    "RecruitPostId": 119500,
+    "RecruitPostName": "终端安全运营工程师",
+    "LocationId": 3,
+    "LocationName": "上海",
+    "BGId": 29294,
+    "BGName": "CSIG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40001004",
+    "CategoryName": "技术",
+    "ProductName": "科恩实验室-基础研究",
+    "Responsibility": "1.负责终端安全产品的安全能力建设和策略运营，提升产品病毒查杀、主动防御、Rootkit对抗、EDR检测和响应等功能，打造国内顶尖的终端安全产品；\r\n2.熟悉钓鱼、勒索等场景下攻防技术，持续跟进技术演变，基于场景需求来規划和运营产品能力；\r\n3.协助客户解决勒索病毒、钓鱼攻击、内网横移等应急问题，参与攻防演练验证效果和挖掘产品不足。",
+    "Requirement": "1.3年以上安全行业工作经验；\n2.有样本检测、逆向分析病毒、应急处理等经验，精通逆向分析或EDR产品策略运营，有开发病毒类专杀工具的案例；\n3.有激情有进取心，乐于持续学习，抗压性强，良好的服务意识和协调能力；\n4.有终端安全产品运营经验，对运营数据有敏锐的洞察力。",
+    "LastUpdateTime": "2026年05月14日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2046129304970096640",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "1.在同等条件下，通过腾讯云认证或取得同等资格认证的候选人，我们会优先考虑。",
+    "Introduction": "相信你与所有腾讯安全人一样，都认为抵抗邪恶是一件极其热血的事。希望你与我们一起，守护用户的安全，守护产品的安全，守护科技向善的不变初心。",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "三年以上工作经验"
+  }
+}

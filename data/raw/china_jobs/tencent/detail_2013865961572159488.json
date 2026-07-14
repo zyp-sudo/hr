@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2013865961572159488",
+    "RecruitPostId": 117428,
+    "RecruitPostName": "大模型推理性能优化工程师",
+    "LocationId": 1,
+    "LocationName": "深圳",
+    "BGId": 956,
+    "BGName": "IEG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40001001",
+    "CategoryName": "技术",
+    "ProductName": "预算专用-光子技术发展部公共产品",
+    "Responsibility": "1.负责开发和优化TTS，LLM，VLM等大模型推理引擎；\n2.与大模型算法同学深度合作，联合优化，打造行业领先的高性能推理引擎；\n3.跟进机器学习前沿技术，将合适成果落地于实际应用。",
+    "Requirement": "1.精通TensorFlow、PyTorch等主流深度学习框架，具备扎实的模型训练、调优及线上部署实践经验；\n2.精通C/C++，精通常用数据结构与算法；\n3.熟练掌握高性能计算优化技术，深入理解计算机体系结构，熟悉并行计算优化、访存优化，低比特计算等；\n4.熟悉大模型推理框架（如vLLM/SGLang/TRT-LLM等），有推理优化经验者优先；\n5.优秀的分析问题和解决问题的能力，对解决具有挑战性的问题充满激情；\n6.责任心强，良好的业务意识，团队合作能力和沟通协调能力。",
+    "LastUpdateTime": "2026年06月22日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2013865961572159488",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "1.国际化团队，分部在全球多个地区；\n2.团队技术栈丰富，技术氛围浓，人际关系简单；\n3.和游戏项目配合紧密，落地场景多。",
+    "ImportantItem": "1.有游戏开发经验；\r\n2.熟悉NLP，CV，语音合成等深度学习算法；\r\n3.有大模型训练，调优，调试经验。",
+    "Introduction": "",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "三年以上工作经验"
+  }
+}

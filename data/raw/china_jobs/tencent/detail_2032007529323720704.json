@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2032007529323720704",
+    "RecruitPostId": 118439,
+    "RecruitPostName": "QClaw-AI增长运营",
+    "LocationId": 1,
+    "LocationName": "深圳",
+    "BGId": 29294,
+    "BGName": "CSIG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40003001",
+    "CategoryName": "产品",
+    "ProductName": "安全管家",
+    "Responsibility": "1.负责QClaw产品用户增长及运营工作。",
+    "Requirement": "1.有完整的C端用户增长全链路操盘经验，熟悉拉新、激活、留存、转化全流程，能独立落地增长方案；\r\n2.具备较强的用户同理心和场景化思维，能从用户痛点出发设计运营策略，能利用AI 工具提效；\r\n3.逻辑清晰，沟通能力强，能独立推动跨职能团队（研发/设计/测试/产品）高效协作落地运营方案；\r\n4.数据驱动意识好，熟悉A/B测试、漏斗分析、用户行为分析等方法，能通过数据优化运营策略。",
+    "LastUpdateTime": "2026年06月12日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2032007529323720704",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "1.有AI产品/智能助手/对话式交互/RPA/自动化工具相关运营经验；\r\n2.对大语言模型（LLM）有基本理解，了解Prompt Engineering、Agent、Function Calling等概念；\r\n3.有工具类产品运营经验（效率工具、文件管理、远程协作等），理解工具产品的留存逻辑；\r\n4.自己是AI工具的深度用户，日常使用各类AI Agent/Copilot产品。",
+    "Introduction": "“用户为本，科技向善”，是写在每位腾讯产品人心中的一句箴言。在互联网浪潮中，大众的生活已被深刻地改变，如何为用户创造价值、创造怎样的价值，需要每位产品人花费更长时间去体会与探索。在这里，你将与同样关注细节、关注本质、关注美好的同事一道，开启你的创造性工作。",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "三年以上工作经验"
+  }
+}

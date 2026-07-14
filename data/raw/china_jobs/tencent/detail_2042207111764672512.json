@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2042207111764672512",
+    "RecruitPostId": 119185,
+    "RecruitPostName": "混元大模型数据策略负责人（北京/深圳）",
+    "LocationId": 2,
+    "LocationName": "北京",
+    "BGId": 958,
+    "BGName": "TEG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40003001",
+    "CategoryName": "产品",
+    "ProductName": "AI",
+    "Responsibility": "1.制定大模型后训练分Topic数据策略，搭建数据质量评估体系与数据生产标准，针对性优化数据短板，提升模型训练效果；\r\n2.全面管理数据合成、数据质检、数据标注、数据运营小组，负责团队搭建、流程制定、任务统筹与绩效管控，保障数据高效高质量交付；\r\n3.协同算法、研发团队，对齐模型训练需求，落地数据优化方案，跟进数据-模型效果联动优化，推动数据生产智能化升级；\r\n4.把控数据合规与安全，统筹数据项目进度与目标达成，定期复盘数据质量与团队效能。",
+    "Requirement": "1.本科及以上学历，计算机、AI、数据科学、统计学等相关专业，大模型数据相关经验及创业经验优先；\r\n2.精通大模型后训练数据逻辑，熟悉数据合成、标注、质检、运营全流程，具备分Topic数据策略规划与落地能力；\r\n3.了解大模型训练原理与评估体系，具备数据问题分析、质量管控体系搭建经验，能高效协同算法团队推进项目；\r\n4.具备优秀的跨部门协作与项目统筹能力，执行力和责任心强。",
+    "LastUpdateTime": "2026年06月26日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2042207111764672512",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "",
+    "Introduction": "",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "三年以上工作经验"
+  }
+}

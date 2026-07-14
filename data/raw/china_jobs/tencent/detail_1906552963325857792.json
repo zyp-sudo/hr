@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "1906552963325857792",
+    "RecruitPostId": 111116,
+    "RecruitPostName": "微信 -大模型LLM系统研发工程师",
+    "LocationId": 2,
+    "LocationName": "北京",
+    "BGId": 14129,
+    "BGName": "WXG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40001001",
+    "CategoryName": "技术",
+    "ProductName": "",
+    "Responsibility": "1.对LLM训练的多方面场景的AI基础设施进行优化。包括但不限于GPU，RDMA，存储等硬件设备，RL/训练算法等技术方向。最终将硬件性能榨干，加速大语言模型落地；\r\n2.一个人无法穷尽AI系统的各方面能力。只要有独特经验和独到观点，推进某一个维度优化系统即可；\r\n3.同时希望您认同我们产品优先，乐于挑战的文化，推动微信AI产品落地过程中AI Infra加速工作。",
+    "Requirement": "1.扎实的编程能力，技术风格以及责任心；\r\n2.具有自我驱动的工作能力，能够持续改进系统不足，提出方案并推动实现。",
+    "LastUpdateTime": "2026年06月17日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=1906552963325857792",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "1.AI服务于产品，良好的工程实现可以快速影响数千万用户；\r\n2.扁平的团队，工程人员可以影响算法、产品的决策，多方可以有效的协同设计；\r\n3.工作地北京、上海、深圳，任一地点均可。",
+    "ImportantItem": "1.对主流开源软件有贡献。",
+    "Introduction": "在腾讯，后台开发工程师不仅是“又快又稳”的问题解决专家，更是生态共创者。你将与技术团队一同沉淀优质代码，让它成为我们共有的宝贵资产。在不同的业务场景和技术发展阶段，你的架构思维也将帮助更多协作团队拓展新的思考。我们也珍视你的挑战精神，同时欢迎你一起参与团队愿景、文化和产品方向的探讨。",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "一年以上工作经验"
+  }
+}

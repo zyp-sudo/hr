@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2041847335474065408",
+    "RecruitPostId": 119151,
+    "RecruitPostName": "元宝数据平台-数据工程",
+    "LocationId": 9,
+    "LocationName": "西安",
+    "BGId": 29294,
+    "BGName": "CSIG",
+    "ComCode": "YUNZHI",
+    "ComName": "腾讯云智研发子公司",
+    "OuterPostTypeID": "40001001",
+    "CategoryName": "技术",
+    "ProductName": "元宝",
+    "Responsibility": "1.支持元宝内部数据服务平台的各项开发工作，保障元宝数据上报质量；\r\n2.备注：此岗位为腾讯集团旗下子公司编制。",
+    "Requirement": "1.计算机相关专业本科及以上学历 ；\r\n2.3年及以上数据开发经验；\r\n3.精通SQL、熟悉Python/Go/Java等编程语言；\r\n4.精通大数据相关组件（Spark/Clickhouse/StarRocks)。",
+    "LastUpdateTime": "2026年05月09日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2041847335474065408",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "",
+    "Introduction": "在腾讯，技术人解决问题的激情永不熄灭。无论是面对产品、程序的问题，还是生活与人的问题，腾讯技术人都力图交出漂亮的答卷。我们善用科学工具，以强大的思维之力创造世界，为卓越的产品体验保驾护航，也为公司和产品策略提出宝贵的洞见，用技术引领新的变革。这里的每位成员，既传承着长久以来的务实文化，又时刻以创新眼光瞄准大海星辰。我们十分期待你加入这样一个「技术社区」，分享团队能量，尽情发挥所长。",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "三年以上工作经验"
+  }
+}

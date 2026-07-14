@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2034237423579463680",
+    "RecruitPostId": 118632,
+    "RecruitPostName": "微信-多模态大模型算法工程师–视觉基座模型方向（北京）",
+    "LocationId": 1,
+    "LocationName": "深圳",
+    "BGId": 14129,
+    "BGName": "WXG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40001005",
+    "CategoryName": "技术",
+    "ProductName": "WXG公共",
+    "Responsibility": "负责微信视觉基座模型的核心技术研发与业务落地，构建统一的视觉理解与解析能力，支持在微信C端及视频号、公众号、微信小店等业务场景中的规模化应用。\n",
+    "Requirement": "1.深度参与过业界主流视觉基础模型或多模态大模型的研发工作，系统理解整体技术架构与训练方法。\n2.精通大规模模型训练范式，包括预训练（Pretraining）、监督微调（SFT）、多任务联合训练、蒸馏训练、后训练（如 RLHF/DPO 等），理解训练稳定性及效率优化方法。\n3.熟悉视觉核心任务中的一种或多种，包括目标检测、分割、图片理解或视觉语言模型（VLM）等方向，熟悉 VLM for Grounding。\n4.具备大规模数据构建与治理经验，熟悉自动标注、弱监督学习、数据蒸馏等技术路线。\n5.在计算机视觉或机器学习领域的国际顶级会议或期刊（如CVPR/ICCV/ECCV/NeurIPS/ICLR等）发表过高质量论文，在权威竞赛或开源项目中有核心贡献者优先。\n6.具备扎实的工程实现能力，熟练使用Python/PyTorch进行模型开发，熟悉分布式训练框架；具备C/C++或推理优化经验（TensorRT/ONNX/CUDA）者优先。",
+    "LastUpdateTime": "2026年07月01日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2034237423579463680",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "",
+    "Introduction": "渴望为世界带来新意的人，早已对描绘未来的“热词”不陌生——人工智能、机器学习、数据科学等等。腾讯始终在业界前沿不断探索，积极布局，并为优秀的你提供无限广阔的舞台。我们坚信科技的不断革新，最终能带来美好的、撼动人心的改变。",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "一年以上工作经验"
+  }
+}

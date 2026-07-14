@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2001857480807829504",
+    "RecruitPostId": 116703,
+    "RecruitPostName": "金融科技-大模型后训练算法工程师-支付反洗钱风控方向",
+    "LocationId": 1,
+    "LocationName": "深圳",
+    "BGId": 953,
+    "BGName": "CDG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40001005",
+    "CategoryName": "技术",
+    "ProductName": "反洗钱与风控公共能力",
+    "Responsibility": "1.面向AI应用场景的大模型后训练方向的核心技术研发，包括SFT、偏好学习、强化学习等算法研发、优化与创新，提升业务效果；\r\n2.利用LLM能力，构建用户异常交易、可疑行为特征模型，深度识别客户风险；\r\n3.跟踪大模型后训练方向的前沿技术，参与前沿算法研究，推动研究成果在反洗钱与风控场景的落地应用；\r\n4.基于用户特征、文本数据及尽调资料等信息，探索创新的技术来更好了解客户，洞察用户交易风险。",
+    "Requirement": "1.研究生及以上学历，计算机、人工智能、数学等相关专业（有数学、编程竞赛加分）；\r\n2.具备良好的LLM技术基础，熟练使用深度学习训练和推理框架，深入理解Transformer、GPT等模型架构；\r\n3.在Post-training方向有一定研究基础，熟悉SFT/DPO/PPO/GRPO/Reward Model等；熟悉数据合成技术；\r\n4.具备良好的分析和解决问题的能力，针对具体的应用场景能合理设计和优化算法并应用；有利用AI能力对抗黑灰产经验的优先；\r\n5.对于探索前沿技术有很大的热情，具备独立探索前沿技术的能力，有良好的团队协作和沟通能力。",
+    "LastUpdateTime": "2026年07月06日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2001857480807829504",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "我们是中国客户体量最大的金融机构，当前发展阶段需要利用AI深度识别客户的风险，并且利用AI对抗黑产（如洗钱，电诈等），用AI对抗AI模式将在今后融入整个金融生态。",
+    "ImportantItem": "",
+    "Introduction": "",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "五年以上工作经验"
+  }
+}

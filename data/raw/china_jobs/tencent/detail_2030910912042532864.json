@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2030910912042532864",
+    "RecruitPostId": 118337,
+    "RecruitPostName": "AI量化投研工程师-Agent方向",
+    "LocationId": 1,
+    "LocationName": "深圳",
+    "BGId": 953,
+    "BGName": "CDG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40001005",
+    "CategoryName": "技术",
+    "ProductName": "自选股",
+    "Responsibility": "1.能力模块化改造：将成熟的量化研究工具（回测引擎、因子库、组合优化、风险归因等）改造为 Agent 可直接调用的标准化能力模块，支撑 Agent 自主完成投研任务；\r\n2.自然语言交互设计：设计并落地“自然语言 → 策略构建 / 回测执行 / 调仓指令”的完整交互链路，使用户以日常语言即可驱动专业投研工作流；\r\n3.金融数据底座建设：打造覆盖 A 股 / 港股 / 美股的金融数据与模拟交易底座，保证数据的准确性、时效性与易用性；\r\n4.可解释性落地：解决 Agent 输出结果的可解释性问题，确保策略逻辑与决策依据对普通用户清晰、可信、可审验，帮助用户建立信任并据此做出投资决策；\r\n5.跨团队协作：与产品经理、Agent 工程团队紧密配合，不断定义并迭代“散户也能用”的投研工具边界，平衡专业能力与用户体验。",
+    "Requirement": "1.具备金融工程、数理金融、统计、计算机+金融复合背景或相关项目经验；\r\n2.拥有买方机构实盘资金管理经验者优先——我们认为，实盘盈亏的真实体感与仅撰写研究报告的工程理解深度有本质差异；\r\n3.扎实的工程能力：熟练掌握 Python，能独立交付从研究到生产的完整链路。",
+    "LastUpdateTime": "2026年06月08日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2030910912042532864",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "1.具备 AI / LLM / Agent 工程背景，理解 function calling、tool use、RAG、多步推理等关键概念；\r\n2.熟悉至少一个主流回测框架（如 vnpy、backtrader、qlib、bt 等），或有自建回测系统的经验；\r\n3.对可解释性有实际思考与实践，知道如何让模型或策略的输出被非专业用户理解；\r\n4.有 To-C 产品经验，理解专业能力与用户体验之间的取舍与平衡。",
+    "Introduction": "渴望为世界带来新意的人，早已对描绘未来的“热词”不陌生——人工智能、机器学习、数据科学等等。腾讯始终在业界前沿不断探索，积极布局，并为优秀的你提供无限广阔的舞台。我们坚信科技的不断革新，最终能带来美好的、撼动人心的改变。",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "三年以上工作经验"
+  }
+}

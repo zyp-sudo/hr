@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2064981110395420672",
+    "RecruitPostId": 120521,
+    "RecruitPostName": "微信-高级算法工程师-音频理解/ASR/对话模型方向",
+    "LocationId": 2,
+    "LocationName": "北京",
+    "BGId": 14129,
+    "BGName": "WXG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40001005",
+    "CategoryName": "技术",
+    "ProductName": "微信AI助手",
+    "Responsibility": "1.负责音频理解、语音识别、语音对话大模型等方向的模型研发与落地，包括 ASR、S2TT/S2ST、音频问答、语音对话等核心能力建设；\r\n2.参与大规模音频/语音数据建设、清洗、标注、合成与评测体系搭建，持续提升模型在复杂场景下的理解、识别和交互能力；\r\n3.负责大模型训练与微调工作，包括预训练、SFT、偏好优化、多模态对齐、音频 encoder 与 LLM 融合等方向探索；\r\n4.推进 ASR 工程化落地，包括流式识别、实时上屏、上下文增强、热词/专有词优化、长语音识别、端侧/云侧推理等能力建设；\r\n5.跟进语音与多模态大模型前沿技术，结合业务场景完成技术选型、效果优化和线上落地。",
+    "Requirement": "1.具备扎实的机器学习、深度学习和语音信号处理基础，熟悉 ASR、音频理解或语音对话相关技术；\r\n2.有大模型训练经验，熟悉 LLM / 多模态大模型的预训练、SFT、RLHF/DPO/PPO、指令微调或模型评测流程；\r\n3.有 ASR 工程实践经验，熟悉 CTC、AED、Transducer、流式 ASR、动态 chunk、热词增强、ITN、VAD 等相关技术优先；\r\n4.熟悉 PyTorch、Megatron、DeepSpeed、FSDP、vLLM 等训练或推理框架中的一种或多种，具备大规模训练/推理优化经验优先；\r\n5.具备较强的工程实现能力和问题定位能力，能够独立完成从数据、训练、评测到部署的完整闭环；\r\n6.有良好的沟通协作能力，能与工程、产品、数据团队共同推动复杂语音能力落地。",
+    "LastUpdateTime": "2026年06月18日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2064981110395420672",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "1.有音频大模型、语音对话大模型、Omni 模型、SpeechLLM、AudioLLM 相关研发经验；\r\n2.有大规模 ASR 系统、同声传译、全双工语音交互、端到端语音对话系统落地经验；\r\n3.熟悉 Qwen、Whisper、FunASR、Paraformer、SenseVoice、CosyVoice、Qwen-Audio/Qwen-Omni 等模型或开源框架；\r\n4.有多语言、方言、中英混、噪声场景、车载/耳机/端侧语音识别优化经验；\r\n5.有大规模数据处理、自动标注、合成数据构造、评测体系建设经验。",
+    "Introduction": "渴望为世界带来新意的人，早已对描绘未来的“热词”不陌生——人工智能、机器学习、数据科学等等。腾讯始终在业界前沿不断探索，积极布局，并为优秀的你提供无限广阔的舞台。我们坚信科技的不断革新，最终能带来美好的、撼动人心的改变。",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "不限"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2011285846795374592",
+    "RecruitPostId": 117288,
+    "RecruitPostName": "轻游梦工坊-高级技术策划（AI游戏生成）",
+    "LocationId": 1,
+    "LocationName": "深圳",
+    "BGId": 956,
+    "BGName": "IEG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40003002",
+    "CategoryName": "产品",
+    "ProductName": "IEG微信游戏合作中心-小游戏合集",
+    "Responsibility": "1.负责AI游戏生成平台的系统架构规划，设计从\"自然语言描述\"到\"可运行游戏\"的端到端生成管线，定义各环节的输入输出规范与质量标准；\r\n2.设计和优化AI Agent的游戏生成工作流，包括意图识别、品类路由、代码生成、编译运行、迭代修改等核心环节的策划方案与交互逻辑；\r\n3.将游戏设计领域知识（游戏机制、系统架构、编辑器API、引擎能力等）转化为AI可理解的结构化知识，主导构建AI游戏生成知识库，提升Agent的游戏理解与生成能力；\r\n4.负责多引擎适配策略的设计（如轻游编辑器UE4、Godot 2D链路等），确保AI生成管线在不同引擎间的质量一致性；\r\n5.设计AI生成游戏的质量验证体系，定义生成成功率、可运行性、可玩性等关键指标的评估标准与自动化验证方案；\r\n6.跟踪AI游戏生成领域的前沿技术（LLM Agent、Vibe Coding、程序化内容生成等），持续优化生成管线的效率与质量。",
+    "Requirement": "1.3年及以上游戏策划或游戏技术策划经验，参与过游戏制作的完整流程，理解游戏开发全链路；\r\n2.深度理解AI Agent概念与LLM能力边界，能够设计合理的Agent工作流和提示词策略，有Agent/Copilot产品设计经验者优先；\r\n3.具备将游戏设计经验转化为结构化知识的能力，熟悉知识工程方法（如结构化描述、分类体系、检索优化等）；\r\n4.日常工作全面使用AI工具（如Claude、CodeBuddy、Cursor等），具备AI Native工作模式的实战经验，能展示AI显著提升工作效率的具体案例；\r\n5.具备系统思维和产品思维，能从用户视角审视\"自然语言→游戏\"的全链路体验；\r\n6.热爱游戏行业，具备较强的责任心，良好的团队沟通和跨职能协作能力。",
+    "LastUpdateTime": "2026年06月15日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2011285846795374592",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "1.参与定义\"AI生成游戏\"这一全新范式，站在游戏行业AI化转型的最前沿；\r\n2.深度参与AI Agent游戏生成项目，用Agent Workflow重新定义游戏创作方式；\r\n3.团队全面践行AI Native工作模式，日常工作使用AI Agent团队协作，是业内前沿的AI工作实践；\r\n4.接触LLM、Agent、知识工程等前沿技术领域，技术视野与职业天花板极高。",
+    "ImportantItem": "1.熟练使用UE4或Unity等主流商业引擎，能借助AI工具独立完成游戏Demo；\r\n2.有Prompt Engineering实战经验，理解提示词优化、上下文管理、Few-shot Learning等技术；\r\n3.掌握至少一门编程语言（如Python、Lua、TypeScript等），能阅读和评估AI生成的代码质量；\r\n4.有UGC编辑器设计经验（如Roblox、迷你世界、星火编辑器等），理解创作者生态与开发者体验优化；\r\n5.了解多Agent协作框架（如CrewAI、AutoGen等），对Agent Orchestration有认知和兴趣。",
+    "Introduction": "【腾讯游戏｜这一局，由你主导】\n腾讯游戏，致力于以顶尖技术创造丰富优质的游戏体验，用创新玩法点燃玩家情感共鸣，深度打磨每处游戏细节。加入我们，用创造力拓展游戏的边界，为用户创造高品质数字生活体验！",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "一年以上工作经验"
+  }
+}

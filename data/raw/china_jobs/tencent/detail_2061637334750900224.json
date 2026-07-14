@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2061637334750900224",
+    "RecruitPostId": 120340,
+    "RecruitPostName": "UE微恐轻动作项目-主交互",
+    "LocationId": 1,
+    "LocationName": "深圳",
+    "BGId": 956,
+    "BGName": "IEG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40002001",
+    "CategoryName": "设计",
+    "ProductName": "预研产品-手游APP-Project Metro",
+    "Responsibility": "1.作为交互体验方向负责人，定义核心玩法、局外系统、社交与商业化场景的体验框架、信息架构和设计标准；\n2.主导复杂系统从用户路径、任务流、状态流、原型、动效说明到引擎落地的全流程，对最终可用性和品质负责；\n3.统筹交互、视觉、策划、程序、技术UI、QA等协作，解决复杂系统在移动端操作、反馈、可读性和效率上的体验问题；\n4.建立交互规范、组件库、验收标准和体验走查机制，推动高频界面与核心流程持续迭代；\n5.结合测试观察、用户反馈、竞品拆解和数据指标，形成可复用的体验优化方法并带动团队能力提升。",
+    "Requirement": "1.5年以上游戏交互/UX设计经验，有主交互、UX Lead或核心体验负责人经历，至少完整参与一款上线或长期测试项目；\n2.能独立负责复杂玩法与多系统串联的体验设计，具备信息架构、流程设计、可用性评估和移动端交互方案能力；\n3.熟练使用Figma/Sketch/AE/PS等工具，能输出高质量可点击原型、动效说明、交互规范和验收文档；\n4.理解UE/Unity界面实现链路，熟悉引擎还原、技术UI、适配、性能与资产规范，能判断方案实现成本；\n5.具备强沟通推动、设计评审、问题复盘和团队专业建设能力，应聘需提供可说明设计过程与结果的作品集。",
+    "LastUpdateTime": "2026年07月06日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2061637334750900224",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "",
+    "Introduction": "",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "五年以上工作经验"
+  }
+}

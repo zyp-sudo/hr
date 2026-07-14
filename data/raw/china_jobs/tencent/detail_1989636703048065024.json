@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "1989636703048065024",
+    "RecruitPostId": 116018,
+    "RecruitPostName": "微信小店-商品推荐生态治理运营",
+    "LocationId": 5,
+    "LocationName": "广州",
+    "BGId": 14129,
+    "BGName": "WXG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40003001",
+    "CategoryName": "产品",
+    "ProductName": "微信交易平台",
+    "Responsibility": "1.负责商品推荐生态治理有关项目，保障推荐系统的信息安全、商品质量与用户体验；\n2.通过深入与层面的分析评估，负责类制定商品分级分类标准，对接审核与算法、后台进行落地，确保审核与算法可理解可执行；\n3.理解商品生命周期和行业差异，能基于具体场景和用户需求，围绕效率、体验、健康持续等角度制定商品运营方案；\n4.搭建对应项目的指标体系、审核体系与相关策略。",
+    "Requirement": "1.优先考虑具有平台商品画风治理、标准制定等相关工作经验的候选人；\n2.擅长数据分析，熟练掌握SQL、Python等数据分析工具；逻辑思维能力强，分析问题和总结归纳；\n3.有较好的行业洞察、业务创新能力，善于发现问题；\n4.熟悉推荐系统的运作机制，能够与前后端开发、策略算法等不同职位同学有效沟通和协作，推进工作。",
+    "LastUpdateTime": "2026年06月18日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=1989636703048065024",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "",
+    "Introduction": "“用户为本，科技向善”，是写在每位腾讯产品人心中的一句箴言。在互联网浪潮中，大众的生活已被深刻地改变，如何为用户创造价值、创造怎样的价值，需要每位产品人花费更长时间去体会与探索。在这里，你将与同样关注细节、关注本质、关注美好的同事一道，开启你的创造性工作。",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "一年以上工作经验"
+  }
+}

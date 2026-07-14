@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2046589888731709440",
+    "RecruitPostId": 119536,
+    "RecruitPostName": "《王者荣耀》UGC-游戏客户端开发-编辑器开发方向",
+    "LocationId": 8,
+    "LocationName": "成都",
+    "BGId": 956,
+    "BGName": "IEG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40001001",
+    "CategoryName": "技术",
+    "ProductName": "王者荣耀",
+    "Responsibility": "1.负责UGC方向系统/玩法/编辑器的开发工作，包括但不限于逻辑功能的实现与优化；\r\n2.根据需求制定合理的技术方案并能有效地进行开发落地并持续迭代维护并不断改善体验，优化性能；\r\n3.与团队成员紧密合作，共同推进项目进度，确保需求按时高质量上线。",
+    "Requirement": "1.熟悉 Unity 引擎并能熟练使用 Unity 引擎进行功能及工具的开发，同时熟悉 UE 引擎；\r\n2.有良好的编程功底和算法功底，能熟练使用 C#和TS进行开发，有性能优化经验者优先；\r\n3.有UGC或战斗相关模块及工具链/编辑器研发经验者优先；\r\n4.有moba/fps/mmorpg等大型游戏项目研发经验优先；\r\n5.沟通良好，具备良好的团队开发意识，责任心强，热爱游戏并持续关注游戏技术前沿。",
+    "LastUpdateTime": "2026年04月21日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2046589888731709440",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "",
+    "Introduction": "",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "五年以上工作经验"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2070518527399477248",
+    "RecruitPostId": 120780,
+    "RecruitPostName": "AI ⽹络集合通信库运营⼯程师",
+    "LocationId": 2,
+    "LocationName": "北京",
+    "BGId": 958,
+    "BGName": "TEG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40001003",
+    "CategoryName": "技术",
+    "ProductName": "AI",
+    "Responsibility": "1.通信库运营保障：负责集合通信库（如 NCCL 等）在⼤规模 AI 训练/推理集群中的部署、配置、升级与⽇常运营，确保通信服务的⾼可⽤性和性能达标；\n2.性能监控与优化：建设通信性能监控体系，持续跟踪 AllReduce/AllGather/All-to-All 等关键通信算⼦的带宽和延迟指标，识别性能退化并驱动优化；\n3.故障诊断与恢复：快速响应训练 hang、通信超时、性能下降等故障，具备从业务现象出发逐层定位到通信库、传输层、硬件层根因的能⼒，缩短 MTTR；\n4.业务⽀撑协同：与上层训练/推理框架团队紧密协作，理解不同并⾏策略（TP/PP/DP/EP/CP）对通信的需求，提供通信层⾯的调优建议；\n5.⼯具与⾃动化建设：参与或主导通信诊断⼯具、⾃动化巡检、异常检测等运营⼯具的开发，提升运营效率和故障⾃愈能⼒；\n6.容量规划与技术演进：根据业务增⻓和新硬件（NVLink/InfiniBand/RoCE）的引⼊，参与集群通信架构规划和通信库版本选型评估。",
+    "Requirement": "一.基本要求；\n1.计算机科学、通信⼯程、电⼦⼯程或相关专业，本科及以上学历；\n2.两年以上相关⼯作经验（集合通信库开发、HPC 通信优化、AI 基础设施运营等⽅向均可）；\n二、专业技能；\n1.集合通信原理：深⼊理解集合通信算⼦（AllReduce、AllGather、ReduceScatter、All-to-All 等）的原理和实现算法（Ring、Tree、Double Binary Tree 等），了解算法选择对性能的影响；\n2.通信库实践：熟悉 NCCL 架构（Channel、Protocol、Transport、Proxy 等核⼼模块），有 NCCL 调优、问题排查或⼆次开发经验者优先；了解 DeepEP、Gloo、MSCCL 等其他通信库者加分；\n3.底层通信机制：理解 GPU 机内通信机制（NVLink、NVSwitch、PCIe P2P、DMA、GPU Direct RDMA），掌握RDMA 通信原理（InfiniBand 或 RoCEv2）；\n4.AI 训练业务理解：了解⼤模型训练的主流并⾏策略（数据并⾏、张量并⾏、流⽔线并⾏、专家并⾏等），能理解不同并⾏模式对通信的带宽和延迟需求；\n5.系统与⼯具：熟悉 Linux 系统环境，能熟练使⽤ nvidia-smi、DCGM、nccl-tests、Nsight Systems 等诊断⼯具；\n6.编程能⼒：熟练掌握Python/go/bash等之⼀，熟悉AI辅助编程⼯具，具备阅读和修改通信库源码的能⼒；有 CUDA编程经验者优先；\n三、能⼒素质；\n1.问题定位能⼒：具备从业务现象到底层硬件的全栈排查思维，能在⾼压下快速缩⼩问题范围；\n2.协作沟通能⼒：能与训练⼯程师、⽹络⼯程师、硬件⼯程师⾼效协同，⽤业务语⾔翻译技术问题；\n3.持续学习意愿：AI 基础设施技术迭代快，需要持续跟进新硬件、新通信库版本和新并⾏范式；\n4.⼯程化思维：注重⾃动化、可观测性、标准化，推动运营向。",
+    "LastUpdateTime": "2026年06月29日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2070518527399477248",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "1.负责 AI ⽹络集合通信库的运营保障与性能优化，⽀撑⼤模型训练和推理业务的⾼效稳定运⾏。深⼊理解集合通信原理与底层通信机制，保障万卡级训练集群的通信可⽤性与性能，协同上层业务团队快速定位和解决通信相关问题。",
+    "ImportantItem": "1.有万卡级 AI 训练集群的通信运营经验；\r\n2.有 NCCL 或类似通信库的内核开发贡献经验；\r\n3.有 MoE 模型训练的通信优化经验（All-to-All 优化、Expert 调度等）；熟悉⽹络可观测体系建设；\r\n4.有 InfiniBand ⽹络管理或 RoCE ⽹络调优经验。",
+    "Introduction": "在腾讯，优秀的技术运营工程师始终赋能业务，关注技术运营的质量、成本、效率和安全。他们不仅是经验丰富的问题解决者，更是具有全局视角的架构师，通过自动化工具的建设，强力提升平台效能，助力业务发展。",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "两年以上工作经验"
+  }
+}

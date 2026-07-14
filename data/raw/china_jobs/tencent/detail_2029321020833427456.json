@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2029321020833427456",
+    "RecruitPostId": 10002614,
+    "RecruitPostName": "Technical Director",
+    "LocationId": 407,
+    "LocationName": "洛杉矶",
+    "BGId": 956,
+    "BGName": "IEG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40001001",
+    "CategoryName": "技术",
+    "ProductName": "",
+    "Responsibility": "Business Unit\nLIGHTSPEED STUDIOS is made up of passionate players who advance the art & science of game development through great stories, great gameplay, and advanced technology. We are focused on bringing next generation experiences to gamers who want to enjoy them anywhere, anytime, across multiple genres and devices.\n\nWhat the Role Entails\nWe are building a new AAA first-person shooter IP for a global audience. As Technical Director, you will own the technical vision, architecture, and execution strategy required to deliver a high-performance, scalable, and reliable player experience across PC and console.\nYou will lead internal and global co-development engineering teams, align technology decisions to milestone goals, and ensure technical delivery supports both creative ambition and operational realities.\nOwn the end-to-end technical strategy and architecture across all phases: Vertical Slice, Early Access, launch, and live operations.\nDefine the technical roadmap aligned to production milestones, identifying risks early and driving mitigation plans.\nArchitect core systems and make build-vs-buy decisions, including evaluation and integration of third-party technologies.\nEstablish and enforce engineering standards across architecture, code quality, performance budgets, build systems, and release processes.\nLead and evaluate work from global co-development teams, ensuring quality, alignment, and accountability across time zones.\nPartner with design and art to build scalable tools and pipelines that maximize content velocity.\nDrive multiplayer performance, networking stability, backend scalability, and live-service readiness.\nOversee CI/CD, branching strategy, DevOps practices, and platform certification requirements.\nMentor and grow engineering leadership, contributing to hiring and org design.\nUse playtest data, telemetry, and player-facing metrics (performance, stability, latency) to inform technical priorities.\n\nWho We Look For\nShipped at least one AAA PC or console title as Technical Director or Lead Engineer.\nProven experience leading and evaluating global co-development teams.\nDemonstrated experience architecting large-scale systems, including third-party integrations.\nExperience defining and maintaining performance budgets, stability targets, and scalability goals.\nBroad technical foundation across gameplay systems, engine development, rendering, AI, networking, or cloud infrastructure.\nDeep expertise in at least one core technical domain.\nProven ability to align cross-discipline leadership and drive execution through ambiguity.\nPlayer-focused mindset grounded in measurable quality outcomes.\nPlusesShipped titles on both PC and console platforms.\nExperience managing co-development across time zones, languages, and cultures.\nDelivered or operated a multiplayer FPS at 100k+ peak concurrency.\nExperience taking a game from prototype through launch and into live operations.\nExperience with Unreal Engine.\nBackground in engineering, computer science, or related field.\nBilingual in English/Mandarin preferred to communicate with relevant stakeholders and international team.\n\nWhat We OfferOpportunity to shape a new AAA IP from the ground up.\nHigh ownership and cross-disciplinary influence.\nCollaborative, high-talent global team.\nCompetitive compensation and benefits.\n\nLocation State(s)\nUS-California-Los Angeles\nThe expected base pay range for this position in the location(s) listed above is $147,800.00 to $343,600.00 per year. Actual pay may vary depending on job-related knowledge, skills, and experience.\nEmployees hired for this position may be eligible for a sign on payment, relocation package, and restricted stock units, which will be evaluated on a case-by-case basis.\nSubject to the terms and conditions of the plans in effect, hired applicants are also eligible for medical, dental, vision, life and disability benefits, and participation in the Company’s 401(k) plan. The Employee is also eligible for up to 15 to 25 days of vacation per year (depending on the employee’s tenure), up to 13 days of holidays throughout the calendar year, and up to 10 days of paid sick leave per year.\nYour benefits may be adjusted to reflect your location, employment status, duration of employment with the company, and position level. Benefits may also be pro-rated for those who start working during the calendar year.\n\nEqual Employment Opportunity at Tencent\nAs an equal opportunity employer, we firmly believe that diverse voices fuel our innovation and allow us to better serve our users and the community. We foster an environment where every employee of Tencent feels supported and inspired to achieve individual and common goals.\r\nWork Location: US-California-Los Angeles",
+    "Requirement": "岗位要求详情请见上方岗位职责内说明",
+    "LastUpdateTime": "2026年07月02日",
+    "PostURL": "https://tencent.wd1.myworkdayjobs.com/Tencent_Careers/job/US-California-Los-Angeles/Technical-Director_R106938-1",
+    "SourceID": 4,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "",
+    "Introduction": "",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": ""
+  }
+}

@@ -1,0 +1,88 @@
+{
+  "generated_at": "2026-07-07T20:17:29+08:00",
+  "input_files": [
+    "data\\collected_jobs.csv",
+    "data\\collected_job_skills.csv",
+    "data\\source_registry.csv"
+  ],
+  "output_files": [
+    "data\\etl\\unified_jobs.csv",
+    "data\\etl\\unified_job_skills.csv",
+    "data\\etl\\data_quality_report.csv",
+    "data\\etl\\job_candidate_scores.csv"
+  ],
+  "unified_job_records": 55110,
+  "unified_skill_records": 69308,
+  "candidate_score_records": 50000,
+  "registered_sources": 17,
+  "registered_source_types": [
+    "ats_public_api",
+    "local_file_import",
+    "official_enterprise_api",
+    "official_enterprise_site",
+    "public_employment_service",
+    "public_job_board_api",
+    "remote_job_board_api"
+  ],
+  "active_sources": [
+    "baidu_careers",
+    "huawei_careers",
+    "jobonline_public_employment_service",
+    "meituan_careers",
+    "national_college_student_employment_service",
+    "tencent_careers"
+  ],
+  "active_source_types": [
+    "official_enterprise_api",
+    "official_enterprise_site",
+    "public_employment_service"
+  ],
+  "category_counts": {
+    "ai_algorithm": 1870,
+    "frontend_client": 333,
+    "data_engineering": 954,
+    "product_operation": 2775,
+    "cloud_infra": 423,
+    "testing_quality": 1049,
+    "design": 1553,
+    "backend_engineering": 45143,
+    "security": 759,
+    "other": 251
+  },
+  "quality_rules": {
+    "base_score": 100,
+    "penalties": {
+      "missing_title": 25,
+      "missing_source_url": 15,
+      "missing_collected_at": 15,
+      "missing_published_at": 10,
+      "missing_city": 5,
+      "missing_company": 5,
+      "missing_origin_record_id": 5,
+      "short_responsibility": 12,
+      "short_requirement": 12,
+      "no_skill_hit": 10,
+      "duplicate_content": 20,
+      "unknown_source": 10
+    },
+    "levels": {
+      "A": ">=85",
+      "B": "70-84",
+      "C": "55-69",
+      "D": "<55"
+    }
+  },
+  "application_scoring": {
+    "input_candidates": "data\\resume_samples.csv",
+    "optional_outcomes": "data\\application_outcomes.csv",
+    "output": "data\\etl\\job_candidate_scores.csv",
+    "features": [
+      "skill_match_rate",
+      "dimension_match_rate",
+      "experience_match_score",
+      "education_match_score",
+      "job_quality_score"
+    ],
+    "formula": "relative ability = 45% skill + 20% dimension + 20% experience + 10% education + 5% data quality; success probability = sigmoid(relative ability)"
+  }
+}

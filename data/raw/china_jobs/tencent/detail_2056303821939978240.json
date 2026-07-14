@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2056303821939978240",
+    "RecruitPostId": 10002776,
+    "RecruitPostName": "WXG - Backend Engineer",
+    "LocationId": 1301,
+    "LocationName": "新加坡",
+    "BGId": 14129,
+    "BGName": "WXG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40001001",
+    "CategoryName": "技术",
+    "ProductName": "",
+    "Responsibility": "Business Unit\nWeiXin Group(WXG) is responsible for the construction and operation of the Weixin ecosystem and leveraging Weixin's open platforms such as Official Accounts, Mini Programs, Weixin Pay, WeCom and search function. WXG provides solutions and connectivity for intelligent upgrades across all industries. WXG is also responsible for the development and operation of QQ Mail, WeRead and other products.\n\nWhat the Role Entails\nWeChat is seeking software engineers with expertise in backend and web frontend development to join the team. Candidates should already have experience in traditional 3-tier architecture (presentation, application, database), fullstack web development experience via a Node.js framework (Vue.js preferred) in addition to traditional software development experience in a compiled language such as Golang/C/C++/Rust. The role will work closely with data scientists, data engineers, security engineers, test engineers, DevOps engineers, and project managers to help develop internal tools and security systems for keeping WeChat users worldwide safe.Responsible for the design, development and testing of WeChat user security processe\nResponsible for the design, development, and testing of WeChat's internal tools and platforms\nParticipate in requirements review, solution formulation, and solution review to meet project requirements\nKeep abreast of best coding practices, writing high quality code and be able to deliver & test system functions\nResponsible for identifying and debugging system issues, and continuously improve existing services to enhance system performance and stability\nResponsible for creating and maintaining technical documentation\nA team player with strong communications skills to collaborate with relevant teams on projects\n\nWho We Look For\nMore than 3 year of work experience in software development. Background in safety, risk control, and audits preferred\nExpertise with full-stack web development on a Node.js framework (Vue.js preferred) with mainstream databases (MySQL/MariaDB, Postgres), caching technology (Redis) and common middleware such as Kafka and MQ\nDevelopment experience in compiled language, backend development using C/C++\nFamiliar with commonly used system tools in the Linux environment including troubleshooting problems related to CPU, memory, and network I/O\nSolid programming foundation, follows best practices, and has a sense of responsibility, and passion in computing and state-of-the-art technologies\nStrong logical and critical thinking skills, good communication skills, and ability to understand and convey requirements accurately\nFluency in both English and Mandarin required to collaborate with stakeholders based in HQ and globally\n\nEqual Employment Opportunity at Tencent\nAs an equal opportunity employer, we firmly believe that diverse voices fuel our innovation and allow us to better serve our users and the community. We foster an environment where every employee of Tencent feels supported and inspired to achieve individual and common goals.\r\nWork Location: Singapore-CapitaSky",
+    "Requirement": "岗位要求详情请见上方岗位职责内说明",
+    "LastUpdateTime": "2026年05月18日",
+    "PostURL": "https://tencent.wd1.myworkdayjobs.com/Tencent_Careers/job/Singapore-CapitaSky/WXG---Backend-Engineer_R107474-1",
+    "SourceID": 4,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "",
+    "Introduction": "",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": ""
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2046088981464117248",
+    "RecruitPostId": 119487,
+    "RecruitPostName": "《逆战：未来》客户端开发工程师（效能/资源）",
+    "LocationId": 1,
+    "LocationName": "深圳",
+    "BGId": 956,
+    "BGName": "IEG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40001001",
+    "CategoryName": "技术",
+    "ProductName": "code-z",
+    "Responsibility": "1.负责研发提效相关的流程管线与工具的建设和迭代；\r\n2.负责跨端编辑器性能以及效率优化，提升团队制作研发效率；\r\n3.负责代码编译性能以及多平台调试工具优化，提升团队开发效率；\r\n4.负责资源完整数据体系建立以及自动化监控系统、流程搭建；\r\n5.负责多端版本/资源差异更新能力优化迭代。",
+    "Requirement": "1.本科及以上学历，3年以上游戏开发经验，有大型上线项目经验优先；\r\n2.熟悉游戏开发流程，具有UE或Unity引擎开发经验；\r\n3.熟练掌握C++，有脚本开发能力，有扎实的计算机操作系统基础；\r\n4.熟悉UE对象系统以及资源管理底层实现，熟悉编译器原理优先；\r\n5.具备出色的学习能力，较强的问题分析与解决能力，良好的团队协作能力，善于沟通，责任心强；\r\n6.具有跨平台开发经验，如iOS、Android、PC等平台者优先。",
+    "LastUpdateTime": "2026年04月20日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2046088981464117248",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "",
+    "Introduction": "",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "三年以上工作经验"
+  }
+}

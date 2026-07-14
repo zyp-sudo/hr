@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2030831087365816320",
+    "RecruitPostId": 118326,
+    "RecruitPostName": "《王者荣耀世界》UE客户端开发工程师-版本更新",
+    "LocationId": 8,
+    "LocationName": "成都",
+    "BGId": 956,
+    "BGName": "IEG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40001001",
+    "CategoryName": "技术",
+    "ProductName": "王者荣耀",
+    "Responsibility": "1.开发三端版本更新能力，设计下载更新策略以及解决更新过程中的疑难杂症；\r\n2.持续优化版本更新大小，设计版本更新大小保障方案并落地；\r\n3.负责梳理和优化包体大小，并主导开发监控系统，确保版本包体合理增长。",
+    "Requirement": "1.本科及以上学历，3年以上游戏开发经验，有大型上线项目经验优先；\r\n2.熟悉游戏开发流程，具有UE引擎项目开发经验，熟练掌握C++；\r\n3.有上线项目完整版本更新功能开发经验优先；\r\n4.熟悉UE的资源管理底层实现以及打包分包等底层框架加分；\r\n5.具备出色的学习能力，较强的问题分析与解决能力，良好的团队协作能力，善于沟通，责任心强。",
+    "LastUpdateTime": "2026年06月08日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2030831087365816320",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "",
+    "Introduction": "在腾讯，作为一位游戏客户端开发，你始终身处科技前沿，与同样具备满分热情的策划、美术等团队紧密协作，助力新世界的诞生、运作，持续打造极致体验。你可以善用自己的全局观察能力，不断打开技术视野，与靠谱的团队一起做出真正有趣的新事物。",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "一年以上工作经验"
+  }
+}

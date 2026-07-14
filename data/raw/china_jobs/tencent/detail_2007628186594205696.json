@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2007628186594205696",
+    "RecruitPostId": 116973,
+    "RecruitPostName": "金融科技-大语言模型专家工程师",
+    "LocationId": 1,
+    "LocationName": "深圳",
+    "BGId": 953,
+    "BGName": "CDG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40001005",
+    "CategoryName": "技术",
+    "ProductName": "微信支付-基础平台",
+    "Responsibility": "1.开展VLM在GUI智能体场景下的前沿研究，主导包括数据构造、仿真环境构建、模型后训练（Post-training）等全流程关键技术攻关；\r\n2.深耕AI编程垂直领域，围绕工具调用、自动化测试与流水线优化等方向，进行模型调优与方法创新，探索更高效的智能编程范式；\r\n3.负责上下文压缩与高效推理技术的研究，重点推进Embedding压缩、长上下文优化、多模态信息提取等方向的算法突破与技术落地；\r\n4.追踪学术界与工业界最新进展，保持对NLP、CV、强化学习等领域的前沿敏感度，提出具有前瞻性的研究课题并推动实验验证；\r\n5.参与研究方案设计、技术路线论证与系统架构评审，确保研究方向的合理性、系统的高效性与可扩展性；\r\n6.推动研究成果向业务场景转化，撰写技术报告与研究论文，积极参与学术交流与技术分享。",
+    "Requirement": "1.计算机科学、人工智能、数学等相关专业硕士及以上学历，具有扎实的机器学习与深度学习理论基础；\r\n2.熟练掌握PyTorch、Swift、Verl等一种或多种大模型训练框架，具备独立开展模型研发与调优的能力；\r\n3.熟悉大模型训练全流程，包括CPT、SFT、RL等训练范式，具备分布式训练与系统优化经验；\r\n4.在强化学习、上下文建模、GUI理解、程序合成等相关方向有研究经历，熟悉RLVR（可验证奖励强化学习）流程者优先；\r\n5.具备优秀的科研能力与创新思维，在NeurIPS、ICML、ACL、CVPR等顶级会议或期刊发表过论文者优先；\r\n6.具备较强的工程实现能力，能够将理论方法转化为可复现的实验系统，并推动技术落地；\r\n7.良好的团队协作与沟通能力，能够跨领域合作并清晰表达研究思路与技术方案。",
+    "LastUpdateTime": "2026年06月10日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2007628186594205696",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "",
+    "Introduction": "",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "八年以上工作经验"
+  }
+}

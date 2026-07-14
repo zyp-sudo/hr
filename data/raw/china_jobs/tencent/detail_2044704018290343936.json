@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2044704018290343936",
+    "RecruitPostId": 119409,
+    "RecruitPostName": "海外OC网络架构工程师",
+    "LocationId": 1,
+    "LocationName": "深圳",
+    "BGId": 958,
+    "BGName": "TEG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40001003",
+    "CategoryName": "技术",
+    "ProductName": "云架构平台",
+    "Responsibility": "1.负责海外CDN、边缘计算网络基础设施的网络架构设计及网络运营工作；\r\n2.负责海外边缘网络架构优化、迭代升级工作；\r\n3.负责海外边缘数据中心网络机房架构系统设计及建设，建设系统设计及建设；\r\n4.参与网络自动化、智能化运维能力建设，提升网络运营质量和效率。",
+    "Requirement": "1.本科学历及以上，计算机、网络相关专业背景，英语可作为工作语言者优先；\r\n2.具备3年以上大型数据中心网络基础设施架构设计从业经验；\r\n3.熟悉边缘数据中心网络架构体系，CDN业务原理，对边缘网络轻量化及成本优化有深刻了解；\r\n4.熟悉海外运营商网络架构及工作流程，能够有效的分析、定位和应对海外网络中遇到的各种问题；\r\n5.精通路由交换、TCP/IP协议，熟悉Shell、Python等语言经验者优先；\r\n6.有大型互联网CDN或运营商骨干网、数据中心网络架构设计及运营经验者优先；\r\n7.对大型IP骨干网或数据中心网络有深入了解，具备持续深钻技术的学习能力；\r\n8.具有良好的跨部门沟通协作能力，有责任心和团队协作精神，善于主动思考和自我驱动。",
+    "LastUpdateTime": "2026年05月14日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2044704018290343936",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "",
+    "Introduction": "在腾讯，优秀的技术运营工程师始终赋能业务，关注技术运营的质量、成本、效率和安全。他们不仅是经验丰富的问题解决者，更是具有全局视角的架构师，通过自动化工具的建设，强力提升平台效能，助力业务发展。",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "三年以上工作经验"
+  }
+}

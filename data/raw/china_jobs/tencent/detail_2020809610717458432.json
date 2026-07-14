@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2020809610717458432",
+    "RecruitPostId": 117829,
+    "RecruitPostName": "元宝客户端测试工程师",
+    "LocationId": 1,
+    "LocationName": "深圳",
+    "BGId": 29294,
+    "BGName": "CSIG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40001002",
+    "CategoryName": "技术",
+    "ProductName": "元宝",
+    "Responsibility": "1.搭建 AI 产品全生命周期质量体系，制定功能、性能、安全、体验等统一质量标准与评估体系​；\n2.聚焦大模型应用、RAG、Prompt 优化、多模态交互等核心模块，设计针对性测试方案，验证输出准确性、一致性与边界表现​；\n3.研发 AI 产品专属自动化测试工具与框架，提升测试效率及质量度量精准度​；\n4.跟踪线上质量数据，识别风险、分析问题根源，推动跨团队协同优化，保障产品稳定性​；\n5.优化测试流程，沉淀方法论，推动测试左移与右移，构建全链路质量保障体系。",
+    "Requirement": "1.扎实的工程基础：精通 Python/GO，3 年以上软件测试 / 测试开发经验，熟悉各类核心测试技术，有 AI 产品、大模型应用测试经验者优先；\r\n2.理解大模型原理与 AI 产品研发流程，熟悉 RAG、Prompt Engineering 等技术栈​；\r\n3.逻辑清晰，能解决传统软件确定性问题及 AI 模型输出不确定性带来的质量挑战​；\r\n4.业务理解能力强，对测试数据、监控指标敏感，可通过数据驱动质量优化​；\r\n5.具备跨团队协作能力，能快速跟进 AI 领域前沿技术，适配快速迭代节奏。",
+    "LastUpdateTime": "2026年06月10日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2020809610717458432",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "",
+    "Introduction": "在腾讯，优秀的技术质量管理，保证腾讯每一个的产品与服务能更加稳定、顺畅、安心地被用户使用和体验。与技艺高超的同事们一同深化对架构设计、数据和产品的理解，在美好向善的世界里，成为一块闪耀的基石。",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "三年以上工作经验"
+  }
+}

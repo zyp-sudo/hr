@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2065266730669879296",
+    "RecruitPostId": 120540,
+    "RecruitPostName": "Project T UE5 高级引擎开发",
+    "LocationId": 3,
+    "LocationName": "上海",
+    "BGId": 956,
+    "BGName": "IEG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40001001",
+    "CategoryName": "技术",
+    "ProductName": "Project T",
+    "Responsibility": "1.负责大场景关卡相关技术的研发工作，包括地形、植被、光照与阴影等方向；\r\n2.负责游戏图形相关特性的开发，根据项目需求实现高级渲染效果，提升游戏表现力；\r\n3.负责制定工具管线方案，开发底层工具和引擎功能，提升研发团队的开发效率；\r\n4.负责游戏性能优化相关工作，并根据项目需求定制、扩展或改造 UE 引擎底层功能；\r\n5.负责图形兼容性分析，以及复杂疑难问题的排查、定位与解决。",
+    "Requirement": "1.具备 3 年以上 UE4/5 游戏引擎开发与维护经验，深刻理解 3D 游戏引擎架构；\r\n2.具备大场景关卡相关开发经验，如地形、植被、光影渲染、多线程调度等；\r\n3.熟悉 3D 图形学，具备良好的数学与算法基础；\r\n4.熟悉 UE5 的渲染特性，如 Nanite、Lumen、VSM、MegaLights 等；\r\n5.具备 PC 或主机平台优化经验，掌握对应平台图形底层及 RHI 层的优化技巧；\r\n6.责任心强，善于沟通，对游戏前沿技术保持热情；\r\n7.熟悉商业游戏引擎源码；有 Console 开发经验者优先；熟悉并热爱 FPS 或第三人称动作冒险游戏者优先。",
+    "LastUpdateTime": "2026年06月30日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2065266730669879296",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "",
+    "Introduction": "在腾讯，作为一位游戏客户端开发，你始终身处科技前沿，与同样具备满分热情的策划、美术等团队紧密协作，助力新世界的诞生、运作，持续打造极致体验。你可以善用自己的全局观察能力，不断打开技术视野，与靠谱的团队一起做出真正有趣的新事物。",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "不限"
+  }
+}

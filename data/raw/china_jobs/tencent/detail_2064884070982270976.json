@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2064884070982270976",
+    "RecruitPostId": 120507,
+    "RecruitPostName": "QQ飞车手游-游戏客户端开发工程师-新星引力计划",
+    "LocationId": 1,
+    "LocationName": "深圳",
+    "BGId": 956,
+    "BGName": "IEG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40001001",
+    "CategoryName": "技术",
+    "ProductName": "QQ飞车手游",
+    "Responsibility": "1.参与游戏玩法需求的技术可行性评估，负责相关功能的技术方案设计与开发实现；\r\n2.协助进行玩法工具链搭建、性能优化、模块重构等工作，保障游戏运行稳定流畅；\r\n3.与策划、美术、测试等团队紧密协作，高效推进需求落地，持续优化游戏体验。",
+    "Requirement": "1.有游戏客户端开发相关经验，熟悉至少一种主流游戏引擎；\r\n2.计算机基础扎实，掌握 C# / Lua / C/C++ 至少一门编程语言；\r\n3.热爱游戏技术，学习能力强，具备基本的问题分析与解决能力；\r\n4.责任心强，沟通顺畅，有良好的团队协作意识。",
+    "LastUpdateTime": "2026年06月17日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2064884070982270976",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "",
+    "Introduction": "",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "两年以上工作经验"
+  }
+}

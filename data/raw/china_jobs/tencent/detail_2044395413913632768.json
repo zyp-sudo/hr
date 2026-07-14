@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2044395413913632768",
+    "RecruitPostId": 119380,
+    "RecruitPostName": "微信视频号直播-推荐大模型高级算法工程师-生态方向（深圳）",
+    "LocationId": 5,
+    "LocationName": "广州",
+    "BGId": 14129,
+    "BGName": "WXG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40001005",
+    "CategoryName": "技术",
+    "ProductName": "视频号直播",
+    "Responsibility": "1.负责视频号直播场景下 AI Agent 系统的架构设计、技术选型与迭代规划；\r\n2.设计高性能、易扩展的的系统架构与上下文交互逻辑，以灵活支持多种 Multi-Agent 协作模式，满足不同业务场景下、各垂类主播的多元需求；\r\n3.结合具体业务需求，对模型效果和算法推理进行优化，包括但不限于上下文学习、SFT、RLHF、DPO、Agentic RL 等；\r\n4.紧跟大模型与智能体的最新落地技术、探索大模型在主播侧业务中的创新应用，持续提升主播的开播体验与创作效率。",
+    "Requirement": "1.计算机科学、人工智能等相关专业本科及以上学历，3 年及以上相关工作经验；\r\n2.有 AI Agent / LLM 应用项目的全流程实战经验，从系统设计、开发、上线到面向真实用户的持续迭代；\r\n3.对多智能体架构、上下文工程、记忆机制、Tool Use、RAG 等 Agent 技术栈有深入理解和落地经验；\r\n4.熟悉智能体相关的模型训练，例如 Agentic RL、SFT、RLHF、DPO 等；\r\n5.熟练掌握 Python，熟悉主流深度学习框架（PyTorch 等），熟悉 Langchain/Langgraph 等 MAS 框架，具备良好的工程能力和代码习惯；\r\n6.优秀的跨团队协作与沟通能力，能够主动协同上下游团队推动项目落地；\r\n7.对 AI 前沿技术保持高度敏感，有较强的技术判断力和自驱力。",
+    "LastUpdateTime": "2026年07月02日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2044395413913632768",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "1.与视频号业务共同成长，技术才能的施展空间大；\n2.紧跟最新的技术潮流，推动新技术在视频号业务中的落地应用，走在业界前沿。",
+    "ImportantItem": "1.有从 0 到 1 搭建并上线 AI Agent 产品的完整经历；\r\n2.在 AI Agent / LLM 相关领域有开源项目贡献或技术影响力。",
+    "Introduction": "",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "三年以上工作经验"
+  }
+}

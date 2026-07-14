@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2046490171318366208",
+    "RecruitPostId": 119526,
+    "RecruitPostName": "《洛克王国：世界》-游戏策划-生态AI方向",
+    "LocationId": 1,
+    "LocationName": "深圳",
+    "BGId": 956,
+    "BGName": "IEG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40003002",
+    "CategoryName": "产品",
+    "ProductName": "NRC-手游APP",
+    "Responsibility": "1.设计和制作独特的精灵行为、反应、能力，为玩家创造引人入胜的多样性体验；\r\n2.配合其他设计师完成叙事类AI的设计与落地，增强游戏沉浸感；\r\n3.优化当前的AI编辑器工具,提升整个AI系统的健壮性；\r\n4.持续迭代优化AI表现及管线流程，保障AI稳定量产与体验达标。",
+    "Requirement": "1.至少有3年的类似工作经验，有开放世界项目制作经验者优先；\r\n2.熟悉UE4引擎，有游戏编辑器和游戏设计工具的使用经验；\r\n3.对行为树AI有实操经验，并具有突出的动手能力；\r\n4.出色的沟通能力，可以高效的完成跨部门沟通；\r\n5.有精灵/宠物收集品类游戏经验者优先；\r\n6.熟悉洛克王国IP者优先。",
+    "LastUpdateTime": "2026年07月06日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2046490171318366208",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "",
+    "Introduction": "【腾讯游戏｜这一局，由你主导】\n腾讯游戏，致力于以顶尖技术创造丰富优质的游戏体验，用创新玩法点燃玩家情感共鸣，深度打磨每处游戏细节。加入我们，用创造力拓展游戏的边界，为用户创造高品质数字生活体验！",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "三年以上工作经验"
+  }
+}

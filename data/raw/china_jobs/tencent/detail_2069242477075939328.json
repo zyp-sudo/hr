@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2069242477075939328",
+    "RecruitPostId": 120708,
+    "RecruitPostName": "微信小游戏-数据科学（生态分析方向）",
+    "LocationId": 1,
+    "LocationName": "深圳",
+    "BGId": 14129,
+    "BGName": "WXG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40001005",
+    "CategoryName": "技术",
+    "ProductName": "小游戏",
+    "Responsibility": "1.负责微信小游戏的生态分析工作，通过定量+定性的方法建设生态视角的认知模型，并同产品一同挖掘增长机会点；\r\n2.通过数据挖掘指导产品设计、运营活动、用户增长及推荐策略优化，独立完成各项策略专题分析，为业务发展提供洞见和决策支持，并推动落地；\r\n3.构建核心指标预测模型及开发用户生命周期模型，识别增长机会点，并通过平台工具赋能开发者；\r\n4.调研互联网增长、平台增长方向先进分析方法和模型，持续优化迭代分析方法并深化对数据的理解。",
+    "Requirement": "1.本科及以上学历，统计学、应用数学、数据科学、经济学等相关专业优先，1年及以上数据科学、商业分析或AI相关工作经验；\r\n2.具备敏锐的数据洞察力，能够从数据中挖掘业务价值；优秀的逻辑思维能力，擅长沟通协作，对有挑战的问题充满热情；\r\n3.精通Hive SQL，能够使用Python进行数据分析，能够高效处理复杂查询与大规模数据。",
+    "LastUpdateTime": "2026年07月01日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2069242477075939328",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "",
+    "Introduction": "渴望为世界带来新意的人，早已对描绘未来的“热词”不陌生——人工智能、机器学习、数据科学等等。腾讯始终在业界前沿不断探索，积极布局，并为优秀的你提供无限广阔的舞台。我们坚信科技的不断革新，最终能带来美好的、撼动人心的改变。",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "一年以上工作经验"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2036455015857680384",
+    "RecruitPostId": 118798,
+    "RecruitPostName": "腾讯云-安全产品高级测试工程师",
+    "LocationId": 1,
+    "LocationName": "深圳",
+    "BGId": 29294,
+    "BGName": "CSIG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40001002",
+    "CategoryName": "技术",
+    "ProductName": "腾讯云",
+    "Responsibility": "1.负责腾讯云安全相关产品的质量保障工作，负责项目质量体系化建及优化；\r\n2.针对Qclaw/管家等产品的功能、性能、稳定性、可靠性开展专项测试与调优，负责接口、UI自动化测试，保障和提升产品质量。",
+    "Requirement": "1.计算机本科及以上相关专业2年以上工作经验，有专项测试、测试开发及后台测试经验者优先；\r\n2.对操作系统、计算机网络和数据库等计算机和软件基础都有比较深入的理解和实践经验；\r\n3.有windows/mac等客户端测试经验者优先；\r\n4.熟练掌握C/C++/Java等至少一种编程语言或者对Python/Shell/Perl等至少一门脚本语言有丰富实践经历；\r\n5.有客户端UI自动化测试、专项测试和平台建设者优先；\r\n6.有AI大模型评测经验者优先；\r\n7.具备良好的团队合作精神，善于协调沟通，具备较高的问题推动解决能力；通过腾讯云从业资格证或同等资格认证的优先录取。",
+    "LastUpdateTime": "2026年06月23日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2036455015857680384",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "",
+    "Introduction": "在腾讯，优秀的技术质量管理，保证腾讯每一个的产品与服务能更加稳定、顺畅、安心地被用户使用和体验。与技艺高超的同事们一同深化对架构设计、数据和产品的理解，在美好向善的世界里，成为一块闪耀的基石。",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "三年以上工作经验"
+  }
+}

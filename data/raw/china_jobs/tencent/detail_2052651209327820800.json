@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2052651209327820800",
+    "RecruitPostId": 119846,
+    "RecruitPostName": "3D动作策略游戏《虚环》-资深3D动效设计师",
+    "LocationId": 1,
+    "LocationName": "深圳",
+    "BGId": 956,
+    "BGName": "IEG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40002002",
+    "CategoryName": "设计",
+    "ProductName": "虚拟人星瞳",
+    "Responsibility": "1.界面动效设计： 负责游戏内所有界面（UI）的进出场动画、转场效果、交互动效以及特殊控件（如弹窗、列表、按钮）的动态表现，提升操作手感的“韧性”与“跟手度”；\r\n2.游戏特效制作： 负责制作局内外的非战斗类特效，包括但不限于：系统提示、获得道具、升级流光、大厅角色展示运镜、Loading界面特效等；\r\n3.资源输出与落地： 熟练使用Unity 3D引擎进行动效资源（粒子系统、Shader、序列帧、Spine动画）的导入、配置与调试，确保效果在手机/PC端的性能达标（Draw Call、Overdraw控制）；\r\n4.设计规范制定： 协同UI设计师制定动效设计语言规范（运动曲线、时长节奏、缓动曲线），确保全游戏动效风格统一且有辨识度；\r\n5.动效叙事： 针对关键剧情节点或系统解锁时刻，设计具有情绪渲染力的动态视觉表现，增强玩家的沉浸感与仪式感；\r\n6.跨部门协作： 与策划、UI设计、程序开发紧密配合，理解功能需求，解决动效在引擎中的实现逻辑问题（如响应时间、层级遮挡、音画同步）。",
+    "Requirement": "1.软件技能： 精通After Effects（熟练使用Duik、Motion v3等脚本为佳），掌握Adobe Photoshop、Illustrator进行素材拆分与补图；\r\n2.引擎能力： 熟练使用Unity 3D（必须掌握Particle System、动画状态机、Timeline）或Unreal（UE4/UE5）的Sequencer及Niagara/VX Graph；有UGUI/NGUI或UMG使用经验；\r\n3.特效工具： 熟练使用Spine、DragonBones 2D骨骼动画软件，或熟悉Cascade/Niagara粒子编辑器；\r\n4.美术功底： 具备优秀的审美能力，对节奏感、色彩、运动规律（如预备与缓冲、跟随重叠、挤压拉伸）有深刻理解；\r\n5.加分项：“能搭建团队动效制作规范与性能白皮书”、“具备培养新人能力”、“对渲染管线有一定理解”。",
+    "LastUpdateTime": "2026年05月28日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2052651209327820800",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "",
+    "Introduction": "",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "五年以上工作经验"
+  }
+}

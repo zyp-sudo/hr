@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "1964869584070795264",
+    "RecruitPostId": 114626,
+    "RecruitPostName": "3D动作策略游戏《虚环》-后台开发工程师（C++）",
+    "LocationId": 1,
+    "LocationName": "深圳",
+    "BGId": 956,
+    "BGName": "IEG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40001001",
+    "CategoryName": "技术",
+    "ProductName": "虚拟人星瞳",
+    "Responsibility": "1.负责游戏服务器后台功能设计和开发；\r\n2.负责游戏服务器后台相关性能热点分析和优化；\r\n3.负责游戏服务器后台的工具开发及环境维护。",
+    "Requirement": "1.学历本科及以上，2年及以上游戏服后台C++开发经验，有线上项目经验更佳，熟练使用脚本语言，熟悉linux开发环境和网络开发；\n2.熟悉游戏服后台加构设计，熟悉分布式系统架构开发，了解网络同步，对帧同步，状态同步机制有一定了解；\n3.有责任心，有激情，热衷于研究新技术，热爱游戏行业。",
+    "LastUpdateTime": "2026年06月17日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=1964869584070795264",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "",
+    "Introduction": "在腾讯，后台开发工程师不仅是“又快又稳”的问题解决专家，更是生态共创者。你将与技术团队一同沉淀优质代码，让它成为我们共有的宝贵资产。在不同的业务场景和技术发展阶段，你的架构思维也将帮助更多协作团队拓展新的思考。我们也珍视你的挑战精神，同时欢迎你一起参与团队愿景、文化和产品方向的探讨。",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "五年以上工作经验"
+  }
+}

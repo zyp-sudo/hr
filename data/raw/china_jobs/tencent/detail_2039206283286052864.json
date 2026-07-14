@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2039206283286052864",
+    "RecruitPostId": 119010,
+    "RecruitPostName": "《灰境行者》-游戏客户端开发",
+    "LocationId": 3,
+    "LocationName": "上海",
+    "BGId": 956,
+    "BGName": "IEG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40001001",
+    "CategoryName": "技术",
+    "ProductName": "Maple-端游-国内",
+    "Responsibility": "1.负责Unreal游戏客户端的程序开发工作，包括功能实现、性能优化等；\n2.根据游戏设计文档编写和维护客户端代码；\n3.与策划、美术、服务器端开发人员协作，确保游戏功能的顺利实现；\n4.跟踪并解决游戏客户端运行中的问题，确保游戏体验的流畅性；\n5.不断学习和研究新技术，以提高游戏客户端的开发效率和用户体验。",
+    "Requirement": "1.计算机相关专业本科及以上学历，具备扎实的编程基础；\n2.熟练掌握C++、Lua等游戏开发语言；\n3.具备良好的团队协作能力和沟通能力，能够快速适应项目节奏；\n4.有UE引擎或自研引擎开发经验优先；\n5.能够承受工作压力，具备较强的问题查证和解决能力。",
+    "LastUpdateTime": "2026年06月30日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2039206283286052864",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "1.热衷于玩游戏并熟悉UE5端游开发流程；\n2.对3C开发or主线程优化有经验；\n3.对计算机科学有浓厚兴趣，喜欢研究底层原理与新技术。",
+    "Introduction": "",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "一年以上工作经验"
+  }
+}

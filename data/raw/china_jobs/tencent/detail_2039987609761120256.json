@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2039987609761120256",
+    "RecruitPostId": 119054,
+    "RecruitPostName": "Project W-AI引擎工程师",
+    "LocationId": 1,
+    "LocationName": "深圳",
+    "BGId": 956,
+    "BGName": "IEG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40001001",
+    "CategoryName": "技术",
+    "ProductName": "预算专用-Project W",
+    "Responsibility": "1.AI 原生玩法开发：使用 UE5/Godot 等引擎，结合生成式 AI 技术，负责 AI 原生玩法系统与相关组件的功能开发，支撑游戏设计的快速迭代与落地；\r\n2.基础系统构建：主导或参与 AI 游戏基础系统的开发与迭代，涵盖 Gameplay、AI 行为树、动画、物理、UI、网络等核心模块，探索 AI 与传统游戏系统的深度融合实践；\r\n3.工具链与生产管线优化：协同团队推进 AI 引擎工具与工作流的迭代改进，提升开发效率与代码质量，探索并落地 AI 原生游戏的生产管线；\r\n4.性能优化：持续关注项目版本的性能表现与质量标准，负责 AI 游戏场景下的性能分析与优化工作；\r\n5.团队协作：配合美术、策划团队高效协作，构建 AI 游戏生产管线与工作流，交付效果与性能俱佳的技术方案，并持续迭代改进，对产品最终体验负责。",
+    "Requirement": "1.计算机科学、人工智能或相关专业本科及以上学历；至少 2 年以上游戏客户端开发经验，有实际商业上线项目经验者优先；\r\n2.具备良好的编程习惯和代码风格，扎实的数据结构与算法功底；熟练掌握 C++，熟悉至少一种脚本语言（Python/Lua/TypeScript 等）；有 AI 编程工具使用经验、具备 AI 辅助协作实践者优先；\r\n3.熟练掌握 UE/Godot 等主流游戏引擎，在动画系统、3C（Character/Camera/Control）、AI 行为逻辑等某一领域有深入研究者优先；具备物理模拟、网络同步、场景管理等模块的深入使用与优化经验；\r\n4.有游戏客户端底层架构设计经验者优先（网络层、数据层、逻辑层、UI 架构等）；熟悉多平台游戏开发流程，对 AI 产品有浓厚兴趣、有 LLM 游戏产品实践经验者优先；\r\n5.学习能力强，自驱力强，责任心强；具备良好的沟通能力及团队协作意识，对游戏开发充满热情；具备较强的独立分析与解决问题能力。",
+    "LastUpdateTime": "2026年05月29日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2039987609761120256",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "1.有生成式 AI（LLM/AIGC）在游戏中的实际应用经验；\r\n2.熟悉 AI Agent、Prompt Engineering、Harness 等相关技术；\r\n3.有开源游戏引擎贡献或独立游戏开发经验。",
+    "ImportantItem": "",
+    "Introduction": "在腾讯，作为一位游戏客户端开发，你始终身处科技前沿，与同样具备满分热情的策划、美术等团队紧密协作，助力新世界的诞生、运作，持续打造极致体验。你可以善用自己的全局观察能力，不断打开技术视野，与靠谱的团队一起做出真正有趣的新事物。",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "一年以上工作经验"
+  }
+}

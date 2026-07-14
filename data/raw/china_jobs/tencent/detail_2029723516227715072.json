@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2029723516227715072",
+    "RecruitPostId": 118258,
+    "RecruitPostName": "和平精英-游戏客户端开发工程师（Gameplay）",
+    "LocationId": 1,
+    "LocationName": "深圳",
+    "BGId": 956,
+    "BGName": "IEG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40001001",
+    "CategoryName": "技术",
+    "ProductName": "和平精英手游",
+    "Responsibility": "1.负责UE4射击游戏的Gameplay玩法系统开发与相关技术攻坚；\r\n2.负责客户端玩法框架的设计、搭建与持续优化，提升游戏表现力和开发效率；\r\n3.负责游戏玩法系统及工具链的研发，配合策划、美术等角色，高效实现游戏功能，并对技术方案进行可行性评估与设计。",
+    "Requirement": "1.2年以上UE开发经验；\r\n2.熟练掌握C++/Lua，具备扎实的数据结构、算法及设计模式基础；\r\n3.熟悉UE引擎的GamePlay框架、网络同步、技能、动画、UI、资源管理等模块；\r\n4.热爱游戏事业，对射击游戏有深入的了解和热爱，关注用户体验，目标导向；\r\n5.擅长沟通协作，责任心强，能有效评估与跟进任务；\r\n6.学习能力强，有自驱力，能快速适应新技术和项目需求。",
+    "LastUpdateTime": "2026年06月29日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2029723516227715072",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "",
+    "Introduction": "",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "两年以上工作经验"
+  }
+}

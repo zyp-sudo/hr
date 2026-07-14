@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "1947255265967603712",
+    "RecruitPostId": 10002205,
+    "RecruitPostName": "Senior Researcher, Natural Language Processing",
+    "LocationId": 1401,
+    "LocationName": "伦敦",
+    "BGId": 956,
+    "BGName": "IEG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "",
+    "CategoryName": "",
+    "ProductName": "",
+    "Responsibility": "1. Responsible for NLP research and development including LLM reasoning, conversational agents, machine translation, part-of-speech tagging, sentence analysis and named entity recognition.\n2. Optimize existing online algorithms, develop efficient and reliable NLP solutions by combining business needs and data.\n3. Explore applications of NLP techniques and deep learning algorithms in games.\n4. Follow the latest developments in academia and industry and quickly apply findings in your work.\r\nWork Location: UK-London",
+    "Requirement": "1. Familiar with NLP fundamentals, with a strong understanding of statistical models, related machine learning principles, and experience working on NLP related projects.\n2. Proficient in at least one programming language, familiar with basic data structures and algorithms.\n3. Practical experience working with large language models (e.g., DeepSeel, Qwen, LLaMA), including model fine-tuning, instruction tuning, and evaluation. Familiarity with training optimization frameworks like DeepSpeed, FSDP, and LoRA is highly preferred.\n4. Experience using tools and frameworks such as LLaMAFactory, Hugging Face Transformers, LangChain, or OpenLLM for model deployment, serving, or pipeline development. Comfortable with using modern MLOps practices for NLP workflows.\n5. Demonstrated ability to publish research results in top-tier NLP conferences (e.g., ACL, EMNLP, NAACL, NeurIPS, ICLR) or practical contributions to open-source LLM/NLP projects is preferred.\n6. Comfortable with both classical (e.g., CRF, SVM) and deep learning approaches (e.g., Transformers, RNNs, CNNs, LSTMs, GANs). Deep understanding of transformer architectures, attention mechanisms, and distributed training techniques is a strong advantage.\n\n#LI-RL1",
+    "LastUpdateTime": "2025年07月21日",
+    "PostURL": "https://tencent.wd1.myworkdayjobs.com/Tencent_Careers/job/UK-London/Senior-Researcher--Natural-Language-Processing_R105817-1",
+    "SourceID": 4,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "",
+    "Introduction": "",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": ""
+  }
+}

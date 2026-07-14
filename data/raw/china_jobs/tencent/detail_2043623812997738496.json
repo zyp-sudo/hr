@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2043623812997738496",
+    "RecruitPostId": 119268,
+    "RecruitPostName": "J3-UE5微恐射击-UE5客户端开发（武器/3C）",
+    "LocationId": 1,
+    "LocationName": "深圳",
+    "BGId": 956,
+    "BGName": "IEG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40001001",
+    "CategoryName": "技术",
+    "ProductName": "CFH-手游APP",
+    "Responsibility": "1.负责游戏角色移动、控制、相机、动画及其关联业务的开发、扩展和维护工作；\n2.负责游戏中的武器、道具等模块相关技术的预研与落地，并跟进解决问题；\n3.参与游戏中相关模块的编辑器与工具链建设，并制定规划和优化性能等；\n4.参与引擎特性开发和技术预研，按需定制引擎功能。",
+    "Requirement": "1.熟悉UE开发，有2年及以上游戏客户端开发经验；\n2.熟练使用C++，熟悉TypeScript、Lua等脚本语言，计算机相关基础扎实；\n3.具备良好的沟通能力，优秀的学习能力，善于分析问题、解决问题；\n4.责任心强，对游戏技术有追求；\n5.有UE开发经验、FPS游戏开发经验者优先。",
+    "LastUpdateTime": "2026年04月23日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2043623812997738496",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "",
+    "Introduction": "",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "两年以上工作经验"
+  }
+}

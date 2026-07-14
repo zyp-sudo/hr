@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2066470357749116928",
+    "RecruitPostId": 120578,
+    "RecruitPostName": "《王者荣耀》游戏AI Bot算法研究员",
+    "LocationId": 8,
+    "LocationName": "成都",
+    "BGId": 956,
+    "BGName": "IEG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40001005",
+    "CategoryName": "技术",
+    "ProductName": "公共",
+    "Responsibility": "1.负责游戏AIBot技术的研究和落地，针对业务场景需求进行设计和优化，包括但不限于拟人化、多样化、协作等；\n2.参与MOBA或自走棋游戏AIBot项目，包括流程接入、特征开发、模型训练和调优（模仿学习或强化学习），提升玩家体验；\n3.跟进探索前沿Agent技术，并能够落地到游戏项目中，提高模型的研发效率和表现效果。",
+    "Requirement": "1.计算机、数学、人工智能等相关专业的硕士及以上学位，2年以上相关工作经验；\n2.具备游戏AI相关的模仿学习和强化学习算法开发经验，有实际落地的游戏AI项目或在公开比赛取得名次者优先考虑；\n3.熟练使用TensorFlow/PyTorch等至少一种深度学习框架，熟悉C++/Python编程语言和常用数据结构，熟悉Linux开发环境，掌握脚本语言；\n4.探索创新能力强，能够保持对前沿技术的跟踪，在ICML/NIPS/IJCAI/AAAI/ICLR/ICRA等顶会或期刊发表过学术论文者优先；\n5.热爱MOBA和自走棋游戏，良好的沟通能力，高度的责任心和团队合作精神，积极主动，乐于分享。",
+    "LastUpdateTime": "2026年06月26日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2066470357749116928",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "",
+    "Introduction": "渴望为世界带来新意的人，早已对描绘未来的“热词”不陌生——人工智能、机器学习、数据科学等等。腾讯始终在业界前沿不断探索，积极布局，并为优秀的你提供无限广阔的舞台。我们坚信科技的不断革新，最终能带来美好的、撼动人心的改变。",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "五年以上工作经验"
+  }
+}

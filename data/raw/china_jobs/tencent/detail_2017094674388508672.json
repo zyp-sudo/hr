@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2017094674388508672",
+    "RecruitPostId": 117647,
+    "RecruitPostName": "UGC游戏客户端开发工程师-Gameplay方向",
+    "LocationId": 1,
+    "LocationName": "深圳",
+    "BGId": 956,
+    "BGName": "IEG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40001001",
+    "CategoryName": "技术",
+    "ProductName": "生态赋能-其他(IEG)-轻游戏合集",
+    "Responsibility": "1.负责战斗模块的开发和性能优化，以及相关美术制作标准的制定；\r\n2.负责相关工具链的设计和开发，持续优化工作流；\r\n3.负责多种玩法系统与相关组件的开发，以支持游戏设计与送代；\r\n4.负责战斗模块的开发和性能优化，以及相关美术制作标准的制定；\r\n5.负责与策划、美术、服务器配合进行流程优化相关工具研发。",
+    "Requirement": "1.熟悉Unity，Unreal等至少一种3D引擎；\r\n2.熟练掌握C++和C#语言中至少其中一种；\r\n3.具备良好的算法和数据结构基础知识；\r\n4.Gameplay、网络同步、UI框架、工具链等某个游戏相关领域有一定深入的了解和积累；\r\n5.具有良好的团队合作精神，自我驱动力；\r\n6.有针对ue的移动端平台项目的工作经验；\r\n7.有多人在线游戏的开发经验。",
+    "LastUpdateTime": "2026年06月03日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2017094674388508672",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "1.深度参与 AI + UGC 方向的前沿项目探索与工程落地；\r\n2.与公司多个核心技术团队协同合作，共建底层能力与工具生态；\r\n3.提供充分的技术成长空间，鼓励技术创新与个人能力突破；\r\n4.具备竞争力的薪酬福利体系与完善的职业发展通道。",
+    "ImportantItem": "1.有 AI Coding 习惯，或具备 AI Agent / 自动化工具开发经验。",
+    "Introduction": "",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "五年以上工作经验"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2059851842304782336",
+    "RecruitPostId": 120255,
+    "RecruitPostName": "次世代UE5战术射击端游-游戏引擎",
+    "LocationId": 1,
+    "LocationName": "深圳",
+    "BGId": 956,
+    "BGName": "IEG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40001001",
+    "CategoryName": "技术",
+    "ProductName": "公共",
+    "Responsibility": "1. 负责UE引擎深度定制与二次开发，聚焦渲染管线、地形植被系统、TOD光照等核心模块优化，支撑开放世界高画质项目落地；\r\n2. 解决UE引擎实际项目痛点：优化CPU/GPU开销、内存占用、DrawCall数量，提升大场景加载效率与运行流畅度；\r\n3. 沉淀UE引擎开发规范与优化方案，协助团队排查引擎相关技术问题；\r\n4.跟踪UE新版本特性与行业前沿技术，推动引擎技术迭代，落地高性能渲染等优化方案。",
+    "Requirement": "1. 本科及以上学历，计算机相关专业，3年以上UE引擎二次开发经验，有大型开放世界/高画质游戏项目经验优先；\r\n2. 精通C/C++，扎实掌握数据结构、算法、计算机图形学，熟悉UE引擎核心架构与源码（UObject体系、渲染管线、Slate等）；\r\n3. 具备UE核心模块定制经验，尤其擅长地形/植被系统优化、TOD光照管线调整、渲染性能调优（DrawCall/合批/LOD优化）；\r\n4. 逻辑清晰，责任心强，具备良好团队协作与沟通能力，对游戏引擎技术有极致追求。",
+    "LastUpdateTime": "2026年07月02日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2059851842304782336",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "",
+    "Introduction": "在腾讯，作为一位游戏客户端开发，你始终身处科技前沿，与同样具备满分热情的策划、美术等团队紧密协作，助力新世界的诞生、运作，持续打造极致体验。你可以善用自己的全局观察能力，不断打开技术视野，与靠谱的团队一起做出真正有趣的新事物。",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "三年以上工作经验"
+  }
+}

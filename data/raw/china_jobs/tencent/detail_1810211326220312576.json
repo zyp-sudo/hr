@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "1810211326220312576",
+    "RecruitPostId": 106373,
+    "RecruitPostName": "云网络高级开发工程师",
+    "LocationId": 2,
+    "LocationName": "北京",
+    "BGId": 958,
+    "BGName": "TEG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40001001",
+    "CategoryName": "技术",
+    "ProductName": "",
+    "Responsibility": "1.负责腾讯云公网接入网关的架构设计和优化；\r\n2.负责云网关数据面的软件设计和开发；\r\n3.负责前沿技术预研和实现，引入业内先进的软硬件技术，提升网关产品的产品体验。",
+    "Requirement": "1.熟悉Linux操作系统，熟悉C/C++/go中的一种语言；\r\n2.熟悉 TCP/UDP/IP 协议。 有DPDK、Netmap，PFRING，网络协议栈开发经验者优先；\r\n3.有智能网卡、可编程交换机、FPGA开发经验者优先；\r\n4.热爱技术，勇于创新，追求极致。",
+    "LastUpdateTime": "2026年06月25日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=1810211326220312576",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "",
+    "Introduction": "在腾讯，后台开发工程师不仅是“又快又稳”的问题解决专家，更是生态共创者。你将与技术团队一同沉淀优质代码，让它成为我们共有的宝贵资产。在不同的业务场景和技术发展阶段，你的架构思维也将帮助更多协作团队拓展新的思考。我们也珍视你的挑战精神，同时欢迎你一起参与团队愿景、文化和产品方向的探讨。",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "三年以上工作经验"
+  }
+}

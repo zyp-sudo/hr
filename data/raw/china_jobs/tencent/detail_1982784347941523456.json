@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "1982784347941523456",
+    "RecruitPostId": 115600,
+    "RecruitPostName": "UE5资深Gameplay工程师-战斗方向",
+    "LocationId": 7,
+    "LocationName": "杭州",
+    "BGId": 956,
+    "BGName": "IEG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40001001",
+    "CategoryName": "技术",
+    "ProductName": "HI-端游-海外版",
+    "Responsibility": "1.基于UE引擎进行技能系统及玩法内容的研发；\r\n2.负责使用C++，Lua和蓝图开发前端游戏逻辑；\r\n3.配合策划和美术进行战斗手感和效果的优化；\r\n4.配合TD和工具程序进行技能编辑器开发；\r\n5.根据游戏玩法进行技术选型；\r\n6.对项目技能框架进行维护和扩展；\r\n7.对领域前沿保持跟进，针对需求做出最优选择。",
+    "Requirement": "1.三年及以上游戏战斗系统开发经验，深刻理解技能系统框架的实现，有主导开发经验，并且能独立负责性能优化工作；\r\n2.精通C++，能熟练使用主流开发引擎，有技能系统架构经验者优先；\r\n3.有ACT类型战斗系统开发经验者优先；\r\n4.熟练使用动画，特效等引擎各个模块；\r\n5.快速学习并掌握项目中使用的新技术， 有完整的MMO或者ARPG项目经验；\r\n6.对游戏开发充满热情，能够与他人良好配合、协作同时善于独立解决问题的能力；\r\n7.有lua脚本的项目完整经验者优先，有UE使用经验者优先。",
+    "LastUpdateTime": "2026年07月06日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=1982784347941523456",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "",
+    "Introduction": "",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "三年以上工作经验"
+  }
+}

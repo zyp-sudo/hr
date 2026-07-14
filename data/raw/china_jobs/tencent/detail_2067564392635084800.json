@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2067564392635084800",
+    "RecruitPostId": 120665,
+    "RecruitPostName": "腾讯云-TBDS大数据产品商业化负责人",
+    "LocationId": 1,
+    "LocationName": "深圳",
+    "BGId": 29294,
+    "BGName": "CSIG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40003001",
+    "CategoryName": "产品",
+    "ProductName": "腾讯云-大数据",
+    "Responsibility": "1. 商业化与市场拓展\n• 负责产品的商业化设计：定价策略、Package 组合、混合云 / 专有云 / 一体机多形态交付；\n• 构建产品 Go-to-Market 体系，包括定位、竞品分析、销售赋能材料、渠道与 ISV 合作。\n• 联动销售、解决方案、生态合作伙伴推进重点客户项目（金融、能源、政务、运营商、央国企），贡献收入与标杆案例；\n• 参与 RFP / POC / 投标，主导产品相关商务方案与技术澄清，推动订单转化；\n\n2. 产品规划与战略\n• 负责 TBDS / WeData 产品线中一个或多个核心模块（数据湖仓 / 实时计算 / 数据开发 / 数据治理 / AI for Data）的产品规划与路线图设计；\n• 深入洞察大数据与 AI 行业趋势制定差异化产品策略；\n• 规划并落地 Data × AI 融合能力：NL2SQL、Agent 化数据开发、智能数据治理、向量 / 多模态湖仓、RAG 数据服务等；\n• 基于客户、市场、技术三方输入，输出年度 / 季度产品 Roadmap，并对关键业务指标（ARR、活跃客户数、Gross Margin）负责。\n\n3. 需求与产品交付\n• 对接客户与一线团队，沉淀行业需求，输出高质量 PRD / 交互稿，主导产品需求评审；\n• 与研发、设计、测试、运维紧密协作，把控版本节奏、上线质量与 SLA；\n• 持续跟进产品数据（使用量、留存、转化、NPS），基于数据驱动迭代。",
+    "Requirement": "1.本科及以上学历，计算机、软件工程、数据科学、人工智能、数学 / 统计等相关专业优先；\n2.5 年以上 产品经理经验，其中 3 年以上 大数据 / 数据平台 / 数据库 / AI 平台类 To B 产品经验；\n3.深度理解大数据技术栈：Hadoop 生态（HDFS / Hive / Spark / Flink）、湖仓一体（Iceberg / Hudi / Delta / Paimon）、OLAP（StarRocks / Doris / ClickHouse）、数据集成（CDC / Kafka）等；\n4.熟悉 AI / 大模型相关产品形态：LLM 应用、RAG、Agent、向量数据库、MLOps / LLMOps 至少掌握其一；\n5.具备较强的商业化能力：熟悉 To B SaaS / PaaS 产品的定价、Package、GTM 打法，或有过直接贡献收入 / ARR 的经验。",
+    "LastUpdateTime": "2026年07月01日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2067564392635084800",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "1.强结果导向，有明确的业务数字目标感，能承压推动复杂项目落地；\n2.优秀的结构化表达与书面写作能力，能向 CXO 级客户清晰讲解产品价值；\n3.对技术保持好奇心，具备快速学习新领域（新引擎、新模型、新范式）的能力；\n4.具备端到端产品 Ownership，能够横向拉通研发、销售、方案、市场、生态等多方资源。",
+    "Introduction": "“用户为本，科技向善”，是写在每位腾讯产品人心中的一句箴言。在互联网浪潮中，大众的生活已被深刻地改变，如何为用户创造价值、创造怎样的价值，需要每位产品人花费更长时间去体会与探索。在这里，你将与同样关注细节、关注本质、关注美好的同事一道，开启你的创造性工作。",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "五年以上工作经验"
+  }
+}

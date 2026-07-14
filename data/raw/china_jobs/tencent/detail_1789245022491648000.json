@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "1789245022491648000",
+    "RecruitPostId": 105073,
+    "RecruitPostName": "UE微恐轻动作项目-资深系统策划",
+    "LocationId": 1,
+    "LocationName": "深圳",
+    "BGId": 956,
+    "BGName": "IEG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40003002",
+    "CategoryName": "产品",
+    "ProductName": "公共",
+    "Responsibility": "1.负责游戏局内外核心系统的规则设计、落地实现与版本迭代，包括但不限于异境搜集、局外养成、小队基地经营、赛季体系等；\n2.搭建局内战斗 × 局外经营的双循环结构，设计资源、成长、养成、社交等模块的正反馈链路；\n3.规划赛季、周常、月常等长线系统，保障微恐轻动作长期版本的复玩性与新鲜感；\n4.与程序、美术、UX、运营紧密协作，推动系统从方案评审到上线运营全过程；\n5.搭建系统评估与数据反馈机制，持续优化玩家留存、活跃与付费体验。",
+    "Requirement": "1.资深系统策划经验，完整经历过至少一款上线产品从立项到运营的全周期，有搜索撤离、合作PVE、模拟经营、MMO 等品类成功产品经验者优先；\n2.具备优秀的系统结构化与抽象能力，能够整体设计局内玩法与局外系统并形成完整循环；\n3.熟悉系统、数值、关卡与交互设计，对微恐轻动作品类下玩家动机与情绪曲线有自己的理解；\n4.具备较强的沟通协作与抗压能力，能跨模块、跨职能推动复杂系统落地；\n5.具备良好的产品审美，对商业化友好型系统与玩家体验的平衡有清晰判断。",
+    "LastUpdateTime": "2026年07月03日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=1789245022491648000",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "",
+    "Introduction": "",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "三年以上工作经验"
+  }
+}

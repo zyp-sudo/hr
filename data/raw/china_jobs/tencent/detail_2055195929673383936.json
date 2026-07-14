@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2055195929673383936",
+    "RecruitPostId": 120062,
+    "RecruitPostName": "元宝-LLM大模型推理工程师",
+    "LocationId": 1,
+    "LocationName": "深圳",
+    "BGId": 29294,
+    "BGName": "CSIG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40001001",
+    "CategoryName": "技术",
+    "ProductName": "元宝",
+    "Responsibility": "1.负责开发和优化大模型推理框架；\r\n2.主要通过GPU、CUDA性能优化的手段，结合线上实际情况，优化高性能LLM推理引擎；\r\n3.负责大模型训练和推理前瞻性技术架构的调研和引入，技术方案不限于子图匹配、编译优化、模型量化等。",
+    "Requirement": "1.本科及以上学历，计算机/电子/自动化/软件等相关专业，有AI工程优化经验的优先；\r\n2.熟练GPU的高性能计算优化技术，深入理解计算机体系结构，熟悉并行计算优化、访存优化，低比特计算等；\r\n3.具备丰富的基于CUDA的GPU性能优化经验；\r\n4.了解深度学习算法基本原理，熟悉神经网络基本架构和各算子计算方式，了解至少一种深度学习训练框架及其模型文件的解析，如PyTorch、TensorFlow；\r\n5.熟悉TensorRT-LLM、vLLM等，了解主流LLM模型，有LLM模型加速优化经验者优先。",
+    "LastUpdateTime": "2026年05月26日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2055195929673383936",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "",
+    "Introduction": "在腾讯客户端开发的字典里，“敏捷高效”与“精益求精”并不互斥，追求技术的深度是我们共同的信仰。希望你也能在足够广阔的平台上尽情的施展拳脚。",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "两年以上工作经验"
+  }
+}

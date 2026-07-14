@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2065266735434608640",
+    "RecruitPostId": 120542,
+    "RecruitPostName": "Project T UE5 客户端开发工程师（3C）",
+    "LocationId": 3,
+    "LocationName": "上海",
+    "BGId": 956,
+    "BGName": "IEG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40001001",
+    "CategoryName": "技术",
+    "ProductName": "Project T",
+    "Responsibility": "1.负责角色、输入控制、相机、移动物理、技能等模块的开发及相关技术预研；\r\n2.负责复杂地形下的 Locomotion 实现，如攀爬、跑酷等；\r\n3.负责引擎底层相关功能的开发与维护。",
+    "Requirement": "1.本科及以上学历，计算机科学或相关专业，具备 3 年以上 UE 引擎游戏开发经验；\r\n2.熟悉 C/C++，具备扎实的数学、数据结构和算法基础，熟悉常用设计模式；\r\n3.熟悉角色、输入控制、相机、移动物理、技能等相关模块；\r\n4.熟悉动画系统、GAS 等相关框架或底层架构；\r\n5.具备动画、3C 等 Gameplay 开发经验。",
+    "LastUpdateTime": "2026年06月30日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2065266735434608640",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "",
+    "Introduction": "在腾讯，作为一位游戏客户端开发，你始终身处科技前沿，与同样具备满分热情的策划、美术等团队紧密协作，助力新世界的诞生、运作，持续打造极致体验。你可以善用自己的全局观察能力，不断打开技术视野，与靠谱的团队一起做出真正有趣的新事物。",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "不限"
+  }
+}

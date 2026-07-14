@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2030951791377678336",
+    "RecruitPostId": 1228449353165217792,
+    "RecruitPostName": "WeChat - Cloud Engineer Intern 107004",
+    "LocationId": 1301,
+    "LocationName": "新加坡",
+    "BGId": 14129,
+    "BGName": "WXG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40001003",
+    "CategoryName": "技术",
+    "ProductName": "",
+    "Responsibility": "Business Unit\n\nWhat the Role Entails\nYou will support the reliability, scalability, and security of Tencent’s business-critical systems in a cloud-native environment:\n\nSystem Monitoring & Incident Response\na. Monitor production systems using tools like Prometheus/Grafana; identify and troubleshoot outages.\nb. Participate in on-call rotations to resolve real-time incidents (with mentor guidance).\n\nAutomation & DevOps Practices\na. Develop scripts (Python/Shell) to automate deployment, scaling, and recovery tasks.\nb. Assist in CI/CD pipeline optimization using GitLab, Docker, and Kubernetes.\n\nInfrastructure Optimization\na. Analyze system performance metrics; propose solutions to enhance reliability and cost efficiency.\nb. Support cloud infrastructure management (Tencent Cloud/AWS/Azure).\n\nCollaboration & Documentation\na. Work with cross-functional teams (Dev, Data, Security) to design SLOs/SLIs for critical services.\nb. Document system configurations, runbooks, and post-incident reports.\n\nWho We Look For\nCurrently pursuing a PhD or Master’s in Computer Science, AI, Machine Learning, or related fields\nStrong background in deep learning and machine learning fundamentals\nSolid programming skills in Python and PyTorch/JAX\n- Bachelor’s/Master’s in Computer Science, IT, or related fields (2026 graduation).\nOS: Linux/Unix system administration.\nScripting: Python, Shell, or Go.\nNetworking: TCP/IP, DNS, HTTP basics.\n\nCore Competencies:\n- Analytical problem-solving and passion for infrastructure technologies.\n- Ability to learn quickly in a fast-paced environment.\n- Bilingual Fluency in English & Chinese to deal with both HQ and International stakeholders (written and verbal)\n- Basic Mandarin communication skills are required to collaborate with China-based teams and access internal resources.\n- Experience with cloud platforms (Tencent Cloud, AWS, or Azure).\n- Familiarity with IaC tools (Terraform, Ansible) or observability stacks (ELK, Prometheus).\nKnowledge of containerization (Docker/Kubernetes).\nExperience with at least one of:\n- Vision–language models\n- Large language models\n- Video understanding/generation\n- Reinforcement learning or imitation learning\n- Strong problem-solving and research skills\nPublications at top conferences (CVPR, ICCV, NeurIPS, ICLR, ACL, etc.)\nExperience training large models or working with distributed systems\nExperience with multimodal datasets and evaluation benchmarks\nFamiliarity with:\n- Transformer architectures and scaling laws\n- Multimodal alignment (contrastive learning, instruction tuning)\n- Agent training (RLHF/RLAIF, planning, tool use)\n- Synthetic data generation or simulation environments\n- Experience with long-context training or memory mechanisms\n\nEqual Employment Opportunity at Tencent\nAs an equal opportunity employer, we firmly believe that diverse voices fuel our innovation and allow us to better serve our users and the community. We foster an environment where every employee of Tencent feels supported and inspired to achieve individual and common goals.\r\nWork Location: Singapore-CapitaSky",
+    "Requirement": "岗位要求详情请见上方岗位职责内说明",
+    "LastUpdateTime": "2026年03月09日",
+    "PostURL": "https://tencent.wd1.myworkdayjobs.com/Tencent_Careers/job/Singapore-CapitaSky/WeChat---Cloud-Engineer-Intern_R107004",
+    "SourceID": 4,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "",
+    "Introduction": "",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": ""
+  }
+}

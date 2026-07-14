@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2029837577405759488",
+    "RecruitPostId": 118285,
+    "RecruitPostName": "QQ-Agent产品经理",
+    "LocationId": 1,
+    "LocationName": "深圳",
+    "BGId": 29292,
+    "BGName": "PCG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40003001",
+    "CategoryName": "产品",
+    "ProductName": "QQ",
+    "Responsibility": "1.负责QQ Agent产品规划与迭代，构建以用户需求为中心的智能交互体验；\r\n2.深入理解用户场景，推动产品在消息提醒、好友状态感知、社交关系拓展等场景应用落地；\r\n3.结合用户行为与反馈，持续优化RAG、Tools、Memory等能力，提升Agent的精准性与个性化水平；\r\n4.协同算法、工程、设计等团队，高效推进产品方案从设计到上线的全过程。",
+    "Requirement": "1.本科及以上学历，3年以上产品经理工作经验，有AI Agent、大模型应用或智能助手类产品经验者优先；\r\n2.熟悉自然语言处理、意图理解、Agent架构等技术原理，有一定的技术理解能力；\r\n3.具备较强的逻辑思维与系统设计能力，能够将复杂场景转化为清晰的产品路径；\r\n4.有社交类产品或Agent相关项目从0到1落地经验优先。",
+    "LastUpdateTime": "2026年06月08日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2029837577405759488",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "",
+    "Introduction": "“用户为本，科技向善”，是写在每位腾讯产品人心中的一句箴言。在互联网浪潮中，大众的生活已被深刻地改变，如何为用户创造价值、创造怎样的价值，需要每位产品人花费更长时间去体会与探索。在这里，你将与同样关注细节、关注本质、关注美好的同事一道，开启你的创造性工作。",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "一年以上工作经验"
+  }
+}

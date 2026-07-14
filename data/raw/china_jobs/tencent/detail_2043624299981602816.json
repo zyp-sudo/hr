@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2043624299981602816",
+    "RecruitPostId": 119283,
+    "RecruitPostName": "J3-UE5微恐射击-3D武器",
+    "LocationId": 1,
+    "LocationName": "深圳",
+    "BGId": 956,
+    "BGName": "IEG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40002002",
+    "CategoryName": "设计",
+    "ProductName": "CFH-手游APP-国际版",
+    "Responsibility": "1. 负责写实枪械高低模、PBR贴图制作，还原原画，保障视觉与细节质量；\r\n2. 协同TA搭建材质体系，熟练用UE5调试资产，解决引擎内枪械相关问题；\r\n3. 跟进武器功能开发与资产落地，优化制作流程，保障局内外枪械表现；\r\n4. 全流程管理外包（需求/进度/品控），培养外包团队；协同上下游，确保资源合规统一、把控项目周期与质量。",
+    "Requirement": "1. 3年以上枪械开发经验，对枪械材质准确度有理解，精通写实枪械还原、硬表面流程及PBR规范；\r\n2. 具有较好的审美，能转译原画、补全枪械细节，可提供引擎枪械问题解决方案；\r\n3. 熟练使用Maya/ZBrush/SP/Plasticity等软件，且精通UE5引擎操作；\r\n4.善沟通具有团体合作意识，理解FPS核心体验，有外包管理、3A项目经验者优先。",
+    "LastUpdateTime": "2026年06月05日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2043624299981602816",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "",
+    "Introduction": "",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "三年以上工作经验"
+  }
+}

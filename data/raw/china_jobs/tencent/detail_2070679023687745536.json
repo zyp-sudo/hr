@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2070679023687745536",
+    "RecruitPostId": 120785,
+    "RecruitPostName": "腾讯安全-AI代码安全产品经理",
+    "LocationId": 1,
+    "LocationName": "深圳",
+    "BGId": 29294,
+    "BGName": "CSIG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40003001",
+    "CategoryName": "产品",
+    "ProductName": "基础安全-三部",
+    "Responsibility": "1.负责 CodeBuddy Security（企业级AI代码安全扫描产品）的产品规划与路线图制定，对标业界领先产品，构建差异化竞争力；\r\n2.主导产品功能设计与迭代，将大模型能力与 SAST 代码安全技术深度融合，设计高准确率、低误报的智能化代码安全检测与自动修复方案；\r\n3.持续跟踪AI代码安全领域的行业趋势与竞品动态，深入研究大模型在漏洞检测、安全审计等场景的前沿应用，输出竞品分析报告为产品演进提供决策依据；\r\n4.深入调研企业客户安全需求与开发流程，确保安全检测能力无缝融入 IDE、CI/CD、代码评审等开发者日常工作流，做到安全能力无感植入、风险预警精准触达；\r\n5.建立产品效果度量体系（漏洞检出率、误报率、修复采纳率等），配合GTM团队推动产品商业化落地与客户拓展。",
+    "Requirement": "1.本科及以上学历，计算机科学、信息安全、软件工程等相关专业，3年以上产品经理工作经验；\r\n2.熟悉软件安全开发生命周期（SSDLC），了解常见漏洞类型（OWASP Top 10、CWE）及代码安全检测技术（SAST/SCA/DAST）；\r\n3.熟悉主流编程语言（Java/Python/Go/JavaScript等）及开发框架，理解CI/CD流水线、代码托管平台（GitLab/GitHub）的工作机制；\r\n4.了解大语言模型（LLM）的基本原理与应用范式，对AI在安全领域的应用有独立思考；\r\n5.具备优秀的需求分析、产品设计和文档撰写能力，能独立完成PRD、产品原型和路线图规划；\r\n6.具备出色的跨团队沟通协调能力与严密的逻辑思维，能在复杂技术环境中推动多方共识。",
+    "LastUpdateTime": "2026年06月29日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2070679023687745536",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "1.有代码审计、漏洞挖掘、渗透测试实战经验，持有 OSCP/CISSP 等安全认证；\r\n2.有AI/大模型相关产品经验，参与过AI安全或AI辅助开发类产品的设计与落地；\r\n3.有 DevSecOps、开发者安全工具或企业级安全产品（WAF/NDR/EDR）的产品经验；\r\n4.有研发背景，深入理解软件开发流程和开发者工作习惯；\r\n5.有产品从0到1的完整经历，参与过产品发布与市场推广全过程；\r\n6.在安全工具、代码分析、AI安全等方向有开源项目贡献或技术影响力。",
+    "Introduction": "",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "五年以上工作经验"
+  }
+}

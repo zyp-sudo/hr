@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2045394107332984832",
+    "RecruitPostId": 119453,
+    "RecruitPostName": "海外业务反洗钱与合规运营",
+    "LocationId": 1,
+    "LocationName": "深圳",
+    "BGId": 958,
+    "BGName": "TEG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40003004",
+    "CategoryName": "产品",
+    "ProductName": "计费",
+    "Responsibility": "1.参与海外新产品及新业务的立项评审，精准识别风险点并输出合规优化建议，协同业务部门确保产品合规、稳健上线；\n2.负责对海外游戏点卡及充值类支付渠道进行持续性的合规管理，涵盖准入审核、定期巡检及异常风险事件的专项跟进；\n3.持续监测海外业务中的隐私合规风险，作为接口人对接集团法务及外部合规资源，协助组织并落地各项新产品数据隐私评审工作，定期开展内部合规抽查及验证，确保满足合规需要；\n4.牵头组织部门合规委员会的定期会议，负责议程筹备、记录，制定部门年度合规培训计划，并负责培训的组织落实、效果评估及后续合规要求的督办与闭环。",
+    "Requirement": "1.3年以上反洗钱，合规，数据隐私等领域工作经验；互联网行业优先；\n2.熟悉海外反洗钱、隐私监管标准及合规框架；\n3.具备一定技术理解力：能够理解数据流转、数据部署、SDK/Cookie 等基础技术逻辑，并能将法律合规要求转化为产品或技术可落地的方案；\n4.工作需要具备良好的英文读写能力，能够以英语处理海外监管政策研究、起草英文合规意见及业务邮件；\n5.工作细致严谨、有责任感，具备优秀的沟通与协调能力，能够有效推动跨部门合规项目的落实与督办。",
+    "LastUpdateTime": "2026年06月17日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2045394107332984832",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "",
+    "Introduction": "",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "三年以上工作经验"
+  }
+}

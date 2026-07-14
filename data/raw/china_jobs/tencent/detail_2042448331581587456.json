@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2042448331581587456",
+    "RecruitPostId": 119208,
+    "RecruitPostName": "OG项目组-UE5开放大世界(在研) -资深技术策划",
+    "LocationId": 1,
+    "LocationName": "深圳",
+    "BGId": 956,
+    "BGName": "IEG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40003002",
+    "CategoryName": "产品",
+    "ProductName": "Project OG-手游APP",
+    "Responsibility": "1.负责部分体验原型，工具原型的落地，搭建开发流程管线持续对工具、特性进行易用性测试和体验迭代；\n2.参与创新型游戏项目的原型设计，并将原型玩法进行模块化拆解，使其成为易用性、复用性较强的编辑器逻辑模块；\n3.协助策划与其他职能沟通和制定设计需求的技术解决方案；\n4.关注国内外前沿技术，尤其是AI相关技术的设计和应用，找到与游戏产品结合点，探索落地方案并转化到产品中。",
+    "Requirement": "1.3年及以上的技术策划，或关卡策划相关工作经验，有代码基础和脚本能力；\n2.至少熟练掌握一门脚本语言，如Lua，Python等，能独立完成工具或玩法原型的制作；\n3.熟悉UE5引擎， 有大世界相关项目经验优先；\n4.熟悉游戏制作管线，能够理解需求并创造性的解决问题；\n5.熟悉了解市面上各种编辑器的设计思路和设计原理；\n6.具备良好的沟通表达能力和较强的团队协作意识，有创新意识和较强的抗压能力。",
+    "LastUpdateTime": "2026年04月10日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2042448331581587456",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "",
+    "Introduction": "【腾讯游戏｜这一局，由你主导】\n腾讯游戏，致力于以顶尖技术创造丰富优质的游戏体验，用创新玩法点燃玩家情感共鸣，深度打磨每处游戏细节。加入我们，用创造力拓展游戏的边界，为用户创造高品质数字生活体验！",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "三年以上工作经验"
+  }
+}

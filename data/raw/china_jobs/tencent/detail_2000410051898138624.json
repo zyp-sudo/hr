@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2000410051898138624",
+    "RecruitPostId": 116609,
+    "RecruitPostName": "魔方工作室-《异人之下》动作TA",
+    "LocationId": 1,
+    "LocationName": "深圳",
+    "BGId": 956,
+    "BGName": "IEG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40002002",
+    "CategoryName": "设计",
+    "ProductName": "CA-端游",
+    "Responsibility": "1.负责与引擎技术组对接动作相关的需求，并完成相应功能验证；\r\n2.负责Unity中的资产设置、动画设置、物理设置、剧情编辑器和ik动作设置等工作；\r\n3.在Maya和Unity中实现动作相关流程的设计与开发。",
+    "Requirement": "1.熟悉游戏开发与制作的全流程；\r\n2.精通Maya绑定和动画模块，并具备Maya脚本开发能力；\r\n3.熟练掌握Unity引擎及其开发工具；\r\n4.熟悉C#语言和Python语言编程。",
+    "LastUpdateTime": "2026年06月17日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2000410051898138624",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "1.对图形原理有深入理解；\r\n2.熟悉Maya SDK的使用；\r\n3.拥有成熟游戏项目的开发经验。",
+    "Introduction": "",
+    "DepartmentIntroduction": "魔方工作室群（Morefun Studios）成立于2010年 ，腾讯IEG（互动娱乐事业群）四大工作室群之一。\n知名产品包括《火影忍者》《暗区突围》《洛克王国》《一人之下》《王牌战士》等。魔方以“创造一个时代的游戏记忆”为愿景，将“风骚、狂热、极致、专精”融入每一位魔方人心中，在动作、射击、开放世界RPG等多个游戏品类赛道持续探索开拓，致力于完成“创作令人惊叹的游戏”的使命！\n欢迎有脑洞、奇思妙想的你，欢迎敢于挑战权威和专业的你，欢迎拥有技术黑科技不断尝试突破的你，新生代的你们构成了魔方的每一个立体切面。满怀热枕！爱与梦想兼顾！在魔方，你可以成为任何你想成为的人。\n加入魔方，JUST MOREFUN！JUST YOU!",
+    "RequireWorkYearsName": "五年以上工作经验"
+  }
+}

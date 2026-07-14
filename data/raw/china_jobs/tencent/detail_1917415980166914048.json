@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "1917415980166914048",
+    "RecruitPostId": 111750,
+    "RecruitPostName": "引擎组开发技术美术",
+    "LocationId": 1,
+    "LocationName": "深圳",
+    "BGId": 956,
+    "BGName": "IEG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40001001",
+    "CategoryName": "技术",
+    "ProductName": "",
+    "Responsibility": "1.负责UE5画面渲染品质提升，结合前沿算法/工作流/性能，协同程序和美术进行效果落地；\n2.编写商业化Shader实现各种效果并协助美术落地；\n3.主动发现美术Pipeline中出现的问题，设计工作流效率提升方案，协同程序开发相关工具，提高美术工作流效率；\n4.跟进版本、工程，定位、解决相关产生的画面Bug，对游戏性能进行Profile，协助引擎程序进行性能优化；\n5.编写并维护技术文档，向美术团队推广新工具和经验实践。",
+    "Requirement": "1.至少3年以上游戏从业经验，具有优秀的美术基础和审美，熟悉美术各模块生产流程，熟悉常用美术工具；\r\n2.较好的编程功底，掌握C++或 C#，并且具备较强的编程学习能力；\r\n3.扎实的数学功底，熟练掌握各类常见的图形算法、渲染管线知识，精通Shader语言；\r\n4.熟悉常用Profiling工具，能够进行渲染问题定位和优化；\r\n5.具备工作管线视野，可以识别项目内的工作瓶颈并且提出可行的技术方案 具有强烈的技术好奇心，持续关注和探索游戏开发领域的前沿技术。",
+    "LastUpdateTime": "2026年06月18日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=1917415980166914048",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "",
+    "Introduction": "",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "三年以上工作经验"
+  }
+}

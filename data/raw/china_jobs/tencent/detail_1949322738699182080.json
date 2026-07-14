@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "1949322738699182080",
+    "RecruitPostId": 113679,
+    "RecruitPostName": "智能体-策略产品经理-CodeBuddy/WorkBuddy",
+    "LocationId": 1,
+    "LocationName": "深圳",
+    "BGId": 29294,
+    "BGName": "CSIG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40003001",
+    "CategoryName": "产品",
+    "ProductName": "腾讯云-Codebuddy-C端专用",
+    "Responsibility": "1.负责构建Coding Agent评估体系，建立多行业测试用例库，通过CI/CD报告及埋点数据持续监控效果；\r\n2.主导Prompt工程优化工作，开发垂直领域动态Prompt模板，迭代提示词策略，降低幻觉率并提升需求解析精度；\r\n3.进行工具链集成与效能提升，设计工具智能调度规则，提升工具执行成功率和效果；\r\n4.设计分层记忆管理机制，构建短期记忆与长期记忆，提升智能体应答效果，降低调用成本；\r\n5.优化多智能体协同流程，提升 Plan/Design/Coding Agent 的协作效率；\r\n6.备注：base地可选深圳/北京/上海。",
+    "Requirement": "1.具备技术理解深度，熟悉 Agentic Workflow设计及多智能体协作架构，掌握Prompt工程、RAG优化、联邦学习等关键技术，熟悉主流LLM，如Claude/Gemini/混元特性及局限；\r\n2.拥有垂直领域经验，1年以上AI开发者工具产品经验，主导过智能体调优项目；\r\n3.具备数据驱动能力，熟练通过A/B测试验证优化效果，运用漏斗分析定位失效根因；\r\n4.具备复杂场景抽象力，能将金融风控、高并发支付等业务需求拆解为原子化任务，转化为Agent可执行的逻辑链，如“购物车结算分步流程”的语义化回退机制；\r\n5.具备跨职能协同素养，高效联动算法团队，如模型微调、开发者体验组，如交互设计、企业解决方案专家，如私有化部署，推动调优策略快速落地。",
+    "LastUpdateTime": "2026年06月10日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=1949322738699182080",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "1.在同等条件下，通过腾讯云认证或取得同等资格认证的候选人，我们会优先考虑。",
+    "Introduction": "“用户为本，科技向善”，是写在每位腾讯产品人心中的一句箴言。在互联网浪潮中，大众的生活已被深刻地改变，如何为用户创造价值、创造怎样的价值，需要每位产品人花费更长时间去体会与探索。在这里，你将与同样关注细节、关注本质、关注美好的同事一道，开启你的创造性工作。",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "五年以上工作经验"
+  }
+}

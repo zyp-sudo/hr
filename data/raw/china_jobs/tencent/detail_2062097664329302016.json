@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2062097664329302016",
+    "RecruitPostId": 120373,
+    "RecruitPostName": "微信-视觉设计师-AIGC/模型美学方向",
+    "LocationId": 5,
+    "LocationName": "广州",
+    "BGId": 14129,
+    "BGName": "WXG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40002001",
+    "CategoryName": "设计",
+    "ProductName": "微信基础AI探索",
+    "Responsibility": "1.负责图像/视频生成大模型的美学标准制定、数据采集、模型调优与效果验收等工作；\r\n2.跟踪 AIGC 工具与视觉趋势，形成专业洞察与美学规范，推动模型美学能力持续优化；\r\n3.探索 AIGC 技术在业务场景中的创新应用，包括但不限于视频特效模板、直播礼物、互动内容等方向。",
+    "Requirement": "1.本科及以上学历，视觉设计、数字媒体、影视动画等相关专业背景优先；\r\n2.具备出色的审美能力，熟练使用主流 2D/3D 设计工具（如 PS、AI、AE、Figma 等）；\r\n3.对 AIGC 有浓厚兴趣，熟悉主流图像生成工具，具备 Prompt 优化、LoRA 训练、ComfyUI 工作流搭建等经验者优先；\r\n4.具备良好的自驱力、逻辑思维与跨团队沟通协调能力。",
+    "LastUpdateTime": "2026年06月15日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2062097664329302016",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "",
+    "Introduction": "设计，决定了用户体验的上限。在“一切以用户价值为依归”的腾讯，设计师们始终以开放、严谨的专业态度，持续传递设计的价值。加入我们，与极富想象力和专业能力的同事一起，探索体验，设计未来。",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "一年以上工作经验"
+  }
+}

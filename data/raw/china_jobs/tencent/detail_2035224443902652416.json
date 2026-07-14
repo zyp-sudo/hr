@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2035224443902652416",
+    "RecruitPostId": 118716,
+    "RecruitPostName": "边缘缓存引擎开发工程师",
+    "LocationId": 1,
+    "LocationName": "深圳",
+    "BGId": 958,
+    "BGName": "TEG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40001001",
+    "CategoryName": "技术",
+    "ProductName": "云架构平台",
+    "Responsibility": "1.负责边缘缓存引擎的性能优化与架构升级，挑战高并发、高吞吐下的磁盘 I/O 与磁盘管理极限；\r\n2.设计并实现配套的缓存刷新与预热系统，支撑业务对内容的实时更新与大并发回源需求；\r\n3.持续改进多级缓存架构，优化回源算法，提升缓存命中率与用户响应速度。",
+    "Requirement": "1.2 年以上互联网行业开发经验；\r\n2.熟悉文件系统、磁盘 I/O 调度或内存存储管理；\r\n3.有 CDN、Nginx 模块开发、ATS 或大型缓存系统开发经验者优先；\r\n4.具有云服务追求的极致风险意识，对线上风险有天然的敏感度。",
+    "LastUpdateTime": "2026年06月22日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2035224443902652416",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "",
+    "Introduction": "在腾讯，后台开发工程师不仅是“又快又稳”的问题解决专家，更是生态共创者。你将与技术团队一同沉淀优质代码，让它成为我们共有的宝贵资产。在不同的业务场景和技术发展阶段，你的架构思维也将帮助更多协作团队拓展新的思考。我们也珍视你的挑战精神，同时欢迎你一起参与团队愿景、文化和产品方向的探讨。",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "两年以上工作经验"
+  }
+}

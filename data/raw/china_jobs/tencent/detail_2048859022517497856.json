@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2048859022517497856",
+    "RecruitPostId": 119684,
+    "RecruitPostName": "技术美术-动画向",
+    "LocationId": 1,
+    "LocationName": "深圳",
+    "BGId": 956,
+    "BGName": "IEG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40002002",
+    "CategoryName": "设计",
+    "ProductName": "Project T",
+    "Responsibility": "1.配合程序开发和维护游戏动画系统，保持系统稳定，可扩展性强；\r\n2.梳理动画制作规范及要求，包括动捕流程，DanceCard，动画数据处理规范；\r\n3.熟悉游戏引擎，理解动画实现原理，能快速定位问题并帮助项目快速debug；\r\n4.帮助项目组提升动画质量，给出动画实现方案，并协调各方配合使效果最终落地；\r\n5.协助动画团队及开发解决GamePlay中所出现的动画问题。",
+    "Requirement": "1.5年以上游戏动画相关经验；\r\n2.精通UE引擎动画系统及状态机，并有充分实际运用经验，有完整项目经验优先考虑；\r\n3.熟悉游戏动画开发各流程，有游戏动画有良好的审美，有优秀动画作品的优先考虑；\r\n4.至少熟悉Maya，3dsMax，MotionBuilder中的一种，对游戏引擎动画模块有相关知识储备；\r\n5.优秀的沟通与合作能力。",
+    "LastUpdateTime": "2026年06月04日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2048859022517497856",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "1.具备3A项目经验；\r\n2.熟悉motion matching完整流程。",
+    "Introduction": "【腾讯游戏｜这一局，由你主导】\n用画笔创造玩家热爱的世界。在腾讯游戏，你将主导角色设计、场景搭建或风格定义，用扎实的美术功底与独特创意，打造真正触动人心的视觉体验。这里有成熟的技术支持、丰富的项目机会，你的作品将随国民级游戏走进亿万玩家视野。加入我们，让艺术真正“玩”出价值。",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "五年以上工作经验"
+  }
+}

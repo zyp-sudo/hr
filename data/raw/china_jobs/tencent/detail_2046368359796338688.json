@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2046368359796338688",
+    "RecruitPostId": 10002728,
+    "RecruitPostName": "Sr. LLM Application Engineer (AI Agents)",
+    "LocationId": 401,
+    "LocationName": "帕罗奥多",
+    "BGId": 29294,
+    "BGName": "CSIG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40001001",
+    "CategoryName": "技术",
+    "ProductName": "",
+    "Responsibility": "Business Unit\n\nWhat the Role Entails\nPlatform Architecture Design: Lead the design and development of Agent-native platforms tailored for R&D availability, environment governance, and AIOps; drive the implementation of generative AI technologies to solve complex engineering challenges.\nKnowledge Engineering: Build and maintain enterprise-grade vertical domain knowledge bases; implement advanced retrieval and integration strategies to empower intelligent agents with specialized domain expertise.\nAI Capability Center: Integrate Large Language Model (LLM) capabilities with internal toolchains and standardized APIs; encapsulate these into reusable intelligent components to establish a centralized AI capability hub, boosting overall R&D and operational efficiency.\n\nWho We Look For\nEducation: Bachelor’s degree or higher in Computer Science, AI, Software Engineering, or a related field.\nCore Experience: Proven experience in LLM application development, with a strong track record in AI Agent architecture or RAG system optimization.\nTechnical Expertise: Deep understanding of AI Agent paradigms, RAG optimization, and standardized tool-use protocols; familiar with the entire pipeline from data processing and vectorization to intelligent generation.\nProfessionalism: Passionate about driving business efficiency through AI; excellent autonomous learning skills, logical thinking, and cross-functional collaboration capabilities.\nPreferred Qualifications\nDomain Knowledge: Background in Cloud Computing, IaaS/PaaS, DevOps automation, or AI-driven R&D efficiency.\nCollaborative Design: Familiar with Multi-Agent System (MAS) design and standardized agent-to-agent communication protocols/orchestration frameworks.\nCommunity Contribution: Active contributor to open-source AI projects or a track record of high-quality technical publications in AI engineering.\nProduction Experience: Proven experience in leading or playing a key role in deploying production-grade AI Agent systems.\nLocation State(s)\nUS-California-Palo Alto\nThe expected base pay range for this position in the location(s) listed above is $145,100.00 to $273,200.00 per year. Actual pay may vary depending on job-related knowledge, skills, and experience.\nEmployees hired for this position may be eligible for a sign on payment, relocation package, and restricted stock units, which will be evaluated on a case-by-case basis.\nSubject to the terms and conditions of the plans in effect, hired applicants are also eligible for medical, dental, vision, life and disability benefits, and participation in the Company’s 401(k) plan. The Employee is also eligible for up to 15 to 25 days of vacation per year (depending on the employee’s tenure), up to 13 days of holidays throughout the calendar year, and up to 10 days of paid sick leave per year.\nYour benefits may be adjusted to reflect your location, employment status, duration of employment with the company, and position level. Benefits may also be pro-rated for those who start working during the calendar year.\n\nEqual Employment Opportunity at Tencent\nAs an equal opportunity employer, we firmly believe that diverse voices fuel our innovation and allow us to better serve our users and the community. We foster an environment where every employee of Tencent feels supported and inspired to achieve individual and common goals.\r\nWork Location: US-California-Palo Alto",
+    "Requirement": "岗位要求详情请见上方岗位职责内说明",
+    "LastUpdateTime": "2026年07月02日",
+    "PostURL": "https://tencent.wd1.myworkdayjobs.com/Tencent_Careers/job/US-California-Palo-Alto/Sr-LLM-Application-Engineer--AI-Agents-_R107336",
+    "SourceID": 4,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "",
+    "Introduction": "",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": ""
+  }
+}

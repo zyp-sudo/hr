@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2017980292505174016",
+    "RecruitPostId": 117678,
+    "RecruitPostName": "《王者荣耀》客户端开发工程师(AI方向)",
+    "LocationId": 8,
+    "LocationName": "成都",
+    "BGId": 956,
+    "BGName": "IEG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40001001",
+    "CategoryName": "技术",
+    "ProductName": "王者荣耀",
+    "Responsibility": "1.负责设计机器学习驱动的游戏 AI 智能体相关的全链路工程方案；\r\n2.负责机器学习驱动的游戏 AI 智能体相关的客户端局内战斗逻辑开发；\r\n3.负责机器学习驱动的游戏 AI 智能体相关的客户端局外系统开发；\r\n4.负责跟进游戏 AI 智能体相关的问题修复，及时响应外网线上运行情况。",
+    "Requirement": "1.有扎实的数学和算法基础，深入了解C++，C#, TS等多种语言特性，有较强编程能力和一定的软件架构能力；\r\n2.熟悉游戏客户端开发相关知识，熟悉Unity引擎，熟悉UE引擎；\r\n3.熟悉传统游戏AIBot框架，如行为树、GOAP等；\r\n4.熟悉网络游戏战斗同步的技术方案并有过相关经验；\r\n5.责任心强，善于沟通，对游戏前沿技术有热情，熟悉和热爱MOBA/棋类/大世界等各类游戏者优先；\r\n6.对监督学习、强化学习游戏Bot，或LLM相关知识熟悉者优先。",
+    "LastUpdateTime": "2026年06月08日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2017980292505174016",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "",
+    "Introduction": "在腾讯，作为一位游戏客户端开发，你始终身处科技前沿，与同样具备满分热情的策划、美术等团队紧密协作，助力新世界的诞生、运作，持续打造极致体验。你可以善用自己的全局观察能力，不断打开技术视野，与靠谱的团队一起做出真正有趣的新事物。",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "五年以上工作经验"
+  }
+}

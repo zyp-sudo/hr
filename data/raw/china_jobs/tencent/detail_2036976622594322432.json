@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2036976622594322432",
+    "RecruitPostId": 118841,
+    "RecruitPostName": " 大数据运维工程师(深圳)",
+    "LocationId": 1,
+    "LocationName": "深圳",
+    "BGId": 958,
+    "BGName": "TEG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40001001",
+    "CategoryName": "技术",
+    "ProductName": "大数据(数据计算平台部)",
+    "Responsibility": "1.负责腾讯大数据平台运维工作，通过设计、开发运维平台，解决运营过程中质量和效率问题；\n2.负责梳理现有服务流程、规范和存在的问题，并给出可行方案；\n3.负责前后端运营效率工具开发，包括但不限于：容量管理平台、DevOps、覆盖率、自动化、健康度等。",
+    "Requirement": "1.熟悉hadoop、Flink、Olap等大数据生态技术，有过集群搭建，运维，性能调优等经验，可以阅读组件源代码进行问题定位；\r\n2.熟练掌握一门以上编程语言（java/python/golang等）；\r\n3.精通linux或unix操作系统，及系统性能调优、故障处理；\r\n4.3年以上大数据运维或开发经验，有很好的故障排查能力，技术敏感度和风险识别能力。",
+    "LastUpdateTime": "2026年06月24日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2036976622594322432",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "",
+    "Introduction": "在腾讯，后台开发工程师不仅是“又快又稳”的问题解决专家，更是生态共创者。你将与技术团队一同沉淀优质代码，让它成为我们共有的宝贵资产。在不同的业务场景和技术发展阶段，你的架构思维也将帮助更多协作团队拓展新的思考。我们也珍视你的挑战精神，同时欢迎你一起参与团队愿景、文化和产品方向的探讨。",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "三年以上工作经验"
+  }
+}

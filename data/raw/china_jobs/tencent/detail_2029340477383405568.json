@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2029340477383405568",
+    "RecruitPostId": 118187,
+    "RecruitPostName": "腾讯云-云原生技术支持工程师for海外客户(成都/深圳/上海/北京）",
+    "LocationId": 8,
+    "LocationName": "成都",
+    "BGId": 29294,
+    "BGName": "CSIG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40003001",
+    "CategoryName": "产品",
+    "ProductName": "腾讯云-云原生",
+    "Responsibility": "1.理解海外客户的使用云原生产品的业务场景、使用习惯；\r\n2.为客户提供迁移方案，解决客户在TKE等云原生产品PoC测试、日常使用过程中的问题；\r\n3.与客户、销售、产研团队紧密配合，识别与把控项目风险，提升客户满意度，推动完善产品能力。",
+    "Requirement": "1.本科及以上学历，计算机相关专业，5年以上相关领域工作经验；\n2.熟练使用 kubernetes，熟悉 kubernetes 调度、监控、网络、存储等技术原理；\n3.有国内外大型公有云厂商的kubernetes产品使用经验为佳；\n4.有丰富的应用/大数据/AI 服务的容器化经验为佳；\n5.具有良好的沟通技巧，能熟练使用英语与客户沟通；\n6.工作自驱力强，善于持续学习和总结。",
+    "LastUpdateTime": "2026年07月03日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2029340477383405568",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "",
+    "Introduction": "“用户为本，科技向善”，是写在每位腾讯产品人心中的一句箴言。在互联网浪潮中，大众的生活已被深刻地改变，如何为用户创造价值、创造怎样的价值，需要每位产品人花费更长时间去体会与探索。在这里，你将与同样关注细节、关注本质、关注美好的同事一道，开启你的创造性工作。",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "五年以上工作经验"
+  }
+}

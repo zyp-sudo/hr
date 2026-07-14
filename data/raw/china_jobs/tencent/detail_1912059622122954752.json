@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "1912059622122954752",
+    "RecruitPostId": 111392,
+    "RecruitPostName": "语音合成算法工程师",
+    "LocationId": 2,
+    "LocationName": "北京",
+    "BGId": 29294,
+    "BGName": "CSIG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40001005",
+    "CategoryName": "技术",
+    "ProductName": "元宝",
+    "Responsibility": "1.负责语音合成的算法研发与落地，包括但不限于TTS前端、声学模型、声码器的算法实现和改进；\n2.推动语音合成技术在产品中落地，针对业务场景做算法调优和效果提升；\n3.追踪业界前沿的语音合成及相关技术，探索并储备新技术能力。",
+    "Requirement": "1.具有语音合成工作经验，语音、信号、计算机等相关专业背景或者项目经验 ；\n2.深刻理解TTS原理，理解相关技术，参与过前沿的语音合成技术算法研发和实际项目落地；\n3.熟练使用python,至少精通pytorch或者tensorflow其中之一的训练框架；\n4.熟悉使用C/C++语音，具有较强的算法实现和工程优化能力；\n5.具有较强的学习能力，能够快速掌握和应用新技术；\n6.具备良好的团队合作精神和沟通能力；\n7.有在顶级会议或期刊发表论文者优先；\n8.熟悉大模型、zeroshot语音合成等技术的优先。",
+    "LastUpdateTime": "2026年06月16日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=1912059622122954752",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "",
+    "Introduction": "渴望为世界带来新意的人，早已对描绘未来的“热词”不陌生——人工智能、机器学习、数据科学等等。腾讯始终在业界前沿不断探索，积极布局，并为优秀的你提供无限广阔的舞台。我们坚信科技的不断革新，最终能带来美好的、撼动人心的改变。",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "三年以上工作经验"
+  }
+}

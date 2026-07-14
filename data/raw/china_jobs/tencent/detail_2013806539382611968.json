@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2013806539382611968",
+    "RecruitPostId": 117418,
+    "RecruitPostName": "大数据产品经理（深圳/北京）",
+    "LocationId": 1,
+    "LocationName": "深圳",
+    "BGId": 958,
+    "BGName": "TEG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40003001",
+    "CategoryName": "产品",
+    "ProductName": "大数据(数据计算平台部)",
+    "Responsibility": "1.负责数据 Agent 方向产品规划，面向数据开发、数据分析、数据治理、数据运维等场景，设计智能化产品能力；\r\n2.梳理用户在找数、取数、写 SQL、建任务、查血缘、排障、指标理解等场景中的痛点，推动 Agent 化解决方案落地；\r\n3.设计自然语言驱动的数据工作流，包括意图理解、任务拆解、工具调用、结果解释、异常处理和用户确认机制；\r\n4.推动数据平台能力 Agent 化，将 SQL 查询、元数据、血缘、质量、调度、权限等能力封装为 Agent 可调用工具；\r\n5.与算法、研发、数据平台和业务团队协作，推动产品从方案设计、原型验证到线上落地，并持续优化产品效果；\r\n6.建立数据 Agent 的效果评估体系，关注任务完成率、准确率、采纳率、执行成功率和用户反馈闭环。",
+    "Requirement": "1.任职要求；\r\n2.年以上产品经理经验，有 AI 产品、数据产品、数据平台、BI、开发者工具或企业软件经验优先；\r\n3.熟悉数据开发、数据分析、SQL、指标体系、元数据、数据血缘、数据质量等基础概念；\r\n4.理解大模型、Prompt、RAG、Tool Calling、Workflow、Agent 等基本概念，了解 Agent 与普通问答产品的差异；\r\n5.具备复杂业务场景抽象能力，能够将数据工作流程拆解为可理解、可执行、可评估的产品方案；\r\n6.具备良好的技术沟通能力，能与算法、后端、前端、数据平台研发高效协作；\r\n7.结果导向，关注 AI 产品的真实可用性、准确性、稳定性和业务价值，而不仅是 Demo 效果。",
+    "LastUpdateTime": "2026年06月25日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2013806539382611968",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "",
+    "Introduction": "“用户为本，科技向善”，是写在每位腾讯产品人心中的一句箴言。在互联网浪潮中，大众的生活已被深刻地改变，如何为用户创造价值、创造怎样的价值，需要每位产品人花费更长时间去体会与探索。在这里，你将与同样关注细节、关注本质、关注美好的同事一道，开启你的创造性工作。",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "三年以上工作经验"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2043988683102777344",
+    "RecruitPostId": 119335,
+    "RecruitPostName": "腾讯云API-后台研发leader",
+    "LocationId": 1,
+    "LocationName": "深圳",
+    "BGId": 29294,
+    "BGName": "CSIG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40001001",
+    "CategoryName": "技术",
+    "ProductName": "腾讯云",
+    "Responsibility": "1.负责腾讯云API框架的系统建设、架构设计、功能开发和持续优化，建设高并发、低时延、高可用的平台；\r\n2.负责腾讯云API管理平台和工具的设计和研发，建设稳定易用的接入系统；\r\n3.负责云API研发团队的人才培养和日常管理工作。",
+    "Requirement": "1.8年以上公有云产品相关工作经验，对数据库、网络、容器、K8s等产品有深入的理解，具备公有云基础平台产品相关项目的开发经验者优先；\r\n2.精通云API相关核心技术，深入理解API设计原则（RESTful、GraphQL等），熟悉API网关、负载均衡、接口鉴权、限流熔断、灰度发布等核心组件的原理与实现，有大型API平台架构设计与落地经验，熟悉API标准化与生态化建设流程，能够搭建完善的API安全体系；\r\n3.有开源API相关项目贡献经验优先，或在API技术领域有行业影响力；\r\n4.有较好的沟通交流能力，善于主动思考和行动，乐于解决具有挑战性的问题。",
+    "LastUpdateTime": "2026年04月16日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2043988683102777344",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "1.在同等条件下，通过腾讯云认证或取得同等资格认证的候选人，我们会优先考虑。",
+    "Introduction": "在腾讯，后台开发工程师不仅是“又快又稳”的问题解决专家，更是生态共创者。你将与技术团队一同沉淀优质代码，让它成为我们共有的宝贵资产。在不同的业务场景和技术发展阶段，你的架构思维也将帮助更多协作团队拓展新的思考。我们也珍视你的挑战精神，同时欢迎你一起参与团队愿景、文化和产品方向的探讨。",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "八年以上工作经验"
+  }
+}

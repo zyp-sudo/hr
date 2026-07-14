@@ -1,0 +1,48 @@
+{
+  "generated_at": "2026-07-07T14:26:37+08:00",
+  "status": "ok",
+  "steps": [
+    {
+      "name": "etl",
+      "command": "C:\\Users\\周羿澎\\AppData\\Local\\Programs\\Python\\Python312\\python.exe scripts/etl_unify_jobs.py",
+      "returncode": 0,
+      "stdout_tail": "{\n  \"generated_at\": \"2026-07-07T14:26:32+08:00\",\n  \"input_files\": [\n    \"data\\\\collected_jobs.csv\",\n    \"data\\\\collected_job_skills.csv\",\n    \"data\\\\source_registry.csv\"\n  ],\n  \"output_files\": [\n    \"data\\\\etl\\\\unified_jobs.csv\",\n    \"data\\\\etl\\\\unified_job_skills.csv\",\n    \"data\\\\etl\\\\data_quality_report.csv\"\n  ],\n  \"unified_job_records\": 7178,\n  \"unified_skill_records\": 29309,\n  \"registered_sources\": 12,\n  \"registered_source_types\": [\n    \"ats_public_api\",\n    \"local_file_import\",\n    \"official_enterprise_api\",\n    \"official_enterprise_site\",\n    \"public_employment_service\",\n    \"public_job_board_api\",\n    \"remote_job_board_api\"\n  ],\n  \"active_sources\": [\n    \"apple_jobs\",\n    \"arbeitnow_public_api\",\n    \"google_careers\",\n    \"greenhouse_ats\",\n    \"remoteok_public_api\",\n    \"tencent_careers\"\n  ],\n  \"active_source_types\": [\n    \"ats_public_api\",\n    \"official_enterprise_api\",\n    \"official_enterprise_site\",\n    \"public_job_board_api\",\n    \"remote_job_board_api\"\n  ],\n  \"category_counts\": {\n    \"data_engineering\": 1616,\n    \"ai_algorithm\": 4572,\n    \"testing_quality\": 216,\n    \"design\": 149,\n    \"frontend_client\": 66,\n    \"product_operation\": 325,\n    \"other\": 54,\n    \"cloud_infra\": 96,\n    \"backend_engineering\": 36,\n    \"security\": 48\n  },\n  \"quality_rules\": {\n    \"base_score\": 100,\n    \"penalties\": {\n      \"missing_title\": 25,\n      \"missing_source_url\": 15,\n      \"missing_collected_at\": 15,\n      \"missing_published_at\": 10,\n      \"missing_city\": 5,\n      \"missing_company\": 5,\n      \"missing_origin_record_id\": 5,\n      \"short_responsibility\": 12,\n      \"short_requirement\": 12,\n      \"no_skill_hit\": 10,\n      \"duplicate_content\": 20,\n      \"unknown_source\": 10\n    },\n    \"levels\": {\n      \"A\": \">=85\",\n      \"B\": \"70-84\",\n      \"C\": \"55-69\",\n      \"D\": \"<55\"\n    }\n  }\n}\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "knowledge_graph",
+      "command": "C:\\Users\\周羿澎\\AppData\\Local\\Programs\\Python\\Python312\\python.exe scripts/build_knowledge_graph.py",
+      "returncode": 0,
+      "stdout_tail": "{\n  \"generated_at\": \"2026-07-07T14:26:35+08:00\",\n  \"input\": \"data\\\\etl\\\\unified_jobs.csv\",\n  \"outputs\": [\n    \"data\\\\kg\\\\nodes.csv\",\n    \"data\\\\kg\\\\edges.csv\",\n    \"data\\\\kg\\\\role_aliases.csv\",\n    \"data\\\\kg\\\\skill_trends.csv\",\n    \"data\\\\kg\\\\graph_versions.csv\"\n  ],\n  \"job_records_read\": 7178,\n  \"nodes\": 1769,\n  \"edges\": 6390,\n  \"role_aliases\": 6418,\n  \"trend_rows\": 7493,\n  \"versions\": 16,\n  \"entity_disambiguation\": [\n    \"Normalize role titles by removing seniority/recruitment modifiers.\",\n    \"Map aliases such as Java开发、Java工程师、后端开发 into canonical role nodes.\",\n    \"Keep data/kg/role_aliases.csv as auditable evidence for role merging.\"\n  ],\n  \"relationship_inference\": [\n    \"Infer role -> skill requires edges from extracted skill mentions.\",\n    \"Infer skill -> capability belongs_to edges from skill taxonomy.\",\n    \"Infer capability -> parent capability part_of edges from hierarchy rules.\"\n  ],\n  \"temporal_model\": [\n    \"Use monthly period from published_at, falling back to collected_at.\",\n    \"Write graph_versions.csv for versioned graph snapshots.\",\n    \"Write skill_trends.csv for queries like demand in the past N months.\"\n  ]\n}\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "architecture_exports",
+      "command": "C:\\Users\\周羿澎\\AppData\\Local\\Programs\\Python\\Python312\\python.exe scripts/export_architecture_artifacts.py",
+      "returncode": 0,
+      "stdout_tail": "{\n  \"generated_at\": \"2026-07-07T14:26:36+08:00\",\n  \"inputs\": {\n    \"unified_jobs\": \"data/etl/unified_jobs.csv\",\n    \"unified_skills\": \"data/etl/unified_job_skills.csv\",\n    \"kg_nodes\": \"data/kg/nodes.csv\",\n    \"kg_edges\": \"data/kg/edges.csv\",\n    \"skill_trends\": \"data/kg/skill_trends.csv\",\n    \"quality_report\": \"data/etl/data_quality_report.csv\"\n  },\n  \"counts\": {\n    \"jobs\": 7178,\n    \"skill_evidence\": 29309,\n    \"kg_nodes\": 1769,\n    \"kg_edges\": 6390,\n    \"skill_trends\": 7493,\n    \"quality_sources\": 6\n  },\n  \"outputs\": {\n    \"mysql_schema\": \"data/warehouse/mysql_schema.sql\",\n    \"mysql_load\": \"data/warehouse/mysql_load.sql\",\n    \"elasticsearch_ndjson\": \"data/warehouse/elasticsearch_jobs.ndjson\",\n    \"chroma_documents\": \"data/warehouse/chroma_documents.jsonl\",\n    \"neo4j_cypher\": \"data/warehouse/neo4j_import.cypher\"\n  },\n  \"notes\": [\n    \"CSV remains the local source of truth for the prototype.\",\n    \"MySQL, Elasticsearch, Neo4j and ChromaDB artifacts are generated for production migration.\",\n    \"Neo4j import uses a generic KG_RELATION type and stores the semantic relation in r.type.\"\n  ]\n}\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "deepseek_extraction",
+      "command": "C:\\Users\\周羿澎\\AppData\\Local\\Programs\\Python\\Python312\\python.exe scripts/deepseek_extract.py",
+      "returncode": 0,
+      "stdout_tail": "{\n  \"generated_at\": \"2026-07-07T14:26:37+08:00\",\n  \"mode\": \"dry_run\",\n  \"model\": \"rule_based\",\n  \"input\": \"data/etl/unified_jobs.csv\",\n  \"output\": \"data/ai/deepseek_extractions.jsonl\",\n  \"requested_records\": 30,\n  \"success\": 30,\n  \"failed\": 0,\n  \"notes\": [\n    \"Set DEEPSEEK_API_KEY to call the real DeepSeek API.\",\n    \"Without a key the script writes deterministic dry-run JSON so the pipeline remains runnable.\"\n  ]\n}\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "local_resume_parse",
+      "command": "C:\\Users\\周羿澎\\AppData\\Local\\Programs\\Python\\Python312\\python.exe scripts/parse_resume_local.py",
+      "returncode": 0,
+      "stdout_tail": "{\n  \"generated_at\": \"2026-07-07T14:26:37+08:00\",\n  \"mode\": \"local_only\",\n  \"input_count\": 2,\n  \"parsed_count\": 2,\n  \"output\": \"data/resumes/parsed_resumes.jsonl\",\n  \"ocr_engines\": {\n    \"paddleocr_importable\": false,\n    \"tesseract_cli\": false,\n    \"pdftotext_cli\": false\n  },\n  \"notes\": [\n    \"No resume content is sent to any remote API.\",\n    \"Text PDF and DOCX are parsed locally.\",\n    \"Images use local PaddleOCR first, then local Tesseract if installed.\"\n  ]\n}\n",
+      "stderr_tail": ""
+    }
+  ],
+  "outputs": [
+    "data/etl/unified_jobs.csv",
+    "data/kg/nodes.csv",
+    "data/warehouse/architecture_manifest.json",
+    "data/ai/deepseek_extractions.jsonl",
+    "data/resumes/parsed_resumes.jsonl"
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "1998589513475186688",
+    "RecruitPostId": 116501,
+    "RecruitPostName": "多媒体实验室-多媒体标准专家",
+    "LocationId": 1,
+    "LocationName": "深圳",
+    "BGId": 29294,
+    "BGName": "CSIG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40001005",
+    "CategoryName": "技术",
+    "ProductName": "多媒体实验室-标准",
+    "Responsibility": "1.研发新一代视频编解码算法；\r\n2.参加国际国内多媒体技术领域标准会议和标准制定；\r\n3.跟进行业前沿技术和标准发展动态。",
+    "Requirement": "1.熟悉视频编解码底层算法及标准，如H.265/H.266/AV1/AVS3等；\r\n2.扎实的数学、信号处理、信息理论基础；\r\n3.优秀的C/C++软件实现能力，有simd汇编优化经验，或多线程开发经验，或GPU加速开发经验等更佳；\r\n4.优秀的英文读写能力和交流能力；\r\n5.强自驱力和良好的团队协作能力。",
+    "LastUpdateTime": "2026年06月22日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=1998589513475186688",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "",
+    "Introduction": "渴望为世界带来新意的人，早已对描绘未来的“热词”不陌生——人工智能、机器学习、数据科学等等。腾讯始终在业界前沿不断探索，积极布局，并为优秀的你提供无限广阔的舞台。我们坚信科技的不断革新，最终能带来美好的、撼动人心的改变。",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "五年以上工作经验"
+  }
+}

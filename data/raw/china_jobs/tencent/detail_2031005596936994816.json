@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2031005596936994816",
+    "RecruitPostId": 118345,
+    "RecruitPostName": "微信-基础架构研发工程师-AI Infra方向",
+    "LocationId": 5,
+    "LocationName": "广州",
+    "BGId": 14129,
+    "BGName": "WXG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40001001",
+    "CategoryName": "技术",
+    "ProductName": "WXG公共",
+    "Responsibility": "1.负责大模型训练框架 GCore (外部开源项目名 WeChat-YATT) 的研发，支持文本、多模态等不同业务场景在预训练、SFT、RLHF、蒸馏等阶段的训练需求；\r\n2.持续优化 GCore 在做 RLHF 训练时的效率，结合具体业务优化 agentic rl 的效率；\r\n3.持续优化 GCore 在做 AIGC 训练（图生文、图生视频）时的性能，支持新算法的探索。",
+    "Requirement": "1.计算机相关专业，本科及以上学历，熟悉至少一门编程语言，善于通过编程解决实际问题；\r\n2.了解常见的深度学习训练框架（如Megatron，VeRL，FSDP) 以及推理框架（如 VLLM、SGLang）；\r\n3.具备良好的沟通能力和团队协作精神，积极主动，勇于接受挑战。",
+    "LastUpdateTime": "2026年06月08日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2031005596936994816",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "1.在ICPC/CCPC等算法竞赛中取得过良好成绩；\r\n2.熟悉一种以上的大模型训练或推理框架，如 Megatron，VeRL、VLLM、SGLang 等，在此之上做过深度的开发/优化；\r\n3.对大模型算法有较好的理解，能做算法和工程 co-design 的设计。",
+    "Introduction": "在腾讯，后台开发工程师不仅是“又快又稳”的问题解决专家，更是生态共创者。你将与技术团队一同沉淀优质代码，让它成为我们共有的宝贵资产。在不同的业务场景和技术发展阶段，你的架构思维也将帮助更多协作团队拓展新的思考。我们也珍视你的挑战精神，同时欢迎你一起参与团队愿景、文化和产品方向的探讨。",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "一年以上工作经验"
+  }
+}

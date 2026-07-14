@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2068952782483927040",
+    "RecruitPostId": 120691,
+    "RecruitPostName": "Project W-AI游戏工具策划",
+    "LocationId": 1,
+    "LocationName": "深圳",
+    "BGId": 956,
+    "BGName": "IEG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40003002",
+    "CategoryName": "产品",
+    "ProductName": "预算专用-Project W",
+    "Responsibility": "1.规划并优化现有的AI游戏开发工具流程；\r\n2.策划、记录并整合创意Demo，用于展示整个团队完成的任务成果；\r\n3.收集用户反馈和需求，分析使用场景，为产品方向提供洞察；\r\n4.探索AI游戏开发工具在未来更多的可能性，以及研究竞品和行业趋势；\r\n5.主导头脑风暴，探索新功能、解决设计挑战，并明确产品优化方向。",
+    "Requirement": "1.熟练使用大语言模型相关技术与工具，具备为游戏创作设计高效Prompt和AI工作流的经验；\r\n2.有AI辅助游戏开发经验（如Vibe Coding），并理解如何利用AI加速创作流程；\r\n3.理解Agentic AI系统，并具备将AI能力整合进游戏创作管线的方案设计经验；\r\n4.有使用专业游戏引擎及UGC平台进行游戏开发的经验，理解游戏系统、工作流程与制作管线；\r\n5.具备创造性与系统化思维能力，能够产出创新的游戏概念，并将设计愿景转化为可落地的实现方案。",
+    "LastUpdateTime": "2026年06月22日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2068952782483927040",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "",
+    "Introduction": "",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "三年以上工作经验"
+  }
+}

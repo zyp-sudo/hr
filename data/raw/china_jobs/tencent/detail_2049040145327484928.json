@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2049040145327484928",
+    "RecruitPostId": 119708,
+    "RecruitPostName": "腾讯安全-移动端安全研究工程师-Android 逆向方向",
+    "LocationId": 1,
+    "LocationName": "深圳",
+    "BGId": 29294,
+    "BGName": "CSIG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40001004",
+    "CategoryName": "技术",
+    "ProductName": "业务安全-二部",
+    "Responsibility": "1.负责 Android平台安全攻防研究，主要工作包括对APP/系统进行逆向分析、网络协议还原、漏洞挖掘，为业务提供安全能力支撑；\r\n2.对 Android App（含加固、混淆、反调试）进行静态 & 动态逆向分析；\r\n3.针对 HTTPS/TLS、自定义加密传输、WebSocket 等通信方式进行抓包与协分析；\r\n4.基于 Frida / Xposed / Magisk 等框架开发 Hook 工具及自动化逆向脚本；\r\n5.跟踪 Android 安全社区最新动态，复现 & 研究 CVE 及 1day/0day 漏洞；\r\n6.撰写清晰的技术分析报告。",
+    "Requirement": "1.扎实的 Android 系统底层原理，熟悉 AOSP 源码结构（Framework /Kernel 层）；\r\n2.精通 Android 逆向工具链：IDA Pro / Ghidra、jadx、frida、objection、adb 等；\r\n3.熟练阅读 ARM/ARM64 汇编；\r\n4.具备网络协议分析能力，熟练使用 Wireshark、Burp Suite、Charles、mitmproxy 等工具；\r\n5.能够还原 App 私有通信协议，包括自定义二进制协议、protobuf、私有加密算法等；\r\n6.熟悉常见加密算法（AES/RSA/ECDH 等）及其在协议中的应用，进行深度分析；\r\n7.具备 Java/Kotlin、C/C++、Python 编码能力，能自研逆向工具或脚本；\r\n8.熟悉常见加固方案及脱壳技术；\r\n9.有独立完成完整逆向分析项目的经验。",
+    "LastUpdateTime": "2026年04月28日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2049040145327484928",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "",
+    "Introduction": "相信你与所有腾讯安全人一样，都认为抵抗邪恶是一件极其热血的事。希望你与我们一起，守护用户的安全，守护产品的安全，守护科技向善的不变初心。",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "五年以上工作经验"
+  }
+}

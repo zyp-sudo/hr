@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2072512279961841664",
+    "RecruitPostId": 120889,
+    "RecruitPostName": "资深unity客户端工程师",
+    "LocationId": 3,
+    "LocationName": "上海",
+    "BGId": 956,
+    "BGName": "IEG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40001001",
+    "CategoryName": "技术",
+    "ProductName": "生态二方赋能-其他(IEG)-跳珠(逍遥游)",
+    "Responsibility": "1.负责系统组业务管理工作，包括任务拆解、排期评估、进度跟踪等等；\r\n2.负责系统组梯队建设，人才培养；\r\n3.基于AI重塑工作流，提升研发效率和质量；\r\n4.负责核心系统的架构设计和方案选型。",
+    "Requirement": "1.5 年以上 Unity 客户端开发经验，其中至少 2 年担任技术负责人或组长角色；\r\n2.至少完整参与过 1 款已上线或进入大规模测试阶段的 Unity 项目；\r\n3.有代码洁癖，重视命名规范、模块划分与接口设计，能推动团队持续改进工程质量；\r\n4.熟练应用AICoding，有丰富的实践经验；\r\n5.有技术判断力，敢于做决策。",
+    "LastUpdateTime": "2026年07月07日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2072512279961841664",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "",
+    "Introduction": "",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "八年以上工作经验"
+  }
+}

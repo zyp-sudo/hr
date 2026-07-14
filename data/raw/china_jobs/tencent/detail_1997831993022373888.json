@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "1997831993022373888",
+    "RecruitPostId": 116419,
+    "RecruitPostName": "视频系统软件开发工程师 (SDK)",
+    "LocationId": 1,
+    "LocationName": "深圳",
+    "BGId": 958,
+    "BGName": "TEG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40001001",
+    "CategoryName": "技术",
+    "ProductName": "自研芯片-云架平",
+    "Responsibility": "1.负责视频转码芯片SDK的核心模块开发与维护，包括但不限于FFmpeg Codec、Filter插件；\r\n2.与云业务团队紧密合作，理解并实现各类定制化视频处理需求；\r\n3.负责线上问题的定位、分析与解决，保障服务的稳定性和高效性；\r\n4.进行系统级性能分析与优化，持续提升转码服务的资源利用率和并发能力（整机路数）；\r\n5.参与SDK软件架构的设计与演进，确保代码的可维护性和扩展性。",
+    "Requirement": "1.扎实的编程基础：精通 C/C++，熟悉STL，有良好的数据结构与算法功底；\r\n2.深入的计算机系统知识：深刻理解操作系统原理（如进程、线程、内存管理、文件系统、用户态/内核态、系统调用）；\r\n3.熟悉底层交互：对计算机体系结构有基本认知，理解CPU、内存、Cache的工作方式，对软硬件如何交互有概念；\r\n4.熟练的工程工具：熟悉Linux/Unix开发环境，能熟练使用Shell（如Bash）、Python等脚本语言完成日常任务。熟悉Git进行版本控制；\r\n5.热爱解决挑战：对技术有热情，有很强的问题分析和解决能力，享受抽丝剥茧、定位并修复一个复杂问题的过程。",
+    "LastUpdateTime": "2026年06月08日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=1997831993022373888",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "1.有FFmpeg、GStreamer、WebRTC等开源多媒体框架的使用或二次开发经验；\r\n2.了解至少一种视频编码标准（如 H.264/AVC, H.265/HEVC）的基本原理；\r\n3.有Linux驱动或嵌入式系统开发经验；\r\n4.熟悉Makefile/CMake等构建系统；\r\n5.有使用gdb, perf, valgrind等工具进行程序调试和性能分析的经验；\r\n6.有积极的开源社区贡献或高质量的个人技术博客。",
+    "Introduction": "",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "三年以上工作经验"
+  }
+}

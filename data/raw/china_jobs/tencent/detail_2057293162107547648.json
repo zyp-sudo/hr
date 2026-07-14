@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2057293162107547648",
+    "RecruitPostId": 120166,
+    "RecruitPostName": "《天天酷跑》-动效设计师",
+    "LocationId": 3,
+    "LocationName": "上海",
+    "BGId": 956,
+    "BGName": "IEG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40002002",
+    "CategoryName": "设计",
+    "ProductName": "天天酷跑",
+    "Responsibility": "1.负责《天天酷跑》游戏内各类动效的设计与制作，包括但不限于角色技能特效、UI动效、场景过渡动画等；\r\n2.与运营、策划及程序团队紧密协作，根据需求实现高质量的动效表现；\r\n3.参与动效风格的定义与优化，确保动效与游戏整体美术风格和用户体验保持一致；\r\n4.持续优化动效性能，平衡视觉效果与资源消耗，提升游戏运行流畅度。",
+    "Requirement": "1.2年以上相关从业经验，擅长Q版卡通动效，有休闲游戏经验优先；\n2.具备较好的创新能力并对角色、特效以及UI动效有一定经验与见解；\n3.熟练掌握Spine、Cocos、AE，以及2D美术设计相关软件；\n4.学习能力强，对新技术和新工具保持敏感，能快速适应项目需求变化；\n5.责任心强，注重细节，具备良好的团队合作精神和抗压能力。",
+    "LastUpdateTime": "2026年06月30日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2057293162107547648",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "1.有大型知名游戏项目动效设计经验，作品集质量突出；\r\n2.熟悉动效性能优化技巧，有成功优化案例；\r\n3.熟悉Unity、3D软件为加分项。",
+    "Introduction": "",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "两年以上工作经验"
+  }
+}

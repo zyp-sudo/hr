@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2067452806960427008",
+    "RecruitPostId": 120647,
+    "RecruitPostName": "高性能网络技术方案架构师",
+    "LocationId": 1,
+    "LocationName": "深圳",
+    "BGId": 958,
+    "BGName": "TEG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40001003",
+    "CategoryName": "技术",
+    "ProductName": "DCN",
+    "Responsibility": "1.需求梳理：负责与业务团队的需求对接，分解网络产品功能，联合上下游团队推动网络需求落地；\r\n2.技术收益评估：负责关键网络技术的技术方案设计与PoC验证落地，与业务深度联合优化，完成业务收益的评估闭环；\r\n3.异构卡部署：负责异构GPU卡型的引入与通信性能相关的验收与调优，推动在业务训练/推理框架上的部署落地；\r\n4.技术探索：探索高性能网络新方向，制定网络技术方案，负责前期PoC验证、技术可行性和业务收益评估。",
+    "Requirement": "1.计算机/网络通信/软件工程或相关专业，硕士及以上学历，3年以上网络相关工作经验；\n2.熟悉高性能网络技术，包括RDMA（InfiniBand/RoCE）、智能网卡（SmartNIC）、DPU等硬件加速方案；\n3.熟悉AI训练/推理框架（PyTorch、TensorFlow等）的网络通信模型，熟悉分布式训练中的集合通信（NCCL/DeepEP）机制及性能优化方法；了解AI大模型训练/推理的端到端运行机制；\n4.具备良好的问题分析和解决能力，对前沿技术有强烈的学习兴趣和探索精神；\n5.具备良好的跨团队沟通协调能力和项目管理经验，责任心强；\n6.有异构GPU平台（NVIDIA/昇腾/AMD等）网络适配或性能调优经验者优先；\n7.有数据中心网络架构设计、网络产品化落地经验者优先。",
+    "LastUpdateTime": "2026年06月18日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2067452806960427008",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "",
+    "Introduction": "在腾讯，优秀的技术运营工程师始终赋能业务，关注技术运营的质量、成本、效率和安全。他们不仅是经验丰富的问题解决者，更是具有全局视角的架构师，通过自动化工具的建设，强力提升平台效能，助力业务发展。",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "三年以上工作经验"
+  }
+}

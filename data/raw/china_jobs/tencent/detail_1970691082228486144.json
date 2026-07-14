@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "1970691082228486144",
+    "RecruitPostId": 114991,
+    "RecruitPostName": "腾讯智能座舱-多模态/大语言模型算法专家",
+    "LocationId": 1,
+    "LocationName": "深圳",
+    "BGId": 29294,
+    "BGName": "CSIG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40001005",
+    "CategoryName": "技术",
+    "ProductName": "出行行业应用",
+    "Responsibility": "1.负责智能座舱领域多模态大模型的训练及优化，支撑车端部署，改善交互体验；结合行业需求，探索座舱领域全模态（图像、文本、视频、语音）大模型的完整训练链路，升级基座模型表现；\r\n2.参与智能座舱产品的核心算法研发，推动多模态大模型在座舱领域的应用落地，将大模型技术与业务需求结合，改善座舱产品交互体验；\r\n3.跟踪大模型前沿技术，理解实际业务需求，持续探索前沿技术与产业应用相结合的机会点；\r\n4.有效组织部门内/跨部门团队合作，确保相关技术方案的顺利实施。",
+    "Requirement": "1.硕士及以上学历，计算机、人工智能、数学等相关专业，3年及以上大模型/多模态/跨模态相关的算法经验；\r\n2.精通主流多模态或全模态大模型，主导或核心参与过多模态大模型项目优先；有行业落地案例或相关开源项目经验者优化；\r\n3.有声学、语音大模型等工作经历背景优先；\r\n4.具有优秀的基础算法、扎实的机器学习基础，在CVPR、ECCV、ICCV、NeurIPS、ICLR、ICML等顶级会议/期刊上发表论文者优先。",
+    "LastUpdateTime": "2026年06月02日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=1970691082228486144",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "1.具备汽车座舱交互解决方案实车落地和平台化交付经验优先；\r\n2.具有优秀的代码能力，在ACM/ICPC、NOI/IOl、Kaggle等比赛获奖者优先。",
+    "Introduction": "",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "五年以上工作经验"
+  }
+}

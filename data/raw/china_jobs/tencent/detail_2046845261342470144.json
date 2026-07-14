@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2046845261342470144",
+    "RecruitPostId": 119551,
+    "RecruitPostName": "腾讯视频-AI 产品经理",
+    "LocationId": 2,
+    "LocationName": "北京",
+    "BGId": 29292,
+    "BGName": "PCG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40003001",
+    "CategoryName": "产品",
+    "ProductName": "腾讯视频",
+    "Responsibility": "1.参与腾讯视频worksolo等产品工作，包括AI Agent、skill、AI交互体验等核心模块的产品设计与迭代；\n2.深入理解AI视频生成、Agent、多模态大模型等技术能力边界，将前沿AI能力产品化为普通创作者可用的功能；\n3.持续关注AI行业趋势，规划核心功能，快速运用AI工具推动产品落地与版本迭代，协同算法、工程、设计、运营团队，定义产品目标与里程碑，保障产品按期高质量交付；\n4.建立数据驱动的产品迭代机制，基于用户反馈与核心指标持续优化产品体验，提升AI工具的易用性与留存。",
+    "Requirement": "1.本科及以上学历，计算机、人工智能、数据科学等相关背景，3年以上产品经理经验，有AI/AIGC产品从业经历，AI创作工具（视频/图像/Agent/数字人等）项目经验优先；\n2.具备基础的AI产品素养，熟悉LLM、Diffusion、Agent框架、多模态模型、RAG等技术原理，能与算法及工程团队高效对话；\n3.有优秀的产品设计与交互能力，对用户体验有深刻理解，对C端产品细节有极高要求；\n4.具备从0到1的产品冷启动经验，能接受早期阶段高强度迭代节奏，有AI创作工具背景或个人是AI工具重度使用者优先。",
+    "LastUpdateTime": "2026年06月26日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2046845261342470144",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "",
+    "Introduction": "“用户为本，科技向善”，是写在每位腾讯产品人心中的一句箴言。在互联网浪潮中，大众的生活已被深刻地改变，如何为用户创造价值、创造怎样的价值，需要每位产品人花费更长时间去体会与探索。在这里，你将与同样关注细节、关注本质、关注美好的同事一道，开启你的创造性工作。",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "两年以上工作经验"
+  }
+}

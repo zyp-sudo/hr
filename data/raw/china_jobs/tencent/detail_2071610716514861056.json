@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2071610716514861056",
+    "RecruitPostId": 120803,
+    "RecruitPostName": "QQ 经典农场高级服务器开发工程师",
+    "LocationId": 1,
+    "LocationName": "深圳",
+    "BGId": 956,
+    "BGName": "IEG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40001001",
+    "CategoryName": "技术",
+    "ProductName": "NQF-手游小程序",
+    "Responsibility": "1.负责游戏特性开发，完成玩法/内容/活动等开发工作；\r\n2.负责游戏后端体系的维护工作，确保游戏服务器的稳定性和安全性，及时发现并处理问题，持续优化用户体验；\r\n3.参与团队的技术基础建设，持续优化架构、框架、组件、工具等基础设施。",
+    "Requirement": "1.熟悉 Linux 下的 go 服务器开发，有良好的代码品味；\r\n2.扎实的计算机基础，熟悉网络编程 / 操作系统 / 数据库 / 多线程等基础知识；\r\n3.高度的责任心，良好的沟通能力，开放进取的心态和团队合作精神；\r\n4.良好的分析解决问题能力，能快速定位解决外网问题；\r\n5.熟悉 go/grpc/k8s/istio, 有分布式/微服务架构实践经验优先。",
+    "LastUpdateTime": "2026年06月29日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2071610716514861056",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "",
+    "Introduction": "在腾讯，后台开发工程师不仅是“又快又稳”的问题解决专家，更是生态共创者。你将与技术团队一同沉淀优质代码，让它成为我们共有的宝贵资产。在不同的业务场景和技术发展阶段，你的架构思维也将帮助更多协作团队拓展新的思考。我们也珍视你的挑战精神，同时欢迎你一起参与团队愿景、文化和产品方向的探讨。",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "三年以上工作经验"
+  }
+}

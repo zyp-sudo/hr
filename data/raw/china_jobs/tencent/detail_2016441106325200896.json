@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2016441106325200896",
+    "RecruitPostId": 117590,
+    "RecruitPostName": "混元AI搜索算法工程师（北京/深圳）",
+    "LocationId": 2,
+    "LocationName": "北京",
+    "BGId": 958,
+    "BGName": "TEG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40001005",
+    "CategoryName": "技术",
+    "ProductName": "混元-模型算法",
+    "Responsibility": "1.AI 搜索架构升级：负责大模型驱动的 AI 搜索（AI Search）体系建设，利用 Agentic RAG 架构实现从简单问答到深度调研（DeepResearch）的演进；\r\n2.深度推理与规划：针对复杂搜索指令，设计并实现基于推理类模型的查询拆解、多步规划（Planning）与任务编排策略，提升系统处理复杂问题的能力；\r\n3.事实核查与去幻觉：建立可靠的事实核查（Fact-checking）机制，通过证据溯源、多源信息比对等手段，解决大模型在搜索场景中的幻觉问题，确保生成结果的真实性与权威性；\r\n4.长文本与信息合成：优化长上下文（Long Context）建模能力，实现多篇长文档的信息提取、冲突处理及深度摘要生成；\r\n5.前沿技术转化：探索推理类模型（Reasoning Models）在搜索Agent的落地，包括基于过程监督的思维链（CoT）优化及搜索反馈驱动的强化学习（RL）策略。",
+    "Requirement": "1.背景要求：计算机、数学或统计学相关专业硕士及以上学历，2 年以上 NLP 或搜索相关工作经验，有大模型实际项目落地经验者优先；\r\n2.算法深度：深入理解 Transformer 架构，熟悉 LLM 的全生命周期（预训练、SFT、RLHF/DPO）；精通 RAG 技术栈，对索引构建、检索策略、上下文压缩有深入研究；\r\n3.推理与 Agent 能力：熟悉推理类模型的训练或微调方法，了解如何通过数据工程提升模型的逻辑推理与长链条思考能力；熟悉主流的 Agent 框架（如 LangChain, LlamaIndex, AutoGPT 等）及其在复杂调研任务中的应用；\r\n4.底层技术功底：熟练掌握 PyTorch 等深度学习框架；了解分布式训练与高效推理优化技术；\r\n5.综合素质：具备优秀的数据敏感度与逻辑思维能力，能够从复杂的业务需求中抽象出核心技术挑战，对 AI 搜索的未来演进（如思考型搜索）有独到见解；\r\n6.软技能：极强的自驱力与求知欲，具备良好的团队沟通协作能力，英语阅读能力优秀。",
+    "LastUpdateTime": "2026年07月01日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2016441106325200896",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "",
+    "Introduction": "",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "五年以上工作经验"
+  }
+}

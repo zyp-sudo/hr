@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2046475999717257216",
+    "RecruitPostId": 119523,
+    "RecruitPostName": "魔方工作室-UE流程工具开发TA",
+    "LocationId": 1,
+    "LocationName": "深圳",
+    "BGId": 956,
+    "BGName": "IEG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40002002",
+    "CategoryName": "设计",
+    "ProductName": "SO-手游APP",
+    "Responsibility": "1.负责在Unreal引擎中进行美术工具插件/效果功能开发；\r\n2.负责在Unreal引擎中定位并解决美术功能bug；\r\n3.与其他TA模块配合, 共同提出项目效果方案与解决技术问题；\r\n4.与美术团队合作推动效果品质提升, 效率提升。",
+    "Requirement": "1.三年以上的Unreal Engine使用与开发经验, 熟渲染模块和性能Profile工具；\r\n2.精通UE编辑器工具开发, 插件编写，根据美术需求开发对应提效工具；\r\n3.有良好的图形学基础, 包括向量、几何、动画、渲染等方面的知识；\r\n4.根据项目开发中程策美的需求，维护与优化美术引擎资源工作流, 制定美术资源开发的技术规范，并与客户端开发/图形程序一起推动标准规范的落地和性能优化工作的展开；\r\n5.精通C++与Python编码；\r\n6.审美在线。",
+    "LastUpdateTime": "2026年06月10日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2046475999717257216",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "1.熟练使用多种DCC软件；\r\n2.熟练多种DCC软件的二次开发；\r\n3.了解Unreal动作模块；\r\n4.了解Unreal物理模拟模块；\r\n5.Unity美术工具/效果功能开发经验。",
+    "Introduction": "【腾讯游戏｜这一局，由你主导】\n用画笔创造玩家热爱的世界。在腾讯游戏，你将主导角色设计、场景搭建或风格定义，用扎实的美术功底与独特创意，打造真正触动人心的视觉体验。这里有成熟的技术支持、丰富的项目机会，你的作品将随国民级游戏走进亿万玩家视野。加入我们，让艺术真正“玩”出价值。",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "三年以上工作经验"
+  }
+}

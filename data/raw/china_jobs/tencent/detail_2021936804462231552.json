@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2021936804462231552",
+    "RecruitPostId": 117885,
+    "RecruitPostName": "微信输入法-AI 应用全栈开发工程师",
+    "LocationId": 5,
+    "LocationName": "广州",
+    "BGId": 14129,
+    "BGName": "WXG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40001001",
+    "CategoryName": "技术",
+    "ProductName": "微信读书",
+    "Responsibility": "1.推进微信输入法 AI 应用的开发和逻辑，探索云端推理、端云协同智能等技术方案，增强产品核心竞争力；\r\n2.负责微信输入法 iOS/Android/Mac/Windows 等多平台 Vibe Coding 开发，探索基于 harness engineering 的全新全栈开发模式；\r\n3.参与微信输入法客户端性能和稳定性建设，通过构建 agentic 的开发工具，提升团队研发效率，保障更好的软件质量。",
+    "Requirement": "1.计算机专业本科及以上学历，一年及以上客户端应用开发经验；\r\n2.熟悉 Objective-C / Swift / Java / Kotlin / C++ 等一种或多种开发语言，有扎实的算法、网络、数据结构基础；\r\n3.有良好的 Vibe Coding 开发习惯，能够通过 Vibe Coding 构建开发工具链，提升开发效率；\r\n4.有良好的工程素养，能够深入并且系统性解决问题，了解全栈开发范式。",
+    "LastUpdateTime": "2026年06月25日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2021936804462231552",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "1.有跨平台（C++、Rust）等开发经验者优先；\r\n2.对于 Vibe Coding 开发范式有深入了解和应用者优先。",
+    "Introduction": "在腾讯客户端开发的字典里，“敏捷高效”与“精益求精”并不互斥，追求技术的深度是我们共同的信仰。希望你也能在足够广阔的平台上尽情的施展拳脚。",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "一年以上工作经验"
+  }
+}

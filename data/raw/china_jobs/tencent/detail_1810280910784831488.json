@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "1810280910784831488",
+    "RecruitPostId": 106388,
+    "RecruitPostName": "混元AIGC算法研究员（文生图）（深圳/北京/上海））",
+    "LocationId": 1,
+    "LocationName": "深圳",
+    "BGId": 958,
+    "BGName": "TEG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40001005",
+    "CategoryName": "技术",
+    "ProductName": "AI",
+    "Responsibility": "1.通过内容（文本/图像/音频/3D模型等）生成模型的研究优化，解决目前算法在生成质量、多样性、可控性、生成效率等上的问题，并最终有效改善用户体验和生产效能，协助算法的产品化落地；\r\n2.从事图像生成、多模态大模型、小样本学习领域算法训练和优化；\r\n3.结合自有产品和业务需求，从 prompt优化、生成模型研发、adapter研发，性能加速等方面优化Α绘画，AI文字生成，Al视频生成等效果和体验，解决面向业务场景的应用和落地时的算法卡点问题；\r\n4.解决多模态生成模型的工业化部署问题，深入探索模型设计和优化的研发工作。",
+    "Requirement": "1.计算机、人工智能、数学等相关专业的全日制本科（优先），研究生及以上学历；\r\n2.具有扎实的计算机视觉或机器学习算法基础，有相关方向顶级论文者优先；\r\n3.熟练掌握机器学习和深度学习的基本原理，熟悉常见Α生成模型框架，包括 GAN、 VAE、VQGAN、Diffusion等；\r\n4.熟悉ControlNet， LoRA，Text Inversion等生成模型插件模型；\r\n5.熟悉多模态如 CLIP、ERNIE-ViL等 transformer跨模态表征模型，有NLP、多模态、ΑI生成模型等方向上实践经验优先；\r\n6.具备较强的学习能力、清晰的逻辑思维能力和出色的沟通能力，有强烈的好奇心；\r\n7.具备良好的团队合作、沟通能力。",
+    "LastUpdateTime": "2026年06月10日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=1810280910784831488",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "",
+    "Introduction": "",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "三年以上工作经验"
+  }
+}

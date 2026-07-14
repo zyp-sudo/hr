@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2028422699864457216",
+    "RecruitPostId": 118065,
+    "RecruitPostName": "魔方工作室-AI技术美术（美术向）",
+    "LocationId": 1,
+    "LocationName": "深圳",
+    "BGId": 956,
+    "BGName": "IEG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40002002",
+    "CategoryName": "设计",
+    "ProductName": "UC-手游APP",
+    "Responsibility": "1.负责搭建和探索前沿的AIGC工作流，推动相关技术落地美术生产；\r\n2.与美术和技术团队协作，训练模型，创作不同风格类型；\r\n3.对美术团队进行AIGC工具的指导、培训。",
+    "Requirement": "1.对游戏美术各模块有深刻的理解，了解游戏美术全流程，具备敏锐的美术洞察力；\r\n2.熟悉掌握机器学习的基本原理，了解主流、前沿AIGC算法；\r\n3.了解3D美术资产、3D动画AIGC的算法前沿方向；\r\n4.熟练使用工具, 包括ComfyUI，StableDiffusion WebUI等；\r\n5.在训练和创作中对Prompt调教，Model Finetune有一定经验；\r\n6.具备Python等编程语言的编码能力，能在工作流中对工具进行二次开发，提升生产效率。",
+    "LastUpdateTime": "2026年07月06日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2028422699864457216",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "",
+    "Introduction": "【腾讯游戏｜这一局，由你主导】\n用画笔创造玩家热爱的世界。在腾讯游戏，你将主导角色设计、场景搭建或风格定义，用扎实的美术功底与独特创意，打造真正触动人心的视觉体验。这里有成熟的技术支持、丰富的项目机会，你的作品将随国民级游戏走进亿万玩家视野。加入我们，让艺术真正“玩”出价值。",
+    "DepartmentIntroduction": "魔方工作室群（Morefun Studios）成立于2010年 ，腾讯IEG（互动娱乐事业群）四大工作室群之一。\n知名产品包括《火影忍者》《暗区突围》《洛克王国》《一人之下》《王牌战士》等。魔方以“创造一个时代的游戏记忆”为愿景，将“风骚、狂热、极致、专精”融入每一位魔方人心中，在动作、射击、开放世界RPG等多个游戏品类赛道持续探索开拓，致力于完成“创作令人惊叹的游戏”的使命！\n欢迎有脑洞、奇思妙想的你，欢迎敢于挑战权威和专业的你，欢迎拥有技术黑科技不断尝试突破的你，新生代的你们构成了魔方的每一个立体切面。满怀热枕！爱与梦想兼顾！在魔方，你可以成为任何你想成为的人。\n加入魔方，JUST MOREFUN！JUST YOU!",
+    "RequireWorkYearsName": "三年以上工作经验"
+  }
+}

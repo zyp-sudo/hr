@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2049397277746970624",
+    "RecruitPostId": 119729,
+    "RecruitPostName": "微信安全-后台开发工程师",
+    "LocationId": 5,
+    "LocationName": "广州",
+    "BGId": 14129,
+    "BGName": "WXG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40001001",
+    "CategoryName": "技术",
+    "ProductName": "微信APP基础体验",
+    "Responsibility": "1.负责微信安全风控策略平台设计、研发、部署、运营等工作，致力于给微信安全策略提供可靠稳定的运行底座；\r\n2.负责微信安全AI基建平台设计、研发、部署、运营等工作，并持续将业界优秀成果在微信安全系统中落地，为安全风控策略赋能。",
+    "Requirement": "1.本科及以上学历，计算机软件或相关专业；\r\n2.熟悉Linux开发环境，需要熟悉一门编译类语言（C++更好），熟练掌握常用算法和数据结构；\r\n3.具备海量服务系统经验或大型复杂系统架构经验者优先考虑；\r\n4.有AI-Infra相关开发经验者优先考虑；\r\n5.有LLM应用、RAG、AI-Agent等开发与调优相关经验者优先考虑。",
+    "LastUpdateTime": "2026年06月29日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2049397277746970624",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "1.成为微信安全团队的一员，共同打造最专业的微信风控后台服务；\r\n2.与优秀团队合作，提升自身技能，实现个人价值。",
+    "ImportantItem": "1.有成功打造过专业稳当的后台系统经验者优先；\r\n2.熟悉安全风控系统、基础安全组件、安全产品的研发和优化；\r\n3.有AI-Infra相关开发经验者优先考虑；\r\n4.有LLM应用、RAG、AI-Agent等开发与调优相关经验者优先考虑。",
+    "Introduction": "在腾讯，后台开发工程师不仅是“又快又稳”的问题解决专家，更是生态共创者。你将与技术团队一同沉淀优质代码，让它成为我们共有的宝贵资产。在不同的业务场景和技术发展阶段，你的架构思维也将帮助更多协作团队拓展新的思考。我们也珍视你的挑战精神，同时欢迎你一起参与团队愿景、文化和产品方向的探讨。",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "一年以上工作经验"
+  }
+}

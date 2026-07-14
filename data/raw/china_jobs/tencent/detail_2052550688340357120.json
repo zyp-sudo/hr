@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2052550688340357120",
+    "RecruitPostId": 119834,
+    "RecruitPostName": "预研风格化项目-资深战斗策划-（枪械向）",
+    "LocationId": 1,
+    "LocationName": "深圳",
+    "BGId": 956,
+    "BGName": "IEG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40003002",
+    "CategoryName": "产品",
+    "ProductName": "天天炫斗",
+    "Responsibility": "1.设计和制作枪械战斗玩法：包括射击规则、射击 3C、枪械定位、枪械改装与配件体系；\r\n2.在 UE5 中使用编辑器、脚本和蓝图配置落地枪械手感、弹道、后坐力和命中反馈，独立调试和迭代射击表现与特效；\r\n3.与角色战斗策划、关卡 / 系统 / 叙事策划配合，打磨整体射击战斗体验；\r\n4.带领多部门（美术 / 程序）协同特性组，推动从创意到最终实现的枪械生产过程；\r\n5.对自己及协作同事负责的内容进行 Bug 定位、解决与体验优化；\r\n6.支持和配合主策划完成所需工作。",
+    "Requirement": "1.作为核心成员完整参与过至少一款接近上线或已上线的 3A 品质射击游戏；\r\n2.对枪械射击手感有极强敏锐度，能有逻辑、清晰地分析射击表演的细节；\r\n3.3 年以上 3D 实时射击游戏的枪械设计经验；\r\n4.基础的枪械背景 / 叙事设定能力；\r\n5.熟练使用 UE4 / UE5，具备在引擎内独立动手开发内容的能力；\r\n6.能使用脚本语言在引擎内实现简单功能原型并排查脚本 Bug；\r\n7.理解用户，能通过数据分析用户体验并驱动设计；\r\n8.核心射击游戏玩家（玩过 10 款以上 3D 射击游戏超过 50 小时，其中一款超过 200 小时）；\r\n9.优秀的团队合作和沟通能力。",
+    "LastUpdateTime": "2026年05月19日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2052550688340357120",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "1.喜欢欧美题材加分；\r\n2.有出海经验加分。",
+    "Introduction": "",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "三年以上工作经验"
+  }
+}

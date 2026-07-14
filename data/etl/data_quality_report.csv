@@ -1,0 +1,7 @@
+﻿source_id,source_name,source_type,records,avg_quality_score,level_a,level_b,level_c,level_d,missing_title,missing_source_url,missing_collected_at,missing_published_at,missing_city,missing_company,missing_origin_record_id,short_responsibility,short_requirement,no_skill_hit,duplicate_content,unknown_source
+jobonline_public_employment_service,JobOnline Public Employment Service,public_employment_service,50000,99.31,49695,276,29,0,0,0,0,0,0,0,0,124,2296,0,277,0
+meituan_careers,Meituan Careers,official_enterprise_api,2318,97.69,2266,49,3,0,0,0,0,0,0,0,0,4,219,238,15,0
+tencent_careers,Tencent Careers,official_enterprise_api,2304,97.91,2281,19,4,0,0,0,0,0,0,0,0,3,345,19,23,0
+huawei_careers,Huawei Careers,official_enterprise_api,378,96.09,310,68,0,0,0,0,0,0,0,0,0,17,17,3,52,0
+national_college_student_employment_service,National College Student Employment Service,public_employment_service,100,72.14,5,43,52,0,0,0,0,0,0,0,0,95,68,83,0,0
+baidu_careers,Baidu Careers,official_enterprise_site,10,98.0,9,1,0,0,0,0,0,0,0,0,0,0,0,0,1,0

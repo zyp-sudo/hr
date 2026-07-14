@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2009144822585253888",
+    "RecruitPostId": 117128,
+    "RecruitPostName": "PUBG Mobile-游戏客户端开发工程师(AI 方向)-新星引力计划",
+    "LocationId": 1,
+    "LocationName": "深圳",
+    "BGId": 956,
+    "BGName": "IEG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40001001",
+    "CategoryName": "技术",
+    "ProductName": "PUBG Mobile-全球不分明细",
+    "Responsibility": "1.负责UE4 UGC平台中AIGC功能的集成与开发，涵盖3D模型、图片、音效等工具的接入；\n2.设计并封装AIGC玩法组件与资源处理管线，提升UGC内容创作效率；\n3.开发维护AIGC资源中心系统，管理和维护导入和AI生成内容；\n4.探索PCG与AIGC的技术结合，为玩法方向提供资源生成支持，参与技术架构设计与性能优化。",
+    "Requirement": "1.熟练掌握C++和Lua，具备扎实编程基础；\n2.1年以上游戏客户端开发经验，精通UE4引擎，有Unity或Cocos经验者优先；\n3.在Gameplay、引擎或工具开发方向有实践经验，有UGC/PCG/AIGC经验者优先；\n4.学习能力强，善于沟通，热爱游戏行业，能够承受一定工作压力。",
+    "LastUpdateTime": "2026年06月17日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2009144822585253888",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "1.参与AIGC在游戏UGC领域的前沿应用，塑造新一代内容创作方式；\n2.学习AI模型接入至资源管线优化的全链路技术，成长空间大；\n3.在大型UE4/5手游中应对AIGC性能与兼容性挑战，积累技术攻关经验。",
+    "ImportantItem": "",
+    "Introduction": "在腾讯，作为一位游戏客户端开发，你始终身处科技前沿，与同样具备满分热情的策划、美术等团队紧密协作，助力新世界的诞生、运作，持续打造极致体验。你可以善用自己的全局观察能力，不断打开技术视野，与靠谱的团队一起做出真正有趣的新事物。",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "一年以上工作经验"
+  }
+}

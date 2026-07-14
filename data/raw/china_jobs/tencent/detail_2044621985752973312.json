@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2044621985752973312",
+    "RecruitPostId": 119397,
+    "RecruitPostName": "《暗区突围》手游-UE4客户端开发工程师gameplay方向-新星引力计划",
+    "LocationId": 1,
+    "LocationName": "深圳",
+    "BGId": 956,
+    "BGName": "IEG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40001001",
+    "CategoryName": "技术",
+    "ProductName": "UAMobile-手游APP",
+    "Responsibility": "1.负责局内模式功能开发与相关技术预研；\r\n2.负责玩法框架与系统的开发；\r\n3.负责gameplay网络功能的优化；\r\n4.负责gameplay深度性能分析和优化。",
+    "Requirement": "1.本科或以上计算机科学相关专业；1年以上游戏开发经验；\r\n2.熟悉 C/C++，具备扎实的数学、数据结构和算法基础，熟悉常用设计模式；\r\n3.具备较强的玩法框架设计能力；\r\n4.熟悉3D游戏性能和内存优化；\r\n5.熟悉unlua基础框架；\r\n6.熟悉UE4引擎gameplay框架；\r\n7.熟悉UE4引擎网络、gc等基础框架；熟悉UE4的AI框架，有RL、LLM经验更好；\r\n8.责任心强，善于沟通；\r\n9.具备完整项目周期开发经验者优先。",
+    "LastUpdateTime": "2026年04月20日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2044621985752973312",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "",
+    "Introduction": "",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "两年以上工作经验"
+  }
+}

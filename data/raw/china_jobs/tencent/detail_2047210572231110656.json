@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2047210572231110656",
+    "RecruitPostId": 119584,
+    "RecruitPostName": "Project T-游戏关卡美术（UE5单机方向）",
+    "LocationId": 1,
+    "LocationName": "深圳",
+    "BGId": 956,
+    "BGName": "IEG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40002002",
+    "CategoryName": "设计",
+    "ProductName": "Project T",
+    "Responsibility": "1.关卡场景构建：根据关卡设计与艺术指导要求，独立完成高质量场景模型搭建、地形塑造、建筑结构与环境资产布局，负责场景中关键资产的低模拓扑、高模雕刻、UV拆分与贴图绘制，确保符合次世代平台性能与视觉标准；\n2.程序化模组开发与应用：运用程序化工具（如 Houdini、Substance Designer、Unreal Engine 蓝图/PCG 等）开发可复用的模块化场景生成系统，实现建筑、地形、植被、道路等资产的智能组合与变体生成；设计并实现参数化材质与程序化贴图流程，提升贴图制作效率与风格统一性；与技术美术（TA）和程序团队协作，优化程序化流程的性能与兼容性，确保在引擎中稳定运行；\n3.资源优化与标准化：制定并遵循美术资源规范，控制多边形数、贴图分辨率、实例化使用等，确保关卡在目标平台流畅运行；参与构建公司内部的程序化资产库与模组模板系统，推动美术生产流程工业化升级；\n4.跨部门协作：与关卡设计、技术美术、引擎程序紧密配合，将程序化方案落地到实际关卡中，支持大规模、高密度场景的快速迭代；参与美术风格探索与技术预研，持续提升项目整体视觉表现力与制作效率。",
+    "Requirement": "1.3年以上游戏行业经验，参与过至少一款已上线或深度开发的3A/次世代项目，有主机或PC平台经验优先；\r\n2.精通主流3D软件：Maya / 3ds Max / Blender、ZBrush、Substance Painter / Designer、Photoshop；\r\n3.熟练掌握 Unreal Engine 5 引擎场景编辑流程，熟悉材质系统、光照烘焙与LOD管理；\r\n4.具备程序化模组化制作经验，至少满足以下一项：使用 Houdini 实现场景资产的程序化生成或地形处理；\r\n5.在 Substance Designer 中构建复杂参数化材质网络；\r\n6.使用 Unreal PCG（Procedural Content Generation） 或蓝图系统实现模块化关卡构建；\r\n7.有自定义工具或脚本开发经验（Python、Mel、C++、Blueprint 等）者优先；\r\n8.扎实的PBR贴图绘制能力，熟悉次世代材质规范，能独立完成高精度材质与细节表现；\r\n9.良好的审美与空间感，对光影、构图、氛围营造有深刻理解；\r\n10.具备良好的沟通能力与团队协作精神，能承受高强度开发节奏。",
+    "LastUpdateTime": "2026年06月30日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2047210572231110656",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "",
+    "Introduction": "",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "三年以上工作经验"
+  }
+}

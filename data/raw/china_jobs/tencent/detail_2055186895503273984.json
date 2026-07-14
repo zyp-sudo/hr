@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2055186895503273984",
+    "RecruitPostId": 120056,
+    "RecruitPostName": "AI设计工程师",
+    "LocationId": 1,
+    "LocationName": "深圳",
+    "BGId": 29292,
+    "BGName": "PCG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40002001",
+    "CategoryName": "设计",
+    "ProductName": "应用宝",
+    "Responsibility": "1. 全流程产品定义：不局限于界面设计，深度参与或直接定义从0到1的产品构思。利用AI工具进行快速头脑风暴、用户洞察验证。\n2. 高审美与情感化设计：负责产品的视觉与体验设计，追求审美品味与情感共鸣。你设计的不仅是界面，更是用户与 AI 交互时的情绪体验。\n3. AI 驱动的原型开发：使用 AI Coding 工具直接将设计概念转化为可交互的高保真 Demo，能直接参与到研发工作中。\n4. 独立闭环：作为一个微型创新单元，成为Builder完成最小闭环。",
+    "Requirement": "1. AI 原住民心态：你是 AI的重度使用者，对 Prompt Engineering 有深刻理解，习惯用AI辅助思考和创造。\n2. 设计 x 技术 双修：审美层面：拥有好的视觉审美和对细节的偏执，熟悉现代 UI/UX 趋势；技术层面：具备 AI Coding 实战能力，配合AI工具实现复杂的交互逻辑和视觉效果。\n3. 产品思维与洞察力：具备极强的同理心，能敏锐捕捉用户未被言说的情感需求和痛点，并能将其转化为具体的产品方案。\n4. 极客精神与好奇心：对世界充满好奇，热爱新事物，对未知领域有强烈的探索欲。你不仅关注设计，也关注科技、人文、艺术的交叉点。\n5. 持续进化的学习者：AI 领域日新月异，你需要具备快速学习、自我迭代的能力，拥抱变化而非固守经验。",
+    "LastUpdateTime": "2026年06月09日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2055186895503273984",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "",
+    "Introduction": "设计，决定了用户体验的上限。在“一切以用户价值为依归”的腾讯，设计师们始终以开放、严谨的专业态度，持续传递设计的价值。加入我们，与极富想象力和专业能力的同事一起，探索体验，设计未来。",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "两年以上工作经验"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2070404615127613440",
+    "RecruitPostId": 120770,
+    "RecruitPostName": "微信读书产品部-AI 应用开发工程师",
+    "LocationId": 5,
+    "LocationName": "广州",
+    "BGId": 14129,
+    "BGName": "WXG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40001001",
+    "CategoryName": "技术",
+    "ProductName": "微信读书",
+    "Responsibility": "1.负责读书产品部新应用的全栈研发,推动 AI 能力在产品中的实际应用；\r\n2.负责读书产品部端侧框架的迭代与建设,探索并引入前沿端侧应用技术；\r\n3.负责基于 AI 的研发工作流搭建,沉淀团队 AI 辅助研发的最佳实践；\r\n4.参与团队技术基础设施建设,善用 AI 编码工具提升研发效率,持续优化端侧工程效能与业务体验。",
+    "Requirement": "1.本科及以上学历,计算机或相关专业;主动了解业界新技术并积极尝试应用；\r\n2.具备全栈开发能力,熟练使用 React、Vue 等一种或多种前端框架,或移动客户端（iOS、Android）相关开发经验；\r\n3.了解 Node.js、Golang 等后端技术;对网络和数据库有一定的理解和实践经验；\r\n4.熟练使用 AI 编码工具辅助开发,并能将其有效融入日常研发流程,显著提升开发效率与质量；\r\n5.有扎实的计算机基础,具备一定的算法思维；\r\n6.有良好的分析和解决问题的能力,有较强的责任心和主动性,能独立负责单一模块的全链路研发落地。",
+    "LastUpdateTime": "2026年07月03日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2070404615127613440",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "1.有 React Native、Flutter 等跨平台移动开发经验；\r\n2.有 LLM 应用开发经验(如 Prompt 工程、RAG、Agent 等)；\r\n3.有通过 AI 工具搭建自动化工作流或自定义 Agent 的实践经验。",
+    "Introduction": "",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "一年以上工作经验"
+  }
+}

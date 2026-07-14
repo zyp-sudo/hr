@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2009466235191971840",
+    "RecruitPostId": 117196,
+    "RecruitPostName": "《三角洲行动》技术美术（渲染方向）",
+    "LocationId": 1,
+    "LocationName": "深圳",
+    "BGId": 956,
+    "BGName": "IEG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40002002",
+    "CategoryName": "设计",
+    "ProductName": "ProjectD-手游APP",
+    "Responsibility": "1.负责画面渲染品质提升，Shader编写，并协同程序和美术进行效果落地；\r\n2.与图形开发团队紧密协作，实现场景，光照，特效，材质等渲染特性落地；\r\n3.提供技术支持和问题解决，协助美术和开发团队高效完成工作；\r\n4.编写并维护技术文档，向美术团队推广新工具和最佳实践，提升团队整体技术水平。",
+    "Requirement": "1.拥有2年游戏项目经验，对游戏开发流程有深刻理解；\r\n2.熟悉色彩和物理灯光相关知识，掌握PBR理论，能够实现高度逼真的光影效果；\r\n3.具备扎实的图形学基础和高等数学知识，能够解决复杂的渲染问题；\r\n4.熟悉实时渲染管线，对渲染性能有深入理解；\r\n5.熟练掌握GLSL, HLSL, CG等至少一门Shader编程语言，能够编写高效可维护的Shader代码；\r\n6.熟悉OpenGL ES及当前移动平台上的技术限制，能够针对移动平台进行优化；\r\n7.精通Unreal或Unity引擎的灯光渲染模块，能够充分利用引擎特性实现优质效果；\r\n8.有写实风格相关项目经验优先，能够把握写实风格的游戏画面特点；\r\n9.具备良好的书面和口头沟通能力，能够清晰表达技术问题和解决方案。",
+    "LastUpdateTime": "2026年06月08日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2009466235191971840",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "1.有成功上线的高品质游戏项目经验，能够展示出色的项目管理和技术实现能力；\r\n2.在图形渲染领域有深入研究和独特见解，能够提出创新性解决方案；\r\n3.具备PCG/工具/性能/管线搭建等其他模块的复合经验。",
+    "Introduction": "",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "两年以上工作经验"
+  }
+}

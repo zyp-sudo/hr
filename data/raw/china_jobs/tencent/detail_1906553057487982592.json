@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "1906553057487982592",
+    "RecruitPostId": 111117,
+    "RecruitPostName": "企业微信-AI应用后台开发工程师-RAG 方向（成都/北京）",
+    "LocationId": 5,
+    "LocationName": "广州",
+    "BGId": 14129,
+    "BGName": "WXG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40001001",
+    "CategoryName": "技术",
+    "ProductName": "企业微信SaaS",
+    "Responsibility": "1.负责企业微信AI应用的后台开发工作，通过大模型智能体服务企业用户，增强用户体验；\n2.协助业务团队进行LLM功能落地，丰富企业微信AI应用能力矩阵，增强企业微信AI应用功能体系；\n3.负责RAG流程各环节需求研发与性能调优；\n4.负责后台分布式高可用功能开发与性能优化。",
+    "Requirement": "1.计算机/人工智能相关专业，1年以上AI应用开发经验；\n2.具备良好的编程能力，精通C++，熟悉Python，有3年以上Linux/Unix后台开发工作经验；\n3.了解大模型相关技术原理与基础知识，具备RAG等相关开发经验；\n4.沟通能力强、良好的学习能力、团队协助能力，分析问题解决问题能力强，责任心强；\n5.对于探索前沿技术有热情，具备独立探索前沿技术的能力；\n6.拥有to B项目开发经验优先；\n7.该岗位支持base成都、广州、北京。",
+    "LastUpdateTime": "2026年06月24日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=1906553057487982592",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "",
+    "Introduction": "",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "三年以上工作经验"
+  }
+}

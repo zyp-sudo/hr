@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2070518520801832960",
+    "RecruitPostId": 120777,
+    "RecruitPostName": "AI数据中⼼⽹络运营⼯程师",
+    "LocationId": 1,
+    "LocationName": "深圳",
+    "BGId": 958,
+    "BGName": "TEG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40001003",
+    "CategoryName": "技术",
+    "ProductName": "AI",
+    "Responsibility": "1.⽹络运营保障：负责数据中⼼ RoCE ⽹络的⽇常运维，包括⽹络监控、告警处理、变更管理，保障⽹络⾼可⽤和低延迟；\n2.故障诊断与应急：主导⽹络故障的快速定位与恢复，尤其是 PFC Storm / PFC Deadlock、丢包、链路降级、拥塞；\n3.扩散等⽆损以太⽹典型问题的诊断处理；\n4.性能调优：根据业务负载特征，调整拥塞控制策略（PFC 阈值 / ECN 标记 / DCQCN 算法参数）、交换机 Buffer；\n5.策略（Headroom / Shared Buffer / α 值）、ECMP 负载均衡策略等，持续优化⽹络吞吐和延迟表现；\n6.容量规划：参与⽹络架构评审和容量规划，评估现⽹瓶颈，为扩容/新建集群提供技术⽅案；\n7.⾃动化运维：协同开发团队，推动⽹络运维⼯具和⾃动化平台的需求定义与落地，提升运维效率；\n8.⽂档与知识沉淀：建设⽹络运营知识库，输出最佳实践、故障案例库和操作⼿册。",
+    "Requirement": "一、基本要求\n1.计算机科学、通信⼯程、电⼦信息或相关专业本科及以上学历；2 年以上数据中⼼⽹络运维/运营经验；\n2.熟悉数据中⼼⽹络架构（Spine-Leaf / Clos / Fat-Tree），有⼤规模（千台交换机以上）⽹络运营经验优先。\n二、专业技能\n1.路由与交换：熟练掌握 BGP（eBGP/iBGP）、ECMP、VLAN、LACP / MLAG（M-LAG）等协议的原理与配置；\n2.RoCE ⽹络：理解 RoCEv2 协议栈、⽆损以太⽹设计原则，熟悉 PFC / ECN 机制与 DCQCN 算法参数调优；\n3.交换机操作：熟悉⾄少⼀种主流数据中⼼交换机平台（如 SONiC、Cumulus、NX-OS、EOS、CloudEngine）的配置与故障排查；\n4.⽹卡与驱动：了解 RDMA ⽹卡（如 NVIDIA ConnectX 系列）的基本配置，包括 QoS 映射、PFC 配置、固件升级等；\n5.监控与遥测：了解⽹络遥测技术（gNMI Streaming Telemetry、INT 带内遥测）及流采样（sFlow / NetFlow），能基于计数器与时序数据进⾏根因分析；\n三、能⼒素质\n1.较强的逻辑分析能⼒和故障排查思维，能在压⼒下快速定位复杂⽹络问题；\n2.良好的沟通协作能⼒，能与开发、架构、业务团队⾼效配合；\n3.责任⼼强，能接受 oncall 轮值，保障关键业务的⽹络可⽤性；\n4.持续学习意愿，关注业界 RoCE/⽆损⽹络/AI ⽹络的技术演进。\n",
+    "LastUpdateTime": "2026年06月29日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2070518520801832960",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "本岗位为 AI 基础设施核⼼⻆⾊，将深度参与 GPU 集群⽹络的全⽣命周期管理，从架构选型、部署交付到⽇常运营和持续优化。如果你热爱⾼性能⽹络技术，希望在 AI 浪潮中构建最坚实的底座，欢迎加⼊。",
+    "ImportantItem": "1.熟悉 OSPF / IS-IS、EVPN-VXLAN 等协议在通⽤数据中⼼⽹络中的应⽤；\n2.有 InfiniBand ⽹络运营经验，了解 Subnet Manager（OpenSM / UFM）、IB 拓扑管理和 IB 诊断⼯具；\n3.有 AI 训练集群（如 NCCL/HCCL 通信库）⽹络保障经验；\n4.熟悉交换芯⽚架构与 Buffer 模型（Pipeline / VOQ，深 / 浅 Buffer）；\n5.具备 Python/Shell 脚本能⼒，有⽹络⾃动化开发经验；\n6.持有 CCIE/HCIE/相关⼚商⾼级认证。",
+    "Introduction": "在腾讯，优秀的技术运营工程师始终赋能业务，关注技术运营的质量、成本、效率和安全。他们不仅是经验丰富的问题解决者，更是具有全局视角的架构师，通过自动化工具的建设，强力提升平台效能，助力业务发展。",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "两年以上工作经验"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2048294698493313024",
+    "RecruitPostId": 119649,
+    "RecruitPostName": "《王者万象棋》服务器开发工程师",
+    "LocationId": 8,
+    "LocationName": "成都",
+    "BGId": 956,
+    "BGName": "IEG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40001001",
+    "CategoryName": "技术",
+    "ProductName": "王者荣耀",
+    "Responsibility": "1.根据项目需求，负责游戏服务器端设计和开发工作，设计开发游戏系统以及基础架构系统；\r\n2.对系统的质量负责；\r\n3.对系统的稳定性、安全性、性能、热更新等方面负责。",
+    "Requirement": "1.热爱游戏，熟悉主流游戏类型实现方式；\r\n2.熟练使用C/C++/Go语言以及一些脚本；\r\n3.精通网络原理、网络编程；精通不同的分布式架构，熟练应对网络分区问题；\r\n4.熟练使用各种主流数据库；\r\n5.熟练掌握Linux操作系统；\r\n6.具有复杂模块的开发经验，能对其进行合理分层并落地，具有良好的代码风格和习惯；\r\n7.熟悉海量承载优化，有实际的性能热点分析和优化经验；\r\n8.对异步、时序、容灾有自己的思考和实践，能将异常处理融入工作习惯中；\r\n9.有工具思想，善于总结工作中的重复部分并将其工具化。",
+    "LastUpdateTime": "2026年07月06日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2048294698493313024",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "",
+    "Introduction": "在腾讯，后台开发工程师不仅是“又快又稳”的问题解决专家，更是生态共创者。你将与技术团队一同沉淀优质代码，让它成为我们共有的宝贵资产。在不同的业务场景和技术发展阶段，你的架构思维也将帮助更多协作团队拓展新的思考。我们也珍视你的挑战精神，同时欢迎你一起参与团队愿景、文化和产品方向的探讨。",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "一年以上工作经验"
+  }
+}

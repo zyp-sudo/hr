@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2067143717856395264",
+    "RecruitPostId": 120625,
+    "RecruitPostName": "火龙漫剧推荐算法工程师",
+    "LocationId": 2,
+    "LocationName": "北京",
+    "BGId": 29292,
+    "BGName": "PCG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40001005",
+    "CategoryName": "技术",
+    "ProductName": "腾讯视频",
+    "Responsibility": "1.负责火龙漫剧/视频业务的推荐与搜索技术研发（包含但不限于传统搜推、LLM4Rec、AI搜索、生成式推荐等），提升用户体验，用户消费与时长，用户转化与留存等核心业务指标；\r\n2.根据场景特点和产品定位，对全链路算法体系进行深度理解与优化，持续优化推荐/推荐算法；\r\n3.结合大模型技术，升级推荐技术，提升推荐效果，解决实际业务问题；\r\n4.紧跟学术界、工业界的前沿技术，结合实际的业务场景进行算法开发、落地，实现团队技术和业务的共同发展。",
+    "Requirement": "1.具备三年以上的推荐系统、广告系统或搜索引擎的算法研发经验，有推荐业务经验者优先；\r\n2.扎实的算法功底，熟悉LLM、NLP、CV、大模型领域相关技术，有过大模型推荐相关经验者优先，有过超大规模机器学习模型（如DNN、DeepFM、GNN等）改进推荐效果，且有设计迁移学习、多任务学习、强化学习等实战经验者优先；\r\n3.熟悉业界主流框架（如TensorFlow/PyTorch）及分布式计算工具（Hadoop/Spark），熟悉Go/C++开发高性能排序模块，有优化分布式系统性能，支撑亿级用户请求实战经验者优先；\r\n4.对数据敏感，具备良好的问题分析与解决能力，具备较强的自我驱动力，对解决挑战性问题充满热情；\r\n5.有较好的沟通能力、团队协作能力，积极主动，愿意接受挑战。",
+    "LastUpdateTime": "2026年06月23日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2067143717856395264",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "",
+    "Introduction": "渴望为世界带来新意的人，早已对描绘未来的“热词”不陌生——人工智能、机器学习、数据科学等等。腾讯始终在业界前沿不断探索，积极布局，并为优秀的你提供无限广阔的舞台。我们坚信科技的不断革新，最终能带来美好的、撼动人心的改变。",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "三年以上工作经验"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "1955099946202058752",
+    "RecruitPostId": 114084,
+    "RecruitPostName": "3D动作策略游戏《虚环》-引擎开发工程师- -Unity 性能优化方向",
+    "LocationId": 1,
+    "LocationName": "深圳",
+    "BGId": 956,
+    "BGName": "IEG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40001001",
+    "CategoryName": "技术",
+    "ProductName": "虚拟人星瞳",
+    "Responsibility": "1.优化客户端性能，如针对CPU、内存、功耗、IO等方面；\r\n2.针对游戏的性能瓶颈，给出可以量化的分析和解决方案；\r\n3.开发、维护性能工具，完善、拓展性能分析工具链，搭建完备的检测平台；\r\n4.定位、分析多平台适配兼容和闪退等问题；\r\n5.配合QA 挖掘新的测试方法，从各维度拓展测试深度；\r\n6.参与提高团队测试效率，发现项目问题并通过流程、工具等方式推进优化。",
+    "Requirement": "1.技术底子好, 对于技术有追求，良好学习能力；\r\n2.3年+的游戏开发相关经验, 热爱游戏, 有丰富的开发经验；\r\n3.具备扎实的编程和算法基础，熟练掌握C#、C++编程语言；\r\n4.熟悉Unity引擎，对于项目中优化工作的比重高，有源码改造经验优先；\r\n5.具备优秀的执行力和抗压能力，乐于主动反馈和积极思考。",
+    "LastUpdateTime": "2026年06月02日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=1955099946202058752",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "1.熟悉渲染性能与功耗优化加分；\r\n2.有商业或自研引擎源码开发经验加分；\r\n3.有渲染管线开发经验加分；\r\n4.有跨平台开发经验加分。",
+    "Introduction": "在腾讯，作为一位游戏客户端开发，你始终身处科技前沿，与同样具备满分热情的策划、美术等团队紧密协作，助力新世界的诞生、运作，持续打造极致体验。你可以善用自己的全局观察能力，不断打开技术视野，与靠谱的团队一起做出真正有趣的新事物。",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "三年以上工作经验"
+  }
+}

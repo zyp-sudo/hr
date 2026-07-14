@@ -1,0 +1,3 @@
+id,name,targetJobId,text
+resume-ai-001,AI Agent 示例简历,ai-agent-engineer,熟悉 Python 和大模型应用开发，做过 RAG 知识库、向量检索、工具调用和模型评测项目，负责流程编排和效果监控。
+resume-java-001,Java 后端示例简历,java-backend-engineer,三年 Java 后端经验，熟悉 Spring Boot、MySQL、Redis、微服务接口设计，参与过高并发服务改造和稳定性优化。

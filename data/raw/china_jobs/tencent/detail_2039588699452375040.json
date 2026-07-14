@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2039588699452375040",
+    "RecruitPostId": 1237086261251911680,
+    "RecruitPostName": "Data Science Intern 107259",
+    "LocationId": 1301,
+    "LocationName": "新加坡",
+    "BGId": 956,
+    "BGName": "IEG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40001005",
+    "CategoryName": "技术",
+    "ProductName": "",
+    "Responsibility": "About the Hiring Team\nLevel Infinite is Tencent’s global gaming brand. It is a global game publisher offering a comprehensive network of services for games, development teams, and studios around the world.\nWe are dedicated to delivering engaging and original gaming experiences to a worldwide audience, whenever and wherever they choose to play while building a community that fosters inclusivity, connection, and accessibility. Level Infinite also provides a wide range of services and resources to our network of developers and partner studios around the world to help them unlock the true potential of their games.\n\nWhat the Role Entails\nWe are looking for an Associate Data Scientist to help build AI-powered capabilities for our influencer marketing platform. This role focuses on turning data and machine learning into practical product features—from creator discovery and content understanding to campaign optimization and performance prediction.\nYou will work at the intersection of data science, product, and engineering, helping bring intelligent systems into real world use cases that drive measurable business impact.\n1. Applied AI & Model Development\nDevelop and deploy machine learning / AI models to enhance platform capabilities.\nWork on use cases such as: \nCreator segmentation and recommendation.\nCreator Content labeling and data analysis.\nCampaign performance prediction and optimization. \nAgentic Systems Developing.\n\n2. Problem Framing & Experimentation\nTranslate business and product problems into data science solutions.\nDesign experiments to validate hypotheses and measure impact.\nIterate on models based on performance, feedback, and real-world usage.\n\n3. Data Pipeline & Feature Engineering\nWork with data engineers to define and build scalable data pipelines.\nClean, process, and structure large datasets (creator data, content metadata, campaign performance).\nDesign meaningful features that improve model performance.\n\n4. Product Integration\nCollaborate closely with product managers and engineers to integrate models into the platform.\nEnsure models are production-ready, reliable, and scalable.\nContribute to API design, model serving, and inference workflows.\n\n5. Monitoring & Continuous Improvement\nTrack model performance using appropriate metrics (accuracy, precision, recall, business KPIs).\nMaintain documentation and ensure reproducibility.\n\nWho We Look For\nCore Values\nIntegrity – You prioritize correctness, transparency, and responsible use of data.\nGamer Native – You understand gaming ecosystems and player/content dynamics.\nPop Culture Fluent – You are familiar with creators, platforms, and digital trends.\nTech-Savvy – You are curious and hands-on with emerging AI technologies.\n\nTechnical Skills\nStrong foundation in machine learning and statistics.\nProficiency in Python and common ML libraries (e.g., PyTorch,scikit-learn).\nExperience with data processing (e.g., pandas, SQL).\nFamiliarity with LLMs, NLP, or recommendation systems is a strong plus.\nUnderstanding of model deployment (APIs, batch/real-time inference) is preferred.\n\nData & Product Thinking\nAbility to translate ambiguous business problems into data science solutions.\nStrong analytical thinking and hypothesis-driven approach.\nUnderstanding of how models create value in a product context (not just offline metrics).\n\nExecution & Collaboration\nAbility to work cross-functionally with product, engineering, and business teams.\nGood communication skills—able to explain complex models in simple terms.\nStrong ownership and ability to iterate quickly.\n\nNice to Have\nExperience in influencer marketing, advertising, or creator platforms.\nFamiliarity with social media data (e.g., YouTube, Twitch, TikTok ecosystems).\nExperience with embeddings, vector databases, or retrieval systems.\nBasic knowledge of data engineering or MLOps workflows.\n\nExample Projects You Might Work On\nBuild a creator discovery engine using embeddings + similarity search.\nDevelop a content understanding pipeline (tags, sentiment, brand safety).\nTrain a campaign ROI prediction model to guide budget allocation. \nIntegrate LLMs to improve tool efficiency and automate workflows.\n\nEqual Employment Opportunity at Tencent\nAs an equal opportunity employer, we firmly believe that diverse voices fuel our innovation and allow us to better serve our users and the community. We foster an environment where every employee of Tencent feels supported and inspired to achieve individual and common goals.\r\nWork Location: Singapore-CapitaSky",
+    "Requirement": "岗位要求详情请见上方岗位职责内说明",
+    "LastUpdateTime": "2026年05月06日",
+    "PostURL": "https://tencent.wd1.myworkdayjobs.com/Tencent_Careers/job/Singapore-CapitaSky/Data-Science-Intern_R107259-2",
+    "SourceID": 4,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "",
+    "Introduction": "",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": ""
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2054038136186650624",
+    "RecruitPostId": 119965,
+    "RecruitPostName": "UE微恐轻动作项目-资深技术美术（绑定方向）",
+    "LocationId": 1,
+    "LocationName": "深圳",
+    "BGId": 956,
+    "BGName": "IEG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40002002",
+    "CategoryName": "设计",
+    "ProductName": "预研产品-手游APP-Project Metro",
+    "Responsibility": "1.负责角色绑定、蒙皮及动画相关技术方案制定与落地；\n2.搭建并优化角色Rig系统、动画控制器及角色变形效果，保障项目角色表现品质；\n3.协助动画及角色团队解决制作流程中的技术问题，支持并优化3ds Max与Maya双端角色制作管线；\n4.负责绑定工具及自动化流程开发，提升团队整体制作效率；\n5.协同动画、角色及程序团队，推进角色动画相关功能在引擎内的最终落地。",
+    "Requirement": "1.计算机、美术或相关专业毕业，5年以上绑定TA相关工作经验；\n2.扎实掌握角色绑定、蒙皮及动画基础原理，具备丰富的角色形变优化经验；\n3.熟练使用3ds Max及Maya，具备完整双端角色绑定及动画流程开发经验；\n4.具备较强脚本开发能力，熟悉MaxScript、MEL、Python等相关开发语言；\n5.熟悉UE等主流引擎动画流程，对角色动画Pipeline有较深入理解。",
+    "LastUpdateTime": "2026年05月12日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2054038136186650624",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "",
+    "Introduction": "",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "三年以上工作经验"
+  }
+}

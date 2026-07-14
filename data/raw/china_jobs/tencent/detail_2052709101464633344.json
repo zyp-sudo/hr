@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2052709101464633344",
+    "RecruitPostId": 119862,
+    "RecruitPostName": "高级PS 框架研发工程师",
+    "LocationId": 2,
+    "LocationName": "北京",
+    "BGId": 953,
+    "BGName": "CDG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40001001",
+    "CategoryName": "技术",
+    "ProductName": "广告（广工）",
+    "Responsibility": "1.参与架构演进与落地：利用高性能存储、分布式计算等技术手段，参与新一代参数服务器架构重构，协助构建适配超大规模稀疏特征的底层能力，并结合业务需求协助制定解决方案；\r\n2.前沿技术跟踪与实践：跟踪行业内分布式存储（如 KV 引擎）、高性能网络（如 RDMA/NCCL）及存算一体等前沿技术并推动创新，完善参数服务器框架在复杂广告场景下的极致性能与高扩展能力；\r\n3.建设全链路量化评价体系：协助设计 Sparse 架构的性能、稳定性和资源利用率量化指标，通过数据挖掘系统瓶颈与架构风险，利用量化数据指导参数服务器策略迭代与架构升级。",
+    "Requirement": "1.深底层的工程素养：精通 C++/Python，具备深厚的系统编程功底，能够对内存管理、磁盘 I/O 及 CPU/GPU 算力进行极致的性能调优；\r\n2.分布式架构实战：熟悉大规模分布式存储系统或 Parameter Server 架构原理，有 RocksDB、FasterKV 或同类高性能 KV 存储引擎深度优化经验者优先；\r\n3.通信与算网优化：对高带宽、低延迟网络有深入理解，熟悉 RDMA、NCCL、UCX 等通信协议及框架，具备跨地域/跨机房大规模数据同步优化经验；\r\n4.加分项：有超大规模广告/推荐系统底层框架研发经验，或在 GPU 内存管理、算力调度领域有深厚积累者。",
+    "LastUpdateTime": "2026年05月19日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2052709101464633344",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "",
+    "Introduction": "在腾讯，后台开发工程师不仅是“又快又稳”的问题解决专家，更是生态共创者。你将与技术团队一同沉淀优质代码，让它成为我们共有的宝贵资产。在不同的业务场景和技术发展阶段，你的架构思维也将帮助更多协作团队拓展新的思考。我们也珍视你的挑战精神，同时欢迎你一起参与团队愿景、文化和产品方向的探讨。",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "三年以上工作经验"
+  }
+}

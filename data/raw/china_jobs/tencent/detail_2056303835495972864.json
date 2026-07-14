@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2056303835495972864",
+    "RecruitPostId": 10002778,
+    "RecruitPostName": "WXG - Data Scientist",
+    "LocationId": 1301,
+    "LocationName": "新加坡",
+    "BGId": 14129,
+    "BGName": "WXG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40001005",
+    "CategoryName": "技术",
+    "ProductName": "",
+    "Responsibility": "Business Unit\nWeiXin Group(WXG) is responsible for the construction and operation of the Weixin ecosystem and leveraging Weixin's open platforms such as Official Accounts, Mini Programs, Weixin Pay, WeCom and search function. WXG provides solutions and connectivity for intelligent upgrades across all industries. WXG is also responsible for the development and operation of QQ Mail, WeRead and other products.\n\nWhat the Role Entails\nExplore both qualitative and quantitative data sets, perform in-depth analysis to derive actionable insights, identify problems, and propose data-driven solutions for the WeChat ecosystem\nCollect large sets of structured and unstructured data from independent sources; clean, validate, and transform data to ensure accuracy, completeness, and uniformity\nDesign and maintain dashboards, reports, and automated data pipelines to support ongoing business monitoring and decision-making\nAnalyze data to identify patterns, trends, and anomalies, uncovering potential opportunities and/or threats to the WeChat ecosystem\nInterpret findings to discover solutions or opportunities and build story-boards to communicate insights to the business for action\nOwn and evolve the computer vision infrastructure, including building, optimizing, and maintaining CV model training/serving pipelines, evaluation frameworks, and related toolchains\nDevelop and deploy computer vision solutions (e.g., image/video understanding, OCR, content moderation, multimodal analysis) to address business needs across the WeChat ecosystem\nLeverage LLM-based approaches and other machine learning / deep learning techniques where appropriate to enhance analytical capabilities and support intelligent product features\n\nWho We Look For\nBachelor's degree or above in Computer Science, Artificial Intelligence, Mathematics, Statistics, Data Science, or a similar quantitative field\nHands-on experience with LLM application development (e.g., fine-tuning, RAG, Agent frameworks such as LangChain/LlamaIndex/AutoGen) is strongly preferred\nExperience with computer vision models (e.g., object detection, image classification, multimodal models) is a plus\nGood knowledge of Python; familiarity with C/C++ is a plus\nFamiliarity with mainstream deep learning frameworks (PyTorch, TensorFlow) and model deployment tools (e.g., Docker, FastAPI, TensorRT) is preferred\nExperience with vector databases (e.g., Milvus, FAISS, Pinecone) or data pipeline tools is a plus\nAbility to communicate complex technical ideas to non-technical stakeholders in a clear and accessible manner\nSelf-driven, innovative, and collaborative, with strong communication and presentation skills; able to bridge business and technical audiences\nFluency in both English and Mandarin to collaborate with international stakeholders and headquarters-based teams\n\nEqual Employment Opportunity at Tencent\nAs an equal opportunity employer, we firmly believe that diverse voices fuel our innovation and allow us to better serve our users and the community. We foster an environment where every employee of Tencent feels supported and inspired to achieve individual and common goals.\r\nWork Location: Singapore-CapitaSky",
+    "Requirement": "岗位要求详情请见上方岗位职责内说明",
+    "LastUpdateTime": "2026年05月18日",
+    "PostURL": "https://tencent.wd1.myworkdayjobs.com/Tencent_Careers/job/Singapore-CapitaSky/WXG---Data-Scientist_R107475-1",
+    "SourceID": 4,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "",
+    "Introduction": "",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": ""
+  }
+}

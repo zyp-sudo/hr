@@ -1,0 +1,31 @@
+{
+  "generated_at": "2026-07-07T14:26:36+08:00",
+  "inputs": {
+    "unified_jobs": "data/etl/unified_jobs.csv",
+    "unified_skills": "data/etl/unified_job_skills.csv",
+    "kg_nodes": "data/kg/nodes.csv",
+    "kg_edges": "data/kg/edges.csv",
+    "skill_trends": "data/kg/skill_trends.csv",
+    "quality_report": "data/etl/data_quality_report.csv"
+  },
+  "counts": {
+    "jobs": 7178,
+    "skill_evidence": 29309,
+    "kg_nodes": 1769,
+    "kg_edges": 6390,
+    "skill_trends": 7493,
+    "quality_sources": 6
+  },
+  "outputs": {
+    "mysql_schema": "data/warehouse/mysql_schema.sql",
+    "mysql_load": "data/warehouse/mysql_load.sql",
+    "elasticsearch_ndjson": "data/warehouse/elasticsearch_jobs.ndjson",
+    "chroma_documents": "data/warehouse/chroma_documents.jsonl",
+    "neo4j_cypher": "data/warehouse/neo4j_import.cypher"
+  },
+  "notes": [
+    "CSV remains the local source of truth for the prototype.",
+    "MySQL, Elasticsearch, Neo4j and ChromaDB artifacts are generated for production migration.",
+    "Neo4j import uses a generic KG_RELATION type and stores the semantic relation in r.type."
+  ]
+}

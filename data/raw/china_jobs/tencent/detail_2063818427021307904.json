@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2063818427021307904",
+    "RecruitPostId": 120428,
+    "RecruitPostName": "腾讯游戏-综合项目管理（AI方向）",
+    "LocationId": 3,
+    "LocationName": "上海",
+    "BGId": 956,
+    "BGName": "IEG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40003003",
+    "CategoryName": "产品",
+    "ProductName": "公共",
+    "Responsibility": "1.参与部门多个业务中心及项目的目标管理全过程，识别风险，并主动统筹协调内外部资源提升目标完成率；\r\n2.负责部门的相关流程制度建设，优化与落地，提升各类资源使用效率；\r\n3.结合游戏发行与运营等实际业务场景，探索AI在业务发展中的应用，推广，沉淀和迭代，通过AI专项等方式，实现AI助力业务价值提升和转化；\r\n4.完成领导交办的其他业务专项，与项目管理、AI落地相关的工作。",
+    "Requirement": "1.本科及以上学历，计算机/人工智能/项目管理等相关专业优先；\r\n2.具备2年以上游戏行业项目管理或AI相关工作经验；\r\n3.深度使用主流大模型，熟悉AI核心技术，了解AI在游戏研发、运营、发行等场景的应用场景，具备AI方案设计与落地能力；\r\n4.热爱游戏，有责任心，良好的沟通能力，主动执行力和团队协调能力。",
+    "LastUpdateTime": "2026年06月17日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2063818427021307904",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "1.有AI辅助开发、AI内容生成等专项落地经验；\r\n2.有搭建AI应用或Bot的经验，了解Agent编排与多Agent协作、RAG/知识库构建、MCP/Skill扩展体系、Rules与Memory机制等；\r\n3.AI落地方法论：有将AI能力嵌入实际业务流程的经验，能完成需求拆解→方案设计→验证迭代的全链路，关注ROI与成本优化（如Token效率）；\r\n4.有技术博客、开源项目或AI实践分享经历。",
+    "Introduction": "人的协作会带来无限可能。无论是公司技术的开源协同，全真互联的技术落地，还是用AI技术帮助听障人士，我们一个又一个的项目中，加深着人与人的协作。优秀的项目管理人员，善用科学的工具与方法，准确识别项目中的风险，预见未来的机会，持续优化团队协作，为成功打下基石！",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "两年以上工作经验"
+  }
+}

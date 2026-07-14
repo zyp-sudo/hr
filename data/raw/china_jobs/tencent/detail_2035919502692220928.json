@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2035919502692220928",
+    "RecruitPostId": 10002664,
+    "RecruitPostName": "Sr. Security Architect II",
+    "LocationId": 1,
+    "LocationName": "深圳",
+    "BGId": 62314,
+    "BGName": "Overseas Functional System",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40001004",
+    "CategoryName": "技术",
+    "ProductName": "",
+    "Responsibility": "What the Role Entails\n1. 架构规划与体系设计\n负责构建企业级 智能安全运营中心（AI-Driven SOC） 的总体架构设计与技术演进路线。\n规划并设计基于 SIEM + Data Lake + AI Agent 的安全数据分析与响应体系。\n构建统一的数据接入与治理框架，支持传统日志、云安全事件、威胁情报及非结构化数据（邮件、工单、情报报告等）。\n主导AI辅助分析、告警优先级自动评估、上下文聚合等智能化能力的落地。\n2. AI Agent 驱动的安全运营能力建设\n构建并管理多个安全AI Agent，包括：Detection Agent：基于规则、统计与LLM推理的复合检测引擎。\nInvestigation Agent：自动进行告警上下文收集、分析与事件归并。\nResponse Agent：与SOAR集成，实现自动化处置与工单交互。\nThreat Intel Agent：自动解读威胁情报、生成Sigma/YARA检测规则。\n设计 Agent协作框架，支持SOC分析师、AI模型、工具之间的联动。\n建立 AI Agent 与 SIEM/SOAR 平台（Elastic）的集成标准。\n引入 RAG、LangGraph 或 AutoGen 等技术提升威胁调查自动化程度。\n3. 数据与模型治理\n设计并实施安全数据湖（Security Data Lake / Lakehouse）架构（支持Iceberg、ES、Lance等格式）。\n建立特征向量索引（Vector DB）与Embedding策略，用于威胁相似性检索与上下文聚合。\n制定 Agent的安全治理策略，包括Prompt安全、模型审计、输出验证机制。\n开发异常检测、实体行为分析（UEBA）、威胁预测等ML/LLM模型。\n设计并实现多源安全数据（防火墙、M365/O365 审计、EntraID 日志等）的 ETL/ELT 流程\n制定数据质量监控体系，确保ES中的数据一致性、完整性和准确性，及时处理数据异常与故障。\n4. 检测与响应体系优化\n构建从日志→事件→告警→处置的端到端流程与闭环自动化机制。\n推动“AI + Analyst Co-pilot”模型：通过自然语言接口辅助安全分析师快速响应。\n利用AI生成检测规则、报告、IOC摘要和攻击路径分析图。\n优化告警质量与检测覆盖，量化提升MDR/SOC效率指标（MTTD、MTTR、Noise Ratio等）。\n\nWho We Look For\n1. 基础要求\n·        计算机科学、信息安全、数据科学或相关专业本科及以上学历。\n·        7年以上信息安全或SOC经验，3年以上技术架构与项目管理经验。\n·        深入理解SIEM、SOAR、日志分析、威胁检测与响应流程。\n2. 技术能力\n·        熟悉主流SIEM平台（Elastic等）。\n·        熟悉大数据与向量数据库（Kafka、Flink、Milvus、Pinecone等）。\n·        精通安全检测规则语言（SPL、KQL、Sigma、YARA、STIX/TAXII等）。\n·        理解AI Agent框架（LangGraph、AutoGen等）及其在SOC场景的应用。\n·        掌握Python、LLM API 调用（OpenAI）、RAG设计与Embedding检索技术。\n·        具备实际动手能力.\n3. 优先条件\n·        具备AI安全、LLM Agent研发、或SOC自动化项目实践经验。\n·        有构建“AI Co-pilot for SOC”或“LLM Security Assistant”的成功案例。\n拥有CISSP等认证。\n\nEqual Employment Opportunity at Tencent\nAs an equal opportunity employer, we firmly believe that diverse voices fuel our innovation and allow us to better serve our users and the community. We foster an environment where every employee of Tencent feels supported and inspired to achieve individual and common goals.\r\nWork Location: China-Shenzhen",
+    "Requirement": "岗位要求详情请见上方岗位职责内说明",
+    "LastUpdateTime": "2026年03月22日",
+    "PostURL": "https://tencent.wd1.myworkdayjobs.com/Tencent_Careers/job/China-Shenzhen/Sr-Security-Architect-II_R107100-1",
+    "SourceID": 4,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "",
+    "Introduction": "",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": ""
+  }
+}

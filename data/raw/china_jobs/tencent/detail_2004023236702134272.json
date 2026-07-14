@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2004023236702134272",
+    "RecruitPostId": 116820,
+    "RecruitPostName": "微信读书/输入法/秒剪-大模型算法研究员-（广州）",
+    "LocationId": 2,
+    "LocationName": "北京",
+    "BGId": 14129,
+    "BGName": "WXG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40001005",
+    "CategoryName": "技术",
+    "ProductName": "微信秒剪",
+    "Responsibility": "1.负责微信读书、微信输入法、微信秒剪等产品的大模型相关技术的研究与开发，包括但不限于 Agent、RL、跨模态对齐、LongContext 等，研发业界领先的垂类大模型；\r\n2.持续跟进业界最新的大模型算法进展，参与垂类大模型的设计、训练、调优以及评测工作，并且推进其在业务中的应用落地。",
+    "Requirement": "1.计算机科学、机器学习、人工智能等相关专业，硕士及以上学历；\r\n2.在大模型领域有多个研究成果或落地成果；\r\n3.熟悉各种深度学习框架，如 TensorFlow 或 PyTorch；了解分布式训练框架，如 DeepSpeed 或 Meatorn-LM 等，并有一定的多机多卡分布式训练经验；\r\n4.有较强的工程实现能力者优先；\r\n5.有高质量论文发表（如 ICLR、NeurIPS、CVPR、ICCV、ECCV、ACL、EMNLP 等）；\r\n6.具备较强的学习能力和技术追求，良好的团队合作和沟通能力。",
+    "LastUpdateTime": "2026年06月29日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2004023236702134272",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "",
+    "Introduction": "渴望为世界带来新意的人，早已对描绘未来的“热词”不陌生——人工智能、机器学习、数据科学等等。腾讯始终在业界前沿不断探索，积极布局，并为优秀的你提供无限广阔的舞台。我们坚信科技的不断革新，最终能带来美好的、撼动人心的改变。",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "三年以上工作经验"
+  }
+}

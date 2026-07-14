@@ -1,0 +1,12 @@
+{
+  "flag": false,
+  "global": [
+    {
+      "type": 0,
+      "des": "请登录后查看",
+      "refs": []
+    }
+  ],
+  "errors": [],
+  "data": null
+}

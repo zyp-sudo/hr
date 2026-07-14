@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "1946505217747058688",
+    "RecruitPostId": 113534,
+    "RecruitPostName": "PUBG Mobile-游戏后台开发工程师-工程方向-新星引力计划",
+    "LocationId": 1,
+    "LocationName": "深圳",
+    "BGId": 956,
+    "BGName": "IEG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40001001",
+    "CategoryName": "技术",
+    "ProductName": "PUBG Mobile-全球不分明细",
+    "Responsibility": "1.负责逻辑系统设计和开发工作；\n2.负责发掘游戏后台服务隐患，针对性进行架构、代码、性能优化；\n3.负责应用工程/AI技术解决外网问题、优化玩家体验、制作提效工具。",
+    "Requirement": "1.本科及以上学历，计算机，软件相关专业；\n2.掌握C/C++，掌握其它语言如Lua者优先；\n3.熟悉分布式后台服务业界架构，全面的计算机体系架构知识和网络知识，有大规模线上项目服务维护优化经验者优先；\n4.具备良好沟通能力和沟通协作意识，有责任心；\n5.优秀的学习能力、分析解决问题的能力，有机器学习相关经验者优先。",
+    "LastUpdateTime": "2026年06月30日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=1946505217747058688",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "",
+    "Introduction": "在腾讯，后台开发工程师不仅是“又快又稳”的问题解决专家，更是生态共创者。你将与技术团队一同沉淀优质代码，让它成为我们共有的宝贵资产。在不同的业务场景和技术发展阶段，你的架构思维也将帮助更多协作团队拓展新的思考。我们也珍视你的挑战精神，同时欢迎你一起参与团队愿景、文化和产品方向的探讨。",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "两年以上工作经验"
+  }
+}

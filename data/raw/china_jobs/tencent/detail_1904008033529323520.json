@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "1904008033529323520",
+    "RecruitPostId": 110948,
+    "RecruitPostName": "微信小店-测试开发工程师",
+    "LocationId": 5,
+    "LocationName": "广州",
+    "BGId": 14129,
+    "BGName": "WXG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40001001",
+    "CategoryName": "技术",
+    "ProductName": "微信交易平台",
+    "Responsibility": "1.负责微信小店产品质量保障工作，包括日常版本跟进，改进、完善研发测试过程等；\r\n2.参与设计、完善微信小店测试体系，包括开发相关测试工具和平台，补全测试能力，帮助业务提升测试效率和质量。",
+    "Requirement": "1.本科及以上学历，计算机相关专业，3 年及以上软件测试或开发经验；\r\n2.热爱软件测试，熟悉主流的自动化测试框架和方法，具备风险把控能力；\r\n3.具备扎实的程序设计基础和较强的工程能力，精通Python、Go、C/C++、Java 其中1种或多门语言；\r\n4.熟练掌握操作系统原理、TCP/IP、HTTP协议、数据库等基础知识；\r\n5.责任感强、有快速学习能力和较强的逻辑思维能力、沟通能力，能够承担工作压力；\r\n6.有大型电商项目测试经验者优先。",
+    "LastUpdateTime": "2026年06月26日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=1904008033529323520",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "",
+    "Introduction": "在腾讯，测试开发工程师的工作是项目质量保证的关键一环，它贯穿了产品研发到上线的全流程。我们始终通过敏锐的洞察，寻找到效率提升的关键节点，开发工具优化，助力业务取得成功。",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "三年以上工作经验"
+  }
+}

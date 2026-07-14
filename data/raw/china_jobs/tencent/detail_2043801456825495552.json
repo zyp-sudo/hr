@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2043801456825495552",
+    "RecruitPostId": 10002709,
+    "RecruitPostName": "Senior Compute Product Architect",
+    "LocationId": 1301,
+    "LocationName": "新加坡",
+    "BGId": 29294,
+    "BGName": "CSIG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40003001",
+    "CategoryName": "产品",
+    "ProductName": "",
+    "Responsibility": "Business Unit\nCloud & Smart Industries Group (CSIG) is responsible for promoting the company's cloud and industry Internet strategy. CSIG explores the interactions between users and industries to create innovative solutions for smart industries via technological advancements such as cloud, AI, and network security. While driving the digitalization of retail, medical, education, transportation and other industries, CSIG helps companies serve users in smarter ways, building a new ecosystem of intelligent industries that connect users and businesses.\n\nWhat the Role Entails\n1.Provide technical consultation for Tencent Cloud's IaaS and computing products, deeply understanding customer requirements to design public cloud infrastructure solutions.\n2.Lead technical solution delivery, including requirement gathering, proposal writing, deployment planning, and issue resolution for IaaS/PaaS projects.\n3.Identify client needs and market trends in cloud and AI computing, translating insights into actionable feedback for product development.\n4.Develop and maintain tailored technical solution documents involving Tencent Cloud products (e.g., containers, networking, storage, AI/ML platforms).\n5.Deliver product enablement and best practice sharing across industries, supporting internal and external stakeholders with technical guidance and documentation.\n\nWho We Look For\n1.Master’s degree or above in Artificial Intelligence, Computer Science, more than 5 years of working experience in the AI field.\n2.Strong foundation in cloud computing and IT architecture, including servers, containers, networking, storage, and databases; in-depth knowledge of at least 1–2 technical domains.\n3.Familiar with deep learning frameworks such as PyTorch, TensorFlow, and DeepSpeed, and knowledgeable about AI training/inference workflows and model optimization.\n4.Strong technical writing and visualization skills to communicate architecture and solutions effectively.\n5.Excellent fluency in English and local language, and Chinese will be a plus.\n\nEqual Employment Opportunity at Tencent\nAs an equal opportunity employer, we firmly believe that diverse voices fuel our innovation and allow us to better serve our users and the community. We foster an environment where every employee of Tencent feels supported and inspired to achieve individual and common goals.\r\nWork Location: Singapore-CapitaSky",
+    "Requirement": "岗位要求详情请见上方岗位职责内说明",
+    "LastUpdateTime": "2026年06月05日",
+    "PostURL": "https://tencent.wd1.myworkdayjobs.com/Tencent_Careers/job/Singapore-CapitaSky/Senior-Compute-Product-Architect_R107213",
+    "SourceID": 4,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "",
+    "Introduction": "",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": ""
+  }
+}

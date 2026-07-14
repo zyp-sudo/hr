@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "1988341027420921856",
+    "RecruitPostId": 1185838588612296704,
+    "RecruitPostName": "Generative AI Researcher (3D, Video, and Agentic Intelligence) 106420",
+    "LocationId": 1301,
+    "LocationName": "新加坡",
+    "BGId": 956,
+    "BGName": "IEG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40001005",
+    "CategoryName": "技术",
+    "ProductName": "",
+    "Responsibility": "Business Unit\nLIGHTSPEED STUDIOS is made up of passionate players who advance the art & science of game development through great stories, great gameplay, and advanced technology. We are focused on bringing next generation experiences to gamers who want to enjoy them anywhere, anytime, across multiple genres and devices.\n\nAbout the Hiring Team\nLightspeed Tech Center is a R&D department under Lightspeed Studios which develop PUBG Mobile and other high-quality games. Our Tech Center leads the research, exploration, and discovery of innovative technologies and provides technical services for all games during all phases of life cycle, including engine, audio, QA, AI, next generation game, technical cooperation, etc.\n\nWhat the Role Entails\n● Develop cutting-edge AI systems for 3D object and scene generation, video generation (world modeling), human motion capture and generation, multimodal vision-language models (VLM), and agentic reinforcement learning systems, tailored for next-generation game development.\n● Conduct original research in computer vision, computer graphics, and embodied intelligence, driving innovation in generative AI pipelines for virtual world creation.\n● Collaborate with cross-disciplinary teams — including game developers, artists, and designers — to integrate AI-generated content seamlessly into gameplay experiences.\n● Continuously explore and apply the latest research trends in 3D generation, video understanding, multimodal reasoning, and simulation-based RL to enhance production efficiency and creativity in games.\n\nWho We Look For\n● PhD degree in Computer Vision, Computer Graphics, Machine Learning, Robotics, or a related field.\n● Strong research background in at least one of the following areas:\n– 3D Object or Scene Generation\n– Video Generation / World Modeling\n– Human Motion Capture or Generation\n– Vision-Language Models (VLM)\n– Reinforcement Learning / Agentic AI\n● Publications in top-tier conferences or journals (CVPR, ICCV, ECCV, SIGGRAPH, SIGGRAPH Asia, NeurIPS, ICML, ICLR, PAMI, IJCV, TOG, TVCG, etc.).\n● Proficiency in deep learning frameworks (e.g., PyTorch, TensorFlow) and experience in large-scale model training or evaluation.\n● Excellent teamwork and communication skills, with demonstrated ability to collaborate in a fast-paced, research-driven environment.\nPreferred Qualifications:\n● Hands-on experience with 3D modeling or rendering tools (Blender, Unreal Engine, Unity, etc.).\n● Strong coding and prototyping ability in Python, C++, or similar languages.\n● Familiarity with datasets and benchmarks related to 3D, motion, or video generation.\n● Proven ability to translate research results into real-world interactive applications.\n● Creativity and a passion for developing the next generation of AI-driven content creation tools\n\nEqual Employment Opportunity at Tencent\nAs an equal opportunity employer, we firmly believe that diverse voices fuel our innovation and allow us to better serve our users and the community. We foster an environment where every employee of Tencent feels supported and inspired to achieve individual and common goals.\r\nWork Location: Singapore-CapitaSky",
+    "Requirement": "岗位要求详情请见上方岗位职责内说明",
+    "LastUpdateTime": "2025年11月11日",
+    "PostURL": "https://tencent.wd1.myworkdayjobs.com/Tencent_Careers/job/Singapore-CapitaSky/Generative-AI-Researcher--3D--Video--and-Agentic-Intelligence-_R106420-1",
+    "SourceID": 4,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "",
+    "Introduction": "",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": ""
+  }
+}

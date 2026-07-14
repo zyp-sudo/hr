@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2030831076913606656",
+    "RecruitPostId": 118321,
+    "RecruitPostName": "《王者荣耀世界》UE客户端开发工程师",
+    "LocationId": 8,
+    "LocationName": "成都",
+    "BGId": 956,
+    "BGName": "IEG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40001001",
+    "CategoryName": "技术",
+    "ProductName": "王者荣耀",
+    "Responsibility": "1.负责UE4或UE5引擎客户端的底层模块开发以及优化；\n2.根据游戏玩法进行技术选型，对项目核心架构进行搭建与后续功能的开发，对领域前沿保持跟进，针对需求做出最优选择；\n3.负责跟进优化迭代当前的生产管线，能够主动发现问题并针对管线和玩法内容优化框架结构，提升效能；\n4.分析并解决性能问题，优化引擎客户端以及DedicatedServer的性能和内存。",
+    "Requirement": "1.本科及以上学历，3年以上游戏客户端开发经验，深刻理解客户端框架和核心模块的实现，有主导核心模块的开发经验；\n2.熟练掌握UE引擎，有动画、物理、场景管理等等对应模块的深入使用和优化经验；\n3.有游戏客户端底层架构经验者优先(网络层，数据层，逻辑层，UI架构)；\n4.快速学习并掌握项目中使用的新技术，有完整的MMO和ARPG项目经验；\n5.对游戏开发充满热情，能够与他人良好配合、协作同时善于独立解决问题的能力。",
+    "LastUpdateTime": "2026年06月08日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2030831076913606656",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "",
+    "Introduction": "在腾讯，作为一位游戏客户端开发，你始终身处科技前沿，与同样具备满分热情的策划、美术等团队紧密协作，助力新世界的诞生、运作，持续打造极致体验。你可以善用自己的全局观察能力，不断打开技术视野，与靠谱的团队一起做出真正有趣的新事物。",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "三年以上工作经验"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "1896460559981780992",
+    "RecruitPostId": 1093958121198948352,
+    "RecruitPostName": "Senior Researcher, Natural Language Processing 104948",
+    "LocationId": 1301,
+    "LocationName": "新加坡",
+    "BGId": 956,
+    "BGName": "IEG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40001005",
+    "CategoryName": "技术",
+    "ProductName": "",
+    "Responsibility": "Business Unit\nLIGHTSPEED STUDIOS is made up of passionate players who advance the art & science of game development through great stories, great gameplay, and advanced technology. We are focused on bringing next generation experiences to gamers who want to enjoy them anywhere, anytime, across multiple genres and devices.\n\nAbout the Hiring Team\nLightspeed Tech Center is a R&D department under Lightspeed Studios which develop PUBG Mobile and other high-quality games. Our Tech Center leads the research, exploration, and discovery of innovative technologies and provides technical services for all games during all phases of life cycle, including engine, audio, QA, AI, next generation game, technical cooperation, etc.\n\nWhat the Role Entails\nResponsible for NLP research and development including Chinese word segmentation, part-of-speech tagging, sentence analysis, and named entity recognition.\nResponsible for text classification, sentiment analysis, data mining, text generation, topic analysis, label extraction, and other research and development job.\nOptimize existing online algorithms, develop efficient and reliable NLP solutions by combining business needs and data.\nExplore applications of NLP techniques and deep learning algorithms in games.\nFollow the latest developments in academia and industry and quickly apply findings in your work.\n\nWho We Look For\nFamiliar with NLP fundamentals, with a strong understanding of statistical models, related machine learning principles, and experience working on NLP related projects.\nProficient in at least one programming language, familiar with basic data structures and algorithms.\nExperience in big data mining, knowledge-graph auto-making, and deep learning experience is preferred.\nFamiliar with word segmentation, part-of-speech tagging, entity recognition, sentence analysis, model pre-training. Experience in sentiment analysis, relationship extraction, and event extraction is preferred.\nPublication of academic results in academic journals and conferences in NLP-related fields (such as: EMNLP, ACL) is preferred.\nFamiliar with CRF, SVM, and other classic machine learning algorithms and tools, word vectors, RNN, CNN, LSTM, GAN, and other deep learning experiences are preferred.\n\nEqual Employment Opportunity at Tencent\nAs an equal opportunity employer, we firmly believe that diverse voices fuel our innovation and allow us to better serve our users and the community. We foster an environment where every employee of Tencent feels supported and inspired to achieve individual and common goals.\r\nWork Location: Singapore-CapitaSky",
+    "Requirement": "岗位要求详情请见上方岗位职责内说明",
+    "LastUpdateTime": "2025年09月15日",
+    "PostURL": "https://tencent.wd1.myworkdayjobs.com/Tencent_Careers/job/Singapore-CapitaSky/Senior-Researcher--Natural-Language-Processing_R104948",
+    "SourceID": 4,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "",
+    "Introduction": "",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": ""
+  }
+}

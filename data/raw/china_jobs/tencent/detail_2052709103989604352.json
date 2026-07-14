@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2052709103989604352",
+    "RecruitPostId": 119863,
+    "RecruitPostName": "高级广告推荐模型算法工程师",
+    "LocationId": 1,
+    "LocationName": "深圳",
+    "BGId": 953,
+    "BGName": "CDG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40001005",
+    "CategoryName": "技术",
+    "ProductName": "广告（广工）",
+    "Responsibility": "随着广告业务的飞速发展，广告推荐模型正迎来新一轮的范式升级。我们将全面推进 Scaling Up（模型参数量级扩大 + 用户行为序列拉长），以期打破现有模型效果的天花板。\n为了承接这一极具挑战的算法演进，我们正在打造新一代广告核心 Infra，全面拥抱原生 PyTorch 生态、全 GPU 训推链路以及基于 UV（User View）的高效样本训练模式等。\n加入我们，你将主导这场技术变革，通过极致的算法和工程 Co-Design，大幅提升模型算法迭代效率，最终直接驱动公司营销业务核心 GMV 的增长。\n\n1. 模型 Scaling Up：针对推荐大模型（超大参数量、超长序列特征等），设计并实现序列和非序列特征统一建模新范式。\n2. 新一代架构演进：深度参与广告推荐系统核心 AI 基础设施（AI Infra）的设计与研发，推动从传统架构向基于原生 PyTorch 的新一代推荐训练/推理框架平滑升级。\n3. 算法与工程 Co-Design：与底层 AI Infra 团队深度协同，深刻理解底层全 GPU 分布式训练（数据并行/模型并行/流水线并行）的特性，通过“算法适配算力”与“算力支撑算法”的双向优化，最大化模型迭代效率。\n5. 业务赋能：深入理解广告推荐算法业务线（CTR/CVR预估等），通过底层工程架构和模型算法优化，提升模型实验效率，助力业务指标（收入、GMV等）达成。",
+    "Requirement": "1. 计算机、软件工程或相关专业本科及以上学历，具备扎实的计算机体系结构、操作系统、网络和数据结构基础。\n2. 极佳的 C++ 和 Python 编程能力，具备复杂系统架构设计能力，代码风格良好，追求极致的系统性能。\n3. 深入理解 PyTorch/TensorFlow 等主流深度学习框架的底层运行机制（有向无环图优化、内存管理、算子分发等），有定制修改框架底层源码经验者优先。\n4.  熟悉 GPU 体系结构，熟练使用 CUDA / C++ 编写高性能算子；熟悉 TensorRT、Triton 等推理加速工具链；具备丰富的性能 Profiling 及瓶颈分析经验。\n5. 分熟悉分布式系统的核心理论，深入理解 NCCL、MPI 等通信协议；有 Megatron-LM、DeepSpeed、HugeCTR 等大规模分布式训练框架实战经验者尤佳。\n6. 了解互联网广告/推荐系统的基本业务链路，熟悉常见的搜广推模型结构（如 DCN、DIN、Transformer 等）。",
+    "LastUpdateTime": "2026年05月08日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2052709103989604352",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "1. 在顶级会议发表过推荐算法相关论文。\n2. PyTorch, DeepSpeed, vLLM 等知名开源 AI 框架的活跃贡献者（Contributor/Committer）。",
+    "Introduction": "渴望为世界带来新意的人，早已对描绘未来的“热词”不陌生——人工智能、机器学习、数据科学等等。腾讯始终在业界前沿不断探索，积极布局，并为优秀的你提供无限广阔的舞台。我们坚信科技的不断革新，最终能带来美好的、撼动人心的改变。",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "三年以上工作经验"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2056017577251090432",
+    "RecruitPostId": 120101,
+    "RecruitPostName": "《三角洲行动》-数据分析（经济安全方向）",
+    "LocationId": 1,
+    "LocationName": "深圳",
+    "BGId": 956,
+    "BGName": "IEG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40003002",
+    "CategoryName": "产品",
+    "ProductName": "ProjectD-手游APP",
+    "Responsibility": "1.负责产品经济安全（包括交易市场和对局环境模块）的分析体系搭建、检测模型设计，和相关工作的落地执行；\n2.根据游戏环境变化，基于数据、舆情和产品理解持续完善策略模型，及建立游戏安全风险预警机制；\n3.以数据和用户洞察为出发点，协同业务团队，完善安全产品功能，为玩家和产品安全体验负责。",
+    "Requirement": "1.本科及以上学历，3年及以上游戏数分/数科相关工作经验，计算机科学、数据科学、机器学习、统计学、应用数学等专业优先；\r\n2.熟练使用SQL/Hive/Python，具备海量数据处理、机器学习、因果推断、A/B实验等经验；\r\n3.良好的沟通能力和团队合作精神，能够在快节奏的环境中工作。",
+    "LastUpdateTime": "2026年05月18日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2056017577251090432",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "1.资深FPS玩家；\r\n2.有MMO 经济系统类数据工作经验。",
+    "Introduction": "",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "三年以上工作经验"
+  }
+}

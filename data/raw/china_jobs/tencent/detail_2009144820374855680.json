@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2009144820374855680",
+    "RecruitPostId": 117127,
+    "RecruitPostName": "PUBG Mobile-游戏客户端开发工程师(UGC 方向)-新星引力计划",
+    "LocationId": 1,
+    "LocationName": "深圳",
+    "BGId": 956,
+    "BGName": "IEG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40001001",
+    "CategoryName": "技术",
+    "ProductName": "PUBG Mobile-全球不分明细",
+    "Responsibility": "1.基于UE4 UMG与Qt框架，开发并优化UGC编辑器的界面、交互及核心功能；\n2.参与工具链开发与重构，设计稳定易用的玩法编辑组件（如关卡编辑器、资源管理器）；\n3.实现编辑器与UE4引擎的深度集成，保障编辑体验流畅与功能完整；\n4.针对大型UGC项目，优化编辑器性能与稳定性，攻克技术难题。",
+    "Requirement": "1.扎实的编程基础，了解C++，熟练掌握Lua或Python，有Qt框架经验者优先；\n2.1年以上游戏客户端开发经验，精通UE4引擎，有Unity或Cocos经验者优先；\n3.在Gameplay、引擎或工具开发领域有实践经验，UGC或Qt经验者优先；\n4.学习能力强，善于沟通，热爱游戏行业，能够承受一定工作压力。",
+    "LastUpdateTime": "2026年06月17日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2009144820374855680",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "1.主导核心工具开发，直接影响全球创作者体验，成果高可见度；\n2.深入UE4编辑器扩展与Qt开发，积累跨平台大型游戏架构经验；\n3.应对海量UGC复杂场景，攻克编辑器性能与稳定性挑战。",
+    "ImportantItem": "",
+    "Introduction": "在腾讯，作为一位游戏客户端开发，你始终身处科技前沿，与同样具备满分热情的策划、美术等团队紧密协作，助力新世界的诞生、运作，持续打造极致体验。你可以善用自己的全局观察能力，不断打开技术视野，与靠谱的团队一起做出真正有趣的新事物。",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "一年以上工作经验"
+  }
+}

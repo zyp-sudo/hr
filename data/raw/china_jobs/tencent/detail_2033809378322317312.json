@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2033809378322317312",
+    "RecruitPostId": 118580,
+    "RecruitPostName": "《灰境行者》-游戏引擎开发（渲染向）",
+    "LocationId": 3,
+    "LocationName": "上海",
+    "BGId": 956,
+    "BGName": "IEG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40001001",
+    "CategoryName": "技术",
+    "ProductName": "Maple-端游-国内",
+    "Responsibility": "1.负责游戏引擎中图形相关模块（如渲染管线、着色器、光照系统等）的开发与维护，专注于提升游戏的视觉表现效果；\r\n2.对游戏引擎的图形渲染性能进行深度分析，定位并解决渲染相关的性能瓶颈问题，例如优化帧率、减少渲染延迟等；\r\n3.与策划、美术团队紧密合作，根据项目需求设计和优化渲染效果，确保游戏的画面质量达到预期目标；\r\n4.持续跟踪图形渲染领域的前沿技术，如光线追踪、实时全局光照等，探索并引入新技术提升引擎的渲染表现力。",
+    "Requirement": "1.计算机相关专业本科及以上学历，1年以上游戏引擎图形渲染模块开发经验；\r\n2.精通C++编程，具备扎实的计算机图形学基础，深入理解图形渲染原理和算法；\r\n3.具备良好的问题分析与解决能力，能够独立完成复杂图形渲染模块的设计与开发；\r\n4.责任心强，主动性强，对游戏渲染技术充满热情，持续追求技术卓越。",
+    "LastUpdateTime": "2026年06月17日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2033809378322317312",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "1.热衷于玩游戏并熟悉UE5引擎的渲染相关开发流程；\r\n2.对计算机图形学有浓厚兴趣，喜欢研究底层渲染原理与新技术（如光线追踪、PBR等）；\r\n3.学习能力强，能够快速掌握新的图形渲染工具、框架与相关领域知识（如新的图形API、渲染优化技术等）。",
+    "Introduction": "",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "一年以上工作经验"
+  }
+}

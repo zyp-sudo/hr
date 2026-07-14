@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2009507997121925120",
+    "RecruitPostId": 117201,
+    "RecruitPostName": "微信视频号-高级推荐大模型算法工程师-直播方向（深圳/北京）",
+    "LocationId": 5,
+    "LocationName": "广州",
+    "BGId": 14129,
+    "BGName": "WXG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40001005",
+    "CategoryName": "技术",
+    "ProductName": "视频号短视频",
+    "Responsibility": "1.负责视频号视频流直播在多场景、全链路的推荐核心算法&策略优化，提升个性化直播分发能力和推荐效率；\r\n2.负责前沿技术的探索和落地，包括LLM4Rec、推荐大模型、生成式推荐、推荐文案生成等方向。",
+    "Requirement": "1.计算机科学或相关专业，本科及以上学历，2年以上相关工作经验；\r\n2.有推荐/广告/搜索等业务经验者优先；有短视频业务经验者优先；\r\n3.熟练掌握机器学习、深度学习算法及原理；熟练掌握C++、Python等编程语言；\r\n4.具备良好的逻辑思维能力和问题解决能力，具有良好的团队合作精神和沟通能力；\r\n5.工作地广州/北京/深圳均可。",
+    "LastUpdateTime": "2026年06月08日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2009507997121925120",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "1.参与微信视频号核心推荐系统的优化，具有广阔的发展前景；\r\n2.与业内顶尖的技术团队合作，提供丰富的学习和成长机会；\r\n3.竞争力的薪资待遇和完善的福利体系；\r\n4.灵活的工作时间和友好的工作环境，支持创新和个人发展。",
+    "ImportantItem": "",
+    "Introduction": "",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "两年以上工作经验"
+  }
+}

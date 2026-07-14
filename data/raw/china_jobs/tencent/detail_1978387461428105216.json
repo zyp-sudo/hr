@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "1978387461428105216",
+    "RecruitPostId": 115323,
+    "RecruitPostName": "《逆战：未来》-高级UE端游引擎开发工程师",
+    "LocationId": 1,
+    "LocationName": "深圳",
+    "BGId": 956,
+    "BGName": "IEG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40001001",
+    "CategoryName": "技术",
+    "ProductName": "code-z",
+    "Responsibility": "1.负责PC游戏图形相关特性的开发，根据需求开发高级渲染效果，增强游戏表现力；\r\n2.负责PC游戏性能优化相关工作，针对需求定制增改UE引擎底层功能；\r\n3.负责图形兼容性分析以及疑难问题的分析定位工作；\r\n4.协助美术和策划建立高效的游戏内容制作流程, 完善并持续优化工具链。",
+    "Requirement": "1.熟练掌握3D图形渲染技术，有良好的数学和算法基础，精通Shader相关开发；\n2.3年以上工作经验，有PC或主机引擎渲染开发和维护经验，深刻理解UE引擎架构，精通UE引擎接口和游戏制作流程；\n3.熟练掌握PC硬件知识与图形优化技巧，对 DX12 等图形API有较深入的实践；\n4.责任心强，善于沟通，对游戏前沿技术有热情；\n5.对FPS游戏熟悉和热爱优先，判断力、沟通串联能力比较强优先。",
+    "LastUpdateTime": "2026年06月30日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=1978387461428105216",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "",
+    "Introduction": "",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "三年以上工作经验"
+  }
+}

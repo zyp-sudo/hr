@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "1968590949349216256",
+    "RecruitPostId": 114897,
+    "RecruitPostName": "腾讯游戏-游戏引擎开发工程师-性能与工具方向",
+    "LocationId": 1,
+    "LocationName": "深圳",
+    "BGId": 956,
+    "BGName": "IEG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40001001",
+    "CategoryName": "技术",
+    "ProductName": "引擎研发服务",
+    "Responsibility": "1.参与性能工具链的研发与迭代；\n2.对主流游戏引擎进行性能分析与调优，提升游戏在各种平台上的视觉表现和运行效率；\n3.结合数据平台及AI协作，识别游戏性能瓶颈，产出可执行的优化方案与技术建议。",
+    "Requirement": "1.计算机、软件工程等相关专业本科及以上学历，或有同等的项目实践经验；\n2.对计算机图形学、性能调优有浓厚兴趣或基础，愿意深入钻研相关技术与工具；\n3.具备良好的团队协作精神、强烈的技术热情和快速学习能力；\n4.有扎实的工程基础与学习能力，愿意长期投入在性能优化与工具建设方向。",
+    "LastUpdateTime": "2026年07月01日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=1968590949349216256",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "1.具备游戏性能优化、工具开发相关经验，或了解相关工具；\n2.具备过Unity、Unreal等游戏引擎使用或写Shader经验；\n3.具备图形渲染、移动端优化等领域具备项目实践经验；\n4.熟悉主流分析与调试工具：RenderDoc、Nsight（Graphics/Compute）、PIX、Xcode Instruments、Android Perfetto/AGI、VTune、perf/Tracy 等。",
+    "Introduction": "在腾讯客户端开发的字典里，“敏捷高效”与“精益求精”并不互斥，追求技术的深度是我们共同的信仰。希望你也能在足够广阔的平台上尽情的施展拳脚。",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "五年以上工作经验"
+  }
+}

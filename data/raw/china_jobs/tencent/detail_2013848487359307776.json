@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2013848487359307776",
+    "RecruitPostId": 117421,
+    "RecruitPostName": "系统应用高级工程师SIT",
+    "LocationId": 1,
+    "LocationName": "深圳",
+    "BGId": 29294,
+    "BGName": "CSIG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40001003",
+    "CategoryName": "技术",
+    "ProductName": "腾讯云",
+    "Responsibility": "1.负责自研服务器的系统集成测试及性能测试；\r\n2.负责服务器板卡与部件的兼容性验证，包含关键部件CPU/Memory/Nic/SSD/HDD/GPU等；\r\n3.负责服务器配套软件变更，部件driver/fw 升级及主板fw变更的验证工作；\r\n4.解决兼容性认证及新机型试用过程中遇到的问题，包括性能问题，kernel/FW/driver等兼容性问题。",
+    "Requirement": "1.计算机相关专业，本科以上学历，熟悉X86架构；\r\n2.熟悉服务器兼容性测试流程，具有较强的沟通协作能力，协调相关领域解决现网问题；\r\n3.4+年服务器SIT测试经验，具有独立解决兼容性问题的能力；\r\n4.熟悉linux系统，能排查kernel相关问题。",
+    "LastUpdateTime": "2026年06月22日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2013848487359307776",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "1.在同等条件下，通过腾讯云认证或取得同等资格认证的候选人，我们会优先考虑。",
+    "Introduction": "在腾讯，优秀的技术运营工程师始终赋能业务，关注技术运营的质量、成本、效率和安全。他们不仅是经验丰富的问题解决者，更是具有全局视角的架构师，通过自动化工具的建设，强力提升平台效能，助力业务发展。",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "三年以上工作经验"
+  }
+}

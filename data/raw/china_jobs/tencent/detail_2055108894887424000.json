@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2055108894887424000",
+    "RecruitPostId": 120040,
+    "RecruitPostName": "终端安全能力-安全运营负责人（上海/深圳/北京）",
+    "LocationId": 3,
+    "LocationName": "上海",
+    "BGId": 29294,
+    "BGName": "CSIG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40001004",
+    "CategoryName": "技术",
+    "ProductName": "安全管家",
+    "Responsibility": "1.负责终端安全产品的能力建设和策略运营，提升病毒查杀清理、主动防御、EDR等模块效果，打造国内顶尖的终端安全产品；\r\n2.负责Agent背景下终端安全能力的迭代提升，包括但不限于Agent驱动的终端安全运营提效和面向终端Agent（OpenClaw等）的安全防护能力建设；\r\n3.协同产品、售前与售后团队，推动产品稳定性与流程能力建设，为终端安全产品安全能力的交互体验、运营指标和用户客户反馈负责。",
+    "Requirement": "1.五年以上终端安全技术领域工作经验；\r\n2.熟悉 Windows/macOS 终端安全体系，具备EPP/EDR领域的研发运营实战经验；\r\n3.熟悉终端场景化的攻防技术，例如钓鱼、勒索等，能够持续跟进技术演变以提升产品能力；\r\n4.有激情有进取心，责任心强，具备良好的安全工程落地能力和跨团队协作能力，善于推动复杂链路问题闭环解决。",
+    "LastUpdateTime": "2026年05月22日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2055108894887424000",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "1.除Windows/MacOS终端安全，且同时具备智能体终端安全或Linux安全研究与落地经验者优先。",
+    "Introduction": "相信你与所有腾讯安全人一样，都认为抵抗邪恶是一件极其热血的事。希望你与我们一起，守护用户的安全，守护产品的安全，守护科技向善的不变初心。",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "五年以上工作经验"
+  }
+}

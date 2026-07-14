@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2020703486018220032",
+    "RecruitPostId": 117794,
+    "RecruitPostName": "微信 -大模型后台开发工程师-后训练方向",
+    "LocationId": 2,
+    "LocationName": "北京",
+    "BGId": 14129,
+    "BGName": "WXG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40001001",
+    "CategoryName": "技术",
+    "ProductName": "WXG公共",
+    "Responsibility": "1.基座大模型的训练性能优化和高稳定性训练框架开发；\n2.大模型应用的后台系统设计与开发、推理性能优化，确保系统高性能和高可用性；\n3.大模型相关业务功能开发，基础框架与工具建设等；\n4.跟踪前沿技术，推动研究成果在业务场景的落地。",
+    "Requirement": "1.计算机相关专业，本科及以上学历；\r\n2.熟悉 linux 开发环境，优秀的 C++ 编程经验，熟练掌握常用数据结构与算法，有一定的软件工程能力和良好的编程能力；\r\n3.了解常见的深度学习训练框架（如 HuggingFace，Megatron，DeepSpeed，PyTorch) 以及推理框架（如 VLLM、SGLang、TRT）；\r\n4.具备良好的逻辑思维、快速学习能力、分析和解决问题的能力；\r\n5.对于探索前沿技术有很好的热情，具备独立探索前沿技术的能力，有良好的团队协作和沟通能力。",
+    "LastUpdateTime": "2026年06月11日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2020703486018220032",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "1.主导过基座大模型后训练项目，并在性能优化、稳定性优化方面取得过显著成效；\r\n2.了解 GPU 硬件架构，有 CUDA 编程经验，熟悉各种网络底层算子实现细节；\r\n3.有 ACM/ICPC 等算法竞赛奖项。",
+    "Introduction": "",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "一年以上工作经验"
+  }
+}

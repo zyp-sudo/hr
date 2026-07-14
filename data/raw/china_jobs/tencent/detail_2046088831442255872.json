@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2046088831442255872",
+    "RecruitPostId": 119482,
+    "RecruitPostName": "J3-UE5微恐射击-资深3D动作（武器） ",
+    "LocationId": 1,
+    "LocationName": "深圳",
+    "BGId": 956,
+    "BGName": "IEG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40002002",
+    "CategoryName": "设计",
+    "ProductName": "CFH-手游APP-国际版",
+    "Responsibility": "1.负责制作高质量的第一人称武器动画，包括但不限于：射击、换弹、战术动作、近战、检视及切换武器等。确保动作符合人体工学与物理逻辑，同时具备独特的艺术张力；\n2.基于3dsMax 建立高效的动画制作流程。负责动画资源从Max软件到游戏引擎（UE5）的导入、调试与维护，确保在即时演算下的流畅性与稳定性；\n3.与Combat Designer（战斗策划）紧密合作，通过动画调整武器手感（后坐力反馈、FOV变化、镜头震动）；与音频团队配合，确保动作与音效完美同步。",
+    "Requirement": "1.3-5年以上游戏行业3D动画经验，至少拥有一款完整的、高品质FPS项目的开发经历（请在简历中附带作品集链接，重点展示FPS武器动画）；\n2.精通 3ds Max 动画模块，对CS/Biped、CAT或自定义骨骼系统有深入理解。熟悉Max脚本或有能力通过工具提升工作流效率者优先；\n3.深刻理解运动规律，对FPS游戏中枪械的重量感、惯性、机械结构运动有敏锐的观察力。能够区分“写实战术风”与“快节奏街机风”的差异；\n4.熟悉主流商业引擎（Unreal Engine 5 ）的动画系统，了解动画融合、层级混合等技术在FPS中的应用；\n5.加分项：对枪械运作原理、战术动作规范有一定研究，或FPS重度玩家。",
+    "LastUpdateTime": "2026年05月26日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2046088831442255872",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "",
+    "Introduction": "",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "五年以上工作经验"
+  }
+}

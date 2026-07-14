@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2064958766012608512",
+    "RecruitPostId": 120518,
+    "RecruitPostName": "混元预训练数据工程负责人-PretrainData Workflow&溯源管理",
+    "LocationId": 1,
+    "LocationName": "深圳",
+    "BGId": 958,
+    "BGName": "TEG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40001001",
+    "CategoryName": "技术",
+    "ProductName": "AI",
+    "Responsibility": "1.搭建规范的大规模的pretrain data workflow, 确保整个预训练数据可复现，可追踪，每一步可debug/可校验；\r\n2.全面负责预训练数据工程体系建设，主导端到端数据工作流（Workflow） 设计、搭建与规模化落地，保障数据供给效率与稳定性；\r\n3.负责预训练数据全生命周期管理：数据标准、质量治理、资产化管理、权限与版本管控；\r\n4.带队攻坚数据处理关键技术与工程瓶颈，跨团队协同模型训练算法和底层架构工程、推动数据架构持续迭代。",
+    "Requirement": "1.本科及以上，有大规模技术栈负责人/数据体系负责人经验；\n2.精通大规模预训练数据 Pipeline 建设，熟悉分布式大数据处理栈（Spark/Ray/OSS 等），理解存储，网络等data infra硬件瓶颈；\n3.优秀的架构设计、团队管理与跨部门推进能力，能独立负责整条数据战线；\n4.熟悉大模型预训练流程和算法（文本或多模态都可）优先。",
+    "LastUpdateTime": "2026年06月26日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2064958766012608512",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "",
+    "Introduction": "",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "一年以上工作经验"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2046936183015108608",
+    "RecruitPostId": 119572,
+    "RecruitPostName": "灰境行者-资深数值策划",
+    "LocationId": 3,
+    "LocationName": "上海",
+    "BGId": 956,
+    "BGName": "IEG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40003002",
+    "CategoryName": "产品",
+    "ProductName": "Maple-端游-国内",
+    "Responsibility": "1.负责游戏核心数值体系的设计、搭建与优化迭代，包括战斗、成长、资源投放与消耗、经济循环等模块的设计；\r\n2.搭建数值模型，对战斗数值、资源产出与消耗等核心数值进行演算、验证与调优；\r\n3.分析游戏数据，结合玩家体验反馈定位相关问题，输出针对性的优化方案并推动落地；\r\n4.推进数值相关内容落地，持续完善团队数值设计规范与验算标准。",
+    "Requirement": "1.5年以上游戏数值策划经验，深度参与过至少1款已上线项目的数值全流程设计，能够独立搭建数值框架；\r\n2.对数据高度敏感，具备较强的数值建模、分析和问题定位能力；\r\n3.热爱射击游戏，熟悉主流射击游戏并深度拆解过至少1款产品的战斗与经济数值结构，有射击游戏项目经验优先；\r\n4.有较强的团队合作意识，沟通能力优秀，抗压能力强。",
+    "LastUpdateTime": "2026年04月22日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2046936183015108608",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "",
+    "Introduction": "",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "五年以上工作经验"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2059817052763504640",
+    "RecruitPostId": 120251,
+    "RecruitPostName": "QClaw-端侧AI模型推理加速专家（深圳/北京/上海）",
+    "LocationId": 1,
+    "LocationName": "深圳",
+    "BGId": 29294,
+    "BGName": "CSIG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40001001",
+    "CategoryName": "技术",
+    "ProductName": "QClaw",
+    "Responsibility": "1.聚焦办公 PC、手机消费级终端大模型推理优化，负责端侧推理引擎性能调优，保障本地离线大模型平稳高效运行；\r\n2.运用模型蒸馏、量化压缩、KV 缓存优化等轻量化技术，在保证效果前提下，降低端侧推理延迟、内存占用与硬件功耗；\r\n3.负责端侧模型格式转换、算子适配与PC / 手机异构算力调度，充分调用 CPU、独显、端侧 NPU 算力，最大化设备推理性能；\r\n4.对接 Intel、AMD 桌面端 AI 生态，适配本地推理服务框架，完成与上层业务框架快速集成落地；\r\n5.梳理 PC 与手机端推理性能瓶颈，输出标准化优化方案，协同团队完成本地大模型方案规模化落地；\r\n6.持续跟进桌面端、移动端轻量化推理前沿技术，优化本地离线推理体验。",
+    "Requirement": "1.熟悉 PC、手机端 CPU/GPU/NPU 异构开发，掌握 Intel OpenVINO、AMD Ryzen AI、移动端 NPU 加速技术，具备端侧推理加速实战经验；\r\n2.深入理解大模型基础架构，熟悉端侧推理核心性能瓶颈，精通量化、算子优化、内存调度、模型蒸馏等主流轻量化优化方案；\r\n3.熟练掌握 C/C++、Python，熟悉 Windows 与移动端开发环境，具备端侧模型编译、调试与部署能力；\r\n4.熟练使用 llama.cpp、移动端推理框架、本地 PC 推理服务等主流端侧推理组件，精通本地大模型完整部署流程；\r\n5.能够独立解决 PC、手机端推理卡顿、内存溢出、量化精度损失、启动慢等线上实际问题；\r\n6.工作踏实主动，具备良好跨团队沟通能力，具备较强技术钻研与落地能力。",
+    "LastUpdateTime": "2026年05月28日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2059817052763504640",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "",
+    "Introduction": "在腾讯，后台开发工程师不仅是“又快又稳”的问题解决专家，更是生态共创者。你将与技术团队一同沉淀优质代码，让它成为我们共有的宝贵资产。在不同的业务场景和技术发展阶段，你的架构思维也将帮助更多协作团队拓展新的思考。我们也珍视你的挑战精神，同时欢迎你一起参与团队愿景、文化和产品方向的探讨。",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "五年以上工作经验"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2041355322622377984",
+    "RecruitPostId": 10002695,
+    "RecruitPostName": "Senior Software Engineer, Cross-Border Payment Systems",
+    "LocationId": 1301,
+    "LocationName": "新加坡",
+    "BGId": 953,
+    "BGName": "CDG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40001001",
+    "CategoryName": "技术",
+    "ProductName": "",
+    "Responsibility": "Business Unit\nCorporate Development Group (CDG) as the platform for the company's new business incubation and new business exploration, CDG is responsible for promoting development and innovation for important areas such as financial technology and advertising, as well as marketing services, including payment and financial applications. As a professional support platform, CDG also supports the company and various business groups in strategic planning, investments and mergers, investor relations and corporate global communications, marketing and public relations, and more.\n\nWhat the Role Entails\nPosition Overview\nJoin our core R&D platform to architect the future of global value movement. As a Senior Software Engineer, you won't just write code—you will own the bank integration layer of a high-scale payment network. You will be a technical \"force multiplier,\" leading the charge in integrating AI-driven engineering (Agents and LLMs) into our core workflows.Architect Global Connectivity: Lead the end-to-end design of high-availability integration gateways, standardizing diverse banking protocols into a unified, scalable global network.\nEngineer Resilience: Drive 99.99% system availability by implementing advanced distributed patterns (Idempotency, Circuit Breakers, State Machines) to ensure zero-duplicate transaction processing at massive scale.\nInnovate with AI: Spearhead the adoption of AI-powered tools and autonomous agents to step-change our development velocity, automated testing, and operational reliability.\nSecurity & Integrity: Own the mission-critical security handshake architecture that protects the financial integrity of every global transaction.\nTechnical Leadership: Set the bar for engineering excellence through rigorous design reviews, mentoring junior talent, and evolving our cross-border engineering culture.\n\nWho We Look For\nFintech Mastery: 5+ years in high-throughput banking/payments. Deep knowledge of ISO 20022/SWIFT and the technical orchestration of FX lifecycles (Locked-in vs. Real-time rates).\nTechnical Depth: Expert-level Java & Spring Boot proficiency with a focus on concurrency and distributed systems (Kafka, RocketMQ, MySQL optimization).\nSecurity Expertise: Proven experience with \"compliant by design\" architecture, including OAuth2, Mutual TLS, and digital signatures.\nAI-Forward Mindset: A proactive interest in utilizing AI Agents to optimize the software development lifecycle (SDLC).\nBilingual Collaboration: Professional fluency in English and Mandarin is essential for high-level technical collaboration with our global business centers and cross-border teams.\n\nEqual Employment Opportunity at Tencent\nAs an equal opportunity employer, we firmly believe that diverse voices fuel our innovation and allow us to better serve our users and the community. We foster an environment where every employee of Tencent feels supported and inspired to achieve individual and common goals.\r\nWork Location: Singapore-CapitaSky",
+    "Requirement": "岗位要求详情请见上方岗位职责内说明",
+    "LastUpdateTime": "2026年04月06日",
+    "PostURL": "https://tencent.wd1.myworkdayjobs.com/Tencent_Careers/job/Singapore-CapitaSky/Senior-Software-Engineer--Cross-Border-Payment-Systems_R107240",
+    "SourceID": 4,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "",
+    "Introduction": "",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": ""
+  }
+}

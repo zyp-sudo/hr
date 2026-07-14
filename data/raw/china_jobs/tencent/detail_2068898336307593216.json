@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2068898336307593216",
+    "RecruitPostId": 120682,
+    "RecruitPostName": "微信读书-大模型算法研究员-NLP长上下文方向",
+    "LocationId": 2,
+    "LocationName": "北京",
+    "BGId": 14129,
+    "BGName": "WXG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40001005",
+    "CategoryName": "技术",
+    "ProductName": "微信读书",
+    "Responsibility": "1.依托微信读书海量内容与丰富的用户场景，主导大语言模型（LLM）在长内容领域的创新探索与业务落地；\r\n2.负责基于LLM的长上下文（Long-Context）核心技术研究与迭代，深入探索 RAG、后训练（RL）、Agent、Memory 等前沿方向，大幅提升模型对书籍深度内容及用户个性化意图的理解；\r\n3.搭建并完善大模型评测框架，结合任务特点，科学设计评测维度、方法与基准，以数据驱动线上模型能力的持续演进；\r\n4.持续跟进学术界与工业界的大模型最新进展，完成前沿算法的复现、技术转化与创新应用。",
+    "Requirement": "1.具备扎实的机器学习、NLP及大语言模型理论基础，具有丰富的深度学习模型训练、微调（SFT/RL）及性能调优经验；\r\n2.具备出色的问题分析与解决能力，能够敏锐洞察业务痛点，并结合线上数据制定科学、高效的算法解决方案；\r\n3.对前沿技术保持热情与敏锐度，并能针对微信读书的应用场景进行快速的技术转化与落地；\r\n4.具备优秀的自我驱动力、团队协作精神及沟通能力，能够独立推动项目的落地。",
+    "LastUpdateTime": "2026年06月29日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2068898336307593216",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "1.在人工智能领域顶级会议（如ICML/NeurIPS/ICLR/ACL/EMNLP/NAACL等）以第一作者发表过高质量论文；\r\n2.在 Kaggle、ACM 等国内外重量级算法竞赛中获得过优异名次；\r\n3.对主流深度学习框架（PyTorch等）或强化学习框架有深入理解，具备框架定制优化能力者优先。",
+    "Introduction": "",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "一年以上工作经验"
+  }
+}

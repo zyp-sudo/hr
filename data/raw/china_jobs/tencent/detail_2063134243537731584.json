@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2063134243537731584",
+    "RecruitPostId": 120416,
+    "RecruitPostName": " AI宠物-客户端工程师",
+    "LocationId": 5,
+    "LocationName": "广州",
+    "BGId": 956,
+    "BGName": "IEG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40001001",
+    "CategoryName": "技术",
+    "ProductName": "Clawpet-端游",
+    "Responsibility": "1.主导ClawPet桌面客户端核心模块的研发工作，构建高可用、高性能的Electron/Vue/TypeScript技术栈应用架构；\r\n2.深度参与端侧Agent运行时系统设计，实现上下文记忆、工具链调用、多轮对话管理和异常恢复等关键机制；\r\n3.攻克复杂桌面交互难题，包括状态同步、跨进程通信和系统API集成，持续提升产品响应速度与交互流畅度；\r\n4.协同AI团队对接LLM能力，开发MCP协议适配层及技能插件系统，安全接入各类外部工具与数据服务；\r\n5.联动产品、算法、后端及设计团队，将大模型能力转化为符合用户直觉的桌面级智能交互体验；\r\n6.建立客户端质量保障体系，设计自动化测试方案并制定工程规范，确保产品迭代稳定性。",
+    "Requirement": "1.计算机相关专业本科及以上学历，2年以上桌面应用或前端架构开发经验；\n2.精通TypeScript/JavaScript，熟练运用Vue3组合式API、Pinia/Vuex进行状态管理；\n3.深入掌握Electron框架原理，熟悉Chromium渲染进程、Node.js主进程通信机制及跨平台打包部署；\n4.具备大型前端项目架构经验，有Webpack/Vite优化、虚拟DOM调优或WebWorker实践案例；\n5.理解Agent交互范式，熟悉Function Calling、ReAct等推理模式及提示词工程方法论；\n6.坚持高质量编码标准，熟练使用Jest/Vitest等测试工具，注重类型定义与错误边界处理；\n7.积极拥抱AI辅助编程，能通过GitHub Copilot等工具提升开发效率。",
+    "LastUpdateTime": "2026年06月08日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2063134243537731584",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "1.参与重塑人机交互范式，打造具有拟人化特质的下一代桌面智能伙伴；\r\n2.前沿技术栈组合：LLM+Agent+桌面端三维一体研发，积累AI原生应用构建经验；\r\n3.扁平化技术决策环境，直接与算法科学家协作优化模型-客户端协同方案；\r\n4.接触海量真实用户场景，快速迭代中验证技术方案的商业价值转化；\r\n5.配备顶级硬件开发环境，提供GPU加速设备和专业性能分析工具链支持。",
+    "ImportantItem": "1.有智能桌面助手、AI陪伴宠物或游戏化交互产品从0到1落地经验；\r\n2.掌握Ollama/Llama.cpp等本地模型部署方案，或熟悉RAG检索增强生成技术栈；\r\n3.成功主导过客户端性能优化专项，QPS提升30%以上或崩溃率低于0.1%；\r\n4.维护技术博客分享Electron深度实践，或在GitHub有高星AI工具链相关开源项目；\r\n5.熟练使用Warp/VSCode+AI插件组合，日常编码AI辅助完成度超过50%。",
+    "Introduction": "",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "两年以上工作经验"
+  }
+}

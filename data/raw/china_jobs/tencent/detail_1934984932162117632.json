@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "1934984932162117632",
+    "RecruitPostId": 112765,
+    "RecruitPostName": "微信读书/输入法/秒剪-大模型应用研发工程师-Harness工程",
+    "LocationId": 2,
+    "LocationName": "北京",
+    "BGId": 14129,
+    "BGName": "WXG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40001001",
+    "CategoryName": "技术",
+    "ProductName": "微信读书",
+    "Responsibility": "1.熟悉 Golang/NodeJS/Python 等至少一种编程语言，具备扎实的系统开发和数据结构功底；\r\n2.了解 LLM、Agent、Tool Use、MCP 等技术，理解 Harness 的核心理念；\r\n3.对后台研发常用开源组件（MySQL、Redis、Kafka 等）有一定应用经验；\r\n4.具备良好的工程素养，包括文档撰写、单元测试、版本管理能力，以及良好的沟通表达；工作认真负责，保持开放、持续学习，具备团队合作精神。",
+    "Requirement": "1.负责 AI 应用 Agent Harness 系统的设计与实现；\r\n2.参与微信读书、微信输入法等业务的 AI 应用落地和持续探索；\r\n3.负责 Context Engineering 相关工程能力建设：上下文压缩、SKILL、跨会话 Memory、Eval Loop、运行环境等；\r\n4.搭建自动化评估体系，优化现有的开发和数据链路，持续优化系统稳定性与效率；\r\n5.参与新技术调研以及探索，包括大模型相关的工程算法的探索和逻辑，并且参与项目特定方向的重点、难点开发工作。",
+    "LastUpdateTime": "2026年06月26日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=1934984932162117632",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "1.熟悉大模型应用算法能力优先；\r\n2.具有 LLM 推理优化经验，熟悉 TensorRT-LLM、VLLM 等LLM推理效率优化工具者优先；\r\n3.有图构建和检索优化，有大数据平台（Hadoop、Spark、Flink 等）使用经验者优先；\r\n4.能够对服务进行系统性的性能优化。",
+    "Introduction": "",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "两年以上工作经验"
+  }
+}

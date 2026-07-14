@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2071854047316590592",
+    "RecruitPostId": 120826,
+    "RecruitPostName": "混元API产品策划（深圳/北京）",
+    "LocationId": 1,
+    "LocationName": "深圳",
+    "BGId": 958,
+    "BGName": "TEG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40003001",
+    "CategoryName": "产品",
+    "ProductName": "混元-工程平台",
+    "Responsibility": "1.负责模型API产品的功能规划，跟踪行业动态与竞品趋势，输出产品优化建议，推动技术创新与产品形态升级；\r\n2.参与模型或AI能力的全生命周期管理，设计合理的上下和变更流程与工具；\r\n3.联动内部算法，工程，运维团队，推动产品功能落地与迭代优化，保障产品性能与用户体验。",
+    "Requirement": "1.计算机或相关专业本科及以上学历；\r\n2.具备ToB平台类产品经验，MaaS或AI云产品经验最佳；\r\n3.熟悉各家大模型厂商，MaaS平台以及AI云产品的接口协议和详细参数，能够独立撰写脚本测试各家云API的参数效果；\r\n4.具备owner意识，能主动推进项目进展，承担更多责任，具备团队协作意识，和良好的沟通能力。",
+    "LastUpdateTime": "2026年06月30日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2071854047316590592",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "",
+    "Introduction": "“用户为本，科技向善”，是写在每位腾讯产品人心中的一句箴言。在互联网浪潮中，大众的生活已被深刻地改变，如何为用户创造价值、创造怎样的价值，需要每位产品人花费更长时间去体会与探索。在这里，你将与同样关注细节、关注本质、关注美好的同事一道，开启你的创造性工作。",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "一年以上工作经验"
+  }
+}

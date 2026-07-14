@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "1995381946347311104",
+    "RecruitPostId": 116315,
+    "RecruitPostName": "微信搜索-LLM大模型算法工程师",
+    "LocationId": 2,
+    "LocationName": "北京",
+    "BGId": 14129,
+    "BGName": "WXG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40001005",
+    "CategoryName": "技术",
+    "ProductName": "搜一搜",
+    "Responsibility": "1.AI搜索核心技术研发与落地；\r\n2.研发基于大模型 Agent 的搜索问答技术，包括复杂搜索任务规划、多轮探索策略、工具调用及多 Agent 协作、答案生成等；\r\n3.解决大模型可信评估、幻觉控制、整合推理、多模态、多轮交互的挑战；\r\n4.大模型后训练与对齐算法；\r\n5.结合AI搜索场景需求，深入探索高效的大模型后训练算法（ Mid-Training、SFT、RM/RL等）；\r\n6.用户信号驱动的系统闭环优化。",
+    "Requirement": "1.对大语言模型有深入理解，在 AI Agent、RAG、强化学习（RL/RLHF）某一个或多个方向有技术沉淀或实战经验；\r\n2.在AI搜索/bot、多模态问答、深度研究（DeepResearch）方向有相关经验者优先；\r\n3.加分项：在 顶级会议 NeurIPS、ICLR、ICML、ACL、KDD 等发表过高质量论文；业界高水平大模型团队经历；参与过知名开源系统研发；\r\n4.有用户视角与产品理解力。",
+    "LastUpdateTime": "2026年07月06日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=1995381946347311104",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "",
+    "Introduction": "渴望为世界带来新意的人，早已对描绘未来的“热词”不陌生——人工智能、机器学习、数据科学等等。腾讯始终在业界前沿不断探索，积极布局，并为优秀的你提供无限广阔的舞台。我们坚信科技的不断革新，最终能带来美好的、撼动人心的改变。",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "三年以上工作经验"
+  }
+}

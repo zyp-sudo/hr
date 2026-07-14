@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2017980284246589440",
+    "RecruitPostId": 117674,
+    "RecruitPostName": "《王者荣耀》游戏AI算法研究员- LLM/NLP方向",
+    "LocationId": 1,
+    "LocationName": "深圳",
+    "BGId": 956,
+    "BGName": "IEG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40001005",
+    "CategoryName": "技术",
+    "ProductName": "王者荣耀",
+    "Responsibility": "1.负责LLM在王者荣耀及相关生态游戏领域应用， 能针对业务场景需求对模型进行设计和优化，包括但不限于剧情生成、可控NPC对话、社交聊天、逻辑推理、游戏盘面推理等。",
+    "Requirement": "1.NLP相关专业硕士及以上；\r\n2.LLM、NLP、深度学习经验和落地能力；\r\n3.TensorFlow/PyTorch;C++/Python；\r\n4.了解知识图谱（搜广推）、多模态NLG，有过相关业务经验；\r\n5.保持学习，关注、分享前沿动态，有把新技术转化到业务中的动机；\r\n6.爱打王者，对体验有自己的追求；能基于对游戏的理解把控数据和交付质量；\r\n7.有产品sense，鼓励参与设计讨论。",
+    "LastUpdateTime": "2026年06月08日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2017980284246589440",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "1.学术成果：在ACL、EMNLP、NeurIPS、ICML、ICLR等会议或期刊上发表过 关于 大语言模型（LLM）、NLP、强化学习、机器学习等方面的论文；\r\n2.项目经验：有大语言模型（LLM）和NLP的实际业务经验，包括不限于剧情生成、可控NPC对话、聊天对话、逻辑推理、盘面推理等；\r\n3.竞赛经验：在kaggle等竞赛中获得过优异名次。",
+    "Introduction": "渴望为世界带来新意的人，早已对描绘未来的“热词”不陌生——人工智能、机器学习、数据科学等等。腾讯始终在业界前沿不断探索，积极布局，并为优秀的你提供无限广阔的舞台。我们坚信科技的不断革新，最终能带来美好的、撼动人心的改变。",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "三年以上工作经验"
+  }
+}

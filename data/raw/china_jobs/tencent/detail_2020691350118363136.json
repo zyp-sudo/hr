@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2020691350118363136",
+    "RecruitPostId": 117791,
+    "RecruitPostName": "《洛克王国：世界》-技术美术-动画向",
+    "LocationId": 1,
+    "LocationName": "深圳",
+    "BGId": 956,
+    "BGName": "IEG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40002002",
+    "CategoryName": "设计",
+    "ProductName": "NRC-手游APP",
+    "Responsibility": "1.负责骨骼级动画的物理动态效果，根据人形角色、精灵伙伴等不同类型制定最优的弹簧骨骼参数；\n2.负责布料模拟的开发与优化，根据项目需求进行技术选型、参数调优及迁移方案制定，保障布料模拟视觉效果与稳定性；\n3.负责建立并持续优化物理动画规范，针对主角、NPC及精灵等不同类型设计专属物理动画方案；\n4.负责物理模拟性能优化，制定性能预算标准，针对平台差异进行LOD分级与性能优化，保障物理模拟表现；\n5.负责开发物理模拟相关的批量配置工具，建立标准化工作流程与参数模板，与角色美术、动画师、引擎程序紧密协作，确保物理模拟全流程高效落地。",
+    "Requirement": "1.3年以上游戏行业动画TA或相关岗位经验，有实际项目上线经验；\n2.精通UE的Springbone系统，包括但不限于Kawaii Physics、AnimDynamics、Spring Controller等常用插件的使用与二次开发；\n3.精通UE布料模拟系统，包括Chaos Cloth与NvCloth（NVIDIA Cloth），有实际项目落地经验，能够独立完成布料效果优化；\n4.理解NvCloth与Chaos Cloth的底层差异（求解器架构、碰撞处理方式、性能特征），能根据项目需求进行合理的技术选型与方案设计；\n5.熟悉UE动画蓝图（Animation Blueprint）、状态机、物理资产（Physics Asset）配置；\n6.具备良好的美术审美，能判断物理动画的自然度与风格匹配度；\n7.熟悉骨骼绑定基础知识，理解骨骼层级、权重、约束的工作原理；\n8.具备Python或蓝图脚本开发能力，能独立完成工具搭建与流程标准化；\n9.良好的书面和口头沟通能力，优秀的团队协作能力，能高效联动多岗位推进工作。",
+    "LastUpdateTime": "2026年06月10日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2020691350118363136",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "1.参与高品质游戏项目开发，负责核心角色与精灵伙伴的物理动画表现，直接影响游戏视觉体验与玩家沉浸感；\r\n2.深度参与从资产制作到引擎落地的全流程，与行业内顶尖的美术、动画及程序团队紧密合作；\r\n3.有机会深入研究Unreal Engine前沿物理模拟技术，包括Chaos与NvCloth系统，并在实际项目中应用与优化；\r\n4.提供完善的职业发展路径与技术成长空间，支持个人在技术美术领域的深度发展；\r\n5.富有挑战性的工作内容，涵盖技术创新、性能优化与跨团队协作，全面提升专业能力与项目管理经验。",
+    "ImportantItem": "1.有二次元风格或时装类游戏项目经验，处理过复杂服饰及多层级布料的物理模拟；\r\n2.有从NvCloth迁移至Chaos Cloth的实际项目经验，熟悉迁移流程与优化策略；\r\n3.有精灵、宠物、非人形角色的物理动画设计与实现经验；\r\n4.熟悉Maya中的动力学系统（如nCloth、nHair），能在DCC工具与引擎之间建立高效的工作流；\r\n5.了解Houdini或其他程序化工具在物理模拟与布料效果中的应用；\r\n6.有C++基础，能够阅读或修改引擎源码中与物理模拟相关的模块；\r\n7.有移动端物理模拟性能优化经验，熟悉移动平台特性与优化手段。",
+    "Introduction": "",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "三年以上工作经验"
+  }
+}

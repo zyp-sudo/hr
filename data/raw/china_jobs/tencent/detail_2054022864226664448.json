@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2054022864226664448",
+    "RecruitPostId": 119947,
+    "RecruitPostName": "天美游戏-AI 策略工程师-新星引力计划",
+    "LocationId": 1,
+    "LocationName": "深圳",
+    "BGId": 956,
+    "BGName": "IEG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40011",
+    "CategoryName": "战略与投资",
+    "ProductName": "公共",
+    "Responsibility": "1.推动天美策略团队的 AI 原生工作流落地，在组织中设计并实现行业领先的 Agentic 工作流，让 Agent 能处理完整策略输出链条；\n2.制定天美策略团队的 AI 运用整体规划，定义产品功能，改进产品方案，协助撰写项目PRD并上手部分AI工具的开发和优化；\n3.维护和升级天美策略团队的 AI 工具，基于对游戏策略业务的理解主动提出和开发 AI Agent 助力策略工作提效，持续提升 Agent 输出质量；\n4.与战略洞察团队协作，运用AI 体系推动天美策略输出效率和前沿性持续提升，持续发掘前沿游戏行业机会和AI 领域的趋势。",
+    "Requirement": "1.本科及以上学历，计算机科学、人工智能、数学、游戏设计相关专业优先；\n2.有游戏领域或 AI 领域的经验，能够理解 LLM/Embedding/RAG/Agent 原理；\n3.Python 熟练，至少能够独立阅读和修改中等复杂度开源代码（ChromaDB / LangChain / LlamaIndex / sentence-transformers 级别）；\n4.中英文熟练：能阅读英文技术文档、论文和官方 API reference；\n5.热爱游戏且极度自驱，持续学习前沿 AI 先进技术。",
+    "LastUpdateTime": "2026年05月12日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2054022864226664448",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "1.参与天美最前沿的 AI x 游戏技术创新，推动游戏行业变革；\n2.与顶尖的游戏策略团队、AI 专家进行合作，快速提升专业能力；\n3.开放、创新的工作氛围，鼓励试错和快速迭代。",
+    "ImportantItem": "1.有 Agentic 工作流实战经验（多轮工具调用 + 子 agent + 评委）；\n2.熟悉 BGE / E5 / OpenAI Embedding 等向量模型的调参与评测；\n3.有中文 RAG 相关经验，熟悉 MCP 协议、IDE Agent 生态；\n4.有后端数据库 / 知识库 / 文档平台的开发经验。",
+    "Introduction": "",
+    "DepartmentIntroduction": "天美工作室群，腾讯游戏旗下的游戏研运团队。秉持着提升全球玩家娱乐品质的愿景，天美在诸多游戏细分领域潜心耕耘，建立了国内乃至全球领先的核心研发能力。\n自2008年成立以来，天美持续推出多款热门产品，涵盖多人竞技、RPG、射击、竞速、策略、休闲等多个品类，有丰富的跨平台研发经验。旗下作品包括《王者荣耀》《QQ飞车》《穿越火线：枪战王者》《使命召唤手游》《天天爱消除》《重返帝国》《宝可梦大集结》《合金弹头：觉醒》等多款知名游戏，为全球亿万用户提供卓越的游戏娱乐体验。\n在进行品类开拓的同时，天美亦致力于通过文创践行及电竞探索等方式，不断挖掘游戏的社会价值，为游戏赋能，将正能量传递给更多玩家。",
+    "RequireWorkYearsName": "一年以上工作经验"
+  }
+}

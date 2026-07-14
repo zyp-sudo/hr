@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "1897155135734349824",
+    "RecruitPostId": 1094652697252814848,
+    "RecruitPostName": "Software Engineer 104904",
+    "LocationId": 1301,
+    "LocationName": "新加坡",
+    "BGId": 956,
+    "BGName": "IEG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "",
+    "CategoryName": "",
+    "ProductName": "",
+    "Responsibility": "Develop and maintain the backend system using PHP/GO/C++, ensuring an efficient, secure, and scalable architecture.\nResponsible for designing, coding, and testing functional modules, optimizing system performance.\nCollaborate closely with product managers and frontend development teams to understand business requirements and translate them into technical solutions.\nDevelop RESTful APIs to support a decoupled frontend-backend architecture for the management system.\nMaintain and optimize existing systems, troubleshoot and resolve system issues.\nWrite and maintain development documentation to ensure code maintainability and readability.\nParticipate in database design and optimization, ensuring efficient and consistent data storage.\r\nWork Location: Singapore-CapitaSky",
+    "Requirement": "Bachelor's degree or above, major in computer science or other related fields.\nStrong academic result. \nStrong knowledge of object-oriented programming with good coding habits and practices.\nExperience in designing and optimizing MySQL databases, capable of writing complex SQL queries.\nFamiliarity with caching technologies such as Redis.\nBasic knowledge of frontend technologies such as HTML, CSS, and JavaScript, with experience in frontend-backend collaboration.\nFamiliarity with development and deployment in a Linux environment, with basic server operation skills.\nExperience using version control tools like Git for team collaboration.\nHave good communication, learning skills, problem analysis and solving skills.\nDemonstrates a strong sense of responsibility, excellent teamwork abilities, and self-motivation.",
+    "LastUpdateTime": "2025年03月04日",
+    "PostURL": "https:////tencent.wd1.myworkdayjobs.com/Tencent_Careers/job/Singapore-CapitaSky/Software-Engineer_R104904",
+    "SourceID": 4,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "",
+    "Introduction": "",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": ""
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "1959981469942304768",
+    "RecruitPostId": 114376,
+    "RecruitPostName": "微信视频号-多模态大模型高级算法工程师-（北京）",
+    "LocationId": 5,
+    "LocationName": "广州",
+    "BGId": 14129,
+    "BGName": "WXG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40001005",
+    "CategoryName": "技术",
+    "ProductName": "视频号短视频",
+    "Responsibility": "1.负责多模态大模型（图文、视频）在红点推送、本地生活推荐等业务场景中的技术探索与落地应用，提升内容生成精准度和用户转化效率；\r\n2.结合业务数据特点，优化多模态模型的后训练、领域微调、生成控制等技术，实现文案创意生成、个性化推荐、分发策略联动的闭环优化；\r\n3.深入理解用户行为和场景需求，探索多模态生成模型与推荐系统的深度融合，提升内容触达的实时性和相关性。",
+    "Requirement": "1.计算机科学、人工智能、自然语言处理等相关专业硕士以上学历；\r\n2.熟练掌握大模型训练、微调（如LoRA/P-tuning）、生成控制（如Prompt Engineering、Reward Model）等技术；\r\n3.具备文案生成、推荐系统或大模型应用落地经验者优先。",
+    "LastUpdateTime": "2026年06月05日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=1959981469942304768",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "",
+    "Introduction": "",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "两年以上工作经验"
+  }
+}

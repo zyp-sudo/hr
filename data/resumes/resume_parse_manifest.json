@@ -1,0 +1,17 @@
+{
+  "generated_at": "2026-07-07T17:45:39+08:00",
+  "mode": "local_only",
+  "input_count": 2,
+  "parsed_count": 2,
+  "output": "data/resumes/parsed_resumes.jsonl",
+  "ocr_engines": {
+    "paddleocr_importable": false,
+    "tesseract_cli": false,
+    "pdftotext_cli": false
+  },
+  "notes": [
+    "No resume content is sent to any remote API.",
+    "Text PDF and DOCX are parsed locally.",
+    "Images use local PaddleOCR first, then local Tesseract if installed."
+  ]
+}

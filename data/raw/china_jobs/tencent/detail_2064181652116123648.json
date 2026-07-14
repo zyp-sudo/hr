@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2064181652116123648",
+    "RecruitPostId": 120455,
+    "RecruitPostName": "UE微恐轻动作项目-关卡策划（怪物设计）",
+    "LocationId": 3,
+    "LocationName": "上海",
+    "BGId": 956,
+    "BGName": "IEG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40003002",
+    "CategoryName": "产品",
+    "ProductName": "预研产品-手游APP-Project Metro",
+    "Responsibility": "1.负责微恐轻动作PVE玩法关卡中的怪物生态、Boss战机制及关卡特殊事件的创意设计与全流程落地；\n2.独立产出怪物外观设计，技能组合、行为树逻辑，能使怪物行为与关卡环境产生深度交互；\n3.运用UE蓝图快速搭建怪物+关卡的Demo，敏捷迭代并验证新怪物的机制在微恐氛围下的压迫感、乐趣点与可行性；\n4.负责关卡内怪物刷新配置、战斗密度、关卡动态难度（DDA）及玩家心流体验的调优，确保单人或多人协作下的PVE战斗节奏与心跳体验；\n5.与主题美术、叙事、音效、战斗动画等模块紧密配合，打磨怪物的视觉包装、受击反馈与恐怖表现力，强化关卡在微恐调性下的整体表达。",
+    "Requirement": "1.具备关卡/怪物玩法策划经验，有动作/射击/生存恐怖/大世界/搜索撤离等类型设计经历，需提供包含关卡或怪物的作品集；\n2.能熟练独立使用UE蓝图、行为树、黑板及环境查询系统（EQS）搭建NPC逻辑，有复杂Boss战或机制类怪物配置经验者优先；\n3.对多人合作PVE、Roguelite、规则怪谈、生存恐怖等类型有深入理解，能将“关卡”与“怪物”完美融合，产出极具差异化的PVE玩法；\n4.对民俗怪谈、都市异境、中式恐怖等微恐题材有浓厚兴趣，能够为怪物设计独特的视觉与机制创意；\n5.具备良好的审美与跨专业沟通能力，有电影镜头编排、戏剧导演、神话/民俗学研究背景或重度爱好者优先。",
+    "LastUpdateTime": "2026年06月09日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2064181652116123648",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "",
+    "Introduction": "",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "三年以上工作经验"
+  }
+}

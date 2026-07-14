@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2059456140739260416",
+    "RecruitPostId": 120235,
+    "RecruitPostName": "金融科技-大模型算法专家",
+    "LocationId": 1,
+    "LocationName": "深圳",
+    "BGId": 953,
+    "BGName": "CDG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40001005",
+    "CategoryName": "技术",
+    "ProductName": "理财通",
+    "Responsibility": "1.主导腾讯金融科技大模型在智能投顾、智能运营、智能客服、搜索推荐等金融核心场景的落地与迭代，带领团队解决链路中的关键技术瓶颈，构建可规模化复用的解决方案；\r\n2.持续跟踪大模型前沿技术(Agent流程编排、Skill、RAG、架构优化、对齐技术、推理加速等)，结合金融场景沉淀方法论，推动规范化复用并内化为团队标准。",
+    "Requirement": "1.计算机相关专业硕士及以上学历，5 年以上算法应用经验，有大模型项目经验者优先；\n2.熟悉智能体业务架构设计，在Prompt模板化、任务规划、记忆系统、工具调用、知识管理、反思改进、监控评估及多代理机制等方面有深刻理解与实践；\n3.深入理解 LLM Function Calling、Tool Use、MCP 协议、ReAct、Plan-and-Execute、 Skills 等 Agent 核心范式及技术组件；\n4.熟悉Qwen、DeepSeek、Gemini、Claude等主流大模型的核心架构与训练原理，对LLM全技术栈有体系化认知与实践能力；\n5.熟悉HuggingFace、DeepSpeed等大模型开发部署工具，具备模型训练、调优及部署能力；\n6.具备良好的沟通能力和团队协作精神，推动大模型在金融科技领域的创新探索。",
+    "LastUpdateTime": "2026年07月01日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2059456140739260416",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "1.立足金融科技前沿，发展空间广阔，可深度参与大模型在金融领域的创新探索；\r\n2.团队技术氛围浓厚，定期举办涵盖大模型、推荐搜索等多领域前沿技术的分享交流活动。",
+    "ImportantItem": "1.具备金融业务开发经验，主导或参与大模型在智能投顾、智能运营、智能客服、搜索推荐等金融场景的落地，熟悉关键业务与模型结合点；\r\n2.在顶级学术会议或期刊上发表过大模型相关论文。",
+    "Introduction": "",
+    "DepartmentIntroduction": "腾讯金融科技（Tencent Financial Technology）是腾讯公司提供移动支付与金融服务的综合业务平台，秉承合规、精品、风控、开放、有所为有所不为的发展理念，连接用户与金融服务，让每个人乐享金融的美好；携手合作伙伴为全球用户提供基础支付、财富管理、证券投资、企业金融、民生产品等服务。",
+    "RequireWorkYearsName": "五年以上工作经验"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2002912013084418048",
+    "RecruitPostId": 1200409574921715712,
+    "RecruitPostName": "Hunyuan Multimodal Algorithm Researcher Intern(Omni-Modal)​​ 106650",
+    "LocationId": 401,
+    "LocationName": "帕罗奥多",
+    "BGId": 958,
+    "BGName": "TEG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40001005",
+    "CategoryName": "技术",
+    "ProductName": "",
+    "Responsibility": "Business Unit\n\nWhat the Role Entails\n1.Conduct research and development of Omni multimodal large models, including the design and construction of training data, foundational model algorithm design, optimization related to pre-training/SFT/RL, model capability evaluation, and exploration of downstream application scenarios.\n2.Scientifically analyze challenges in R&D, identify bottlenecks in model performance, and devise solutions based on first principles to accelerate model development and iteration, ensuring competitiveness and leading-edge performance.\n3.Explore diverse paradigms for achieving Omni-modal understanding and generation capabilities, research next-generation model architectures, and push the boundaries of multimodal models.\n\nWho We Look For\n1.Bachelor’s degree (full-time preferred) or higher in Computer Science, Artificial Intelligence, Mathematics, or related fields; graduate degrees are prioritized. 2.Hands-on experience in large-scale multimodal data processing and high-quality data generation is highly preferred.\n3.Solid foundation in deep learning algorithms and practical experience in large model development; familiarity with Diffusion Models and Autoregressive Models is advantageous. Publication in top-tier conferences or experience in cross-modal (e.g., audio-visual) research is preferred.\n4.Proficiency in underlying implementation details of deep learning networks and operators, model tuning for training/inference, CPU/GPU acceleration, and distributed training/inference optimization; practical experience is a plus.\n5.Participation in ACM or NOI competitions is highly valued.\n6.Strong learning agility, communication skills, teamwork, and curiosity.\nLocation State(s)\nUS-California-Palo Alto\nThe expected base pay range for this position in the location(s) listed above is $28.27 to $60.00 per hour. Actual pay may vary depending on job-related  knowledge, skills, and experience.\nThis position will be eligible for 1 hour of paid sick leave for every 30 hours worked and up to 13 paid holidays throughout the calendar year. Subject to the terms and conditions of the applicable plans then in effect, full-time interns are also eligible to enroll in the Company-sponsored medical plan.\n\nEqual Employment Opportunity at Tencent\nAs an equal opportunity employer, we firmly believe that diverse voices fuel our innovation and allow us to better serve our users and the community. We foster an environment where every employee of Tencent feels supported and inspired to achieve individual and common goals.\r\nWork Location: US-California-Palo Alto",
+    "Requirement": "岗位要求详情请见上方岗位职责内说明",
+    "LastUpdateTime": "2026年07月02日",
+    "PostURL": "https://tencent.wd1.myworkdayjobs.com/Tencent_Careers/job/US-California-Palo-Alto/Hunyuan-Multimodal-Algorithm-Researcher-intern-Omni-Modal---_R106650",
+    "SourceID": 4,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "",
+    "Introduction": "",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": ""
+  }
+}

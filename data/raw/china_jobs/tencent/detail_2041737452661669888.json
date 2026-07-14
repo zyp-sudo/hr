@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2041737452661669888",
+    "RecruitPostId": 119132,
+    "RecruitPostName": "腾讯云-泛互联网行业售前架构师",
+    "LocationId": 2,
+    "LocationName": "北京",
+    "BGId": 29294,
+    "BGName": "CSIG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40003001",
+    "CategoryName": "产品",
+    "ProductName": "腾讯云",
+    "Responsibility": "1.负责支持商务建立客户技术线客情，进行前期业务需求分析，输出针对客户的打法策略；\r\n2.负责互联网行业大客户技术对接，通过技术咨询拿到和分析客户业务需求，并且输出对应的解决方案；\r\n3.负责客户技术方案咨询对接阶段的技术咨询和POC测试；\r\n4.负责支持互联网行业技术沙龙，提升腾讯云在ToB市场影响力；\r\n5.沉淀互联网行业业务场景分析、行业打法策略、赛道共性痛点、行业案例、客户最佳实践等，并且对内赋能输出。",
+    "Requirement": "1.本科及以上学历，计算机相关专业背景；\r\n2.5年以上互联网业务后端研发、架构设计相关经验，有大型互联网项目后端开发经验者优先；\r\n3.对互联网典型业务场景和业务架构熟悉（游戏/电商/社交/Saas等）；\r\n4.对互联网业务高并发、高可用业务架构开发与设计熟悉；\r\n5.对互联网业务设计的微服务、大数据、中间件（ES\\MQ）、数据库（Nosql\\Mysql）、语音\\图像AI处理、音视频技术栈及在互联网业务中的应用场景熟悉；\r\n6.熟悉云计算，熟悉ToB业务流程，有丰富的客户技术咨询经验，有出色的商机洞察能力；\r\n7.积极思考、敢于决断、高效执行、务实坚韧、服务主动；\r\n8.心态开放乐观、善于沟通协作，善于资源整合。",
+    "LastUpdateTime": "2026年06月22日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2041737452661669888",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "1.在同等条件下，通过腾讯云认证或取得同等资格认证的候选人，我们会优先考虑。",
+    "Introduction": "",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "五年以上工作经验"
+  }
+}

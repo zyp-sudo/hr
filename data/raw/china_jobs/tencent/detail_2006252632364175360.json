@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2006252632364175360",
+    "RecruitPostId": 116946,
+    "RecruitPostName": "金融科技-尽职调查产品经理",
+    "LocationId": 1,
+    "LocationName": "深圳",
+    "BGId": 953,
+    "BGName": "CDG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40003001",
+    "CategoryName": "产品",
+    "ProductName": "反洗钱与风控公共能力",
+    "Responsibility": "1.合规策略与产品规划：负责反洗钱持续尽调产品策划工作，承接合规、业务、部门内履职团队等各方需求，设计满足多方需求的客户尽职调查产品策略，确保监管合规要求落地和用户良好体验；\r\n2.产品策略设计与落地：对全量客户开展持续客户尽职调查，能运用机器学习等数据分析方法，对客户信息、交易行为等进行深度挖掘，制定并落地全链路风险防控策略，建立可量化评估的策略监控体系，持续跟踪核心指标，推动策略迭代；\r\n3.理解并设计尽职调查相关的履职数据库表，负责在数据库中校验数据准确性，并提取自身系统的履职数据。",
+    "Requirement": "1.5年及以上产品策划经验，具备中后台的产品策划经验，熟悉SQL语言，对支付体系有了解的优先；\n2.具有较强的学习能力、沟通能力和复杂问题解决能力，能够快速学习反洗钱知识，能深入准确理解各方的需求，并能寻找最佳的系统解决方案；\n3.具备乐观及积极的心态，抗压能力及责任感强，踏实认真，善于沟通与协作。",
+    "LastUpdateTime": "2026年07月03日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2006252632364175360",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "",
+    "Introduction": "",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "五年以上工作经验"
+  }
+}

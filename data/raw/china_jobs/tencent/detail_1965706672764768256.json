@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "1965706672764768256",
+    "RecruitPostId": 114721,
+    "RecruitPostName": "云数据库内核研发工程师",
+    "LocationId": 2,
+    "LocationName": "北京",
+    "BGId": 958,
+    "BGName": "TEG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40001001",
+    "CategoryName": "技术",
+    "ProductName": "TDSQL MySQL",
+    "Responsibility": "1.负责数据库内核模块的架构设计和特性开发；\r\n2.持续优化云原生、主备、分布式架构下的性能、吞吐和时延；\r\n3.参与面向HTAP的SQL引擎开发，包括不限于查询优化器、并行执行、向量引擎的设计与优化；\r\n4.参与共享存储架构、高可用架构、日志系统的开发，包括不限于物理复制、WAL、备份恢复的设计与优化；\r\n5.负责线上数据库实例内核相关根因诊断和问题修复。",
+    "Requirement": "1.掌握C/C++编程语言，3年及以上开发经验，有良好的算法和数据结构基础；\r\n2.掌握Linux系统进程调度、网络通信、存储和IO机制，有丰富的Linux多线程编程、网络编程经验；\r\n3.掌握事务机制和数据库内核架构，对MySQL复制、InnoDB存储引擎等核心模块有深入理解；\r\n4.多年的MySQL内核源码开发，性能调优经验。有基于共享存储的云原生数据库开发经验者优先；\r\n5.良好的学习、沟通和团队协作能力，能够熟练编写各类技术文档；\r\n6.有SIGMOD、VLDB、ICDE等数据库相关顶会论文者优先。",
+    "LastUpdateTime": "2026年07月01日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=1965706672764768256",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "1.对Aurora/Snowflake/PolarDB/OceanBase/Spanner/TiDB/CockroachDB/OpenGauss/Starrocks/Hyperscale/DuckDB等核心技术有深入理解。",
+    "Introduction": "",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "五年以上工作经验"
+  }
+}

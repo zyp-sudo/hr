@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2032453307385147392",
+    "RecruitPostId": 118484,
+    "RecruitPostName": "在研项目-资深英雄策划-核心战斗",
+    "LocationId": 1,
+    "LocationName": "深圳",
+    "BGId": 956,
+    "BGName": "IEG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40003002",
+    "CategoryName": "产品",
+    "ProductName": "公共",
+    "Responsibility": "1.英雄机制设计：负责英雄全套战斗技能的创意与机制设计；\r\n2.战斗耦合与平衡：深度理解英雄技能与枪械系统（Gunplay）的交互博弈关系。通过技能差异化设计确保技能与枪械体验的有机统一；\r\n3.叙事感官传达：基于英雄背景与性格设定，提炼核心战斗特征，确保技能表现力、动作风格与角色叙事高度契合；\r\n4.全流程落地与验收：；\r\n5.独立执行：熟练操作编辑器，完成英雄技能的逻辑配置、白盒原型搭建及数值录入；\r\n6.极致打磨：协同动作、特效、音效团队，对技能释放的节奏感、视觉反馈及受击反馈进行精细化验收与打磨。",
+    "Requirement": "1.实战经验：3 年及以上 FPS/TPS 核心战斗或英雄设计经验，至少拥有三个完整英雄角色从概念设计到落地调优的全过程经历；\r\n2.深刻理解**英雄射击（Hero Shooter）**的设计理论；\r\n3.能够清晰定义英雄与枪械的设计锚点；\r\n4.能精准锚定不同玩法下的数值体系和体验心流设计；\r\n5.熟练使用 UE4/5（蓝图、Data Asset、状态机等），具备独立推动功能从“白盒原型”演进到“高完成度成品”的自驱力；\r\n6.深耕英雄射击赛道，至少精通 3 款主流英雄射击游戏，能系统性拆解不同英雄的战斗维度；\r\n7.综合素质：逻辑缜密，具备出色的审美直觉与跨部门沟通能力，能通过技术手段确保设计意图的高还原度。",
+    "LastUpdateTime": "2026年07月03日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2032453307385147392",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "",
+    "Introduction": "",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "五年以上工作经验"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2061649053032296448",
+    "RecruitPostId": 1259146614534897664,
+    "RecruitPostName": "Junior Site Reliability Engineer 107553",
+    "LocationId": 1301,
+    "LocationName": "新加坡",
+    "BGId": 62314,
+    "BGName": "Overseas Functional System",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40001001",
+    "CategoryName": "技术",
+    "ProductName": "",
+    "Responsibility": "About the Hiring Team\nTencent Overseas IT has the mission to empower Tencent’s rapid global growth with future ready, global IT platforms, applications and services. We are chartered to lead the Overseas IT strategy, architecture, roadmap and execution. Satisfying our internal/external customers and becoming a world class global IT team are our top aspirations.\n\nWhat the Role Entails\nAbout the Infra and Network Tech team\nThe team is the part of Tencent Overseas IT department and it is responsible for building and maintaining systems for internal  IT and game publishing lines.\nAbout the role\nAs an intern in SRE  team, you will closely collaborate  with teams across departments to build and deploy powerful systems and products that can perform previously impossible tasks and achieve unprecedented levels of performance.\nIn this role, you will design and develop the tools & dashboards required for a variety of cutting-edge technologies and consumer projects and build flexible infrastructure and intuitive UI experiences.\nBesides, you will have chance to participate in researching existing software and machine learning/deep learning model, proposing improvement and industrializing the product.\nAt last you will experience corporate IT operations and maintainance of the corporate systems and cloud-based infrastructure necessary to enable a highly connected and collaborative workforce\n\nWho We Look For\nRequirements:\nStudy computer science, data science, or a related field. \nSkilled in at least one of programming languages (such as Go, Python, Java, Node.js)\nKnowledge of ML frameworks, libraries, data structures, modelling. (such as PyTorch, HuggingFace libs)\nKnowledge of basic networking, linux, cloud provider, container operation. (such as Ubuntu, AWS, K8S)\nExcellent analytical and problem solving skills with a passion for challenging issues. \nGood teamwork spirit and strong communication skills. \nPreferred Qualifications:\nKnowledge of open sourced LLM fined-tunning, AI Infra techniques \nNetwork, GPU and Server hardware enthusiasm\n\nEqual Employment Opportunity at Tencent\nAs an equal opportunity employer, we firmly believe that diverse voices fuel our innovation and allow us to better serve our users and the community. We foster an environment where every employee of Tencent feels supported and inspired to achieve individual and common goals.\r\nWork Location: Singapore-CapitaSky",
+    "Requirement": "岗位要求详情请见上方岗位职责内说明",
+    "LastUpdateTime": "2026年06月01日",
+    "PostURL": "https://tencent.wd1.myworkdayjobs.com/Tencent_Careers/job/Singapore-CapitaSky/Junior-Site-Reliability-Engineer_R107553",
+    "SourceID": 4,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "",
+    "Introduction": "",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": ""
+  }
+}

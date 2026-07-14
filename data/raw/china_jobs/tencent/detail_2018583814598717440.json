@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2018583814598717440",
+    "RecruitPostId": 117722,
+    "RecruitPostName": "腾讯游戏-游戏引擎开发资深工程师-AI渲染",
+    "LocationId": 3,
+    "LocationName": "上海",
+    "BGId": 956,
+    "BGName": "IEG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40001001",
+    "CategoryName": "技术",
+    "ProductName": "AI渲染",
+    "Responsibility": "1.负责RTX光线追踪技术的引擎集成工作，包括Vulkan/DXR渲染管线集成、实时光追渲染（反射、阴影、全局光照）、DLSS超分辨率和帧生成技术集成；\n2.负责引擎渲染架构重构工作，设计并实现双渲染后端（传统 + RTX），支持多后端无缝切换，确保兼容性和稳定性；\n3.负责AI资产工具的工程集成，包括纹理超分（Real-ESRGAN等）、材质自动转换（PBR材质生成）、神经贴图压缩（Neural Texture Compression）等工具的集成和自动化管线开发；\n4.负责游戏渲染性能优化工作，针对RTX模式进行深度性能分析和优化，确保稳定60fps，提升游戏表现力；\n5.负责制定引擎工具链方案，帮助研发团队提升研发效率；\n6.负责游戏中性能优化相关工作，针对需求定制增强游戏引擎底层功能；\n7.负责图形兼容性分析以及疑难问题的分析定位工作。",
+    "Requirement": "1.3年以上手机游戏引擎开发和维护经验，深刻理解3D游戏引擎架构，精通引擎接口和游戏制作流程；\n2.熟悉3D图形学，有良好的数学和算法基础；\n3.熟练掌握3D图形渲染技术，精通Shader相关开发；\n4.精通Vulkan或DirectX 12现代图形API，有实际项目落地经验，熟悉渲染管线设计和性能优化；\n5.有光线追踪技术（DXR/Vulkan Ray Tracing）实际项目经验，熟悉光追渲染管线和性能优化；\n6.有引擎深度集成和工程落地经验，能够独立完成复杂技术方案的设计和实施；\n7.责任心强，善于沟通，对游戏前沿技术有热情；\n8.熟悉商业游戏引擎源代码，热爱游戏优先。",
+    "LastUpdateTime": "2026年06月08日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2018583814598717440",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "1.成熟的产品体系，与业界顶尖人才共事；\n2.参与具有挑战性和创新性的游戏项目，提升个人技术水平和行业影响力；\n3.竞争力的薪资待遇和完善的福利体系；\n4.提供广阔的职业发展空间和学习机会，助力职业成长。",
+    "ImportantItem": "1.有AI工具集成和落地经验，如纹理超分（Real-ESRGAN、ESRGAN）、材质生成（Substance、MaterialGAN）、神经贴图压缩（Neural Texture Compression）等工具的实际项目应用；\n2.有自动化工具链开发经验，能够设计和实现美术资产自动化处理管线，提升美术资产制作效率；\n3.了解神经渲染技术，如Neural BRDF、Neural Radiance Fields（NeRF）、Neural Texture Compression等前沿技术，有论文阅读或复现经验；\n4.有NVIDIA RTX技术栈使用经验，如RTX Remix、Omniverse、RTX SDK等工具或平台的使用经验；\n5.有游戏引擎源码级开发经验，如UE4/UE5、Unity、自研引擎等，熟悉引擎架构和渲染模块；\n6.有性能优化和调试经验，熟练使用RenderDoc、NSight Graphics、PIX等GPU调试工具；\n7.有技术分享和开源贡献，如SIGGRAPH/GDC分享；\n8.有跨平台开发经验，熟悉PC、主机（PS5/Xbox）等多平台渲染技术。",
+    "Introduction": "在腾讯，作为一位游戏客户端开发，你始终身处科技前沿，与同样具备满分热情的策划、美术等团队紧密协作，助力新世界的诞生、运作，持续打造极致体验。你可以善用自己的全局观察能力，不断打开技术视野，与靠谱的团队一起做出真正有趣的新事物。",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "一年以上工作经验"
+  }
+}

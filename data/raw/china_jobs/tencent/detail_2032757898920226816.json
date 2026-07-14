@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2032757898920226816",
+    "RecruitPostId": 118497,
+    "RecruitPostName": "腾讯会议-音频声学工程师",
+    "LocationId": 1,
+    "LocationName": "深圳",
+    "BGId": 29294,
+    "BGName": "CSIG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40001005",
+    "CategoryName": "技术",
+    "ProductName": "腾讯会议",
+    "Responsibility": "1.负责智能音频设备的体验定义、方案设计与落地，对核心音频体验与技术竞争力负责；\r\n2.主导麦克风/扬声器声学方案：器件建议、结构声学评估、指标拆解、调音与系统调优；\r\n3.与算法团队协作推进前端算法/模型的评测与落地，建立回归机制，输出版本对比结论与优化建议；\r\n4.规划并执行音频数据采集，建设采集流程与规范，支撑训练/评测/回归；\r\n5.协同固件/硬件完成音频链路联调与系统定位。",
+    "Requirement": "1.本科及以上，声学/电子/通信/计算机等相关专业优先；具备智能音频声学/系统经验，可独立承担交付与系统问题闭环；\r\n2.熟悉音频评测与调优方法，熟练使用声学类仪器，如AQUCA、AP等电声测试软件；具备数据分析与自动化能力（脚本/工具链搭建、批量分析、回归对比与报告输出）；\r\n3.具备系统工程能力与跨团队推动力，Owner 意识强。",
+    "LastUpdateTime": "2026年06月16日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2032757898920226816",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "",
+    "Introduction": "渴望为世界带来新意的人，早已对描绘未来的“热词”不陌生——人工智能、机器学习、数据科学等等。腾讯始终在业界前沿不断探索，积极布局，并为优秀的你提供无限广阔的舞台。我们坚信科技的不断革新，最终能带来美好的、撼动人心的改变。",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "三年以上工作经验"
+  }
+}

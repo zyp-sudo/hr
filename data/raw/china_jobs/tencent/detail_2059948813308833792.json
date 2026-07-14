@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2059948813308833792",
+    "RecruitPostId": 120282,
+    "RecruitPostName": "金铲铲之战GUI设计师",
+    "LocationId": 1,
+    "LocationName": "深圳",
+    "BGId": 956,
+    "BGName": "IEG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40002001",
+    "CategoryName": "设计",
+    "ProductName": "JK项目",
+    "Responsibility": "1.视觉体系构建，主导游戏整体GUI风格的设定与迭代、设计规范及设计语言，确保多端、多分辨率下的视觉统一性；\r\n2.核心体验设计，负责游戏内关键系统（如战斗HUD、背包、商城、抽卡、设置等）的视觉设计与交互流程优化；\r\n3.团队引领与赋能，提升团队整体审美水准与设计执行力。探索新的视觉表现趋势，并将其落地到实际项目中。",
+    "Requirement": "1.本科及以上学历，5年以上游戏GUI设计经验，有至少一款上线成功的商业化游戏项目经验；\r\n2.扎实的美术功底，对排版、间距、字体、色彩具有强迫症般的敏感度；\r\n3.优秀的沟通协调能力，能够有效推动跨部门协作；\r\n4.具备较强的问题分析与解决能力，能快速应对突发情况。",
+    "LastUpdateTime": "2026年06月12日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2059948813308833792",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "1.熟悉 UE5/Unity​ 引擎，能自己搭建UI蓝图或Prefab进行测试；\r\n2.有 二次元/科幻/写实​ 特定风格的深耕经验；\r\n3.有手绘能力，能独立完成图标（Icon）绘制；\r\n4.对AIGC（Midjourney, Stable Diffusion）在设计工作流中的应用有实战经验。",
+    "Introduction": "设计，决定了用户体验的上限。在“一切以用户价值为依归”的腾讯，设计师们始终以开放、严谨的专业态度，持续传递设计的价值。加入我们，与极富想象力和专业能力的同事一起，探索体验，设计未来。",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "五年以上工作经验"
+  }
+}

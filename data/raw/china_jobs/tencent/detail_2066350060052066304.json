@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2066350060052066304",
+    "RecruitPostId": 120567,
+    "RecruitPostName": " 在研剑来IP单机游戏-资深动画设计师 ",
+    "LocationId": 1,
+    "LocationName": "深圳",
+    "BGId": 956,
+    "BGName": "IEG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40002002",
+    "CategoryName": "设计",
+    "ProductName": "JGame-端游",
+    "Responsibility": "1.设计并制作主角 / 怪物 / NPC 的高品质关键帧与动捕动画；\n2.负责引擎内实现：状态机、混合树、Motion Matching、Root Motion、IK 适配不平坦地形与攀爬等场景；\n3.主导或参与动捕拍摄与数据清理，确保动捕数据符合玩法与视觉要求；\n4.与设计、程序、技术动画协作，解决动画与玩法冲突、性能瓶颈，制定动画资产规范与验收标准；\n5.实现次级运动：布料、头发、裙摆、武器摆动等物理驱动效果，提升动画真实感；\n6.开发与维护动画蓝图、状态机、蒙太奇，解决动画与玩法交互的技术问题。",
+    "Requirement": "1.作品集突出玩法动画与动捕 / 关键帧能力，有已发行 3A 项目上线经验；\r\n2.精通 Maya、MotionBuilder，熟练掌握 UE5 动画系统与动画蓝图；\r\n3.深刻理解人体 / 生物运动规律、节奏与重量感，能适配写实 / 风格化等多种风格；\r\n4.有 3A 项目技术动画经验，能独立解决绑定、IK、物理模拟等复杂问题；\r\n5.具备良好的沟通与项目管理能力，能在迭代中快速响应反馈。",
+    "LastUpdateTime": "2026年06月15日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2066350060052066304",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "",
+    "Introduction": "【腾讯游戏｜这一局，由你主导】\n用画笔创造玩家热爱的世界。在腾讯游戏，你将主导角色设计、场景搭建或风格定义，用扎实的美术功底与独特创意，打造真正触动人心的视觉体验。这里有成熟的技术支持、丰富的项目机会，你的作品将随国民级游戏走进亿万玩家视野。加入我们，让艺术真正“玩”出价值。",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "五年以上工作经验"
+  }
+}

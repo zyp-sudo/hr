@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2034114865085444096",
+    "RecruitPostId": 118614,
+    "RecruitPostName": "腾讯云轻量云域名解析专家（北京/深圳）",
+    "LocationId": 1,
+    "LocationName": "深圳",
+    "BGId": 29294,
+    "BGName": "CSIG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40001001",
+    "CategoryName": "技术",
+    "ProductName": "腾讯云",
+    "Responsibility": "1.负责高性能域名解析服务的核心模块设计、研发与优化；\r\n2.负责基于DPDK的解析数据面能力建设与性能调优；\r\n3.负责系统在吞吐、时延、缓存命中、资源利用率和可用性方面的持续优化；\r\n4.负责现网复杂问题定位分析，建设高可靠、高韧性的基础设施能力；\r\n5.参与技术演进与团队技术建设，推动关键能力沉淀和经验复用。",
+    "Requirement": "1.3年以上C/C++开发经验，具备扎实的计算机基础；\r\n2.熟悉Linux系统、网络编程、并发模型、内存管理和性能分析；\r\n3.有高性能网络服务、网关、代理、负载均衡、接入层、基础设施中间件等相关经验；\r\n4.有DPDK、XDP、eBPF或类似高性能网络框架经验者优先；\r\n5.有DNS、网络安全、网络协议栈优化等经验者优先；\r\n6.能够独立推动复杂问题解决，并具备良好的沟通协作能力。",
+    "LastUpdateTime": "2026年06月16日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2034114865085444096",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "",
+    "Introduction": "在腾讯，后台开发工程师不仅是“又快又稳”的问题解决专家，更是生态共创者。你将与技术团队一同沉淀优质代码，让它成为我们共有的宝贵资产。在不同的业务场景和技术发展阶段，你的架构思维也将帮助更多协作团队拓展新的思考。我们也珍视你的挑战精神，同时欢迎你一起参与团队愿景、文化和产品方向的探讨。",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "三年以上工作经验"
+  }
+}

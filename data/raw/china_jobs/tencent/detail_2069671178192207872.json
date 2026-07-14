@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2069671178192207872",
+    "RecruitPostId": 120727,
+    "RecruitPostName": "微信小程序-大模型后台开发工程师-开发生态",
+    "LocationId": 5,
+    "LocationName": "广州",
+    "BGId": 14129,
+    "BGName": "WXG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40001001",
+    "CategoryName": "技术",
+    "ProductName": "小程序",
+    "Responsibility": "1.负责大模型训练框架的开发和优化，支撑高效稳定的大规模训练任务；\r\n2.参与大模型应用层面的开发，包含 Agent 应用、RAG 实现与调优、数据合成、自动化测评等。",
+    "Requirement": "1.熟练掌握 C/C++/Python 等至少一门编程语言，具备扎实的数据结构和算法功底；\r\n2.有海量服务开发经验，熟悉分布式系统设计与优化，具备良好的工程素养；\r\n3.熟悉主流大模型训练框架 Megatron/DeepSpeed，熟悉分布式训练调优；\r\n4.具备良好的数据处理能力，具备快速学习能力，有团队合作精神；\r\n5.对于探索前沿技术有热情，具备独立探索前沿技术的能力。",
+    "LastUpdateTime": "2026年07月01日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2069671178192207872",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "1.熟悉大模型相关算法，参与过百卡以上训练任务优先；\r\n2.有大模型应用研发经验，熟悉 Agent 构建、RAG 增强等方向技术实现优先。",
+    "Introduction": "",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "两年以上工作经验"
+  }
+}

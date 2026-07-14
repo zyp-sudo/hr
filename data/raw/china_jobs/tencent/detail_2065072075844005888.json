@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2065072075844005888",
+    "RecruitPostId": 120531,
+    "RecruitPostName": "腾讯云-高性能网络后台研发工程师",
+    "LocationId": 3,
+    "LocationName": "上海",
+    "BGId": 29294,
+    "BGName": "CSIG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40001001",
+    "CategoryName": "技术",
+    "ProductName": "腾讯云",
+    "Responsibility": "1.负责计算集群的高性能RDMA网络系统软件开发和建设工作，构建业界领先的集群高性能RDMA网络性能和稳定性；\r\n2.负责业界大模型训练的主流加速框架（如DeepSpeed、Megatron-LM）与云平台底层技术特点和优势结合，通过自研高性能RDMA网络技术进行持续优化；\r\n3.跟踪业界最新AI基础设施和互联网络通信技术建设情况，包括scale up&out网络，持续打造自研产品竞争力。",
+    "Requirement": "1.本科及以上学历，人工智能、计算机、数学等相关专业；\n2.5年以上AI研发或项目经验，有云计算领域相关经验优先；\n3.具备TensorRT，Triton等推理框架和服务部署软件的优化和实践能力；\n4.熟悉深度学习框架(Pytorch, Tensorflow，等)，熟悉各组件和类库，常见AI模型；\n5.熟悉行业内人工智能平台、机器学习实现方案，熟悉主流云计算厂商 AI 产品特点，有 AI 研发经验者优先；\n6.对GPU，分布式计算，RDMA，MPI，GPU Direct 等技术有比较深入的理解和实际部署优化经验；\n7.精通C++、Python等开发语言，熟练掌握Linux软件开发技术；\n8.有一定的管理能力，具备丰富的产品规划和设计经验，对人工智能技术及行业有前瞻性战略思考；\n9.清晰的逻辑分析和表达能力，乐观积极，具有较强的责任心和执行力；\n10.通过腾讯云技术认证或同等资格认证的优先录取。",
+    "LastUpdateTime": "2026年06月11日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2065072075844005888",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "",
+    "Introduction": "在腾讯，后台开发工程师不仅是“又快又稳”的问题解决专家，更是生态共创者。你将与技术团队一同沉淀优质代码，让它成为我们共有的宝贵资产。在不同的业务场景和技术发展阶段，你的架构思维也将帮助更多协作团队拓展新的思考。我们也珍视你的挑战精神，同时欢迎你一起参与团队愿景、文化和产品方向的探讨。",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "五年以上工作经验"
+  }
+}

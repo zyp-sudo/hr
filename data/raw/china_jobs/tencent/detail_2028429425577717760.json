@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2028429425577717760",
+    "RecruitPostId": 118075,
+    "RecruitPostName": "《王者荣耀》-技术策划-工具能力方向",
+    "LocationId": 8,
+    "LocationName": "成都",
+    "BGId": 956,
+    "BGName": "IEG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40003002",
+    "CategoryName": "产品",
+    "ProductName": "王者荣耀",
+    "Responsibility": "1.负责项目组各个模块编辑器的功能迭代与维护，满足日常开发需求，提高工作效率；\r\n2.负责项目组底层能力建设，挖掘可优化的工作流程，对已有不合理流程进行调整重构；\r\n3.协助美术、程序进行项目内资产与配置的标准化建设，推进内容生产的工业化进度；\r\n4.协助策划和程序制作玩法demo或英雄机制预研。",
+    "Requirement": "1.2年以上技术策划相关工作经验；\r\n2.熟悉常用的商业化游戏引擎（Unity、UE），至少掌握一门脚本语言（C#、Lua、TS），能独立完成工具或玩法原型的制作；\r\n3.具备游戏工具设计或开发管线优化的工作经验，对游戏内容产出管线的设计及优化有一定认识；\r\n4.了解游戏行业，熟悉各个细分岗位的工作内容及潜在诉求；\r\n5.具备责任心和主人翁意识，良好的团队沟通和工作协同能力，有较强的自驱力，抗压能力强，乐于解决问题。",
+    "LastUpdateTime": "2026年07月01日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2028429425577717760",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "",
+    "Introduction": "【腾讯游戏｜这一局，由你主导】\n腾讯游戏，致力于以顶尖技术创造丰富优质的游戏体验，用创新玩法点燃玩家情感共鸣，深度打磨每处游戏细节。加入我们，用创造力拓展游戏的边界，为用户创造高品质数字生活体验！",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "两年以上工作经验"
+  }
+}

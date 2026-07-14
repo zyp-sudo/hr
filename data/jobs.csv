@@ -1,0 +1,5 @@
+id,name,type,description,sourceCount
+java-backend-engineer,Java 后端工程师,既有岗位,负责后端服务开发 数据访问 微服务治理和系统稳定性建设,0
+ai-agent-engineer,AI Agent 工程师,新兴岗位,负责智能体工作流编排 工具调用 RAG 记忆系统 评测和幻觉防控,0
+data-governance-engineer,数据治理工程师,既有岗位,负责数据标准 数据质量 元数据管理 指标口径和数据资产治理,0
+cloud-native-sre,云原生 SRE 工程师,既有岗位,负责 Kubernetes 平台 稳定性 监控告警 发布治理和容量优化,0

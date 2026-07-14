@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2044972213014261760",
+    "RecruitPostId": 119425,
+    "RecruitPostName": "云数据库管控调度研发工程师(北京/深圳)",
+    "LocationId": 1,
+    "LocationName": "深圳",
+    "BGId": 958,
+    "BGName": "TEG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40001001",
+    "CategoryName": "技术",
+    "ProductName": "TDSQL PG",
+    "Responsibility": "1.参与云原生数据库资源调度系统的架构设计与核心模块研发，方向涵盖调度策略、弹性伸缩、装箱优化等；\r\n2.负责海量元数据管理系统的设计与优化，解决超大规模集群下的性能、一致性与高可用挑战；\r\n3.设计并落地混合负载场景下的资源隔离与 QoS 控制方案，保障多租户场景的服务稳定性；\r\n4.基于业务负载特征构建资源预测模型，推动弹性调度与容量管理的智能化演进；\r\n5.参与多模态集群统一管控平面的建设，提升整体运维效率与可观测性；\r\n6.探索 AI/ML 技术在调度优化、异常识别、根因分析等场景的工程化落地。",
+    "Requirement": "1.3 年以上分布式系统、云原生基础设施或数据库内核研发经验；\r\n2.深入理解分布式调度系统原理，有 Kubernetes 调度器、云数据库管控系统或大规模资源管理平台（如 Yarn、Mesos）的开发经验；\r\n3.有元数据管理、分布式 KV 存储（如 etcd、TiKV）或 Catalog 系统的设计与开发经验；\r\n4.熟悉负载预测、容量规划或在线资源优化相关方向，有实际工程落地经验；\r\n5.对分布式系统有深入理解，熟悉 Raft / Paxos 协议及一致性模型，具备扎实的系统编程能力（C++ / Go / Rust）；\r\n6.有机器学习或强化学习在系统调度、资源管理场景应用经验者优先；有 OSDI / SOSP / VLDB / SIGMOD 等顶会论文发表，或知名开源项目 Contributor 经验者优先。",
+    "LastUpdateTime": "2026年04月24日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2044972213014261760",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "",
+    "Introduction": "",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "三年以上工作经验"
+  }
+}

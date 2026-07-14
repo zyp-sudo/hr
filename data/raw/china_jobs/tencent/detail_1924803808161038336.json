@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "1924803808161038336",
+    "RecruitPostId": 112197,
+    "RecruitPostName": "魔方工作室-AI技术美术（流程工具向）",
+    "LocationId": 1,
+    "LocationName": "深圳",
+    "BGId": 956,
+    "BGName": "IEG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40002002",
+    "CategoryName": "设计",
+    "ProductName": "UC-手游APP",
+    "Responsibility": "1.协助项目规划和改善美术流程，为任务管理、美术制作等管线提供流程工具或服务，以提高美术环节的管理和生产效率；\r\n2.配合PM、策划、美术等角色调研和挖掘项目需求，解决各环节间的流程问题，以促进项目更稳定、可控；\r\n3.与团队共同建设、优化和维护现有的流程基建和服务，辅助其他团队学习、接入和使用团队各项成熟业务；\r\n4.对整个项目流程工具负责，有较强风险意识，可提前暴露问题，规避问题。",
+    "Requirement": "1.本科及以上学历，有5年以上的TA或TD工作经验；\r\n2.有影视或者游戏行业的相关工作经验；\r\n3.熟悉游戏生产流程，参与过美术制作、项目管理或资产管理等管线的维护和开发；\r\n4.熟练使用Unreal或Unity，可以完成引擎内美术工具开发；\r\n5.熟悉常用DCC相关软件，比如3DsMax、Mava、Houdini、SP/SD等，有丰富的制作工具和流程工具的开发经验；\r\n6.较好的编程功底，至少精通C#、C++、Python其中一门编程语言，可以独立完成美术工具的开发和维护。",
+    "LastUpdateTime": "2026年06月26日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=1924803808161038336",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "1.有Shotgrid、Ftrack、CGTeamwork等流程管理系统的使用和开发经验；\r\n2.有Rez的使用开发经验；\r\n3.有良好的沟通和表达能力，能够积极处理问题，乐于钻研、学习、总结和分享；\r\n4.部门负责人，有全流程开发能力。",
+    "Introduction": "【腾讯游戏｜这一局，由你主导】\n用画笔创造玩家热爱的世界。在腾讯游戏，你将主导角色设计、场景搭建或风格定义，用扎实的美术功底与独特创意，打造真正触动人心的视觉体验。这里有成熟的技术支持、丰富的项目机会，你的作品将随国民级游戏走进亿万玩家视野。加入我们，让艺术真正“玩”出价值。",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "五年以上工作经验"
+  }
+}

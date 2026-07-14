@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2028325900583600128",
+    "RecruitPostId": 118046,
+    "RecruitPostName": "腾讯地图-AIGC视觉算法专家-大模型应用方向",
+    "LocationId": 2,
+    "LocationName": "北京",
+    "BGId": 29294,
+    "BGName": "CSIG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40001005",
+    "CategoryName": "技术",
+    "ProductName": "腾讯地图基础能力",
+    "Responsibility": "1.研发基于视觉大模型的AIGC算法，实现地图要素（尤其是建筑）的模型超分、风格化生成、材质替换与色彩增强；\n2.利用文生图/图生图大模型，结合地理信息，为批量建筑自动生成符合语义、光照一致性的风格化纹理与材质；\n3.针对特定风格（如卡通渲染、赛博朋克、水墨风）进行定向优化，实现城市级规模的一键换肤；\n4.推动技术在产品中落地，解决生成内容的几何一致性、视觉舒适度与性能开销等挑战。",
+    "Requirement": "1.本科及以上学历，工作经验5年以上，熟练掌握Python、PyTorch，具备扎实的CV/DL基础；\n2.拥有使用Diffusion Model、GAN等生成模型进行图像生成、风格迁移、纹理合成的实际项目经验；\n3.对3D计算机视觉和神经渲染（如NeRF、Gaussian Splatting）有基本了解，了解Unity/UE等引擎的材质、光照系统优先；\n4.有文生3D或纹理生成项目经验，熟悉Stable Diffusion等模型的应用与微调优先；\n5.对地图或图形产品有浓厚兴趣，具备良好的审美能力，对技术与艺术的结合充满热情，追求极致视觉效果；\n6.具备优秀的逻辑思维和解决问题的能力。",
+    "LastUpdateTime": "2026年07月06日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2028325900583600128",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "",
+    "Introduction": "",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "三年以上工作经验"
+  }
+}

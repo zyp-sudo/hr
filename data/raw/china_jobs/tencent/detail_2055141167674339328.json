@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2055141167674339328",
+    "RecruitPostId": 1252638729487319040,
+    "RecruitPostName": "WXG - Big Data Development Engineer Intern 107477",
+    "LocationId": 1301,
+    "LocationName": "新加坡",
+    "BGId": 14129,
+    "BGName": "WXG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40001001",
+    "CategoryName": "技术",
+    "ProductName": "",
+    "Responsibility": "Business Unit\nWeiXin Group(WXG) is responsible for the construction and operation of the Weixin ecosystem and leveraging Weixin's open platforms such as Official Accounts, Mini Programs, Weixin Pay, WeCom and search function. WXG provides solutions and connectivity for intelligent upgrades across all industries. WXG is also responsible for the development and operation of QQ Mail, WeRead and other products.\n\nWhat the Role Entails\nSupport the development of backend services and APIs to support WeChat's product and data needs.\nBuild and maintain large-scale data pipelines for ingestion, transformation, and analytics across distributed systems.\nWork with the data platform team to optimize storage and query performance on systems such as ClickHouse, Hive, and Apache Iceberg.\nContribute to real-time data streaming infrastructure using tools such as Apache Pulsar or Kafka.\nCollaborate with product and data teams to translate business requirements into scalable technical solutions.\nParticipate in code reviews and system design discussions with a strong eagerness to learn.\n\nWho We Look For\nCurrently pursuing an undergraduate or graduate degree in Computer Science, Data Science, Mathematics, or similar quantitative field.\nProficiency in at least one backend programming language: Python, Java, C/C++, or Go.\nFamiliarity with big data ecosystems and tools such as Spark, Hive, Iceberg, ClickHouse, Kafka, or Apache Pulsar is a strong plus.\nUnderstanding of distributed systems concepts (e.g. data partitioning, replication, fault tolerance) is preferred.\nSelf-driven, detail-oriented, and eager to learn in a fast-paced collaborative environment.\nFluency in both English and Mandarin to work effectively with international teams and stakeholders based in HQ.\n\nEqual Employment Opportunity at Tencent\nAs an equal opportunity employer, we firmly believe that diverse voices fuel our innovation and allow us to better serve our users and the community. We foster an environment where every employee of Tencent feels supported and inspired to achieve individual and common goals.\r\nWork Location: Singapore-CapitaSky",
+    "Requirement": "岗位要求详情请见上方岗位职责内说明",
+    "LastUpdateTime": "2026年05月14日",
+    "PostURL": "https://tencent.wd1.myworkdayjobs.com/Tencent_Careers/job/Singapore-CapitaSky/WXG---Big-Data-Development-Engineer-Intern_R107477",
+    "SourceID": 4,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "",
+    "Introduction": "",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": ""
+  }
+}

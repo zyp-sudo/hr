@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "1891443603608215552",
+    "RecruitPostId": 109969,
+    "RecruitPostName": "微信小程序-前端开发工程师-开发者方向",
+    "LocationId": 5,
+    "LocationName": "广州",
+    "BGId": 14129,
+    "BGName": "WXG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40001001",
+    "CategoryName": "技术",
+    "ProductName": "小程序",
+    "Responsibility": "1. 负责小程序开发者生态 & 服务商相关项目的前端开发工作\n2. 负责 AI 技术与小程序开发生态结合的相关工作，通过 AI 给开发者和商家提效、赋能\n3. 参与技术基建，持续优化研发效能，提升团队工程效率",
+    "Requirement": "1. 本科及以上学历，计算机相关专业毕业\n2. 掌握计算机学科基础知识，包括但不限于编程、算法、数据结构、网络、web 安全等基础\n3. 前端基础扎实，深入理解前端工程化，包括工程构建、打包、部署等内容，掌握前端优化手段\n4. 至少熟练掌握一种前端框架（React/Vue/…），了解小程序开发和原理\n5. 具备全栈开发知识和能力（如 Node.js 或其他框架 / 语言）\n6. 逻辑思维清晰，对技术 & 用户体验有持续追求，主动推进产品和技术优化\n7. 良好的学习能力、沟通能力、团队协作能力，以及分析问题解决问题的能力，责任心强",
+    "LastUpdateTime": "2026年06月08日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=1891443603608215552",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "1.提供广阔的发展空间，有机会参与核心项目的开发与优化；\r\n2.团队氛围融洽，注重技术交流与个人成长。",
+    "ImportantItem": "1. 有 AI 相关技术研究及实践经验优先\n2. 有开源项目贡献经历者优先",
+    "Introduction": "",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "一年以上工作经验"
+  }
+}

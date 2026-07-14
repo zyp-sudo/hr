@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "1976128408916217856",
+    "RecruitPostId": 115133,
+    "RecruitPostName": "企业微信-AI数据算法工程师-数据标注（广州/北京）",
+    "LocationId": 8,
+    "LocationName": "成都",
+    "BGId": 14129,
+    "BGName": "WXG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40001005",
+    "CategoryName": "技术",
+    "ProductName": "企业微信SaaS",
+    "Responsibility": "1.参与构建高可靠性数据pipeline，支撑大模型sft/dpo/grpo等的数据需求，通过高效的数据获取、清洗、精良等，为模型提供多样化、低噪声、高信息密度的训练数据，驱动模型性能提升和业务落地；\r\n2.参与构建科学的数据评估体系，量化数据对模型性能提升的影响，迭代优化数据生成策略；\r\n3.研究探索新型数据处理/生成/评估技术，推动数据整体链路优化。",
+    "Requirement": "1.计算机、数学等相关专业，硕士及以上学历，具备良好的计算机基础和数据基础；\n2.掌握python及主流数据处理工具，熟悉数据质量评估及统计分析工具；\n3.有完整的数据治理项目经验，包括数据清洗、版本控制、质量评估全流程，熟悉模型数据链路；2年以上数据处理/数据工程经验；\n4.优秀的定义、分析、解决问题的能力，具备较强的学习、沟通协调能力；\n5.有参与大模型预训练数据pipeline构建经验相关贡献者优先；\n6.该岗位可 base 广州/成都/北京。",
+    "LastUpdateTime": "2026年06月12日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=1976128408916217856",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "",
+    "Introduction": "",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "三年以上工作经验"
+  }
+}

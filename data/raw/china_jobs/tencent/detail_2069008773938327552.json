@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2069008773938327552",
+    "RecruitPostId": 120701,
+    "RecruitPostName": "腾讯视频-安全后台开发工程师",
+    "LocationId": 1,
+    "LocationName": "深圳",
+    "BGId": 29292,
+    "BGName": "PCG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40001001",
+    "CategoryName": "技术",
+    "ProductName": "腾讯视频",
+    "Responsibility": "1.负责腾讯视频介质安全保护体系的建设和运营,保障视频在播放全链路中的安全性，防止盗播、盗链；\r\n2.负责流媒体播放链路的安全防护，包括视频播放全链路的安全传输、安全播放、防注入、防录屏等；\r\n3.设计和优化CDN分发链路中的介质保护方案，包括权限校验、防篡改、安全回源、可溯源等；\r\n4.负责追踪黑灰产最新的破解手段，破解加密内容、非法获取视频地址、录屏等攻击方式，制定对应的防盗策略。",
+    "Requirement": "1.熟悉在线播放链路，流媒体协议，CDN架构与分发机制；\r\n2.熟悉常规的加密技术，有DRM类逻辑经验者优先；\r\n3.熟悉常见黑灰产攻击手法，介质破解手法，有对抗经验优先；\r\n4.熟悉代码加固、混淆，熟练掌握常规的逆向工具，具备逆向经验优先。",
+    "LastUpdateTime": "2026年07月02日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2069008773938327552",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "",
+    "Introduction": "在腾讯，后台开发工程师不仅是“又快又稳”的问题解决专家，更是生态共创者。你将与技术团队一同沉淀优质代码，让它成为我们共有的宝贵资产。在不同的业务场景和技术发展阶段，你的架构思维也将帮助更多协作团队拓展新的思考。我们也珍视你的挑战精神，同时欢迎你一起参与团队愿景、文化和产品方向的探讨。",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "三年以上工作经验"
+  }
+}

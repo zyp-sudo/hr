@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2029126452007567360",
+    "RecruitPostId": 118170,
+    "RecruitPostName": "品质管理部-游戏智能体评测算法工程师",
+    "LocationId": 1,
+    "LocationName": "深圳",
+    "BGId": 956,
+    "BGName": "IEG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40001005",
+    "CategoryName": "技术",
+    "ProductName": "公共",
+    "Responsibility": "1.评测体系与基准构建： 负责构建覆盖 FPS、RPG 等多品类游戏的智能体评测基准（Benchmark），设计科学、全面、客观的多维度评估指标与覆盖长尾的测试集，真实反映模型在复杂游戏环境下的性能表现；\r\n2.自动化管线与平台研发：设计并实现可扩展、高效、稳定的自动化评测流水线（Pipeline），支持大规模并行游戏对局运行、评测指标计算；\r\n3.行为评估机制： 研发行为相似度算法，量化智能体与人类玩家在视觉观测与操作序列上的差异，验证 VLA 模型的对齐效果；\r\n4.对抗评测机制： 设计新旧模型对战、人机对战等对抗机制，验证智能体策略的强度稳定性与竞技表现；\r\n5.技术追踪： 持续追踪业界最新的AI评测方法论，不断完善评测矩阵，保持技术领先性。",
+    "Requirement": "1.硕士及以上学历，计算机、人工智能、数学或软件工程等相关专业；\r\n2.精通 Python，熟练使用 Pandas、NumPy、Matplotlib 等数据分析库。 具备扎实的工程实现能力，有自动化测试框架或评测工具开发经验；\r\n3.2年以上游戏智能体或机器人模型评测、数据分析或强化学习相关经验；\r\n4.具备优秀的问题分析能力与结果呈现能力，工作积极主动，能推动技术方案闭环落地。",
+    "LastUpdateTime": "2026年06月02日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2029126452007567360",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "1.有 Lumine、Nitrogen 等 VLA 相关项目背景，或具备多模态数据（视觉、文本、动作）分析经验；\r\n2.熟悉 Unity/Unreal 引擎接口开发，能够定制化采集游戏内底层数据（如 Hitbox 判定、内存状态等）；\r\n3.参与过知名开源评测集建设，或在 CVPR、NeurIPS、ICLR 等顶会发表过 AI相关论文；\r\n4.资深游戏玩家，对 FPS/RPG 等游戏的机制有深度理解，擅长从玩家视角发现AI的异常行为。",
+    "Introduction": "渴望为世界带来新意的人，早已对描绘未来的“热词”不陌生——人工智能、机器学习、数据科学等等。腾讯始终在业界前沿不断探索，积极布局，并为优秀的你提供无限广阔的舞台。我们坚信科技的不断革新，最终能带来美好的、撼动人心的改变。",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "三年以上工作经验"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2062117130287104000",
+    "RecruitPostId": 10002815,
+    "RecruitPostName": "Senior Software Engineer III",
+    "LocationId": 1,
+    "LocationName": "深圳",
+    "BGId": 956,
+    "BGName": "IEG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40001001",
+    "CategoryName": "技术",
+    "ProductName": "",
+    "Responsibility": "What the Role Entails\n1.负责发行相关平台的建设，保障核心系统的高可用性与极致体验。\n2.深入理解海外发行业务，主动识别业务痛点，通过技术手段高效支撑业务目标的达成。\n3. 负责团队对接的相关AI应用场景技术评估、对接与落地。\n \n\nWho We Look For\n1. .具备扎实的计算机基础和广阔的技术视野，拥有丰富的大前端跨端开发经验，能从全局视角解决复杂的端侧问题。\n2. 对 AI 技术趋势有敏锐洞察，具备将 AI 深度融入研发工作流的实战经验。\n3. 具备优秀的跨团队沟通协作能力与项目推动力，拥有较强强的责任心与自驱力。\n\nEqual Employment Opportunity at Tencent\nAs an equal opportunity employer, we firmly believe that diverse voices fuel our innovation and allow us to better serve our users and the community. We foster an environment where every employee of Tencent feels supported and inspired to achieve individual and common goals.\r\nWork Location: China-Shenzhen",
+    "Requirement": "岗位要求详情请见上方岗位职责内说明",
+    "LastUpdateTime": "2026年06月03日",
+    "PostURL": "https://tencent.wd1.myworkdayjobs.com/Tencent_Careers/job/China-Shenzhen/Senior-Software-Engineer-III_R107438",
+    "SourceID": 4,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "",
+    "Introduction": "",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": ""
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "1985646689100386304",
+    "RecruitPostId": 115783,
+    "RecruitPostName": "和平精英--游戏研发项目经理-新星引力计划",
+    "LocationId": 1,
+    "LocationName": "深圳",
+    "BGId": 956,
+    "BGName": "IEG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40003003",
+    "CategoryName": "产品",
+    "ProductName": "和平精英手游",
+    "Responsibility": "1.版本管理与协调 ：协助制定游戏版本计划与排期，跟踪版本进度，确保发布流程有序、高效；\r\n2.发布与版本交付 ：负责线上版本的构建、部署及渠道提审等具体操作，保障版本稳定、顺利交付；\r\n3.研发专项管理 ：参与研发效能专项，协助推进流程改进与工具平台的应用落地，助力团队效率提升。",
+    "Requirement": "1.学历专业 ：本科及以上学历，计算机、软件工程、通信或相关专业；\r\n2.知识基础 ：熟悉软件工程基础知识，对敏捷开发、项目管理流程有基本认知；\r\n3.核心素质 ：执行力强，责任心高，良好的沟通能力，具备出色的主动学习能力和团队协作精神，能适应项目攻坚节奏并及时响应紧急事件；\r\n4.行业热情 ：对游戏行业有浓厚兴趣，并渴望在该领域长期发展。",
+    "LastUpdateTime": "2026年06月15日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=1985646689100386304",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "1.有软件开发、游戏测试、技术运营相关的实习或项目经验者优先；\r\n2.持有PMP或Scrum Master等项目管理认证者优先。",
+    "Introduction": "",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "一年以上工作经验"
+  }
+}

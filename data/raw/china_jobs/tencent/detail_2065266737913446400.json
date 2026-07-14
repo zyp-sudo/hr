@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2065266737913446400",
+    "RecruitPostId": 120543,
+    "RecruitPostName": "Project T  UE5 客户端开发工程师（游戏 AI）",
+    "LocationId": 3,
+    "LocationName": "上海",
+    "BGId": 956,
+    "BGName": "IEG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40001001",
+    "CategoryName": "技术",
+    "ProductName": "Project T",
+    "Responsibility": "1.负责 PC 平台 3A 品质项目中敌人、伙伴等角色 AI 行为逻辑与表现相关开发；\r\n2.负责 AI 相关系统的开发与优化，包括但不限于感知、寻路、动作表现、状态同步等；\r\n3.参与 AI 行为与动作表现设计，并与动作、策划团队紧密协作，确保最终效果符合项目品质要求；\r\n4.调试并修复 AI 相关问题，对 AI 功能质量与表现效果负责；\r\n5.解决并优化 AI 的性能问题及系统瓶颈；\r\n6.负责构建精细化的 AI 数值分析体系，并持续优化 AI 的实际表现效果。",
+    "Requirement": "1.热爱游戏，善于沟通，具备较强自驱力；有动作冒险类或 FPS 类游戏 AI 开发经验者优先；\r\n2.具备 3 年以上 Unreal Engine 4 或 Unreal Engine 5 开发经验；\r\n3.精通 C++/蓝图，熟练使用 UE AI 相关工具，如行为树、状态树、AI 感知等；\r\n4.具备良好的问题分析与解决能力，能够完整把握方案的设计、实现、测试与上线流程。",
+    "LastUpdateTime": "2026年06月30日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2065266737913446400",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "",
+    "Introduction": "在腾讯，作为一位游戏客户端开发，你始终身处科技前沿，与同样具备满分热情的策划、美术等团队紧密协作，助力新世界的诞生、运作，持续打造极致体验。你可以善用自己的全局观察能力，不断打开技术视野，与靠谱的团队一起做出真正有趣的新事物。",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "不限"
+  }
+}

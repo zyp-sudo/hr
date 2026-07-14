@@ -1,0 +1,20 @@
+canonical,aliases
+Java,Java|JVM|Spring|Spring Boot|SpringBoot|后端开发
+Python,Python|Django|Flask|FastAPI|爬虫|自动化脚本
+Spring Boot,Spring Boot|SpringBoot|Spring MVC|后端框架
+MySQL,MySQL|Mysql|关系型数据库|SQL数据库|数据库
+Redis,Redis|缓存|缓存中间件|NoSQL
+Microservices,Microservices|微服务|分布式服务|Service Mesh
+Kubernetes,Kubernetes|K8s|云原生|容器编排
+Docker,Docker|容器|容器化|DevOps
+ETL,ETL|数据清洗|数据集成|数据管道|数仓ETL
+LLM,LLM|大模型|Large Language Model|AIGC|生成式AI
+RAG,RAG|检索增强|知识库问答|检索增强生成
+Vector Search,Vector Search|向量检索|Embedding|向量数据库|Faiss
+Data Warehouse,Data Warehouse|数据仓库|数仓|数据建模
+Data Quality,Data Quality|数据质量|质量规则|质量治理
+Metadata,Metadata|元数据|数据血缘|数据治理
+Observability,Observability|可观测性|监控告警|日志监控|指标监控
+Evaluation,Evaluation|评测|模型评测|Benchmark
+Product,Product|产品经理|产品设计|PM
+Design,Design|设计|UI|UX|交互设计|视觉设计

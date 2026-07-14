@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2049391881992974336",
+    "RecruitPostId": 119726,
+    "RecruitPostName": "AI应用开发专家/负责人（北京/深圳）",
+    "LocationId": 1,
+    "LocationName": "深圳",
+    "BGId": 29292,
+    "BGName": "PCG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40001001",
+    "CategoryName": "技术",
+    "ProductName": "大数据平台部公共",
+    "Responsibility": "1.主导 AI 工具类产品的技术架构设计与落地，聚焦大模型、多模态、自动化工具链等技术的工程化应用；​；\r\n2.负责 AI 应用核心模块开发（如模型调用、数据处理、接口封装、交互逻辑实现），保障产品性能与稳定性；​；\r\n3.协同产品、算法团队，将 AI 技术方案转化为可落地的产品功能，解决技术落地中的核心难点；​；\r\n4.优化 AI 应用的性能、响应速度、资源占用，提升用户使用体验与工具效率；​；\r\n5.跟进 AI 技术前沿趋势（如大模型迭代、工程化框架升级），引入适配的技术方案，推动产品技术创新；​；\r\n6.搭建 AI 应用开发规范与技术沉淀体系，指导初级开发工程师，提升团队整体技术能力。​。",
+    "Requirement": "1.本科及以上学历，计算机科学、人工智能、软件工程、电子工程等相关专业；\n2.5年及以上从业经历，其中2年以上AI应用开发相关经验；\n3.熟悉分布式系统设计，掌握常用数据库（MySQL、PostgreSQL、MongoDB）及向量数据库（Milvus、Pinecone、Weaviate等）；\n4.深入理解大模型基本原理，熟练掌握主流LLM API的调用与集成；\n5.持续跟踪AI领域前沿技术发展，探索新技术在业务场景中的应用可能性。负责Prompt工程优化、模型调优策略研究，以及AI应用性能调优与成本控制；\n6.具备跨团队协作与技术赋能经验。",
+    "LastUpdateTime": "2026年05月18日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2049391881992974336",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "",
+    "Introduction": "",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "不限"
+  }
+}

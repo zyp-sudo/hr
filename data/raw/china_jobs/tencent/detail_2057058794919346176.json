@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2057058794919346176",
+    "RecruitPostId": 1254556356749099008,
+    "RecruitPostName": "Agent Evaluation Intern 107491",
+    "LocationId": 1401,
+    "LocationName": "伦敦",
+    "BGId": 956,
+    "BGName": "IEG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40001005",
+    "CategoryName": "技术",
+    "ProductName": "",
+    "Responsibility": "About the Hiring Team\nLevel Infinite is Tencent’s global gaming brand. It is a global game publisher offering a comprehensive network of services for games, development teams, and studios around the world.\nWe are dedicated to delivering engaging and original gaming experiences to a worldwide audience, whenever and wherever they choose to play while building a community that fosters inclusivity, connection, and accessibility. Level Infinite also provides a wide range of services and resources to our network of developers and partner studios around the world to help them unlock the true potential of their games.\n\nWhat the Role Entails\nWe are hiring an intern to work on evaluation and reliability infrastructure for a real-world LLM agent system in the UA performance marketing field. The agent performs multi-step reasoning, retrieves context, selects tools, executes actions, handles user confirmations, and interacts with external services.\nThe goal of this internship is to build transferable expertise in agent evaluation engineering: evaluating tool use, measuring trajectory quality, designing benchmarks, analyzing traces, comparing model and prompt variants, and improving the reliability of agentic AI systems.\nThis role is ideal for someone interested in future opportunities in LLM agent evaluation, AI safety evaluation, research engineering, LLMOps, or applied AI infrastructure.Research the state-of-the-art agentic workflow evaluation frameworks in the industry and in the research field.\nApply the theory to build automated evaluation pipelines that can run agent scenarios, capture execution artifacts, score results, and detect regressions.\nEvaluate tool-use behavior, including whether the agent selects the right tool, passes correct arguments, avoids unnecessary calls, and handles tool errors appropriately.\nAnalyze agent trajectories using traces, logs, intermediate steps, and final outputs to identify reasoning failures, context misuse, hallucinated assumptions, and brittle workflow patterns.\nDesign metrics for agent reliability, including success rate, tool-call precision, argument accuracy, recovery rate, retry count, latency, cost, and safety-related failure rates.\nCreate reusable evaluation datasets from synthetic cases, golden workflows, and real anonymized executions.\nSupport experiments comparing prompts, model providers, tool descriptions, memory strategies, context construction methods, and execution modes.\nHelp build human evaluation workflows and rubrics for judging agent correctness, faithfulness, usefulness, and risk awareness.\nWork with engineers to translate evaluation findings into better tests, monitoring signals, tool interfaces, prompts, and guardrails.\nPotentially compose research papers and publish in scientific conferences.\n\nWho We Look For\nCurrently pursuing or recent graduates of a Master’s or PhD degree in Computer Science, Artificial Intelligence, Machine Learning, Software Engineering, Data Science, or a related field.\nStrong Python fundamentals and interest in AI systems.\nCurious about how LLM agents work, fail, and improve.\nInterested in evaluation methodology, not just application building.\nComfortable reading logs, traces, test cases, and structured data.\nDetail-oriented and able to define clear, measurable criteria for ambiguous agent behavior.\nPrior experience with LLMs, LangChain-like agents, tool calling, pytest, data analysis, or observability tools is helpful but not required.\n\nEqual Employment Opportunity at Tencent\nAs an equal opportunity employer, we firmly believe that diverse voices fuel our innovation and allow us to better serve our users and the community. We foster an environment where every employee of Tencent feels supported and inspired to achieve individual and common goals.\r\nWork Location: UK-London",
+    "Requirement": "岗位要求详情请见上方岗位职责内说明",
+    "LastUpdateTime": "2026年05月20日",
+    "PostURL": "https://tencent.wd1.myworkdayjobs.com/Tencent_Careers/job/UK-London/Agent-Evaluation-Intern_R107491-1",
+    "SourceID": 4,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "",
+    "Introduction": "",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": ""
+  }
+}

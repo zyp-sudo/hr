@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2066401747009712128",
+    "RecruitPostId": 120569,
+    "RecruitPostName": "腾讯云AI前线部署工程师FDE-(北京/上海)",
+    "LocationId": 1,
+    "LocationName": "深圳",
+    "BGId": 29294,
+    "BGName": "CSIG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40003001",
+    "CategoryName": "产品",
+    "ProductName": "腾讯云",
+    "Responsibility": "1.面向头部客户深入业务场景，将需求转化为WorkBuddy/CodeBuddy可落地的AI解决方案，主导落地交付（场景适配、系统集成、效果调优、上线护航）；\n2.基于WorkBuddy的Skills与Connector生态，为客户定制办公提效、知识问答、内容生成等场景方案，打通飞书/企微/腾讯文档等办公链路；同时推动CodeBuddy融入客户IDE与CI/CD流程，提升研发效能；\n3.基于客户私有知识库与业务数据构建RAG问答能力，运用上下文工程与Prompt工程定制WorkBuddy Skills 与Agent编排方案，通过MCP打通客户内部系统（CRM/ERP/OA等），实现多Agent协同与跨系统互通；\n4.跟踪客户业务指标（交付周期缩短率、代码采纳率、办公效率提升等），持续调优方案确保价值可感知，并将一线经验沉淀为可复用的交付资产与行业方案模板，反哺产品竞争力提升。",
+    "Requirement": "1.计算机科学、软件工程或相关专业本科及以上学历，3年以上经验，有云厂商 FDE/解决方案架构师/售前交付经验优先；\n2.熟练掌握Python/TypeScript/Java至少两门；精通大模型应用技术栈：上下文、RAG、MCP、SDD、Harness工程；\n3.熟悉友商技术架构，熟练使用AI工具/平台，对AI前沿技术保持关注；\n4.具备客户高管沟通与现场问题拆解能力，接受出差驻场。",
+    "LastUpdateTime": "2026年07月01日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2066401747009712128",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "1.持有腾讯云TCA/TCP认证或AI技术领域的专业认证，熟悉腾讯云产品体系；具备全栈开发与云原生部署能力（Docker/K8s/CI-CD）；\r\n2.具备重点行业理解、标杆客户落地案例经验，能够清晰梳理并复制成功方法论；\r\n3.在AI代码生成、大模型应用等前沿技术领域有专项研究、技术博客输出或专利成果。",
+    "Introduction": "“用户为本，科技向善”，是写在每位腾讯产品人心中的一句箴言。在互联网浪潮中，大众的生活已被深刻地改变，如何为用户创造价值、创造怎样的价值，需要每位产品人花费更长时间去体会与探索。在这里，你将与同样关注细节、关注本质、关注美好的同事一道，开启你的创造性工作。",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "五年以上工作经验"
+  }
+}

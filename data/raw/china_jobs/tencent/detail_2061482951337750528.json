@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2061482951337750528",
+    "RecruitPostId": 1258980513108156416,
+    "RecruitPostName": "Overseas Game Operations (SRE) Intern 107588",
+    "LocationId": 501,
+    "LocationName": "阿姆斯特丹",
+    "BGId": 62314,
+    "BGName": "Overseas Functional System",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40001001",
+    "CategoryName": "技术",
+    "ProductName": "",
+    "Responsibility": "About the Hiring Team\nTencent Overseas IT has the mission to empower Tencent’s rapid global growth with future ready, global IT platforms, applications and services. We are chartered to lead the Overseas IT strategy, architecture, roadmap and execution. Satisfying our internal/external customers and becoming a world class global IT team are our top aspirations.\n\nWhat the Role Entails\nAssist in the day-to-day operations, system maintenance, and cost analysis of Tencent's overseas game services and technical platform.​\nSupport high-availability efforts for Tencent's overseas account storage systems, including routine health checks.\nHelp improve monitoring and alerting coverage to enhance operational efficiency across overseas platforms.\nCoordinate and communicate with internal and external teams to support cross-functional operations tasks.\n\nWho We Look For\nEducation: Currently pursuing or recently graduated with a Bachelor's degree in Computer Science or a related field.\nOperating Systems: Basic familiarity with Unix/Linux operating systems. Experience with Shell or Python scripting is a plus.\nCloud Platforms: General awareness of cloud platforms (e.g., Tencent Cloud, AWS). Exposure to Kubernetes concepts is a bonus.\nDatabases: Basic understanding of MySQL and Redis. Hands-on database experience is preferred.\nSoft Skills: Strong sense of ownership, clear logical thinking, collaborative mindset, and willingness to take on challenging tasks.\nLanguage: Basic English reading and writing skills required. Candidates who can communicate in English day-to-day are preferred.\nAI Tools: Familiarity with AI-assisted programming tools. Candidates with hands-on experience in AI-powered development (e.g., GitHub Copilot, Cursor, or similar tools) are preferred.\n\nEqual Employment Opportunity at Tencent\nAs an equal opportunity employer, we firmly believe that diverse voices fuel our innovation and allow us to better serve our users and the community. We foster an environment where every employee of Tencent feels supported and inspired to achieve individual and common goals.\r\nWork Location: Netherlands-Amsterdam",
+    "Requirement": "岗位要求详情请见上方岗位职责内说明",
+    "LastUpdateTime": "2026年06月01日",
+    "PostURL": "https://tencent.wd1.myworkdayjobs.com/Tencent_Careers/job/Netherlands-Amsterdam/Overseas-Game-Operations--SRE--Intern_R107588",
+    "SourceID": 4,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "",
+    "Introduction": "",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": ""
+  }
+}

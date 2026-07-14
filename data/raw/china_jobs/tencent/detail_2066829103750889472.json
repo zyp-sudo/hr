@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2066829103750889472",
+    "RecruitPostId": 120599,
+    "RecruitPostName": "元宝搜索部-Agent算法工程师",
+    "LocationId": 2,
+    "LocationName": "北京",
+    "BGId": 29294,
+    "BGName": "CSIG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40001005",
+    "CategoryName": "技术",
+    "ProductName": "搜索-元宝",
+    "Responsibility": "1.负责VLM Agent核心能力研发，包括但不限于多模态理解（图像/视频+文本）、指令遵循、自主规划、工具调用、记忆机制设计，实现Agent在特定场景的端到端自主决策与执行能力；\r\n2.参与VLM模型的微调、适配与优化，结合Agent业务场景需求，提升模型的需求理解、工具使用和推理总结能力，提升跨模态交互流畅度和视觉理解精度等；\r\n3.负责 VLM 基础模型能力的边界探索，研究基于强化学习的视觉推理增强技术，优化模型架构与推理策略，持续提升模型在细粒度视觉感知、复杂 UI 理解与跨模态逻辑对齐等高难度任务上的表现，探索 VLM 的 Scaling Law 新路径；\r\n4.结合业务场景，梳理Agent应用需求，推动VLM Agent从原型验证到产品化落地，迭代优化产品体验；\r\n5.跟进VLM与AI Agent领域前沿技术（如复杂任务规划、Think with images、RL 等），开展技术预研与创新，将前沿技术转化为实际业务价值。",
+    "Requirement": "1.硕士及以上学历，计算机科学、人工智能、机器学习、计算机视觉、自然语言处理等相关专业；\r\n2.具备扎实的计算机基础，熟悉数据结构、算法、操作系统、分布式计算等核心知识，具备良好的编码能力（Python为主），代码风格规范；\r\n3.具备较强的问题解决能力、自驱力与学习能力，能快速跟进前沿技术，抗压性强，具备良好的跨团队沟通与协作能力。",
+    "LastUpdateTime": "2026年06月25日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2066829103750889472",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "",
+    "Introduction": "渴望为世界带来新意的人，早已对描绘未来的“热词”不陌生——人工智能、机器学习、数据科学等等。腾讯始终在业界前沿不断探索，积极布局，并为优秀的你提供无限广阔的舞台。我们坚信科技的不断革新，最终能带来美好的、撼动人心的改变。",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "三年以上工作经验"
+  }
+}

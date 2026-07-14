@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2046932790297128960",
+    "RecruitPostId": 119569,
+    "RecruitPostName": "《怪物猎人：旅人》-资深3D角色模型",
+    "LocationId": 1,
+    "LocationName": "深圳",
+    "BGId": 956,
+    "BGName": "IEG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40002002",
+    "CategoryName": "设计",
+    "ProductName": "怪物猎人-手游APP-海外发行",
+    "Responsibility": "1.负责怪物猎人项目角色全流程制作与引擎内效果联调，（包括套装，武器，主角高精度面部，大型怪物模型模块）；\r\n2.在角色制作管线中引入 AI 工具（如AI辅助建模, AI 拓扑/UV 插件等）辅助贴图素材生成、细节增强及基础模型优化，提升资产产出效率与视觉丰富度；\r\n3.负责角色资产在 Unreal5 中的材质调试与效果验证，通过 LOD 制作及材质调整，平衡高视觉表现与实时运行性能；\r\n4.与TA，灯光进行角色的效果调优，配合一起提升游戏内的角色品质和性能优化相关工作；\r\n5.指导外包进行角色资产管线生产，跟进从设计到落地的全流程，确保资产按时合入版本，并持续优化制作流程。",
+    "Requirement": "1.具备扎实的人体和生物解剖知识与造型能力，审美能力强；\r\n2.熟练使用 ZBrush、Maya/3ds Max、Substance Painter、Marvelous Designer 等专业软件；\r\n3.具备优秀的高精度脸部制作能力，熟悉 AI 辅助角色生成、纹理增强等前沿技术的落地应用，能将其无缝融入现有制作流；\r\n4.熟悉 Unreal Engine角色管线，能独立完成材质 Shader 调优及灯光下的最终效果呈现；\r\n5.具备出色的沟通能力，能与原画、动画及技术美术（TA）高效配合，推动角色资产的高质量落地。",
+    "LastUpdateTime": "2026年04月22日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2046932790297128960",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "",
+    "Introduction": "",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "五年以上工作经验"
+  }
+}

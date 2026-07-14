@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2052677813059895296",
+    "RecruitPostId": 119850,
+    "RecruitPostName": "腾讯营销-大模型推荐算法工程师",
+    "LocationId": 2,
+    "LocationName": "北京",
+    "BGId": 953,
+    "BGName": "CDG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40001005",
+    "CategoryName": "技术",
+    "ProductName": "腾讯广告",
+    "Responsibility": "1.负责线索智投的反馈调节能力以及机制策略能力建设；\n2.基于内外部数据，运用统计学、机器学习、计算广告等多个领域知识，对客户的需求分析，投放效果等进行洞察和分析；\n3.负责腾讯营销业务场景的落地，紧贴业务需求出发的技术突破升级；\n4.积极跟进AI学术界和业界的最新动态，优化内部技术方案，不断推进算法设计升级。",
+    "Requirement": "1.有机器学习算法优化理论的研究经验，熟悉Tensorfow或者PyTorch机器学习框架，并有实际的模型训练、调优的项目经验；\r\n2.3-6年广告/推荐策略经验；熟悉常见的机器学习，深度学习算法；\r\n3.数据敏感性强，有客户和业务视角；\r\n4.有流量策略/投放策略 经验者优先。",
+    "LastUpdateTime": "2026年06月04日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2052677813059895296",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "",
+    "Introduction": "渴望为世界带来新意的人，早已对描绘未来的“热词”不陌生——人工智能、机器学习、数据科学等等。腾讯始终在业界前沿不断探索，积极布局，并为优秀的你提供无限广阔的舞台。我们坚信科技的不断革新，最终能带来美好的、撼动人心的改变。",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "两年以上工作经验"
+  }
+}

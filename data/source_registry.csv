@@ -1,0 +1,18 @@
+sourceId,sourceName,sourceType,status,baseUrl,collectionMethod,updateFrequency,trustWeight,licenseNote
+tencent_careers,Tencent Careers,official_enterprise_api,active,https://careers.tencent.com/,public_api,daily,0.92,Public job pages/API; keep source attribution.
+alibaba_careers,Alibaba Careers,official_enterprise_site,active,https://talent.alibaba.com/,official_public_page,daily,0.86,Official Alibaba careers public pages; keep source attribution.
+netease_careers,NetEase Careers,official_enterprise_site,active,https://hr.163.com/,official_public_page,daily,0.86,Official NetEase careers public pages; keep source attribution.
+google_careers,Google Careers,official_enterprise_site,disabled_foreign,https://www.google.com/about/careers/applications/jobs/results/,official_public_page,disabled,0.86,Foreign source disabled by project policy.
+apple_jobs,Apple Jobs,official_enterprise_site,disabled_foreign,https://jobs.apple.com/,official_public_page,disabled,0.86,Foreign source disabled by project policy.
+remoteok_public_api,Remote OK,remote_job_board_api,disabled_foreign,https://remoteok.com/api,public_api,disabled,0.84,Foreign source disabled by project policy.
+arbeitnow_public_api,Arbeitnow,public_job_board_api,disabled_foreign,https://www.arbeitnow.com/api/job-board-api,public_api,disabled,0.82,Foreign source disabled by project policy.
+greenhouse_ats,Greenhouse ATS,ats_public_api,disabled_foreign,https://boards-api.greenhouse.io/v1/boards/,public_ats_api,disabled,0.80,Foreign source disabled by project policy.
+lever_ats,Lever ATS,ats_public_api,disabled_foreign,https://api.lever.co/v0/postings/,public_ats_api,disabled,0.80,Foreign source disabled by project policy.
+local_import_dataset,Local Imported Dataset,local_file_import,supported,file://data/imports/,csv_import,on_demand,0.75,For user-provided lawful CSV/XLSX recruitment datasets.
+bytedance_careers,ByteDance Careers,official_enterprise_site,planned,https://jobs.bytedance.com/,public_site_api,daily,0.90,Planned adapter; API signature still under validation.
+huawei_careers,Huawei Careers,official_enterprise_api,active,https://career.huawei.com/reccampportal/,public_api,daily,0.91,Official Huawei careers public API; China-only rows retained.
+baidu_careers,Baidu Careers,official_enterprise_site,active,https://talent.baidu.com/jobs/,server_rendered_public_page,daily,0.89,Official Baidu careers public pages; keep source attribution.
+meituan_careers,Meituan Careers,official_enterprise_api,active,https://zhaopin.meituan.com/web/social,public_api,daily,0.90,Official Meituan careers public API; China-only rows retained.
+national_college_student_employment_service,National College Student Employment Service,public_employment_service,active,https://www.ncss.cn/student/jobs/index.html,public_api,daily,0.88,Education-ministry public employment service job listings; keep source attribution.
+jobonline_public_employment_service,JobOnline Public Employment Service,public_employment_service,active,https://www.jobonline.cn/,public_api,daily,0.90,MOHRSS-organized public employment service platform; China-only rows retained.
+public_employment_service,Public Employment Service,public_employment_service,planned,https://job.mohrss.gov.cn/,public_site,daily,0.88,MOHRSS job site TLS/API access still under validation.

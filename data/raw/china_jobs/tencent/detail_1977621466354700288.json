@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "1977621466354700288",
+    "RecruitPostId": 115268,
+    "RecruitPostName": "腾讯视频-AI 技术制片人",
+    "LocationId": 2,
+    "LocationName": "北京",
+    "BGId": 29292,
+    "BGName": "PCG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40006",
+    "CategoryName": "内容",
+    "ProductName": "腾讯视频",
+    "Responsibility": "1.负责将前沿AI技术系统化融入传统影视制作流程，在确保创作质量与安全合规的前提下，实现提质、降本、增效；\n2.与导演、编剧、摄像、后期、制片人等多角色沟通协调，提供AI解决方案和建议；\n3.梳理现有制片全流程，设计并落地AI赋能解决方案，建设AI工具体系；\n4.构建面向影视制作的AIGC管线，并参与头部S级电视剧、动画的AI制作，探索从创意生成到生产执行的智能化链路。",
+    "Requirement": "1.本科及以上学历，影视技术、智能影像艺术、设计、动画等相关专业优先，熟悉影视制片全流程，有影视/广告/内容制作相关经验；\r\n2.对AIGC与影视技术有系统理解，具备将AI嵌入实际生产的落地经验。熟悉主流AI创作工具和平台，对图像、视频生成类工具有实践经验，如Stable Diffusion、Midjourney、Veo3、Runway等，有影视制作如摄影指导、视频剪辑、后期视效相关经验者优先；\r\n3.具备内容审美与质量把控能力，理解镜头语言、剪辑逻辑。",
+    "LastUpdateTime": "2026年06月24日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=1977621466354700288",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "",
+    "Introduction": "无论是在原创剧目中书写动人篇章，还是在生活前线中发掘美好瞬间，一个优秀的内容创作者总是保持着他独有的敏感与创造性。我们始终珍视你的特质，并提供广阔的平台与科学的工具，助你在内容制作的大海扬帆远航。",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "两年以上工作经验"
+  }
+}

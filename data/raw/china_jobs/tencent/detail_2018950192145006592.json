@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2018950192145006592",
+    "RecruitPostId": 117737,
+    "RecruitPostName": "WeGame-高级产品经理-AI产品应用",
+    "LocationId": 1,
+    "LocationName": "深圳",
+    "BGId": 956,
+    "BGName": "IEG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40003001",
+    "CategoryName": "产品",
+    "ProductName": "WeGameAPP",
+    "Responsibility": "1.AI场景挖掘与定义： 深入洞察 PC 玩家在游戏全生命周期（找游戏、玩游戏、社区交流）中的痛点，定义 WeGame AI 助手及 AI 原生功能的应用场景；\n2.产品设计与落地： 负责从 0 到 1 推动 AI 功能的设计与落地。将 LLM（大语言模型）、多模态理解等前沿技术转化为“游戏助手”、“智能社区”等具体的交互体验；\n3.智能化演进驱动： 负责平台智能推荐、自动化工具及 AI 交互系统的迭代，推动 WeGame 从传统的“游戏启动器”向“智能游戏伙伴”跃进；\n4.跨部门协同： 与算法团队、工程团队及游戏运营团队紧密配合，把控技术实现的可能性与用户体验的平衡点，确保 AI 功能的高质量交付；\n5.效果评估与优化： 建立 AI 产品的量化评价体系，通过数据分析与用户反馈持续打磨模型效果，提升用户在 AI 场景下的留存与活跃。",
+    "Requirement": "1.2 年及以上互联网产品经验，有 AI 产品（如对话机器人、搜索推荐、内容创作工具）从业背景者优先；\r\n2.对大模型（LLM）底层逻辑、Agent 框架、Prompt Engineering 有深度理解，能够与算法工程师进行无障碍技术交流；\r\n3.热爱游戏，愿意长期在游戏行业深耕；\r\n4.有较强的抗压与自驱动，面对 AI 这一不确定性领域，具备极强的探索精神和结果导向意识，能在快速迭代的环境中拿结果；\r\n5.逻辑思考优秀，重视用户体验。",
+    "LastUpdateTime": "2026年06月08日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2018950192145006592",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "1.站在国内最大的 PC 游戏阵地（千万级活跃），你的每一个 AI 创意都将服务于海量真实玩家；\r\n2.部门核心战略方向，深度参与平台从“工具”向“智能伙伴”跃迁的变革，定义下一代 PC 游戏平台的形态；\r\n3.面对最复杂的千万级并发场景和最前沿的 AI 技术挑战，在极具专业深度的团队中快速迭代自我；\r\n4.这里聚集了一群热爱游戏的技术极客和产品专家，与志同道合的小伙伴并肩，共同创造 PC 游戏的未来。",
+    "ImportantItem": "1.PC游戏资深玩家，steam、WeGame游戏平台多年用户；\r\n2.计算机相关专业毕业，或有实际的编程/模型调优经验；\r\n3.有过从 0 到 1 成功落地 AI 应用或 Agent 类产品的实战经验。",
+    "Introduction": "",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "两年以上工作经验"
+  }
+}

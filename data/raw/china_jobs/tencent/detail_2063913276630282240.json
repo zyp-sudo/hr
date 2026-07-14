@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2063913276630282240",
+    "RecruitPostId": 120446,
+    "RecruitPostName": "《三角洲行动》-客户端开发工程师（性能优化）-大世界场景",
+    "LocationId": 1,
+    "LocationName": "深圳",
+    "BGId": 956,
+    "BGName": "IEG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40001001",
+    "CategoryName": "技术",
+    "ProductName": "ProjectD-手游APP",
+    "Responsibility": "1.参与大世界场景相关构建与运行时的框架维护与升级；\n2.参与大世界场景优化技术的设计与实现；\n3.负责大世界场景AI自动化分析流程的设计与实现；\n4.:负责配合策划，美术同学维护大世界的稳定使用。",
+    "Requirement": "1.编程基础扎实,熟悉C++,熟练掌握至少一门脚本语言如Lua或TypeScript；\n2.具有至少1年的UE4工具相关开发经验；\n3.熟悉掌握AI Coding的能力，对AI Coding有较深刻的认知；\n4.对FPS游戏熟悉和热爱者优先；\n5.有优秀的学习能力，善于沟通，热爱游戏事业。",
+    "LastUpdateTime": "2026年06月08日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2063913276630282240",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "",
+    "Introduction": "",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "两年以上工作经验"
+  }
+}

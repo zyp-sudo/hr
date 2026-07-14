@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2044016525341519872",
+    "RecruitPostId": 119342,
+    "RecruitPostName": "腾讯云-资深公有云技术咨询解决方案架构师",
+    "LocationId": 37,
+    "LocationName": "中国香港",
+    "BGId": 29294,
+    "BGName": "CSIG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40003001",
+    "CategoryName": "产品",
+    "ProductName": "腾讯云",
+    "Responsibility": "1.Solution Design:\n2.Lead the design and delivery of advanced, scalable cloud and database solutions, ensuring alignment with client requirements across the APAC region.\n3.Collaborate with cross-functional teams, including sales, product management, and local field teams, to develop tailored solutions that address industry-specific challenges.\n4.Client Engagement and Project Oversight:\n5.Drive customer engagement strategies by representing Tencent in client discussions, aligning their technical and business needs with our cloud product offerings.\n6.Oversee key client projects, ensuring seamless solution implementation, handling customer feedback, and recommending product enhancements based on customer insights.\n7.Product and Market Development:\n8.Provide strategic insights to influence product roadmap based on APAC market trends and customer feedback.\n9.Leadership and Team Development:\n10.Oversee a diverse team of Product Solution Architects, fostering a high-performance, collaborative environment.",
+    "Requirement": "1.Educational Background: Bachelor’s degree or higher in Computer Science, Engineering, or a related field. Professional certifications in cloud architecture (e.g., AWS Certified Solutions Architect, Azure Solutions Architect), technical consulting, or relevant fields are highly preferred, which can demonstrate both technical depth and consulting professionalism.\r\n2.Work Experience: 5+ years of comprehensive experience in a combination of cloud solutions architecture, database architecture, and technical consulting. A minimum of 3 years in a leadership role, with experience in leading technical consulting projects, coordinating cross-functional teams, and driving solution from demand analysis to implementation.\r\n3.Technical Expertise (SA Core): In-depth expertise in cloud computing, particularly IaaS/PaaS solutions, virtualization technologies, and DevOps best practices. Advanced technical proficiency in at least one major database system (e.g., MySQL, SQL Server, PostgreSQL), with a solid understanding of big data processing, network security, and enterprise storage solutions. Hands-on experience in cloud platform deployment, database optimization, architecture design iteration, and troubleshooting complex technical issues in production environments is required. Ability to design scalable, secure, and cost-effective technical architectures that align with business objectives, and to lead hands-on implementation of key technical modules.\r\n4.Technical & Tool Skills: Proficiency in scripting languages such as Python, Bash, or PowerShell is advantageous, which can support automated deployment, problem troubleshooting, and efficiency improvement in both consulting and architecture work. Familiarity with common enterprise IT tools and platforms is a plus.\r\n5.Consulting & Client-Facing Capabilities (Consultant Core): Exceptional client-facing and stakeholder management skills, with a proven track record of listening to client needs, analyzing business pain points, and translating business requirements into high-value, actionable technical solutions. Hands-on experience in conducting technical assessments for clients, delivering proof-of-concept (POC) demos, and guiding clients through solution testing and acceptance. Strong ability to provide professional technical consulting, offer solution recommendations, and maintain long-term client relationships.\r\n6.Communication & Presentation Skills: Excellent verbal and written communication skills in both English and Chinese. Ability to clearly present complex technical concepts, architecture designs, and consulting proposals to diverse audiences (including non-technical clients, executives, and technical teams), and to facilitate effective communication between clients and internal technical teams.",
+    "LastUpdateTime": "2026年07月04日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2044016525341519872",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "",
+    "Introduction": "“用户为本，科技向善”，是写在每位腾讯产品人心中的一句箴言。在互联网浪潮中，大众的生活已被深刻地改变，如何为用户创造价值、创造怎样的价值，需要每位产品人花费更长时间去体会与探索。在这里，你将与同样关注细节、关注本质、关注美好的同事一道，开启你的创造性工作。",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "五年以上工作经验"
+  }
+}

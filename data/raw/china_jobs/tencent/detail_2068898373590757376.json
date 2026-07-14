@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2068898373590757376",
+    "RecruitPostId": 120683,
+    "RecruitPostName": "微信读书-大模型推理优化工程师- NLP方向",
+    "LocationId": 2,
+    "LocationName": "北京",
+    "BGId": 14129,
+    "BGName": "WXG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40001001",
+    "CategoryName": "技术",
+    "ProductName": "微信读书",
+    "Responsibility": "1.负责微信读书长文本理解场景下大模型（LLM）的部署与推理优化工作，聚焦系统吞吐量（Throughput）及服务性能的极致调优；\r\n2.针对长文本理解的业务特性，开展大模型量化、推理加速等专项落地工作，提升模型在长上下文场景下的推理效率；\r\n3.跟踪大模型推理优化前沿技术（如投机解码、KV Cache 优化、动态批处理等），结合微信读书长文本阅读场景的业务需求开展技术预研与难点攻关，沉淀可复用的技术方案。",
+    "Requirement": "1.本科及以上学历，计算机相关专业，具备良好的算法、数据结构及操作系统基础；\r\n2.1 年及以上工业级项目开发经验，熟练掌握 Python，了解 Golang 优先，能独立完成推理相关的开发与调优工作；\r\n3.熟悉 Linux 环境开发，了解常见后端架构方案（RPC 框架、消息队列等），具备扎实的性能瓶颈定位与数据分析能力；\r\n4.有 SGLang/TensorRT//vLLM 等推理框架的使用经验；\r\n5.具备良好的代码习惯，沟通高效，有强烈的技术攻坚意愿与责任心。",
+    "LastUpdateTime": "2026年06月29日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2068898373590757376",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "1.有长上下文（8k/32k+）大模型推理优化实战经验，熟悉 RoPE 位置编码优化、滑窗注意力、上下文压缩等技术，能针对长文本理解场景设计高效的推理策略；\r\n2.了解GPU 性能分析工具（如 Nsight Systems、Py-Spy）、性能 profiling 方法，能系统性定位并解决推理服务的性能瓶颈，具备端到端的性能调优能力优先。",
+    "Introduction": "",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "一年以上工作经验"
+  }
+}

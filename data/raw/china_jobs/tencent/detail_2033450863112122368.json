@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2033450863112122368",
+    "RecruitPostId": 118543,
+    "RecruitPostName": "教育行业AI专项方案架构师",
+    "LocationId": 1,
+    "LocationName": "深圳",
+    "BGId": 29294,
+    "BGName": "CSIG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40003001",
+    "CategoryName": "产品",
+    "ProductName": "腾讯云",
+    "Responsibility": "1.深度研究教育场景下AI的应用机会，探索大模型在教育场景全链路中的赋能点，推动AI原生产品在教育场景的落地；\r\n2.与教育行业专家、大模型技术专家、一线师生等多方客户深度沟通，精准挖掘Agent（智能体）在教育场景中的核心痛点与需求，转化为可落地的产品方案；\r\n3.结合大模型技术特性与教育行业B端客户痛点，制定产品toB的商业化策略，负责产品从0到1的规划以及全生命周期管理；\r\n4.负责AI原生产品的功能设计、交互设计，协同研发与算法团队，通过Prompt Engineering、RAG、Agent编排等技术手段，持续优化产品体验与效果。",
+    "Requirement": "1.本科及以上学历，计算机、教育学或相关专业背景，具备2年以上产品经验，有教育科技或AI产品背景者优先；\n2.对AI及教育行业抱有极高热情，喜欢研究国内外AI原生产品，不仅关注用户体验，更深入思考产品设计逻辑，能拆解竞品背后的核心原理与技术架构；\n3.具备极强的动手能力和探索精神，使用过国内外的AI coding/生成工具（如 Sora, 可灵，Cursor等），对多模态生成技术有直观理解；\n4.对Agent技术和教育场景应用有独到见解，理解ReAct、Plan-and-Execute等Agent范式，能清晰规划Agent在教育场景（如AI助教、自适应学习）中的应用路径；\n5.具备极客精神，自己动手搭建过OpenClaw或其他AI Agent/工具项目，能通过低代码平台或代码进行原型验证；\n6.具备前沿性探索的精神，能敏锐捕捉技术变革趋势（如长上下文、具身智能等）并转化为产品竞争力。",
+    "LastUpdateTime": "2026年06月15日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2033450863112122368",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "",
+    "Introduction": "“用户为本，科技向善”，是写在每位腾讯产品人心中的一句箴言。在互联网浪潮中，大众的生活已被深刻地改变，如何为用户创造价值、创造怎样的价值，需要每位产品人花费更长时间去体会与探索。在这里，你将与同样关注细节、关注本质、关注美好的同事一道，开启你的创造性工作。",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "五年以上工作经验"
+  }
+}

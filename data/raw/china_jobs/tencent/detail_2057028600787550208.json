@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2057028600787550208",
+    "RecruitPostId": 1254526162592137216,
+    "RecruitPostName": "Overseas Game Operations（SRE） Intern 107468",
+    "LocationId": 1301,
+    "LocationName": "新加坡",
+    "BGId": 62314,
+    "BGName": "Overseas Functional System",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40001003",
+    "CategoryName": "技术",
+    "ProductName": "",
+    "Responsibility": "About the Hiring Team\nTencent Overseas IT has the mission to empower Tencent’s rapid global growth with future ready, global IT platforms, applications and services. We are chartered to lead the Overseas IT strategy, architecture, roadmap and execution. Satisfying our internal/external customers and becoming a world class global IT team are our top aspirations.\n\nWhat the Role Entails\n1. Assist in the day-to-day operations, system maintenance, and cost analysis of Tencent's overseas game services and technical platform.\n2. Support high-availability efforts for Tencent's overseas account storage systems, including routine health checks.\n3. Help improve monitoring and alerting coverage to enhance operational efficiency across overseas platforms.\n4. Coordinate and communicate with internal and external teams to support cross-functional operations tasks.\n\nWho We Look For\n1. Currently pursuing or recently graduated with a Bachelor's degree in Computer Science or a related field.\n2. Basic familiarity with Unix/Linux operating systems. Experience with Shell or Python scripting is a plus.\n3. General awareness of cloud platforms (e.g. Tencent Cloud, AWS). Exposure to Kubernetes concepts is a bonus.\n4. Basic understanding of MySQL and Redis. Hands-on database experience is preferred.\n5. Strong sense of ownership, clear logical thinking, collaborative mindset, and willingness to take on challenging tasks.\n6. Basic English reading and writing skills required. Candidates who can communicate in English day-to-day are preferred.\n7. Familiarity with AI-assisted programming tools. Candidates with hands-on experience in AI-powered development (e.g. GitHub Copilot, Cursor, or similar tools) are preferred.\n\nEqual Employment Opportunity at Tencent\nAs an equal opportunity employer, we firmly believe that diverse voices fuel our innovation and allow us to better serve our users and the community. We foster an environment where every employee of Tencent feels supported and inspired to achieve individual and common goals.\r\nWork Location: Singapore-CapitaSky",
+    "Requirement": "岗位要求详情请见上方岗位职责内说明",
+    "LastUpdateTime": "2026年05月20日",
+    "PostURL": "https://tencent.wd1.myworkdayjobs.com/Tencent_Careers/job/Singapore-CapitaSky/Overseas-Game-Operations-SRE--Intern_R107468",
+    "SourceID": 4,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "",
+    "Introduction": "",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": ""
+  }
+}

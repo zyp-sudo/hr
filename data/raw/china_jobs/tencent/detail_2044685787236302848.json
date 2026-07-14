@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2044685787236302848",
+    "RecruitPostId": 119402,
+    "RecruitPostName": "光子艺术部-高级产品经理-(AIGC工具与功能设计方向)",
+    "LocationId": 1,
+    "LocationName": "深圳",
+    "BGId": 956,
+    "BGName": "IEG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40003001",
+    "CategoryName": "产品",
+    "ProductName": "公共",
+    "Responsibility": "1.AI工具产品化设计：主导AIGC工具的核心功能规划与设计，将底层大模型能力封装为“开箱即用”的原子功能或工作流模板，输出高保真PRD与Figma原型；\r\n2.美术管线深度整合：拆解2D/3D美术工作流，设计基于MCP等协议的插件，实现AI工具与DCC软件（Maya/Blender/PS）的无缝衔接，不打断美术人员既有工作流；\r\n3.敏捷交付闭环：协同算法、前后端、测试等内外部团队，制定迭代节奏与质量门禁，确保核心功能高品质交付；\r\n4.用户体验与数据驱动：搭建用户反馈漏斗与核心功能埋点体系；通过定量数据（渗透率、留存、操作效率等）与定性用户调研，持续打磨产品细节，提升工具满意度与使用深度。",
+    "Requirement": "1.经验与技能：3-5年B端工具/SaaS/中台产品经验，具备极强的同理心与交互设计能力，精通Figma/Axure等工具；\r\n2.AI与业务认知：熟悉Stable Diffusion、Midjourney、ComfyUI等主流AIGC工具的使用与调优逻辑；了解游戏美术管线及DCC软件底层逻辑；\r\n3.软素质：优秀的沟通共情能力，具备与美术、TA、策划等角色“同频对话”的能力，能精准抽象一线痛点并转化为产品方案。",
+    "LastUpdateTime": "2026年05月13日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2044685787236302848",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "1.技术美术（TA）背景，或熟悉Python/MEL/C++，能独立编写简单DCC插件；\r\n2.具备优秀的审美素养，有美术工具或设计类SaaS产品从0到1的成功案例。",
+    "Introduction": "",
+    "DepartmentIntroduction": "光子工作室群，一个对游戏狂热的全球知名开发团队，在全球10余个国家和地区研发布局，旗下包括《和平精英》《PUBG Moblie》《欢乐斗地主》《最强NBA》等超出50款端手游产品。多款产品曾获得超过15个奖项荣誉，其中，《PUBG Mobile》上线一周内登顶105个国家和地区App Store榜首。\n光子为每位员工量身定制成长舞台，针对游戏策划有武林师徒项目、针对开发有程序精品课、针对美术有大咖沙龙；如果你怀抱游戏初心，可以借光子的大平台孵化独立游戏如《末剑》；若希望声音被听到，可以借光子内部的《游你百家谈》节目彰显智慧。此外，光子建立了全球前沿技术协同发展的研发团队，持续推动游戏品质向次世代升华。\n光子未来还将持续面向全球，探索大型游戏和创新游戏等领域，欢迎热爱游戏的你加入！",
+    "RequireWorkYearsName": "三年以上工作经验"
+  }
+}

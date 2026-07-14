@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2059851887221587968",
+    "RecruitPostId": 120256,
+    "RecruitPostName": "OG项目组-高级射击PVE关卡策划",
+    "LocationId": 1,
+    "LocationName": "深圳",
+    "BGId": 956,
+    "BGName": "IEG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40003002",
+    "CategoryName": "产品",
+    "ProductName": "公共",
+    "Responsibility": "1.负责射击关卡设计，统筹空间、AI、武器、任务等多维度，将射击关卡推进至可玩质量，对最终射击关卡体验负责。负责战斗关卡设计、灰盒搭建、UE落地及体验迭代，规划敌人波次、掩体、火力节奏等核心要素；\r\n2.设计任务关卡流程、目标及节奏，衔接玩法与叙事、过场，确保体验连贯；\r\n3.跨团队协作（战斗、叙事、美术等），同步需求、推进落地，基于playtest数据迭代优化。",
+    "Requirement": "1.5年以上3A/主机/动作射击类关卡策划经验，完整负责过射击类战斗关卡/高潮段设计；\r\n2.精通射击关卡设计基本功（掩体、火力线、节奏等），理解多武器/玩法组合场景设计；\r\n3.具备UE灰盒、脚本实现经验，能独立落地可玩版本，用结构化文档及数据推进工作；\r\n4.能够vibe coding或者对vibe coding有深入理解；\r\n5.具备Owner意识，能统筹设计、实现、风险及验收，具备系统理解力和跨团队推动力；\r\n6.能拆解创意为可执行方案，诊断关卡问题，沉淀可复用设计标准，接受高强度review并理性回应；\r\n7.有电影化射击关卡研究经验、UE5实操经验、开放世界混合射击任务设计经验，或具备海外3A协作及英文文档能力者优先；\r\n8.有PVE射击关卡相关项目实操经验者优先（包括farcry、看门狗、COD等等）。",
+    "LastUpdateTime": "2026年06月11日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2059851887221587968",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "",
+    "Introduction": "【腾讯游戏｜这一局，由你主导】\n腾讯游戏，致力于以顶尖技术创造丰富优质的游戏体验，用创新玩法点燃玩家情感共鸣，深度打磨每处游戏细节。加入我们，用创造力拓展游戏的边界，为用户创造高品质数字生活体验！",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "五年以上工作经验"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2043623819968671744",
+    "RecruitPostId": 119271,
+    "RecruitPostName": "J3-UE5微恐射击-UE5高级引擎开发-主机/PC",
+    "LocationId": 1,
+    "LocationName": "深圳",
+    "BGId": 956,
+    "BGName": "IEG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40001001",
+    "CategoryName": "技术",
+    "ProductName": "CFH-端游-国际版",
+    "Responsibility": "1.负责以下工作的其中一到多项；\r\n2.负责开放世界相关技术的研发工作：地形，植被，光影，Houdini工具链；\r\n3.负责游戏中图形相关特性的开发，根据需求开发高级渲染效果，增强游戏表现力；\r\n4.负责制定工作室研发工具管线方案，开发low-level tools和引擎功能，帮助研发团队提升研发效率；\r\n5.负责游戏中性能优化相关工作，针对需求定制增改UE引擎底层功能；\r\n6.负责图形兼容性分析以及疑难问题的分析定位工作。",
+    "Requirement": "1.3年以上PC或主机游戏引擎开发和维护经验，深刻理解3D游戏引擎架构，精通引擎接口和游戏制作流程；\r\n2.有开放大世界领域开发经验，如：地形，植被，光影渲染，多线程调度；\r\n3.熟悉3D图形学，有良好的数学和算法基础；\r\n4.熟练掌握3D图形渲染技术，精通Shader相关开发；\r\n5.有端游或主机优化经验，掌握对应平台的图形优化技巧；\r\n6.责任心强，善于沟通，对游戏前沿技术有热情；\r\n7.熟悉商业游戏引擎源代码，有Console开发经验，对FPS游戏熟悉和热爱优先。",
+    "LastUpdateTime": "2026年04月16日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2043623819968671744",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "",
+    "Introduction": "",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "三年以上工作经验"
+  }
+}

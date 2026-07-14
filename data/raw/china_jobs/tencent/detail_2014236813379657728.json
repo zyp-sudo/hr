@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2014236813379657728",
+    "RecruitPostId": 117473,
+    "RecruitPostName": "国风预研项目-3D场景美术设计师",
+    "LocationId": 1,
+    "LocationName": "深圳",
+    "BGId": 956,
+    "BGName": "IEG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40002002",
+    "CategoryName": "设计",
+    "ProductName": "公共",
+    "Responsibility": "1.负责游戏场景的规划和设计，独立完成区域的场景高品质编辑工作；主导 UE5 开放世界/线性关卡 全流程搭建（地形雕刻/资产布局/植被生态）；\n2.根基于 World Partition+HLOD 实现场景性能优化与标准化；\n3.与美术团队紧密合作，确保场景设计与美术风格的一致性；\n4.对场景性能进行评估和优化，保证游戏运行流畅；统筹资产需求，推动场景高效迭代；\n5.负责和策划合作，根据玩法需求，确保场景编辑在游戏中的落地，配合调优关卡整体的体验；\n6.与TA合作，提升场景的技术效果表现，提升场景的产品质量。",
+    "Requirement": "1.有2年以上的游戏工作经验，并且有完整的项目经验；有目前前沿游戏开发经验的优先；\n2.有扎实的美术功底，优秀的审美能力，能显著提升场景的产量以及品质；\n3.需熟练UE，World machine等职业相关软件，精通 UE5地编工具链（Landscape/植被系统/光照烘培）；\n4.良好的沟通能力和团队合作精神，具备良好的抗压能力；\n5.具备良好的空间感和视觉表现力，能够独立完成场景设计任务；\n6.强审美+玩法结合意识，能带队优先。",
+    "LastUpdateTime": "2026年06月25日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2014236813379657728",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "",
+    "Introduction": "",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "两年以上工作经验"
+  }
+}

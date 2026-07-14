@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2042742675718959104",
+    "RecruitPostId": 119231,
+    "RecruitPostName": "资深AI评测工程师（多模态与 AIGC方向）",
+    "LocationId": 1,
+    "LocationName": "深圳",
+    "BGId": 29294,
+    "BGName": "CSIG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40001002",
+    "CategoryName": "技术",
+    "ProductName": "腾讯云",
+    "Responsibility": "1.Benchmark 构建与管理：负责高质量评测数据集的挖掘、清洗、标注与动态更新，设计长尾场景测试集，专门捕捉模型在极端或复杂指令下的失效点；\r\n2.自动化评测流水线开发：搭建自动评测框架，集成主流开源评测工具（如 OpenCompass, VLMEvalKit 等）。开发基于模型的自动评分器，提升评测效率并保持与人工评价的高一致性；\r\n3.AIGC 专项评测：建立图像/视频生成的质量评估体系，涵盖视觉效果、语义遵循、物理规律等维度，并解决生成内容的主观评价量化难题。",
+    "Requirement": "1.教育背景：计算机、数学、数据科学等相关专业硕士及以上学历；\r\n2.方法论深度：熟悉各类评测技术（如 A/B Testing, Elo Rating, LLM-as-a-Judge），能独立设计复杂的评测实验。了解 LLM、CV 及多模态模型的基本原理，知道模型在哪些地方容易“翻车”；\r\n3.实战经验：有 Benchmark 构建经验（如构建过公司内部的行业测试集、Prompt 库或高质量标注集）。熟悉多模态评测维度（如 OCR、视觉推理、属性对齐）及 AIGC 评估指标（如 CLIP Score, Aesthetic Score, LPIPS 等）；\r\n4.工程能力：精通 Python，能熟练编写自动化脚本，有处理大规模文本/多媒体数据的经验。",
+    "LastUpdateTime": "2026年06月03日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2042742675718959104",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "",
+    "Introduction": "在腾讯，优秀的技术质量管理，保证腾讯每一个的产品与服务能更加稳定、顺畅、安心地被用户使用和体验。与技艺高超的同事们一同深化对架构设计、数据和产品的理解，在美好向善的世界里，成为一块闪耀的基石。",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "五年以上工作经验"
+  }
+}

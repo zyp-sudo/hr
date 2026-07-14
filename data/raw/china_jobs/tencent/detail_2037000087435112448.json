@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2037000087435112448",
+    "RecruitPostId": 118849,
+    "RecruitPostName": "数据中心架构设计及解决方案工程师",
+    "LocationId": 1,
+    "LocationName": "深圳",
+    "BGId": 958,
+    "BGName": "TEG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40001003",
+    "CategoryName": "技术",
+    "ProductName": "IDC设计&优化",
+    "Responsibility": "1.架构演进：参与负责国内IDC/AIDC 技术路线规划，重点研究高功率密度、风液混部及全液冷架构的标准化落地；\r\n2.方案设计：主导大规模IDC/AIDC基础设施项目的典设方案设计，以及具体项目落地中的深化设计方案评审及优化，确保项目落地过程中的各项技术指标满足业务需求；\r\n3.技术创新：持续推动技术创新及落地，通过冷板/浸没液冷、800V HVDC、分布式储能等新技术新方案，持续提升系统性能、可靠性和成本优化；\r\n4.标准化与产品化：推动基础设施的软硬件标准化，参与协同自研产品的迭代，实现数据中心高性能及快速交付与弹性部署；\r\n5.跨团队协同：联动服务器、网络研发及现场运维管理团队，从全链路视角对数据中心整体进行优化提效。",
+    "Requirement": "1.专业背景：电气、暖通等专业，本科及以上，5年以上超大规模 IDC 行业经验；\r\n2.设计功底：具备大规模（累计不少于50MW）数据中心的全生命周期设计经验，熟悉国内主流设计标准，熟悉掌握绘图等相关设计工具；\r\n3.行业洞察：对AIGC背景下的数据中心演进有深刻理解，熟悉液冷及高密度算力中心的设计难点与解决方案。",
+    "LastUpdateTime": "2026年06月24日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2037000087435112448",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "",
+    "Introduction": "在腾讯，优秀的技术运营工程师始终赋能业务，关注技术运营的质量、成本、效率和安全。他们不仅是经验丰富的问题解决者，更是具有全局视角的架构师，通过自动化工具的建设，强力提升平台效能，助力业务发展。",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "五年以上工作经验"
+  }
+}

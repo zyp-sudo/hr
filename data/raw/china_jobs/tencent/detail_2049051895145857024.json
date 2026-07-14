@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2049051895145857024",
+    "RecruitPostId": 119711,
+    "RecruitPostName": "安全平台中台高级产品经理",
+    "LocationId": 8,
+    "LocationName": "成都",
+    "BGId": 958,
+    "BGName": "TEG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40003001",
+    "CategoryName": "产品",
+    "ProductName": "信息安全-",
+    "Responsibility": "1.负责安全平台中台产品的策略模块，抽象共性能力，涵盖分流规则、调度规则、优先级配置、策略编排等核心能力，推进策略工具的标准化落地与平台能力建设；\r\n2.梳理现有产品架构与业务流程，主导人机联动的审核解决方案线上化建设，识别重叠与缺失模块，推动中台层能力复用和流程打通；\r\n3.关注大模型在安全审核场景的应用潜力，探索生成式AI提质降本的落地路径，为中台产品的中长期发展提供方向输入。",
+    "Requirement": "1.全日制本科及以上，5年以上产品工作经验，具备平台型产品经验，有B端中台或A端策略产品经验优先；\r\n2.优秀的结构化思维和逻辑分析能力，能从复杂业务中抽象清晰的产品框架；\r\n3.快速学习能力强，有一定技术理解力，能与研发高效协作；\r\n4.有内容安全/审核领域经验、规则引擎/工作流引擎建设经验或大模型落地经验者加分。",
+    "LastUpdateTime": "2026年05月27日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2049051895145857024",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "",
+    "Introduction": "",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "三年以上工作经验"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2046131166398021632",
+    "RecruitPostId": 119501,
+    "RecruitPostName": "《逆战》-音频策划",
+    "LocationId": 1,
+    "LocationName": "深圳",
+    "BGId": 956,
+    "BGName": "IEG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40003002",
+    "CategoryName": "产品",
+    "ProductName": "逆战",
+    "Responsibility": "1.负责天美工作室旗下游戏项目的音频设计，制定符合产品特性的音频设计及落地方案；\r\n2.基于音频设计的方案，沟通需求、整合制作资源、测试验证及调优，把控游戏音频的最终品质。",
+    "Requirement": "1.本科及以上学历，3年以上游戏音频设计经验，熟悉游戏音频制作流程，并熟练操作Wwise或Fmod等一种以上音频中间件，熟悉Unity、UE等游戏引擎的基础操作者优先；\n2.作为核心成员完整地参与过至少一款接近上线或者已经上线的高品质的游戏音频设计；\n3.游戏资深玩家，且对游戏核心玩法和游戏音频设计有自己的理解。理解用户，善于分析竞品和时下最优秀的游戏，并以此角度去驱动声音设计；\n4.具有较好的声音审美、音乐鉴赏、音频制作和语音设计能力，同时熟练掌握一种以上DAW等音频软件；\n5.具有较强的游戏音频架构、设计理念，并能够高质高效地完成音频设计和资源整合工作；\n6.具备良好的学习能力、沟通能力、项目管理能力和团队协作精神；\n7.具备AI思维，大模型训练经验优先。",
+    "LastUpdateTime": "2026年04月28日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2046131166398021632",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "1.具备AI思维，大模型训练经验优先。",
+    "Introduction": "",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "三年以上工作经验"
+  }
+}

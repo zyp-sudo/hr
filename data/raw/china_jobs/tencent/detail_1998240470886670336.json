@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "1998240470886670336",
+    "RecruitPostId": 116474,
+    "RecruitPostName": "《三角洲行动》-客户端开发工程师-CPU优化",
+    "LocationId": 1,
+    "LocationName": "深圳",
+    "BGId": 956,
+    "BGName": "IEG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40001001",
+    "CategoryName": "技术",
+    "ProductName": "ProjectD-手游APP",
+    "Responsibility": "1.负责内网版本性能数据分析，发现并推动性能问题的优化；\r\n2.监控外网性能数据，保障外网性能数据的稳定；\r\n3.负责UE引擎底层功能的单点性能优化。",
+    "Requirement": "1.熟练掌握C++，熟悉UE4的基础开发方式和架构；\r\n2.具备至少2年的UE4相关开发经验，具备至少1年的性能优化经验；\r\n3.熟练掌握各种模式设计，熟练掌握基础的数据结构跟算法实现，能够对业务中的性能问题提出修改建议；\r\n4.熟悉UE4源码，具备引擎源码的修改经验；\r\n5.具备良好的沟通能力，能推动策划、开发配合进行相应的性能优化；\r\n6.有优秀的学习能力，善于沟通，热爱游戏事业。",
+    "LastUpdateTime": "2026年06月11日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=1998240470886670336",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "",
+    "Introduction": "",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "两年以上工作经验"
+  }
+}

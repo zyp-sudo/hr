@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "1950026512501678080",
+    "RecruitPostId": 113715,
+    "RecruitPostName": "资深测试开发工程师（AI评测方向）",
+    "LocationId": 2,
+    "LocationName": "北京",
+    "BGId": 29294,
+    "BGName": "CSIG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40001001",
+    "CategoryName": "技术",
+    "ProductName": "腾讯云-Coding",
+    "Responsibility": "1.负责腾讯云AI Coding产品质量保障工作，深度参与产品质量体系建设，识别全链路上的质量风险，建立稳定性保障体系，推动稳定性建设落地；\r\n2.腾讯云AI 产品相关的评测工作，包含AI算法的评测体系建设、评测集构建、以及相关评测工程化建设等；\r\n3.负责AI算法的评测标准和评测流程制定，构建评测集，并推进评测执行，分析评测结果，对模型质量给予充分评估；\r\n4.建设相关评测工具/平台，推动评测工程化和无人化。",
+    "Requirement": "1.大学本科及以上学历，计算机科学与技术、软件工程、大数据技术、人工智能、智能科学与技术等专业；\r\n2.精通Python程序开发，有良好的编码风格及创新优化意识，具备较强的程序开发能力；\r\n3.有大模型训练或模型评估经验，熟悉大模型评测方法 , 有大模型Bench数据接入经验优先；\r\n4.对预训练语言模型、精调、PE、RAG等大模型技术有一定理解；\r\n5.有责任心和较强的团队意识，对人工智能有较强的兴趣；\r\n6.具备优秀的沟通协调能力和团队协作意识，有项目管理或团队负责人经验优先；\r\n7.大模型产品深度用户，PE（提示工程）实践经验者优先。",
+    "LastUpdateTime": "2026年07月06日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=1950026512501678080",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "",
+    "Introduction": "在腾讯，测试开发工程师的工作是项目质量保证的关键一环，它贯穿了产品研发到上线的全流程。我们始终通过敏锐的洞察，寻找到效率提升的关键节点，开发工具优化，助力业务取得成功。",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "五年以上工作经验"
+  }
+}

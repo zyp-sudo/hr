@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2032003303461781504",
+    "RecruitPostId": 118432,
+    "RecruitPostName": "QClaw-iOS/Android客户端开发工程师（深圳）",
+    "LocationId": 5,
+    "LocationName": "广州",
+    "BGId": 29294,
+    "BGName": "CSIG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40001001",
+    "CategoryName": "技术",
+    "ProductName": "安全管家",
+    "Responsibility": "1.岗位可以base深圳or广州；\r\n2.负责iOS/Android工具产品客户端功能的方案设计、研发实现；\r\n3.负责iOS/Android的新特性技术预研、模块性能优化等。",
+    "Requirement": "1.本科及以上学历，计算机相关专业；\r\n2.两年以上 iOS 或 Android 软件开发经验；\r\n3.熟悉OC/Swift/Java/Kotlin；\r\n4.熟悉iOS/Android系统运行机制及内核原理，熟悉界面编程、网络通信、进程间通讯等相关技术；\r\n5.熟练掌握Claude Code、Codex、Codebuddy等AI编程工具与范式；\r\n6.具备良好的自驱力、沟通协调能力，分析解决问题的能力；\r\n7.有鸿蒙等更多平台研发经验加分；\r\n8.有安全/AI工具产品研发经验加分。",
+    "LastUpdateTime": "2026年06月12日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2032003303461781504",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "",
+    "Introduction": "在腾讯客户端开发的字典里，“敏捷高效”与“精益求精”并不互斥，追求技术的深度是我们共同的信仰。希望你也能在足够广阔的平台上尽情的施展拳脚。",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "三年以上工作经验"
+  }
+}

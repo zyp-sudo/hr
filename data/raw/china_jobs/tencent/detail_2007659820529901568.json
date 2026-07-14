@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2007659820529901568",
+    "RecruitPostId": 116976,
+    "RecruitPostName": "游戏技术音频",
+    "LocationId": 1,
+    "LocationName": "深圳",
+    "BGId": 956,
+    "BGName": "IEG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40003002",
+    "CategoryName": "产品",
+    "ProductName": "和平精英手游",
+    "Responsibility": "1.协助游戏音频系统的开发与性能优化；\n2.参与音频工具链的开发与维护，优化音频生产流程；\n3.协助解决各平台音频技术问题，提升功能稳定性。",
+    "Requirement": "1.​本科及以上学历，计算机、音频工程、数字媒体技术等相关专业优先；\n2.掌握 C++/C#/Python 等至少一种编程语言，有基础项目经验；\n3.有 UE/Unity 引擎使用经验；\n4.了解 ​​Wwise/FMOD​​ 等音频中间件者优先；\n5.对游戏音频技术（如 DSP、空间音频、3D 音频、混音等）；\n6.积极主动，有团队协作精神，具备良好的学习能力和问题解决能力；\n7.对游戏开发或音频技术有热情，愿意深入探索。",
+    "LastUpdateTime": "2026年06月08日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2007659820529901568",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "1.​​有游戏音频相关开发经验（如学校项目、个人作品等）。",
+    "Introduction": "",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "三年以上工作经验"
+  }
+}

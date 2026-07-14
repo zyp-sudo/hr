@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2036161087476494336",
+    "RecruitPostId": 1233658649243000832,
+    "RecruitPostName": "Software Engineering Intern, Backend Development, 2026 Graduate 107174",
+    "LocationId": 1401,
+    "LocationName": "伦敦",
+    "BGId": 956,
+    "BGName": "IEG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40001001",
+    "CategoryName": "技术",
+    "ProductName": "",
+    "Responsibility": "About the Hiring Team\nLevel Infinite is Tencent’s global gaming brand. It is a global game publisher offering a comprehensive network of services for games, development teams, and studios around the world.\nWe are dedicated to delivering engaging and original gaming experiences to a worldwide audience, whenever and wherever they choose to play while building a community that fosters inclusivity, connection, and accessibility. Level Infinite also provides a wide range of services and resources to our network of developers and partner studios around the world to help them unlock the true potential of their games.\n\nWhat the Role Entails\n1. Participate in the backend architecture design and iterative implementation of Level Infinite PASS unified account;\n2. Responsible for the development of the general backend component system for overseas games.\n3. Ensure high availability of backend services.\n\nWho We Look For\n1. Bachelor's degree in Computer Science, Computer Engineering, or an equivalent combination of education and experience.\n2. Experience with one or more general purpose programming languages including but not limited to: C/C++, Go, Python or PHP.\n3. Understanding of backend distributed systems and Cloud-Native technologies is preferable.\n4. Understand most aspects of game programming is preferable.\n5. Responsible and passionate, with good team collaboration and communication skills.\n6. Experience with  AI coding tools is a plus.\n\nEqual Employment Opportunity at Tencent\nAs an equal opportunity employer, we firmly believe that diverse voices fuel our innovation and allow us to better serve our users and the community. We foster an environment where every employee of Tencent feels supported and inspired to achieve individual and common goals.\r\nWork Location: UK-London",
+    "Requirement": "岗位要求详情请见上方岗位职责内说明",
+    "LastUpdateTime": "2026年05月11日",
+    "PostURL": "https://tencent.wd1.myworkdayjobs.com/Tencent_Careers/job/UK-London/Software-Engineering-Intern--Backend-Development_R107174-1",
+    "SourceID": 4,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "",
+    "Introduction": "",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": ""
+  }
+}

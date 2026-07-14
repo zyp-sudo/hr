@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2043668437917663232",
+    "RecruitPostId": 119294,
+    "RecruitPostName": "《异人之下》战斗策划（怪物设计与制作）",
+    "LocationId": 1,
+    "LocationName": "深圳",
+    "BGId": 956,
+    "BGName": "IEG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40003002",
+    "CategoryName": "产品",
+    "ProductName": "UC-手游APP",
+    "Responsibility": "1.负责怪物/BOSS的玩法机制、技能招式及AI行为的设计与制作；\r\n2.调优战斗节奏、打击感反馈及镜头表演，对怪物最终的战斗交手感与表现力负责；\r\n3.参与战斗/AI编辑器的设计迭代，提升制作效能、工具易用性；\r\n4.基于测试数据与玩家反馈，持续优化战斗体验与相关设计。",
+    "Requirement": "1.本科及以上学历，2年以上动作游戏战斗设计经验，热爱动作游戏并有深度积累；\r\n2.了解角色动作逻辑与动画规律，具备良好的美术审美；熟悉 Unity 引擎及行为树使用；\r\n3.工作积极主动，责任心强，有良好的沟通和团队协作能力，对游戏品质有极致追求；\r\n4.有成功上线项目经验（角色/怪物设计）或熟悉《一人之下》IP者优先。",
+    "LastUpdateTime": "2026年04月13日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2043668437917663232",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "",
+    "Introduction": "【腾讯游戏｜这一局，由你主导】\n腾讯游戏，致力于以顶尖技术创造丰富优质的游戏体验，用创新玩法点燃玩家情感共鸣，深度打磨每处游戏细节。加入我们，用创造力拓展游戏的边界，为用户创造高品质数字生活体验！",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "两年以上工作经验"
+  }
+}

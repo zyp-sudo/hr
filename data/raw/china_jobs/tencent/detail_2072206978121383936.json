@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2072206978121383936",
+    "RecruitPostId": 120846,
+    "RecruitPostName": "《逆战：未来》战斗策划（武器）",
+    "LocationId": 1,
+    "LocationName": "深圳",
+    "BGId": 956,
+    "BGName": "IEG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40003002",
+    "CategoryName": "产品",
+    "ProductName": "code-z",
+    "Responsibility": "1.负责游戏内武器（枪械/近战等）战斗设计、原型制作以及需求验收/调优，和程序/美术等部门的同事紧密合作推动落地；\n2.不断拓展和丰富游戏中武器在各个模式中的横向战斗体验，注重武器的平衡性测试和调优；\n3.追求卓越，不断打磨武器整体战斗中的视听表现，参与角色持枪相关3C的表现提升。",
+    "Requirement": "1.热爱并对PVE FPS游戏有较深的理解；\n2.对复杂战斗循环/技能搭配有深入的理解，狂热点子王优先；\n3.有完整UE4项目经验，具备良好的沟通能力；\n4.有2年及以上FPS, TPS品类的项目武器设计经验优先。",
+    "LastUpdateTime": "2026年07月01日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2072206978121383936",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "",
+    "Introduction": "",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "两年以上工作经验"
+  }
+}

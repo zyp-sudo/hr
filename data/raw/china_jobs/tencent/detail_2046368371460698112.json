@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "2046368371460698112",
+    "RecruitPostId": 10002730,
+    "RecruitPostName": "Sr. Cloud AI Infrastructure Engineer",
+    "LocationId": 401,
+    "LocationName": "帕罗奥多",
+    "BGId": 29294,
+    "BGName": "CSIG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40001001",
+    "CategoryName": "技术",
+    "ProductName": "",
+    "Responsibility": "Business Unit\n\nWhat the Role Entails\n1.Architecture Research: Conduct in-depth research into the underlying hardware logic of various AI accelerators; evaluate the power-efficiency ratio and suitability of different heterogeneous architectures in the context of Large Language Model (LLM) inference and training.\n2.Operator & Performance Optimization: Design and optimize high-performance operator libraries for large-scale cloud computing environments; resolve long-tail latency issues in hardware scheduling, memory management, and distributed communication.\n3.Interconnect Architecture Definition: Define the interconnect architecture ; drive the virtualization, standardized access, and efficient pooling of heterogeneous computing resources in the cloud.\n4.Technology Trend Analysis: Monitor global trends in semiconductors and accelerators; perform feasibility studies and experimental validation for the implementation of emerging technologies within cloud infrastructure.\n\nWho We Look For\n1.Education: Master’s or Ph.D. degree in Computer Engineering, Electronic Engineering, Microelectronics, or a related field.\n2.Core Expertise: Expertise in GPGPU architectures or other mainstream AI accelerator architectures.\n3.Programming & Frameworks: Proficient in parallel computing frameworks; deep understanding of low-level operator development languages (e.g., CUDA, Triton).\n4.Network & Distributed Systems: Solid understanding of large-scale distributed systems, cluster topologies (e.g., Fat-tree, Torus), and high-performance network protocols.\n5.Industry Insight: Familiar with the architectural evolution of global leading computing enterprises; ability to objectively analyze the technical pros/cons and engineering challenges of different architectural paths.\n6.Experience: Experience in the application, optimization, or architectural design of ultra-large-scale accelerator clusters is preferred.\n7.Framework Optimization: Experience in the low-level adaptation and performance tuning of mainstream deep learning frameworks (e.g., PyTorch, TensorFlow) is preferred.\nLocation State(s)\nUS-California-Palo Alto\nThe expected base pay range for this position in the location(s) listed above is $145,100.00 to $273,200.00 per year. Actual pay may vary depending on job-related knowledge, skills, and experience.\nEmployees hired for this position may be eligible for a sign on payment, relocation package, and restricted stock units, which will be evaluated on a case-by-case basis.\nSubject to the terms and conditions of the plans in effect, hired applicants are also eligible for medical, dental, vision, life and disability benefits, and participation in the Company’s 401(k) plan. The Employee is also eligible for up to 15 to 25 days of vacation per year (depending on the employee’s tenure), up to 13 days of holidays throughout the calendar year, and up to 10 days of paid sick leave per year.\nYour benefits may be adjusted to reflect your location, employment status, duration of employment with the company, and position level. Benefits may also be pro-rated for those who start working during the calendar year.\n\nEqual Employment Opportunity at Tencent\nAs an equal opportunity employer, we firmly believe that diverse voices fuel our innovation and allow us to better serve our users and the community. We foster an environment where every employee of Tencent feels supported and inspired to achieve individual and common goals.\r\nWork Location: US-California-Palo Alto",
+    "Requirement": "岗位要求详情请见上方岗位职责内说明",
+    "LastUpdateTime": "2026年07月02日",
+    "PostURL": "https://tencent.wd1.myworkdayjobs.com/Tencent_Careers/job/US-California-Palo-Alto/Sr-Cloud-AI-Infrastructure-Engineer_R107333",
+    "SourceID": 4,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "",
+    "Introduction": "",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": ""
+  }
+}

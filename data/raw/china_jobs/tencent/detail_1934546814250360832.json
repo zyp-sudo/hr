@@ -1,0 +1,28 @@
+{
+  "Code": 200,
+  "Data": {
+    "PostId": "1934546814250360832",
+    "RecruitPostId": 112717,
+    "RecruitPostName": "微信开放平台-风控算法",
+    "LocationId": 5,
+    "LocationName": "广州",
+    "BGId": 14129,
+    "BGName": "WXG",
+    "ComCode": "",
+    "ComName": "",
+    "OuterPostTypeID": "40001004",
+    "CategoryName": "技术",
+    "ProductName": "公众号",
+    "Responsibility": "1.负责微信公众号和小程序的生态安全运营，解决各类违规内容和风险行为；\n2.持续优化算法及策略，提升机器召回模型的准确率和覆盖率；\n3.团队协作推进保障各项产品的安全流程，预防风险问题。",
+    "Requirement": "1.计算机、数据科学、人工智能等相关专业本科及以上学历；\n2.扎实的编程基础，精通Python/SQL等至少一门数据分析语言，具备Hadoop/Spark等大数据平台实战经验优先；\n3.理解机器学习/NLP/计算机视觉等其中至少一个领域的算法技术原理，擅长社团挖掘，具备相关技术实践经验；\n4.有平台治理、安全、风控等经验者优先。",
+    "LastUpdateTime": "2026年06月23日",
+    "PostURL": "http://careers.tencent.com/jobdesc.html?postId=1934546814250360832",
+    "SourceID": 1,
+    "IsCollect": false,
+    "PostLightItem": "",
+    "ImportantItem": "",
+    "Introduction": "",
+    "DepartmentIntroduction": "",
+    "RequireWorkYearsName": "两年以上工作经验"
+  }
+}
