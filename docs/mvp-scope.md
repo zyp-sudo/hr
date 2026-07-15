@@ -33,14 +33,21 @@
 
 `python scripts/evaluate_accuracy.py` 执行 165 个确定性回归案例，报告写入
 `data/benchmarks/accuracy_report.json`。该基准用于防止规则回归，不等同于独立标注的
-生产准确率。正式 90% 结论仍需盲测集、人工双标和按岗位类别分层统计。
+生产准确率。另有 24 条固定人工复核 holdout：技能 F1 为 0.8125、岗位分类准确率为
+0.6667；4 个固定检索 query pool 的 MRR@10 为 1.0000、nDCG@10 为 0.9315。
+两套人工基准目前都只有一名标注者，正式生产结论仍需扩大样本、双人独立标注和分层统计。
+
+当前 55,110 条岗位中，保守规则可从原文明确提取学历 33,849 条（61.42%）和人民币
+月/年薪区间 11,246 条（20.41%）。面议、外币、日时薪和没有周期的裸区间保持空值；
+覆盖率不等同于字段抽取准确率。
 
 ## 增量同步设计
 
-1. `bootstrap_storage.py --sync` 对每个 ETL/KG 文件计算 SHA-256。
-2. 未变化的表和图文件跳过；变化的 MySQL 快照表先替换再批量 upsert，变化的 Neo4j
-   图快照重建，避免遗留已删除节点和边。
-3. `sync_mysql_to_es.py --auto` 首次全量创建索引，后续从
-   `data/sync/elasticsearch_state.json` 的 `max_collected_at` 水位增量索引。
-4. 运行时状态文件位于 `data/sync/`，不进入 Git。
-5. 聚合图谱是全局计算结果；当 ETL 快照变化时重新计算图谱属于有意设计，不能仅追加。
+1. `bootstrap_storage.py --sync` 先用 SHA-256 判断哪些快照文件发生变化。
+2. 变化的 MySQL 表载入临时快照表，按主键和 null-safe 行差异只 upsert 新增/变更行，
+   并删除源快照中已不存在的主键；单表对账在一个事务中完成，不再整表 `DELETE`。
+3. `sync_mysql_to_es.py --auto` 扫描 MySQL 主键/规范行哈希与 ES `sync_hash`，只索引新增或
+   变更文档并传播删除；旧 `collected_at` 记录的更新也可检测。
+4. 两类同步均使用互斥锁，状态 JSON 通过原子替换发布；连续第二轮应为零变更。
+5. 运行时状态文件位于 `data/sync/`，不进入 Git。
+6. Neo4j 是全局聚合快照；KG 输入变化时全量重算属于明确边界，不能仅追加。

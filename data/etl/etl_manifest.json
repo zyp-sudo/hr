@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-15T19:11:19+08:00",
+  "generated_at": "2026-07-15T21:19:09+08:00",
   "input_files": [
     "data\\collected_jobs.csv",
     "data\\collected_job_skills.csv",
@@ -9,7 +9,8 @@
     "data\\etl\\unified_jobs.csv",
     "data\\etl\\unified_job_skills.csv",
     "data\\etl\\data_quality_report.csv",
-    "data\\etl\\job_candidate_scores.csv"
+    "data\\etl\\job_candidate_scores.csv",
+    "data\\benchmarks\\field_coverage_report.json"
   ],
   "unified_job_records": 55110,
   "unified_skill_records": 69291,
@@ -48,6 +49,18 @@
     "other": 260,
     "backend_engineering": 45134,
     "security": 759
+  },
+  "searchable_field_coverage": {
+    "education": {
+      "non_null": 33849,
+      "total": 55110,
+      "method": "explicit requirement-text extraction"
+    },
+    "salary": {
+      "non_null": 11246,
+      "total": 55110,
+      "method": "explicit RMB monthly/annual range extraction; normalized to monthly RMB"
+    }
   },
   "quality_rules": {
     "base_score": 100,

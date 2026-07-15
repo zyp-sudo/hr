@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-15T19:36:48+08:00",
+  "generated_at": "2026-07-15T20:53:40+08:00",
   "inputs": {
     "unified_jobs": "data/etl/unified_jobs.csv",
     "unified_skills": "data/etl/unified_job_skills.csv",

@@ -10,11 +10,13 @@ from pathlib import Path
 
 from bilingual_matching import skill_hits
 import job_taxonomy as taxonomy
+from job_field_extraction import extract_education, extract_salary
 
 
 ROOT = Path(__file__).resolve().parents[1]
 DATA_DIR = ROOT / "data"
 ETL_DIR = DATA_DIR / "etl"
+BENCHMARK_DIR = DATA_DIR / "benchmarks"
 
 JOBS_PATH = DATA_DIR / "collected_jobs.csv"
 SKILLS_PATH = DATA_DIR / "collected_job_skills.csv"
@@ -27,6 +29,7 @@ UNIFIED_SKILLS_PATH = ETL_DIR / "unified_job_skills.csv"
 QUALITY_REPORT_PATH = ETL_DIR / "data_quality_report.csv"
 CANDIDATE_SCORES_PATH = ETL_DIR / "job_candidate_scores.csv"
 MANIFEST_PATH = ETL_DIR / "etl_manifest.json"
+FIELD_COVERAGE_PATH = BENCHMARK_DIR / "field_coverage_report.json"
 
 
 UNIFIED_JOB_FIELDS = [
@@ -51,6 +54,10 @@ UNIFIED_JOB_FIELDS = [
     "job_title",
     "job_type",
     "work_years",
+    "education",
+    "salary_min",
+    "salary_max",
+    "salary_text",
     "responsibility",
     "requirement",
     "raw_text",
@@ -508,6 +515,8 @@ def transform_row(row, registry, seen_hashes):
     normalized_category = classify_job(row, skills)
     role_id, role_name = taxonomy.infer_role(row["title"], row["category"], normalized_category, skills)
     dimensions = taxonomy.capability_dimensions(skills)
+    education = extract_education(row["requirement"])
+    salary = extract_salary(" ".join([row["title"], row["responsibility"], row["requirement"]]))
 
     unified_job = {
         "record_id": record_id,
@@ -531,6 +540,10 @@ def transform_row(row, registry, seen_hashes):
         "job_title": row["title"],
         "job_type": row["jobType"],
         "work_years": row["workYears"],
+        "education": education or "",
+        "salary_min": salary.minimum if salary else "",
+        "salary_max": salary.maximum if salary else "",
+        "salary_text": salary.text if salary else "",
         "responsibility": row["responsibility"],
         "requirement": row["requirement"],
         "raw_text": raw_text,
@@ -617,6 +630,36 @@ def transform():
 
     active_sources = sorted({row["source_id"] for row in unified_jobs})
     active_source_types = sorted({row["source_type"] for row in unified_jobs if row["source_type"]})
+    education_counts = Counter(row["education"] for row in unified_jobs if row["education"])
+    salary_rows = [
+        row for row in unified_jobs
+        if row["salary_min"] != "" and row["salary_max"] != ""
+    ]
+    field_coverage = {
+        "dataset": str(UNIFIED_JOBS_PATH.relative_to(ROOT)).replace("\\", "/"),
+        "records": len(unified_jobs),
+        "education": {
+            "non_null": sum(education_counts.values()),
+            "coverage_percent": round(100 * sum(education_counts.values()) / len(unified_jobs), 2),
+            "values": dict(education_counts),
+            "confidence_boundary": "Only explicit degree terms in the requirement text are extracted. Preferred degrees such as 博士优先 are excluded; unknown requirements stay null.",
+        },
+        "salary": {
+            "non_null": len(salary_rows),
+            "coverage_percent": round(100 * len(salary_rows) / len(unified_jobs), 2),
+            "source_records": dict(Counter(row["source_id"] for row in salary_rows)),
+            "confidence_boundary": "Only explicit RMB monthly ranges and RMB annual ranges are normalized to monthly RMB. Foreign currencies, day/hour rates, negotiable salary and ranges without a pay period stay null.",
+        },
+        "unsupported_records": {
+            "education": len(unified_jobs) - sum(education_counts.values()),
+            "salary": len(unified_jobs) - len(salary_rows),
+        },
+        "note": "Coverage is source-data coverage, not extraction accuracy. Null fields are deliberately preserved and their filters return only documents that have real values.",
+    }
+    FIELD_COVERAGE_PATH.parent.mkdir(parents=True, exist_ok=True)
+    FIELD_COVERAGE_PATH.write_text(
+        json.dumps(field_coverage, ensure_ascii=False, indent=2), encoding="utf-8"
+    )
     manifest = {
         "generated_at": now_iso(),
         "input_files": [
@@ -629,6 +672,7 @@ def transform():
             str(UNIFIED_SKILLS_PATH.relative_to(ROOT)),
             str(QUALITY_REPORT_PATH.relative_to(ROOT)),
             str(CANDIDATE_SCORES_PATH.relative_to(ROOT)),
+            str(FIELD_COVERAGE_PATH.relative_to(ROOT)),
         ],
         "unified_job_records": len(unified_jobs),
         "unified_skill_records": len(unified_skills),
@@ -638,6 +682,18 @@ def transform():
         "active_sources": active_sources,
         "active_source_types": active_source_types,
         "category_counts": Counter(row["normalized_category"] for row in unified_jobs),
+        "searchable_field_coverage": {
+            "education": {
+                "non_null": field_coverage["education"]["non_null"],
+                "total": len(unified_jobs),
+                "method": "explicit requirement-text extraction",
+            },
+            "salary": {
+                "non_null": field_coverage["salary"]["non_null"],
+                "total": len(unified_jobs),
+                "method": "explicit RMB monthly/annual range extraction; normalized to monthly RMB",
+            },
+        },
         "quality_rules": {
             "base_score": 100,
             "penalties": {

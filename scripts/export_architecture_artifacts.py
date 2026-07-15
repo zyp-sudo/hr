@@ -94,6 +94,10 @@ CREATE TABLE IF NOT EXISTS job_postings (
   job_title VARCHAR(512),
   job_type VARCHAR(128),
   work_years VARCHAR(128),
+  education VARCHAR(32),
+  salary_min INT,
+  salary_max INT,
+  salary_text VARCHAR(255),
   responsibility MEDIUMTEXT,
   requirement MEDIUMTEXT,
   raw_text MEDIUMTEXT,
@@ -112,6 +116,8 @@ CREATE TABLE IF NOT EXISTS job_postings (
   INDEX idx_job_source (source_id),
   INDEX idx_job_category (normalized_category),
   INDEX idx_job_city (city),
+  INDEX idx_job_education (education),
+  INDEX idx_job_salary (salary_min, salary_max),
   INDEX idx_job_quality (quality_level)
 );
 
@@ -294,6 +300,10 @@ def export_elasticsearch(jobs):
                 "published_at": row.get("published_at", ""),
                 "collected_at": row.get("collected_at", ""),
                 "normalized_category": row.get("normalized_category", ""),
+                "education": row.get("education") or None,
+                "salary_min": int(row["salary_min"]) if row.get("salary_min") else None,
+                "salary_max": int(row["salary_max"]) if row.get("salary_max") else None,
+                "salary_text": row.get("salary_text") or None,
                 "skills": [item for item in row.get("normalized_skills", "").split("|") if item],
                 "quality_score": int(row.get("quality_score") or 0),
                 "quality_level": row.get("quality_level", ""),

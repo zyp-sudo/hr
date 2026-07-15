@@ -50,6 +50,7 @@ INDEX_MAPPINGS = {
                 "quality_score": {"type": "integer"},
                 "quality_level": {"type": "keyword"},
                 "content_hash": {"type": "keyword"},
+                "sync_hash": {"type": "keyword"},
             }
         },
     },

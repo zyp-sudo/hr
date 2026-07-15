@@ -26,6 +26,10 @@ CREATE TABLE IF NOT EXISTS job_postings (
   job_title VARCHAR(512),
   job_type VARCHAR(128),
   work_years VARCHAR(128),
+  education VARCHAR(32),
+  salary_min INT,
+  salary_max INT,
+  salary_text VARCHAR(255),
   responsibility MEDIUMTEXT,
   requirement MEDIUMTEXT,
   raw_text MEDIUMTEXT,
@@ -44,6 +48,8 @@ CREATE TABLE IF NOT EXISTS job_postings (
   INDEX idx_job_source (source_id),
   INDEX idx_job_category (normalized_category),
   INDEX idx_job_city (city),
+  INDEX idx_job_education (education),
+  INDEX idx_job_salary (salary_min, salary_max),
   INDEX idx_job_quality (quality_level)
 );
 

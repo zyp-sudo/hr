@@ -18,7 +18,8 @@ powershell -ExecutionPolicy Bypass -File scripts/init-storage.ps1
 ```
 
 该脚本启动 Docker 中的 MySQL 8.4、Elasticsearch 8.13.4、Neo4j 5.26，执行
-`scripts/bootstrap_storage.py --sync`，再以水位方式同步 Elasticsearch。未变化的快照会跳过。
+`scripts/bootstrap_storage.py --sync`，再按主键和规范行哈希对账 Elasticsearch。未变化的
+快照会跳过；变化的 MySQL 表只写入行差异并传播删除，ES 只写入新增/变更文档并删除孤儿文档。
 完全重建使用：
 
 ```powershell
@@ -30,6 +31,12 @@ python scripts/sync_mysql_to_es.py --recreate-indices
 
 ```powershell
 powershell -ExecutionPolicy Bypass -File start.ps1
+```
+
+使用随机端口、独立 Compose 项目和全新卷验证首次安装，并自动核对三库数量：
+
+```powershell
+powershell -NoProfile -ExecutionPolicy Bypass -File scripts\verify-cleanroom.ps1
 ```
 
 ## 环境变量

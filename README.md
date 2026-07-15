@@ -113,6 +113,14 @@ powershell -ExecutionPolicy Bypass -File scripts\start-frontend.ps1
 pip install -r requirements-dev.txt
 pytest
 python scripts/evaluate_accuracy.py
+python scripts/evaluate_holdout.py --min-skill-f1 0.6 --min-category-accuracy 0.6
+python scripts/evaluate_retrieval.py
+```
+
+首次安装的三库隔离验收：
+
+```powershell
+powershell -NoProfile -ExecutionPolicy Bypass -File scripts\verify-cleanroom.ps1
 ```
 
 `pytest` 对核心匹配与评测模块执行覆盖率门禁，低于 60% 将失败。

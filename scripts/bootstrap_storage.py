@@ -7,6 +7,8 @@ import csv
 import hashlib
 import json
 import os
+import time
+from contextlib import contextmanager
 from pathlib import Path
 from typing import Any, Iterable
 
@@ -18,6 +20,7 @@ from sqlalchemy.engine import make_url
 ROOT = Path(__file__).resolve().parents[1]
 DATA = ROOT / "data"
 SYNC_STATE_PATH = DATA / "sync" / "storage_state.json"
+SYNC_LOCK_PATH = DATA / "sync" / "storage_state.lock"
 MYSQL_SCHEMA = DATA / "warehouse" / "mysql_schema.sql"
 
 MYSQL_TABLES = (
@@ -31,6 +34,48 @@ MYSQL_TABLES = (
     ("data_quality_report", DATA / "etl" / "data_quality_report.csv"),
 )
 
+TABLE_KEYS = {
+    "job_postings": ("record_id",),
+    "job_skill_evidence": ("record_id",),
+    "kg_nodes": ("id",),
+    "kg_edges": ("id",),
+    "skill_trends": ("period", "role_id", "skill"),
+    "role_aliases": ("alias", "canonical_role_id"),
+    "graph_versions": ("version_id",),
+    "data_quality_report": ("source_id",),
+}
+
+
+@contextmanager
+def exclusive_lock(path: Path, timeout_seconds: float = 30.0):
+    """Prevent concurrent snapshot writers from interleaving database/state updates."""
+    path.parent.mkdir(parents=True, exist_ok=True)
+    deadline = time.monotonic() + timeout_seconds
+    descriptor: int | None = None
+    while descriptor is None:
+        try:
+            descriptor = os.open(path, os.O_CREAT | os.O_EXCL | os.O_WRONLY)
+        except FileExistsError:
+            if time.monotonic() >= deadline:
+                raise TimeoutError(f"Another storage sync owns {path}")
+            time.sleep(0.2)
+    try:
+        os.write(descriptor, f"pid={os.getpid()}\n".encode())
+        os.close(descriptor)
+        descriptor = None
+        yield
+    finally:
+        if descriptor is not None:
+            os.close(descriptor)
+        path.unlink(missing_ok=True)
+
+
+def atomic_write_json(path: Path, payload: dict[str, Any]) -> None:
+    path.parent.mkdir(parents=True, exist_ok=True)
+    temporary = path.with_suffix(path.suffix + f".{os.getpid()}.tmp")
+    temporary.write_text(json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8")
+    os.replace(temporary, path)
+
 
 def file_digest(path: Path) -> str:
     digest = hashlib.sha256()
@@ -40,10 +85,10 @@ def file_digest(path: Path) -> str:
     return digest.hexdigest()
 
 
-def read_sync_state() -> dict[str, str]:
-    if not SYNC_STATE_PATH.exists():
+def read_sync_state(path: Path = SYNC_STATE_PATH) -> dict[str, str]:
+    if not path.exists():
         return {}
-    return json.loads(SYNC_STATE_PATH.read_text(encoding="utf-8"))
+    return json.loads(path.read_text(encoding="utf-8"))
 
 
 def current_sync_state() -> dict[str, str]:
@@ -79,6 +124,111 @@ def schema_statements() -> list[str]:
         if statement:
             statements.append(statement)
     return statements
+
+
+def _quoted_columns(table: str, columns: list[str]) -> list[str]:
+    return [
+        {"from": "from_id", "to": "to_id"}.get(column, column)
+        if table == "kg_edges"
+        else column
+        for column in columns
+    ]
+
+
+def reconcile_mysql_table(
+    cursor: Any,
+    table: str,
+    path: Path,
+    batch_size: int,
+) -> dict[str, int]:
+    """Reconcile a CSV snapshot without deleting or rewriting unchanged rows."""
+    with path.open("r", encoding="utf-8-sig", newline="") as handle:
+        source_columns = next(csv.reader(handle))
+    columns = _quoted_columns(table, source_columns)
+    keys = TABLE_KEYS[table]
+    non_keys = [column for column in columns if column not in keys]
+    stage = f"_sync_{table}_{os.getpid()}"
+    cursor.execute(f"DROP TEMPORARY TABLE IF EXISTS `{stage}`")
+    cursor.execute(f"CREATE TEMPORARY TABLE `{stage}` LIKE `{table}`")
+
+    quoted = ", ".join(f"`{column}`" for column in columns)
+    placeholders = ", ".join(["%s"] * len(columns))
+    stage_non_keys = [column for column in columns if column not in TABLE_KEYS[table]]
+    if stage_non_keys:
+        duplicate_update = ", ".join(
+            f"`{column}`=VALUES(`{column}`)" for column in stage_non_keys
+        )
+        stage_sql = (
+            f"INSERT INTO `{stage}` ({quoted}) VALUES ({placeholders}) "
+            f"ON DUPLICATE KEY UPDATE {duplicate_update}"
+        )
+    else:
+        stage_sql = f"INSERT IGNORE INTO `{stage}` ({quoted}) VALUES ({placeholders})"
+    staged = 0
+    for batch in batches(csv_rows(path), batch_size):
+        values = [tuple(row[column] for column in source_columns) for row in batch]
+        cursor.executemany(stage_sql, values)
+        staged += len(values)
+
+    join = " AND ".join(f"t.`{key}` = s.`{key}`" for key in keys)
+    missing = f"t.`{keys[0]}` IS NULL"
+    changed = " OR ".join(f"NOT (t.`{column}` <=> s.`{column}`)" for column in non_keys)
+    predicate = f"{missing} OR {changed}" if changed else missing
+    cursor.execute(
+        f"SELECT COUNT(*) FROM `{stage}` s LEFT JOIN `{table}` t ON {join} WHERE {predicate}"
+    )
+    changed_count = int(cursor.fetchone()[0])
+
+    if changed_count:
+        selected = ", ".join(f"s.`{column}`" for column in columns)
+        updates = ", ".join(
+            f"`{column}`=VALUES(`{column}`)" for column in non_keys
+        )
+        merge = (
+            f"INSERT INTO `{table}` ({quoted}) SELECT {selected} FROM `{stage}` s "
+            f"LEFT JOIN `{table}` t ON {join} WHERE {predicate}"
+        )
+        if updates:
+            merge += f" ON DUPLICATE KEY UPDATE {updates}"
+        cursor.execute(merge)
+
+    reverse_join = " AND ".join(f"t.`{key}` = s.`{key}`" for key in keys)
+    cursor.execute(
+        f"SELECT COUNT(*) FROM `{table}` t LEFT JOIN `{stage}` s ON {reverse_join} "
+        f"WHERE s.`{keys[0]}` IS NULL"
+    )
+    deleted_count = int(cursor.fetchone()[0])
+    if deleted_count:
+        cursor.execute(
+            f"DELETE t FROM `{table}` t LEFT JOIN `{stage}` s ON {reverse_join} "
+            f"WHERE s.`{keys[0]}` IS NULL"
+        )
+    cursor.execute(f"DROP TEMPORARY TABLE `{stage}`")
+    return {"staged": staged, "changed": changed_count, "deleted": deleted_count}
+
+
+def ensure_job_posting_search_fields(cursor: Any) -> None:
+    """Migrate an existing warehouse created before salary/education fields."""
+    cursor.execute("SHOW COLUMNS FROM `job_postings`")
+    existing_columns = {str(row[0]) for row in cursor.fetchall()}
+    definitions = {
+        "education": "VARCHAR(32)",
+        "salary_min": "INT",
+        "salary_max": "INT",
+        "salary_text": "VARCHAR(255)",
+    }
+    for column, definition in definitions.items():
+        if column not in existing_columns:
+            cursor.execute(f"ALTER TABLE `job_postings` ADD COLUMN `{column}` {definition}")
+
+    cursor.execute("SHOW INDEX FROM `job_postings`")
+    existing_indexes = {str(row[2]) for row in cursor.fetchall()}
+    if "idx_job_education" not in existing_indexes:
+        cursor.execute("ALTER TABLE `job_postings` ADD INDEX `idx_job_education` (`education`)")
+    if "idx_job_salary" not in existing_indexes:
+        cursor.execute(
+            "ALTER TABLE `job_postings` ADD INDEX `idx_job_salary` (`salary_min`, `salary_max`)"
+        )
 
 
 def load_mysql(
@@ -126,6 +276,7 @@ def load_mysql(
                 if statement.upper().startswith(("CREATE DATABASE", "USE ")):
                     continue
                 cursor.execute(statement)
+            ensure_job_posting_search_fields(cursor)
             if if_empty:
                 cursor.execute("SELECT COUNT(*) FROM job_postings")
                 if int(cursor.fetchone()[0]) > 0:
@@ -139,16 +290,17 @@ def load_mysql(
                     print(f"MySQL {table}: unchanged, skipped")
                     continue
                 if changed_tables is not None:
-                    cursor.execute(f"DELETE FROM `{table}`")
+                    result = reconcile_mysql_table(cursor, table, path, batch_size)
                     connection.commit()
+                    counts[table] = result["changed"]
+                    print(
+                        f"MySQL {table}: staged={result['staged']}, "
+                        f"changed={result['changed']}, deleted={result['deleted']}"
+                    )
+                    continue
                 with path.open("r", encoding="utf-8-sig", newline="") as handle:
                     columns = next(csv.reader(handle))
-                database_columns = [
-                    {"from": "from_id", "to": "to_id"}.get(column, column)
-                    if table == "kg_edges"
-                    else column
-                    for column in columns
-                ]
+                database_columns = _quoted_columns(table, columns)
                 quoted = ", ".join(f"`{column}`" for column in database_columns)
                 placeholders = ", ".join(["%s"] * len(columns))
                 updates = ", ".join(
@@ -290,6 +442,7 @@ def main() -> None:
     parser.add_argument("--if-empty", action="store_true", help="Skip a database that already has data.")
     parser.add_argument("--sync", action="store_true", help="Replace only data files whose SHA-256 digest changed.")
     parser.add_argument("--batch-size", type=int, default=500)
+    parser.add_argument("--state-file", default=str(SYNC_STATE_PATH))
     args = parser.parse_args()
     mysql_url = os.getenv(
         "MYSQL_URL", "mysql+pymysql://root:password@localhost:3307/job_kg?charset=utf8mb4"
@@ -301,40 +454,42 @@ def main() -> None:
     if args.if_empty and args.sync:
         parser.error("--if-empty and --sync cannot be used together")
 
-    previous_state = read_sync_state() if args.sync else {}
-    current_state = current_sync_state()
-    changed_tables = None
-    if args.sync:
-        changed_tables = {
-            table
-            for table, path in MYSQL_TABLES
-            if previous_state.get(str(path.relative_to(ROOT)).replace("\\", "/"))
-            != current_state[str(path.relative_to(ROOT)).replace("\\", "/")]
-        }
-    load_mysql(mysql_url, args.reset, args.if_empty, args.batch_size, changed_tables=changed_tables)
-    graph_changed = not args.sync or any(
-        previous_state.get(path) != current_state[path]
-        for path in (
-            "data/kg/nodes.csv",
-            "data/kg/edges.csv",
-            "data/kg/role_aliases.csv",
-            "data/kg/skill_trends.csv",
-            "data/kg/graph_versions.csv",
+    state_path = Path(args.state_file)
+    lock_path = state_path.with_suffix(state_path.suffix + ".lock")
+    with exclusive_lock(lock_path):
+        previous_state = read_sync_state(state_path) if args.sync else {}
+        current_state = current_sync_state()
+        changed_tables = None
+        if args.sync:
+            changed_tables = {
+                table
+                for table, path in MYSQL_TABLES
+                if previous_state.get(str(path.relative_to(ROOT)).replace("\\", "/"))
+                != current_state[str(path.relative_to(ROOT)).replace("\\", "/")]
+            }
+        load_mysql(mysql_url, args.reset, args.if_empty, args.batch_size, changed_tables=changed_tables)
+        graph_changed = not args.sync or any(
+            previous_state.get(path) != current_state[path]
+            for path in (
+                "data/kg/nodes.csv",
+                "data/kg/edges.csv",
+                "data/kg/role_aliases.csv",
+                "data/kg/skill_trends.csv",
+                "data/kg/graph_versions.csv",
+            )
         )
-    )
-    load_neo4j(
-        neo4j_uri,
-        neo4j_username,
-        neo4j_password,
-        neo4j_database,
-        args.reset or (args.sync and graph_changed),
-        args.if_empty,
-        args.batch_size,
-        changed=graph_changed,
-    )
-    if args.sync or args.reset:
-        SYNC_STATE_PATH.parent.mkdir(parents=True, exist_ok=True)
-        SYNC_STATE_PATH.write_text(json.dumps(current_state, indent=2), encoding="utf-8")
+        load_neo4j(
+            neo4j_uri,
+            neo4j_username,
+            neo4j_password,
+            neo4j_database,
+            args.reset or (args.sync and graph_changed),
+            args.if_empty,
+            args.batch_size,
+            changed=graph_changed,
+        )
+        if args.sync or args.reset:
+            atomic_write_json(state_path, current_state)
 
 
 if __name__ == "__main__":

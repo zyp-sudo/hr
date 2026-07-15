@@ -1,0 +1,29 @@
+{
+  "benchmark": "manual_fixed_holdout_v1",
+  "case_count": 24,
+  "annotation": {
+    "labels": "fixed manual review, stored independently from evaluator",
+    "reviewers": 1,
+    "double_blind": false,
+    "limitations": "Small diagnostic holdout; expand with two independent domain annotators before production claims."
+  },
+  "metrics": {
+    "skill_precision": 0.7647,
+    "skill_recall": 0.8667,
+    "skill_f1": 0.8125,
+    "category_accuracy": 0.6667
+  },
+  "category_by_stratum": {
+    "ai": {"count": 2, "accuracy": 0.5},
+    "backend": {"count": 2, "accuracy": 0.5},
+    "cloud": {"count": 1, "accuracy": 1.0},
+    "data": {"count": 1, "accuracy": 0.0},
+    "design": {"count": 1, "accuracy": 1.0},
+    "frontend": {"count": 1, "accuracy": 0.0},
+    "other": {"count": 1, "accuracy": 1.0},
+    "product": {"count": 1, "accuracy": 1.0},
+    "quality": {"count": 1, "accuracy": 1.0},
+    "security": {"count": 1, "accuracy": 1.0}
+  },
+  "all_metrics_perfect": false
+}

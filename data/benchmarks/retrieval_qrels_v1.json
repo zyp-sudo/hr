@@ -1,0 +1,70 @@
+{
+  "metadata": {
+    "labels": "fixed manual relevance judgements over a pooled top-10 candidate set",
+    "reviewers": 1,
+    "scale": {"0": "not relevant", "1": "partly relevant", "2": "relevant", "3": "exact intent"},
+    "limitations": "Unjudged documents are treated as non-relevant; expand pooling and use two reviewers for production claims."
+  },
+  "queries": [
+    {
+      "query": "大模型推理",
+      "grades": {
+        "meituan_careers:3545041592": 3,
+        "meituan_careers:2318526709": 3,
+        "tencent_careers:1902190189934100480": 3,
+        "tencent_careers:2055195929673383936": 3,
+        "huawei_careers:PO2025102500002": 2,
+        "meituan_careers:3506281745": 0,
+        "jobonline_public_employment_service:2073584381352239109": 1,
+        "tencent_careers:2037101976877170688": 3,
+        "tencent_careers:2037523709425778688": 3,
+        "tencent_careers:2037523711703281664": 3
+      }
+    },
+    {
+      "query": "Java 后台",
+      "grades": {
+        "jobonline_public_employment_service:2074407313984471041": 3,
+        "baidu_careers:6766703e-6c62-4d84-8b41-50a1e6295795": 1,
+        "jobonline_public_employment_service:1867082361100058624": 0,
+        "jobonline_public_employment_service:1867073502822416384": 0,
+        "jobonline_public_employment_service:1867408697559760902": 0,
+        "jobonline_public_employment_service:1867405134707965955": 1,
+        "jobonline_public_employment_service:1867074511376498694": 1,
+        "tencent_careers:2002942193895100416": 2,
+        "jobonline_public_employment_service:2073681965249093637": 3,
+        "jobonline_public_employment_service:1867089829293080582": 0
+      }
+    },
+    {
+      "query": "产品经理",
+      "grades": {
+        "jobonline_public_employment_service:1867091565252984834": 3,
+        "jobonline_public_employment_service:1867091054516649987": 3,
+        "jobonline_public_employment_service:1867089031251509250": 3,
+        "jobonline_public_employment_service:1867089114550517760": 3,
+        "jobonline_public_employment_service:2008506983187103744": 3,
+        "jobonline_public_employment_service:1867079048887812097": 3,
+        "jobonline_public_employment_service:1867063425390493701": 3,
+        "jobonline_public_employment_service:1867416099906666499": 3,
+        "jobonline_public_employment_service:1867406812773892101": 3,
+        "jobonline_public_employment_service:1867406092771016704": 3
+      }
+    },
+    {
+      "query": "游戏引擎",
+      "grades": {
+        "tencent_careers:1788096462568038400": 3,
+        "tencent_careers:2069242479236005888": 3,
+        "tencent_careers:2057763896625901568": 1,
+        "tencent_careers:2059851842304782336": 3,
+        "tencent_careers:2018583814598717440": 3,
+        "tencent_careers:2033809378322317312": 3,
+        "tencent_careers:2033809380457218048": 3,
+        "jobonline_public_employment_service:2074335750984458244": 2,
+        "jobonline_public_employment_service:2074335729714749442": 2,
+        "tencent_careers:2013876954679369728": 3
+      }
+    }
+  ]
+}

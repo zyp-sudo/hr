@@ -118,12 +118,27 @@ class ElasticsearchClient:
         else:
             query["bool"]["must"] = [{"match_all": {}}]
 
+        # A textual query must rank by relevance first. Freshness is only a
+        # deterministic tie-breaker; browsing without a query remains recency-first.
+        sort: list[dict[str, Any]]
+        if keyword:
+            sort = [
+                {"_score": {"order": "desc"}},
+                {"published_at": {"order": "desc", "missing": "_last"}},
+                {"id": {"order": "asc"}},
+            ]
+        else:
+            sort = [
+                {"published_at": {"order": "desc", "missing": "_last"}},
+                {"id": {"order": "asc"}},
+            ]
+
         body = {
             "query": query,
             "track_total_hits": True,
             "from": max(page - 1, 0) * page_size,
             "size": page_size,
-            "sort": [{"published_at": {"order": "desc", "missing": "_last"}}, {"_score": {"order": "desc"}}],
+            "sort": sort,
             "aggs": {
                 "cities": {"terms": {"field": "city", "size": 20}},
                 "industries": {"terms": {"field": "industry", "size": 20}},

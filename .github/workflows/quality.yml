@@ -16,6 +16,7 @@ jobs:
       - run: pip install -r requirements-dev.txt
       - run: pytest
       - run: python scripts/evaluate_accuracy.py --output /tmp/accuracy_report.json
+      - run: python scripts/evaluate_holdout.py --output /tmp/accuracy_holdout_report.json --min-skill-f1 0.6 --min-category-accuracy 0.6
 
   windows-startup:
     runs-on: windows-latest
@@ -28,7 +29,13 @@ jobs:
       - name: Validate PowerShell startup scripts
         shell: powershell
         run: |
-          $files = @("start.ps1", "scripts/start-backend.ps1", "scripts/start-frontend.ps1")
+          $files = @(
+            "start.ps1",
+            "scripts/start-backend.ps1",
+            "scripts/start-frontend.ps1",
+            "scripts/init-storage.ps1",
+            "scripts/verify-cleanroom.ps1"
+          )
           foreach ($file in $files) {
             $tokens = $null
             $errors = $null

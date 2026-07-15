@@ -1,0 +1,24 @@
+{"id":"skill-01","task":"skills","stratum":"backend","text":"负责 Spring Cloud 微服务的设计，并维护 MySQL 数据库。","expected":["Java","Microservices","SQL"]}
+{"id":"skill-02","task":"skills","stratum":"ai","text":"使用 PyTorch 完成图像分类模型训练与部署。","expected":["Machine Learning"]}
+{"id":"skill-03","task":"skills","stratum":"negative","text":"熟悉 C 语言和嵌入式驱动开发。","expected":[]}
+{"id":"skill-04","task":"skills","stratum":"frontend","text":"建设 React 前端，代码采用 TypeScript。","expected":["React","JavaScript"]}
+{"id":"skill-05","task":"skills","stratum":"data","text":"设计 PostgreSQL 表结构与慢查询优化。","expected":["SQL"]}
+{"id":"skill-06","task":"skills","stratum":"cloud","text":"使用 Docker 与 K8s 管理线上服务。","expected":["Docker","Kubernetes"]}
+{"id":"skill-07","task":"skills","stratum":"ai","text":"建设检索增强生成系统，并维护向量数据库。","expected":["RAG","Vector Search"]}
+{"id":"skill-08","task":"skills","stratum":"backend","text":"基于 JDK 17 编写高并发服务。","expected":["Java"]}
+{"id":"skill-09","task":"skills","stratum":"ai","text":"负责特征工程、模型训练与离线评估。","expected":["Machine Learning"]}
+{"id":"skill-10","task":"skills","stratum":"security","text":"开展漏洞扫描、攻防演练和安全合规检查。","expected":["Security"]}
+{"id":"skill-11","task":"skills","stratum":"quality","text":"设计接口自动化测试和性能压测方案。","expected":["Testing"]}
+{"id":"skill-12","task":"skills","stratum":"negative","text":"负责客户沟通、合同归档和会议安排。","expected":[]}
+{"id":"category-01","task":"category","stratum":"backend","text":"Java 后端研发工程师","expected":"backend_engineering"}
+{"id":"category-02","task":"category","stratum":"ai","text":"推荐系统工程师","expected":"ai_algorithm"}
+{"id":"category-03","task":"category","stratum":"data","text":"数据平台研发工程师","expected":"data_engineering"}
+{"id":"category-04","task":"category","stratum":"frontend","text":"Web 研发工程师","expected":"frontend_client"}
+{"id":"category-05","task":"category","stratum":"cloud","text":"Kubernetes 平台运维工程师","expected":"cloud_infra"}
+{"id":"category-06","task":"category","stratum":"security","text":"应用安全攻防工程师","expected":"security"}
+{"id":"category-07","task":"category","stratum":"quality","text":"质量保障测试工程师","expected":"testing_quality"}
+{"id":"category-08","task":"category","stratum":"product","text":"商业化产品经理","expected":"product_operation"}
+{"id":"category-09","task":"category","stratum":"design","text":"用户体验交互设计师","expected":"design"}
+{"id":"category-10","task":"category","stratum":"backend","text":"服务端开发工程师","expected":"backend_engineering"}
+{"id":"category-11","task":"category","stratum":"ai","text":"自然语言处理算法工程师","expected":"ai_algorithm"}
+{"id":"category-12","task":"category","stratum":"other","text":"法务合同审核专员","expected":"other"}

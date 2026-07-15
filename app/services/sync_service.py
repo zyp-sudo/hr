@@ -224,6 +224,7 @@ class JobPostingElasticsearchSyncService:
                 SELECT record_id, source_id, source_name, source_url, collected_at,
                        published_at, country, province, city, company,
                        normalized_category, job_title, job_type, work_years,
+                       education, salary_min, salary_max, salary_text,
                        responsibility, requirement, normalized_skills,
                        quality_score, quality_level, content_hash
                 FROM job_postings
@@ -279,10 +280,10 @@ class JobPostingElasticsearchSyncService:
             "city": row.get("city") or None,
             "province": row.get("province") or None,
             "country": row.get("country") or None,
-            "salary_min": None,
-            "salary_max": None,
-            "salary_text": None,
-            "education": None,
+            "salary_min": int(row["salary_min"]) if row.get("salary_min") is not None else None,
+            "salary_max": int(row["salary_max"]) if row.get("salary_max") is not None else None,
+            "salary_text": row.get("salary_text") or None,
+            "education": row.get("education") or None,
             "experience": row.get("work_years") or None,
             "description": row.get("responsibility") or "",
             "requirement": row.get("requirement") or "",
