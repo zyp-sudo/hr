@@ -3,7 +3,10 @@ import math
 import re
 from collections import Counter
 
-from bilingual_matching import normalize_for_match, skill_hits
+try:
+    from .bilingual_matching import normalize_for_match, skill_hits
+except ImportError:  # Direct execution from the scripts directory.
+    from bilingual_matching import normalize_for_match, skill_hits
 
 
 SKILL_ALIASES = {
@@ -169,7 +172,19 @@ def extract_skill_evidence(text):
     found = []
     for skill, candidates in COMPILED_SKILL_CANDIDATES.items():
         for candidate, candidate_key in candidates:
-            if candidate_key in normalized_for_match:
+            candidate_lower = candidate.lower().strip()
+            if candidate_lower in {"c++", "cpp"}:
+                matched = bool(re.search(r"(?<![a-z0-9])(c\+\+|cpp)(?![a-z0-9])", normalized.lower()))
+            elif re.fullmatch(r"[a-z0-9 ]+", candidate_key):
+                matched = bool(
+                    re.search(
+                        rf"(?<![a-z0-9]){re.escape(candidate_key)}(?![a-z0-9])",
+                        normalized_for_match,
+                    )
+                )
+            else:
+                matched = candidate_key in normalized_for_match
+            if matched:
                 found.append({
                     "skill": skill,
                     "matched": candidate,

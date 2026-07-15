@@ -1,11 +1,13 @@
 from __future__ import annotations
 
 import logging
+import re
 from collections.abc import Iterable
 from datetime import datetime
 from typing import Any
 
-from sqlalchemy import Select, select
+from sqlalchemy import Select, select, text
+from sqlalchemy.engine import Engine
 from sqlalchemy.orm import Session, selectinload
 
 from app.core.config import get_settings
@@ -184,4 +186,117 @@ class MySQLToElasticsearchSyncService:
             "parse_status": resume.parse_status,
             "is_active": resume.is_active,
             "updated_at": to_iso(resume.updated_at),
+        }
+
+
+class JobPostingElasticsearchSyncService:
+    """Synchronize the ETL warehouse table used by the running application.
+
+    The original ORM sync service targets the normalized product schema. The
+    runnable MVP imports `data/etl/unified_jobs.csv` into `job_postings`, so the
+    public search API must index that table instead.
+    """
+
+    def __init__(self, engine: Engine, es: ElasticsearchClient | None = None, batch_size: int | None = None) -> None:
+        self.engine = engine
+        self.es = es or ElasticsearchClient()
+        self.batch_size = batch_size or get_settings().sync_batch_size
+
+    def sync_all(self, recreate_index: bool = False) -> dict[str, int]:
+        self.es.create_index(JOB_INDEX, recreate=recreate_index)
+        indexed = self._sync_rows(updated_since=None, after_record_id="")
+        self.es.refresh(JOB_INDEX)
+        return {"jobs": indexed}
+
+    def sync_incremental(self, updated_since: datetime, after_record_id: str = "") -> dict[str, int]:
+        self.es.create_index(JOB_INDEX, recreate=False)
+        indexed = self._sync_rows(updated_since=updated_since, after_record_id=after_record_id)
+        self.es.refresh(JOB_INDEX)
+        return {"jobs": indexed}
+
+    def _sync_rows(self, updated_since: datetime | None, after_record_id: str) -> int:
+        total = 0
+        last_id = ""
+        since = updated_since.isoformat() if updated_since else None
+        while True:
+            statement = text(
+                """
+                SELECT record_id, source_id, source_name, source_url, collected_at,
+                       published_at, country, province, city, company,
+                       normalized_category, job_title, job_type, work_years,
+                       responsibility, requirement, normalized_skills,
+                       quality_score, quality_level, content_hash
+                FROM job_postings
+                WHERE record_id > :last_id
+                  AND (
+                    :updated_since IS NULL
+                    OR collected_at > :updated_since
+                    OR (collected_at = :updated_since AND record_id > :after_record_id)
+                  )
+                ORDER BY record_id
+                LIMIT :batch_size
+                """
+            )
+            with self.engine.connect() as connection:
+                rows = connection.execute(
+                    statement,
+                    {
+                        "last_id": last_id,
+                        "updated_since": since,
+                        "after_record_id": after_record_id,
+                        "batch_size": self.batch_size,
+                    },
+                ).mappings().all()
+            if not rows:
+                break
+            documents = [self.row_to_doc(dict(row)) for row in rows]
+            success, errors = self.es.bulk_index(JOB_INDEX, documents, chunk_size=self.batch_size)
+            if errors:
+                raise RuntimeError(f"Elasticsearch bulk indexing returned {len(errors)} errors")
+            total += success
+            last_id = str(rows[-1]["record_id"])
+        return total
+
+    @staticmethod
+    def _date(value: object) -> str | None:
+        raw = str(value or "").strip()
+        if not raw:
+            return None
+        chinese = re.search(r"(\d{4})年\s*(\d{1,2})月\s*(\d{1,2})日", raw)
+        if chinese:
+            return f"{chinese.group(1)}-{int(chinese.group(2)):02d}-{int(chinese.group(3)):02d}"
+        return raw.replace(" ", "T", 1) if " " in raw and "T" not in raw else raw
+
+    @classmethod
+    def row_to_doc(cls, row: dict[str, Any]) -> dict[str, Any]:
+        skills = [item for item in str(row.get("normalized_skills") or "").split("|") if item]
+        collected_at = cls._date(row.get("collected_at"))
+        return {
+            "id": str(row.get("record_id") or ""),
+            "title": row.get("job_title") or "",
+            "company_id": row.get("company") or None,
+            "company_name": row.get("company") or None,
+            "city": row.get("city") or None,
+            "province": row.get("province") or None,
+            "country": row.get("country") or None,
+            "salary_min": None,
+            "salary_max": None,
+            "salary_text": None,
+            "education": None,
+            "experience": row.get("work_years") or None,
+            "description": row.get("responsibility") or "",
+            "requirement": row.get("requirement") or "",
+            "industry": row.get("normalized_category") or None,
+            "job_type": row.get("job_type") or None,
+            "source": row.get("source_name") or row.get("source_id") or None,
+            "source_url": row.get("source_url") or None,
+            "published_at": cls._date(row.get("published_at")),
+            "collected_at": collected_at,
+            "updated_at": collected_at,
+            "skills": skills,
+            "skill_text": " ".join(skills),
+            "required_skills": skills,
+            "quality_score": int(row.get("quality_score") or 0),
+            "quality_level": row.get("quality_level") or None,
+            "content_hash": row.get("content_hash") or None,
         }

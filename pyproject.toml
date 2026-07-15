@@ -1,0 +1,10 @@
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q --cov=scripts.bilingual_matching --cov=scripts.job_taxonomy --cov=scripts.evaluate_accuracy --cov-report=term-missing --cov-fail-under=60"
+
+[tool.coverage.run]
+branch = true
+
+[tool.coverage.report]
+show_missing = true
+skip_covered = false

@@ -1,76 +1,38 @@
-#!/bin/bash
-# XH-202621 一键启动脚本 (Git Bash / Linux / Mac)
-set -e
+#!/usr/bin/env bash
+set -euo pipefail
 
-RED='\033[0;31m'
-GREEN='\033[0;32m'
-CYAN='\033[0;36m'
-GRAY='\033[0;90m'
-NC='\033[0m'
+ROOT="$(cd "$(dirname "$0")" && pwd)"
+cd "$ROOT"
 
-# 1. 停掉旧进程
-echo -e "${CYAN}==> 停止已有服务...${NC}"
-for port in 8080 8501; do
-  pid=$(netstat -ano 2>/dev/null | grep ":$port " | grep LISTENING | awk '{print $5}' | head -1) || true
-  if [ -n "$pid" ]; then
-    taskkill //F //PID "$pid" 2>/dev/null || true
-    echo -e "${GRAY}    已停止 PID $pid (端口 $port)${NC}"
-  fi
-done
+if [[ "${SKIP_STORAGE_INIT:-false}" != "true" ]]; then
+  docker compose up -d mysql neo4j elasticsearch
+  echo "Waiting for MySQL, Neo4j and Elasticsearch..."
+  for _ in $(seq 1 60); do
+    mysql_health=$(docker inspect --format '{{.State.Health.Status}}' xh-job-mysql 2>/dev/null || true)
+    neo4j_health=$(docker inspect --format '{{.State.Health.Status}}' xh-job-neo4j 2>/dev/null || true)
+    es_health=$(docker inspect --format '{{.State.Health.Status}}' xh-job-elasticsearch 2>/dev/null || true)
+    [[ "$mysql_health" == "healthy" && "$neo4j_health" == "healthy" && "$es_health" == "healthy" ]] && break
+    sleep 2
+  done
+  python scripts/bootstrap_storage.py --sync
+  python scripts/sync_mysql_to_es.py --auto
+fi
 
-# 2. 编译后端
-echo -e "${CYAN}==> 编译 Java 后端...${NC}"
-javac -encoding UTF-8 -d backend/out backend/src/com/xh202621/*.java
-echo -e "${GREEN}    编译成功${NC}"
-
-# 3. 启动后端
-echo -e "${CYAN}==> 启动后端 (http://localhost:8080)...${NC}"
-java -cp backend/out com.xh202621.App &
-BACKEND_PID=$!
-echo -e "${GREEN}    后端 PID: $BACKEND_PID${NC}"
-
-# 4. 等后端就绪
-echo -e "${CYAN}==> 等待后端就绪...${NC}"
-for i in $(seq 1 30); do
-  if curl -s http://localhost:8080/api/health > /dev/null 2>&1; then
-    echo -e "${GREEN}    后端已就绪${NC}"
-    break
-  fi
-  sleep 0.5
-done
-
-# 5. 启动前端
-echo -e "${CYAN}==> 启动前端 (http://localhost:8501)...${NC}"
+mkdir -p backend/runtime-out
+javac -encoding UTF-8 -d backend/runtime-out backend/src/com/xh202621/*.java
+BACKEND_PORT=8081 java -cp backend/runtime-out com.xh202621.App &
+JAVA_PID=$!
+python -m uvicorn app.main:app --host 0.0.0.0 --port 8080 &
+API_PID=$!
 python frontend/app.py &
 FRONTEND_PID=$!
-echo -e "${GREEN}    前端 PID: $FRONTEND_PID${NC}"
 
-sleep 1
-
-echo ""
-echo -e "${GREEN}==================================="
-echo "  系统已启动!"
-echo "  前端: http://localhost:8501"
-echo "  后端: http://localhost:8080"
-echo "  按 Ctrl+C 停止所有服务..."
-echo -e "===================================${NC}"
-echo ""
-
-# 6. 等待 Ctrl+C，然后清理
 cleanup() {
-  echo ""
-  echo -e "${CYAN}==> 正在停止服务...${NC}"
-  kill $BACKEND_PID 2>/dev/null || true
-  kill $FRONTEND_PID 2>/dev/null || true
-  for port in 8080 8501; do
-    pid=$(netstat -ano 2>/dev/null | grep ":$port " | grep LISTENING | awk '{print $5}' | head -1) || true
-    if [ -n "$pid" ]; then
-      taskkill //F //PID "$pid" 2>/dev/null || true
-    fi
-  done
-  echo -e "${GREEN}    服务已停止${NC}"
-  exit 0
+  kill "$JAVA_PID" "$API_PID" "$FRONTEND_PID" 2>/dev/null || true
 }
-trap cleanup SIGINT SIGTERM
+trap cleanup EXIT INT TERM
 
+echo "Frontend:   http://localhost:8501"
+echo "Public API: http://localhost:8080 (MySQL + Neo4j)"
+echo "Neo4j UI:   http://localhost:7474"
 wait

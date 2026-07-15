@@ -224,6 +224,7 @@ def build():
     alias_counts = Counter()
     trend_counts = Counter()
     trend_sources = defaultdict(set)
+    role_labels = {}
     period_jobs = Counter()
     period_skill_mentions = Counter()
 
@@ -233,6 +234,7 @@ def build():
             continue
         period = parse_period(row.get("published_at") or row.get("collected_at"))
         role_id, role_label = canonical_role(row, skills)
+        role_labels.setdefault(role_id, role_label)
         role_node_id = f"role:{role_id}"
         title_alias = normalize_text(row.get("job_title", ""))
         alias_counts[(title_alias, role_id, role_label)] += 1
@@ -258,7 +260,7 @@ def build():
             add_edge(edges, skill_id, dim_id, "belongs_to", period, skill)
             add_edge(edges, dim_id, parent_id, "part_of", period, dimension)
 
-            trend_counts[(period, role_id, role_label, skill, dimension)] += 1
+            trend_counts[(period, role_id, skill, dimension)] += 1
             trend_sources[(period, role_id, skill)].add(row.get("source_id", ""))
             period_skill_mentions[period] += 1
 
@@ -277,11 +279,11 @@ def build():
     alias_rows.sort(key=lambda item: (-int(item["evidence_count"]), item["canonical_role"], item["alias"]))
 
     trend_rows = []
-    for (period, role_id, role_label, skill, dimension), demand in trend_counts.items():
+    for (period, role_id, skill, dimension), demand in trend_counts.items():
         trend_rows.append({
             "period": period,
             "role_id": role_id,
-            "role": role_label,
+            "role": role_labels[role_id],
             "skill": skill,
             "dimension": dimension,
             "demand": demand,

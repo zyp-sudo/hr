@@ -1,6 +1,6 @@
 from typing import Annotated
 
-from fastapi import APIRouter, Depends, Query
+from fastapi import APIRouter, Depends, HTTPException, Query
 
 from app.api.deps import get_es
 from app.schemas.search import JobSearchResponse
@@ -30,18 +30,21 @@ def search_jobs(
     page: int = Query(default=1, ge=1),
     page_size: int = Query(default=20, ge=1, le=100),
 ) -> dict:
-    result = es.search_jobs(
-        keyword=keyword,
-        city=city,
-        industry=industry,
-        education=education,
-        experience=experience,
-        salary_min=salary_min,
-        salary_max=salary_max,
-        skills=skills,
-        page=page,
-        page_size=page_size,
-    )
+    try:
+        result = es.search_jobs(
+            keyword=keyword,
+            city=city,
+            industry=industry,
+            education=education,
+            experience=experience,
+            salary_min=salary_min,
+            salary_max=salary_max,
+            skills=skills,
+            page=page,
+            page_size=page_size,
+        )
+    except Exception as exc:
+        raise HTTPException(status_code=503, detail=f"Elasticsearch 检索服务不可用: {type(exc).__name__}") from exc
     hits = result.get("hits", {})
     total = hits.get("total", {}).get("value", 0)
     items = [hit.get("_source", {}) for hit in hits.get("hits", [])]

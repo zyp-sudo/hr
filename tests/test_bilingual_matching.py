@@ -1,9 +1,4 @@
-import sys
-from pathlib import Path
-
-sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "scripts"))
-
-from bilingual_matching import skill_hits
+from scripts.bilingual_matching import skill_hits
 
 
 def test_bilingual_skill_hits_with_aliases():

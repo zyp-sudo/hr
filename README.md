@@ -1,5 +1,11 @@
 # XH-202621 岗位能力图谱系统
 
+> **正式 MVP 入口：** `frontend/app.py`。React/Vue 目录已归档为视觉原型；真实 RAG、
+> 扫描件 OCR 和未来趋势预测不在当前验收范围，完整边界见
+> [docs/mvp-scope.md](docs/mvp-scope.md)。
+
+> 当前运行时数据层为 MySQL + Elasticsearch + Neo4j。CSV 用于采集、ETL 和快照同步；配置与初始化方式见 [docs/storage-runtime.md](docs/storage-runtime.md)。
+
 这是“多源异构数据驱动岗位和能力图谱构建与动态演化分析研究”项目的主入口说明。
 
 ## 快速启动
@@ -99,3 +105,14 @@ powershell -ExecutionPolicy Bypass -File scripts\start-frontend.ps1
 - `docs/architecture.md`：系统架构设计
 - `docs/project-master-plan.md`：项目总设计
 - `docs/etl-governance.md`：ETL 治理和数据质量评分
+- `docs/mvp-scope.md`：正式前端、能力边界、准确率口径和增量同步设计
+
+## 质量门禁
+
+```powershell
+pip install -r requirements-dev.txt
+pytest
+python scripts/evaluate_accuracy.py
+```
+
+`pytest` 对核心匹配与评测模块执行覆盖率门禁，低于 60% 将失败。

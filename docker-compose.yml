@@ -1,0 +1,60 @@
+services:
+  mysql:
+    image: mysql:8.4
+    container_name: xh-job-mysql
+    restart: unless-stopped
+    environment:
+      MYSQL_ROOT_PASSWORD: password
+      MYSQL_DATABASE: job_kg
+    ports:
+      - "3307:3306"
+    volumes:
+      - mysql_data:/var/lib/mysql
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost", "-ppassword"]
+      interval: 5s
+      timeout: 5s
+      retries: 30
+
+  neo4j:
+    image: neo4j:5.26-community
+    container_name: xh-job-neo4j
+    restart: unless-stopped
+    environment:
+      NEO4J_AUTH: neo4j/password123
+      NEO4J_server_memory_heap_initial__size: 512m
+      NEO4J_server_memory_heap_max__size: 1G
+    ports:
+      - "7474:7474"
+      - "7687:7687"
+    volumes:
+      - neo4j_data:/data
+    healthcheck:
+      test: ["CMD-SHELL", "cypher-shell -u neo4j -p password123 'RETURN 1' >/dev/null || exit 1"]
+      interval: 5s
+      timeout: 5s
+      retries: 30
+
+  elasticsearch:
+    image: elasticsearch:8.13.4
+    container_name: xh-job-elasticsearch
+    restart: unless-stopped
+    environment:
+      discovery.type: single-node
+      xpack.security.enabled: "false"
+      xpack.security.enrollment.enabled: "false"
+      ES_JAVA_OPTS: -Xms512m -Xmx512m
+    ports:
+      - "9200:9200"
+    volumes:
+      - elasticsearch_data:/usr/share/elasticsearch/data
+    healthcheck:
+      test: ["CMD-SHELL", "curl -fsS http://localhost:9200/_cluster/health >/dev/null || exit 1"]
+      interval: 5s
+      timeout: 5s
+      retries: 60
+
+volumes:
+  mysql_data:
+  neo4j_data:
+  elasticsearch_data:

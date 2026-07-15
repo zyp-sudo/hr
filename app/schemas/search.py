@@ -15,7 +15,7 @@ class JobSearchQuery(BaseModel):
 
 
 class JobSearchItem(BaseModel):
-    id: int
+    id: str
     title: str
     company_name: str | None = None
     city: str | None = None

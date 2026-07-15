@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-07T14:26:36+08:00",
+  "generated_at": "2026-07-15T19:36:48+08:00",
   "inputs": {
     "unified_jobs": "data/etl/unified_jobs.csv",
     "unified_skills": "data/etl/unified_job_skills.csv",
@@ -9,11 +9,11 @@
     "quality_report": "data/etl/data_quality_report.csv"
   },
   "counts": {
-    "jobs": 7178,
-    "skill_evidence": 29309,
-    "kg_nodes": 1769,
-    "kg_edges": 6390,
-    "skill_trends": 7493,
+    "jobs": 55110,
+    "skill_evidence": 69291,
+    "kg_nodes": 907,
+    "kg_edges": 1806,
+    "skill_trends": 2932,
     "quality_sources": 6
   },
   "outputs": {

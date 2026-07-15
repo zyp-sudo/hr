@@ -16,6 +16,8 @@ QUALITY_PATH = ETL_DIR / "data_quality_report.csv"
 NODES_PATH = KG_DIR / "nodes.csv"
 EDGES_PATH = KG_DIR / "edges.csv"
 TRENDS_PATH = KG_DIR / "skill_trends.csv"
+ALIASES_PATH = KG_DIR / "role_aliases.csv"
+VERSIONS_PATH = KG_DIR / "graph_versions.csv"
 
 MYSQL_SCHEMA_PATH = WAREHOUSE_DIR / "mysql_schema.sql"
 MYSQL_LOAD_PATH = WAREHOUSE_DIR / "mysql_load.sql"
@@ -81,12 +83,14 @@ CREATE TABLE IF NOT EXISTS job_postings (
   published_at VARCHAR(64),
   country VARCHAR(128),
   province VARCHAR(128),
-  city VARCHAR(255),
+  city VARCHAR(512),
   company VARCHAR(255),
   department VARCHAR(255),
   product VARCHAR(255),
   category VARCHAR(255),
   normalized_category VARCHAR(128),
+  role_id VARCHAR(255),
+  role_name VARCHAR(512),
   job_title VARCHAR(512),
   job_type VARCHAR(128),
   work_years VARCHAR(128),
@@ -95,6 +99,12 @@ CREATE TABLE IF NOT EXISTS job_postings (
   raw_text MEDIUMTEXT,
   normalized_skills TEXT,
   skill_count INT,
+  skill_evidence MEDIUMTEXT,
+  capability_dimensions TEXT,
+  capability_scores JSON,
+  estimated_application_success_probability DECIMAL(8,4),
+  relative_ability_score DECIMAL(8,2),
+  scoring_basis VARCHAR(255),
   quality_score INT,
   quality_level VARCHAR(8),
   quality_flags TEXT,
@@ -155,6 +165,24 @@ CREATE TABLE IF NOT EXISTS skill_trends (
   PRIMARY KEY (period, role_id, skill),
   INDEX idx_trend_skill (skill),
   INDEX idx_trend_role (role_id)
+);
+
+CREATE TABLE IF NOT EXISTS role_aliases (
+  alias VARCHAR(512),
+  canonical_role_id VARCHAR(255),
+  canonical_role VARCHAR(512),
+  evidence_count INT,
+  PRIMARY KEY (alias, canonical_role_id)
+);
+
+CREATE TABLE IF NOT EXISTS graph_versions (
+  version_id VARCHAR(64) PRIMARY KEY,
+  period VARCHAR(16),
+  node_count INT,
+  edge_count INT,
+  job_count INT,
+  skill_mentions INT,
+  INDEX idx_version_period (period)
 );
 
 CREATE TABLE IF NOT EXISTS data_quality_report (
@@ -220,6 +248,20 @@ IGNORE 1 LINES
 
 LOAD DATA LOCAL INFILE '{rel(TRENDS_PATH)}'
 INTO TABLE skill_trends
+CHARACTER SET utf8mb4
+FIELDS TERMINATED BY ',' ENCLOSED BY '"'
+LINES TERMINATED BY '\\n'
+IGNORE 1 LINES;
+
+LOAD DATA LOCAL INFILE '{rel(ALIASES_PATH)}'
+INTO TABLE role_aliases
+CHARACTER SET utf8mb4
+FIELDS TERMINATED BY ',' ENCLOSED BY '"'
+LINES TERMINATED BY '\\n'
+IGNORE 1 LINES;
+
+LOAD DATA LOCAL INFILE '{rel(VERSIONS_PATH)}'
+INTO TABLE graph_versions
 CHARACTER SET utf8mb4
 FIELDS TERMINATED BY ',' ENCLOSED BY '"'
 LINES TERMINATED BY '\\n'

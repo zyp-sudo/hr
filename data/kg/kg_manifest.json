@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-07T14:30:41+08:00",
+  "generated_at": "2026-07-15T19:36:43+08:00",
   "input": "data\\etl\\unified_jobs.csv",
   "outputs": [
     "data\\kg\\nodes.csv",
@@ -8,12 +8,12 @@
     "data\\kg\\skill_trends.csv",
     "data\\kg\\graph_versions.csv"
   ],
-  "job_records_read": 7178,
-  "nodes": 1769,
-  "edges": 6390,
-  "role_aliases": 6418,
-  "trend_rows": 7493,
-  "versions": 16,
+  "job_records_read": 55110,
+  "nodes": 907,
+  "edges": 1806,
+  "role_aliases": 34094,
+  "trend_rows": 2932,
+  "versions": 22,
   "entity_disambiguation": [
     "Normalize role titles by removing seniority/recruitment modifiers.",
     "Map aliases such as Java开发、Java工程师、后端开发 into canonical role nodes.",

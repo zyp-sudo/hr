@@ -21,6 +21,17 @@ class ElasticsearchClient:
             kwargs["basic_auth"] = (settings.es_username, settings.es_password)
         self.client = Elasticsearch(**kwargs)
 
+    def ping(self) -> bool:
+        return bool(self.client.ping())
+
+    def count(self, index_name: str = JOB_INDEX) -> int:
+        if not self.client.indices.exists(index=index_name):
+            return 0
+        return int(self.client.count(index=index_name).get("count", 0))
+
+    def refresh(self, index_name: str = JOB_INDEX) -> None:
+        self.client.indices.refresh(index=index_name)
+
     def create_index(self, index_name: str, recreate: bool = False) -> None:
         if recreate:
             self.delete_index(index_name, ignore_missing=True)
@@ -109,6 +120,7 @@ class ElasticsearchClient:
 
         body = {
             "query": query,
+            "track_total_hits": True,
             "from": max(page - 1, 0) * page_size,
             "size": page_size,
             "sort": [{"published_at": {"order": "desc", "missing": "_last"}}, {"_score": {"order": "desc"}}],

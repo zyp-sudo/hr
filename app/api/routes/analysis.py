@@ -1,6 +1,6 @@
 from typing import Annotated
 
-from fastapi import APIRouter, Depends, Query
+from fastapi import APIRouter, Depends, HTTPException, Query
 
 from app.api.deps import get_es
 from app.schemas.search import JobTrendResponse, SkillAnalysisResponse
@@ -21,7 +21,10 @@ def analyze_skills(
     es: Annotated[ElasticsearchClient, Depends(get_es)],
     size: int = Query(default=30, ge=1, le=200),
 ) -> dict:
-    result = es.aggregate_skills(size=size)
+    try:
+        result = es.aggregate_skills(size=size)
+    except Exception as exc:
+        raise HTTPException(status_code=503, detail=f"Elasticsearch 聚合服务不可用: {type(exc).__name__}") from exc
     buckets = result.get("aggregations", {}).get("hot_skills", {}).get("buckets", [])
     return {
         "hot_skills": [
@@ -37,7 +40,10 @@ def analyze_skills(
 
 @router.get("/jobs/trend", response_model=JobTrendResponse)
 def analyze_job_trend(es: Annotated[ElasticsearchClient, Depends(get_es)]) -> dict:
-    result = es.job_trend_analysis()
+    try:
+        result = es.job_trend_analysis()
+    except Exception as exc:
+        raise HTTPException(status_code=503, detail=f"Elasticsearch 趋势服务不可用: {type(exc).__name__}") from exc
     aggs = result.get("aggregations", {})
     return {
         "by_date": _bucket_items(aggs, "by_date"),

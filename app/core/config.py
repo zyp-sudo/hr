@@ -8,8 +8,14 @@ class Settings(BaseModel):
     app_name: str = "人岗智能匹配与能力图谱系统"
     mysql_url: str = os.getenv(
         "MYSQL_URL",
-        "mysql+pymysql://root:password@localhost:3306/talent_graph?charset=utf8mb4",
+        "mysql+pymysql://root:password@localhost:3307/job_kg?charset=utf8mb4",
     )
+    neo4j_uri: str = os.getenv("NEO4J_URI", "bolt://localhost:7687")
+    neo4j_username: str = os.getenv("NEO4J_USERNAME", "neo4j")
+    neo4j_password: str = os.getenv("NEO4J_PASSWORD", "password123")
+    neo4j_database: str = os.getenv("NEO4J_DATABASE", "neo4j")
+    graph_node_limit: int = int(os.getenv("GRAPH_NODE_LIMIT", "160"))
+    java_backend_url: str = os.getenv("JAVA_BACKEND_URL", "http://localhost:8081")
     es_hosts: list[str] = [os.getenv("ES_HOST", "http://localhost:9200")]
     es_username: str | None = os.getenv("ES_USERNAME")
     es_password: str | None = os.getenv("ES_PASSWORD")

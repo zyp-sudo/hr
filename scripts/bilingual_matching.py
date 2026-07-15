@@ -61,7 +61,14 @@ def skill_hits(text: object, skill_name: object, aliases: Sequence[object] | Non
     if not canonical:
         return []
 
-    for _, normalized in build_candidates(skill_name, aliases):
-        if normalized and normalized in normalized_text:
+    for raw, normalized in build_candidates(skill_name, aliases):
+        raw_lower = raw.lower().strip()
+        if raw_lower in {"c++", "cpp"}:
+            matched = bool(re.search(r"(?<![a-z0-9])(c\+\+|cpp)(?![a-z0-9])", str(text).lower()))
+        elif re.fullmatch(r"[a-z0-9 ]+", normalized):
+            matched = bool(re.search(rf"(?<![a-z0-9]){re.escape(normalized)}(?![a-z0-9])", normalized_text))
+        else:
+            matched = normalized in normalized_text
+        if normalized and matched:
             return [canonical]
     return []

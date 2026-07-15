@@ -1,10 +1,11 @@
-$ports = @(8080, 8501)
+$ports = @(8080, 8081, 8501)
 $pids = @()
 
 try {
   $targets = Get-CimInstance Win32_Process -ErrorAction Stop |
     Where-Object {
       $_.CommandLine -like '*com.xh202621.App*' -or
+      $_.CommandLine -like '*uvicorn app.main:app*' -or
       $_.CommandLine -like '*frontend/app.py*' -or
       $_.CommandLine -like '*frontend\app.py*'
     }

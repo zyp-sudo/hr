@@ -1,0 +1,24 @@
+{
+  "benchmark": "mvp_deterministic_v1",
+  "case_count": 165,
+  "metrics": {
+    "jd_skill_extraction_f1": 1.0,
+    "jd_skill_extraction_precision": 1.0,
+    "jd_skill_extraction_recall": 1.0,
+    "job_category_accuracy": 1.0,
+    "resume_field_accuracy": 1.0,
+    "match_decision_accuracy": 1.0
+  },
+  "thresholds": {
+    "jd_skill_extraction_f1": 0.9,
+    "job_category_accuracy": 0.9,
+    "resume_field_accuracy": 0.9,
+    "match_decision_accuracy": 0.9
+  },
+  "passed": true,
+  "limitations": [
+    "Cases are curated for deterministic MVP regression testing.",
+    "Production accuracy requires an independently annotated, domain-stratified corpus.",
+    "The match metric is binary threshold agreement, not hiring-outcome calibration."
+  ]
+}

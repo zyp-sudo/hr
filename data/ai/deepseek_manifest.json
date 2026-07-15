@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-07T14:26:37+08:00",
+  "generated_at": "2026-07-15T19:11:30+08:00",
   "mode": "dry_run",
   "model": "rule_based",
   "input": "data/etl/unified_jobs.csv",

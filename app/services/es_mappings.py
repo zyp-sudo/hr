@@ -1,15 +1,14 @@
-IK_TEXT = {
+SEARCH_TEXT = {
     "type": "text",
-    "analyzer": "ik_max_word",
-    "search_analyzer": "ik_smart",
+    "analyzer": "standard",
     "fields": {"keyword": {"type": "keyword", "ignore_above": 256}},
 }
 
 
 COMMON_SETTINGS = {
-    "number_of_shards": 3,
-    "number_of_replicas": 1,
-    "refresh_interval": "30s",
+    "number_of_shards": 1,
+    "number_of_replicas": 0,
+    "refresh_interval": "5s",
 }
 
 
@@ -24,10 +23,10 @@ INDEX_MAPPINGS = {
         "settings": COMMON_SETTINGS,
         "mappings": {
             "properties": {
-                "id": {"type": "long"},
-                "title": IK_TEXT,
-                "company_id": {"type": "long"},
-                "company_name": IK_TEXT,
+                "id": {"type": "keyword"},
+                "title": SEARCH_TEXT,
+                "company_id": {"type": "keyword"},
+                "company_name": SEARCH_TEXT,
                 "city": {"type": "keyword"},
                 "province": {"type": "keyword"},
                 "country": {"type": "keyword"},
@@ -36,17 +35,21 @@ INDEX_MAPPINGS = {
                 "salary_text": {"type": "keyword"},
                 "education": {"type": "keyword"},
                 "experience": {"type": "keyword"},
-                "description": IK_TEXT,
-                "requirement": IK_TEXT,
+                "description": SEARCH_TEXT,
+                "requirement": SEARCH_TEXT,
                 "industry": {"type": "keyword"},
                 "job_type": {"type": "keyword"},
                 "source": {"type": "keyword"},
                 "source_url": {"type": "keyword", "index": False},
                 "published_at": {"type": "date"},
+                "collected_at": {"type": "date"},
                 "updated_at": {"type": "date"},
                 "skills": {"type": "keyword"},
-                "skill_text": IK_TEXT,
+                "skill_text": SEARCH_TEXT,
                 "required_skills": {"type": "keyword"},
+                "quality_score": {"type": "integer"},
+                "quality_level": {"type": "keyword"},
+                "content_hash": {"type": "keyword"},
             }
         },
     },
@@ -55,7 +58,7 @@ INDEX_MAPPINGS = {
         "mappings": {
             "properties": {
                 "id": {"type": "long"},
-                "name": IK_TEXT,
+                "name": SEARCH_TEXT,
                 "name_keyword": {"type": "keyword"},
                 "category": {"type": "keyword"},
                 "level": {"type": "keyword"},
@@ -70,11 +73,11 @@ INDEX_MAPPINGS = {
         "mappings": {
             "properties": {
                 "id": {"type": "long"},
-                "name": IK_TEXT,
+                "name": SEARCH_TEXT,
                 "industry": {"type": "keyword"},
                 "size": {"type": "keyword"},
                 "region": {"type": "keyword"},
-                "description": IK_TEXT,
+                "description": SEARCH_TEXT,
                 "recruiting_job_count": {"type": "integer"},
                 "updated_at": {"type": "date"},
             }
@@ -86,10 +89,10 @@ INDEX_MAPPINGS = {
             "properties": {
                 "id": {"type": "long"},
                 "user_id": {"type": "long"},
-                "title": IK_TEXT,
-                "raw_text": IK_TEXT,
-                "education_text": IK_TEXT,
-                "project_text": IK_TEXT,
+                "title": SEARCH_TEXT,
+                "raw_text": SEARCH_TEXT,
+                "education_text": SEARCH_TEXT,
+                "project_text": SEARCH_TEXT,
                 "skill_tags": {"type": "keyword"},
                 "job_intention": {"type": "keyword"},
                 "parse_status": {"type": "keyword"},

@@ -1,26 +1,33 @@
 # XH-202621 岗位能力图谱项目 README
 
+> 正式交付前端统一为 `frontend/app.py`。`frontend-react/` 和 `frontend-vue/` 已归档为
+> 视觉原型。RAG、扫描件 OCR 和未来趋势预测当前明确为 MVP 后续能力，见
+> `docs/mvp-scope.md`，不得按已完成能力计入验收。
+
 ## 项目定位
 
 本项目面向“多源异构数据驱动岗位和能力图谱构建与动态演化分析研究”赛题，目标是构建一个可运行、可演示、可继续扩展的数据驱动系统。
 
-当前技术约束：
+当前运行技术栈：
 
 - 前端：Python
-- 后端：Java
-- 数据层：CSV / JSON 文件
+- 后端：FastAPI 公开 API + Java 分析服务
+- 业务数据层：MySQL 8.x
+- 检索与聚合：Elasticsearch 8.13.x
+- 知识图谱：Neo4j 5.x
+- CSV / JSON：采集、ETL 与数据库导入交换文件
 - 数据来源：中国真实岗位公开数据
 
 目标生产技术栈：
 
 - 数据采集：Scrapy + Playwright
-- 数据存储：MySQL + Elasticsearch
+- 数据存储：MySQL + Elasticsearch（当前运行时）
 - NLP 处理：HanLP / LAC + DeepSeek API
 - 知识图谱：Neo4j + py2neo
 - 图谱可视化：AntV G6 / ECharts Graph
 - RAG：LangChain + ChromaDB + DeepSeek API
 - 后端框架：FastAPI / Flask
-- 前端框架：Vue 3 + Vite + Pinia
+- 正式前端：Python Web（React/Vue 原型已归档）
 - 数据分析：Pandas + NetworkX
 - 简历解析：PaddleOCR / Tesseract + PDF/Word 本地解析 + 自定义 NER
 

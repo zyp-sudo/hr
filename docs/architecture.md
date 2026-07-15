@@ -1,10 +1,13 @@
 # 系统架构设计
 
 > 本文档是架构细化说明。项目方向、建设原则、功能总览和里程碑以 `docs/project-master-plan.md` 为准。
+> 当前可验收能力和明确降级项以 `docs/mvp-scope.md` 为准；下表中标为目标的技术不代表已经落地。
 
 ## 技术约束与目标技术栈
 
-当前版本优先保证本地可运行、接口清晰、业务闭环完整，因此仍采用 Python 前端、Java 后端和 CSV/JSON 文件层。目标生产版采用下列技术栈逐步替换：
+当前版本优先保证本地可运行、接口清晰、业务闭环完整。正式前端唯一确定为 Python Web；
+运行时采用 FastAPI 公开 API、Java 分析服务、MySQL、Elasticsearch 和 Neo4j。CSV/JSON
+是采集与快照同步介质。其余技术是后续路线：
 
 | 模块 | 目标技术 | 作用 |
 | --- | --- | --- |
@@ -15,14 +18,14 @@
 | 图谱可视化 | AntV G6 / ECharts Graph | G6 支持力导向布局、节点聚类和交互探索；ECharts Graph 用于轻量展示 |
 | RAG 框架 | LangChain + ChromaDB + DeepSeek API | LangChain 编排 DeepSeek 调用链，ChromaDB 做向量存储，实现检索增强生成 |
 | 后端框架 | FastAPI / Flask | FastAPI 提供高性能 API 和 OpenAPI 文档；Flask 可作为轻量替代 |
-| 前端框架 | Vue 3 + Vite + Pinia | Vue 生态成熟，Vite 构建快，Pinia 管理复杂页面状态 |
+| 前端 | Python 标准库 Web | 当前唯一正式交付前端；React/Vue 原型已归档 |
 | 数据分析 | Pandas + NetworkX | Pandas 做清洗统计，NetworkX 做中心性、社区发现、路径分析等图算法 |
 | 简历解析 | PaddleOCR / Tesseract + PDF/Word 本地解析 + 自定义 NER | 本地 OCR 处理图片和扫描版 PDF，PDF/Word 本地解析处理文本型简历，自定义 NER 抽取结构化字段 |
 
 阶段定位：
 
-- 当前原型：CSV/JSON + Java HTTP Server + Python HTML 前端，已完成多源采集、ETL、质量评分、自动知识图谱和时序趋势 CSV 产物。
-- 生产升级：将 `data/etl/*.csv`、`data/kg/*.csv` 映射到 MySQL、Neo4j、Elasticsearch 和 ChromaDB，并替换前后端框架。
+- 当前原型：Python HTML 前端 + FastAPI + Java HTTP Server，已完成多源采集、ETL、质量评分、自动知识图谱和历史时序趋势。
+- 运行时：ETL/KG 快照增量同步到 MySQL、Elasticsearch、Neo4j；公开 API 查询三类数据库。
 
 ## 分层架构
 
@@ -104,7 +107,7 @@ Scrapy / Playwright
 
 ## 当前数据层
 
-第一版使用 `data/*.csv` 作为轻量数据层。这样可以先满足比赛原型对“真实样本来源、可替换数据、可解释匹配”的要求，同时避免一开始引入数据库部署成本。
+CSV 作为采集与 ETL 的可审计交换层；运行时岗位查询使用 MySQL，图谱查询使用 Neo4j。数据库不可用时核心接口返回 503，不做隐式 CSV 回退。
 
 - 岗位和技能来自 `jobs.csv`、`job_skills.csv`。
 - 技能同义词来自 `skill_aliases.csv`，用于匹配时标准化。

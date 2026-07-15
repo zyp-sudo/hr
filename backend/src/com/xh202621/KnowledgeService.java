@@ -794,7 +794,7 @@ public class KnowledgeService {
         Path pipelineManifest = dataDir.resolve("pipeline_manifest.json");
 
         return map(
-                "status", "architecture_aligned_prototype",
+                "status", "mysql_neo4j_runtime",
                 "dataDir", dataDir.toString(),
                 "modules", List.of(
                         map(
@@ -816,47 +816,47 @@ public class KnowledgeService {
                         map(
                                 "name", "数据存储",
                                 "target", "MySQL + Elasticsearch",
-                                "current", "生成 MySQL DDL/LOAD SQL 与 Elasticsearch NDJSON",
-                                "status", Files.exists(mysqlSchema) && Files.exists(esNdjson) ? "ready" : "missing",
+                                "current", "MySQL 8.4 运行时查询（job_kg.job_postings）+ Elasticsearch 检索",
+                                "status", Files.exists(mysqlSchema) ? "ready" : "missing",
                                 "records", unifiedJobs.size(),
-                                "outputs", List.of("data/warehouse/mysql_schema.sql", "data/warehouse/mysql_load.sql", "data/warehouse/elasticsearch_jobs.ndjson")
+                                "outputs", List.of("MySQL job_kg.job_postings", "/api/jobs", "/api/real-jobs", "data/warehouse/mysql_schema.sql")
                         ),
                         map(
                                 "name", "知识图谱",
-                                "target", "Neo4j + py2neo",
-                                "current", "CSV 图谱产物 + Neo4j 导入 Cypher",
+                                "target", "Neo4j 5.x",
+                                "current", "Neo4j 运行时 Cypher 查询（KgNode / KG_RELATION）",
                                 "status", kgNodes.isEmpty() || kgEdges.isEmpty() ? "missing" : "ready",
                                 "records", kgNodes.size() + kgEdges.size(),
-                                "outputs", List.of("data/kg/nodes.csv", "data/kg/edges.csv", "data/warehouse/neo4j_import.cypher")
+                                "outputs", List.of("Neo4j KgNode", "Neo4j KG_RELATION", "/api/graph", "data/warehouse/neo4j_import.cypher")
                         ),
                         map(
                                 "name", "动态演化",
-                                "target", "时序图谱版本化查询",
-                                "current", "按 period 聚合 skill_trends 和 graph_versions",
-                                "status", skillTrends.isEmpty() ? "missing" : "ready",
+                                "target", "时序图谱版本化查询 + 未来趋势预测",
+                                "current", "MVP 仅按 period 聚合历史 skill_trends 和 graph_versions；未训练预测模型",
+                                "status", skillTrends.isEmpty() ? "missing" : "partial",
                                 "records", skillTrends.size(),
                                 "outputs", List.of("data/kg/skill_trends.csv", "data/kg/graph_versions.csv")
                         ),
                         map(
                                 "name", "RAG 检索",
                                 "target", "LangChain + ChromaDB + DeepSeek API",
-                                "current", "Chroma 文档 JSONL + DeepSeek 抽取 JSONL",
-                                "status", Files.exists(chromaDocs) && Files.exists(deepseekOutput) ? "ready" : "partial",
+                                "current", "MVP 仅导出待向量化 JSONL；没有运行时 ChromaDB/LangChain 检索链",
+                                "status", "partial",
                                 "records", lineCount(chromaDocs),
                                 "outputs", List.of("data/warehouse/chroma_documents.jsonl", "data/ai/deepseek_extractions.jsonl")
                         ),
                         map(
                                 "name", "简历解析",
                                 "target", "PaddleOCR / Tesseract + PDF/Word 本地解析 + 自定义 NER",
-                                "current", "scripts/parse_resume_local.py",
-                                "status", Files.exists(resumeOutput) ? "ready" : "missing",
+                                "current", "MVP 支持文本型 PDF/DOCX；扫描件依赖未随项目安装的本地 OCR 引擎",
+                                "status", Files.exists(resumeOutput) ? "partial" : "missing",
                                 "records", lineCount(resumeOutput),
                                 "outputs", List.of("data/resumes/parsed_resumes.jsonl", "data/resumes/resume_parse_manifest.json")
                         ),
                         map(
                                 "name", "Web/API",
-                                "target", "FastAPI/Flask + Vue3",
-                                "current", "Java HTTP API + Python Web 原型，保留 API 语义",
+                                "target", "FastAPI + Java 分析服务 + Python Web",
+                                "current", "正式前端为 frontend/app.py；React/Vue 原型已归档",
                                 "status", "ready",
                                 "records", 0,
                                 "outputs", List.of("/api/architecture-summary", "/api/etl-summary", "/api/kg-summary", "/?page=architecture")

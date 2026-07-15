@@ -13,7 +13,7 @@ import java.util.Map;
 import java.util.concurrent.Executors;
 
 public class App {
-    private static final int PORT = 8080;
+    private static final int PORT = number(System.getenv("BACKEND_PORT"), 8081);
     private static final KnowledgeService knowledgeService = new KnowledgeService();
 
     public static void main(String[] args) throws IOException {

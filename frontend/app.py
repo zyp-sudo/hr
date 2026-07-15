@@ -18,7 +18,7 @@ LOCAL_ENV_PATH = ROOT_DIR / "scripts" / "local-env.ps1"
 # Thread-safe API response cache with TTL
 _cache = {}
 _cache_lock = threading.Lock()
-CACHE_TTL = 30  # seconds — data is static CSV-backed, safe to cache
+CACHE_TTL = 30  # seconds — short cache for MySQL/Neo4j-backed API responses
 _executor = ThreadPoolExecutor(max_workers=4)
 
 
@@ -771,10 +771,11 @@ def page_shell(active, content):
     }}
     .kg-workspace {{
       display: grid;
-      grid-template-columns: 260px minmax(0, 1fr) 300px;
+      grid-template-columns: 240px minmax(0, 1fr);
       gap: 14px;
-      align-items: stretch;
+      align-items: start;
     }}
+    .kg-detail-panel {{ grid-column: 2; }}
     .kg-panel {{
       border: 1px solid var(--border);
       border-radius: var(--radius);
@@ -841,6 +842,12 @@ def page_shell(active, content):
       flex-wrap: wrap;
       margin-bottom: 12px;
     }}
+    .kg-map-controls {{
+      display: flex;
+      gap: 8px;
+      align-items: center;
+      flex-wrap: wrap;
+    }}
     .kg-path-board {{
       display: grid;
       gap: 10px;
@@ -848,14 +855,17 @@ def page_shell(active, content):
     }}
     .kg-merged-graph {{
       display: grid;
-      grid-template-columns: minmax(180px, 0.8fr) 34px minmax(220px, 1fr) 34px minmax(220px, 1fr);
+      grid-template-columns: minmax(160px, 0.65fr) 28px minmax(220px, 1fr) 28px minmax(220px, 1fr);
       gap: 10px;
-      align-items: center;
+      align-items: start;
     }}
     .kg-merged-lane {{
       display: grid;
       gap: 8px;
-      align-content: center;
+      align-content: start;
+      max-height: 520px;
+      overflow: auto;
+      padding-right: 4px;
     }}
     .kg-merge-arrow {{
       color: var(--muted);
@@ -869,6 +879,12 @@ def page_shell(active, content):
       border-radius: var(--radius);
       background: #fbfcfe;
       padding: 10px;
+    }}
+    .kg-connection-summary > summary {{
+      cursor: pointer;
+      color: var(--ink-light);
+      font-weight: 700;
+      font-size: 12px;
     }}
     .kg-path-row {{
       display: grid;
@@ -1630,6 +1646,7 @@ def page_shell(active, content):
       .scale-overview, .scale-grid {{ grid-template-columns: 1fr; }}
       .arch-flow, .artifact-list {{ grid-template-columns: 1fr; }}
       .kg-workspace, .kg-path-grid, .kg-stat-strip {{ grid-template-columns: 1fr; }}
+      .kg-detail-panel {{ grid-column: 1; }}
       .kg-merged-graph {{ grid-template-columns: 1fr; }}
       .kg-merge-arrow {{ display: none; }}
       .kg-path-row {{ grid-template-columns: 1fr; }}
@@ -1840,7 +1857,7 @@ def dashboard(query=None):
             <h2 style="margin:0 0 4px;">岗位能力图谱工作台</h2>
             <p class="muted" style="margin:0;">数据采集、能力图谱、趋势演化和人岗匹配的统一入口。</p>
           </div>
-          <span class="tag">CSV / Java API / Python Web</span>
+          <span class="tag">MySQL / Neo4j / FastAPI / Java</span>
         </div>
       </div>
       {ai_panel("overview", "dashboard", query, "AI 项目总览建议")}
@@ -1907,6 +1924,16 @@ def legacy_graph_page_unused():
     graph = api_json("/api/graph")
     nodes = graph.get("nodes", [])
     edges = graph.get("edges", [])
+    # Accept both the original Java graph contract and Neo4j-style aliases.
+    edges = [
+        {
+            **edge,
+            "from": edge.get("from", edge.get("source", "")),
+            "to": edge.get("to", edge.get("target", "")),
+            "relation": edge.get("relation", edge.get("type", "")),
+        }
+        for edge in edges
+    ]
     graph_json = json.dumps({"nodes": nodes, "edges": edges}, ensure_ascii=False)
     content = f"""
       <h1><span class="emoji">🌐</span>能力图谱</h1>
@@ -2346,6 +2373,16 @@ def graph_page():
 
     nodes = graph.get("nodes", [])
     edges = graph.get("edges", [])
+    # Accept both the original Java graph contract and Neo4j-style aliases.
+    edges = [
+        {
+            **edge,
+            "from": edge.get("from", edge.get("source", "")),
+            "to": edge.get("to", edge.get("target", "")),
+            "relation": edge.get("relation", edge.get("type", "")),
+        }
+        for edge in edges
+    ]
     node_map = {str(node.get("id", "")): node for node in nodes}
 
     job_nodes = [node for node in nodes if node.get("type") == "job"]
@@ -2382,11 +2419,17 @@ def graph_page():
                 "id": skill_id,
                 "label": str(skill.get("label", "")),
                 "relation": relation,
+                "weight": int(edge.get("weight", 0) or 0),
                 "dimensions": dims,
             })
             for dim in dims:
                 item = capability_map.setdefault(dim["id"], {"id": dim["id"], "label": dim["label"], "skills": []})
                 item["skills"].append(str(skill.get("label", "")))
+        skills.sort(key=lambda item: (
+            item.get("relation") != "requires",
+            -int(item.get("weight", 0) or 0),
+            item.get("label", ""),
+        ))
         jobs.append({
             "id": job_id,
             "label": str(job.get("label", "")),
@@ -2434,8 +2477,10 @@ def graph_page():
 
     default_job = jobs[0] if jobs else {"id": "", "label": "暂无岗位", "skills": [], "capabilities": []}
 
+    core_skill_limit = 12
+
     def graph_path_rows(job):
-        skills = job.get("skills", [])
+        skills = job.get("skills", [])[:core_skill_limit]
         capability_map = {}
         relation_rows = []
         for skill in skills:
@@ -2478,9 +2523,10 @@ def graph_page():
             f'<div class="kg-merge-arrow">→</div>'
             f'<div class="kg-merged-lane">{capability_nodes_html}</div>'
             f'</div>'
-            f'<div class="kg-connection-summary">'
+            f'<details class="kg-connection-summary">'
+            f'<summary>查看当前子图的关系明细（{len(relation_rows)} 条）</summary>'
             f'<div class="table-wrap"><table><thead><tr><th>技能</th><th>关系</th><th>能力维度</th></tr></thead><tbody>{summary_rows}</tbody></table></div>'
-            f'</div>'
+            f'</details>'
         )
 
     default_path_rows = graph_path_rows(default_job)
@@ -2583,6 +2629,10 @@ def graph_page():
                 <span class="tag green">requires 必备</span>
                 <span class="tag cyan">bonus 加分</span>
               </div>
+              <div class="kg-map-controls">
+                <button id="kg-limit-toggle" class="chip-button" type="button">显示全部技能</button>
+                <button id="kg-clear-focus" class="chip-button" type="button">清除聚焦</button>
+              </div>
             </div>
           </div>
           <div class="kg-panel-body">
@@ -2603,7 +2653,7 @@ def graph_page():
             </div>
           </div>
         </main>
-        <aside class="kg-panel">
+        <aside class="kg-panel kg-detail-panel">
           <div class="kg-panel-head">
             <h2 style="margin:0 0 4px;">详情</h2>
             <p class="muted" style="margin:0;">点击技能或能力维度查看</p>
@@ -2616,6 +2666,8 @@ def graph_page():
         let selectedJobId = kgModel.jobs[0] ? kgModel.jobs[0].id : null;
         let selectedSkillId = null;
         let selectedCapabilityId = null;
+        let showAllSkills = false;
+        const coreSkillLimit = 12;
 
         const roleList = document.getElementById('kg-role-list');
         const search = document.getElementById('kg-search');
@@ -2626,6 +2678,8 @@ def graph_page():
         const skillList = document.getElementById('kg-skill-list');
         const capabilityList = document.getElementById('kg-capability-list');
         const detail = document.getElementById('kg-detail');
+        const limitToggle = document.getElementById('kg-limit-toggle');
+        const clearFocus = document.getElementById('kg-clear-focus');
 
         function escapeHtml(value) {{
           return String(value || '').replace(/[&<>"']/g, ch => ({{
@@ -2635,6 +2689,16 @@ def graph_page():
 
         function selectedJob() {{
           return kgModel.jobs.find(job => job.id === selectedJobId) || kgModel.jobs[0];
+        }}
+
+        function visibleSkills(job) {{
+          let skills = job.skills.slice();
+          if (selectedSkillId) {{
+            skills = skills.filter(skill => skill.id === selectedSkillId);
+          }} else if (selectedCapabilityId) {{
+            skills = skills.filter(skill => skill.dimensions.some(dim => dim.id === selectedCapabilityId));
+          }}
+          return showAllSkills ? skills : skills.slice(0, coreSkillLimit);
         }}
 
         function renderRoles() {{
@@ -2651,6 +2715,7 @@ def graph_page():
               selectedJobId = button.dataset.job;
               selectedSkillId = null;
               selectedCapabilityId = null;
+              showAllSkills = false;
               renderAll();
             }});
           }});
@@ -2666,7 +2731,11 @@ def graph_page():
             return;
           }}
           mapTitle.textContent = job.label;
-          mapSubtitle.textContent = `${{job.skills.length}} 个技能连接到 ${{job.capabilities.length}} 个能力维度`;
+          const shownSkills = visibleSkills(job);
+          mapSubtitle.textContent = `当前显示 ${{shownSkills.length}} / ${{job.skills.length}} 个技能；点击节点可聚焦关系`;
+          limitToggle.textContent = showAllSkills ? '仅显示核心技能' : `显示全部 ${{job.skills.length}} 个技能`;
+          limitToggle.style.display = job.skills.length > coreSkillLimit ? 'inline-block' : 'none';
+          clearFocus.disabled = !selectedSkillId && !selectedCapabilityId;
           roleFocus.innerHTML = `
             <div class="kg-detail-title">${{escapeHtml(job.label)}}</div>
             <div class="muted">当前岗位的能力路径从技能证据汇总到能力维度。</div>
@@ -2676,19 +2745,19 @@ def graph_page():
             </div>
           `;
 
-          const relationRows = job.skills.map(skill => {{
+          const relationRows = shownSkills.map(skill => {{
             const dims = skill.dimensions.length ? skill.dimensions : [{{id: '', label: '未映射能力维度'}}];
             return dims.map(dim => `<tr><td>${{escapeHtml(skill.label)}}</td><td><span class="tag ${{skill.relation === 'requires' ? 'green' : 'cyan'}}">${{skill.relation === 'requires' ? '必备' : '加分'}}</span></td><td>${{escapeHtml(dim.label)}}</td></tr>`).join('');
           }}).join('') || '<tr><td colspan="3" class="muted">暂无关系</td></tr>';
           const capabilityMap = new Map();
-          job.skills.forEach(skill => {{
+          shownSkills.forEach(skill => {{
             const dims = skill.dimensions.length ? skill.dimensions : [{{id: '', label: '未映射能力维度'}}];
             dims.forEach(dim => {{
               if (!capabilityMap.has(dim.id)) capabilityMap.set(dim.id, {{id: dim.id, label: dim.label, skills: []}});
               capabilityMap.get(dim.id).skills.push(skill.label);
             }});
           }});
-          const skillNodes = job.skills.map(skill => `
+          const skillNodes = shownSkills.map(skill => `
             <div class="kg-path-node skill ${{skill.id === selectedSkillId ? 'active' : ''}}" data-skill="${{escapeHtml(skill.id)}}">
               <div class="kg-node-kicker">${{skill.relation === 'requires' ? '必备' : '加分'}}</div>
               <div class="kg-node-name">${{escapeHtml(skill.label)}}</div>
@@ -2707,28 +2776,30 @@ def graph_page():
               <div class="kg-path-node role">
                 <div class="kg-node-kicker">Role</div>
                 <div class="kg-node-name">${{escapeHtml(job.label)}}</div>
-                <div class="kg-node-sub">${{job.skills.length}} 个技能 / ${{capabilityMap.size}} 个能力维度</div>
+                <div class="kg-node-sub">显示 ${{shownSkills.length}} / ${{job.skills.length}} 个技能</div>
               </div>
               <div class="kg-merge-arrow">→</div>
               <div class="kg-merged-lane">${{skillNodes}}</div>
               <div class="kg-merge-arrow">→</div>
               <div class="kg-merged-lane">${{capabilityNodes}}</div>
             </div>
-            <div class="kg-connection-summary">
+            <details class="kg-connection-summary">
+              <summary>查看当前子图的关系明细</summary>
               <div class="table-wrap"><table><thead><tr><th>技能</th><th>关系</th><th>能力维度</th></tr></thead><tbody>${{relationRows}}</tbody></table></div>
-            </div>
+            </details>
           `;
 
           pathBoard.querySelectorAll('[data-skill]').forEach(node => {{
             node.addEventListener('click', () => {{
-              selectedSkillId = node.dataset.skill;
+              selectedSkillId = selectedSkillId === node.dataset.skill ? null : node.dataset.skill;
               selectedCapabilityId = null;
               renderAll();
             }});
           }});
           pathBoard.querySelectorAll('[data-cap]').forEach(node => {{
             node.addEventListener('click', () => {{
-              selectedCapabilityId = (node.dataset.cap || '').split(' ')[0] || null;
+              const capId = (node.dataset.cap || '').split(' ')[0] || null;
+              selectedCapabilityId = selectedCapabilityId === capId ? null : capId;
               selectedSkillId = null;
               renderAll();
             }});
@@ -2829,6 +2900,15 @@ def graph_page():
           renderMap();
           renderDetail();
         }}
+        limitToggle.addEventListener('click', () => {{
+          showAllSkills = !showAllSkills;
+          renderMap();
+        }});
+        clearFocus.addEventListener('click', () => {{
+          selectedSkillId = null;
+          selectedCapabilityId = null;
+          renderAll();
+        }});
         search.addEventListener('input', renderRoles);
         renderAll();
       </script>

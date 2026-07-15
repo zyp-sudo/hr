@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-07T20:17:29+08:00",
+  "generated_at": "2026-07-15T19:11:19+08:00",
   "input_files": [
     "data\\collected_jobs.csv",
     "data\\collected_job_skills.csv",
@@ -12,7 +12,7 @@
     "data\\etl\\job_candidate_scores.csv"
   ],
   "unified_job_records": 55110,
-  "unified_skill_records": 69308,
+  "unified_skill_records": 69291,
   "candidate_score_records": 50000,
   "registered_sources": 17,
   "registered_source_types": [
@@ -45,9 +45,9 @@
     "cloud_infra": 423,
     "testing_quality": 1049,
     "design": 1553,
-    "backend_engineering": 45143,
-    "security": 759,
-    "other": 251
+    "other": 260,
+    "backend_engineering": 45134,
+    "security": 759
   },
   "quality_rules": {
     "base_score": 100,
