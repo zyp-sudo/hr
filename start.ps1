@@ -1,20 +1,63 @@
 # XH-202621 one-click launcher
-# Start MySQL/Neo4j + storage API(8080) + Java analytics(8081) + frontend(8501)
+# Starts MySQL/Neo4j/Elasticsearch + Java API (8081) + Python API (8080) + frontend (8501).
 $ErrorActionPreference = "Stop"
+$ProjectRoot = $PSScriptRoot
+Set-Location $ProjectRoot
 
-$LocalEnv = Join-Path $PSScriptRoot "scripts\local-env.ps1"
+$LocalEnv = Join-Path $ProjectRoot "scripts\local-env.ps1"
 if (Test-Path $LocalEnv) {
   . $LocalEnv
-  Write-Host "==> Loaded local environment" -ForegroundColor Gray
+  Write-Host "==> Loaded local environment" -ForegroundColor DarkGray
 }
 
-# 1. Initialize real storage (first run imports data; later runs skip existing data)
+function Test-LocalPort {
+  param([Parameter(Mandatory = $true)][int]$Port)
+
+  $client = New-Object System.Net.Sockets.TcpClient
+  try {
+    $pending = $client.BeginConnect("127.0.0.1", $Port, $null, $null)
+    if (-not $pending.AsyncWaitHandle.WaitOne(250)) { return $false }
+    $client.EndConnect($pending)
+    return $true
+  } catch {
+    return $false
+  } finally {
+    $client.Close()
+  }
+}
+
+function Wait-LocalPort {
+  param(
+    [Parameter(Mandatory = $true)][int]$Port,
+    [Parameter(Mandatory = $true)][System.Management.Automation.Job]$Job,
+    [int]$Attempts = 40
+  )
+
+  for ($attempt = 0; $attempt -lt $Attempts; $attempt++) {
+    if (Test-LocalPort -Port $Port) { return $true }
+    if ($Job.State -in @("Completed", "Failed", "Stopped")) { return $false }
+    Start-Sleep -Milliseconds 500
+  }
+  return $false
+}
+
+function Write-JobFailure {
+  param(
+    [Parameter(Mandatory = $true)][string]$Service,
+    [Parameter(Mandatory = $true)][System.Management.Automation.Job]$Job
+  )
+
+  Write-Host "$Service failed (job state: $($Job.State))." -ForegroundColor Red
+  $output = Receive-Job -Job $Job -Keep -ErrorAction SilentlyContinue 2>&1
+  if ($output) { $output | ForEach-Object { Write-Host "    $_" -ForegroundColor DarkRed } }
+}
+
 if ($env:SKIP_STORAGE_INIT -ne "true") {
-  & (Join-Path $PSScriptRoot "scripts\init-storage.ps1")
+  & (Join-Path $ProjectRoot "scripts\init-storage.ps1")
+  if (-not $?) { throw "Storage initialization failed." }
 }
 
-# 2. Stop old application processes
-Write-Host "==> Stopping old services..." -ForegroundColor Cyan
+Write-Host "==> Stopping old application services..." -ForegroundColor Cyan
 $ports = @(8080, 8081, 8501)
 foreach ($line in netstat -ano) {
   foreach ($port in $ports) {
@@ -22,104 +65,115 @@ foreach ($line in netstat -ano) {
       $pidToKill = $Matches[1]
       if ($pidToKill -and $pidToKill -ne "0") {
         Stop-Process -Id $pidToKill -Force -ErrorAction SilentlyContinue
-        Write-Host "    Stopped PID $pidToKill (port $port)" -ForegroundColor Gray
+        Write-Host "    Stopped PID $pidToKill (port $port)" -ForegroundColor DarkGray
       }
     }
   }
 }
 
-# 3. Compile Java analytics backend
-Write-Host "==> Compiling Java backend..." -ForegroundColor Cyan
-New-Item -ItemType Directory -Force -Path backend/runtime-out | Out-Null
-$javacOutput = javac -encoding UTF-8 -d backend/runtime-out backend/src/com/xh202621/*.java 2>&1
-if ($LASTEXITCODE -ne 0) {
-  Write-Host "Compile failed: $javacOutput" -ForegroundColor Red
-  exit 1
-}
-Write-Host "    Compile OK" -ForegroundColor Green
+$BuildRoot = Join-Path ([IO.Path]::GetTempPath()) "xh-202621-java"
+$RuntimeOut = Join-Path $BuildRoot ("runtime-build-" + [guid]::NewGuid().ToString("N"))
+$backendJob = $null
+$storageJob = $null
+$frontendJob = $null
 
-# 4. Start Java analytics backend (internal)
-Write-Host "==> Starting Java analytics service (http://localhost:8081)..." -ForegroundColor Cyan
-$backendJob = Start-Job -Name "xh-backend" -ScriptBlock {
-  Set-Location $using:PWD
-  $LocalEnv = Join-Path $using:PWD "scripts\local-env.ps1"
-  if (Test-Path $LocalEnv) {
-    . $LocalEnv
-  }
-  $env:BACKEND_PORT = "8081"
-  java -cp backend/runtime-out com.xh202621.App 2>&1 | Write-Host -ForegroundColor DarkGray
-}
-Write-Host "    Backend job ID: $($backendJob.Id)" -ForegroundColor Green
-
-# 5. Start MySQL/Neo4j runtime API (public)
-Write-Host "==> Starting storage API (http://localhost:8080)..." -ForegroundColor Cyan
-$storageJob = Start-Job -Name "xh-storage-api" -ScriptBlock {
-  Set-Location $using:PWD
-  $LocalEnv = Join-Path $using:PWD "scripts\local-env.ps1"
-  if (Test-Path $LocalEnv) { . $LocalEnv }
-  python -m uvicorn app.main:app --host 0.0.0.0 --port 8080 2>&1 | Write-Host -ForegroundColor DarkGray
-}
-Write-Host "    Storage API job ID: $($storageJob.Id)" -ForegroundColor Green
-
-# 6. Wait for public API
-Write-Host "==> Waiting for MySQL/Neo4j API..." -ForegroundColor Cyan
-$ready = $false
-for ($i = 0; $i -lt 30; $i++) {
-  try {
-    $null = Invoke-WebRequest -Uri "http://localhost:8080/api/health" -TimeoutSec 1 -UseBasicParsing
-    $ready = $true
-    break
-  } catch {
-    Start-Sleep -Milliseconds 500
-  }
-}
-if ($ready) {
-  Write-Host "    Backend is ready" -ForegroundColor Green
-} else {
-  Write-Host "    WARNING: Backend may not be ready" -ForegroundColor Yellow
-}
-
-# 7. Start frontend
-Write-Host "==> Starting frontend (http://localhost:8501)..." -ForegroundColor Cyan
-$frontendJob = Start-Job -Name "xh-frontend" -ScriptBlock {
-  Set-Location $using:PWD
-  python frontend/app.py 2>&1 | Write-Host -ForegroundColor DarkGray
-}
-Write-Host "    Frontend job ID: $($frontendJob.Id)" -ForegroundColor Green
-
-Start-Sleep -Seconds 1
-
-Write-Host ""
-Write-Host "===================================" -ForegroundColor Green
-Write-Host "  System is running!" -ForegroundColor Green
-Write-Host "  Frontend: http://localhost:8501" -ForegroundColor Green
-Write-Host "  Backend:  http://localhost:8080" -ForegroundColor Green
-Write-Host "  Press Ctrl+C to stop all..." -ForegroundColor Green
-Write-Host "===================================" -ForegroundColor Green
-Write-Host ""
-
-# 8. Wait for Ctrl+C, then cleanup
 try {
-  while ($true) { Start-Sleep -Seconds 1 }
-} finally {
-  Write-Host ""
-  Write-Host "==> Stopping services..." -ForegroundColor Cyan
-  Stop-Job -Name "xh-backend" -ErrorAction SilentlyContinue
-  Stop-Job -Name "xh-storage-api" -ErrorAction SilentlyContinue
-  Stop-Job -Name "xh-frontend" -ErrorAction SilentlyContinue
-  Remove-Job -Name "xh-backend" -ErrorAction SilentlyContinue
-  Remove-Job -Name "xh-storage-api" -ErrorAction SilentlyContinue
-  Remove-Job -Name "xh-frontend" -ErrorAction SilentlyContinue
+  Write-Host "==> Compiling Java backend..." -ForegroundColor Cyan
+  New-Item -ItemType Directory -Force -Path $BuildRoot | Out-Null
+  New-Item -ItemType Directory -Force -Path $RuntimeOut | Out-Null
+  $javacOutput = & javac -encoding UTF-8 -d $RuntimeOut backend/src/com/xh202621/*.java 2>&1
+  if ($LASTEXITCODE -ne 0) {
+    throw "Java compilation failed with exit code $LASTEXITCODE.`n$($javacOutput -join [Environment]::NewLine)"
+  }
+  Write-Host "    Compile OK: $RuntimeOut" -ForegroundColor Green
 
-  foreach ($line in netstat -ano) {
-    foreach ($port in $ports) {
-      if ($line -match ":$port\s" -and $line -match "LISTENING\s+(\d+)\s*$") {
-        $pidToKill = $Matches[1]
-        if ($pidToKill -and $pidToKill -ne "0") {
-          Stop-Process -Id $pidToKill -Force -ErrorAction SilentlyContinue
-        }
+  Write-Host "==> Starting Java API (http://localhost:8081)..." -ForegroundColor Cyan
+  $backendJob = Start-Job -Name ("xh-java-backend-" + [guid]::NewGuid().ToString("N")) -ScriptBlock {
+    Set-Location $using:ProjectRoot
+    $env:BACKEND_PORT = "8081"
+    & java -cp $using:RuntimeOut com.xh202621.App
+  }
+  if (-not (Wait-LocalPort -Port 8081 -Job $backendJob)) {
+    Write-JobFailure -Service "Java API" -Job $backendJob
+    throw "Java API did not open port 8081."
+  }
+
+  Write-Host "==> Starting Python API (http://localhost:8080)..." -ForegroundColor Cyan
+  $storageJob = Start-Job -Name ("xh-storage-api-" + [guid]::NewGuid().ToString("N")) -ScriptBlock {
+    Set-Location $using:ProjectRoot
+    & python -m uvicorn app.main:app --host 0.0.0.0 --port 8080
+  }
+  if (-not (Wait-LocalPort -Port 8080 -Job $storageJob)) {
+    Write-JobFailure -Service "Python API" -Job $storageJob
+    throw "Python API did not open port 8080."
+  }
+
+  $health = Invoke-RestMethod -Uri "http://127.0.0.1:8080/api/health" -TimeoutSec 10
+  if ($health.status -ne "ok") {
+    throw "Storage health is '$($health.status)': $($health.storage | ConvertTo-Json -Compress)"
+  }
+
+  Write-Host "==> Starting official frontend (http://localhost:8501)..." -ForegroundColor Cyan
+  $frontendJob = Start-Job -Name ("xh-frontend-" + [guid]::NewGuid().ToString("N")) -ScriptBlock {
+    Set-Location $using:ProjectRoot
+    & python frontend/app.py
+  }
+  if (-not (Wait-LocalPort -Port 8501 -Job $frontendJob)) {
+    Write-JobFailure -Service "Official frontend" -Job $frontendJob
+    throw "Official frontend did not open port 8501."
+  }
+
+  Write-Host ""
+  Write-Host "===================================" -ForegroundColor Green
+  Write-Host "  System is ready" -ForegroundColor Green
+  Write-Host "  Frontend: http://localhost:8501" -ForegroundColor Green
+  Write-Host "  API:      http://localhost:8080" -ForegroundColor Green
+  Write-Host "  Health:   http://localhost:8080/api/health" -ForegroundColor Green
+  Write-Host "===================================" -ForegroundColor Green
+
+  if ($env:XH_STARTUP_SMOKE_TEST -eq "true") {
+    foreach ($uri in @(
+      "http://127.0.0.1:8080/api/search/jobs?page=1&page_size=1",
+      "http://127.0.0.1:8080/api/analysis/skills",
+      "http://127.0.0.1:8080/api/analysis/jobs/trend",
+      "http://127.0.0.1:8501/"
+    )) {
+      $response = Invoke-WebRequest -Uri $uri -UseBasicParsing -TimeoutSec 30
+      if ($response.StatusCode -ne 200) { throw "Smoke check failed for ${uri}: HTTP $($response.StatusCode)" }
+    }
+    Write-Host "Startup smoke test passed." -ForegroundColor Green
+    return
+  }
+
+  Write-Host "Press Ctrl+C to stop all services." -ForegroundColor Green
+  while ($true) {
+    foreach ($service in @(
+      @{ Name = "Java API"; Job = $backendJob },
+      @{ Name = "Python API"; Job = $storageJob },
+      @{ Name = "Official frontend"; Job = $frontendJob }
+    )) {
+      if ($service.Job.State -in @("Completed", "Failed", "Stopped")) {
+        Write-JobFailure -Service $service.Name -Job $service.Job
+        throw "$($service.Name) stopped unexpectedly."
       }
     }
+    Start-Sleep -Seconds 1
   }
-  Write-Host "    All services stopped" -ForegroundColor Green
+} finally {
+  Write-Host "==> Stopping application services..." -ForegroundColor Cyan
+  foreach ($job in @($backendJob, $storageJob, $frontendJob)) {
+    if ($null -ne $job) {
+      Stop-Job -Job $job -ErrorAction SilentlyContinue
+      Remove-Job -Job $job -Force -ErrorAction SilentlyContinue
+    }
+  }
+
+  $resolvedBuildRoot = [IO.Path]::GetFullPath($BuildRoot).TrimEnd("\") + "\"
+  $resolvedRuntimeOut = [IO.Path]::GetFullPath($RuntimeOut).TrimEnd("\") + "\"
+  if ($resolvedRuntimeOut.StartsWith($resolvedBuildRoot, [StringComparison]::OrdinalIgnoreCase) -and
+      ([IO.Path]::GetFileName($RuntimeOut) -like "runtime-build-*") -and
+      (Test-Path -LiteralPath $RuntimeOut)) {
+    Remove-Item -LiteralPath $RuntimeOut -Recurse -Force -ErrorAction SilentlyContinue
+  }
+  Write-Host "    Application services stopped" -ForegroundColor Green
 }

@@ -69,7 +69,7 @@ bash start.sh
 **Windows PowerShell：**
 
 ```powershell
-powershell -File start.ps1
+powershell -NoProfile -ExecutionPolicy Bypass -File start.ps1
 ```
 
 脚本会自动停止旧进程、编译 Java 后端、启动后端(8080)、等待后端就绪、再启动前端(8501)。按 `Ctrl+C` 一键停止所有服务。

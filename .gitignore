@@ -2,6 +2,7 @@ backend/out/
 backend/runtime-out/
 tmp/
 __pycache__/
+.pytest_cache/
 *.pyc
 *.class
 node_modules/
