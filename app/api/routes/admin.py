@@ -432,6 +432,7 @@ def _page_context(request: Request, title: str, current: str) -> dict:
             {"key": "data-quality", "label": "数据质量", "icon": "◆", "url": "/admin/data-quality"},
             {"key": "etl", "label": "ETL 治理", "icon": "↻", "url": "/admin/etl"},
             {"key": "samples", "label": "样本数据", "icon": "▣", "url": "/admin/samples"},
+            {"key": "ai-hub", "label": "AI Hub", "icon": "🤖", "url": "/admin/ai-hub"},
             {"key": "settings", "label": "系统设置", "icon": "⚙", "url": "/admin/settings"},
         ],
     }
@@ -479,6 +480,15 @@ async def page_samples(request: Request):
         request=request,
         name="admin/samples.html",
         context=_page_context(request, "样本数据", "samples"),
+    )
+
+
+@page_router.get("/admin/ai-hub", include_in_schema=False)
+async def page_ai_hub(request: Request):
+    return templates.TemplateResponse(
+        request=request,
+        name="admin/ai_hub.html",
+        context=_page_context(request, "AI Hub — 供应商与模型管理", "ai-hub"),
     )
 
 

@@ -1,0 +1,666 @@
+{% extends "admin/base.html" %}
+{% block content %}
+
+<style>
+/* ── AI Hub specific styles ── */
+.ai-tabs { display: flex; gap: 0; margin-bottom: 20px; border-bottom: 1px solid var(--border); }
+.ai-tab {
+  padding: 10px 20px; border: none; background: none; color: var(--text-muted);
+  font-size: 14px; font-weight: 500; cursor: pointer; border-bottom: 2px solid transparent;
+  transition: all .2s;
+}
+.ai-tab.active { color: var(--accent); border-bottom-color: var(--accent); }
+.ai-tab:hover { color: var(--text-primary); }
+
+.toolbar { display: flex; gap: 12px; margin-bottom: 16px; align-items: center; flex-wrap: wrap; }
+.toolbar input { width: 260px; }
+.toolbar .btn { white-space: nowrap; }
+.toolbar .spacer { flex: 1; }
+
+/* ── Provider list ── */
+.provider-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(340px, 1fr)); gap: 16px; }
+.provider-card {
+  background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius);
+  padding: 20px; transition: all .2s;
+}
+.provider-card:hover { border-color: var(--accent); box-shadow: 0 0 16px rgba(124,92,255,.08); }
+.provider-card.active { border-left: 3px solid var(--green); }
+.provider-card.disabled { opacity: .55; }
+.provider-header { display: flex; align-items: center; gap: 12px; margin-bottom: 12px; }
+.provider-icon {
+  width: 40px; height: 40px; border-radius: 8px; display: flex; align-items: center;
+  justify-content: center; font-size: 18px; font-weight: 700; color: #fff;
+  background: linear-gradient(135deg, var(--accent), #cabeff);
+}
+.provider-name { font-size: 15px; font-weight: 600; color: var(--text-primary); }
+.provider-type { font-size: 11px; color: var(--text-muted); text-transform: uppercase; letter-spacing: .05em; }
+.provider-meta { display: flex; gap: 16px; font-size: 12px; color: var(--text-muted); margin-bottom: 10px; }
+.provider-meta span { display: flex; align-items: center; gap: 4px; }
+.provider-actions { display: flex; gap: 8px; margin-top: 14px; flex-wrap: wrap; }
+.model-list { margin-top: 14px; border-top: 1px solid var(--border); padding-top: 12px; }
+.model-item {
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 6px 0; font-size: 12px;
+}
+.model-item-name { color: var(--text-primary); font-family: var(--font-mono); font-size: 12px; }
+.model-item-meta { color: var(--text-muted); font-size: 11px; }
+
+/* ── Empty state ── */
+.empty-state { text-align: center; padding: 48px 20px; color: var(--text-muted); }
+.empty-state p { margin: 8px 0; }
+.empty-state .icon { font-size: 40px; }
+
+/* ── Modal / dialog ── */
+.modal-backdrop {
+  position: fixed; inset: 0; background: rgba(0,0,0,.55);
+  display: flex; align-items: center; justify-content: center; z-index: 1000;
+  backdrop-filter: blur(4px);
+}
+.dialog {
+  background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius);
+  padding: 28px; min-width: 480px; max-width: 640px; max-height: 80vh; overflow-y: auto;
+  box-shadow: 0 12px 40px rgba(0,0,0,.3);
+}
+.dialog h3 { margin: 0 0 20px; color: var(--text-primary); font-size: 18px; }
+.dialog .field { display: flex; flex-direction: column; gap: 4px; margin-bottom: 14px; }
+.dialog .field label { font-size: 12px; color: var(--text-muted); font-weight: 500; text-transform: uppercase; letter-spacing: .05em; }
+.dialog .field input, .dialog .field select, .dialog .field textarea {
+  padding: 10px 12px; border: 1px solid var(--border); border-radius: 6px;
+  background: var(--bg); color: var(--text-primary); font-size: 13px;
+  font-family: inherit;
+}
+.dialog .field textarea { min-height: 60px; resize: vertical; }
+.dialog .field input:focus, .dialog .field select:focus, .dialog .field textarea:focus {
+  outline: none; border-color: var(--accent); box-shadow: 0 0 0 2px rgba(124,92,255,.15);
+}
+.dialog .field-row { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+.dialog .field-check { display: flex; align-items: center; gap: 8px; margin-bottom: 12px; }
+.dialog .field-check input[type="checkbox"] { width: 16px; height: 16px; accent-color: var(--accent); }
+.dialog .dialog-actions { display: flex; gap: 10px; justify-content: flex-end; margin-top: 20px; }
+
+/* ── Test result ── */
+.test-result { margin-top: 16px; padding: 14px; border-radius: 8px; font-size: 13px; }
+.test-result.ok { background: rgba(92,219,139,.1); border: 1px solid rgba(92,219,139,.3); color: var(--green); }
+.test-result.fail { background: rgba(240,98,110,.1); border: 1px solid rgba(240,98,110,.3); color: var(--red); }
+
+/* ── Key preview ── */
+.key-dot { display: inline-block; width: 6px; height: 6px; border-radius: 50%; margin-right: 4px; }
+.key-dot.set { background: var(--green); box-shadow: 0 0 4px var(--green); }
+.key-dot.unset { background: var(--yellow); box-shadow: 0 0 4px var(--yellow); }
+</style>
+
+{# ════════════ Tab bar ════════════ #}
+<div class="ai-tabs">
+  <button class="ai-tab active" data-tab="providers" onclick="switchTab('providers')">🔌 供应商</button>
+  <button class="ai-tab" data-tab="models" onclick="switchTab('models')">🧩 模型</button>
+  <button class="ai-tab" data-tab="health" onclick="switchTab('health')">❤️ 健康状态</button>
+</div>
+
+{# ════════════ Providers Tab ════════════ #}
+<div id="tab-providers">
+  <div class="toolbar">
+    <input type="text" id="provider-search" placeholder="搜索供应商…" oninput="loadProviders()"/>
+    <select id="provider-type-filter" onchange="loadProviders()">
+      <option value="">全部类型</option>
+      <option value="openai">OpenAI</option>
+      <option value="anthropic">Anthropic</option>
+      <option value="google">Google</option>
+      <option value="deepseek">DeepSeek</option>
+      <option value="azure">Azure</option>
+      <option value="ollama">Ollama</option>
+      <option value="custom">自定义</option>
+    </select>
+    <div class="spacer"></div>
+    <button class="btn primary" onclick="openProviderDialog()">+ 新增供应商</button>
+    <button class="btn" onclick="seedData()" style="background:rgba(124,92,255,.12);color:var(--accent);border:1px solid rgba(124,92,255,.3);">⚡ 预置种子数据</button>
+  </div>
+  <div class="provider-grid" id="provider-grid">
+    <div class="empty-state"><p>加载中…</p></div>
+  </div>
+</div>
+
+{# ════════════ Models Tab ════════════ #}
+<div id="tab-models" style="display:none;">
+  <div class="toolbar">
+    <select id="model-provider-filter" onchange="loadModels()">
+      <option value="">全部供应商</option>
+    </select>
+    <select id="model-type-filter" onchange="loadModels()">
+      <option value="">全部类型</option>
+      <option value="llm">LLM</option>
+      <option value="embedding">Embedding</option>
+      <option value="vision">Vision</option>
+      <option value="audio">Audio</option>
+    </select>
+    <div class="spacer"></div>
+    <button class="btn primary" onclick="openModelDialog()">+ 新增模型</button>
+  </div>
+  <div class="table-wrap" style="margin-top:0;">
+    <table>
+      <thead><tr>
+        <th>模型 ID</th><th>展示名</th><th>供应商</th><th>类型</th><th>Tokens 入/出</th><th>能力</th><th>状态</th><th>操作</th>
+      </tr></thead>
+      <tbody id="model-table-body"><tr><td colspan="8" class="empty-state">加载中…</td></tr></tbody>
+    </table>
+  </div>
+  <div style="margin-top:12px;font-size:12px;color:var(--text-muted);text-align:center;" id="model-pagination"></div>
+</div>
+
+{# ════════════ Health Tab ════════════ #}
+<div id="tab-health" style="display:none;">
+  <div class="card">
+    <div class="card-header"><h3>AI Hub 健康检查</h3></div>
+    <div id="ai-health-content">加载中…</div>
+  </div>
+</div>
+
+{# ════════════ Provider Dialog ════════════ #}
+<div class="modal-backdrop" id="provider-dialog" style="display:none;">
+  <div class="dialog">
+    <h3 id="provider-dialog-title">新增供应商</h3>
+    <form id="provider-form" onsubmit="saveProvider(event)">
+      <input type="hidden" id="p-id"/>
+      <div class="field">
+        <label>名称 *</label>
+        <input type="text" id="p-name" placeholder="如 OpenAI" required/>
+      </div>
+      <div class="field-row">
+        <div class="field">
+          <label>类型 *</label>
+          <select id="p-type" required>
+            <option value="openai">OpenAI</option>
+            <option value="anthropic">Anthropic</option>
+            <option value="google">Google</option>
+            <option value="deepseek">DeepSeek</option>
+            <option value="azure">Azure</option>
+            <option value="ollama">Ollama</option>
+            <option value="custom">自定义</option>
+          </select>
+        </div>
+        <div class="field">
+          <label>排序</label>
+          <input type="number" id="p-sort" value="0"/>
+        </div>
+      </div>
+      <div class="field">
+        <label>Base URL</label>
+        <input type="text" id="p-base-url" placeholder="如 https://api.openai.com"/>
+      </div>
+      <div class="field">
+        <label>API Key</label>
+        <input type="password" id="p-api-key" placeholder="留空则不修改"/>
+        <span style="font-size:11px;color:var(--text-muted);" id="p-key-hint">新增时必须填写；编辑时留空则保持原值，输入空格可清空</span>
+      </div>
+      <div class="field">
+        <label>备注</label>
+        <textarea id="p-desc" placeholder="可选备注…"></textarea>
+      </div>
+      <div class="field-check">
+        <input type="checkbox" id="p-active" checked/>
+        <label for="p-active" style="color:var(--text-primary);font-size:13px;">启用</label>
+      </div>
+      <div id="test-result-area"></div>
+      <div class="dialog-actions">
+        <button type="button" class="btn" onclick="closeProviderDialog()">取消</button>
+        <button type="submit" class="btn primary">保存</button>
+      </div>
+    </form>
+  </div>
+</div>
+
+{# ════════════ Model Dialog ════════════ #}
+<div class="modal-backdrop" id="model-dialog" style="display:none;">
+  <div class="dialog">
+    <h3 id="model-dialog-title">新增模型</h3>
+    <form id="model-form" onsubmit="saveModel(event)">
+      <input type="hidden" id="m-id"/>
+      <div class="field">
+        <label>所属供应商 *</label>
+        <select id="m-provider-id" required></select>
+      </div>
+      <div class="field-row">
+        <div class="field">
+          <label>模型标识符 *</label>
+          <input type="text" id="m-model-id" placeholder="如 gpt-4o" required/>
+        </div>
+        <div class="field">
+          <label>展示名称</label>
+          <input type="text" id="m-display-name" placeholder="如 GPT-4o"/>
+        </div>
+      </div>
+      <div class="field-row">
+        <div class="field">
+          <label>模型类型</label>
+          <select id="m-type">
+            <option value="llm">LLM</option>
+            <option value="embedding">Embedding</option>
+            <option value="vision">Vision</option>
+            <option value="audio">Audio</option>
+          </select>
+        </div>
+        <div class="field">
+          <label>排序</label>
+          <input type="number" id="m-sort" value="0"/>
+        </div>
+      </div>
+      <div class="field-row">
+        <div class="field">
+          <label>最大输入 Tokens</label>
+          <input type="number" id="m-max-in" placeholder="如 128000"/>
+        </div>
+        <div class="field">
+          <label>最大输出 Tokens</label>
+          <input type="number" id="m-max-out" placeholder="如 16384"/>
+        </div>
+      </div>
+      <div class="field-row">
+        <div class="field">
+          <label>输入价格 ($/1k tokens)</label>
+          <input type="number" id="m-price-in" step="0.0001" placeholder="0.0025"/>
+        </div>
+        <div class="field">
+          <label>输出价格 ($/1k tokens)</label>
+          <input type="number" id="m-price-out" step="0.0001" placeholder="0.01"/>
+        </div>
+      </div>
+      <div class="field-check" style="display:flex;gap:20px;flex-wrap:wrap;">
+        <label class="field-check"><input type="checkbox" id="m-vision"/> 图片识别</label>
+        <label class="field-check"><input type="checkbox" id="m-tools" checked/> Function Calling</label>
+        <label class="field-check"><input type="checkbox" id="m-stream" checked/> 流式输出</label>
+        <label class="field-check"><input type="checkbox" id="m-active" checked/> 启用</label>
+      </div>
+      <div class="dialog-actions">
+        <button type="button" class="btn" onclick="closeModelDialog()">取消</button>
+        <button type="submit" class="btn primary">保存</button>
+      </div>
+    </form>
+  </div>
+</div>
+
+{% endblock %}
+{% block scripts %}
+<script>
+// ════════════════════════════════════════════════════════════════════════
+// Helpers — raw fetch to /api/ai/* (not through Admin.API which uses /api/admin)
+// ════════════════════════════════════════════════════════════════════════
+const AI = {
+  async get(path, params = {}) {
+    const qs = new URLSearchParams(params).toString();
+    const res = await fetch(`/api/ai${path}${qs ? '?' + qs : ''}`);
+    if (!res.ok) { const e = await res.json().catch(() => ({detail:res.statusText})); throw new Error(e.detail||`HTTP ${res.status}`); }
+    return res.json();
+  },
+  async post(path, body = {}) {
+    const res = await fetch(`/api/ai${path}`, { method:'POST', headers:{'Content-Type':'application/json'}, body:JSON.stringify(body) });
+    if (!res.ok) { const e = await res.json().catch(() => ({detail:res.statusText})); throw new Error(e.detail||`HTTP ${res.status}`); }
+    return res.json();
+  },
+  async put(path, body = {}) {
+    const res = await fetch(`/api/ai${path}`, { method:'PUT', headers:{'Content-Type':'application/json'}, body:JSON.stringify(body) });
+    if (!res.ok) { const e = await res.json().catch(() => ({detail:res.statusText})); throw new Error(e.detail||`HTTP ${res.status}`); }
+    return res.json();
+  },
+  async del(path) {
+    const res = await fetch(`/api/ai${path}`, { method:'DELETE' });
+    if (!res.ok) { const e = await res.json().catch(() => ({detail:res.statusText})); throw new Error(e.detail||`HTTP ${res.status}`); }
+    return res.json();
+  }
+};
+
+function toast(msg, type) { (window.Admin && Admin.toast ? Admin.toast : (m => { const el = document.createElement('div'); el.style.cssText = 'position:fixed;bottom:20px;right:20px;padding:12px 24px;border-radius:8px;color:#fff;z-index:9999;' + (type==='error'?'background:#f0626e':'background:#5cdb8b'); el.textContent = m; document.body.appendChild(el); setTimeout(()=>el.remove(),3500); }))(msg, type); }
+const escapeHtml = (s) => { const d = document.createElement('div'); d.textContent = s; return d.innerHTML; };
+
+// ════════════════════════════════════════════════════════════════════════
+// Tab switching
+// ════════════════════════════════════════════════════════════════════════
+function switchTab(name) {
+  document.querySelectorAll('.ai-tab').forEach(t => t.classList.remove('active'));
+  document.querySelector(`.ai-tab[data-tab="${name}"]`).classList.add('active');
+  document.querySelectorAll('[id^="tab-"]').forEach(d => d.style.display = 'none');
+  document.getElementById('tab-' + name).style.display = '';
+  if (name === 'providers') loadProviders();
+  else if (name === 'models') { loadProviderSelect(); loadModels(); }
+  else if (name === 'health') loadHealth();
+}
+
+// ════════════════════════════════════════════════════════════════════════
+// Providers
+// ════════════════════════════════════════════════════════════════════════
+async function loadProviders() {
+  const grid = document.getElementById('provider-grid');
+  try {
+    const params = {};
+    const s = document.getElementById('provider-search').value.trim();
+    if (s) params.search = s;
+    const t = document.getElementById('provider-type-filter').value;
+    if (t) params.provider_type = t;
+    params.page_size = 100;
+    const data = await AI.get('/providers', params);
+    if (!data.items.length) {
+      grid.innerHTML = '<div class="empty-state"><div class="icon">📭</div><p>暂无供应商</p><button class="btn primary" onclick="openProviderDialog()">新增第一个供应商</button></div>';
+      return;
+    }
+    grid.innerHTML = data.items.map(p => {
+      const statusCls = p.is_active ? 'active' : 'disabled';
+      const keyDot = p.api_key_configured
+        ? '<span class="key-dot set" title="API Key 已配置"></span>'
+        : '<span class="key-dot unset" title="API Key 未配置"></span>';
+      const modelsHtml = (!p.models && p.model_count === 0) ? '<div style="font-size:11px;color:var(--text-muted);margin-top:6px;">暂无模型</div>' : '';
+      const apiKeyInfo = p.api_key_configured
+        ? `<span title="API Key">🔑 ${escapeHtml(p.api_key_preview)}</span>`
+        : `<span style="color:var(--yellow);">⚠ 未配置 Key</span>`;
+      return `<div class="provider-card ${statusCls}">
+        <div class="provider-header">
+          <div class="provider-icon">${escapeHtml(p.name[0])}</div>
+          <div>
+            <div class="provider-name">${escapeHtml(p.name)} ${keyDot}</div>
+            <div class="provider-type">${escapeHtml(p.provider_type)}</div>
+          </div>
+        </div>
+        <div class="provider-meta">
+          <span>🧩 ${p.model_count} 个模型</span>
+          ${apiKeyInfo}
+          <span>${p.is_active ? '✅ 已启用' : '⏸ 已禁用'}</span>
+        </div>
+        ${p.description ? `<div style="font-size:12px;color:var(--text-muted);margin-bottom:6px;">${escapeHtml(p.description)}</div>` : ''}
+        ${p.base_url ? `<div style="font-size:11px;color:var(--text-muted);font-family:var(--font-mono);word-break:break-all;">${escapeHtml(p.base_url)}</div>` : ''}
+        ${modelsHtml}
+        <div class="provider-actions">
+          <button class="btn" onclick="editProvider(${p.id})" style="font-size:11px;padding:6px 12px;">✏️ 编辑</button>
+          <button class="btn" onclick="testProvider(${p.id})" style="font-size:11px;padding:6px 12px;">🔍 测试连接</button>
+          <button class="btn" onclick="deleteProvider(${p.id})" style="font-size:11px;padding:6px 12px;color:var(--red);">🗑 删除</button>
+        </div>
+      </div>`;
+    }).join('');
+  } catch(e) {
+    grid.innerHTML = `<div class="empty-state"><p style="color:var(--red);">加载失败: ${escapeHtml(e.message)}</p></div>`;
+  }
+}
+
+function openProviderDialog(editData = null) {
+  document.getElementById('provider-dialog').style.display = '';
+  if (editData) {
+    document.getElementById('provider-dialog-title').textContent = '编辑供应商';
+    document.getElementById('p-id').value = editData.id;
+    document.getElementById('p-name').value = editData.name;
+    document.getElementById('p-type').value = editData.provider_type;
+    document.getElementById('p-base-url').value = editData.base_url || '';
+    document.getElementById('p-api-key').value = '';
+    document.getElementById('p-api-key').placeholder = '留空则保持原值';
+    document.getElementById('p-key-hint').textContent = '留空保持原值；输入空格可清空 Key；输入新 Key 则更新';
+    document.getElementById('p-desc').value = editData.description || '';
+    document.getElementById('p-sort').value = editData.sort_order || 0;
+    document.getElementById('p-active').checked = editData.is_active;
+  } else {
+    document.getElementById('provider-dialog-title').textContent = '新增供应商';
+    document.getElementById('p-id').value = '';
+    document.getElementById('p-name').value = '';
+    document.getElementById('p-type').value = 'openai';
+    document.getElementById('p-base-url').value = '';
+    document.getElementById('p-api-key').value = '';
+    document.getElementById('p-api-key').placeholder = '输入 API Key';
+    document.getElementById('p-key-hint').textContent = '新增时必须填写';
+    document.getElementById('p-desc').value = '';
+    document.getElementById('p-sort').value = '0';
+    document.getElementById('p-active').checked = true;
+  }
+  document.getElementById('test-result-area').innerHTML = '';
+}
+
+function closeProviderDialog() {
+  document.getElementById('provider-dialog').style.display = 'none';
+}
+
+async function editProvider(id) {
+  try {
+    const p = await AI.get(`/providers/${id}`);
+    openProviderDialog(p);
+  } catch(e) { toast(e.message, 'error'); }
+}
+
+async function saveProvider(e) {
+  e.preventDefault();
+  const id = document.getElementById('p-id').value;
+  const body = {
+    name: document.getElementById('p-name').value.trim(),
+    provider_type: document.getElementById('p-type').value,
+    base_url: document.getElementById('p-base-url').value.trim() || null,
+    description: document.getElementById('p-desc').value.trim() || null,
+    sort_order: parseInt(document.getElementById('p-sort').value) || 0,
+    is_active: document.getElementById('p-active').checked,
+    api_key: null,  // explicitly set to null by default
+  };
+  const keyVal = document.getElementById('p-api-key').value;
+  if (keyVal !== '') {
+    body.api_key = keyVal === ' ' ? '' : keyVal;  // space = clear
+  }
+  try {
+    if (id) {
+      await AI.put(`/providers/${id}`, body);
+      toast('供应商已更新');
+    } else {
+      await AI.post('/providers', body);
+      toast('供应商已创建');
+    }
+    closeProviderDialog();
+    loadProviders();
+  } catch(e) { toast(e.message, 'error'); }
+}
+
+async function testProvider(id) {
+  try {
+    const result = await AI.post(`/providers/${id}/test`);
+    const area = document.getElementById('test-result-area');
+    const cls = result.ok ? 'ok' : 'fail';
+    const icon = result.ok ? '✅' : '❌';
+    let modelsHtml = '';
+    if (result.models_available && result.models_available.length) {
+      modelsHtml = '<div style="margin-top:8px;font-size:11px;"><b>可用模型:</b> ' +
+        result.models_available.map(m => escapeHtml(m.id || m)).join(', ') + '</div>';
+    }
+    area.innerHTML = `<div class="test-result ${cls}">${icon} ${escapeHtml(result.message||result.error)}${modelsHtml}</div>`;
+  } catch(e) { toast(e.message, 'error'); }
+}
+
+async function deleteProvider(id) {
+  if (!confirm('确定要删除此供应商及其所有模型吗？此操作不可撤销。')) return;
+  try {
+    await AI.del(`/providers/${id}`);
+    toast('供应商已删除');
+    loadProviders();
+  } catch(e) { toast(e.message, 'error'); }
+}
+
+async function seedData() {
+  try {
+    const result = await AI.post('/seed');
+    toast(result.message);
+    loadProviders();
+  } catch(e) { toast(e.message, 'error'); }
+}
+
+// ════════════════════════════════════════════════════════════════════════
+// Models
+// ════════════════════════════════════════════════════════════════════════
+
+let _modelPage = 1, _modelTotal = 0;
+
+async function loadProviderSelect() {
+  try {
+    const data = await AI.get('/providers', { is_active: true, page_size: 200 });
+    const sel = document.getElementById('model-provider-filter');
+    sel.innerHTML = '<option value="">全部供应商</option>' +
+      data.items.map(p => `<option value="${p.id}">${escapeHtml(p.name)} (${escapeHtml(p.provider_type)})</option>`).join('');
+  } catch(e) { /* silent */ }
+}
+
+async function loadModels(page = 1) {
+  _modelPage = page;
+  const tbody = document.getElementById('model-table-body');
+  try {
+    const params = { page, page_size: 50 };
+    const pid = document.getElementById('model-provider-filter').value;
+    if (pid) params.provider_id = pid;
+    const mt = document.getElementById('model-type-filter').value;
+    if (mt) params.model_type = mt;
+
+    const data = await AI.get('/models', params);
+    _modelTotal = data.total;
+    if (!data.items.length) {
+      tbody.innerHTML = '<tr><td colspan="8"><div class="empty-state"><div class="icon">🧩</div><p>暂无模型</p></div></td></tr>';
+    } else {
+      tbody.innerHTML = data.items.map(m => `<tr>
+        <td><code style="font-size:12px;">${escapeHtml(m.model_id)}</code></td>
+        <td>${escapeHtml(m.display_name || '—')}</td>
+        <td><span style="font-size:11px;color:var(--text-muted);">${escapeHtml(m.provider_name)}</span></td>
+        <td><span class="badge" style="background:rgba(124,92,255,.12);color:var(--accent);padding:2px 8px;border-radius:4px;font-size:11px;">${escapeHtml(m.model_type)}</span></td>
+        <td style="font-size:11px;">${m.max_input_tokens ? (m.max_input_tokens/1000).toFixed(0)+'k' : '—'} / ${m.max_output_tokens ? (m.max_output_tokens/1000).toFixed(0)+'k' : '—'}</td>
+        <td style="font-size:11px;">
+          ${m.supports_vision ? '👁 ' : ''}${m.supports_tools ? '🔧 ' : ''}${m.supports_streaming ? '📡' : ''}
+        </td>
+        <td>${m.is_active ? '<span style="color:var(--green);">●</span>' : '<span style="color:var(--text-muted);">○</span>'}</td>
+        <td>
+          <button class="btn" onclick="editModel(${m.id})" style="font-size:10px;padding:4px 8px;">✏️</button>
+          <button class="btn" onclick="deleteModel(${m.id})" style="font-size:10px;padding:4px 8px;color:var(--red);">🗑</button>
+        </td>
+      </tr>`).join('');
+    }
+    const pages = Math.ceil(_modelTotal / 50);
+    document.getElementById('model-pagination').innerHTML = pages > 1
+      ? `第 ${page} / ${pages} 页 · 共 ${_modelTotal} 个模型 ` + (page > 1 ? `<a href="#" onclick="loadModels(${page-1});return false;">← 上一页</a>` : '') + (page < pages ? ` <a href="#" onclick="loadModels(${page+1});return false;">下一页 →</a>` : '')
+      : `共 ${_modelTotal} 个模型`;
+  } catch(e) {
+    tbody.innerHTML = `<tr><td colspan="8"><div class="empty-state"><p style="color:var(--red);">${escapeHtml(e.message)}</p></div></td></tr>`;
+  }
+}
+
+async function openModelDialog(editData = null) {
+  // Fill provider select
+  try {
+    const data = await AI.get('/providers', { is_active: true, page_size: 200 });
+    const sel = document.getElementById('m-provider-id');
+    sel.innerHTML = data.items.map(p => `<option value="${p.id}">${escapeHtml(p.name)} (${escapeHtml(p.provider_type)})</option>`).join('');
+  } catch(e) { /* silent */ }
+
+  document.getElementById('model-dialog').style.display = '';
+  if (editData) {
+    document.getElementById('model-dialog-title').textContent = '编辑模型';
+    document.getElementById('m-id').value = editData.id;
+    document.getElementById('m-provider-id').value = editData.provider_id;
+    document.getElementById('m-model-id').value = editData.model_id;
+    document.getElementById('m-display-name').value = editData.display_name || '';
+    document.getElementById('m-type').value = editData.model_type;
+    document.getElementById('m-max-in').value = editData.max_input_tokens || '';
+    document.getElementById('m-max-out').value = editData.max_output_tokens || '';
+    document.getElementById('m-price-in').value = editData.pricing_input_per_1k ?? '';
+    document.getElementById('m-price-out').value = editData.pricing_output_per_1k ?? '';
+    document.getElementById('m-sort').value = editData.sort_order || 0;
+    document.getElementById('m-vision').checked = editData.supports_vision;
+    document.getElementById('m-tools').checked = editData.supports_tools;
+    document.getElementById('m-stream').checked = editData.supports_streaming;
+    document.getElementById('m-active').checked = editData.is_active;
+  } else {
+    document.getElementById('model-dialog-title').textContent = '新增模型';
+    document.getElementById('m-id').value = '';
+    document.getElementById('m-model-id').value = '';
+    document.getElementById('m-display-name').value = '';
+    document.getElementById('m-type').value = 'llm';
+    document.getElementById('m-max-in').value = '';
+    document.getElementById('m-max-out').value = '';
+    document.getElementById('m-price-in').value = '';
+    document.getElementById('m-price-out').value = '';
+    document.getElementById('m-sort').value = '0';
+    document.getElementById('m-vision').checked = false;
+    document.getElementById('m-tools').checked = true;
+    document.getElementById('m-stream').checked = true;
+    document.getElementById('m-active').checked = true;
+  }
+}
+
+function closeModelDialog() {
+  document.getElementById('model-dialog').style.display = 'none';
+}
+
+async function editModel(id) {
+  try {
+    const m = await AI.get(`/models/${id}`);
+    openModelDialog(m);
+  } catch(e) { toast(e.message, 'error'); }
+}
+
+async function saveModel(e) {
+  e.preventDefault();
+  const id = document.getElementById('m-id').value;
+  const providerId = parseInt(document.getElementById('m-provider-id').value);
+  const body = {
+    model_id: document.getElementById('m-model-id').value.trim(),
+    display_name: document.getElementById('m-display-name').value.trim() || null,
+    model_type: document.getElementById('m-type').value,
+    max_input_tokens: parseInt(document.getElementById('m-max-in').value) || null,
+    max_output_tokens: parseInt(document.getElementById('m-max-out').value) || null,
+    supports_vision: document.getElementById('m-vision').checked,
+    supports_tools: document.getElementById('m-tools').checked,
+    supports_streaming: document.getElementById('m-stream').checked,
+    pricing_input_per_1k: parseFloat(document.getElementById('m-price-in').value) || null,
+    pricing_output_per_1k: parseFloat(document.getElementById('m-price-out').value) || null,
+    sort_order: parseInt(document.getElementById('m-sort').value) || 0,
+    is_active: document.getElementById('m-active').checked,
+  };
+  try {
+    if (id) {
+      await AI.put(`/models/${id}`, body);
+      toast('模型已更新');
+    } else {
+      await AI.post(`/providers/${providerId}/models`, body);
+      toast('模型已创建');
+    }
+    closeModelDialog();
+    loadModels(_modelPage);
+  } catch(e) { toast(e.message, 'error'); }
+}
+
+async function deleteModel(id) {
+  if (!confirm('确定要删除此模型吗？')) return;
+  try {
+    await AI.del(`/models/${id}`);
+    toast('模型已删除');
+    loadModels(_modelPage);
+  } catch(e) { toast(e.message, 'error'); }
+}
+
+// ════════════════════════════════════════════════════════════════════════
+// Health
+// ════════════════════════════════════════════════════════════════════════
+async function loadHealth() {
+  const div = document.getElementById('ai-health-content');
+  try {
+    const data = await AI.get('/health');
+    div.innerHTML = `<div class="stat-grid" style="margin-top:0;">
+      <div class="stat-card">
+        <div class="stat-label">供应商总数</div>
+        <div class="stat-value">${data.total_providers}</div>
+        <div class="stat-sub">活跃: ${data.active_providers}</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-label">模型总数</div>
+        <div class="stat-value">${data.total_models}</div>
+        <div class="stat-sub">活跃: ${data.active_models}</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-label">AI Hub 状态</div>
+        <div class="stat-value" style="color:${data.status==='ok'?'var(--green)':'var(--yellow)'}">${data.status === 'ok' ? '✓ 正常' : '△ 异常'}</div>
+        <div class="stat-sub">数据库直连</div>
+      </div>
+    </div>`;
+  } catch(e) {
+    div.innerHTML = `<div class="empty-state"><p style="color:var(--red);">${escapeHtml(e.message)}</p></div>`;
+  }
+}
+
+// ════════════════════════════════════════════════════════════════════════
+// Init — load first tab
+// ════════════════════════════════════════════════════════════════════════
+loadProviders();
+loadProviderSelect(); // pre-warm the model filter dropdown
+</script>
+{% endblock %}

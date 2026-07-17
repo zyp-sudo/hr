@@ -1,4 +1,4 @@
-from sqlalchemy import BigInteger, Index, String
+from sqlalchemy import BigInteger, Boolean, Index, String
 from sqlalchemy.dialects.mysql import JSON
 from sqlalchemy.orm import Mapped, mapped_column, relationship
 
@@ -23,6 +23,21 @@ class User(TimestampMixin, Base):
     target_city: Mapped[str | None] = mapped_column(String(100), index=True, comment="求职意向城市")
     expected_salary_min: Mapped[int | None] = mapped_column(comment="期望最低薪资")
     expected_salary_max: Mapped[int | None] = mapped_column(comment="期望最高薪资")
+
+    # ---- Auth fields --------------------------------------------------------
+    password_hash: Mapped[str] = mapped_column(
+        String(255), nullable=False, default="", comment="bcrypt 密码哈希"
+    )
+    is_active: Mapped[bool] = mapped_column(
+        Boolean, nullable=False, default=True, comment="账户是否激活"
+    )
+    role: Mapped[str] = mapped_column(
+        String(20), nullable=False, default="user", comment="角色: admin / user"
+    )
+    session_id: Mapped[str | None] = mapped_column(
+        String(64), nullable=True, default=None,
+        comment="当前活跃会话ID，用于单点登录强制——新登录会覆盖旧会话"
+    )
 
     resumes = relationship("Resume", back_populates="user", cascade="all, delete-orphan")
     skill_links = relationship("UserSkill", back_populates="user", cascade="all, delete-orphan")

@@ -1,10 +1,10 @@
 import { Fragment, useCallback, useEffect, useRef, useState } from "react";
 import type { PointerEvent as ReactPointerEvent } from "react";
-import { Activity, AlertTriangle, ArrowLeft, ArrowUpRight, BriefcaseBusiness, CalendarDays, CheckCircle2, CircleDot, Clock3, GitCompareArrows, Heart, Info, Mail, MapPin, Plus, RefreshCw, Route, Search, Sparkles, Trash2, TrendingUp, UserRound, X } from "lucide-react";
+import { Activity, AlertTriangle, ArrowLeft, ArrowUpRight, BriefcaseBusiness, CalendarDays, CheckCircle2, CircleDot, Clock3, GitCompareArrows, Heart, Info, Lock, Mail, MapPin, Plus, RefreshCw, Route, Search, Sparkles, Trash2, TrendingUp, UserRound, X } from "lucide-react";
 
 export type PageKey="overview"|"unified"|"graph"|"compare"|"evolution"|"jobs"|"favorites"|"about";
 type Json=Record<string,any>;
-type JobRow={id:string;name:string;company?:string;city?:string;description?:string;requirement?:string;sourceUrl?:string;type?:string;skills?:string[];salary?:string;score?:number;updatedAt?:string;source?:string};
+type JobRow={id:string;name:string;company?:string;city?:string;description?:string;summary?:string;requirement?:string;sourceUrl?:string;type?:string;skills?:string[];salary?:string;score?:number;updatedAt?:string;source?:string};
 type AssessmentRow={id:string;candidateName?:string;jobTitle?:string;score:number;matchLevel:string;createdAt:string;skillGaps?:string[];highlights?:string[]};
 type CandidateRow={id:string;name:string;email?:string;phone?:string;stage:string;createdAt:string;skills?:string[];experienceYears?:number;education?:string;projectScore?:number;collaborationScore?:number;profileText?:string};
 type InterviewRow={id:string;candidateId:string;candidateName:string;jobTitle:string;scheduledAt:string;interviewer:string;status:string};
@@ -28,11 +28,233 @@ const fallbackJobs:JobRow[]=[
 const timeText=(date=new Date())=>new Intl.DateTimeFormat("zh-CN",{month:"2-digit",day:"2-digit",hour:"2-digit",minute:"2-digit",hour12:false}).format(date).replace("/","-");
 
 async function json(url:string,options?:RequestInit){const response=await fetch(url,options);const data=await response.json();if(!response.ok)throw new Error(data.error||data.detail||"数据加载失败");return data}
-function normalizeJobs(data:any):JobRow[]{const rows=Array.isArray(data)?data:data?.jobs||data?.items||data?.data||[];return rows.map((x:any,i:number)=>{const salary=x.salary||x.salary_text||(x.salary_min||x.salary_max?[x.salary_min?`${x.salary_min}`:"",x.salary_max?`${x.salary_max}`:""].filter(Boolean).join("-"):"面议");return {id:String(x.id||x.postId||i),name:x.name||x.title||`招聘岗位 ${i+1}`,company:x.company||x.company_name||x.department||"招聘团队",city:x.city||"不限",type:x.type||x.industry||x.source||"社会招聘",salary,skills:x.skills||x.requirements||[],description:x.description||x.responsibility||x.summary||"暂无岗位说明",requirement:typeof x.requirement==="string"?x.requirement:"",sourceUrl:x.sourceUrl||x.source_url||"",updatedAt:x.updatedAt||x.published_at||x.collected_at,score:Number(x.score||x.matchRate||Math.max(70,92-i%8*3))}})}
+function normalizeJobs(data:any):JobRow[]{const rows=Array.isArray(data)?data:data?.jobs||data?.items||data?.data||[];return rows.map((x:any,i:number)=>{const salary=x.salary||x.salary_text||(x.salary_min||x.salary_max?[x.salary_min?`${x.salary_min}`:"",x.salary_max?`${x.salary_max}`:""].filter(Boolean).join("-"):"面议");return {id:String(x.id||x.postId||i),name:x.name||x.title||`招聘岗位 ${i+1}`,company:x.company||x.company_name||x.department||"招聘团队",city:x.city||"不限",type:x.type||x.industry||x.source||"社会招聘",salary,skills:x.skills||x.requirements||[],summary:x.summary||"",description:x.description||x.responsibility||x.summary||"暂无岗位说明",requirement:typeof x.requirement==="string"?x.requirement:"",sourceUrl:x.sourceUrl||x.source_url||"",updatedAt:x.updatedAt||x.published_at||x.collected_at,score:Number(x.score||x.matchRate||Math.max(70,92-i%8*3))}})}
 
-export default function PlatformPage({page,onNavigate,preferredCandidateName,onOpenGraph}:{page:PageKey;onNavigate?:(page:PageKey|"matching")=>void;preferredCandidateName?:string;onOpenGraph?:(name:string)=>void}){
+/* ==========================================================================
+   HOMEPAGE — Premium Executive Dashboard
+   ========================================================================== */
+function HomePage({onNavigate,isLoggedIn}:{onNavigate?:(page:PageKey|"matching")=>void;isLoggedIn:boolean}){
+  const [remoteJobs,setRemoteJobs]=useState<JobRow[]>([]);const [localJobs,setLocalJobs]=useState<JobRow[]>([]);const [total,setTotal]=useState(0);const [candidates,setCandidates]=useState<CandidateRow[]>([]);const [interviews,setInterviews]=useState<InterviewRow[]>([]);const [assessments,setAssessments]=useState<AssessmentRow[]>([]);const [updated,setUpdated]=useState(timeText());const [adding,setAdding]=useState(false);const [selected,setSelected]=useState<JobRow|null>(null);
+  /* ── Demo state (unauthenticated) ── */
+  const [demoJobs,setDemoJobs]=useState<JobRow[]>([]);const [demoLoaded,setDemoLoaded]=useState(false);
+  const load=async()=>{try{const [jobResult,hrResult,assessResult]=await Promise.allSettled([json("/api/platform/storage/api/search/jobs?page=1&page_size=6"),json("/api/hr/state"),json("/api/assessments")]);const hr=hrResult.status==="fulfilled"?hrResult.value:{candidates:[],interviews:[],jobs:[]};if(jobResult.status==="fulfilled"){setRemoteJobs(normalizeJobs(jobResult.value));setTotal(Number(jobResult.value.total||0))}setLocalJobs((hr.jobs||[]).map((x:any)=>({...x,name:x.name||x.title})));setCandidates(hr.candidates||[]);setInterviews(hr.interviews||[]);if(assessResult.status==="fulfilled")setAssessments(assessResult.value.items||[]);setUpdated(timeText())}catch{}};
+  /* ── Demo data loader — public, no auth ── */
+  const loadDemo=async()=>{try{const res=await fetch("/api/platform/storage",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({url:"/api/home/demo-jobs",method:"GET"})});const data=await res.json();setDemoJobs(normalizeJobs(data));setDemoLoaded(true)}catch{setDemoLoaded(true)}};
+  useEffect(()=>{if(isLoggedIn){load()}else{loadDemo()}},[isLoggedIn]);
+  const add=async(job:JobRow)=>{const saved=await json("/api/hr/jobs",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify(job)});setLocalJobs(x=>[{...saved,name:saved.name||saved.title},...x]);setAdding(false);setUpdated(timeText());setSelected({...saved,name:saved.name||saved.title})};
+  const deleteLocalJob=async(jobId:string)=>{await json("/api/hr/jobs/"+jobId,{method:"DELETE"});setLocalJobs(x=>x.filter(j=>j.id!==jobId));setSelected(null);setUpdated(timeText())};
+  const jobs=[...localJobs,...remoteJobs];const topJobs=isLoggedIn?jobs.slice(0,3):demoJobs.slice(0,6);
+  const pendingInterviews=interviews.filter(x=>x.status==="待进行").length;
+  const average=assessments.length?Math.round(assessments.reduce((sum,x)=>sum+x.score,0)/assessments.length):null;
+  const totalJobs=total+localJobs.length;
+  const gradients=["linear-gradient(135deg,#1a1040,#0d1a30)","linear-gradient(135deg,#0d1a30,#101a28)","linear-gradient(135deg,#1a1028,#0d1530)","linear-gradient(135deg,#0d1a30,#101a28)","linear-gradient(135deg,#1a1040,#101a28)","linear-gradient(135deg,#1a1028,#0d1a30)"];
+  const badges=[{text:"高优先级",bg:"rgba(0,221,235,.12)",color:"#9bf2e9"},{text:"热招中",bg:"rgba(175,64,255,.12)",color:"#cabeff"},{text:"核心岗",bg:"rgba(127,213,205,.12)",color:"#9cd0d2"},{text:"急聘",bg:"rgba(255,175,64,.12)",color:"#ffaf40"},{text:"技术岗",bg:"rgba(64,200,255,.12)",color:"#40c8ff"},{text:"管理岗",bg:"rgba(255,128,200,.12)",color:"#ff80c8"}];
+  /* ── UNAUTHENTICATED: Demo homepage ── */
+  if(!isLoggedIn){
+    return <div className="platform-main" style={{padding:0,margin:0,maxWidth:"100%"}}>
+      {/* Hero — simplified */}
+      <section className="home-hero" style={{minHeight:300,paddingBottom:48}}>
+        <p className="home-hero__eyebrow">TalentMatch Preview</p>
+        <h1 className="home-hero__title">{'人岗匹配智能评估系统'}</h1>
+        <p className="home-hero__desc">{'登录后可查看完整岗位数据、启动人才评估、使用知识图谱与招聘趋势等全部功能。以下展示 10 条精选 Demo 数据。'}</p>
+        <div className="home-hero__actions">
+          <button className="home-hero__primary" onClick={()=>window.dispatchEvent(new CustomEvent("auth:open-login"))}><Lock/> {'登录查看全部数据'}</button>
+          <span style={{fontSize:12,color:"rgba(196,199,200,.4)",marginLeft:12}}>{'共 10 条预览数据 · 来自 MySQL'}</span>
+        </div>
+      </section>
+      <div style={{maxWidth:1280,margin:"0 auto",padding:"0 32px 32px"}}>
+        {/* Stats — demo */}
+        <div className="home-stats">
+          <div className="home-stat"><p className="home-stat__label">{'Demo 岗位'} <BriefcaseBusiness/></p><h3 className="home-stat__value">{demoJobs.length}</h3><p className="home-stat__sub">{'MySQL 演示数据'}</p></div>
+          <div className="home-stat"><p className="home-stat__label">{'覆盖城市'} <MapPin/></p><h3 className="home-stat__value mint">{new Set(demoJobs.map(j=>j.city)).size}</h3><p className="home-stat__sub">{'北京·上海·深圳·杭州·广州'}</p></div>
+          <div className="home-stat"><p className="home-stat__label">{'技能标签'} <Sparkles/></p><h3 className="home-stat__value">{new Set(demoJobs.flatMap(j=>j.skills||[])).size}+</h3><p className="home-stat__sub">{'Java·Go·Python·React·K8s…'}</p></div>
+          <div className="home-stat"><p className="home-stat__label">{'登录解锁'} <Lock/></p><h3 className="home-stat__value mint">100%</h3><p className="home-stat__sub">{'全部功能开放使用'}</p></div>
+        </div>
+        {/* Demo job cards — all 10 in two rows */}
+        <section className="home-section">
+          <div className="home-section__head">
+            <div><p className="home-section__head-label">Demo Preview</p><h2 className="home-section__head-title">{'精选 Demo 岗位（10 条）'}</h2></div>
+            <span style={{fontSize:12,color:"rgba(196,199,200,.35)"}}>{'数据来源: MySQL demo_homepage_jobs'}</span>
+          </div>
+          <div className="home-position-grid" style={{gridTemplateColumns:"repeat(auto-fill, minmax(340px, 1fr))"}}>
+            {demoLoaded&&demoJobs.length===0?<div className="home-position-card" style={{gridColumn:"1/-1",padding:60,textAlign:"center",cursor:"default"}}><p style={{color:"rgba(196,199,200,.4)"}}>{'Demo 数据加载失败，请确认后端服务已启动'}</p></div>:
+            demoJobs.map((job,i)=>{
+              const badge=badges[i%badges.length];
+              // Pick a deterministic gradient
+              const g=gradients[i%gradients.length];
+              return <button key={job.id} className="home-position-card" onClick={()=>setSelected(job)} style={{cursor:"default"}}>
+                <div className="home-position-card__img" style={{background:g}}>
+                  <div className="home-position-card__img-overlay"/>
+                  <span className="home-position-card__img-badge" style={{background:badge.bg,color:badge.color}}>{badge.text}</span>
+                </div>
+                <div className="home-position-card__body">
+                  <div className="home-position-card__score-row">
+                    <h4 className="home-position-card__name">{job.name}</h4>
+                    <span className="home-position-card__score">{job.score||85}{'分'}</span>
+                  </div>
+                  <p className="home-position-card__desc" style={{WebkitLineClamp:2,display:"-webkit-box",WebkitBoxOrient:"vertical",overflow:"hidden"}}>{job.description||job.summary}</p>
+                  <div className="skill-tags" style={{marginBottom:14}}>{(job.skills||[]).slice(0,4).map((s:string)=><i key={s}>{s}</i>)}</div>
+                  <div className="home-position-card__footer">
+                    <span style={{fontSize:12,color:"rgba(196,199,200,.5)"}}><MapPin style={{width:14,height:14,marginRight:4,verticalAlign:"middle"}}/>{job.city||'不限'} · {job.company}</span>
+                  </div>
+                </div>
+              </button>;
+            })}
+          </div>
+        </section>
+        {/* Login CTA */}
+        <section className="home-section" style={{marginBottom:20}}>
+          <div className="home-insights">
+            <div className="home-quote-card">
+              <div className="home-quote-card__icon"><Lock/></div>
+              <p className="home-quote-card__text">{'登录后即可访问所有功能：岗位管理、人岗匹配、人才图谱、评估结果、招聘趋势等。'}</p>
+              <button className="home-insight-card__action" style={{marginTop:16}} onClick={()=>window.dispatchEvent(new CustomEvent("auth:open-login"))}>{'立即登录'} <ArrowUpRight style={{width:14,height:14}}/></button>
+            </div>
+            <div className="home-insight-card">
+              <div className="home-insight-card__head">
+                <div className="home-insight-card__head-icon"><Activity/></div>
+                <h3 className="home-insight-card__head-title">{'平台能力预览'}</h3>
+              </div>
+              <ul className="home-insight-card__list">
+                <li className="home-insight-card__item"><div className="home-insight-card__dot"/><div className="home-insight-card__item-content"><h4>{'岗位管理'}</h4><p>{'管理招聘岗位、核心要求与候选人匹配进度。'}</p></div></li>
+                <li className="home-insight-card__item"><div className="home-insight-card__dot"/><div className="home-insight-card__item-content"><h4>{'人岗匹配'}</h4><p>{'上传简历，AI 智能评估候选人与岗位的契合度。'}</p></div></li>
+                <li className="home-insight-card__item"><div className="home-insight-card__dot"/><div className="home-insight-card__item-content"><h4>{'人才图谱'}</h4><p>{'可视化候选人的能力、缺口与岗位适配关系。'}</p></div></li>
+                <li className="home-insight-card__item"><div className="home-insight-card__dot"/><div className="home-insight-card__item-content"><h4>{'招聘趋势'}</h4><p>{'按时间查看岗位热度及关键技能的演变。'}</p></div></li>
+              </ul>
+            </div>
+          </div>
+        </section>
+      </div>
+      {selected&&<JobDialog job={selected} close={()=>setSelected(null)} isReadonly/>}
+    </div>;
+  }
+
+  /* ── AUTHENTICATED: Full dashboard ── */
+  return <div className="platform-main" style={{padding:0,margin:0,maxWidth:"100%"}}>
+    {/* Hero Section */}
+    <section className="home-hero">
+      <p className="home-hero__eyebrow">Executive Dashboard</p>
+      <h1 className="home-hero__title">{'人岗匹配智能评估系统'}</h1>
+      <p className="home-hero__desc">{'精准管理组织人力资本，实时监控招聘流程与精英候选人匹配评分。集中查看在招岗位、候选人评估与近期招聘进展，驱动数据化招聘决策。'}</p>
+      <div className="home-hero__actions">
+        <button className="home-hero__primary" onClick={()=>setAdding(true)}><Plus/> {'发布新岗位'}</button>
+        <button className="home-hero__secondary" onClick={()=>onNavigate?.("evolution")}><TrendingUp/> {'查看招聘趋势'}</button>
+      </div>
+    </section>
+    <div style={{maxWidth:1280,margin:"0 auto",padding:"0 32px 32px"}}>
+      {/* Stats Grid */}
+      <div className="home-stats">
+        <button className="home-stat" onClick={()=>onNavigate?.("jobs")}>
+          <p className="home-stat__label">{'在招岗位'} <BriefcaseBusiness/></p>
+          <h3 className="home-stat__value">{totalJobs.toLocaleString()}</h3>
+          <div className="home-stat__bar"><div className="home-stat__bar-fill" style={{width:"67%"}}/></div>
+        </button>
+        <button className="home-stat" onClick={()=>onNavigate?.("favorites")}>
+          <p className="home-stat__label">{'候选人池'} <UserRound/></p>
+          <h3 className="home-stat__value mint">{candidates.length}</h3>
+          <p className="home-stat__sub">{'关注人才 · 持续跟踪'}</p>
+        </button>
+        <button className="home-stat" onClick={()=>onNavigate?.("overview")}>
+          <p className="home-stat__label">{'待安排面试'} <CalendarDays/></p>
+          <h3 className="home-stat__value">{pendingInterviews}</h3>
+          <p className="home-stat__sub">{pendingInterviews?'需尽快确认面试时间':'暂无待安排面试'}</p>
+        </button>
+        <button className="home-stat" onClick={()=>onNavigate?.("unified")}>
+          <p className="home-stat__label">{'平均匹配度'} <Sparkles/></p>
+          <h3 className="home-stat__value mint">{average!==null?average+"%":"--"}</h3>
+          <div className="home-stat__bar"><div className="home-stat__bar-fill" style={{width:average!==null?average+"%":"0%"}}/></div>
+        </button>
+      </div>
+      {/* Key Positions */}
+      <section className="home-section">
+        <div className="home-section__head">
+          <div>
+            <p className="home-section__head-label">Priority Pipeline</p>
+            <h2 className="home-section__head-title">{'重点招聘岗位'}</h2>
+          </div>
+          <button className="home-section__head-link" onClick={()=>onNavigate?.("jobs")}>{'查看全部岗位'} <ArrowUpRight/></button>
+        </div>
+        <div className="home-position-grid">
+          {topJobs.length?topJobs.map((job,i)=>{
+            const badge=badges[i]||badges[0];
+            return <button key={job.id} className="home-position-card" onClick={()=>{setSelected(job)}}>
+              <div className="home-position-card__img" style={{background:gradients[i]||gradients[0]}}>
+                <div className="home-position-card__img-overlay"/>
+                <span className="home-position-card__img-badge" style={{background:badge.bg,color:badge.color}}>{badge.text}</span>
+              </div>
+              <div className="home-position-card__body">
+                <div className="home-position-card__score-row">
+                  <h4 className="home-position-card__name">{job.name}</h4>
+                  <span className="home-position-card__score">{(job.score||85)}{'分'}</span>
+                </div>
+                <p className="home-position-card__desc">{job.description}</p>
+                <div className="skill-tags" style={{marginBottom:14}}>{(job.skills||[]).slice(0,3).map((s:string)=><i key={s}>{s}</i>)}</div>
+                <div className="home-position-card__footer">
+                  <span style={{fontSize:12,color:"rgba(196,199,200,.5)"}}><MapPin style={{width:14,height:14,marginRight:4,verticalAlign:"middle"}}/>{job.city||'不限'}</span>
+                  <span className="home-position-card__footer-btn">{'查看详情'} <ArrowUpRight style={{width:14,height:14}}/></span>
+                </div>
+              </div>
+            </button>;
+          }):<div className="home-position-card" style={{gridColumn:"1/-1",padding:60,textAlign:"center",cursor:"default"}}><p style={{color:"rgba(196,199,200,.4)"}}>{'正在加载岗位数据...'}</p></div>}
+        </div>
+      </section>
+      {/* Insights Bento */}
+      <section className="home-section" style={{marginBottom:20}}>
+        <div className="home-insights">
+          <div className="home-quote-card">
+            <div className="home-quote-card__icon"><Sparkles/></div>
+            <p className="home-quote-card__text">{'“优秀的招聘者不仅仅是填补岗位空缺；他们在构建组织的未来蓝图。”'}</p>
+            <p className="home-quote-card__author">— TalentMatch {'智能评估团队'}</p>
+          </div>
+          <div className="home-insight-card">
+            <div className="home-insight-card__head">
+              <div className="home-insight-card__head-icon"><Activity/></div>
+              <h3 className="home-insight-card__head-title">{'智能洞察'}</h3>
+            </div>
+            <ul className="home-insight-card__list">
+              <li className="home-insight-card__item">
+                <div className="home-insight-card__dot"/>
+                <div className="home-insight-card__item-content">
+                  <h4>{'实时招聘标的'}</h4>
+                  <p>{'当前系统共有'} <b style={{color:"#9bf2e9"}}>{totalJobs.toLocaleString()}</b> {'个在招岗位，覆盖多个行业领域。'}</p>
+                </div>
+              </li>
+              <li className="home-insight-card__item">
+                <div className="home-insight-card__dot"/>
+                <div className="home-insight-card__item-content">
+                  <h4>{'人才评估质量'}</h4>
+                  <p>{'已完成'} <b style={{color:"#9bf2e9"}}>{assessments.length}</b> {'次智能评估，平均匹配度为'} <b style={{color:"#9bf2e9"}}>{average!==null?average+"%":"--"}</b>{'。'}</p>
+                </div>
+              </li>
+              <li className="home-insight-card__item">
+                <div className="home-insight-card__dot"/>
+                <div className="home-insight-card__item-content">
+                  <h4>{'招聘趋势洞察'}</h4>
+                  <p>{'按时间区间查看岗位热度及关键技能的演变，辅助战略规划。'}</p>
+                </div>
+              </li>
+            </ul>
+            <button className="home-insight-card__action" onClick={()=>onNavigate?.("evolution")}><TrendingUp/> {'探索更多洞察'}</button>
+          </div>
+        </div>
+      </section>
+      {/* Quick Actions */}
+      <section className="workspace-shortcuts">
+        <button className="spring-hover" onClick={()=>setAdding(true)}><Plus/><span><b>{'发布招聘岗位'}</b><small>{'创建新的招聘需求'}</small></span></button>
+        <button className="spring-hover" onClick={()=>onNavigate?.("matching")}><Sparkles/><span><b>{'开始人才评估'}</b><small>{'上传简历并进行匹配'}</small></span></button>
+        <button className="spring-hover" onClick={()=>onNavigate?.("graph")}><Route/><span><b>{'人才能力图谱'}</b><small>{'可视化候选人与岗位关系'}</small></span></button>
+      </section>
+    </div>
+    {selected&&<JobDialog job={selected} close={()=>setSelected(null)} onDelete={deleteLocalJob}/>}
+    {adding&&<AddJobDialog close={()=>setAdding(false)} save={add}/>}
+  </div>;
+}
+
+
+export default function PlatformPage({page,onNavigate,preferredCandidateName,onOpenGraph,isLoggedIn}:{page:PageKey;onNavigate?:(page:PageKey|"matching")=>void;preferredCandidateName?:string;onOpenGraph?:(name:string)=>void;isLoggedIn:boolean}){
   const m=meta[page];
-  return <main className="platform-main"><div className="page-heading" key={page}><div><span className="slide-in-left" style={{"--i":0} as any}>{m.eyebrow}</span><h2 className="slide-in-left" style={{"--i":1} as any}>{m.title}</h2><p className="slide-in-left" style={{"--i":2} as any}>{m.desc}</p></div></div><Fragment key={page}>{page==="graph"?<TalentGraphPage onCompare={()=>onNavigate?.("compare")} preferredCandidateName={preferredCandidateName}/>:page==="compare"?<CompareRoute onBack={()=>onNavigate?.("graph")}/>:page==="evolution"?<TrendInsightsPage/>:page==="unified"?<AssessmentPage onOpenGraph={onOpenGraph}/>:page==="favorites"?<FavoritesPage onOpenGraph={onOpenGraph}/>:page==="about"?<AboutPage onBack={()=>onNavigate?.("overview")}/>:<><JobsPage workspace={page==="overview"} onNavigate={onNavigate}/>{page==="overview"&&<ProjectIntro onOpen={()=>onNavigate?.("about")}/>}</>}</Fragment></main>;
+  if(page==="overview")return <HomePage onNavigate={onNavigate} isLoggedIn={isLoggedIn}/>;
+  return <main className="platform-main"><div className="page-heading" key={page}><div><span className="slide-in-left" style={{"--i":0} as any}>{m.eyebrow}</span><h2 className="slide-in-left" style={{"--i":1} as any}>{m.title}</h2><p className="slide-in-left" style={{"--i":2} as any}>{m.desc}</p></div></div><Fragment key={page}>{page==="graph"?<TalentGraphPage onCompare={()=>onNavigate?.("compare")} preferredCandidateName={preferredCandidateName}/>:page==="compare"?<CompareRoute onBack={()=>onNavigate?.("graph")}/>:page==="evolution"?<TrendInsightsPage/>:page==="unified"?<AssessmentPage onOpenGraph={onOpenGraph}/>:page==="favorites"?<FavoritesPage onOpenGraph={onOpenGraph}/>:page==="about"?<AboutPage onBack={()=>onNavigate?.("overview")}/>:<JobsPage workspace={false} onNavigate={onNavigate}/>}</Fragment></main>;
 }
 
 type GraphNode={id:string;label:string;type:"person"|"skill"|"gap"|"job";score:number;x:number;y:number;desc:string};
@@ -285,7 +507,7 @@ function JobsPage({workspace,onNavigate}:{workspace:boolean;onNavigate?:(page:Pa
     </section>{selected&&<JobDialog job={selected} close={()=>setSelected(null)} onDelete={deleteLocalJob}/>} {adding&&<AddJobDialog close={()=>setAdding(false)} save={add}/>} {candidatePanel&&<CandidateDialog candidates={candidates} close={()=>setCandidatePanel(false)} onChange={load}/>} {interviewPanel&&<InterviewDialog candidates={candidates} interviews={interviews} jobs={jobs} close={()=>setInterviewPanel(false)} onChange={load}/>}</>;
 }
 
-function JobDialog({job,close,onDelete}:{job:JobRow;close:()=>void;onDelete?:(id:string)=>void}){return <div className="modal-backdrop" onMouseDown={e=>{if(e.target===e.currentTarget)close()}}><div className="dialog job-dialog"><div className="dialog-head"><div><span>JOB DETAIL</span><h3>{job.name}</h3></div><button onClick={close}><X/></button></div><div className="job-meta"><span><BriefcaseBusiness/>{job.company}</span><span><MapPin/>{job.city}</span><span><CalendarDays/>{job.type}</span></div><section><h4>岗位职责与说明</h4><p>{job.description}</p></section>{job.requirement&&<section><h4>任职要求</h4><p>{job.requirement}</p></section>}<section><h4>核心能力要求</h4><div className="skill-tags">{(job.skills?.length?job.skills:["沟通协作","项目经验","专业能力"]).map(x=><i key={x}>{x}</i>)}</div></section><div className="dialog-summary"><span>薪资范围<b>{job.salary||"面议"}</b></span><span>岗位更新时间<b>{job.updatedAt?timeText(new Date(job.updatedAt)):"未标注"}</b></span></div>{job.source==="HR手动创建"&&onDelete&&<button className="ghost-action" style={{color:"#ff6b6b",marginBottom:12}} onClick={()=>{if(confirm("确认删除该岗位？此操作不可恢复。"))onDelete(job.id)}}><Trash2/>删除岗位</button>}{job.sourceUrl&&<a className="job-source-link" href={job.sourceUrl} target="_blank" rel="noreferrer">查看原始招聘页面 <ArrowUpRight/></a>}<button className="primary" onClick={close}>关闭详情</button></div></div>}
+function JobDialog({job,close,onDelete,isReadonly}:{job:JobRow;close:()=>void;onDelete?:(id:string)=>void;isReadonly?:boolean}){return <div className="modal-backdrop" onMouseDown={e=>{if(e.target===e.currentTarget)close()}}><div className="dialog job-dialog"><div className="dialog-head"><div><span>JOB DETAIL</span><h3>{job.name}</h3></div><button onClick={close}><X/></button></div><div className="job-meta"><span><BriefcaseBusiness/>{job.company}</span><span><MapPin/>{job.city}</span><span><CalendarDays/>{job.type}</span></div><section><h4>岗位职责与说明</h4><p>{job.description}</p></section>{job.requirement&&<section><h4>任职要求</h4><p>{job.requirement}</p></section>}<section><h4>核心能力要求</h4><div className="skill-tags">{(job.skills?.length?job.skills:["沟通协作","项目经验","专业能力"]).map(x=><i key={x}>{x}</i>)}</div></section><div className="dialog-summary"><span>薪资范围<b>{job.salary||"面议"}</b></span><span>岗位更新时间<b>{job.updatedAt?timeText(new Date(job.updatedAt)):"未标注"}</b></span></div>{!isReadonly&&job.source==="HR手动创建"&&onDelete&&<button className="ghost-action" style={{color:"#ff6b6b",marginBottom:12}} onClick={()=>{if(confirm("确认删除该岗位？此操作不可恢复。"))onDelete(job.id)}}><Trash2/>删除岗位</button>}{job.sourceUrl&&<a className="job-source-link" href={job.sourceUrl} target="_blank" rel="noreferrer">查看原始招聘页面 <ArrowUpRight/></a>}{isReadonly?<p style={{fontSize:12,color:"rgba(196,199,200,.35)",textAlign:"center",marginTop:16}}>登录后可管理此岗位</p>:<button className="primary" onClick={close}>关闭详情</button>}</div></div>}
 function AddJobDialog({close,save}:{close:()=>void;save:(j:JobRow)=>void}){const [form,setForm]=useState({name:"",company:"",city:"",description:"",skills:"",salary:""});const submit=()=>{if(!form.name.trim())return;save({id:`local-${Date.now()}`,name:form.name,company:form.company||"招聘团队",city:form.city||"不限",description:form.description||"暂无岗位说明",skills:form.skills.split(/[,，、]/).filter(Boolean),salary:form.salary||"面议",type:"社会招聘",score:85,updatedAt:new Date().toISOString()})};return <div className="modal-backdrop"><div className="dialog"><div className="dialog-head"><div><span>CREATE JOB</span><h3>新增招聘岗位</h3></div><button onClick={close}><X/></button></div>{[["岗位名称","name","例如：高级后端工程师"],["所属部门","company","例如：核心技术部"],["工作城市","city","例如：上海"],["薪资范围","salary","例如：30K-45K"],["核心技能","skills","使用逗号分隔"]].map(([label,key,placeholder])=><label className="field" key={key}><span>{label}</span><input value={(form as any)[key]} onChange={e=>setForm({...form,[key]:e.target.value})} placeholder={placeholder}/></label>)}<label className="field"><span>岗位说明</span><textarea value={form.description} onChange={e=>setForm({...form,description:e.target.value})} placeholder="填写岗位职责和候选人要求..."/></label><button className="primary" disabled={!form.name.trim()} onClick={submit}>发布岗位</button></div></div>}
 
 function CandidateDialog({candidates,close,onChange}:{candidates:CandidateRow[];close:()=>void;onChange:()=>void}){const [form,setForm]=useState({name:"",email:"",phone:""});const add=async()=>{await json("/api/hr/candidates",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify(form)});setForm({name:"",email:"",phone:""});onChange()};return <div className="modal-backdrop"><div className="dialog large-dialog"><div className="dialog-head"><div><span>CANDIDATE PIPELINE</span><h3>候选人管理</h3></div><button onClick={close}><X/></button></div><div className="inline-form"><input value={form.name} onChange={e=>setForm({...form,name:e.target.value})} placeholder="候选人姓名（可留空）"/><input value={form.phone} onChange={e=>setForm({...form,phone:e.target.value})} placeholder="手机"/><input value={form.email} onChange={e=>setForm({...form,email:e.target.value})} placeholder="邮箱"/><button onClick={add}><Plus/>添加</button></div><div className="candidate-list">{candidates.map(c=><div key={c.id}><div className="candidate-avatar">{(c.name||"匿").slice(0,1)}</div><span><b>{c.name||"匿名候选人"}</b><small>{c.phone||"未填写手机"} · {c.email||"未填写邮箱"}</small></span><em>{c.stage}</em></div>)}</div></div></div>}

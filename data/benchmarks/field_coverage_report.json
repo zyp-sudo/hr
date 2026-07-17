@@ -1,21 +1,21 @@
 {
   "dataset": "data/etl/unified_jobs.csv",
-  "records": 55110,
+  "records": 55267,
   "education": {
-    "non_null": 33849,
-    "coverage_percent": 61.42,
+    "non_null": 33891,
+    "coverage_percent": 61.32,
     "values": {
-      "硕士": 380,
-      "本科": 8453,
+      "硕士": 382,
+      "本科": 8492,
       "大专": 24429,
-      "博士": 7,
+      "博士": 8,
       "高中": 580
     },
     "confidence_boundary": "Only explicit degree terms in the requirement text are extracted. Preferred degrees such as 博士优先 are excluded; unknown requirements stay null."
   },
   "salary": {
     "non_null": 11246,
-    "coverage_percent": 20.41,
+    "coverage_percent": 20.35,
     "source_records": {
       "national_college_student_employment_service": 99,
       "jobonline_public_employment_service": 11147
@@ -23,8 +23,8 @@
     "confidence_boundary": "Only explicit RMB monthly ranges and RMB annual ranges are normalized to monthly RMB. Foreign currencies, day/hour rates, negotiable salary and ranges without a pay period stay null."
   },
   "unsupported_records": {
-    "education": 21261,
-    "salary": 43864
+    "education": 21376,
+    "salary": 44021
   },
   "note": "Coverage is source-data coverage, not extraction accuracy. Null fields are deliberately preserved and their filters return only documents that have real values."
 }

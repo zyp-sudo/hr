@@ -44,11 +44,34 @@ logger = logging.getLogger(__name__)
 async def lifespan(app: FastAPI):
     """Startup / shutdown hooks."""
     settings: Settings = get_settings()
+
+    # ---- Auto-migrate auth schema & seed test accounts ----
+    try:
+        from app.db.migrations import ensure_auth_schema
+        ensure_auth_schema()
+    except Exception:
+        logger.warning("Auth migration skipped — DB may not be ready", exc_info=True)
+
     logger.info("Starting  %s  v1.0.0", settings.app_name_en)
     logger.info("Java proxy → %s", settings.java_backend_url)
     logger.info("ES  hosts  → %s", settings.es_hosts)
     logger.info("Milvus     → %s", settings.milvus_uri)
     logger.info("Neo4j      → %s", settings.neo4j_uri)
+
+    # Ensure AI Hub tables exist
+    try:
+        from app.db.migrations import ensure_ai_hub_schema
+        ensure_ai_hub_schema()
+    except Exception as exc:
+        logger.warning("AI Hub migration skipped — DB may not be ready: %s", exc)
+
+    # Ensure demo homepage jobs table + 10 seed records
+    try:
+        from app.db.migrations import ensure_demo_jobs_schema
+        ensure_demo_jobs_schema()
+    except Exception as exc:
+        logger.warning("Demo jobs migration skipped — DB may not be ready: %s", exc)
+
     yield
     logger.info("Shutting down  %s", settings.app_name_en)
 
@@ -65,13 +88,15 @@ def create_app() -> FastAPI:
         description=(
             "Dual-engine job–talent matching API powered by MySQL, Neo4j, "
             "Elasticsearch, and Milvus vector search. "
-            "Frontend UI → http://localhost:3000"
+            "Frontend UI → http://localhost:3000  |  "
+            "Auth → POST /api/auth/seed (create 5 test accounts)"
         ),
         version="1.0.0",
         lifespan=lifespan,
         docs_url="/docs",
         redoc_url="/redoc",
         openapi_url="/openapi.json",
+        swagger_ui_parameters={"persistAuthorization": True},
     )
 
     # ------------------------------------------------------------------

@@ -118,20 +118,8 @@ def set_table_widths(table, widths):
 
 def add_page_number(paragraph):
     paragraph.alignment = WD_ALIGN_PARAGRAPH.RIGHT
-    run = paragraph.add_run("第 ")
+    run = paragraph.add_run("叶片养分检测仪软件端技术报告")
     set_run_font(run, size=9, color=MUTED)
-    fld_begin = OxmlElement("w:fldChar")
-    fld_begin.set(qn("w:fldCharType"), "begin")
-    instr = OxmlElement("w:instrText")
-    instr.set(qn("xml:space"), "preserve")
-    instr.text = "PAGE"
-    fld_end = OxmlElement("w:fldChar")
-    fld_end.set(qn("w:fldCharType"), "end")
-    paragraph._p.append(fld_begin)
-    paragraph._p.append(instr)
-    paragraph._p.append(fld_end)
-    run2 = paragraph.add_run(" 页")
-    set_run_font(run2, size=9, color=MUTED)
 
 
 def add_heading(doc, text, level=1):

@@ -164,6 +164,81 @@ async function generateJobFit(candidate:Record<string,any>,profile:typeof graphJ
   }catch{return fallback}
 }
 
+function extractResumeFields(text: string) {
+  // Name extraction — look for Chinese name patterns
+  const namePatterns = [
+    /(?:姓名|名字|候选人|应聘者|求职者)[：:]\s*([^\n]{2,8})/,
+    /^([^\n]{2,4})\n/,
+    /(?:姓名[：:]?\s*)([一-龥]{2,4})/,
+  ];
+  let name = "";
+  for (const pattern of namePatterns) {
+    const match = text.match(pattern);
+    if (match && match[1] && /^[一-龥a-zA-Z]{2,8}$/.test(match[1].trim())) {
+      name = match[1].trim();
+      break;
+    }
+  }
+
+  // Skills extraction
+  const skillKeywords = [
+    "Java","Python","Go","C++","Rust","C#","JavaScript","TypeScript","React","Vue","Angular",
+    "Node.js","Spring","Django","Flask","FastAPI","Kubernetes","K8s","Docker","AWS","Azure",
+    "GCP","MySQL","PostgreSQL","MongoDB","Redis","Kafka","RabbitMQ","Elasticsearch","微服务",
+    "分布式","机器学习","深度学习","NLP","LLM","RAG","PyTorch","TensorFlow","数据分析",
+    "产品设计","项目管理","UI设计","Figma","Sketch","Photoshop","SQL","Linux","Git",
+    "CI/CD","Jenkins","Terraform","Ansible","Spark","Hadoop","Flink","Hive","Scala",
+    "PHP","Ruby","Shell","HTML","CSS","Sass","Webpack","Vite","Next.js","Nuxt",
+    "GraphQL","gRPC","Protobuf","Nginx","Tomcat","系统设计","架构设计","性能优化",
+  ];
+  const found = skillKeywords.filter(s => {
+    const lower = text.toLowerCase();
+    return lower.includes(s.toLowerCase());
+  });
+  const skills = found.length ? found.slice(0, 8) : [];
+
+  // Years extraction
+  let years = 0;
+  const yearsPatterns = [
+    /(\d+)\s*(?:年|工作经验|工作年限|相关经验)/,
+    /(?:工作经验|工作年限|从业)[：:]*\s*(\d+)/,
+    /(\d+)\s*年\s*(?:以上|左右)?\s*(?:工作|开发|项目|从业)/,
+  ];
+  for (const pattern of yearsPatterns) {
+    const match = text.match(pattern);
+    if (match) { years = parseInt(match[1]); break; }
+  }
+
+  // Education extraction
+  let education = "本科";
+  if (/博士|Ph\.?D|博士研究生/.test(text)) education = "博士";
+  else if (/硕士|研究生|MBA|EMBA/.test(text)) education = "硕士";
+  else if (/专科|大专/.test(text)) education = "专科";
+  else if (/高中|中专|职高/.test(text)) education = "高中及以下";
+  else if (/本科|学士|Bachelor/i.test(text)) education = "本科";
+
+  // Experience summary extraction
+  let experience = "";
+  const expPatterns = [
+    /(?:工作经历|项目经历|项目经验|工作经验|工作履历)[：:\s]*([\s\S]{0,400}?)(?:\n\s*(?:教育|技能|证书|语言|自我评价|个人信息|联系方式|$))/i,
+    /(?:经历|经验)[：:\s]*([\s\S]{0,400}?)(?:\n\s*(?:教育|技能|证书|$))/i,
+  ];
+  for (const pattern of expPatterns) {
+    const match = text.match(pattern);
+    if (match && match[1].trim().length > 10) {
+      experience = match[1].trim().slice(0, 400);
+      break;
+    }
+  }
+  // Fallback: use first substantial paragraph
+  if (!experience) {
+    const firstParagraph = text.split(/\n\s*\n/).find(p => p.trim().length > 40);
+    if (firstParagraph) experience = firstParagraph.trim().slice(0, 400);
+  }
+
+  return { name, skills: skills.slice(0, 8), years: String(years), education, experience };
+}
+
 async function extractText(file: Express.Multer.File) {
   const ext = path.extname(file.originalname).toLowerCase();
   if (ext === ".txt" || ext === ".md" || file.mimetype.startsWith("text/")) return file.buffer.toString("utf8");
@@ -183,11 +258,28 @@ async function startServer() {
   app.get("/api/health", (_req, res) => res.json({ status: "ok", aiConfigured: Boolean(runtimeAi.apiKey), aiProvider:runtimeAi.provider, aiModel:runtimeAi.model, time: new Date().toISOString() }));
   const proxyPlatform = (baseUrl: string) => async (req: express.Request, res: express.Response) => {
     try {
-      const target = `${baseUrl}${req.url}`;
+      // Unwrap nested proxy format from the frontend:
+      //   POST /api/platform/storage  { url, method, body }
+      // becomes:
+      //   POST $baseUrl/$url            body
+      const body: any = req.body || {};
+      const isWrapped = typeof body.url === "string" && body.method;
+      const forwardPath: string = isWrapped ? body.url : req.url;
+      const forwardMethod: string = isWrapped ? body.method : req.method;
+      const forwardBody: any = isWrapped ? body.body : body;
+
+      const target = `${baseUrl}${forwardPath}`;
+      const forwardHeaders: Record<string, string> = {
+        "Content-Type": "application/json",
+        Accept: "application/json",
+      };
+      // Forward auth token so FastAPI can validate JWT
+      const auth = req.headers["authorization"];
+      if (auth) forwardHeaders["Authorization"] = auth;
       const upstream = await fetch(target, {
-        method: req.method,
-        headers: { "Content-Type": "application/json", Accept: "application/json" },
-        body: ["GET", "HEAD"].includes(req.method) ? undefined : JSON.stringify(req.body || {}),
+        method: forwardMethod,
+        headers: forwardHeaders,
+        body: ["GET", "HEAD"].includes(forwardMethod) ? undefined : JSON.stringify(forwardBody || {}),
       });
       const contentType = upstream.headers.get("content-type") || "application/json; charset=utf-8";
       res.status(upstream.status).type(contentType).send(await upstream.text());
@@ -242,6 +334,91 @@ async function startServer() {
       const text = (await extractText(req.file)).replace(/\0/g, "").trim();
       if (!text) return res.status(422).json({ error: "未能从文件中提取到文字，请确认简历不是纯图片扫描件" });
       res.json({ fileName: req.file.originalname, text, characters: text.length });
+    } catch (error) { next(error); }
+  });
+
+  app.post("/api/resumes/extract", async (req, res, next) => {
+    try {
+      const resumeText = String(req.body.resumeText || "").trim();
+      if (resumeText.length < 20) return res.status(400).json({ error: "简历内容过短，请上传完整简历（至少20字）" });
+
+      const fallback = extractResumeFields(resumeText);
+
+      if (!runtimeAi.apiKey) {
+        return res.json({ ...fallback, source: "regex" });
+      }
+
+      const prompt = `请从以下简历文本中提取结构化信息，只返回JSON。字段说明：
+- name: 候选人姓名（中文姓名2-4字，英文姓名不超过20字符；确实找不到则为空字符串""）
+- skills: 核心技能列表（字符串数组，如 ["Java","Python","产品设计","项目管理"]，最多8项）
+- years: 工作年限数字（整数，找不到则为0）
+- education: 最高学历，必须是以下之一："高中及以下"|"专科"|"本科"|"硕士"|"博士"（找不到则根据内容推断，实在无法判断则为"本科"）
+- experience: 项目/工作经历摘要（用一段话概括最近或最核心的工作经历，200字以内；找不到则为空字符串）
+
+简历文本：
+${resumeText}`;
+
+      let raw: any;
+      if (runtimeAi.provider !== "google") {
+        const base = (runtimeAi.baseUrl || ({ deepseek: "https://api.deepseek.com", openai: "https://api.openai.com" } as Record<string, string>)[runtimeAi.provider] || "").replace(/\/$/, "");
+        const upstream = await fetch(`${base}/v1/chat/completions`, {
+          method: "POST",
+          headers: { Authorization: `Bearer ${runtimeAi.apiKey}`, "Content-Type": "application/json" },
+          body: JSON.stringify({
+            model: runtimeAi.model,
+            messages: [
+              { role: "system", content: "你是专业简历解析专家。只返回JSON，字段为name, skills, years, education, experience。skills必须是字符串数组。从简历文本中客观提取，不要编造信息。" },
+              { role: "user", content: prompt }
+            ],
+            response_format: { type: "json_object" }
+          })
+        });
+        if (!upstream.ok) {
+          const errText = await upstream.text().catch(() => "");
+          throw new Error(`AI 服务请求失败：HTTP ${upstream.status} ${errText.slice(0, 100)}`);
+        }
+        const aiData: any = await upstream.json();
+        raw = JSON.parse(aiData.choices?.[0]?.message?.content || "{}");
+      } else {
+        const ai = new GoogleGenAI({ apiKey: runtimeAi.apiKey });
+        const response = await ai.models.generateContent({
+          model: runtimeAi.model,
+          contents: prompt,
+          config: {
+            responseMimeType: "application/json",
+            responseSchema: {
+              type: Type.OBJECT,
+              properties: {
+                name: { type: Type.STRING },
+                skills: { type: Type.ARRAY, items: { type: Type.STRING } },
+                years: { type: Type.NUMBER },
+                education: { type: Type.STRING },
+                experience: { type: Type.STRING },
+              },
+              required: ["name", "skills", "years", "education", "experience"]
+            }
+          }
+        });
+        raw = JSON.parse(response.text || "{}");
+      }
+
+      const allowedEdu = ["高中及以下", "专科", "本科", "硕士", "博士"];
+      const result = {
+        name: (String(raw.name || fallback.name || "").trim()).slice(0, 20) || "",
+        skills: (Array.isArray(raw.skills) && raw.skills.length > 0
+          ? raw.skills.map(String).slice(0, 8)
+          : fallback.skills),
+        years: (typeof raw.years === "number" && raw.years >= 0
+          ? String(raw.years)
+          : String(fallback.years || "0")),
+        education: allowedEdu.includes(String(raw.education))
+          ? String(raw.education)
+          : fallback.education,
+        experience: (String(raw.experience || fallback.experience || "").trim()).slice(0, 400),
+        source: runtimeAi.apiKey ? "ai" : "regex",
+      };
+
+      res.json(result);
     } catch (error) { next(error); }
   });
 

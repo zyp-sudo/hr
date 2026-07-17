@@ -560,7 +560,8 @@ nav {
   color: #ede9f5;
   text-align: left;
   cursor: grab;
-  user-select: none;
+  user-select
+  : none;
   touch-action: none;
   transform: scale(1) translateZ(0);
   transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1),
@@ -3141,5 +3142,221 @@ nav {
     width: 100%;
     min-width: 100%;
     padding: 16px;
+  }
+}
+
+/* ═══════════════════════════════════════════════════════════════════
+   FAB — 一键添加简历浮动按钮
+   底部右下角悬浮，支持拖放上传，进度环动效
+   ═══════════════════════════════════════════════════════════════════ */
+
+.fab-container {
+  position: fixed;
+  left: 32px;
+  bottom: 32px;
+  z-index: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1),
+              opacity 0.3s ease;
+}
+
+.fab-container--uploading {
+  transform: scale(1.08);
+}
+
+/* ── Main button ── */
+.fab-button {
+  width: auto;
+  min-width: 180px;
+  height: 56px;
+  padding: 0 24px;
+  border: 1px solid rgba(155, 242, 233, .25);
+  border-radius: 999px;
+  background:
+    linear-gradient(135deg, rgba(148, 125, 255, .18), rgba(0, 221, 235, .10)),
+    rgba(18, 17, 30, .88);
+  -webkit-backdrop-filter: blur(22px) saturate(180%);
+  backdrop-filter: blur(22px) saturate(180%);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, .08),
+    0 0 0 1px rgba(155, 242, 233, .08),
+    0 8px 32px rgba(0, 0, 0, .45),
+    0 0 40px rgba(0, 221, 235, .12);
+  color: #e1dcfe;
+  font-weight: 700;
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  transition: transform 0.25s cubic-bezier(0.34, 1.56, 0.64, 1),
+              border-color 0.3s ease,
+              box-shadow 0.3s ease,
+              background 0.3s ease;
+}
+
+.fab-button svg {
+  width: 22px;
+  height: 22px;
+  color: var(--tm-mint);
+  transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.fab-button:hover {
+  transform: translateY(-2px) scale(1.05);
+  border-color: rgba(155, 242, 233, .50);
+  background:
+    linear-gradient(135deg, rgba(148, 125, 255, .28), rgba(0, 221, 235, .16)),
+    rgba(20, 19, 34, .92);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, .10),
+    0 0 0 1px rgba(155, 242, 233, .14),
+    0 12px 44px rgba(0, 0, 0, .50),
+    0 0 56px rgba(0, 221, 235, .20);
+}
+
+.fab-button:hover svg {
+  transform: translateY(-2px) rotate(-8deg);
+}
+
+/* ── Drag-over highlight ── */
+.fab-button--drag-over {
+  border-color: rgba(155, 242, 233, .65) !important;
+  background:
+    linear-gradient(135deg, rgba(148, 125, 255, .35), rgba(0, 221, 235, .22)),
+    rgba(22, 21, 36, .94) !important;
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, .12),
+    0 0 0 2px rgba(155, 242, 233, .18),
+    0 16px 52px rgba(0, 0, 0, .55),
+    0 0 72px rgba(0, 221, 235, .30) !important;
+  transform: scale(1.08) !important;
+}
+
+/* ── Upload progress ring ── */
+.fab-progress {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  background:
+    linear-gradient(145deg, rgba(255, 255, 255, .06), rgba(255, 255, 255, .012)),
+    rgba(18, 17, 30, .88);
+  -webkit-backdrop-filter: blur(22px) saturate(180%);
+  backdrop-filter: blur(22px) saturate(180%);
+  border: 1px solid rgba(155, 242, 233, .20);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, .06),
+    0 8px 32px rgba(0, 0, 0, .40),
+    0 0 36px rgba(0, 221, 235, .10);
+}
+
+.fab-progress__ring {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  position: relative;
+  background: conic-gradient(
+    from 0deg,
+    #00ddeb 0deg,
+    #947dff calc(var(--progress, 0) * 1.8deg),
+    #af40ff calc(var(--progress, 0) * 3.6deg),
+    rgba(255, 255, 255, .04) calc(var(--progress, 0) * 3.6deg)
+  );
+  box-shadow: 0 0 20px rgba(0, 221, 235, .15);
+  animation: fabRingPulse 2s ease-in-out infinite;
+}
+
+@keyframes fabRingPulse {
+  0%, 100% { filter: drop-shadow(0 0 6px rgba(0, 221, 235, .2)); }
+  50% { filter: drop-shadow(0 0 14px rgba(0, 221, 235, .4)); }
+}
+
+.fab-progress__inner {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: rgba(14, 13, 22, .95);
+  border: 1px solid rgba(255, 255, 255, .06);
+}
+
+.fab-progress__text {
+  color: var(--tm-mint);
+  font-size: 10px;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+.fab-progress__pct {
+  color: rgba(255, 255, 255, .55);
+  font: 700 14px "JetBrains Mono", monospace;
+}
+
+/* ── Entrance animation ── */
+.fab-container {
+  animation: fabSlideUp 0.5s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@keyframes fabSlideUp {
+  from {
+    opacity: 0;
+    transform: translateY(24px) scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+/* ── Responsive ── */
+@media (max-width: 680px) {
+  .fab-container {
+    left: 16px;
+    bottom: 20px;
+  }
+
+  .fab-button {
+    min-width: auto;
+    height: 50px;
+    padding: 0 20px;
+    font-size: 13px;
+    gap: 8px;
+  }
+
+  .fab-button svg {
+    width: 20px;
+    height: 20px;
+  }
+
+  .fab-button span {
+    display: none;
+  }
+
+  .fab-progress {
+    width: 60px;
+    height: 60px;
+  }
+
+  .fab-progress__ring {
+    width: 52px;
+    height: 52px;
+  }
+
+  .fab-progress__inner {
+    width: 42px;
+    height: 42px;
+  }
+
+  .fab-progress__pct {
+    font-size: 12px;
   }
 }

@@ -4,6 +4,7 @@ from fastapi import APIRouter, Depends, HTTPException, Query, Request
 
 from app.api.deps import get_es, get_graph_repository, get_job_repository
 from app.core.config import Settings, get_settings
+from app.core.security import get_current_user
 from app.services.storage_runtime import MySQLJobRepository, Neo4jGraphRepository
 from app.services.es_client import ElasticsearchClient
 from app.services.milvus_talent import TalentVectorStore
@@ -75,3 +76,87 @@ def graph_summary(
         return neo4j.summary()
     except Exception as exc:
         raise HTTPException(status_code=503, detail=f"Neo4j 图数据源不可用: {exc}") from exc
+
+
+# ---------------------------------------------------------------------------
+# Preview / Full-access split — auth-gated data endpoints
+# ---------------------------------------------------------------------------
+
+_PREVIEW_LIMIT = 3
+
+_PREVIEW_JOB_FIELDS = {
+    "id", "title", "job_title", "company", "company_name",
+    "city", "salary_min", "salary_max", "summary", "industry",
+}
+
+
+def _strip_job_for_preview(job: dict) -> dict:
+    """Return only safe preview fields from a job dict."""
+    return {k: v for k, v in job.items() if k in _PREVIEW_JOB_FIELDS}
+
+
+@router.get("/jobs/preview")
+def jobs_preview(
+    mysql: Annotated[MySQLJobRepository, Depends(get_job_repository)],
+) -> dict:
+    """Public preview — first 3 jobs with limited fields."""
+    try:
+        all_jobs: list[dict] = mysql.jobs().get("jobs", [])
+    except Exception as exc:
+        raise HTTPException(status_code=503, detail=f"MySQL 数据源不可用: {exc}") from exc
+    preview = [_strip_job_for_preview(j) for j in all_jobs[:_PREVIEW_LIMIT]]
+    return {
+        "jobs": preview,
+        "storage": "mysql",
+        "is_preview": True,
+        "total": len(all_jobs),
+        "shown": len(preview),
+    }
+
+
+@router.get("/jobs/full")
+def jobs_full(
+    mysql: Annotated[MySQLJobRepository, Depends(get_job_repository)],
+    user: dict = Depends(get_current_user),  # ← gatekeeper
+) -> dict:
+    """Full jobs list — requires valid JWT."""
+    try:
+        return {"jobs": mysql.jobs().get("jobs", []), "storage": "mysql", "is_preview": False}
+    except Exception as exc:
+        raise HTTPException(status_code=503, detail=f"MySQL 数据源不可用: {exc}") from exc
+
+
+@router.get("/real-jobs/preview")
+def real_jobs_preview(
+    mysql: Annotated[MySQLJobRepository, Depends(get_job_repository)],
+) -> dict:
+    """Public preview — first 3 real jobs with limited fields."""
+    try:
+        result = mysql.real_jobs(limit=_PREVIEW_LIMIT)
+    except Exception as exc:
+        raise HTTPException(status_code=503, detail=f"MySQL 数据源不可用: {exc}") from exc
+
+    items = result.get("items", result.get("jobs", []))
+    pre_count = result.get("total", result.get("count", len(items)))
+
+    return {
+        "items": [_strip_job_for_preview(i) for i in items],
+        "is_preview": True,
+        "total": pre_count,
+        "shown": len(items),
+    }
+
+
+@router.get("/real-jobs/full")
+def real_jobs_full(
+    mysql: Annotated[MySQLJobRepository, Depends(get_job_repository)],
+    user: dict = Depends(get_current_user),  # ← gatekeeper
+    limit: int = Query(default=100, ge=0, le=1000),
+) -> dict:
+    """Full real-jobs list — requires valid JWT."""
+    try:
+        result = mysql.real_jobs(limit)
+        result["is_preview"] = False
+        return result
+    except Exception as exc:
+        raise HTTPException(status_code=503, detail=f"MySQL 数据源不可用: {exc}") from exc

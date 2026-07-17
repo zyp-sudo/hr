@@ -45,6 +45,10 @@ model_training_assets/
 # Files already tracked in Git remain tracked; this protects future additions.
 data/raw/
 
+# Large database backups and oversize data files — use Git LFS or external storage.
+database-backup/
+data/etl/unified_jobs.csv
+
 # Keep shareable environment templates, never real credentials.
 .env.*
 !.env.example

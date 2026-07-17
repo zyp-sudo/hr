@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-07-07T18:27:22+08:00",
+  "fetchedAt": "2026-07-17T13:54:28+08:00",
   "source": "Tencent Careers",
   "keywords": [
     "Java",
@@ -32,7 +32,7 @@
     "运维开发",
     "安全"
   ],
-  "maxDetails": 50000,
+  "maxDetails": 250,
   "mode": "all",
   "workers": 32,
   "queryLogs": [
@@ -40,705 +40,87 @@
       "keyword": "__ALL__",
       "page": 1,
       "count": 20,
-      "sourceCount": 2307
+      "sourceCount": 2320
     },
     {
       "keyword": "__ALL__",
       "page": 2,
       "count": 20,
-      "sourceCount": 2307
+      "sourceCount": 2320
     },
     {
       "keyword": "__ALL__",
       "page": 3,
       "count": 20,
-      "sourceCount": 2307
+      "sourceCount": 2320
     },
     {
       "keyword": "__ALL__",
       "page": 4,
       "count": 20,
-      "sourceCount": 2307
+      "sourceCount": 2320
     },
     {
       "keyword": "__ALL__",
       "page": 5,
       "count": 20,
-      "sourceCount": 2307
+      "sourceCount": 2320
     },
     {
       "keyword": "__ALL__",
       "page": 6,
       "count": 20,
-      "sourceCount": 2307
+      "sourceCount": 2320
     },
     {
       "keyword": "__ALL__",
       "page": 7,
       "count": 20,
-      "sourceCount": 2307
+      "sourceCount": 2320
     },
     {
       "keyword": "__ALL__",
       "page": 8,
       "count": 20,
-      "sourceCount": 2307
+      "sourceCount": 2320
     },
     {
       "keyword": "__ALL__",
       "page": 9,
       "count": 20,
-      "sourceCount": 2307
+      "sourceCount": 2320
     },
     {
       "keyword": "__ALL__",
       "page": 10,
       "count": 20,
-      "sourceCount": 2307
+      "sourceCount": 2320
     },
     {
       "keyword": "__ALL__",
       "page": 11,
       "count": 20,
-      "sourceCount": 2307
+      "sourceCount": 2320
     },
     {
       "keyword": "__ALL__",
       "page": 12,
       "count": 20,
-      "sourceCount": 2307
+      "sourceCount": 2320
     },
     {
       "keyword": "__ALL__",
       "page": 13,
       "count": 20,
-      "sourceCount": 2307
-    },
-    {
-      "keyword": "__ALL__",
-      "page": 14,
-      "count": 20,
-      "sourceCount": 2307
-    },
-    {
-      "keyword": "__ALL__",
-      "page": 15,
-      "count": 20,
-      "sourceCount": 2307
-    },
-    {
-      "keyword": "__ALL__",
-      "page": 16,
-      "count": 20,
-      "sourceCount": 2307
-    },
-    {
-      "keyword": "__ALL__",
-      "page": 17,
-      "count": 20,
-      "sourceCount": 2307
-    },
-    {
-      "keyword": "__ALL__",
-      "page": 18,
-      "count": 20,
-      "sourceCount": 2307
-    },
-    {
-      "keyword": "__ALL__",
-      "page": 19,
-      "count": 20,
-      "sourceCount": 2307
-    },
-    {
-      "keyword": "__ALL__",
-      "page": 20,
-      "count": 20,
-      "sourceCount": 2307
-    },
-    {
-      "keyword": "__ALL__",
-      "page": 21,
-      "count": 20,
-      "sourceCount": 2307
-    },
-    {
-      "keyword": "__ALL__",
-      "page": 22,
-      "count": 20,
-      "sourceCount": 2307
-    },
-    {
-      "keyword": "__ALL__",
-      "page": 23,
-      "count": 20,
-      "sourceCount": 2307
-    },
-    {
-      "keyword": "__ALL__",
-      "page": 24,
-      "count": 20,
-      "sourceCount": 2307
-    },
-    {
-      "keyword": "__ALL__",
-      "page": 25,
-      "count": 20,
-      "sourceCount": 2307
-    },
-    {
-      "keyword": "__ALL__",
-      "page": 26,
-      "count": 20,
-      "sourceCount": 2307
-    },
-    {
-      "keyword": "__ALL__",
-      "page": 27,
-      "count": 20,
-      "sourceCount": 2307
-    },
-    {
-      "keyword": "__ALL__",
-      "page": 28,
-      "count": 20,
-      "sourceCount": 2307
-    },
-    {
-      "keyword": "__ALL__",
-      "page": 29,
-      "count": 20,
-      "sourceCount": 2307
-    },
-    {
-      "keyword": "__ALL__",
-      "page": 30,
-      "count": 20,
-      "sourceCount": 2307
-    },
-    {
-      "keyword": "__ALL__",
-      "page": 31,
-      "count": 20,
-      "sourceCount": 2307
-    },
-    {
-      "keyword": "__ALL__",
-      "page": 32,
-      "count": 20,
-      "sourceCount": 2307
-    },
-    {
-      "keyword": "__ALL__",
-      "page": 33,
-      "count": 20,
-      "sourceCount": 2307
-    },
-    {
-      "keyword": "__ALL__",
-      "page": 34,
-      "count": 20,
-      "sourceCount": 2307
-    },
-    {
-      "keyword": "__ALL__",
-      "page": 35,
-      "count": 20,
-      "sourceCount": 2307
-    },
-    {
-      "keyword": "__ALL__",
-      "page": 36,
-      "count": 20,
-      "sourceCount": 2307
-    },
-    {
-      "keyword": "__ALL__",
-      "page": 37,
-      "count": 20,
-      "sourceCount": 2307
-    },
-    {
-      "keyword": "__ALL__",
-      "page": 38,
-      "count": 20,
-      "sourceCount": 2307
-    },
-    {
-      "keyword": "__ALL__",
-      "page": 39,
-      "count": 20,
-      "sourceCount": 2307
-    },
-    {
-      "keyword": "__ALL__",
-      "page": 40,
-      "count": 20,
-      "sourceCount": 2307
-    },
-    {
-      "keyword": "__ALL__",
-      "page": 41,
-      "count": 20,
-      "sourceCount": 2307
-    },
-    {
-      "keyword": "__ALL__",
-      "page": 42,
-      "count": 20,
-      "sourceCount": 2307
-    },
-    {
-      "keyword": "__ALL__",
-      "page": 43,
-      "count": 20,
-      "sourceCount": 2307
-    },
-    {
-      "keyword": "__ALL__",
-      "page": 44,
-      "count": 20,
-      "sourceCount": 2307
-    },
-    {
-      "keyword": "__ALL__",
-      "page": 45,
-      "count": 20,
-      "sourceCount": 2307
-    },
-    {
-      "keyword": "__ALL__",
-      "page": 46,
-      "count": 20,
-      "sourceCount": 2307
-    },
-    {
-      "keyword": "__ALL__",
-      "page": 47,
-      "count": 20,
-      "sourceCount": 2307
-    },
-    {
-      "keyword": "__ALL__",
-      "page": 48,
-      "count": 20,
-      "sourceCount": 2307
-    },
-    {
-      "keyword": "__ALL__",
-      "page": 49,
-      "count": 20,
-      "sourceCount": 2307
-    },
-    {
-      "keyword": "__ALL__",
-      "page": 50,
-      "count": 20,
-      "sourceCount": 2307
-    },
-    {
-      "keyword": "__ALL__",
-      "page": 51,
-      "count": 20,
-      "sourceCount": 2307
-    },
-    {
-      "keyword": "__ALL__",
-      "page": 52,
-      "count": 20,
-      "sourceCount": 2307
-    },
-    {
-      "keyword": "__ALL__",
-      "page": 53,
-      "count": 20,
-      "sourceCount": 2307
-    },
-    {
-      "keyword": "__ALL__",
-      "page": 54,
-      "count": 20,
-      "sourceCount": 2307
-    },
-    {
-      "keyword": "__ALL__",
-      "page": 55,
-      "count": 20,
-      "sourceCount": 2307
-    },
-    {
-      "keyword": "__ALL__",
-      "page": 56,
-      "count": 20,
-      "sourceCount": 2307
-    },
-    {
-      "keyword": "__ALL__",
-      "page": 57,
-      "count": 20,
-      "sourceCount": 2307
-    },
-    {
-      "keyword": "__ALL__",
-      "page": 58,
-      "count": 20,
-      "sourceCount": 2307
-    },
-    {
-      "keyword": "__ALL__",
-      "page": 59,
-      "count": 20,
-      "sourceCount": 2307
-    },
-    {
-      "keyword": "__ALL__",
-      "page": 60,
-      "count": 20,
-      "sourceCount": 2307
-    },
-    {
-      "keyword": "__ALL__",
-      "page": 61,
-      "count": 20,
-      "sourceCount": 2307
-    },
-    {
-      "keyword": "__ALL__",
-      "page": 62,
-      "count": 20,
-      "sourceCount": 2307
-    },
-    {
-      "keyword": "__ALL__",
-      "page": 63,
-      "count": 20,
-      "sourceCount": 2307
-    },
-    {
-      "keyword": "__ALL__",
-      "page": 64,
-      "count": 20,
-      "sourceCount": 2307
-    },
-    {
-      "keyword": "__ALL__",
-      "page": 65,
-      "count": 20,
-      "sourceCount": 2307
-    },
-    {
-      "keyword": "__ALL__",
-      "page": 66,
-      "count": 20,
-      "sourceCount": 2307
-    },
-    {
-      "keyword": "__ALL__",
-      "page": 67,
-      "count": 20,
-      "sourceCount": 2307
-    },
-    {
-      "keyword": "__ALL__",
-      "page": 68,
-      "count": 20,
-      "sourceCount": 2307
-    },
-    {
-      "keyword": "__ALL__",
-      "page": 69,
-      "count": 20,
-      "sourceCount": 2307
-    },
-    {
-      "keyword": "__ALL__",
-      "page": 70,
-      "count": 20,
-      "sourceCount": 2307
-    },
-    {
-      "keyword": "__ALL__",
-      "page": 71,
-      "count": 20,
-      "sourceCount": 2307
-    },
-    {
-      "keyword": "__ALL__",
-      "page": 72,
-      "count": 20,
-      "sourceCount": 2307
-    },
-    {
-      "keyword": "__ALL__",
-      "page": 73,
-      "count": 20,
-      "sourceCount": 2307
-    },
-    {
-      "keyword": "__ALL__",
-      "page": 74,
-      "count": 20,
-      "sourceCount": 2307
-    },
-    {
-      "keyword": "__ALL__",
-      "page": 75,
-      "count": 20,
-      "sourceCount": 2307
-    },
-    {
-      "keyword": "__ALL__",
-      "page": 76,
-      "count": 20,
-      "sourceCount": 2307
-    },
-    {
-      "keyword": "__ALL__",
-      "page": 77,
-      "count": 20,
-      "sourceCount": 2307
-    },
-    {
-      "keyword": "__ALL__",
-      "page": 78,
-      "count": 20,
-      "sourceCount": 2307
-    },
-    {
-      "keyword": "__ALL__",
-      "page": 79,
-      "count": 20,
-      "sourceCount": 2307
-    },
-    {
-      "keyword": "__ALL__",
-      "page": 80,
-      "count": 20,
-      "sourceCount": 2307
-    },
-    {
-      "keyword": "__ALL__",
-      "page": 81,
-      "count": 20,
-      "sourceCount": 2307
-    },
-    {
-      "keyword": "__ALL__",
-      "page": 82,
-      "count": 20,
-      "sourceCount": 2307
-    },
-    {
-      "keyword": "__ALL__",
-      "page": 83,
-      "count": 20,
-      "sourceCount": 2307
-    },
-    {
-      "keyword": "__ALL__",
-      "page": 84,
-      "count": 20,
-      "sourceCount": 2307
-    },
-    {
-      "keyword": "__ALL__",
-      "page": 85,
-      "count": 20,
-      "sourceCount": 2307
-    },
-    {
-      "keyword": "__ALL__",
-      "page": 86,
-      "count": 20,
-      "sourceCount": 2307
-    },
-    {
-      "keyword": "__ALL__",
-      "page": 87,
-      "count": 20,
-      "sourceCount": 2307
-    },
-    {
-      "keyword": "__ALL__",
-      "page": 88,
-      "count": 20,
-      "sourceCount": 2307
-    },
-    {
-      "keyword": "__ALL__",
-      "page": 89,
-      "count": 20,
-      "sourceCount": 2307
-    },
-    {
-      "keyword": "__ALL__",
-      "page": 90,
-      "count": 20,
-      "sourceCount": 2307
-    },
-    {
-      "keyword": "__ALL__",
-      "page": 91,
-      "count": 20,
-      "sourceCount": 2307
-    },
-    {
-      "keyword": "__ALL__",
-      "page": 92,
-      "count": 20,
-      "sourceCount": 2307
-    },
-    {
-      "keyword": "__ALL__",
-      "page": 93,
-      "count": 20,
-      "sourceCount": 2307
-    },
-    {
-      "keyword": "__ALL__",
-      "page": 94,
-      "count": 20,
-      "sourceCount": 2307
-    },
-    {
-      "keyword": "__ALL__",
-      "page": 95,
-      "count": 20,
-      "sourceCount": 2307
-    },
-    {
-      "keyword": "__ALL__",
-      "page": 96,
-      "count": 20,
-      "sourceCount": 2307
-    },
-    {
-      "keyword": "__ALL__",
-      "page": 97,
-      "count": 20,
-      "sourceCount": 2307
-    },
-    {
-      "keyword": "__ALL__",
-      "page": 98,
-      "count": 20,
-      "sourceCount": 2307
-    },
-    {
-      "keyword": "__ALL__",
-      "page": 99,
-      "count": 20,
-      "sourceCount": 2307
-    },
-    {
-      "keyword": "__ALL__",
-      "page": 100,
-      "count": 20,
-      "sourceCount": 2307
-    },
-    {
-      "keyword": "__ALL__",
-      "page": 101,
-      "count": 20,
-      "sourceCount": 2307
-    },
-    {
-      "keyword": "__ALL__",
-      "page": 102,
-      "count": 20,
-      "sourceCount": 2307
-    },
-    {
-      "keyword": "__ALL__",
-      "page": 103,
-      "count": 20,
-      "sourceCount": 2307
-    },
-    {
-      "keyword": "__ALL__",
-      "page": 104,
-      "count": 20,
-      "sourceCount": 2307
-    },
-    {
-      "keyword": "__ALL__",
-      "page": 105,
-      "count": 20,
-      "sourceCount": 2307
-    },
-    {
-      "keyword": "__ALL__",
-      "page": 106,
-      "count": 20,
-      "sourceCount": 2307
-    },
-    {
-      "keyword": "__ALL__",
-      "page": 107,
-      "count": 20,
-      "sourceCount": 2307
-    },
-    {
-      "keyword": "__ALL__",
-      "page": 108,
-      "count": 20,
-      "sourceCount": 2307
-    },
-    {
-      "keyword": "__ALL__",
-      "page": 109,
-      "count": 20,
-      "sourceCount": 2307
-    },
-    {
-      "keyword": "__ALL__",
-      "page": 110,
-      "count": 20,
-      "sourceCount": 2307
-    },
-    {
-      "keyword": "__ALL__",
-      "page": 111,
-      "count": 20,
-      "sourceCount": 2307
-    },
-    {
-      "keyword": "__ALL__",
-      "page": 112,
-      "count": 20,
-      "sourceCount": 2307
-    },
-    {
-      "keyword": "__ALL__",
-      "page": 113,
-      "count": 20,
-      "sourceCount": 2307
-    },
-    {
-      "keyword": "__ALL__",
-      "page": 114,
-      "count": 20,
-      "sourceCount": 2307
-    },
-    {
-      "keyword": "__ALL__",
-      "page": 115,
-      "count": 20,
-      "sourceCount": 2307
-    },
-    {
-      "keyword": "__ALL__",
-      "page": 116,
-      "count": 6,
-      "sourceCount": 2307
+      "sourceCount": 2320
     }
   ],
   "detailStats": {
-    "fetched": 0,
-    "cached": 2304,
+    "fetched": 2,
+    "cached": 248,
     "errors": 0
   },
-  "records": 2304,
+  "records": 250,
   "outputs": [
     "data\\collected_jobs.csv",
     "data\\collected_job_skills.csv",

@@ -2,167 +2,20 @@
   "data": {
     "list": [
       {
-        "jobUnionId": "4586697894",
-        "name": "潮饮仓商品运营专家",
+        "jobUnionId": "4569638740",
+        "name": "公共事务经理",
         "projectId": null,
         "projectName": null,
         "jobType": "3",
         "jobSpecialCode": "5",
         "jobSource": "1",
         "jobStatus": "000",
-        "jobFamily": "运营类",
-        "jobFamilyGroup": "产品运营",
+        "jobFamily": "职能类",
+        "jobFamilyGroup": "公司事务",
         "cityList": [
           {
             "code": null,
-            "name": "北京市",
-            "children": null,
-            "sort": null,
-            "subCode": null,
-            "mapping": null,
-            "outerCode": null,
-            "bgNode": false
-          }
-        ],
-        "workYear": null,
-        "department": [
-          {
-            "code": null,
-            "name": "核心本地商业-闪购事业部",
-            "children": null,
-            "sort": null,
-            "subCode": null,
-            "mapping": null,
-            "outerCode": null,
-            "bgNode": false
-          }
-        ],
-        "desc": null,
-        "departmentIntro": null,
-        "jobDuty": "1、搭建平台模式下潮饮品类社会化供应链体系，夯实潮饮仓店型壁垒，带动潮饮仓潮饮品类提升；\n2、深度理解即时零售以及酒水潮饮品类行业、用户，负责对接低度潮饮品牌、供应链、服务商等，负责潮饮品类商品选品，制定品类运营计划，沉淀潮饮品类主推举措，有行业、产品敏感度，有扎实的线上商品运营经验；\n3、联动运营同学完成潮饮品类销售、动销等核心目标。",
-        "jobRequirement": null,
-        "precedence": null,
-        "highLight": "即时零售行业前景广阔，零售已成为美团战略核心。酒品类为美团闪购重点发展品类之一，有机会参与酒水行业新型供给发展及迭代升级，对个人行业视野和能力提升有重大积极意义。",
-        "otherInfo": null,
-        "firstPostTime": null,
-        "refreshTime": 1783389891000,
-        "tag": null,
-        "expiredTime": null,
-        "socialRecommendJob": null
-      },
-      {
-        "jobUnionId": "4586366950",
-        "name": "美团闪购-AI业务运营-牵牛花Claw",
-        "projectId": null,
-        "projectName": null,
-        "jobType": "3",
-        "jobSpecialCode": "5",
-        "jobSource": "1",
-        "jobStatus": "000",
-        "jobFamily": "运营类",
-        "jobFamilyGroup": "产品运营",
-        "cityList": [
-          {
-            "code": null,
-            "name": "北京市",
-            "children": null,
-            "sort": null,
-            "subCode": null,
-            "mapping": null,
-            "outerCode": null,
-            "bgNode": false
-          }
-        ],
-        "workYear": null,
-        "department": [
-          {
-            "code": null,
-            "name": "核心本地商业-闪购事业部",
-            "children": null,
-            "sort": null,
-            "subCode": null,
-            "mapping": null,
-            "outerCode": null,
-            "bgNode": false
-          }
-        ],
-        "desc": null,
-        "departmentIntro": null,
-        "jobDuty": "1、负责美团闪购牵牛花Claw的业务策略，结合业务发展需求，制定并落地有竞争力的业务发展路径；\n2、挖掘真实场景下用户对AI的真实需求，主导全链路AI业务方案落地；\n3、联动产品、研发团队推进AI项目落地，负责需求识别、需求拆解、进度跟进并为产品使用效果负责；\n4、跟踪内外部AI趋势及创新工具，结合业务场景引入差异化方案，构建AI竞争优势。",
-        "jobRequirement": null,
-        "precedence": null,
-        "highLight": "1、我们是一个年轻有活力的团队，团队有明确的成长路径；\n2、合作方有自营业务、社会化众多头部商家，能全面且深入的理解即时零售行业，视野广阔，适合提升深度思考能力。",
-        "otherInfo": null,
-        "firstPostTime": null,
-        "refreshTime": 1783389886000,
-        "tag": null,
-        "expiredTime": null,
-        "socialRecommendJob": null
-      },
-      {
-        "jobUnionId": "4585744479",
-        "name": "酒类品牌旗舰店运营",
-        "projectId": null,
-        "projectName": null,
-        "jobType": "3",
-        "jobSpecialCode": "5",
-        "jobSource": "1",
-        "jobStatus": "000",
-        "jobFamily": "运营类",
-        "jobFamilyGroup": "产品运营",
-        "cityList": [
-          {
-            "code": null,
-            "name": "北京市",
-            "children": null,
-            "sort": null,
-            "subCode": null,
-            "mapping": null,
-            "outerCode": null,
-            "bgNode": false
-          }
-        ],
-        "workYear": null,
-        "department": [
-          {
-            "code": null,
-            "name": "核心本地商业-闪购事业部",
-            "children": null,
-            "sort": null,
-            "subCode": null,
-            "mapping": null,
-            "outerCode": null,
-            "bgNode": false
-          }
-        ],
-        "desc": null,
-        "departmentIntro": null,
-        "jobDuty": "1.负责白酒品牌旗舰店的引入和日常运营工作\n2.负责制定所负责品牌旗舰店的销售及推广计划\n3.负责迭代品牌旗舰店的运营策略并总结认知\n4.负责项目的数据分析和业绩评估，及时调整策略以实现业绩目标",
-        "jobRequirement": null,
-        "precedence": null,
-        "highLight": "1.可以获得酒类头部品牌合作机会，提升自身行业资源\n2.可以在酒类品牌旗舰店在即时零售场景的运营中展现自己的才华，实现个人职业发展；",
-        "otherInfo": null,
-        "firstPostTime": null,
-        "refreshTime": 1783389884000,
-        "tag": null,
-        "expiredTime": null,
-        "socialRecommendJob": null
-      },
-      {
-        "jobUnionId": "4580646890",
-        "name": "无人车业务部-整车热管理系统工程师",
-        "projectId": null,
-        "projectName": null,
-        "jobType": "3",
-        "jobSpecialCode": "5",
-        "jobSource": "1",
-        "jobStatus": "000",
-        "jobFamily": "技术类",
-        "jobFamilyGroup": "硬件",
-        "cityList": [
-          {
-            "code": null,
-            "name": "上海市",
+            "name": "深圳市",
             "children": null,
             "sort": null,
             "subCode": null,
@@ -186,160 +39,13 @@
         ],
         "desc": null,
         "departmentIntro": null,
-        "jobDuty": "1.负责整车热管理系统（主要是三电、域控等热管理和冷藏车空调系统）的设计、开发和优化，确保系统在各种工况下的功能、性能。\n2.负责制定整车热管理系统的技术方案和规划，确保项目进度和质量。\n3.负责整车热管理系统的测试、验证和故障排除，保障系统的可靠性和稳定性。\n4.牵头热管理系统开发技术规范、流程和企业标准制定。",
+        "jobDuty": "1. 协助制定并执行公司公共事务策略，支持政府关系、政策研究及合规事务的落地。  \n2. 负责与深圳市相关政府部门、行业协会等外部机构的日常沟通与关系维护。  \n3. 收集、分析政策动态和行业信息，为公司决策提供参考依据。  \n4. 协助组织政府接待、会议活动及项目申报等工作，确保流程规范高效。",
         "jobRequirement": null,
         "precedence": null,
-        "highLight": "1.良好的工作氛围，与自动驾驶行业大牛一起合作，参与无人车规模化落地",
+        "highLight": "1. 加入快速发展的企业平台，参与重要公共事务项目。  \n2. 与政府机构高频互动，积累优质人脉资源。  \n3. 提供完善的培训体系和清晰的职业发展路径。",
         "otherInfo": null,
         "firstPostTime": null,
-        "refreshTime": 1783389881000,
-        "tag": null,
-        "expiredTime": null,
-        "socialRecommendJob": null
-      },
-      {
-        "jobUnionId": "4580227776",
-        "name": "AI评测产品经理",
-        "projectId": null,
-        "projectName": null,
-        "jobType": "3",
-        "jobSpecialCode": "5",
-        "jobSource": "1",
-        "jobStatus": "000",
-        "jobFamily": "产品类",
-        "jobFamilyGroup": "产品",
-        "cityList": [
-          {
-            "code": null,
-            "name": "上海市",
-            "children": null,
-            "sort": null,
-            "subCode": null,
-            "mapping": null,
-            "outerCode": null,
-            "bgNode": false
-          }
-        ],
-        "workYear": null,
-        "department": [
-          {
-            "code": null,
-            "name": "核心本地商业-平台及职能部门",
-            "children": null,
-            "sort": null,
-            "subCode": null,
-            "mapping": null,
-            "outerCode": null,
-            "bgNode": false
-          }
-        ],
-        "desc": null,
-        "departmentIntro": null,
-        "jobDuty": "1.参与AI评测体系的构建，从美团AI产品的需求场景出发，清晰定义“好的体验”，工作内容包括评测维度定义、评分标准设计、评测集构建等。\n2.建立自动化评测流程，优化LLM as Judge评测方案，通过优化提示词工程及工具调用，提升评测的效率、质量。\n3.与产品、研发团队深度协同，基于评测结果及归因驱动AI产品的迭代。\n4.持续跟踪全球AI大模型、Agent和应用产品的发展，将外部先进评测经验转化为内部评测实践。",
-        "jobRequirement": null,
-        "precedence": null,
-        "highLight": "1.核心战略价值：岗位直接影响公司大模型质量与效果、AI应用产品定位和迭代，具备战略意义。\n2.跨团队影响力：与算法负责人和产研团队协作，覆盖公司多条业务线，推动统一标准。\n3.成长空间：未来可成长为公司评测平台方向的产品负责人，或拓展至可信 AI 与评测方法论方向的专家型角色。",
-        "otherInfo": null,
-        "firstPostTime": null,
-        "refreshTime": 1783389877000,
-        "tag": null,
-        "expiredTime": null,
-        "socialRecommendJob": null
-      },
-      {
-        "jobUnionId": "4580016645",
-        "name": "Maintenance Manager",
-        "projectId": null,
-        "projectName": null,
-        "jobType": "3",
-        "jobSpecialCode": "5",
-        "jobSource": "1",
-        "jobStatus": "000",
-        "jobFamily": "零售类",
-        "jobFamilyGroup": "门店",
-        "cityList": [
-          {
-            "code": null,
-            "name": "利雅得",
-            "children": null,
-            "sort": null,
-            "subCode": null,
-            "mapping": null,
-            "outerCode": null,
-            "bgNode": false
-          }
-        ],
-        "workYear": null,
-        "department": [
-          {
-            "code": null,
-            "name": "食杂零售-Keemart",
-            "children": null,
-            "sort": null,
-            "subCode": null,
-            "mapping": null,
-            "outerCode": null,
-            "bgNode": false
-          }
-        ],
-        "desc": null,
-        "departmentIntro": null,
-        "jobDuty": "1. Engineering Equipment Maintenance Management: Responsible for overseeing regional engineering equipment maintenance operations, monitoring and enhancing the quality and efficiency of maintenance work within the area to ensure timely delivery, quality standards and cost control are met;\n2. Maintenance Process Standards: Establish and refine maintenance procedures and operational standards for engineering equipment, encompassing daily operations, repairs, servicing, inspection management and other aspects to safeguard business continuity;\n3. Maintenance Supplier Management: Establish supplier maintenance management mechanisms, encompassing supplier tendering, assessment, incentives, allocation, and replacement;\n4. Incident Response: Manage engineering equipment work orders during store operations, track progress, quality and cost. Demonstrate proficiency in specialist disciplines (plumbing, electrical, refrigeration, etc.), develop contingency plans, and lead relevant personnel to swiftly resolve unexpected equipment failures;\n5. Energy Consumption Management: Oversee energy usage of engineering equipment across stores within the region, implement energy-saving measures, and achieve store-level energy reduction targets.",
-        "jobRequirement": null,
-        "precedence": null,
-        "highLight": "有沙特及中东国家工作经验者优先；\n\n熟练掌握英语、阿拉伯语、汉语者优先。",
-        "otherInfo": null,
-        "firstPostTime": null,
-        "refreshTime": 1783389875000,
-        "tag": null,
-        "expiredTime": null,
-        "socialRecommendJob": null
-      },
-      {
-        "jobUnionId": "4571103705",
-        "name": "小象超市-南宁BDM",
-        "projectId": null,
-        "projectName": null,
-        "jobType": "3",
-        "jobSpecialCode": "5",
-        "jobSource": "1",
-        "jobStatus": "000",
-        "jobFamily": "销售、客服与支持类",
-        "jobFamilyGroup": "销售",
-        "cityList": [
-          {
-            "code": null,
-            "name": "南宁市",
-            "children": null,
-            "sort": null,
-            "subCode": null,
-            "mapping": null,
-            "outerCode": null,
-            "bgNode": false
-          }
-        ],
-        "workYear": null,
-        "department": [
-          {
-            "code": null,
-            "name": "食杂零售-小象事业部",
-            "children": null,
-            "sort": null,
-            "subCode": null,
-            "mapping": null,
-            "outerCode": null,
-            "bgNode": false
-          }
-        ],
-        "desc": null,
-        "departmentIntro": null,
-        "jobDuty": "1、快速搭建BD团队：负责招聘、培养和管理销售团队，建立高绩效团队，并制定并执行相关策略、资源分配等，以实现团队的快速成长；\n2、执行公司的销售策略及政策：负责执行公司的销售策略和政策，通过日常闭环管理跟踪业务进展，带领团队达成业绩目标；\n3、与内外部部门协作：与横向协同部门紧密配合，及时解决销售工作中的各类问题，并持续改进和优化销售流程。",
-        "jobRequirement": null,
-        "precedence": null,
-        "highLight": "1、美团销售管理成熟方法论学习与能力提升；\n2、美团小象新业务，快速发展阶段，晋升空间大。",
-        "otherInfo": null,
-        "firstPostTime": null,
-        "refreshTime": 1783389874000,
+        "refreshTime": 1784253915000,
         "tag": null,
         "expiredTime": null,
         "socialRecommendJob": null
@@ -388,7 +94,7 @@
         "highLight": "1. 加入美团核心出行业务，参与城市绿色出行生态建设。  \n2. 工作地点在洛阳，深耕本地市场，积累城市运营实战经验。  \n3. 团队氛围开放，成长路径清晰，提供完善的培训与晋升机制。",
         "otherInfo": null,
         "firstPostTime": null,
-        "refreshTime": 1783389872000,
+        "refreshTime": 1784253909000,
         "tag": null,
         "expiredTime": null,
         "socialRecommendJob": null
@@ -437,7 +143,7 @@
         "highLight": "1. Team Atmosphere: The team fosters a collaborative atmosphere, emphasizes the accumulation of methodologies, and conducts regular work exchanges.\n\n2. Personal Growth: Team members have the opportunity to collaborate with experts in various modules, gaining insights into the review processes across business modules and enhancing their professional skills.",
         "otherInfo": null,
         "firstPostTime": null,
-        "refreshTime": 1783389865000,
+        "refreshTime": 1784253903000,
         "tag": null,
         "expiredTime": null,
         "socialRecommendJob": null
@@ -486,14 +192,14 @@
         "highLight": "1.有良好的成长空间及晋升机会； 2.有良好的培训氛围和培训拓展机会。",
         "otherInfo": null,
         "firstPostTime": null,
-        "refreshTime": 1783389863000,
+        "refreshTime": 1784253901000,
         "tag": null,
         "expiredTime": null,
         "socialRecommendJob": null
       },
       {
         "jobUnionId": "4556036462",
-        "name": "智能后厨产品经理",
+        "name": "智能应用产品经理",
         "projectId": null,
         "projectName": null,
         "jobType": "3",
@@ -535,22 +241,22 @@
         "highLight": "1.作为美团外卖智能后厨产品经理，将有机会参与和推动智能化餐饮行业的发展；\n2.频繁参与业务模式讨论，快速培养商业思维；\n3.业务当前重点攻克方向，资源足，发展空间大；\n4.团队氛围佳，和一群热爱产品工作的同事共事，主张高效工作。",
         "otherInfo": null,
         "firstPostTime": null,
-        "refreshTime": 1783389859000,
+        "refreshTime": 1784253897000,
         "tag": null,
         "expiredTime": null,
         "socialRecommendJob": null
       },
       {
-        "jobUnionId": "4555595461",
-        "name": "闪购歪马业务组-非商品采购管理方向",
+        "jobUnionId": "4555768944",
+        "name": "无人车财务BP（资产管理方向）",
         "projectId": null,
         "projectName": null,
         "jobType": "3",
         "jobSpecialCode": "5",
         "jobSource": "1",
         "jobStatus": "000",
-        "jobFamily": "零售类",
-        "jobFamilyGroup": "采购",
+        "jobFamily": "职能类",
+        "jobFamilyGroup": "财务",
         "cityList": [
           {
             "code": null,
@@ -567,7 +273,7 @@
         "department": [
           {
             "code": null,
-            "name": "核心本地商业-闪购事业部",
+            "name": "财务平台",
             "children": null,
             "sort": null,
             "subCode": null,
@@ -578,62 +284,13 @@
         ],
         "desc": null,
         "departmentIntro": null,
-        "jobDuty": "1、负责歪马全品类采购履约及管理；寻源适配歪马不同业务模式下的商源，将有效商源输出协同集采方\n\n2、负责行业市场调研与分析，不断完善优化采购策略，评估物资选型、改型投入可行性分析：撰写相关分析报告（选型改型报告、试点报告等）\n\n3、搭建供应商管理体系，实现分类分级管理，有针对性地管理和整合供应商\n\n4、负责物资成本管理，拆解BOM清单，周期性判断合作商成本利润合理性，持续输出优化成本策略，敏感应对关键物料及设备的供应/价格波动情况，保障所有物资和设备准时交付\n5、根据业务发展需要，协同相关部门进行供应商SLA制定，迭代条款",
+        "jobDuty": "1、负责无人车业务资产相关的财务预算、预测和分析等相关财务管理工作，为业务决策提供财务支持。\n2、负责资产整个生命周期链路的管理，含业务支持和成本管控。\n3、负责资产维修、保养、配置等方面的管理，协助业务提高资产利用效率和运营效率。\n3、负责资产处置策略和价格管理，提高资产处置效率和收益。\n4、AI工具应用，主动将AI工具融入日常工作，使用Agent优化提效和增加产出，例如：工作流优化、数据处理与分析、报表/看板搭建、测算/分析模型搭建、项目管理、知识库建设。",
         "jobRequirement": null,
         "precedence": null,
-        "highLight": "1、 歪马业务聚焦于酒类万亿市场，通过前置仓+中心仓、平台自营、线下店模式，为用户提供 15分钟送达的买酒服务以及便捷打酒服务\n\n2、团队氛围轻松，融洽，个人成长空间大\n\n3、可以全方位深入业务，在全闭环的组织里感受不同职能彼此的输入/输出，你也可以参与业务模式的定义",
+        "highLight": "1、无人车业务处于蓬勃发展的科技领域，行业发展快，作为财务BP可以深度参与业务发展中面临的高模糊度事项的研判中，亲手推动行业的发展，与业务一同成长。\n2、财务团队整体工作氛围好，以结果为导向，学习型团队，有助于专业能力提升，助力职业发展。",
         "otherInfo": null,
         "firstPostTime": null,
-        "refreshTime": 1783389857000,
-        "tag": null,
-        "expiredTime": null,
-        "socialRecommendJob": null
-      },
-      {
-        "jobUnionId": "4555232204",
-        "name": "小象超市-自有品牌商品包材采购专家",
-        "projectId": null,
-        "projectName": null,
-        "jobType": "3",
-        "jobSpecialCode": "5",
-        "jobSource": "1",
-        "jobStatus": "000",
-        "jobFamily": "零售类",
-        "jobFamilyGroup": "商品运营",
-        "cityList": [
-          {
-            "code": null,
-            "name": "北京市",
-            "children": null,
-            "sort": null,
-            "subCode": null,
-            "mapping": null,
-            "outerCode": null,
-            "bgNode": false
-          }
-        ],
-        "workYear": null,
-        "department": [
-          {
-            "code": null,
-            "name": "食杂零售-小象事业部",
-            "children": null,
-            "sort": null,
-            "subCode": null,
-            "mapping": null,
-            "outerCode": null,
-            "bgNode": false
-          }
-        ],
-        "desc": null,
-        "departmentIntro": null,
-        "jobDuty": "1、负责小象超市自有品牌商品包材的招商和采购工作，开展合作谈判，保证采购成本和质量达到公司要求；\n2、负责供应链管理，与供应商进行谈判，确保供应商合作顺利进行；\n3、负责商品运营，与商品团队协作，保证商品包材的及时供应和更新。",
-        "jobRequirement": null,
-        "precedence": null,
-        "highLight": "1、参与零售自营品牌包装材质管理和优化的全流程工作；\n2、操盘包材招商池的建立和运维。",
-        "otherInfo": null,
-        "firstPostTime": null,
-        "refreshTime": 1783389852000,
+        "refreshTime": 1784253895000,
         "tag": null,
         "expiredTime": null,
         "socialRecommendJob": null
@@ -682,7 +339,7 @@
         "highLight": "1、 歪马业务聚焦于酒类万亿市场，通过前置仓+中心仓、平台自营、线下店模式，为用户提供 15分钟送达的买酒服务以及便捷打酒服务\n\n2、团队氛围轻松，融洽，个人成长空间大\n\n3、可以全方位深入业务，在全闭环的组织里感受不同职能彼此的输入/输出，你也可以参与业务模式的定义",
         "otherInfo": null,
         "firstPostTime": null,
-        "refreshTime": 1783389851000,
+        "refreshTime": 1784253890000,
         "tag": null,
         "expiredTime": null,
         "socialRecommendJob": null
@@ -741,26 +398,26 @@
         "highLight": "1.你将与低空经济领域的前沿技术专家，丰富的商业资源一起合作，并创造低空物流网络的历史；\n2.团队氛围以人为本，鼓励创新和个人发展，广阔的才华施展空间。",
         "otherInfo": null,
         "firstPostTime": null,
-        "refreshTime": 1783389846000,
+        "refreshTime": 1784253886000,
         "tag": null,
         "expiredTime": null,
         "socialRecommendJob": null
       },
       {
-        "jobUnionId": "4550088926",
-        "name": "美团骑行-车辆运营主管（重庆）",
+        "jobUnionId": "4550275307",
+        "name": "智能硬件产品运营",
         "projectId": null,
         "projectName": null,
         "jobType": "3",
         "jobSpecialCode": "5",
         "jobSource": "1",
         "jobStatus": "000",
-        "jobFamily": "销售、客服与支持类",
-        "jobFamilyGroup": "业务支持",
+        "jobFamily": "产品类",
+        "jobFamilyGroup": "硬件产品",
         "cityList": [
           {
             "code": null,
-            "name": "重庆市",
+            "name": "北京市",
             "children": null,
             "sort": null,
             "subCode": null,
@@ -773,7 +430,7 @@
         "department": [
           {
             "code": null,
-            "name": "软硬件服务-骑行事业部",
+            "name": "软硬件服务-硬件管理部",
             "children": null,
             "sort": null,
             "subCode": null,
@@ -784,13 +441,13 @@
         ],
         "desc": null,
         "departmentIntro": null,
-        "jobDuty": "1.负责所属区域的车辆运营管理工作，对有效运营车辆和活跃车辆指标负责；\n2.通过实地观察、数据分析、行业分析，制定提升市占营收的经营策略，例如车辆投放、调度策略，故障干预策略等，提升市占营收等指标；\n3.组建和管理运维团队，包括一线运维司机、摆车人员；\n4.对接区域内政府主管部门，配合政府部门对城市运营问题进行管理。",
+        "jobDuty": "1. 搭建并维护产品 VOC（Voice of Customer）体系，运用 AI 大模型对海量用户反馈进行智能分类、情感分析和趋势洞察，结合客服工单、社媒舆情、售后维修、一线销售等多渠道数据，自动化输出问题诊断报告和优化建议。\n2. 设计并执行用户调研，包括问卷设计、客户访谈、实地调研等，覆盖新品定义、上市验证、迭代优化等不同阶段。运用 AI 辅助工具提升调研效率，如 AI 辅助问卷生成、访谈纪要自动整理、用户画像智能分析，持续挖掘真实用户需求和使用痛点。\n3. 负责硬件产品营销内容产出，包括卖点提炼、宣传图文、短视频、销售材料等。探索 AI 辅助内容生成、创意迭代和效果测试，提升内容生产效率和传播转化率。\n4. 跟踪行业信息和动态，包括政策、市场趋势、用户评价等。利用 AI 工具实现信息自动抓取、用户评价批量分析和市场趋势智能洞察，定期沉淀分析结论，为产品规划提供决策依据。\n5. 维护并完善硬件产品对外知识库（产品介绍、核心卖点、FAQ、使用说明、销售话术、培训材料等），探索AI辅助优化产品侧日常运营流程。",
         "jobRequirement": null,
         "precedence": null,
-        "highLight": "1.在美团骑行这一新兴领域担任车辆运营主管，具备较大的发展空间。\n2.有机会带领团队参与和推动车辆运营的策略制定和优化工作。\n3.能够通过数据分析和运营管理的实践，提升自身的运营管理能力和领导能力。",
+        "highLight": "AI + 硬件运营的前沿实践：在美团\"AI at Work\"的文化下，你将系统性地把 AI 大模型融入硬件产品运营的每个环节——从 VOC 智能分析到 AI 辅助用户调研、营销内容生成等。这不是\"会用 Chatbot\"，而是真正用 AI 改变工作方式的实践场。同时，你将参与产品从立项、上市到迭代退出的全生命周期运营，积累硬件产品运营的完整方法论，为走向产品方向打下扎实基础。",
         "otherInfo": null,
         "firstPostTime": null,
-        "refreshTime": 1783389844000,
+        "refreshTime": 1784253883000,
         "tag": null,
         "expiredTime": null,
         "socialRecommendJob": null
@@ -839,186 +496,7 @@
         "highLight": "1.全局餐饮供应链视角，团队氛围好，发展空间大；\n2.有机会参与复杂业务场景，跨部门重大项目管理工作，能够纵向了解业务内服务相关的各职能、环节的工作。",
         "otherInfo": null,
         "firstPostTime": null,
-        "refreshTime": 1783389841000,
-        "tag": null,
-        "expiredTime": null,
-        "socialRecommendJob": null
-      },
-      {
-        "jobUnionId": "4547259018",
-        "name": "渠道经理-广西",
-        "projectId": null,
-        "projectName": null,
-        "jobType": "3",
-        "jobSpecialCode": "5",
-        "jobSource": "1",
-        "jobStatus": "000",
-        "jobFamily": "销售、客服与支持类",
-        "jobFamilyGroup": "销售",
-        "cityList": [
-          {
-            "code": null,
-            "name": "南宁市",
-            "children": null,
-            "sort": null,
-            "subCode": null,
-            "mapping": null,
-            "outerCode": null,
-            "bgNode": false
-          },
-          {
-            "code": null,
-            "name": "桂林市",
-            "children": null,
-            "sort": null,
-            "subCode": null,
-            "mapping": null,
-            "outerCode": null,
-            "bgNode": false
-          },
-          {
-            "code": null,
-            "name": "贵港市",
-            "children": null,
-            "sort": null,
-            "subCode": null,
-            "mapping": null,
-            "outerCode": null,
-            "bgNode": false
-          },
-          {
-            "code": null,
-            "name": "柳州市",
-            "children": null,
-            "sort": null,
-            "subCode": null,
-            "mapping": null,
-            "outerCode": null,
-            "bgNode": false
-          },
-          {
-            "code": null,
-            "name": "北海市",
-            "children": null,
-            "sort": null,
-            "subCode": null,
-            "mapping": null,
-            "outerCode": null,
-            "bgNode": false
-          },
-          {
-            "code": null,
-            "name": "玉林市",
-            "children": null,
-            "sort": null,
-            "subCode": null,
-            "mapping": null,
-            "outerCode": null,
-            "bgNode": false
-          },
-          {
-            "code": null,
-            "name": "贺州市",
-            "children": null,
-            "sort": null,
-            "subCode": null,
-            "mapping": null,
-            "outerCode": null,
-            "bgNode": false
-          },
-          {
-            "code": null,
-            "name": "崇左市",
-            "children": null,
-            "sort": null,
-            "subCode": null,
-            "mapping": null,
-            "outerCode": null,
-            "bgNode": false
-          },
-          {
-            "code": null,
-            "name": "钦州市",
-            "children": null,
-            "sort": null,
-            "subCode": null,
-            "mapping": null,
-            "outerCode": null,
-            "bgNode": false
-          },
-          {
-            "code": null,
-            "name": "百色市",
-            "children": null,
-            "sort": null,
-            "subCode": null,
-            "mapping": null,
-            "outerCode": null,
-            "bgNode": false
-          },
-          {
-            "code": null,
-            "name": "防城港市",
-            "children": null,
-            "sort": null,
-            "subCode": null,
-            "mapping": null,
-            "outerCode": null,
-            "bgNode": false
-          },
-          {
-            "code": null,
-            "name": "梧州市",
-            "children": null,
-            "sort": null,
-            "subCode": null,
-            "mapping": null,
-            "outerCode": null,
-            "bgNode": false
-          },
-          {
-            "code": null,
-            "name": "河池市",
-            "children": null,
-            "sort": null,
-            "subCode": null,
-            "mapping": null,
-            "outerCode": null,
-            "bgNode": false
-          },
-          {
-            "code": null,
-            "name": "来宾市",
-            "children": null,
-            "sort": null,
-            "subCode": null,
-            "mapping": null,
-            "outerCode": null,
-            "bgNode": false
-          }
-        ],
-        "workYear": null,
-        "department": [
-          {
-            "code": null,
-            "name": "软硬件服务-骑行事业部",
-            "children": null,
-            "sort": null,
-            "subCode": null,
-            "mapping": null,
-            "outerCode": null,
-            "bgNode": false
-          }
-        ],
-        "desc": null,
-        "departmentIntro": null,
-        "jobDuty": "1、对所辖城市群的电单车渠道合作商管理工作负责，承担经营过程和结果指标的任务达成；\n2、充分了解用户、市场等行业信息，制定有针对性的城市打法，并能够指导渠道运营落地，拿到结果；\n3、保持对政府的良好合作关系，进行必要的陪访，配合政策要求及时响应；\n4、与渠道合作商负责人建立良好客情，帮其分析车辆点位、调度规律，制定合理运营计划，以及给出收益管理和人员管理建议，不断推动合作伙伴投入资源达成运营任务并更加盈利；对商的选、育、励、汰负责；\n5、落地执行公司对商政策的上传下达，以及商的赋能工作。",
-        "jobRequirement": null,
-        "precedence": null,
-        "highLight": "良好的团队氛围，成长空间大，舒适的工作环境。",
-        "otherInfo": null,
-        "firstPostTime": null,
-        "refreshTime": 1783389840000,
+        "refreshTime": 1784253878000,
         "tag": null,
         "expiredTime": null,
         "socialRecommendJob": null
@@ -1087,115 +565,7 @@
         "highLight": "1. 职级定位L7，承担核心商业拓展职责，具备高成长性与战略影响力。  \n2. 聚焦创新场景与重点客户落地，参与高价值项目孵化与模式探索。  \n3. 与行业头部企业及新兴科技公司对标，积累前沿B端业务经验。  \n4. 公司提供完善的商业中台支持与跨部门协作机制，助力项目高效推进。  \n5. 扁平化组织文化，鼓励策略创新与主动担当，职业发展路径清晰",
         "otherInfo": null,
         "firstPostTime": null,
-        "refreshTime": 1783389834000,
-        "tag": null,
-        "expiredTime": null,
-        "socialRecommendJob": null
-      },
-      {
-        "jobUnionId": "4544922218",
-        "name": "仓库培训专员",
-        "projectId": null,
-        "projectName": null,
-        "jobType": "3",
-        "jobSpecialCode": "5",
-        "jobSource": "1",
-        "jobStatus": "000",
-        "jobFamily": "职能类",
-        "jobFamilyGroup": "人力资源",
-        "cityList": [
-          {
-            "code": null,
-            "name": "利雅得",
-            "children": null,
-            "sort": null,
-            "subCode": null,
-            "mapping": null,
-            "outerCode": null,
-            "bgNode": false
-          },
-          {
-            "code": null,
-            "name": "吉达",
-            "children": null,
-            "sort": null,
-            "subCode": null,
-            "mapping": null,
-            "outerCode": null,
-            "bgNode": false
-          }
-        ],
-        "workYear": null,
-        "department": [
-          {
-            "code": null,
-            "name": "食杂零售-Keemart",
-            "children": null,
-            "sort": null,
-            "subCode": null,
-            "mapping": null,
-            "outerCode": null,
-            "bgNode": false
-          }
-        ],
-        "desc": null,
-        "departmentIntro": null,
-        "jobDuty": "一、培训体系搭建与规划\n结合仓库作业流程、岗位标准、安全规范，制定年度/月度培训计划，明确培训内容、课时、参训人员及考核目标。梳理各岗位SOP、操作手册、安全制度，搭建仓库分层培训体系（新员工、在岗员工、班组长、专项技能）。跟进业务变化，及时更新培训课件、教材、视频、试题等培训资料。\n二、新员工入职培训\n负责仓库新人全流程入职培训：企业文化、园区/仓库规章制度、考勤、行为规范，开展基础作业培训：库区划分、货物识别、出入库流程、扫码/系统操作、劳保用品使用。安排师徒带教，跟踪新人在岗实操学习，定期复盘学习进度，确保快速上岗。\n三、在岗员工常态化培训\n组织日常技能复训、流程宣贯、制度解读，提升全员作业熟练度与规范性。开展专项培训：盘点作业、分拣/打包/装卸、货位管理、异常处理、6S管理等。落地安全培训：消防安全、叉车/地牛等设备操作、危化品管理、人车分流、应急演练。针对低效、出错、违规问题开展定向纠偏培训，降低作业差错率。\n四、培训实施与现场管理\n独立组织线下授课、实操演练、现场带教、案例分享、情景模拟等各类培训。协调培训场地、教具、设备、讲师，障培训正常开展。维护培训秩序，记录培训考勤、课堂表现、现场问题并及时整改。\n五、考核、复盘与数据统计\n组织理论笔试、实操考核，判定培训效果，出具考核结果，对不合格人员安排复训。统计培训数据：参训人数、完成率、合格率、培训时长，形成培训报表。培训后回访调研，收集员工、主管反馈，持续优化培训方式与内容。\n六、讲师与团队管理\n选拔、培养内部兼职讲师（仓管、组长、老员工），制定讲师管理与激励规则。指导兼职讲师授课方法、课件使用，提升整体授课质量。\n七、合规、档案与其他工作\n建立完整培训档案：参训记录、考核成绩、培训课件、签到表、影像资料，做到可追溯。配合仓库完成质检、迎审、专项整改类培训工作。完成上级交办的其他临时培训相关任务。\n\n1. Training System Development and Planning  \nDevelop annual and monthly training plans based on warehouse operations, job standards, and safety regulations, clearly defining training content, class hours, participants, and assessment objectives. Organize SOPs, operation manuals, and safety policies for each position to establish a tiered warehouse training system (new hires, current employees, team leaders, and specialized skills). Continuously update training materials—including courseware, textbooks, videos, and test questions—in response to business changes.\n\n2. New Employee Onboarding Training  \nLead end-to-end onboarding training for new warehouse staff, covering company culture, site/warehouse rules and regulations, attendance policies, and behavioral standards. Deliver foundational operational training including warehouse area layout, product identification, inbound/outbound processes, scanning/system operations, and personal protective equipment usage. Assign mentorship programs, monitor hands-on learning progress, conduct regular reviews, and ensure rapid job readiness.\n\n3. Ongoing Training for In-Service Employees  \nOrganize routine skill refreshers, process communications, and policy explanations to enhance overall operational proficiency and compliance. Conduct specialized training in areas such as inventory counting, sorting/packaging/loading/unloading, storage slot management, exception handling, and 6S management. Implement safety training covering fire safety, forklift and pallet truck operation, hazardous material handling, pedestrian-vehicle separation, and emergency drills. Provide targeted corrective training for inefficiencies, errors, or violations to reduce operational mistakes.\n\n4. Training Execution and On-Site Management  \nIndependently organize various training formats including classroom instruction, hands-on practice, on-site coaching, case studies, and scenario simulations. Coordinate training venues, teaching aids, equipment, and instructors to ensure smooth implementation. Maintain training discipline, record attendance, classroom performance, and on-site issues, and promptly address any concerns.\n\n5. Assessment, Review, and Data Reporting  \nConduct theoretical written tests and practical assessments to evaluate training effectiveness, issue evaluation results, and arrange retraining for underperforming individuals. Collect and analyze training data—such as participant numbers, completion rates, pass rates, and training duration—and generate comprehensive training reports. Conduct post-training follow-up surveys to gather feedback from employees and supervisors, continuously improving training methods and content.\n\n6. Trainer and Team Management  \nSelect and develop internal part-time trainers (warehouse staff, team leaders, experienced employees), establishing clear management and incentive guidelines. Guide part-time trainers on teaching methodologies and courseware utilization to improve overall training quality.\n\n7. Compliance, Documentation, and Other Responsibilities  \nMaintain complete training records including participation logs, assessment scores, training materials, sign-in sheets, and audiovisual documentation to ensure traceability. Support warehouse operations in quality inspections, audits, and special improvement initiatives through relevant training. Complete other temporary training-related tasks assigned by superiors.",
-        "jobRequirement": null,
-        "precedence": null,
-        "highLight": "成长空间大：深耕仓储培训领域，掌握全套培训体系与仓储业务，职业路径清晰。\n工作轻松有度：无需重体力劳作，以授课、统筹、文案工作为主，强度低。\n技能加持：免费锻炼演讲、课件制作、组织统筹能力，职场竞争力持续升级。\n稳定性强：仓储行业刚需岗位，业务稳定，就业保障足。\n晋升多元：可晋升培训管理岗，也可转仓储运营、人事模块，发展方向灵活。\n福利齐全：享有带薪培训、节日福利、团建活动等多项员工福利。\n\nAmple growth potential: Deeply engaged in warehouse training, mastering a complete training system and warehouse operations, offering a clear career path.  \nWork is relaxed and balanced: No heavy physical labor involved; primarily focused on teaching, coordination, and content creation, with low workload intensity.  \nSkill enhancement: Free opportunities to develop public speaking, courseware design, and organizational coordination skills, continuously boosting workplace competitiveness.  \nHigh stability: A high-demand role within the warehouse industry, ensuring stable business and strong employment security.  \nDiverse advancement options: Can progress into training management roles or transition into warehouse operations or HR, providing flexible career development paths.  \nComprehensive benefits: Enjoy paid training, holiday perks, team-building activities, and various other employee benefits.",
-        "otherInfo": null,
-        "firstPostTime": null,
-        "refreshTime": 1783389832000,
-        "tag": null,
-        "expiredTime": null,
-        "socialRecommendJob": null
-      },
-      {
-        "jobUnionId": "4539511037",
-        "name": "微信运营专家-选品及内容方向",
-        "projectId": null,
-        "projectName": null,
-        "jobType": "3",
-        "jobSpecialCode": "5",
-        "jobSource": "1",
-        "jobStatus": "000",
-        "jobFamily": "运营类",
-        "jobFamilyGroup": "用户运营",
-        "cityList": [
-          {
-            "code": null,
-            "name": "北京市",
-            "children": null,
-            "sort": null,
-            "subCode": null,
-            "mapping": null,
-            "outerCode": null,
-            "bgNode": false
-          }
-        ],
-        "workYear": null,
-        "department": [
-          {
-            "code": null,
-            "name": "食杂零售-小象事业部",
-            "children": null,
-            "sort": null,
-            "subCode": null,
-            "mapping": null,
-            "outerCode": null,
-            "bgNode": false
-          }
-        ],
-        "desc": null,
-        "departmentIntro": null,
-        "jobDuty": "1、负责小象超市私域爆品推广相关策略，包括爆品识别、筛选、推广策略、内容制作；\n2、负责私域推品指标体系建立，搭建相关策略和监控，预警和诊断体系；\n3、能够推动各营销节点推品方案实施，协调多方资源推动策略落地拿到结果；\n4、负责跨部门沟通盘点推品需求，判断合理性，共识目标。",
-        "jobRequirement": null,
-        "precedence": null,
-        "highLight": "小象超市作为即时零售业务，具有广阔的增长空间。处于快速开城增长阶段，有机会操盘千万量级用户规模，积累丰富的业务经验。",
-        "otherInfo": null,
-        "firstPostTime": null,
-        "refreshTime": 1783389831000,
+        "refreshTime": 1784253876000,
         "tag": null,
         "expiredTime": null,
         "socialRecommendJob": null
@@ -1274,56 +644,7 @@
         "highLight": "医疗行业深耕，行业头部客户资源，系统化医美业务培训成长，开放晋升空间",
         "otherInfo": null,
         "firstPostTime": null,
-        "refreshTime": 1783389829000,
-        "tag": null,
-        "expiredTime": null,
-        "socialRecommendJob": null
-      },
-      {
-        "jobUnionId": "4535165446",
-        "name": "小象超市-水饮料采购专家",
-        "projectId": null,
-        "projectName": null,
-        "jobType": "3",
-        "jobSpecialCode": "5",
-        "jobSource": "1",
-        "jobStatus": "000",
-        "jobFamily": "零售类",
-        "jobFamilyGroup": "采购",
-        "cityList": [
-          {
-            "code": null,
-            "name": "北京市",
-            "children": null,
-            "sort": null,
-            "subCode": null,
-            "mapping": null,
-            "outerCode": null,
-            "bgNode": false
-          }
-        ],
-        "workYear": null,
-        "department": [
-          {
-            "code": null,
-            "name": "食杂零售-小象事业部",
-            "children": null,
-            "sort": null,
-            "subCode": null,
-            "mapping": null,
-            "outerCode": null,
-            "bgNode": false
-          }
-        ],
-        "desc": null,
-        "departmentIntro": null,
-        "jobDuty": "1、根据年度经营目标与产品研发节奏，制定年度采购战略与品类规划，统筹供应链全链路采购与供应保障工作；\n2、系统拓展、评审与维护供应商资源池。针对茶叶、果汁、乳品等核心原料，深入产地或上游加工端进行寻源，保障供给合规；\n3、通过商务谈判、集中采购、产地直采、需求整合等方式实现可持续降本，主导成本分析与优化项目落地；\n4、紧密联动研发与运营部门，根据新品开发需求及时匹配原料供给，确保从研发小样到规模化生产的全链条响应；联动财务部门编制并管控年度采购预算。",
-        "jobRequirement": null,
-        "precedence": null,
-        "highLight": "1、团队氛围融洽务实；\n2、全链路闭环管理，成长曲线陡峭。",
-        "otherInfo": null,
-        "firstPostTime": null,
-        "refreshTime": 1783389825000,
+        "refreshTime": 1784253873000,
         "tag": null,
         "expiredTime": null,
         "socialRecommendJob": null
@@ -1372,7 +693,7 @@
         "highLight": "1.你将见证无人机配送网络的建设过程，深入了解无人机配送的实质，感受科技改变社会的历史使命和自豪；\n2.你将与无人机领域的前沿技术专家、美团旗舰业务团队一起合作，快速成长和提升；\n3.团队氛围nice，鼓励创新和试错，广阔的个人施展空间；\n4.获得同无人机行业核心利益相关方的人脉网络。",
         "otherInfo": null,
         "firstPostTime": null,
-        "refreshTime": 1783389823000,
+        "refreshTime": 1784253864000,
         "tag": null,
         "expiredTime": null,
         "socialRecommendJob": null
@@ -1421,56 +742,7 @@
         "highLight": "1、团队氛围好 ；\n2、业务发展前景大，个人成长空间高；",
         "otherInfo": null,
         "firstPostTime": null,
-        "refreshTime": 1783389819000,
-        "tag": null,
-        "expiredTime": null,
-        "socialRecommendJob": null
-      },
-      {
-        "jobUnionId": "4528199650",
-        "name": "用户活动运营专家",
-        "projectId": null,
-        "projectName": null,
-        "jobType": "3",
-        "jobSpecialCode": "5",
-        "jobSource": "1",
-        "jobStatus": "000",
-        "jobFamily": "运营类",
-        "jobFamilyGroup": "用户运营",
-        "cityList": [
-          {
-            "code": null,
-            "name": "香港特别行政区",
-            "children": null,
-            "sort": null,
-            "subCode": null,
-            "mapping": null,
-            "outerCode": null,
-            "bgNode": false
-          }
-        ],
-        "workYear": null,
-        "department": [
-          {
-            "code": null,
-            "name": "Keeta",
-            "children": null,
-            "sort": null,
-            "subCode": null,
-            "mapping": null,
-            "outerCode": null,
-            "bgNode": false
-          }
-        ],
-        "desc": null,
-        "departmentIntro": null,
-        "jobDuty": "1. 根据业务需求及运营方向，基于用户生命周期，结合特定场景制定差异化用户活动运营策略。\n2. 建立关键运营指标监控体系，结合 AI 辅助数据洞察，及时识别异动并进行策略迭代，推动复购率、用户 LTV 等核心指标提升。\n3. 独立完成营销活动的方案策划、素材设计、供给招商与落地执行等全链路运营工作。\n4. 负责活动效果的跟踪和分析迭代，及时调整活动运营策略，保障核心指标达成。\n5. 高效协同市场、商家端、配送、产品等部门，推进营销活动的效果增长与运营效率提升。\n6. 运用 AI 工具（如 ChatGPT/Copilot/内部 AI 平台）提升日常工作效率，推动团队 AI 工具的落地应用。",
-        "jobRequirement": null,
-        "precedence": null,
-        "highLight": "1. 创新业务的操盘手，挑战与机会并存。\n2. 能够全方位了解外卖业务模式，有足够的空间和灵活度全面发挥你的才能。\n3. 核心业务的核心部门，团队气氛好，学习成长型团队。\n4. AI-Native 的工作氛围，注重人机协作效率，鼓励并提供资源支持 AI 工具探索。",
-        "otherInfo": null,
-        "firstPostTime": null,
-        "refreshTime": 1783389817000,
+        "refreshTime": 1784253860000,
         "tag": null,
         "expiredTime": null,
         "socialRecommendJob": null
@@ -1519,7 +791,184 @@
         "highLight": "1. 参与高速发展的即时零售业务，深入影响千万级用户消费体验。  \n2. 与行业头部商家深度合作，积累丰富的商家资源与运营实战经验。  \n3. 扁平化管理，拥有充分的自主决策空间与快速成长机会。  \n4. 工作地点位于北京核心区域，团队氛围开放，注重创新与结果导向。",
         "otherInfo": null,
         "firstPostTime": null,
-        "refreshTime": 1783389816000,
+        "refreshTime": 1784253859000,
+        "tag": null,
+        "expiredTime": null,
+        "socialRecommendJob": null
+      },
+      {
+        "jobUnionId": "4527503150",
+        "name": "到餐-营销策略运营",
+        "projectId": null,
+        "projectName": null,
+        "jobType": "3",
+        "jobSpecialCode": "5",
+        "jobSource": "1",
+        "jobStatus": "000",
+        "jobFamily": "运营类",
+        "jobFamilyGroup": "业务运营",
+        "cityList": [
+          {
+            "code": null,
+            "name": "北京市",
+            "children": null,
+            "sort": null,
+            "subCode": null,
+            "mapping": null,
+            "outerCode": null,
+            "bgNode": false
+          }
+        ],
+        "workYear": null,
+        "department": [
+          {
+            "code": null,
+            "name": "核心本地商业-到餐事业部",
+            "children": null,
+            "sort": null,
+            "subCode": null,
+            "mapping": null,
+            "outerCode": null,
+            "bgNode": false
+          }
+        ],
+        "desc": null,
+        "departmentIntro": null,
+        "jobDuty": "1. 经营洞察与业务支持：结合市场动态、业务逻辑，应用统计分析能力，利用AI工具，洞察业务增长机会点，定期输出专题复盘报告，为业务提供决策输入和策略建议；\n\n2. 补贴费效分析与策略：构建补贴费效评估体系，持续监控效率表现；深度分析补贴结构，识别高效低效投入，制定精细化资源分配和差异化补贴策略，为提高费效负责。\n\n3. 项目统筹与落地：独立负责模糊度和复杂度高的项目，前后线沟通协调顺畅，跨团队协同保障执行质量；统筹推进项目，对项目进展阶段性复盘及汇报。\n\n4.AI赋能分析：利用AI工具赋能经营分析，提高分析效率，深挖分析深度；并且沉淀AI能力，共建AI产品工具，提高组织人效。",
+        "jobRequirement": null,
+        "precedence": null,
+        "highLight": "1. 业务核心岗位，具备高成长性；团队氛围好，可与多部门合作，职业发展空间广阔。\n\n2. 贴近市场前沿和销售团队，能够第一时间掌握行业变化，策略可落地。",
+        "otherInfo": null,
+        "firstPostTime": null,
+        "refreshTime": 1784253855000,
+        "tag": null,
+        "expiredTime": null,
+        "socialRecommendJob": null
+      },
+      {
+        "jobUnionId": "4521728457",
+        "name": "松鼠便利华南区仓配经理",
+        "projectId": null,
+        "projectName": null,
+        "jobType": "3",
+        "jobSpecialCode": "5",
+        "jobSource": "1",
+        "jobStatus": "000",
+        "jobFamily": "零售类",
+        "jobFamilyGroup": "物流",
+        "cityList": [
+          {
+            "code": null,
+            "name": "广州市",
+            "children": null,
+            "sort": null,
+            "subCode": null,
+            "mapping": null,
+            "outerCode": null,
+            "bgNode": false
+          },
+          {
+            "code": null,
+            "name": "东莞市",
+            "children": null,
+            "sort": null,
+            "subCode": null,
+            "mapping": null,
+            "outerCode": null,
+            "bgNode": false
+          },
+          {
+            "code": null,
+            "name": "深圳市",
+            "children": null,
+            "sort": null,
+            "subCode": null,
+            "mapping": null,
+            "outerCode": null,
+            "bgNode": false
+          }
+        ],
+        "workYear": null,
+        "department": [
+          {
+            "code": null,
+            "name": "核心本地商业-闪购事业部",
+            "children": null,
+            "sort": null,
+            "subCode": null,
+            "mapping": null,
+            "outerCode": null,
+            "bgNode": false
+          }
+        ],
+        "desc": null,
+        "departmentIntro": null,
+        "jobDuty": "1.上下游协同：定期沟通城市采销、店铺运营，推动双方问题的解决，提升供应商、物流商、门店的满意度；\n2.目标管理：根据物流经营目标，制定城市群内策略拆解和重点工作推进，加强过程管理，保障仓配运营效率及成本达标，不断提高供应商送货体验、门店有货率和履约体验；\n3.现场及物流商管理：针对现场生产问题、差异问题、库存问题、配送问题、逆退问题，协同快速处理解决；\n4.组织仓库内部及外部物流商相关日会、周会，推动问题解决；\n5.产能管理：承接进销存预测，产能目标和固定工需求、车辆需求管理，持续提升产能和弹性，满足销售需要。",
+        "jobRequirement": null,
+        "precedence": null,
+        "highLight": "1.提供晋升空间和发展机会；\n2.有机会接触到先进物流仓配管理理念。",
+        "otherInfo": null,
+        "firstPostTime": null,
+        "refreshTime": 1784253853000,
+        "tag": null,
+        "expiredTime": null,
+        "socialRecommendJob": null
+      },
+      {
+        "jobUnionId": "4517231858",
+        "name": "安全事务经理",
+        "projectId": null,
+        "projectName": null,
+        "jobType": "3",
+        "jobSpecialCode": "5",
+        "jobSource": "1",
+        "jobStatus": "000",
+        "jobFamily": "职能类",
+        "jobFamilyGroup": "公司事务",
+        "cityList": [
+          {
+            "code": null,
+            "name": "北京市",
+            "children": null,
+            "sort": null,
+            "subCode": null,
+            "mapping": null,
+            "outerCode": null,
+            "bgNode": false
+          },
+          {
+            "code": null,
+            "name": "深圳市",
+            "children": null,
+            "sort": null,
+            "subCode": null,
+            "mapping": null,
+            "outerCode": null,
+            "bgNode": false
+          }
+        ],
+        "workYear": null,
+        "department": [
+          {
+            "code": null,
+            "name": "软硬件服务-无人车业务部",
+            "children": null,
+            "sort": null,
+            "subCode": null,
+            "mapping": null,
+            "outerCode": null,
+            "bgNode": false
+          }
+        ],
+        "desc": null,
+        "departmentIntro": null,
+        "jobDuty": "1.建立并维护与公安交管等安全相关政府部门的良好沟通关系，协助各运营城市的自动驾驶道路测试通知书、示范应用许可等安全相关审批的申报与维护工作；\n\n2.协同内部技术、运营和法务等团队妥善处置危机事件，配合政府安全检查、约谈、自查整改等工作，善于利用AI工具整理并形成书面报告，保障公司在政府单位互动中的专业形象；\n\n3.持续跟踪国家及地方自动驾驶安全相关政策法规动态，包括但不限于：智能网联汽车准入试点、道路测试管理规范（GA/T 2388-2026）、自动驾驶系统安全强制性国标、SOTIF/功能安全标准等，利用AI工具做系统性分析解读，并结合业务实际情况形成政策研究报告并提出业务应对建议；\n\n4.积极参与中国汽车工程学会、中国智能交通协会、自动驾驶联盟等行业组织的安全专委会活动，拓展行业安全生态合作；",
+        "jobRequirement": null,
+        "precedence": null,
+        "highLight": "无人配送是行业最快落地的场景，是美团战略部署，加入美团无人配送将有机会引领整个行业的政策导向、推动整个行业的发展。\n\nAI 深度赋能岗位：政策文本分析、申报材料生成、知识库管理\n\n带薪年假、定期体检、五险一金、发展空间大、个人能力提升快。",
+        "otherInfo": null,
+        "firstPostTime": null,
+        "refreshTime": 1784253844000,
         "tag": null,
         "expiredTime": null,
         "socialRecommendJob": null
@@ -1568,7 +1017,7 @@
         "highLight": "1. 深度参与前沿无人车技术研发与商业化探索，站在行业创新最前线。  \n2. 与核心技术团队和业务专家协作，快速提升技术与商业复合能力。  \n3. 工作地点位于北京核心区域，提供具有竞争力的薪酬与职业发展通道。",
         "otherInfo": null,
         "firstPostTime": null,
-        "refreshTime": 1783389813000,
+        "refreshTime": 1784253837000,
         "tag": null,
         "expiredTime": null,
         "socialRecommendJob": null
@@ -1617,56 +1066,7 @@
         "highLight": "1. 参与美团内容营销系统从0到1的产品化建设，有机会深度影响产品方向，见证并推动业务的规模化增长；\n2. 深度参与前沿AI在营销场景的落地应用，积累宝贵的AI+运营实战经验，站在行业最前沿；\n3. 产品、技术、运营、市场多团队协作，视野广、成长快，团队氛围开放包容，鼓励创新思维与自主决策，能获得快速成长与专业能力提升机会。",
         "otherInfo": null,
         "firstPostTime": null,
-        "refreshTime": 1783389808000,
-        "tag": null,
-        "expiredTime": null,
-        "socialRecommendJob": null
-      },
-      {
-        "jobUnionId": "4510099911",
-        "name": "美团民宿-安全合规运营专家",
-        "projectId": null,
-        "projectName": null,
-        "jobType": "3",
-        "jobSpecialCode": "5",
-        "jobSource": "1",
-        "jobStatus": "000",
-        "jobFamily": "销售、客服与支持类",
-        "jobFamilyGroup": "销售",
-        "cityList": [
-          {
-            "code": null,
-            "name": "北京市",
-            "children": null,
-            "sort": null,
-            "subCode": null,
-            "mapping": null,
-            "outerCode": null,
-            "bgNode": false
-          }
-        ],
-        "workYear": null,
-        "department": [
-          {
-            "code": null,
-            "name": "核心本地商业-酒店旅行",
-            "children": null,
-            "sort": null,
-            "subCode": null,
-            "mapping": null,
-            "outerCode": null,
-            "bgNode": false
-          }
-        ],
-        "desc": null,
-        "departmentIntro": null,
-        "jobDuty": "1. 警企合作\n负责对接公安等各相关部门发起的紧急事件，统筹民宿安全合规项目的产品需求调研、管理执行及最终验收，修复漏洞迭代优化。\n2.舆情风险事件处置\n负责民宿舆情风险事件的全链路管理，包括风险判定、分级分类、事件处置、隐患闭环，搭建并维护风险事件统计看板，对事件处置进行框架归纳和流程沉淀；\n3. 黑灰产风险治理\n统筹民宿业务黑灰产的识别、监控与治理项目，通过Ai等工具的引入持续推动风控水平提高，协同内容、信息安全等部门制定专项风险防控策略，配合公安线下打击相关违法犯罪；\n针对节假日等高峰节点提前部署专项监控方案，保障平台安全稳定运营\n4. 其他合规和风险治理工作",
-        "jobRequirement": null,
-        "precedence": null,
-        "highLight": "1、部门是民宿业务统一的内外沟通窗口； \n2、明确的成长路径，全方位的合规运营能力提升； \n3、能够参与并推动民宿新业态的合规体系优化迭代过程。",
-        "otherInfo": null,
-        "firstPostTime": null,
-        "refreshTime": 1783389804000,
+        "refreshTime": 1784253832000,
         "tag": null,
         "expiredTime": null,
         "socialRecommendJob": null
@@ -1715,105 +1115,7 @@
         "highLight": "公司核心业务且高速发展中，团队氛围好，能深入接触零售业。",
         "otherInfo": null,
         "firstPostTime": null,
-        "refreshTime": 1783389802000,
-        "tag": null,
-        "expiredTime": null,
-        "socialRecommendJob": null
-      },
-      {
-        "jobUnionId": "4507800214",
-        "name": "采购财务BP",
-        "projectId": null,
-        "projectName": null,
-        "jobType": "3",
-        "jobSpecialCode": "5",
-        "jobSource": "1",
-        "jobStatus": "000",
-        "jobFamily": "职能类",
-        "jobFamilyGroup": "财务",
-        "cityList": [
-          {
-            "code": null,
-            "name": "北京市",
-            "children": null,
-            "sort": null,
-            "subCode": null,
-            "mapping": null,
-            "outerCode": null,
-            "bgNode": false
-          }
-        ],
-        "workYear": null,
-        "department": [
-          {
-            "code": null,
-            "name": "财务平台",
-            "children": null,
-            "sort": null,
-            "subCode": null,
-            "mapping": null,
-            "outerCode": null,
-            "bgNode": false
-          }
-        ],
-        "desc": null,
-        "departmentIntro": null,
-        "jobDuty": "1，预算与预测管理：深度参与采购部财务管理工作，准确编制财务预测及年度预算。持续跟踪预算执行情况并开展差异分析，协助业务在预算范围内高效达成目标。\n2，财务流程优化与变革推动：深入了解采购业务场景，围绕公司层面的付款、发票、账务等流程，主动识别体系性、制度性问题，并积极推动跨部门协作，驱动公司层面流程与系统的持续优化变革。\n3，数据治理与经营分析：负责公司层面采购数据的维护与质量提升，搭建稳健的数据底座。结合不同品类的业务特点制定关键经营指标与分析体系，定期出具多维度经营分析及业务运营报告，与业务建立双向数据反馈机制。\n4，数智化探索与创新：对 AI 技术在财务及业务分析领域的应用保持主动探索意识，善用 AI 工具创新分析方法与工作模式，推动财务支持工作的数智化转型。\n5，业务伙伴协同：与采购业务团队建立紧密的合作关系，深入理解业务策略，能够独立输出有价值的财务判断与建议，支持业务决策与过程管理。",
-        "jobRequirement": null,
-        "precedence": null,
-        "highLight": "1，深度参与公司层面采购数据管理和经营分析，推动公司整体的采购体系与运营效率优化，赋能公司级决策，工作成果具有全局价值。\n2，轻松高效的团队氛围。",
-        "otherInfo": null,
-        "firstPostTime": null,
-        "refreshTime": 1783389801000,
-        "tag": null,
-        "expiredTime": null,
-        "socialRecommendJob": null
-      },
-      {
-        "jobUnionId": "4507621107",
-        "name": "用户体验调研运营（NPS方向）",
-        "projectId": null,
-        "projectName": null,
-        "jobType": "3",
-        "jobSpecialCode": "5",
-        "jobSource": "1",
-        "jobStatus": "000",
-        "jobFamily": "运营类",
-        "jobFamilyGroup": "用户运营",
-        "cityList": [
-          {
-            "code": null,
-            "name": "北京市",
-            "children": null,
-            "sort": null,
-            "subCode": null,
-            "mapping": null,
-            "outerCode": null,
-            "bgNode": false
-          }
-        ],
-        "workYear": null,
-        "department": [
-          {
-            "code": null,
-            "name": "食杂零售-小象事业部",
-            "children": null,
-            "sort": null,
-            "subCode": null,
-            "mapping": null,
-            "outerCode": null,
-            "bgNode": false
-          }
-        ],
-        "desc": null,
-        "departmentIntro": null,
-        "jobDuty": "1、NPS调研流程设计及落地：负责小象线下店NPS调研方案的设计与执行，涵盖：方案制定、问卷设计、样本管理、数据回收，确保调研结果全面、准确、可信；\n2、用户洞察与问题诊断：结合NPS数据、客诉案例及用户反馈，从全链路视角深度挖掘用户体验痛点，识别共性问题和改善机会点，形成洞察报告；\n3、体验优化推动：将调研结论转化为可落地的改善建议，协同产研、运营等跨部门团队推动优化方案执行，并持续跟踪改善效果；\n4、 数据统计与报告输出：定期对调研数据进行系统化统计与分析，输出高质量分析报告，支持业务决策。",
-        "jobRequirement": null,
-        "precedence": null,
-        "highLight": "公司核心业务且高速发展中，团队氛围好，能深入接触零售业。",
-        "otherInfo": null,
-        "firstPostTime": null,
-        "refreshTime": 1783389795000,
+        "refreshTime": 1784253827000,
         "tag": null,
         "expiredTime": null,
         "socialRecommendJob": null
@@ -1862,7 +1164,7 @@
         "highLight": "1. 深度参与公司战略级创新项目，直接影响业务发展方向。  \n2. 开放协作的工作环境，与团队共同探索前沿业务模式。  \n3. 提供广阔的个人成长空间与职业发展路径。\n4. AI工具场景应用广阔，美团 AI at Work 全面推进，AI工具帮你从机械性工作中解放出来，聚焦真正高价值的商业判断",
         "otherInfo": null,
         "firstPostTime": null,
-        "refreshTime": 1783389794000,
+        "refreshTime": 1784253825000,
         "tag": null,
         "expiredTime": null,
         "socialRecommendJob": null
@@ -1911,7 +1213,86 @@
         "highLight": "主导餐饮AI硬件产品线全生命周期，深度参与行业数智AI变革。背靠美团生态资源，聚焦收银机、AI IPC、边缘算力等前沿方向，技术与商业双轮驱动。适合有硬件经验、希望在AI落地方向快速成长的产品人。",
         "otherInfo": null,
         "firstPostTime": null,
-        "refreshTime": 1783389792000,
+        "refreshTime": 1784253824000,
+        "tag": null,
+        "expiredTime": null,
+        "socialRecommendJob": null
+      },
+      {
+        "jobUnionId": "4491537434",
+        "name": "无人车业务部-公共事务发展经理-华中",
+        "projectId": null,
+        "projectName": null,
+        "jobType": "3",
+        "jobSpecialCode": "5",
+        "jobSource": "1",
+        "jobStatus": "000",
+        "jobFamily": "职能类",
+        "jobFamilyGroup": "公司事务",
+        "cityList": [
+          {
+            "code": null,
+            "name": "北京市",
+            "children": null,
+            "sort": null,
+            "subCode": null,
+            "mapping": null,
+            "outerCode": null,
+            "bgNode": false
+          },
+          {
+            "code": null,
+            "name": "上海市",
+            "children": null,
+            "sort": null,
+            "subCode": null,
+            "mapping": null,
+            "outerCode": null,
+            "bgNode": false
+          },
+          {
+            "code": null,
+            "name": "深圳市",
+            "children": null,
+            "sort": null,
+            "subCode": null,
+            "mapping": null,
+            "outerCode": null,
+            "bgNode": false
+          },
+          {
+            "code": null,
+            "name": "武汉市",
+            "children": null,
+            "sort": null,
+            "subCode": null,
+            "mapping": null,
+            "outerCode": null,
+            "bgNode": false
+          }
+        ],
+        "workYear": null,
+        "department": [
+          {
+            "code": null,
+            "name": "软硬件服务-无人车业务部",
+            "children": null,
+            "sort": null,
+            "subCode": null,
+            "mapping": null,
+            "outerCode": null,
+            "bgNode": false
+          }
+        ],
+        "desc": null,
+        "departmentIntro": null,
+        "jobDuty": "1、负责目标城市政府关系从0到1搭建，协调地方政府及交通部门，推动自动驾驶运营权、路权及商业化运营资质的获取；借助 AI 工具快速梳理华中各城市政策法规差异，生成定制化政策沟通材料，提升开城节奏；\n2、协调跨部门资源，完成数据上报、平台对接等合规要求；探索 AI 辅助合规文档整理和报送流程标准化，减少重复性行政事务投入；\n3、联动科研院所、车企等合作伙伴，推动常态化运营项目落地；利用 AI 工具进行合作伙伴图谱梳理和优先级分析，提高资源整合效率；\n4、处理属地舆情与问题，平衡政府数据安全要求与企业技术诉求；利用 AI 辅助舆情监测与快速响应材料撰写，提升危机处置速度与质量。",
+        "jobRequirement": null,
+        "precedence": null,
+        "highLight": "无人配送是行业最快落地的场景，是美团战略部署，加入美团无人配送将有机会引领整个行业的政策导向、推动整个行业的发展。\nAI 深度赋能岗位：政策文本分析、申报材料生成、知识库管理\n带薪年假、定期体检、五险一金、发展空间大、个人能力提升快。",
+        "otherInfo": null,
+        "firstPostTime": null,
+        "refreshTime": 1784253818000,
         "tag": null,
         "expiredTime": null,
         "socialRecommendJob": null
@@ -1960,26 +1341,56 @@
         "highLight": "1. 深入核心业务，全面掌握新零售背景下的运作逻辑与挑战，直接参与AI预测体系的从0到1搭建。  \n2. 在真实复杂业务场景中，以AI工具为杠杆，锤炼兼具广度和深度的供应链计划与预测能力。  \n3. 与多元背景的专业团队协作，共同推动零售行业的AI化、智能化升级，站在行业变革前沿。",
         "otherInfo": null,
         "firstPostTime": null,
-        "refreshTime": 1783389788000,
+        "refreshTime": 1784253811000,
         "tag": null,
         "expiredTime": null,
         "socialRecommendJob": null
       },
       {
-        "jobUnionId": "4478262709",
-        "name": "用户运营专家",
+        "jobUnionId": "4490402191",
+        "name": "无人车业务部-公共事务发展经理-西南",
         "projectId": null,
         "projectName": null,
         "jobType": "3",
         "jobSpecialCode": "5",
         "jobSource": "1",
         "jobStatus": "000",
-        "jobFamily": "运营类",
-        "jobFamilyGroup": "用户运营",
+        "jobFamily": "职能类",
+        "jobFamilyGroup": "公司事务",
         "cityList": [
           {
             "code": null,
-            "name": "圣保罗",
+            "name": "成都市",
+            "children": null,
+            "sort": null,
+            "subCode": null,
+            "mapping": null,
+            "outerCode": null,
+            "bgNode": false
+          },
+          {
+            "code": null,
+            "name": "北京市",
+            "children": null,
+            "sort": null,
+            "subCode": null,
+            "mapping": null,
+            "outerCode": null,
+            "bgNode": false
+          },
+          {
+            "code": null,
+            "name": "上海市",
+            "children": null,
+            "sort": null,
+            "subCode": null,
+            "mapping": null,
+            "outerCode": null,
+            "bgNode": false
+          },
+          {
+            "code": null,
+            "name": "深圳市",
             "children": null,
             "sort": null,
             "subCode": null,
@@ -1992,7 +1403,7 @@
         "department": [
           {
             "code": null,
-            "name": "Keeta",
+            "name": "软硬件服务-无人车业务部",
             "children": null,
             "sort": null,
             "subCode": null,
@@ -2003,28 +1414,28 @@
         ],
         "desc": null,
         "departmentIntro": null,
-        "jobDuty": "1.负责巴西用户分层与策略设计，基于用户生命周期，建立用户分层体系，制定精细化的用户运营策略，为用户增长和效率结果指标负责\n2.通过本地化用户调研、数据分析和模型等工具进行用户行为数据分析，深挖用户需求场景和增长机会，制定相应的增长策略，并持续通过A/B等测试模型验证策略效果，优化财务模型\n3.搭建可复用的用户分层运营SOP和策略框架，沉淀有效方法论，推动团队运营能力标准化和规模化\n4.推动跨部门协作，能够与各协作方建立高效协作机制，共同推进业务结果的高效达成\n5.运用AI工具辅助用户行为数据分析、策略文档撰写及A/B测试结果解读，持续探索AI在用户运营场景的落地实践",
+        "jobDuty": "1、负责目标城市政府关系从0到1搭建，协调地方政府及交通部门，推动自动驾驶运营权、路权及商业化运营资质的获取；借助 AI 工具快速梳理西南各城市政策法规差异，生成定制化政策沟通材料，提升开城节奏；\n2、协调跨部门资源，完成数据上报、平台对接等合规要求；探索 AI 辅助合规文档整理和报送流程标准化，减少重复性行政事务投入；\n3、联动科研院所、车企等合作伙伴，推动常态化运营项目落地；利用 AI 工具进行合作伙伴图谱梳理和优先级分析，提高资源整合效率；\n4、处理属地舆情与问题，平衡政府数据安全要求与企业技术诉求；利用 AI 辅助舆情监测与快速响应材料撰写，提升危机处置速度与质量。",
         "jobRequirement": null,
         "precedence": null,
-        "highLight": "1.海外业务：参与美团战略级出海业务，积累海外业务实战经验\n2.从 0 到 1：深度参与新市场开拓，体验真实的创业氛围与成就感\n3.国际视野：在国际化环境中，融入多元文化团队，扩展全球化视野\n4.成长空间：具备快速成长的空间，业务的复杂度和Scope空间大，岗位的综合发展和延展性强",
+        "highLight": "无人配送是行业最快落地的场景，是美团战略部署，加入美团无人配送将有机会引领整个行业的政策导向、推动整个行业的发展。\nAI 深度赋能岗位：政策文本分析、申报材料生成、知识库管理\n带薪年假、定期体检、五险一金、发展空间大、个人能力提升快。",
         "otherInfo": null,
         "firstPostTime": null,
-        "refreshTime": 1783389781000,
+        "refreshTime": 1784253806000,
         "tag": null,
         "expiredTime": null,
         "socialRecommendJob": null
       },
       {
-        "jobUnionId": "4475948699",
-        "name": "收单渠道经理-分销渠道",
+        "jobUnionId": "4481300138",
+        "name": "无人车业务部-公共事务发展经理—华北",
         "projectId": null,
         "projectName": null,
         "jobType": "3",
         "jobSpecialCode": "5",
         "jobSource": "1",
         "jobStatus": "000",
-        "jobFamily": "销售、客服与支持类",
-        "jobFamilyGroup": "销售",
+        "jobFamily": "职能类",
+        "jobFamilyGroup": "公司事务",
         "cityList": [
           {
             "code": null,
@@ -2035,13 +1446,33 @@
             "mapping": null,
             "outerCode": null,
             "bgNode": false
+          },
+          {
+            "code": null,
+            "name": "上海市",
+            "children": null,
+            "sort": null,
+            "subCode": null,
+            "mapping": null,
+            "outerCode": null,
+            "bgNode": false
+          },
+          {
+            "code": null,
+            "name": "深圳市",
+            "children": null,
+            "sort": null,
+            "subCode": null,
+            "mapping": null,
+            "outerCode": null,
+            "bgNode": false
           }
         ],
         "workYear": null,
         "department": [
           {
             "code": null,
-            "name": "软硬件服务-餐饮SaaS事业部",
+            "name": "软硬件服务-无人车业务部",
             "children": null,
             "sort": null,
             "subCode": null,
@@ -2052,13 +1483,13 @@
         ],
         "desc": null,
         "departmentIntro": null,
-        "jobDuty": "1、招商拓展：负责分销代理商线索获取与筛选，拓展和维护招商入口；制定招商方案并主导洽谈；跟进合同签署与入网流程；维护更新招商物料及合作流程。\n2、代理商销售目标管理：结合内部成本、市场情况、代理商产能及客情等因素分解渠道目标并下达；实时跟进达成情况，制定改善优化措施（临时性政策及产品结构调整）；主导月度/季度复盘与考核。\n3、渠道政策输出与落地：制定代理商提货、分润及激励政策；开展政策宣导与培训；跟进执行合规性并收集反馈，负责政策设计中的利益平衡与调整决策。\n4、代理商运营管控：日常拜访与客情关系维护；库存管理与补货协调；处理渠道冲突，维护线上市场秩序，协调运营策略及资源。\n5、市场调研与监控：负责市场价格与活动监控；处理内部价格异常，输出控价政策；核实市场信息，提炼策略洞察。\n6、代理商售后协调：协调处理代理商售后问题；跨部门（售后/财务/技术）沟通协调，解决复杂问题，维护代理商关系。\n7、AI工具推进落地：推动渠道管理中AI产品的探索与使用，并应用到工作岗位和业务、发票申请自动化、激活码批量处理等改造项目落地。",
+        "jobDuty": "1、负责目标城市政府关系从0到1搭建，协调地方政府及交通部门，推动自动驾驶运营权、路权及商业化运营资质的获取；借助 AI 工具快速梳理各城市政策法规差异，生成定制化的政策沟通材料，提升开城效率；\n2、协调跨部门资源，完成数据上报、平台对接等合规要求；探索 AI 辅助合规文档整理和报送流程自动化，减少重复性行政事务投入；\n3、联动科研院所、车企等合作伙伴，推动常态化运营项目落地；利用 AI 工具进行合作伙伴图谱梳理和优先级分析，提高合作推进效率；\n4、处理属地舆情与问题，平衡政府数据安全要求与企业技术诉求；利用 AI 辅助舆情监测与快速响应材料撰写，提升危机处置速度与质量。",
         "jobRequirement": null,
         "precedence": null,
-        "highLight": "1、业务盈利空间好，发展空间大\n2、给予业务施展空间\n3、团队氛围融洽，积极乐观，专注业务本身",
+        "highLight": "无人配送是行业最快落地的场景，是美团战略部署，加入美团无人配送将有机会引领整个行业的政策导向、推动整个行业的发展。\nAI 深度赋能岗位：政策文本分析、申报材料生成、知识库管理\n带薪年假、定期体检、五险一金、发展空间大、个人能力提升快。",
         "otherInfo": null,
         "firstPostTime": null,
-        "refreshTime": 1783389780000,
+        "refreshTime": 1784253800000,
         "tag": null,
         "expiredTime": null,
         "socialRecommendJob": null
@@ -2107,184 +1538,7 @@
         "highLight": "1. 深入参与高增长业务板块，战略价值突出。  \n2. 与业务团队紧密协作，影响力覆盖决策层。  \n3. 提供完善的职业发展路径与学习资源。  \n4. 工作地点位于北京核心商务区，交通便利。  \n5. 团队氛围开放，鼓励创新与专业成长。",
         "otherInfo": null,
         "firstPostTime": null,
-        "refreshTime": 1783389774000,
-        "tag": null,
-        "expiredTime": null,
-        "socialRecommendJob": null
-      },
-      {
-        "jobUnionId": "4473166777",
-        "name": "小象超市-品商运营管理专家",
-        "projectId": null,
-        "projectName": null,
-        "jobType": "3",
-        "jobSpecialCode": "5",
-        "jobSource": "1",
-        "jobStatus": "000",
-        "jobFamily": "零售类",
-        "jobFamilyGroup": "商品运营",
-        "cityList": [
-          {
-            "code": null,
-            "name": "北京市",
-            "children": null,
-            "sort": null,
-            "subCode": null,
-            "mapping": null,
-            "outerCode": null,
-            "bgNode": false
-          }
-        ],
-        "workYear": null,
-        "department": [
-          {
-            "code": null,
-            "name": "食杂零售-小象事业部",
-            "children": null,
-            "sort": null,
-            "subCode": null,
-            "mapping": null,
-            "outerCode": null,
-            "bgNode": false
-          }
-        ],
-        "desc": null,
-        "departmentIntro": null,
-        "jobDuty": "1、负责品商关系管理机制的制定及运营，分析季节品商关系表现及对应客诉、履约表现。对于履约及客诉表现不佳的品商，调整商份额和汰换策略；\n2、评估供应商能力矩阵，评估不同品类的商能力画像。建立商分层机制；\n3、管理供应商汰换机制；\n4、支持商品部对进向各链路需求的策略输出和运营；\n5、协同GA及采购进行产地招商，负责供应商资源能力优化。",
-        "jobRequirement": null,
-        "precedence": null,
-        "highLight": "1、负责优化小象超市品供关系运营，定义供应商能力矩阵，针对选品策略监控供应商优化策略，岗位价值高；\n2、零售是接近生意本质的行业，互联网时代，零售业务中的各细分领域都具有巨大价值，零售细分领域专家是未来较有竞争力的岗位之一；\n3、供应商管理是商品流通全链路的相关部门，有助于全链路视角的提升，可为未来进一步的职业发展奠定良好基础。",
-        "otherInfo": null,
-        "firstPostTime": null,
-        "refreshTime": 1783389772000,
-        "tag": null,
-        "expiredTime": null,
-        "socialRecommendJob": null
-      },
-      {
-        "jobUnionId": "4468382975",
-        "name": "轻医美连锁KA大客户经理-医美行业大客户",
-        "projectId": null,
-        "projectName": null,
-        "jobType": "3",
-        "jobSpecialCode": "5",
-        "jobSource": "1",
-        "jobStatus": "000",
-        "jobFamily": "销售、客服与支持类",
-        "jobFamilyGroup": "销售",
-        "cityList": [
-          {
-            "code": null,
-            "name": "深圳市",
-            "children": null,
-            "sort": null,
-            "subCode": null,
-            "mapping": null,
-            "outerCode": null,
-            "bgNode": false
-          },
-          {
-            "code": null,
-            "name": "广州市",
-            "children": null,
-            "sort": null,
-            "subCode": null,
-            "mapping": null,
-            "outerCode": null,
-            "bgNode": false
-          }
-        ],
-        "workYear": null,
-        "department": [
-          {
-            "code": null,
-            "name": "核心本地商业-医药健康事业部",
-            "children": null,
-            "sort": null,
-            "subCode": null,
-            "mapping": null,
-            "outerCode": null,
-            "bgNode": false
-          }
-        ],
-        "desc": null,
-        "departmentIntro": null,
-        "jobDuty": "1. 负责轻医美连锁机构KA客户的维护及深度合作，制定并执行客户经营策略。  \n2. 深入了解客户需求，提供定制化的医美解决方案，推动项目落地与业绩达成。  \n3. 协调内部资源，联动市场、运营、产品团队，提升客户满意度与长期合作粘性。  \n4. 定期分析客户数据与市场趋势，输出业务洞察，优化客户管理策略。",
-        "jobRequirement": null,
-        "precedence": null,
-        "highLight": "1. 深耕医美行业，接触行业头部连锁品牌，积累优质客户资源。  \n2. 提供具有市场竞争力的薪酬体系及清晰的职业发展路径。  \n3. 工作地点覆盖深圳、广州，享受一线城市资源与便利。  \n4. 团队氛围开放，支持创新思维与个人价值实现。",
-        "otherInfo": null,
-        "firstPostTime": null,
-        "refreshTime": 1783389771000,
-        "tag": null,
-        "expiredTime": null,
-        "socialRecommendJob": null
-      },
-      {
-        "jobUnionId": "4464107263",
-        "name": "无人车业务部-政企大客户KA拓展岗位",
-        "projectId": null,
-        "projectName": null,
-        "jobType": "3",
-        "jobSpecialCode": "5",
-        "jobSource": "1",
-        "jobStatus": "000",
-        "jobFamily": "职能类",
-        "jobFamilyGroup": "公司事务",
-        "cityList": [
-          {
-            "code": null,
-            "name": "北京市",
-            "children": null,
-            "sort": null,
-            "subCode": null,
-            "mapping": null,
-            "outerCode": null,
-            "bgNode": false
-          },
-          {
-            "code": null,
-            "name": "深圳市",
-            "children": null,
-            "sort": null,
-            "subCode": null,
-            "mapping": null,
-            "outerCode": null,
-            "bgNode": false
-          },
-          {
-            "code": null,
-            "name": "上海市",
-            "children": null,
-            "sort": null,
-            "subCode": null,
-            "mapping": null,
-            "outerCode": null,
-            "bgNode": false
-          }
-        ],
-        "workYear": null,
-        "department": [
-          {
-            "code": null,
-            "name": "软硬件服务-无人车业务部",
-            "children": null,
-            "sort": null,
-            "subCode": null,
-            "mapping": null,
-            "outerCode": null,
-            "bgNode": false
-          }
-        ],
-        "desc": null,
-        "departmentIntro": null,
-        "jobDuty": "1、对接政府单位、大型国央企、事业单位及头部行业企业，开展市场业务拓展、客户关系维系与深度业务深耕工作。\n2、深度挖掘客户实际业务需求与痛点，结合无人车业务整体发展规划，定向开拓政企核心大客户，主攻物流、农牧食品、交通、烟草、民航、制造等重点行业，搭建多层级、长期稳定的政企客户体系。\n3、全程主导政企合作项目推进落地，把控全项目进度节点，统筹协调产品、研发、交付、技术等内外部资源，保障项目顺利验收、稳定运营。\n4、实时追踪行业扶持政策、市场发展趋势与行业动态，收集有效市场信息，为业务布局、客户合作提供专业前瞻性规划与优化建议。\n5、积极探索并落地 AI 工具在客户拓展、项目管理、方案制作等工作场景中的应用，借助 AI 能力提升销售效率与客户服务质量；结合无人车 AI 技术优势，向客户清晰传递 AI 赋能业务的核心价值，推动客户场景化落地合作。",
-        "jobRequirement": null,
-        "precedence": null,
-        "highLight": "无人配送行业最快落地场景，有机会直接引领全国政策导向；\nAI 深度赋能岗位：政策文本分析、申报材料生成、知识库管理——AI 在本岗位的应用空间极大，是 AI 辅助政务工作的前沿探索者；\n带薪年假、定期体检、五险一金，发展空间大、个人能力提升快。",
-        "otherInfo": null,
-        "firstPostTime": null,
-        "refreshTime": 1783389765000,
+        "refreshTime": 1784253790000,
         "tag": null,
         "expiredTime": null,
         "socialRecommendJob": null
@@ -2333,56 +1587,7 @@
         "highLight": "兼具美元和人民币双币种基金的视野；深度参与基金的募、投、管、退全流程。",
         "otherInfo": null,
         "firstPostTime": null,
-        "refreshTime": 1783389759000,
-        "tag": null,
-        "expiredTime": null,
-        "socialRecommendJob": null
-      },
-      {
-        "jobUnionId": "4461391011",
-        "name": "小象超市-生鲜成本管理负责人",
-        "projectId": null,
-        "projectName": null,
-        "jobType": "3",
-        "jobSpecialCode": "5",
-        "jobSource": "1",
-        "jobStatus": "000",
-        "jobFamily": "零售类",
-        "jobFamilyGroup": "商品运营",
-        "cityList": [
-          {
-            "code": null,
-            "name": "北京市",
-            "children": null,
-            "sort": null,
-            "subCode": null,
-            "mapping": null,
-            "outerCode": null,
-            "bgNode": false
-          }
-        ],
-        "workYear": null,
-        "department": [
-          {
-            "code": null,
-            "name": "食杂零售-小象事业部",
-            "children": null,
-            "sort": null,
-            "subCode": null,
-            "mapping": null,
-            "outerCode": null,
-            "bgNode": false
-          }
-        ],
-        "desc": null,
-        "departmentIntro": null,
-        "jobDuty": "一、成本信源与体系搭建\n1. 负责可对标的成本信源能力建设，构建商品成本基础底座；\n2. 结合品类特性建设成本管理体系，推动日常成本运营标准化、系统化；\n3. 善用AI与数据工具提升运营效率，推动成本管理智能化。\n\n二、生鲜链路成本管理\n1. 牵头建设生鲜链路端到端成本管理能力，系统化沉淀生鲜商品链路成本;\n2. 深入一线业务场景，识别供应链各环节的成本优化空间与机会点。\n\n三、团队管理\n负责团队搭建与日常管理，带领团队完成业务目标，培养团队成员成长。",
-        "jobRequirement": null,
-        "precedence": null,
-        "highLight": "1. 深入参与生鲜供应链核心环节，直接影响公司成本结构与利润表现。  \n2. 团队管理职责明确，具备带教与人才培养的发展空间。",
-        "otherInfo": null,
-        "firstPostTime": null,
-        "refreshTime": 1783389757000,
+        "refreshTime": 1784253787000,
         "tag": null,
         "expiredTime": null,
         "socialRecommendJob": null
@@ -2431,115 +1636,7 @@
         "highLight": "美团核心本地商业到店餐饮全国品牌客户部，是美团公司核心业务团队，主要对接餐饮连锁客户中的优质连锁客户，近距离了解餐饮连锁品牌的营销运营策略和节奏，探索餐饮品牌在平台各个营销场域的生意增长空间；同时公司提供良好的学习和发展平台，能够不断提升专业能力和职业素养。",
         "otherInfo": null,
         "firstPostTime": null,
-        "refreshTime": 1783389756000,
-        "tag": null,
-        "expiredTime": null,
-        "socialRecommendJob": null
-      },
-      {
-        "jobUnionId": "4458227164",
-        "name": "杭州鲜肉自营采购-鲜猪",
-        "projectId": null,
-        "projectName": null,
-        "jobType": "3",
-        "jobSpecialCode": "5",
-        "jobSource": "1",
-        "jobStatus": "000",
-        "jobFamily": "零售类",
-        "jobFamilyGroup": "采购",
-        "cityList": [
-          {
-            "code": null,
-            "name": "杭州市",
-            "children": null,
-            "sort": null,
-            "subCode": null,
-            "mapping": null,
-            "outerCode": null,
-            "bgNode": false
-          },
-          {
-            "code": null,
-            "name": "宁波市",
-            "children": null,
-            "sort": null,
-            "subCode": null,
-            "mapping": null,
-            "outerCode": null,
-            "bgNode": false
-          }
-        ],
-        "workYear": null,
-        "department": [
-          {
-            "code": null,
-            "name": "食杂零售-快驴事业部",
-            "children": null,
-            "sort": null,
-            "subCode": null,
-            "mapping": null,
-            "outerCode": null,
-            "bgNode": false
-          }
-        ],
-        "desc": null,
-        "departmentIntro": null,
-        "jobDuty": "1.负责浙江（杭州/宁波）地区鲜肉自营采购工作，确保采购品质和供应链畅通。\n2.负责制定采购计划，完成采购目标，保证货品库存充足。\n3.协调内部各部门，保证采购流程顺畅，及时处理采购异常情况。\n4.负责供应商的谈判和合作，保持厂商资源合作关系。",
-        "jobRequirement": null,
-        "precedence": null,
-        "highLight": "1.薪资福利优厚，提供广阔的职业发展空间。\n2.参与上海地区鲜肉自营采购工作，具有丰富的实战经验。\n3.有机会带领团队，挑战更高级别的采购管理工作。",
-        "otherInfo": null,
-        "firstPostTime": null,
-        "refreshTime": 1783389749000,
-        "tag": null,
-        "expiredTime": null,
-        "socialRecommendJob": null
-      },
-      {
-        "jobUnionId": "4457920019",
-        "name": "成都鲜肉自营采购-鲜禽",
-        "projectId": null,
-        "projectName": null,
-        "jobType": "3",
-        "jobSpecialCode": "5",
-        "jobSource": "1",
-        "jobStatus": "000",
-        "jobFamily": "零售类",
-        "jobFamilyGroup": "采购",
-        "cityList": [
-          {
-            "code": null,
-            "name": "成都市",
-            "children": null,
-            "sort": null,
-            "subCode": null,
-            "mapping": null,
-            "outerCode": null,
-            "bgNode": false
-          }
-        ],
-        "workYear": null,
-        "department": [
-          {
-            "code": null,
-            "name": "食杂零售-快驴事业部",
-            "children": null,
-            "sort": null,
-            "subCode": null,
-            "mapping": null,
-            "outerCode": null,
-            "bgNode": false
-          }
-        ],
-        "desc": null,
-        "departmentIntro": null,
-        "jobDuty": "1、主要工作：负责鲜肉品类的采购，对市场竞争环境和市场行情变动要有敏锐洞察力和行动力；熟悉建立供应商体系；\n2、供给体系搭建：熟悉本地市场鲜肉工厂和一批商资源，对商品结构和供应商体系，根据不同业务场景需求，选择与之匹配的商品结构组合；\n3、资源整合：管理、整合供应商及采购渠道，控制进价并保持零售价的竞争力；\n4、价格管理：根据市场行情，管控进价和售价，并制定肉禽类商品的促销计划以及品类的销售和利润指标，分析城市端鲜肉毛利，进行反馈并追踪结果；\n5、品类毛利管理：及时收集市场资讯，比值论价，通过供应链不断优化达到采购成本的不断优化；",
-        "jobRequirement": null,
-        "precedence": null,
-        "highLight": "1.作为区域鲜禽肉采购的负责人，能够全面管理和执行采购工作。\n2.可以参与制定和执行采购策略，对公司的业务发展起到重要支持作用。\n3.可以与供应商进行合作谈判，建立和维护稳定的供应链关系，为公司提供稳定供应。",
-        "otherInfo": null,
-        "firstPostTime": null,
-        "refreshTime": 1783389744000,
+        "refreshTime": 1784253783000,
         "tag": null,
         "expiredTime": null,
         "socialRecommendJob": null
@@ -2588,14 +1685,14 @@
         "highLight": "1、参与公司核心业务运营，发展空间广阔；\n2、带领较大规模团队，提升综合管理能力。  \n3、工作地点位于武汉，享受本地化政策支持与便利生活条件；  \n4、公司提供完善的培训体系和职业发展通道；\n5、具有竞争力的薪酬福利与绩效激励机制。",
         "otherInfo": null,
         "firstPostTime": null,
-        "refreshTime": 1783389742000,
+        "refreshTime": 1784253779000,
         "tag": null,
         "expiredTime": null,
         "socialRecommendJob": null
       },
       {
-        "jobUnionId": "4436546074",
-        "name": "快乐猴-广州店长",
+        "jobUnionId": "4449781915",
+        "name": "美团小象超市线上店店长-上海/苏州/无锡/常州/南通",
         "projectId": null,
         "projectName": null,
         "jobType": "3",
@@ -2607,7 +1704,47 @@
         "cityList": [
           {
             "code": null,
-            "name": "广州市",
+            "name": "上海市",
+            "children": null,
+            "sort": null,
+            "subCode": null,
+            "mapping": null,
+            "outerCode": null,
+            "bgNode": false
+          },
+          {
+            "code": null,
+            "name": "南通市",
+            "children": null,
+            "sort": null,
+            "subCode": null,
+            "mapping": null,
+            "outerCode": null,
+            "bgNode": false
+          },
+          {
+            "code": null,
+            "name": "常州市",
+            "children": null,
+            "sort": null,
+            "subCode": null,
+            "mapping": null,
+            "outerCode": null,
+            "bgNode": false
+          },
+          {
+            "code": null,
+            "name": "无锡市",
+            "children": null,
+            "sort": null,
+            "subCode": null,
+            "mapping": null,
+            "outerCode": null,
+            "bgNode": false
+          },
+          {
+            "code": null,
+            "name": "苏州市",
             "children": null,
             "sort": null,
             "subCode": null,
@@ -2620,7 +1757,7 @@
         "department": [
           {
             "code": null,
-            "name": "食杂零售-快乐猴事业部",
+            "name": "食杂零售-小象事业部",
             "children": null,
             "sort": null,
             "subCode": null,
@@ -2631,13 +1768,13 @@
         ],
         "desc": null,
         "departmentIntro": null,
-        "jobDuty": "1.负责线下门店的日常运营管理，确保公司营运标准高效在门店落地，提升销售、毛利和客户满意度；\n2.负责团队的招聘、培训和绩效管理，确保团队的稳定和高效运作；\n3.管控店内损耗、提升门店人效，优化可控费用（如物料，水电煤等营运费用），达成主要考核KPI；\n4.对内各协同部门的日常高效交互，达成共识，高效执行总部和区域新项目落地；\n5.对外关系的建立维护，如相关政府职能部门（市场管理、消协等）、物业关系，打造协作融洽的合作伙伴。",
+        "jobDuty": "1.负责线上店的商品管理,对于商品的效期管理、品质管理、损耗管理负责,负责门店的水产养殖和销售的整体管理;\n2.负责线上店的进销存管理,负责线上店内门店的收货、上架、库存、库位的管理工作,优化库内的动线和库位,对于商品的周转和资产、设备的安全准确负责;\n3.负责线上店订单的履约,保证在更快的时间保质保量履约客户的订单,不断追求降本提效,致力于为客户提供更好的服务,不断精益求精;配合总部各项营销策略的实施,负责线上各品类商品的日常的促销活动实施;\n4.负责线上店现场的人员管理,包括招聘、培训和效率管理,负责数据管理和异常事件处理,维护周边社区关系;进行日常经营管理工作,包含对各项运营指标进行监控和分析,确保销售达成；\n5.新开门店开业前期筹备相关工作。",
         "jobRequirement": null,
         "precedence": null,
-        "highLight": "1.提供丰富的线下门店管理经验和团队管理经验的机会。\n2.提供良好的职业发展空间和晋升机会，能够在公司内部快速成长。\n3.薪资福利优厚，公司提供完善的培训体系和职业发展计划，帮助员工实现个人职业目标。",
+        "highLight": "业务快速扩张快，管理岗位晋升通道宽阔；\n独立负责商品、库存、履约、团队全链路运营，能力得到全方位锻炼；\n有完善的培训体系助力加速成长；\n与互联网大咖及零售业专家共同发展。",
         "otherInfo": null,
         "firstPostTime": null,
-        "refreshTime": 1783389741000,
+        "refreshTime": 1784253770000,
         "tag": null,
         "expiredTime": null,
         "socialRecommendJob": null
@@ -2686,66 +1823,7 @@
         "highLight": "1.提供丰富的线下门店管理经验和团队管理经验的机会。\n2.提供良好的职业发展空间和晋升机会，能够在公司内部快速成长。\n3.薪资福利优厚，公司提供完善的培训体系和职业发展计划，帮助员工实现个人职业目标。",
         "otherInfo": null,
         "firstPostTime": null,
-        "refreshTime": 1783389735000,
-        "tag": null,
-        "expiredTime": null,
-        "socialRecommendJob": null
-      },
-      {
-        "jobUnionId": "4435503533",
-        "name": "闪购-松鼠自有品牌质量管理（食品）",
-        "projectId": null,
-        "projectName": null,
-        "jobType": "3",
-        "jobSpecialCode": "5",
-        "jobSource": "1",
-        "jobStatus": "000",
-        "jobFamily": "零售类",
-        "jobFamilyGroup": "供应链",
-        "cityList": [
-          {
-            "code": null,
-            "name": "北京市",
-            "children": null,
-            "sort": null,
-            "subCode": null,
-            "mapping": null,
-            "outerCode": null,
-            "bgNode": false
-          },
-          {
-            "code": null,
-            "name": "上海市",
-            "children": null,
-            "sort": null,
-            "subCode": null,
-            "mapping": null,
-            "outerCode": null,
-            "bgNode": false
-          }
-        ],
-        "workYear": null,
-        "department": [
-          {
-            "code": null,
-            "name": "核心本地商业-闪购事业部",
-            "children": null,
-            "sort": null,
-            "subCode": null,
-            "mapping": null,
-            "outerCode": null,
-            "bgNode": false
-          }
-        ],
-        "desc": null,
-        "departmentIntro": null,
-        "jobDuty": "1. 负责自有品牌食品类商品的品质管理体系搭建与优化，确保产品符合相关法规及公司标准。  \n2. 制定并执行食品类商品的品质检验流程、抽检方案及供应商审核机制，把控从开发到交付的全链路质量。  \n3. 协同采购、研发及供应链团队，推动品质问题整改与预防，提升商品整体质量水平。  \n4. 建立并维护品质数据监控体系，定期输出质量分析报告，为业务决策提供支持。  \n5. 跟进市场反馈与客诉，快速响应并推动闭环处理，降低质量风险。",
-        "jobRequirement": null,
-        "precedence": null,
-        "highLight": "1. 参与自有品牌战略建设，直接影响商品质量与用户体验。  \n2. 与多部门协同合作，提升跨职能项目管理与资源整合能力。  \n3. 在快速发展的闪购业务中，拥有广阔的职业发展空间与成长机会。  \n4. 工作地点覆盖北京、上海，享受一线城市资源与便利。",
-        "otherInfo": null,
-        "firstPostTime": null,
-        "refreshTime": 1783389730000,
+        "refreshTime": 1784253768000,
         "tag": null,
         "expiredTime": null,
         "socialRecommendJob": null
@@ -2794,7 +1872,7 @@
         "highLight": "1.提供丰富的线下门店管理经验和团队管理经验的机会。\n2.提供良好的职业发展空间和晋升机会，能够在公司内部快速成长。\n3.薪资福利优厚，公司提供完善的培训体系和职业发展计划，帮助员工实现个人职业目标。",
         "otherInfo": null,
         "firstPostTime": null,
-        "refreshTime": 1783389728000,
+        "refreshTime": 1784253763000,
         "tag": null,
         "expiredTime": null,
         "socialRecommendJob": null
@@ -2843,7 +1921,195 @@
         "highLight": "1.薪资福利优厚，提供广阔的晋升空间。\n2.公司提供良好的培训机会和职业发展平台。\n3.可以在跨国公司的国际化工作环境中不断学习和成长。",
         "otherInfo": null,
         "firstPostTime": null,
-        "refreshTime": 1783389723000,
+        "refreshTime": 1784253758000,
+        "tag": null,
+        "expiredTime": null,
+        "socialRecommendJob": null
+      },
+      {
+        "jobUnionId": "4419477550",
+        "name": "充电宝大客户经理-餐饮场景",
+        "projectId": null,
+        "projectName": null,
+        "jobType": "3",
+        "jobSpecialCode": "5",
+        "jobSource": "1",
+        "jobStatus": "000",
+        "jobFamily": "销售、客服与支持类",
+        "jobFamilyGroup": "销售",
+        "cityList": [
+          {
+            "code": null,
+            "name": "上海市",
+            "children": null,
+            "sort": null,
+            "subCode": null,
+            "mapping": null,
+            "outerCode": null,
+            "bgNode": false
+          },
+          {
+            "code": null,
+            "name": "成都市",
+            "children": null,
+            "sort": null,
+            "subCode": null,
+            "mapping": null,
+            "outerCode": null,
+            "bgNode": false
+          },
+          {
+            "code": null,
+            "name": "北京市",
+            "children": null,
+            "sort": null,
+            "subCode": null,
+            "mapping": null,
+            "outerCode": null,
+            "bgNode": false
+          },
+          {
+            "code": null,
+            "name": "郑州市",
+            "children": null,
+            "sort": null,
+            "subCode": null,
+            "mapping": null,
+            "outerCode": null,
+            "bgNode": false
+          },
+          {
+            "code": null,
+            "name": "广州市",
+            "children": null,
+            "sort": null,
+            "subCode": null,
+            "mapping": null,
+            "outerCode": null,
+            "bgNode": false
+          },
+          {
+            "code": null,
+            "name": "深圳市",
+            "children": null,
+            "sort": null,
+            "subCode": null,
+            "mapping": null,
+            "outerCode": null,
+            "bgNode": false
+          },
+          {
+            "code": null,
+            "name": "厦门市",
+            "children": null,
+            "sort": null,
+            "subCode": null,
+            "mapping": null,
+            "outerCode": null,
+            "bgNode": false
+          },
+          {
+            "code": null,
+            "name": "杭州市",
+            "children": null,
+            "sort": null,
+            "subCode": null,
+            "mapping": null,
+            "outerCode": null,
+            "bgNode": false
+          },
+          {
+            "code": null,
+            "name": "武汉市",
+            "children": null,
+            "sort": null,
+            "subCode": null,
+            "mapping": null,
+            "outerCode": null,
+            "bgNode": false
+          },
+          {
+            "code": null,
+            "name": "西安市",
+            "children": null,
+            "sort": null,
+            "subCode": null,
+            "mapping": null,
+            "outerCode": null,
+            "bgNode": false
+          }
+        ],
+        "workYear": null,
+        "department": [
+          {
+            "code": null,
+            "name": "软硬件服务-充电宝业务部",
+            "children": null,
+            "sort": null,
+            "subCode": null,
+            "mapping": null,
+            "outerCode": null,
+            "bgNode": false
+          }
+        ],
+        "desc": null,
+        "departmentIntro": null,
+        "jobDuty": "1. 负责充电宝业务在餐饮场景下的市场拓展与大客户开发，制定并执行销售策略，完成业绩目标。  \n2. 深度挖掘餐饮连锁品牌需求，建立并维护长期合作关系，推动项目落地与续约。  \n3. 协调内部资源，包括产品、运营、技术等团队，确保客户需求高效响应与解决方案顺利实施。  \n4. 分析餐饮行业趋势与行业动态，输出市场洞察报告，优化业务模式与客户服务体系。",
+        "jobRequirement": null,
+        "precedence": null,
+        "highLight": "1. 大而稳定的平台发展，参与核心业务拓展，成长空间广阔。  \n2. 直面头部餐饮品牌与连锁客户，积累高价值行业资源与人脉。  \n3. 扁平化管理，结果导向，具备竞争力的薪酬激励与晋升机制。",
+        "otherInfo": null,
+        "firstPostTime": null,
+        "refreshTime": 1784253753000,
+        "tag": null,
+        "expiredTime": null,
+        "socialRecommendJob": null
+      },
+      {
+        "jobUnionId": "4412747348",
+        "name": "Marketing Manager / Assistant Marketing Manager",
+        "projectId": null,
+        "projectName": null,
+        "jobType": "3",
+        "jobSpecialCode": "5",
+        "jobSource": "1",
+        "jobStatus": "000",
+        "jobFamily": "市场营销类",
+        "jobFamilyGroup": "营销",
+        "cityList": [
+          {
+            "code": null,
+            "name": "香港特别行政区",
+            "children": null,
+            "sort": null,
+            "subCode": null,
+            "mapping": null,
+            "outerCode": null,
+            "bgNode": false
+          }
+        ],
+        "workYear": null,
+        "department": [
+          {
+            "code": null,
+            "name": "Keeta",
+            "children": null,
+            "sort": null,
+            "subCode": null,
+            "mapping": null,
+            "outerCode": null,
+            "bgNode": false
+          }
+        ],
+        "desc": null,
+        "departmentIntro": null,
+        "jobDuty": "• Develop and implement comprehensive brand marketing strategies that align with Keeta's vision and goals, focusing on driving brand awareness and achieving business targets.\n• Formulate branding campaigns, including thematic, tactical, seasonal advertising, joint promotions, and event planning. Collaborate with cross-functional teams, including product, operations, and design.\n• Identify and establish strategic partnerships with restaurants to create joint promotion opportunities.\n• Track and analyze key marketing metrics to measure campaign effectiveness, providing data-driven recommendations for optimization.\n• Manage marketing budgets effectively to ensure optimal resource allocation.\n• Stay informed about industry developments and best practices to foster continuous improvement and innovation.\n• Leverage AI tools (e.g., Copilot, ChatGPT, or internal AI platforms) to accelerate campaign ideation, content creation, and performance analysis — driving efficiency across the full marketing workflow and promoting AI adoption within the team.",
+        "jobRequirement": null,
+        "precedence": null,
+        "highLight": "1. Brand Strategy at Scale: Build brand campaigns that reach millions of food delivery users across Hong Kong — your work is visible, measurable, and directly tied to business growth.\n2. Creative Freedom: We trust our marketers to take bold creative swings. If an idea has a sound strategy behind it, there's room to test it.\n3. International Context: Keeta is part of Meituan's global expansion — work with cross-market learnings while operating with startup speed.\n4. AI is part of how we work: From AI-assisted campaign ideation and consumer research to performance analysis — you bring the strategy, we have the tools.",
+        "otherInfo": null,
+        "firstPostTime": null,
+        "refreshTime": 1784253752000,
         "tag": null,
         "expiredTime": null,
         "socialRecommendJob": null
@@ -2912,7 +2178,7 @@
         "highLight": "1.有机会从0-1跟随项目成长，更广阔的的视角，更多的机会与发展空间；\n2.工作氛围简单、直接、开放、高效。",
         "otherInfo": null,
         "firstPostTime": null,
-        "refreshTime": 1783389719000,
+        "refreshTime": 1784253750000,
         "tag": null,
         "expiredTime": null,
         "socialRecommendJob": null
@@ -2961,7 +2227,66 @@
         "highLight": "1. 深入参与核心业务决策，发挥财务价值引领作用。  \n2. 与高速发展的业务团队共同成长，发展空间广阔。  \n3. 扁平化管理，开放沟通氛围，鼓励创新与主动担当。  \n4. 身处 AI 应用探索前沿，有机会参与财务智能化转型实践。",
         "otherInfo": null,
         "firstPostTime": null,
-        "refreshTime": 1783389708000,
+        "refreshTime": 1784253740000,
+        "tag": null,
+        "expiredTime": null,
+        "socialRecommendJob": null
+      },
+      {
+        "jobUnionId": "4411022345",
+        "name": "智能营销大模型算法专家",
+        "projectId": null,
+        "projectName": null,
+        "jobType": "3",
+        "jobSpecialCode": "5",
+        "jobSource": "1",
+        "jobStatus": "000",
+        "jobFamily": "技术类",
+        "jobFamilyGroup": "算法",
+        "cityList": [
+          {
+            "code": null,
+            "name": "北京市",
+            "children": null,
+            "sort": null,
+            "subCode": null,
+            "mapping": null,
+            "outerCode": null,
+            "bgNode": false
+          },
+          {
+            "code": null,
+            "name": "上海市",
+            "children": null,
+            "sort": null,
+            "subCode": null,
+            "mapping": null,
+            "outerCode": null,
+            "bgNode": false
+          }
+        ],
+        "workYear": null,
+        "department": [
+          {
+            "code": null,
+            "name": "金融服务平台",
+            "children": null,
+            "sort": null,
+            "subCode": null,
+            "mapping": null,
+            "outerCode": null,
+            "bgNode": false
+          }
+        ],
+        "desc": null,
+        "departmentIntro": null,
+        "jobDuty": "全链路增长体系构建：负责金融营销垂直领域基座模型的深度定制，推动大模型技术从 0 到 1 落地应用及持续迭代，从用户全生命周期（感知、获客、激活、转化、留存、召回）出发，深度参与构建高度智能的业务增长算法体系；\n\n基于Agent技术的数字员工构建：在智能理赔、智能客服等高人力消耗领域，构建各类智能 Agent，通过提供高效智能服务，有效降低人工成本，同时提升用户服务体验。\n\n高效的效果分析与复盘能力构建：构建自闭环高效效果分析系统，整合大模型营销全链路数据，建立涵盖转化率、ROI、用户体验、合规性的多维度评估指标体系；通过数据归因、异常诊断等手段定位瓶颈，形成标准化复盘流程并输出优化建议，驱动系统与策略迭代，实现全闭环运转，最大化 AI 营销效能。\n\n驱动项目的完成：与产品、运营团队紧密配合，将业务问题转化为科学的数学模型，有效协调上下游资源推进项目，保障目标落地。",
+        "jobRequirement": null,
+        "precedence": null,
+        "highLight": "大模型积淀与实践沃土：团队过去在模型微调（Fine-tuning）、强化学习、Agent能力建设等领域有深厚积累。未来，也将拥有充足的支持和丰富的应用场景，探索大模型在营销领域、Agent数字员工等方向的落地机会；\n\n海量数据与高挑战：依托海量用户规模和真实复杂的营销场景，算法策略将直接驱动亿级流量，适合各种前沿技术的快速验证与迭代；\n\n价值实现的直通车：业务导向明确，算法每一次的迭代都能直接反映在ROI、转化率等核心商业指标上，成就感十足；\n\n优秀的人才密度与研究氛围：团队同学全部来自国内外名校及大厂，可以与优秀同事并肩作战，另团队各种分享与研讨会活动丰富，技术氛围浓厚，鼓励创新与技术分享。",
+        "otherInfo": null,
+        "firstPostTime": null,
+        "refreshTime": 1784253734000,
         "tag": null,
         "expiredTime": null,
         "socialRecommendJob": null
@@ -3020,71 +2345,22 @@
         "highLight": "1. 接触行业头部品牌客户，积累高价值行业资源。  \n2. 公司提供完善的培训体系与晋升通道。  \n3. 团队氛围开放，鼓励创新与协作。  \n4. 薪资结构灵活，绩效激励丰厚。  \n5. 参与公司核心业务，发展空间广阔。",
         "otherInfo": null,
         "firstPostTime": null,
-        "refreshTime": 1783389703000,
+        "refreshTime": 1784253727000,
         "tag": null,
         "expiredTime": null,
         "socialRecommendJob": null
       },
       {
-        "jobUnionId": "4377442082",
-        "name": "企业服务负责人｜Head of Corporate Business",
+        "jobUnionId": "4356134395",
+        "name": "到餐-全国大客户经理",
         "projectId": null,
         "projectName": null,
         "jobType": "3",
         "jobSpecialCode": "5",
         "jobSource": "1",
         "jobStatus": "000",
-        "jobFamily": "运营类",
-        "jobFamilyGroup": "业务运营",
-        "cityList": [
-          {
-            "code": null,
-            "name": "香港特别行政区",
-            "children": null,
-            "sort": null,
-            "subCode": null,
-            "mapping": null,
-            "outerCode": null,
-            "bgNode": false
-          }
-        ],
-        "workYear": null,
-        "department": [
-          {
-            "code": null,
-            "name": "Keeta",
-            "children": null,
-            "sort": null,
-            "subCode": null,
-            "mapping": null,
-            "outerCode": null,
-            "bgNode": false
-          }
-        ],
-        "desc": null,
-        "departmentIntro": null,
-        "jobDuty": "1. 制定并执行企业客户开拓策略，覆盖中大型企业、跨国公司、金融机构等目标客群，为企业服务业务的经营健康和利润负责。\n2. 主导关键客户谈判，签订企业合作协议；识别并把握市场机会，建立可持续的企业客户管道。\n3. 负责企业账户的全生命周期管理，深入理解企业客户需求，协调内部资源提供定制化解决方案。\n4. 与产品、运营、市场团队紧密合作，推动企业专属功能和服务落地。\n5. 运用 AI 工具（如 ChatGPT/Copilot/内部 AI 平台）提升日常工作效率，推动团队 AI 工具的落地应用。\n\n1. Define and execute enterprise client acquisition strategies targeting mid-to-large corporates, multinational companies, and financial institutions; accountable for the health and profitability of the corporate business.\n2. Lead key account negotiations and close corporate partnership agreements; identify market opportunities and build a sustainable enterprise client pipeline.\n3. Manage the full lifecycle of corporate accounts; develop a deep understanding of enterprise client needs and coordinate internal resources to deliver tailored solutions.\n4. Collaborate closely with product, operations, and marketing teams to drive the development and launch of enterprise-specific features and services.\n5. Utilize AI tools (such as ChatGPT/Copilot/internal AI platforms) to enhance daily work efficiency and promote the implementation of AI tools within the team,",
-        "jobRequirement": null,
-        "precedence": null,
-        "highLight": "AI-Native 的工作氛围，注重人机协作效率。\n\nAI-Native work environment, focusing on human-machine collaboration efficiency.",
-        "otherInfo": null,
-        "firstPostTime": null,
-        "refreshTime": 1783389698000,
-        "tag": null,
-        "expiredTime": null,
-        "socialRecommendJob": null
-      },
-      {
-        "jobUnionId": "4344794851",
-        "name": "闪购-自有品牌供应商质量管理",
-        "projectId": null,
-        "projectName": null,
-        "jobType": "3",
-        "jobSpecialCode": "5",
-        "jobSource": "1",
-        "jobStatus": "000",
-        "jobFamily": "零售类",
-        "jobFamilyGroup": "供应链",
+        "jobFamily": "销售、客服与支持类",
+        "jobFamilyGroup": "销售",
         "cityList": [
           {
             "code": null,
@@ -3095,13 +2371,23 @@
             "mapping": null,
             "outerCode": null,
             "bgNode": false
+          },
+          {
+            "code": null,
+            "name": "上海市",
+            "children": null,
+            "sort": null,
+            "subCode": null,
+            "mapping": null,
+            "outerCode": null,
+            "bgNode": false
           }
         ],
         "workYear": null,
         "department": [
           {
             "code": null,
-            "name": "核心本地商业-闪购事业部",
+            "name": "核心本地商业-到餐事业部",
             "children": null,
             "sort": null,
             "subCode": null,
@@ -3112,20 +2398,20 @@
         ],
         "desc": null,
         "departmentIntro": null,
-        "jobDuty": "1. 负责松鼠PB（Private Brand）供应商的质量管理体系搭建与优化，确保供应商产品符合部门质量标准。  \n2. 对PB供应商进行准入审核、过程监督及绩效评估，推动供应商持续改进质量表现。  \n3. 协同采购、品控及运营团队，制定并执行供应商质量提升计划，降低质量风险。  \n4. 处理供应商相关质量投诉与异常事件，组织根因分析并推动闭环整改。  \n5. 定期输出供应商质量分析报告，为业务决策提供数据支持。\n6. 推动供应商质量培训与能力提升项目，提升整体供应链质量水平。",
+        "jobDuty": "1、负责推进全国头部正餐连锁品牌与美团在品牌营销、促销、用户运营等领域的深度商务合作。\n2、研究正餐行业特点，深入了解品牌的生意经营，帮助品牌制定专业的线上线下解决方案并协同落地运营。\n3、通过行业数据分析，品牌经营数据分析，线上经营数据分析指导客户线上线下经营迭代。\n4、在合作过程中，做好平台和商户的深入链接，能反向推动平台B端产品和C端产品的变革。\n5、深入洞察行业现状，打磨合作方法论，并预判行业趋势。",
         "jobRequirement": null,
         "precedence": null,
-        "highLight": "1. 加入快速发展的闪购业务，参与平台自有品牌建设，成长空间广阔。  \n2. 与优质供应商深度合作，积累丰富的供应链管理实战经验。  \n3. 扁平化管理，高效协作的团队氛围，支持专业能力提升与职业发展。  \n4. 工作地点位于北京核心商圈，交通便利，办公环境优良。",
+        "highLight": "1、拥有互联网（大厂）的工作经验。\n2、丰富的岗位、职能及跃迁机会。\n3、能够成为行业/领域的专家，提升个人影响力。\n4、锻炼自身的综合能力与水平。",
         "otherInfo": null,
         "firstPostTime": null,
-        "refreshTime": 1783389695000,
+        "refreshTime": 1784253720000,
         "tag": null,
         "expiredTime": null,
         "socialRecommendJob": null
       },
       {
-        "jobUnionId": "4343512229",
-        "name": "闪购-自有品牌品质管理（非食方向）",
+        "jobUnionId": "4344794851",
+        "name": "闪购-自有品牌供应商质量管理",
         "projectId": null,
         "projectName": null,
         "jobType": "3",
@@ -3171,62 +2457,13 @@
         ],
         "desc": null,
         "departmentIntro": null,
-        "jobDuty": "1. 负责自有品牌非食类商品的品质管理体系搭建与优化，确保产品符合相关法规及公司标准。  \n2. 制定并执行非食类商品的品质检验流程、抽检方案及供应商审核机制，把控从开发到交付的全链路质量。  \n3. 协同采购、研发及供应链团队，推动品质问题整改与预防，提升商品整体质量水平。  \n4. 建立并维护品质数据监控体系，定期输出质量分析报告，为业务决策提供支持。  \n5. 跟进市场反馈与客诉，快速响应并推动闭环处理，降低质量风险。",
+        "jobDuty": "1. 负责松鼠PB（Private Brand）供应商的质量管理体系搭建与优化，确保供应商产品符合部门质量标准。  \n2. 对PB供应商进行准入审核、过程监督及绩效评估，推动供应商持续改进质量表现。  \n3. 协同采购、品控及运营团队，制定并执行供应商质量提升计划，降低质量风险。  \n4. 处理供应商相关质量投诉与异常事件，组织根因分析并推动闭环整改。  \n5. 定期输出供应商质量分析报告，为业务决策提供数据支持。\n6. 推动供应商质量培训与能力提升项目，提升整体供应链质量水平。",
         "jobRequirement": null,
         "precedence": null,
-        "highLight": "1. 参与自有品牌战略建设，直接影响商品质量与用户体验。  \n2. 与多部门协同合作，提升跨职能项目管理与资源整合能力。  \n3. 在快速发展的闪购业务中，拥有广阔的职业发展空间与成长机会。  \n4. 工作地点覆盖北京、上海，享受一线城市资源与便利。",
+        "highLight": "1. 加入快速发展的闪购业务，参与平台自有品牌建设，成长空间广阔。  \n2. 与优质供应商深度合作，积累丰富的供应链管理实战经验。  \n3. 扁平化管理，高效协作的团队氛围，支持专业能力提升与职业发展。  \n4. 工作地点位于北京核心商圈，交通便利，办公环境优良。",
         "otherInfo": null,
         "firstPostTime": null,
-        "refreshTime": 1783389693000,
-        "tag": null,
-        "expiredTime": null,
-        "socialRecommendJob": null
-      },
-      {
-        "jobUnionId": "4342807261",
-        "name": "规划分析-行业分析和管理规划",
-        "projectId": null,
-        "projectName": null,
-        "jobType": "3",
-        "jobSpecialCode": "5",
-        "jobSource": "1",
-        "jobStatus": "000",
-        "jobFamily": "职能类",
-        "jobFamilyGroup": "财务",
-        "cityList": [
-          {
-            "code": null,
-            "name": "北京市",
-            "children": null,
-            "sort": null,
-            "subCode": null,
-            "mapping": null,
-            "outerCode": null,
-            "bgNode": false
-          }
-        ],
-        "workYear": null,
-        "department": [
-          {
-            "code": null,
-            "name": "财务平台",
-            "children": null,
-            "sort": null,
-            "subCode": null,
-            "mapping": null,
-            "outerCode": null,
-            "bgNode": false
-          }
-        ],
-        "desc": null,
-        "departmentIntro": null,
-        "jobDuty": "在以下方面协助和支持团队工作：\n1. 支持某业务在公司层面的经营分析工作，站在公司整体视角与相关业务财务bp深度合作，向公司管理层输出与该业务相关的高质量经营规划与分析结果。\n2. 重点行业/外部主要对标公司的业财分析：及时高效产出相关公司公开季报年报重点关注，了解核心财务业务数据和业务发展信息，进行对标研究。\n3. 公司长期财务规划：根据不同业务经营特点，洞悉业务发展动因，搭建公司长期财务预测模型。\n4. 资产负债表分析和资本结构规划探索：从公司财务管理视角持续细化与跟踪分析资产负债表。对标外部主要公司进行资本结构规划探索。\n5. 公司财务管理方法论研究沉淀。",
-        "jobRequirement": null,
-        "precedence": null,
-        "highLight": "1. 财务平台总部关键职能部门。\n2. 参与公司核心财务和经营管理议题研究分析。\n3. 良好广阔的成长空间。\n4. 求真务实的文化氛围。",
-        "otherInfo": null,
-        "firstPostTime": null,
-        "refreshTime": 1783389692000,
+        "refreshTime": 1784253713000,
         "tag": null,
         "expiredTime": null,
         "socialRecommendJob": null
@@ -3285,7 +2522,7 @@
         "highLight": "1. 海量实车数据：规模化运营车辆持续产生丰富的真实场景数据，能通过数据驱动真正推动算法边界。\n2. 成果直达业务：工作成果直接体现在线上核心安全指标的提升上，价值感强、反馈快。\n3. 高水平团队：与 AI、机器学习、自动化等多元背景的技术大牛共事，在解决实际问题中快速成长。",
         "otherInfo": null,
         "firstPostTime": null,
-        "refreshTime": 1783389689000,
+        "refreshTime": 1784253712000,
         "tag": null,
         "expiredTime": null,
         "socialRecommendJob": null
@@ -3334,7 +2571,7 @@
         "highLight": "零售行业是重点发展领域，用户体验又是重点关注范畴，具有长期可发展和成长性。\n美团2025年提出AI三大策略，\"AI at Work\"已渗透到工作的每个角落——从CatPaw AI编程到NoCode零代码平台，从美境MeiGen图像生成到LongCat视频生成。你不仅会用AI工具辅助日常工作，更有机会探索AI在服务运营场景的落地应用，成为AI+零售服务的先行者。",
         "otherInfo": null,
         "firstPostTime": null,
-        "refreshTime": 1783389686000,
+        "refreshTime": 1784253709000,
         "tag": null,
         "expiredTime": null,
         "socialRecommendJob": null
@@ -3393,7 +2630,7 @@
         "highLight": "1. 参与构建下一代AI Agent开发框架与运行平台，技术影响力广泛。  \n2. 深度使用AI工具进行开发，鼓励高效人机协作。  \n3. 与前沿AI技术团队共同探索多智能体系统、浏览器自动化等创新方向。  \n4. 扁平化工作环境，支持技术自主决策与快速迭代。  \n5. 工作地点位于成都市，享受优质科技人才生态与生活环境。",
         "otherInfo": null,
         "firstPostTime": null,
-        "refreshTime": 1783389685000,
+        "refreshTime": 1784253708000,
         "tag": null,
         "expiredTime": null,
         "socialRecommendJob": null
@@ -3452,7 +2689,115 @@
         "highLight": "大平台、发展稳定。六险一金及年假，福利保障完善。明确的晋升和培训体系。",
         "otherInfo": null,
         "firstPostTime": null,
-        "refreshTime": 1783389682000,
+        "refreshTime": 1784253705000,
+        "tag": null,
+        "expiredTime": null,
+        "socialRecommendJob": null
+      },
+      {
+        "jobUnionId": "4291735699",
+        "name": "到餐-火锅品类华北大客户",
+        "projectId": null,
+        "projectName": null,
+        "jobType": "3",
+        "jobSpecialCode": "5",
+        "jobSource": "1",
+        "jobStatus": "000",
+        "jobFamily": "销售、客服与支持类",
+        "jobFamilyGroup": "销售",
+        "cityList": [
+          {
+            "code": null,
+            "name": "北京市",
+            "children": null,
+            "sort": null,
+            "subCode": null,
+            "mapping": null,
+            "outerCode": null,
+            "bgNode": false
+          },
+          {
+            "code": null,
+            "name": "上海市",
+            "children": null,
+            "sort": null,
+            "subCode": null,
+            "mapping": null,
+            "outerCode": null,
+            "bgNode": false
+          }
+        ],
+        "workYear": null,
+        "department": [
+          {
+            "code": null,
+            "name": "核心本地商业-到餐事业部",
+            "children": null,
+            "sort": null,
+            "subCode": null,
+            "mapping": null,
+            "outerCode": null,
+            "bgNode": false
+          }
+        ],
+        "desc": null,
+        "departmentIntro": null,
+        "jobDuty": "1.负责推进全国头部正餐连锁品牌与美团/大众点评在品牌营销、促销、用户运营等领域的深度商务合作；\n2.研究正餐行业特点，深入了解品牌的生意经营，帮助品牌制定专业的线上线下解决方案并协同落地运营；\n3.通过行业数据分析，品牌经营数据分析，线上经营数据分析指导客户线上线下经营迭代；\n4.在合作过程中，做好平台和商户的深入链接，能反向推动平台B端产品和C端产品的变革；\n5.深入洞察行业现状，打磨合作方法论，并预判行业趋势",
+        "jobRequirement": null,
+        "precedence": null,
+        "highLight": "1.通过分地区客户切分，建立行业视角，理解客户经营发展，打通客户内部各部门的协同关系，充分挖掘客户需求 \n2.通过满足不同分类的客户服务需求，迭代客户服务模式 \n3.深度研究不同类型的品牌及门店，提供个性化的解决方案 \n4.通过推动产品迭代，服务能力的迭代，更高效的建立客户与消费者之间的链接，提升客户服务满意度",
+        "otherInfo": null,
+        "firstPostTime": null,
+        "refreshTime": 1784253704000,
+        "tag": null,
+        "expiredTime": null,
+        "socialRecommendJob": null
+      },
+      {
+        "jobUnionId": "4272956971",
+        "name": "无人车业务部-公共事务解决方案专家",
+        "projectId": null,
+        "projectName": null,
+        "jobType": "3",
+        "jobSpecialCode": "5",
+        "jobSource": "1",
+        "jobStatus": "000",
+        "jobFamily": "职能类",
+        "jobFamilyGroup": "公司事务",
+        "cityList": [
+          {
+            "code": null,
+            "name": "北京市",
+            "children": null,
+            "sort": null,
+            "subCode": null,
+            "mapping": null,
+            "outerCode": null,
+            "bgNode": false
+          }
+        ],
+        "workYear": null,
+        "department": [
+          {
+            "code": null,
+            "name": "软硬件服务-无人车业务部",
+            "children": null,
+            "sort": null,
+            "subCode": null,
+            "mapping": null,
+            "outerCode": null,
+            "bgNode": false
+          }
+        ],
+        "desc": null,
+        "departmentIntro": null,
+        "jobDuty": "岗位职责：\n\n\n自动驾驶测试报告获取：与技术团队协同，负责智能网联、功能型无人车的测试报告申请，覆盖封闭场地测试、道路测试到示范运营的全流程合规管理；借助 AI 工具加速测试材料的整理、对比和合规性初审，缩短申请周期；\n\n\n支持地方路权申请：\n\n申报材料编制：独立完成高质量申报文件的撰写、整理与汇编；主动运用 AI 工具辅助政策对标、技术语言转化和文本打磨，确保材料专业性、规范性与说服力，提升评审得分；\n现场评审支持：代表公司解答申报材料、技术参数及安全方案质询，有效应对突发状况，致力于提升一次性通过率；\n\n\n支持体系搭建与知识管理：\n\n资料库搭建：形成各城市开城所需解决方案文档，借助 AI 构建申报文件模板库、地方政策智能检索通道及城市级申报档案库，实现知识资产的沉淀与复用；\n流程标准化：建立并完善申报支持机制与内部审核流程标准；探索 AI 辅助流程节点追踪和进度提醒的自动化。",
+        "jobRequirement": null,
+        "precedence": null,
+        "highLight": "无人配送行业最快落地场景，有机会直接引领全国政策导向；\nAI 深度赋能岗位：政策文本分析、申报材料生成、知识库管理——AI 在本岗位的应用空间极大，是 AI 辅助政务工作的前沿探索者；\n带薪年假、定期体检、五险一金，发展空间大、个人能力提升快。",
+        "otherInfo": null,
+        "firstPostTime": null,
+        "refreshTime": 1784253703000,
         "tag": null,
         "expiredTime": null,
         "socialRecommendJob": null
@@ -3501,7 +2846,7 @@
         "highLight": "1.有机会参与物流运营的全流程管理，锻炼综合管理能力。\n\n2.在互联网大厂公司工作，接触到多样化的物流业务和项目。\n\n3.能够与供应商、客户以及团队成员进行密切合作，提升人际交往能力。",
         "otherInfo": null,
         "firstPostTime": null,
-        "refreshTime": 1783389681000,
+        "refreshTime": 1784253701000,
         "tag": null,
         "expiredTime": null,
         "socialRecommendJob": null
@@ -3550,7 +2895,7 @@
         "highLight": "无人配送是行业最快落地的场景，是美团战略部署，加入美团无人配送将有机会引领整个行业的政策导向、推动整个行业的发展。\nAI 深度赋能岗位：政策文本分析、申报材料生成、知识库管理\n带薪年假、定期体检、五险一金、发展空间大、个人能力提升快。",
         "otherInfo": null,
         "firstPostTime": null,
-        "refreshTime": 1783389677000,
+        "refreshTime": 1784253697000,
         "tag": null,
         "expiredTime": null,
         "socialRecommendJob": null
@@ -3599,63 +2944,14 @@
         "highLight": "无人配送是行业最快落地的场景，是美团战略部署，加入美团无人配送将有机会引领整个行业的政策导向、推动整个行业的发展。\nAI 深度赋能岗位：政策文本分析、申报材料生成、知识库管理\n带薪年假、定期体检、五险一金、发展空间大、个人能力提升快。",
         "otherInfo": null,
         "firstPostTime": null,
-        "refreshTime": 1783389671000,
+        "refreshTime": 1784253692000,
         "tag": null,
         "expiredTime": null,
         "socialRecommendJob": null
       },
       {
-        "jobUnionId": "4250578005",
-        "name": "用户搜推策略运营专家",
-        "projectId": null,
-        "projectName": null,
-        "jobType": "3",
-        "jobSpecialCode": "5",
-        "jobSource": "1",
-        "jobStatus": "000",
-        "jobFamily": "运营类",
-        "jobFamilyGroup": "用户运营",
-        "cityList": [
-          {
-            "code": null,
-            "name": "香港特别行政区",
-            "children": null,
-            "sort": null,
-            "subCode": null,
-            "mapping": null,
-            "outerCode": null,
-            "bgNode": false
-          }
-        ],
-        "workYear": null,
-        "department": [
-          {
-            "code": null,
-            "name": "Keeta",
-            "children": null,
-            "sort": null,
-            "subCode": null,
-            "mapping": null,
-            "outerCode": null,
-            "bgNode": false
-          }
-        ],
-        "desc": null,
-        "departmentIntro": null,
-        "jobDuty": "1. 管理流量导购相关运营需求，在搜索推荐等交易链路制定运营策略优化导购效率，推动规划落实及复盘；\n2. 围绕香港阶段性业务目标，制定差异化的站内流量分发策略规划，推动相关产品及策略迭代；\n3. 日常监控站内各渠道流量转化效率，及时了解异动原因并发现业务机会点；\n4. 负责流量方向的创新项目，完成项目策划及落地；\n5. 运用 AI 工具（如 ChatGPT/Copilot/内部 AI 平台）提升日常工作效率，推动团队 AI 工具的落地应用。",
-        "jobRequirement": null,
-        "precedence": null,
-        "highLight": "1. 能够全方位了解外卖业务模式，有足够的空间和灵活度全面发挥你的才能；\n2. 核心业务的核心部门，团队气氛好，学习成长型团队；\n3. 创新业务的操盘手，挑战与机会并存；\n4. AI-Native 的工作氛围，注重人机协作效率。",
-        "otherInfo": null,
-        "firstPostTime": null,
-        "refreshTime": 1783389666000,
-        "tag": null,
-        "expiredTime": null,
-        "socialRecommendJob": null
-      },
-      {
-        "jobUnionId": "4242145335",
-        "name": "综合支持",
+        "jobUnionId": "4249340062",
+        "name": "充电宝-KA客户实施",
         "projectId": null,
         "projectName": null,
         "jobType": "3",
@@ -3667,7 +2963,7 @@
         "cityList": [
           {
             "code": null,
-            "name": "青岛市",
+            "name": "上海市",
             "children": null,
             "sort": null,
             "subCode": null,
@@ -3680,7 +2976,7 @@
         "department": [
           {
             "code": null,
-            "name": "软硬件服务-硬件管理部",
+            "name": "软硬件服务-充电宝业务部",
             "children": null,
             "sort": null,
             "subCode": null,
@@ -3691,13 +2987,62 @@
         ],
         "desc": null,
         "departmentIntro": null,
-        "jobDuty": "1.信息传递：有效传递总部重要通知，并汇总反馈一线的重要信息；\n2.培训答疑：协助销售团队做好培训的组织和检核，以及部分业务答疑工作；\n3.流程对接：总部与城市的流程对接，如租房、福利、员工入转调离流程等；\n4.仓库管理：负责城市充电宝设备出入库管理及资产盘点，确保城市实际库存与后台数据一致",
+        "jobDuty": "1. 负责共享充电宝项目的远程运维工作，对断电率、空仓率、僵尸宝率等核心运维指标负责，通过数据分析发现问题并推动解决。  \n2. 协助销售团队，提升运维数据，用数据驱动运维优化。  \n3. 合作商帮扶与管理，协助梳理运维流程并提供优化建议，帮助合作商降本提效，同时建立并维护良好的合作关系。\n4. 结合充电宝行业经验，对负责区域定期进行全面盘点与问题诊断，输出有效解决方案，取得结果，提升设备产能与门店收益，保障用户体验。",
         "jobRequirement": null,
         "precedence": null,
-        "highLight": "1.提升综合运营能力；\n2.提升个人与业务侧的协调能力；\n3.提升个人答疑能力；",
+        "highLight": "做五休二，基本无外出、无出差，团队氛围好！",
         "otherInfo": null,
         "firstPostTime": null,
-        "refreshTime": 1783389664000,
+        "refreshTime": 1784253685000,
+        "tag": null,
+        "expiredTime": null,
+        "socialRecommendJob": null
+      },
+      {
+        "jobUnionId": "4231176534",
+        "name": "无人车业务部-车身和外饰件采购",
+        "projectId": null,
+        "projectName": null,
+        "jobType": "3",
+        "jobSpecialCode": "5",
+        "jobSource": "1",
+        "jobStatus": "000",
+        "jobFamily": "零售类",
+        "jobFamilyGroup": "采购",
+        "cityList": [
+          {
+            "code": null,
+            "name": "上海市",
+            "children": null,
+            "sort": null,
+            "subCode": null,
+            "mapping": null,
+            "outerCode": null,
+            "bgNode": false
+          }
+        ],
+        "workYear": null,
+        "department": [
+          {
+            "code": null,
+            "name": "软硬件服务-无人车业务部",
+            "children": null,
+            "sort": null,
+            "subCode": null,
+            "mapping": null,
+            "outerCode": null,
+            "bgNode": false
+          }
+        ],
+        "desc": null,
+        "departmentIntro": null,
+        "jobDuty": "1. 负责车身及外饰件的采购策略制定与执行，确保供应链稳定和成本优化。  \n2. 与研发、质量、生产等部门协作，推动新项目零部件的选型、定点及供应商开发。  \n3. 管理供应商绩效，定期评估并推动持续改进，保障交付、质量与成本目标达成。  \n4. 分析市场行情与成本结构，主导商务谈判，降低采购总成本。  \n5. 建立并维护供应商资源库，优化供应链结构，提升抗风险能力。",
+        "jobRequirement": null,
+        "precedence": null,
+        "highLight": "1. 加入快速发展的汽车制造企业，参与核心零部件供应链管理。  \n2. 提供具有市场竞争力的薪酬与完善的职业发展通道。  \n3. 扁平化管理模式，团队协作氛围佳，决策高效。  \n4. 工作地点位于上海，交通便利，配套齐全。",
+        "otherInfo": null,
+        "firstPostTime": null,
+        "refreshTime": 1784253683000,
         "tag": null,
         "expiredTime": null,
         "socialRecommendJob": null
@@ -3756,7 +3101,56 @@
         "highLight": "500强企业里学习和成长，支持在不同领域的相互学习和轮岗",
         "otherInfo": null,
         "firstPostTime": null,
-        "refreshTime": 1783389659000,
+        "refreshTime": 1784253677000,
+        "tag": null,
+        "expiredTime": null,
+        "socialRecommendJob": null
+      },
+      {
+        "jobUnionId": "4209847628",
+        "name": "快驴财务-商品财务BP",
+        "projectId": null,
+        "projectName": null,
+        "jobType": "3",
+        "jobSpecialCode": "5",
+        "jobSource": "1",
+        "jobStatus": "000",
+        "jobFamily": "职能类",
+        "jobFamilyGroup": "财务",
+        "cityList": [
+          {
+            "code": null,
+            "name": "北京市",
+            "children": null,
+            "sort": null,
+            "subCode": null,
+            "mapping": null,
+            "outerCode": null,
+            "bgNode": false
+          }
+        ],
+        "workYear": null,
+        "department": [
+          {
+            "code": null,
+            "name": "财务平台",
+            "children": null,
+            "sort": null,
+            "subCode": null,
+            "mapping": null,
+            "outerCode": null,
+            "bgNode": false
+          }
+        ],
+        "desc": null,
+        "departmentIntro": null,
+        "jobDuty": "1. 预算制定：参与各品类年度规划工作，结合业务战略为品类制定相应的预算，同时支持业务将预算目标拆解到具体的实施路径并追踪达成。\n2. 业绩追踪：整体负责品类线的经营分析，通过日常对业务指标的追踪分析，发现和提示风险和机会点，站在经营的视角通过财务管理驱动业务盈利性增长。\n3. 策略评估：通过对品类的深入分析，结合业务模式发掘品类经营的关键驱动因素，持续迭代品类分析框架和评估体系；为业务策略提供论证测算支持，辅助业务制定中短期策略和落地计划。\n4. 业务支持：包括支持业务新场景落地，协同财税法提供财务解决方案；熟悉掌握各系统看板的数据口径和计算逻辑，支持业务进行数据分析；了解行业动态，提供对标分析支持等等。\n5.AI智能化推动：主动探索AI工具在业绩追踪、品类分析、预算制定等场景中的应用，推动财务分析工作提质增效。",
+        "jobRequirement": null,
+        "precedence": null,
+        "highLight": "平台和业务发展稳定，个人发展空间大，业财联动紧密，可以沉淀方法论和行业经验。",
+        "otherInfo": null,
+        "firstPostTime": null,
+        "refreshTime": 1784253672000,
         "tag": null,
         "expiredTime": null,
         "socialRecommendJob": null
@@ -3805,22 +3199,22 @@
         "highLight": "1、无人车业务处于蓬勃发展的科技领域，行业发展快，作为财务BP可以深度参与业务发展中面临的高模糊度事项的研判中，亲手推动行业的发展，与业务一同成长。\n2、财务团队整体工作氛围好，以结果为导向，学习型团队，有助于专业能力提升，助力职业发展。",
         "otherInfo": null,
         "firstPostTime": null,
-        "refreshTime": 1783389654000,
+        "refreshTime": 1784253671000,
         "tag": null,
         "expiredTime": null,
         "socialRecommendJob": null
       },
       {
-        "jobUnionId": "4152838778",
-        "name": "医美榜单运营",
+        "jobUnionId": "4166343784",
+        "name": "美容行业KA主管",
         "projectId": null,
         "projectName": null,
         "jobType": "3",
         "jobSpecialCode": "5",
         "jobSource": "1",
         "jobStatus": "000",
-        "jobFamily": "运营类",
-        "jobFamilyGroup": "用户运营",
+        "jobFamily": "销售、客服与支持类",
+        "jobFamilyGroup": "销售",
         "cityList": [
           {
             "code": null,
@@ -3835,6 +3229,26 @@
           {
             "code": null,
             "name": "上海市",
+            "children": null,
+            "sort": null,
+            "subCode": null,
+            "mapping": null,
+            "outerCode": null,
+            "bgNode": false
+          },
+          {
+            "code": null,
+            "name": "郑州市",
+            "children": null,
+            "sort": null,
+            "subCode": null,
+            "mapping": null,
+            "outerCode": null,
+            "bgNode": false
+          },
+          {
+            "code": null,
+            "name": "广州市",
             "children": null,
             "sort": null,
             "subCode": null,
@@ -3858,13 +3272,13 @@
         ],
         "desc": null,
         "departmentIntro": null,
-        "jobDuty": "负责美团北极星医美榜的全生命周期运营，包括评估体系搭建、榜单发布、品牌传播及效果追踪，通过权威医美榜单建立平台专业心智，带动上榜机构经营增长。\n1.榜单评估体系运营：组织双榜评估机制的指标建立，完成包括信息采集、打分、复核、发榜相关工作\n\n2.品牌传播与影响力建设：通过站内+站外+线下活动/物料整合传播，提升北极星榜单bc端影响力\n\n3.效果追踪与数据复盘：榜单发布后追踪上榜机构经营数据变化，相关榜单运营活动数据复盘和优化\n\n4.跨业务联动：与平台增长部门、整合营销、商家运营团队协同，将推动北极星榜单在C端的心智建立和营销推广",
+        "jobDuty": "1.负责美容行业加盟连锁大客户的合作管理，根据业务目标和策略，带领团队持续高效完成业务目标，提升客户产值；\n2.负责深入研究加盟连锁品牌总部和门店关系，深入理解客户发展规划与运营痛点，主导门店转化能力建设，结合平台策略，围绕增长制定客户解决方案；\n3.负责分析所负责客户的发展趋势，持续探查市场、客户、平台侧变化，为公司决策和中后线能力迭代提供依据；\n4.负责内外部资源整合，通过项目制管理，推动内部和外部相关利益协同方并实现品牌到门店闭环拿到关键结果；\n5.负责团队人才培养和能力提升，持续打造经营顾问型销售团队。",
         "jobRequirement": null,
         "precedence": null,
-        "highLight": "1. 参与核心用户增长项目，成长空间大。  \n2. 团队氛围开放，鼓励创新与数据驱动决策。  \n3. 提供完善的培训体系与职业发展通道。",
+        "highLight": "• 深度参与核心业务策略制定和模式落地，清晰的晋升路径；\n• 与专业团队共同深耕细分行业，实现职业成长与行业影响力双重提升。",
         "otherInfo": null,
         "firstPostTime": null,
-        "refreshTime": 1783389652000,
+        "refreshTime": 1784253669000,
         "tag": null,
         "expiredTime": null,
         "socialRecommendJob": null
@@ -3913,7 +3327,7 @@
         "highLight": "1、成长空间大，直接影响千亿大盘的业务结果。\n2、策略复杂度高，且具备落地抓手。",
         "otherInfo": null,
         "firstPostTime": null,
-        "refreshTime": 1783389647000,
+        "refreshTime": 1784253667000,
         "tag": null,
         "expiredTime": null,
         "socialRecommendJob": null
@@ -3962,7 +3376,105 @@
         "highLight": "1.可做功空间和潜力巨大，能参与美团核心业务的重塑，直接影响千万级用户搜索体验；\n2.公司和团队氛围优质，组织扁平、工作氛围开放、核心团队成员年轻有活力、没有历史包袱。",
         "otherInfo": null,
         "firstPostTime": null,
-        "refreshTime": 1783389643000,
+        "refreshTime": 1784253662000,
+        "tag": null,
+        "expiredTime": null,
+        "socialRecommendJob": null
+      },
+      {
+        "jobUnionId": "4097979891",
+        "name": "到餐-零食零售大客户销售",
+        "projectId": null,
+        "projectName": null,
+        "jobType": "3",
+        "jobSpecialCode": "5",
+        "jobSource": "1",
+        "jobStatus": "000",
+        "jobFamily": "销售、客服与支持类",
+        "jobFamilyGroup": "销售",
+        "cityList": [
+          {
+            "code": null,
+            "name": "上海市",
+            "children": null,
+            "sort": null,
+            "subCode": null,
+            "mapping": null,
+            "outerCode": null,
+            "bgNode": false
+          }
+        ],
+        "workYear": null,
+        "department": [
+          {
+            "code": null,
+            "name": "核心本地商业-到餐事业部",
+            "children": null,
+            "sort": null,
+            "subCode": null,
+            "mapping": null,
+            "outerCode": null,
+            "bgNode": false
+          }
+        ],
+        "desc": null,
+        "departmentIntro": null,
+        "jobDuty": "【岗位职能】\n1、负责推进全国头部卤味、炸鸡、酒类品类大型连锁品牌在美团平台就品牌建设，门店经营、营销领域的深度商务合作；\n2、负责对接品牌运营，财务，市场、技术等多部门关系处理及业务沟通，推动公司各产品的全面合作；\n3、深入了解品牌的生意运作及消费者行为习惯，配合商家运营一起为品牌方提供整体全案解决方案；提升品牌商户线上支付转化及品牌线下生意。\n4、保持良好的客户关系，做好连锁客户管理和维护工作。",
+        "jobRequirement": null,
+        "precedence": null,
+        "highLight": "系统化的培训学习计划，广阔的向上发展空间。打开零食零售品类在美团平台经营新局面。",
+        "otherInfo": null,
+        "firstPostTime": null,
+        "refreshTime": 1784253661000,
+        "tag": null,
+        "expiredTime": null,
+        "socialRecommendJob": null
+      },
+      {
+        "jobUnionId": "4094984841",
+        "name": "到餐-全国大客户经理【上海/成都】",
+        "projectId": null,
+        "projectName": null,
+        "jobType": "3",
+        "jobSpecialCode": "5",
+        "jobSource": "1",
+        "jobStatus": "000",
+        "jobFamily": "销售、客服与支持类",
+        "jobFamilyGroup": "销售",
+        "cityList": [
+          {
+            "code": null,
+            "name": "成都市",
+            "children": null,
+            "sort": null,
+            "subCode": null,
+            "mapping": null,
+            "outerCode": null,
+            "bgNode": false
+          }
+        ],
+        "workYear": null,
+        "department": [
+          {
+            "code": null,
+            "name": "核心本地商业-到餐事业部",
+            "children": null,
+            "sort": null,
+            "subCode": null,
+            "mapping": null,
+            "outerCode": null,
+            "bgNode": false
+          }
+        ],
+        "desc": null,
+        "departmentIntro": null,
+        "jobDuty": "1、负责推进全国头部正餐连锁品牌与美团在品牌营销、促销、用户运营等领域的深度商务合作。\n2、研究正餐行业特点，深入了解品牌的生意经营，帮助品牌制定专业的线上线下解决方案并协同落地运营。\n3、通过行业数据分析，品牌经营数据分析，线上经营数据分析指导客户线上线下经营迭代。\n4、在合作过程中，做好平台和商户的深入链接，能反向推动平台B端产品和C端产品的变革。\n5、深入洞察行业现状，打磨合作方法论，并预判行业趋势。",
+        "jobRequirement": null,
+        "precedence": null,
+        "highLight": "1、拥有互联网（大厂）的工作经验。\n2、丰富的岗位、职能及跃迁机会。\n3、能够成为行业/领域的专家，提升个人影响力。\n4、锻炼自身的综合能力与水平。",
+        "otherInfo": null,
+        "firstPostTime": null,
+        "refreshTime": 1784253660000,
         "tag": null,
         "expiredTime": null,
         "socialRecommendJob": null
@@ -3979,26 +3491,6 @@
         "jobFamily": "零售类",
         "jobFamilyGroup": "采购",
         "cityList": [
-          {
-            "code": null,
-            "name": "广州市",
-            "children": null,
-            "sort": null,
-            "subCode": null,
-            "mapping": null,
-            "outerCode": null,
-            "bgNode": false
-          },
-          {
-            "code": null,
-            "name": "深圳市",
-            "children": null,
-            "sort": null,
-            "subCode": null,
-            "mapping": null,
-            "outerCode": null,
-            "bgNode": false
-          },
           {
             "code": null,
             "name": "重庆市",
@@ -4041,14 +3533,14 @@
         "highLight": "1、全面供应链视角，业务发挥空间大，团队氛围好；\n2、BU级重点项目，能从全链路视角看业务发展。",
         "otherInfo": null,
         "firstPostTime": null,
-        "refreshTime": 1783389642000,
+        "refreshTime": 1784253657000,
         "tag": null,
         "expiredTime": null,
         "socialRecommendJob": null
       },
       {
         "jobUnionId": "4001672755",
-        "name": "快乐猴-华南片区经理",
+        "name": "快乐猴-广州片区经理",
         "projectId": null,
         "projectName": null,
         "jobType": "3",
@@ -4120,7 +3612,56 @@
         "highLight": "1.可以在快节奏的线下零售行业中展现个人管理能力和团队领导能力。\n2.有机会参与线下超市的整体运营策略规划和执行，实现个人职业发展和成长。\n3.薪资福利优厚，发展空间大，公司提供良好的培训和晋升机会。",
         "otherInfo": null,
         "firstPostTime": null,
-        "refreshTime": 1783389640000,
+        "refreshTime": 1784253656000,
+        "tag": null,
+        "expiredTime": null,
+        "socialRecommendJob": null
+      },
+      {
+        "jobUnionId": "4507957769",
+        "name": "机器人-用工管理/商管理",
+        "projectId": null,
+        "projectName": null,
+        "jobType": "3",
+        "jobSpecialCode": "5",
+        "jobSource": "1",
+        "jobStatus": "000",
+        "jobFamily": "运营类",
+        "jobFamilyGroup": "业务运营",
+        "cityList": [
+          {
+            "code": null,
+            "name": "深圳市",
+            "children": null,
+            "sort": null,
+            "subCode": null,
+            "mapping": null,
+            "outerCode": null,
+            "bgNode": false
+          }
+        ],
+        "workYear": null,
+        "department": [
+          {
+            "code": null,
+            "name": "无人机业务部",
+            "children": null,
+            "sort": null,
+            "subCode": null,
+            "mapping": null,
+            "outerCode": null,
+            "bgNode": false
+          }
+        ],
+        "desc": null,
+        "departmentIntro": null,
+        "jobDuty": "1. 外包人员全生命周期管理：覆盖需求规划、供应商导入评估、人员入离职流程管理及绩效考核体系搭建，确保外包团队人力供给持续稳定；\n2. 供应商开发与商务管理：对接劳务/BPO供应商，主导综合评估（资质、服务能力、成本结构、合规性）、商务谈判与合同签署，建立供应商分级管理与动态评价机制；\n3. 外包用工管理体系建设：制定考勤、薪酬结算、安全培训、数据保密等标准化管理制度，推动用工全流程数字化与规范化；\n4. 人力成本管控与合规风险防控：通过数据分析识别外包人天单价、人效比等成本优化机会，把控劳务合规红线（劳务派遣比例、社保合规、数据安全协议等），防范用工法律风险；\n5. 跨部门协同与资源调度：与数据采集项目组、法务、财务等多方协作，保障外包资源匹配项目需求节奏，对交付结果负责。",
+        "jobRequirement": null,
+        "precedence": null,
+        "highLight": "1. 前沿行业：深度参与具身智能数据采集运营体系建设，处于AI+机器人行业最前沿的实践一线；\n2. 体系从0到1：主导建设大规模外包用工管理体系，有充分的制度设计和流程优化空间；\n3. 平台资源：依托美团在本地生活领域的强大生态和组织能力，获得专业的管理工具和方法论支持；\n4. 业务影响力：外包人员规模和管理质量直接影响数据采集效率和AI模型训练效果，岗位产出与业务成果强挂钩。",
+        "otherInfo": null,
+        "firstPostTime": null,
+        "refreshTime": 1784253653000,
         "tag": null,
         "expiredTime": null,
         "socialRecommendJob": null
@@ -4239,7 +3780,7 @@
         "highLight": "岗位亮点:\n1.作为综合采购岗位，能够全面了解和掌握公司的采购流程和供应链管理。\n2.作为闪购-食品品类采购岗位，能够在电商行业中负责重要品类的采购工作。",
         "otherInfo": null,
         "firstPostTime": null,
-        "refreshTime": 1783389635000,
+        "refreshTime": 1784253651000,
         "tag": null,
         "expiredTime": null,
         "socialRecommendJob": null
@@ -4298,22 +3839,22 @@
         "highLight": "1. 参与高增长潜力业务，直接推动公司核心品类发展。  \n2. 接触行业头部供应商资源，提升专业能力与行业视野。  \n3. 灵活办公模式，支持北京或上海双城工作。  \n4. 扁平化管理，快速决策与成长空间。  \n5. 团队年轻化，注重创新与结果导向。",
         "otherInfo": null,
         "firstPostTime": null,
-        "refreshTime": 1783389632000,
+        "refreshTime": 1784253648000,
         "tag": null,
         "expiredTime": null,
         "socialRecommendJob": null
       },
       {
-        "jobUnionId": "3918429816",
-        "name": "规划分析-业务方向FP&A",
+        "jobUnionId": "3939735042",
+        "name": "AI产品经理-小美Agent方向",
         "projectId": null,
         "projectName": null,
         "jobType": "3",
         "jobSpecialCode": "5",
         "jobSource": "1",
         "jobStatus": "000",
-        "jobFamily": "职能类",
-        "jobFamilyGroup": "财务",
+        "jobFamily": "产品类",
+        "jobFamilyGroup": "产品",
         "cityList": [
           {
             "code": null,
@@ -4330,7 +3871,7 @@
         "department": [
           {
             "code": null,
-            "name": "财务平台",
+            "name": "核心本地商业-美团平台",
             "children": null,
             "sort": null,
             "subCode": null,
@@ -4341,13 +3882,13 @@
         ],
         "desc": null,
         "departmentIntro": null,
-        "jobDuty": "独立负责公司层面两到三个业务的经营分析工作，站在公司整体视角与相关业务财务BP团队及业务商业分析团队深度合作，向公司管理层输出与该业务相关的高质量经营规划与分析结果及行业研究等，推动业务战略正确制定、落地并持续监控。工作主要可分为三大模块：\n1）两到三个业务的公司视角经营分析，产出向公司管理层汇报的经营分析月报；\n2）公司层面的共性问题拉通专项分析；\n3）行业研究及对标公司的长周期经营分析。",
+        "jobDuty": "1、负责小美 Agent 在本地生活场景（吃喝玩乐）的策略迭代：从真实案例归因出发，迭代 prompt、工具定义与交互策略，用评测数据验证收益，推动上线；\n2、建设策略迭代的评测体系：把「这个策略好不好」转化为可量化、可回归的测试问题。生产贴近真实用户表达的评测集，搭建自动化评测流程，校准Judge LLM，沉淀可复用的评测资产与离线基线；\n3、设计对话式 Agent 的交互体验：消息节奏与文风、多轮对话策略、组件交互、记忆与个性化，从用户真实场景倒推方案，并通过评测闭环验证体验提升；\n4、与研发、设计、算法团队紧密协作，完成从需求分析、方案评审到策略迭代、效果评测和产品上线的全流程落地；\n5、跟踪海内外 Agent/LLM 产品与技术动态，对外部方案做设计假设拆解（哪些解决真实问题、哪些不适用于自身系统），输出产品洞察。",
         "jobRequirement": null,
         "precedence": null,
-        "highLight": "岗位从公司整体视角出发、独立负责两到三个业务的公司层面经营分析工作，并与相关业务财务BP团队及业务商业分析团队深度合作，提供较好的整体视野、团队合作、分析项目机会，向公司管理层输出与该业务相关的高质量经营规划、分析结果、行业研究等，推动业务战略正确制定、落地并持续监控。",
+        "highLight": "1. 参与前沿AI技术的落地，推动行业创新。  \n2. 扁平化管理，鼓励创新和自主决策，快速迭代，快速成长。",
         "otherInfo": null,
         "firstPostTime": null,
-        "refreshTime": 1783389629000,
+        "refreshTime": 1784253645000,
         "tag": null,
         "expiredTime": null,
         "socialRecommendJob": null
@@ -4396,26 +3937,76 @@
         "highLight": "1.处于快速发展期，空间广阔；\n2.团队氛围好，能充分发挥创造力；\n3.互联网前线冲浪，保持敏锐和好奇；\n4.AI应用场景丰富。",
         "otherInfo": null,
         "firstPostTime": null,
-        "refreshTime": 1783389625000,
+        "refreshTime": 1784253642000,
         "tag": null,
         "expiredTime": null,
         "socialRecommendJob": null
       },
       {
-        "jobUnionId": "3668116559",
-        "name": "小象超市-线下生意计划",
+        "jobUnionId": "3712845261",
+        "name": "美容行业大客户经理",
         "projectId": null,
         "projectName": null,
         "jobType": "3",
         "jobSpecialCode": "5",
         "jobSource": "1",
         "jobStatus": "000",
-        "jobFamily": "市场营销类",
-        "jobFamilyGroup": "营销",
+        "jobFamily": "销售、客服与支持类",
+        "jobFamilyGroup": "销售",
         "cityList": [
           {
             "code": null,
-            "name": "北京市",
+            "name": "上海市",
+            "children": null,
+            "sort": null,
+            "subCode": null,
+            "mapping": null,
+            "outerCode": null,
+            "bgNode": false
+          },
+          {
+            "code": null,
+            "name": "济南市",
+            "children": null,
+            "sort": null,
+            "subCode": null,
+            "mapping": null,
+            "outerCode": null,
+            "bgNode": false
+          },
+          {
+            "code": null,
+            "name": "郑州市",
+            "children": null,
+            "sort": null,
+            "subCode": null,
+            "mapping": null,
+            "outerCode": null,
+            "bgNode": false
+          },
+          {
+            "code": null,
+            "name": "武汉市",
+            "children": null,
+            "sort": null,
+            "subCode": null,
+            "mapping": null,
+            "outerCode": null,
+            "bgNode": false
+          },
+          {
+            "code": null,
+            "name": "广州市",
+            "children": null,
+            "sort": null,
+            "subCode": null,
+            "mapping": null,
+            "outerCode": null,
+            "bgNode": false
+          },
+          {
+            "code": null,
+            "name": "西安市",
             "children": null,
             "sort": null,
             "subCode": null,
@@ -4428,7 +4019,7 @@
         "department": [
           {
             "code": null,
-            "name": "食杂零售-小象事业部",
+            "name": "核心本地商业-医药健康事业部",
             "children": null,
             "sort": null,
             "subCode": null,
@@ -4439,13 +4030,13 @@
         ],
         "desc": null,
         "departmentIntro": null,
-        "jobDuty": "1.负责小象超市线下门店生意计划的制定与落地，围绕门店开业节奏和新店爬坡目标，搭建线上线下整合营销方案，驱动门店GMV和客流增长；\n2.联动品类营销、商品运营、门店运营等多方团队，从营销策略到门店执行形成闭环，确保每场营销活动从策划、资源协调、门店落地到效果复盘的全链路交付；\n3.搭建线下营销效果评估体系，基于销售数据、客流数据、活动ROI等核心指标持续优化营销策略和资源投放效率；\n4.沉淀线下营销方法论和标准化作业流程，将成功经验复制到新店开业和区域推广中，支撑业务规模化扩张。",
+        "jobDuty": "1.管理美容行业大客户，负责公司大客户的业务拓展和市场渗透。\n2.建立并维护与大客户的良好合作关系，达成销售目标。\n3.负责制定大客户发展战略，进行市场调研和竞争对手分析，制定相应的销售策略。\n4.负责跟进大客户的需求和问题，提供专业的解决方案和产品推荐，确保客户满意度。\n5.协调内外部资源，完成销售合同的谈判、签订及执行，确保合同的履行和回款的完成。\n6.组织和参与大客户活动，提升公司品牌知名度和市场份额。",
         "jobRequirement": null,
         "precedence": null,
-        "highLight": "1、业务高速增长期：小象目前在全国重点城市快速扩张，营销团队直接参与业务从1到10的规模化过程，成长空间远超成熟业务。\n2、整合营销全链路实践：从线上内容投放、社媒运营，到线下门店活动，你能在这里完整体验整合营销的每一个环节，而不是只做其中一环。\n3、AI-Native的营销团队：美团2025年提出AI三大策略，\"AI at Work\"渗透到营销每个角落——从AIGC创意素材到AI数据分析。团队鼓励用AI解决问题，欢迎\"用AI干翻旧活\"的想法。",
+        "highLight": "1.作为高级连锁经营行业大客户经理，将直接参与公司的业务拓展和市场渗透，为公司的发展做出重要贡献。\n2.在担任连锁经营行业大客户经理的岗位上，将有机会与知名连锁企业展开合作，提升个人销售能力和人际交往能力。\n3.通过带领团队完成销售目标，并对团队成员进行培训和指导，将有机会锻炼和提升团队管理能力和领导",
         "otherInfo": null,
         "firstPostTime": null,
-        "refreshTime": 1783389620000,
+        "refreshTime": 1784253637000,
         "tag": null,
         "expiredTime": null,
         "socialRecommendJob": null
@@ -4494,7 +4085,135 @@
         "highLight": "1.内外部客户学习机会；跨业务线资源触达整合。\n2.可以接触到国内外知名品牌客户，拓展人脉和资源。",
         "otherInfo": null,
         "firstPostTime": null,
-        "refreshTime": 1783389618000,
+        "refreshTime": 1784253635000,
+        "tag": null,
+        "expiredTime": null,
+        "socialRecommendJob": null
+      },
+      {
+        "jobUnionId": "3574824930",
+        "name": "美团外卖-浣熊食堂-渠道开发选址经理",
+        "projectId": null,
+        "projectName": null,
+        "jobType": "3",
+        "jobSpecialCode": "5",
+        "jobSource": "1",
+        "jobStatus": "000",
+        "jobFamily": "销售、客服与支持类",
+        "jobFamilyGroup": "销售",
+        "cityList": [
+          {
+            "code": null,
+            "name": "北京市",
+            "children": null,
+            "sort": null,
+            "subCode": null,
+            "mapping": null,
+            "outerCode": null,
+            "bgNode": false
+          },
+          {
+            "code": null,
+            "name": "上海市",
+            "children": null,
+            "sort": null,
+            "subCode": null,
+            "mapping": null,
+            "outerCode": null,
+            "bgNode": false
+          },
+          {
+            "code": null,
+            "name": "杭州市",
+            "children": null,
+            "sort": null,
+            "subCode": null,
+            "mapping": null,
+            "outerCode": null,
+            "bgNode": false
+          },
+          {
+            "code": null,
+            "name": "深圳市",
+            "children": null,
+            "sort": null,
+            "subCode": null,
+            "mapping": null,
+            "outerCode": null,
+            "bgNode": false
+          }
+        ],
+        "workYear": null,
+        "department": [
+          {
+            "code": null,
+            "name": "核心本地商业-外卖事业部",
+            "children": null,
+            "sort": null,
+            "subCode": null,
+            "mapping": null,
+            "outerCode": null,
+            "bgNode": false
+          }
+        ],
+        "desc": null,
+        "departmentIntro": null,
+        "jobDuty": "1.战略规划与网络布局：开展区域市场深度研究（商圈流量、加盟政策、租赁成本分析等），制定区域加盟网络拓展规划，建立商准入评估体系，通过选址模型（人流量/租金比、外送热力圈）构建动态数据库，实施分级管理策略；\n2.开发全流程管控：主导商资质审查，组织跨部门商准入评审会，输出可行性评估报告，设计谈判策略路径图，完成从商务洽谈到合同签署的全周期管控；\n3.财务模型与风控：构建单店盈利模型，开展租金敏感性分析及收益预测（投资回收期、EBITDA利润率），制定标准化合同模板，规避物业产权瑕疵、竞业限制等法律风险；\n4.运营赋能与生态构建：建立商健康度监测体系，迭代总部支持政策，设计商分级赋能方案；\n5.跨部门协同：协同设计、工程和财税法、招商、CAP等，确保项目的推进和实施。",
+        "jobRequirement": null,
+        "precedence": null,
+        "highLight": "1.操盘过商裂变计划（老商推荐激励体系）；\n2.熟悉商数字化管理系统（签约在线化、数据看板搭建）。",
+        "otherInfo": null,
+        "firstPostTime": null,
+        "refreshTime": 1784253625000,
+        "tag": null,
+        "expiredTime": null,
+        "socialRecommendJob": null
+      },
+      {
+        "jobUnionId": "3523216109",
+        "name": "闪购-供应链计划-华北",
+        "projectId": null,
+        "projectName": null,
+        "jobType": "3",
+        "jobSpecialCode": "5",
+        "jobSource": "1",
+        "jobStatus": "000",
+        "jobFamily": "零售类",
+        "jobFamilyGroup": "供应链",
+        "cityList": [
+          {
+            "code": null,
+            "name": "北京市",
+            "children": null,
+            "sort": null,
+            "subCode": null,
+            "mapping": null,
+            "outerCode": null,
+            "bgNode": false
+          }
+        ],
+        "workYear": null,
+        "department": [
+          {
+            "code": null,
+            "name": "核心本地商业-闪购事业部",
+            "children": null,
+            "sort": null,
+            "subCode": null,
+            "mapping": null,
+            "outerCode": null,
+            "bgNode": false
+          }
+        ],
+        "desc": null,
+        "departmentIntro": null,
+        "jobDuty": "1.根据品类特性和规划制定负责制定管理策略，确保库存水平的合理控制和优化，保障商品稳定供给同时优化资金占用与物流成本。\n2.结合S&OP的运营，制定品类的日常库存运营机制，对周转和现货指标负责，监控库存现货率、周转，及时提出不动销、滞慢销、断货预警，识别风险点及机会点，提升现有供给链路效率\n3.结合供应商的合作能力，识别上游供应链优化机会，并进行供应链流程的协调与优化。\n4.搭建品类指标监控体系和数据体系，针对品类运营结果进行数据解读和下钻归因分析，不断优化品类的供应链解决方案，沉淀策略并推进产品化",
+        "jobRequirement": null,
+        "precedence": null,
+        "highLight": "1.有机会从0-1跟随项目成长，更广阔的的视角，更多的机会与发展空间；\n2.工作氛围简单、直接、开放、高效。",
+        "otherInfo": null,
+        "firstPostTime": null,
+        "refreshTime": 1784253614000,
         "tag": null,
         "expiredTime": null,
         "socialRecommendJob": null
@@ -4553,7 +4272,7 @@
         "highLight": "1.具有挑战性的业务场景，有机会完成从0到1的新能力建设，能够在工作中不断积累专业知识和经验。\n2.业务正处于高速发展期，快消新零售增长新通道，行业前景好，岗位提供了丰富的机会和增长空间。\n3.深度参与商业模式设计和战略制定，能够锤炼商业顶层设计能力，探索业务领域，充满挑战和成就感。",
         "otherInfo": null,
         "firstPostTime": null,
-        "refreshTime": 1783389616000,
+        "refreshTime": 1784253613000,
         "tag": null,
         "expiredTime": null,
         "socialRecommendJob": null
@@ -4612,7 +4331,7 @@
         "highLight": "1.能够参与并推动履约运营体系完善与搭建；​2.可参与到跨部门重点项目协调推进；​3.可与优秀物流运营者共同成长。",
         "otherInfo": null,
         "firstPostTime": null,
-        "refreshTime": 1783389608000,
+        "refreshTime": 1784253606000,
         "tag": null,
         "expiredTime": null,
         "socialRecommendJob": null
@@ -4661,56 +4380,7 @@
         "highLight": "1.迅速上升的业务态势，带来充足的发展机会和能力施展空间，可以在国际化产品领域发挥专业优势。\n2.团队氛围融洽，积极向上，一群人可以走得更远。",
         "otherInfo": null,
         "firstPostTime": null,
-        "refreshTime": 1783389607000,
-        "tag": null,
-        "expiredTime": null,
-        "socialRecommendJob": null
-      },
-      {
-        "jobUnionId": "3137539740",
-        "name": "规划分析-财务分析",
-        "projectId": null,
-        "projectName": null,
-        "jobType": "3",
-        "jobSpecialCode": "5",
-        "jobSource": "1",
-        "jobStatus": "000",
-        "jobFamily": "职能类",
-        "jobFamilyGroup": "财务",
-        "cityList": [
-          {
-            "code": null,
-            "name": "北京市",
-            "children": null,
-            "sort": null,
-            "subCode": null,
-            "mapping": null,
-            "outerCode": null,
-            "bgNode": false
-          }
-        ],
-        "workYear": null,
-        "department": [
-          {
-            "code": null,
-            "name": "财务平台",
-            "children": null,
-            "sort": null,
-            "subCode": null,
-            "mapping": null,
-            "outerCode": null,
-            "bgNode": false
-          }
-        ],
-        "desc": null,
-        "departmentIntro": null,
-        "jobDuty": "独立负责公司层面经营分析工作，站在公司整体视角与相关业务财务BP团队及业务商业分析团队深度合作，向公司管理层输出与该业务相关的高质量经营规划与分析结果及行业研究等，推动业务战略正确制定、落地并持续监控。工作主要可分为三大模块：\n1）公司全量业务视角经营分析，产出向公司管理层汇报的经营分析月报；\n2）公司层面的共性问题拉通专项分析（如，公司的补贴效率分析，公司的全量用户分析等）；\n3）行业研究及对标公司的长周期经营分析。",
-        "jobRequirement": null,
-        "precedence": null,
-        "highLight": "公司层面全盘经营分析工作，站在公司整体视角与相关业务财务BP团队及业务商业分析团队深度合作，向公司管理层输出与该业务相关的高质量经营规划与分析结果及行业研究等，推动业务战略正确制定、落地并持续监控。",
-        "otherInfo": null,
-        "firstPostTime": null,
-        "refreshTime": 1783389604000,
+        "refreshTime": 1784253604000,
         "tag": null,
         "expiredTime": null,
         "socialRecommendJob": null
@@ -4759,56 +4429,7 @@
         "highLight": "AI 背景下新衍生的岗位，人才标准重新定义，发展空间大；\n以基于业务形态发展逐渐内部培养为主，成长路径清晰；\n直接参与 AI 能力落地一线，从 0 到 1 搭建团队与业务模式；\n与客户/业务方深度合作，快速积累行业解决方案实施经验与能力。",
         "otherInfo": null,
         "firstPostTime": null,
-        "refreshTime": 1783388707000,
-        "tag": null,
-        "expiredTime": null,
-        "socialRecommendJob": null
-      },
-      {
-        "jobUnionId": "4551829440",
-        "name": "共享电单车城市运营经理",
-        "projectId": null,
-        "projectName": null,
-        "jobType": "3",
-        "jobSpecialCode": "5",
-        "jobSource": "1",
-        "jobStatus": "000",
-        "jobFamily": "销售、客服与支持类",
-        "jobFamilyGroup": "业务支持",
-        "cityList": [
-          {
-            "code": null,
-            "name": "昆明市",
-            "children": null,
-            "sort": null,
-            "subCode": null,
-            "mapping": null,
-            "outerCode": null,
-            "bgNode": false
-          }
-        ],
-        "workYear": null,
-        "department": [
-          {
-            "code": null,
-            "name": "软硬件服务-骑行事业部",
-            "children": null,
-            "sort": null,
-            "subCode": null,
-            "mapping": null,
-            "outerCode": null,
-            "bgNode": false
-          }
-        ],
-        "desc": null,
-        "departmentIntro": null,
-        "jobDuty": "负责区域内车辆运维和日常管理工作，对业务结果负责；\n熟悉区域内行业竞争态势，能够根据中台输出的业务策略，动态调整制定区域内城市运维策略，推动团队落地执行；\n负责执行并优化运维工作流程，保障运维效率及质量，确保区域车辆运维业务目标达成；\n组建区域运维团队，培养人才，打造高效执行的区域运维团队；\n协同维护所辖区域各层级政府关系。",
-        "jobRequirement": null,
-        "precedence": null,
-        "highLight": "1. 参与城市绿色出行生态建设，推动可持续交通发展。  \n2. 提供广阔的职业发展空间和跨领域成长机会。  \n3. 团队氛围开放包容，鼓励创新与主动担当。  \n4. 享受具有竞争力的薪酬福利与完善的培训体系。",
-        "otherInfo": null,
-        "firstPostTime": null,
-        "refreshTime": 1783388705000,
+        "refreshTime": 1784252703000,
         "tag": null,
         "expiredTime": null,
         "socialRecommendJob": null
@@ -4857,56 +4478,7 @@
         "highLight": "作为HR产品经理助力海外业务蓬勃发展，了解到不同国家和地区的文化",
         "otherInfo": null,
         "firstPostTime": null,
-        "refreshTime": 1783388701000,
-        "tag": null,
-        "expiredTime": null,
-        "socialRecommendJob": null
-      },
-      {
-        "jobUnionId": "4601606277",
-        "name": "车辆运营主管",
-        "projectId": null,
-        "projectName": null,
-        "jobType": "3",
-        "jobSpecialCode": "5",
-        "jobSource": "1",
-        "jobStatus": "000",
-        "jobFamily": "销售、客服与支持类",
-        "jobFamilyGroup": "业务支持",
-        "cityList": [
-          {
-            "code": null,
-            "name": "大连市",
-            "children": null,
-            "sort": null,
-            "subCode": null,
-            "mapping": null,
-            "outerCode": null,
-            "bgNode": false
-          }
-        ],
-        "workYear": null,
-        "department": [
-          {
-            "code": null,
-            "name": "软硬件服务-骑行事业部",
-            "children": null,
-            "sort": null,
-            "subCode": null,
-            "mapping": null,
-            "outerCode": null,
-            "bgNode": false
-          }
-        ],
-        "desc": null,
-        "departmentIntro": null,
-        "jobDuty": "负责城市车辆运营管理工作，对有效运营车辆和活跃车辆等指标负责;\n了解区域的车辆供需状况和车辆状态数据，细化和落地区域内车辆分布和干预管理策略;\n搭建和管理一线运营团队;配合政府部门对城市运营问题进行管理。\n具备团队管理经验，善于用开拓性思维解决问题;有物流运输，三方管理或互联网城市管理经验及行业经验者优先;\n有数据意识，并能通过数据分析的结果不断优化调整工作。",
-        "jobRequirement": null,
-        "precedence": null,
-        "highLight": "城市负责人，多角度视角看行业，成长及发展空间有清晰路径",
-        "otherInfo": null,
-        "firstPostTime": null,
-        "refreshTime": 1783387830000,
+        "refreshTime": 1784252701000,
         "tag": null,
         "expiredTime": null,
         "socialRecommendJob": null
@@ -4955,7 +4527,7 @@
         "highLight": "1. 以大模型重构信贷核心决策链路，这是行业级别的范式变革机会——你将定义 AI 原生金融产品的标准形态。 \n\n2. 平台资源丰富（海量真实金融数据、充足算力、成熟的模型基建），支持快速验证与规模化落地。 \n\n3. 团队技术氛围浓厚，鼓励从产品视角驱动技术创新，拥有充分的自主决策空间。",
         "otherInfo": null,
         "firstPostTime": null,
-        "refreshTime": 1783387823000,
+        "refreshTime": 1784251810000,
         "tag": null,
         "expiredTime": null,
         "socialRecommendJob": null
@@ -5004,272 +4576,7 @@
         "highLight": "1. 主导AI赋能传统运力系统的创新项目，直接推动无人车业务智能化变革；\n2. 参与行业前沿的无人车AI运力系统建设，探索自动驾驶与AI结合的场景。",
         "otherInfo": null,
         "firstPostTime": null,
-        "refreshTime": 1783387818000,
-        "tag": null,
-        "expiredTime": null,
-        "socialRecommendJob": null
-      },
-      {
-        "jobUnionId": "4491606832",
-        "name": "美团食杂零售商品理解算法专家",
-        "projectId": null,
-        "projectName": null,
-        "jobType": "3",
-        "jobSpecialCode": "5",
-        "jobSource": "1",
-        "jobStatus": "000",
-        "jobFamily": "技术类",
-        "jobFamilyGroup": "算法",
-        "cityList": [
-          {
-            "code": null,
-            "name": "北京市",
-            "children": null,
-            "sort": null,
-            "subCode": null,
-            "mapping": null,
-            "outerCode": null,
-            "bgNode": false
-          }
-        ],
-        "workYear": null,
-        "department": [
-          {
-            "code": null,
-            "name": "食杂零售-公共部门",
-            "children": null,
-            "sort": null,
-            "subCode": null,
-            "mapping": null,
-            "outerCode": null,
-            "bgNode": false
-          }
-        ],
-        "desc": null,
-        "departmentIntro": null,
-        "jobDuty": "负责美团食杂零售业务中商品理解相关算法的研发与优化，利用自然语言处理算法、大语言模型/多模态大模型等方法，优化商品的品类识别、属性理解、同品/相似品判别、推荐理由挖掘、品质判别等模型，提升商品运营效率\n\n负责食杂场景内的商品垂域多模态大模型研发，包括利用域内知识进行继续预训练、指令后训练等工作，提升多模态大模型在在域内的可用性+泛化性\n\n支持面向用户的导购助手、面向B端商户的智能销售等LLM Agent算法研发，为用户提供导购服务，提升购物过程中的效率和体验；帮助销售向客户进行推品、销售，提升销售表现\n\n持续跟进学术界和工业界LLM/VLLM相关前沿技术的发展，并快速应用于实际工作中",
-        "jobRequirement": null,
-        "precedence": null,
-        "highLight": "优质的业务方向，有挑战的技术问题，有较大的成长空间\n\n有参加国际优质学术会议等学习交流机会",
-        "otherInfo": null,
-        "firstPostTime": null,
-        "refreshTime": 1783387816000,
-        "tag": null,
-        "expiredTime": null,
-        "socialRecommendJob": null
-      },
-      {
-        "jobUnionId": "4348546620",
-        "name": "AI算法工程师-大模型搜推应用",
-        "projectId": null,
-        "projectName": null,
-        "jobType": "3",
-        "jobSpecialCode": "5",
-        "jobSource": "1",
-        "jobStatus": "000",
-        "jobFamily": "技术类",
-        "jobFamilyGroup": "算法",
-        "cityList": [
-          {
-            "code": null,
-            "name": "北京市",
-            "children": null,
-            "sort": null,
-            "subCode": null,
-            "mapping": null,
-            "outerCode": null,
-            "bgNode": false
-          },
-          {
-            "code": null,
-            "name": "上海市",
-            "children": null,
-            "sort": null,
-            "subCode": null,
-            "mapping": null,
-            "outerCode": null,
-            "bgNode": false
-          }
-        ],
-        "workYear": null,
-        "department": [
-          {
-            "code": null,
-            "name": "食杂零售-公共部门",
-            "children": null,
-            "sort": null,
-            "subCode": null,
-            "mapping": null,
-            "outerCode": null,
-            "bgNode": false
-          }
-        ],
-        "desc": null,
-        "departmentIntro": null,
-        "jobDuty": "1. 负责食杂零售搜推算法策略迭代，优化用户搜推体验，提升点击率、转化率等核心指标\n2. 应用先进技术手段，优化意图理解、召回、搜索相关性、排序、流量调控等算法模块效果，显著提升用户体验和转化效率\n3. 紧跟业界大模型、agent 前沿进展，积极学习新的模型结构和 agent 认知，探索在食杂业务落地的可能性\n4. 与其他团队密切合作，实现高质量的产品和解决方案。",
-        "jobRequirement": null,
-        "precedence": null,
-        "highLight": "1.团队业务紧跟公司的业务目标，每一次策略迭代都能给公司的业务目标带来具体的价值，实现自我价值和个人成就感。\n2.团队成员大多来自于名校和名企，在这里有机会学习、尝试和落地业界先进技术。\n3.业务处于快速发展阶段，能够为个人提供了快速成长的空间，拥有自主迭代的决策权，更好地实现创新。",
-        "otherInfo": null,
-        "firstPostTime": null,
-        "refreshTime": 1783387814000,
-        "tag": null,
-        "expiredTime": null,
-        "socialRecommendJob": null
-      },
-      {
-        "jobUnionId": "4268289378",
-        "name": "网络运维开发工程师",
-        "projectId": null,
-        "projectName": null,
-        "jobType": "3",
-        "jobSpecialCode": "5",
-        "jobSource": "1",
-        "jobStatus": "000",
-        "jobFamily": "技术类",
-        "jobFamilyGroup": "运维",
-        "cityList": [
-          {
-            "code": null,
-            "name": "北京市",
-            "children": null,
-            "sort": null,
-            "subCode": null,
-            "mapping": null,
-            "outerCode": null,
-            "bgNode": false
-          },
-          {
-            "code": null,
-            "name": "深圳市",
-            "children": null,
-            "sort": null,
-            "subCode": null,
-            "mapping": null,
-            "outerCode": null,
-            "bgNode": false
-          }
-        ],
-        "workYear": null,
-        "department": [
-          {
-            "code": null,
-            "name": "食杂零售-公共部门",
-            "children": null,
-            "sort": null,
-            "subCode": null,
-            "mapping": null,
-            "outerCode": null,
-            "bgNode": false
-          }
-        ],
-        "desc": null,
-        "departmentIntro": null,
-        "jobDuty": "1.负责新零售业务门店/仓库网络的日常运维、故障处理、应急响应，保障网络及相关业务的稳定运行，有能力处理突发事件、对疑难问题进行跟踪并最终解决。 \n2.负责新零售业务门店/仓库网络的开仓建设，对涉及到系统架构中存在的网络设计提出解决方案，与其他协同团队一起完成重点项目的实施、配置等服务交付。 \n3.负责新零售业务门店/仓库网络的质量监控及用户体验收集，监控告警、运维自动化平台的持续性建设及功能优化，不断提高网络质量。 \n4.参与自动化工具开发，对网络基础信息、资产、故障率、可用性、容量性能、成本等数据的运营和分析，提升网络稳定性和运维效率。 \n5.参与对新零售网络相关技术、产品与工具、行业最佳实践进行研究、测试及运用，有探索和实践精神，满足业务发展需求。 \n6.在日常运维过程中为一线服务团队提供标准、流程规范和指导文档。",
-        "jobRequirement": null,
-        "precedence": null,
-        "highLight": "● 有机会全身心地参与新零售业态，体验并掌握各个环节的核心技术要素，和团队一起对供应链、采销、仓配等行业技能进行全新的升级、再造；  \n● 能和电商、O2O、物流、零售、人工智能、AIoT、自动化运维等多元化背景的团队技术大牛一起，共同参与团队AI实践，建设智能化平台，共同进步。",
-        "otherInfo": null,
-        "firstPostTime": null,
-        "refreshTime": 1783387811000,
-        "tag": null,
-        "expiredTime": null,
-        "socialRecommendJob": null
-      },
-      {
-        "jobUnionId": "4260090465",
-        "name": "无人车业务部-交易产品经理",
-        "projectId": null,
-        "projectName": null,
-        "jobType": "3",
-        "jobSpecialCode": "5",
-        "jobSource": "1",
-        "jobStatus": "000",
-        "jobFamily": "产品类",
-        "jobFamilyGroup": "产品",
-        "cityList": [
-          {
-            "code": null,
-            "name": "北京市",
-            "children": null,
-            "sort": null,
-            "subCode": null,
-            "mapping": null,
-            "outerCode": null,
-            "bgNode": false
-          }
-        ],
-        "workYear": null,
-        "department": [
-          {
-            "code": null,
-            "name": "软硬件服务-无人车业务部",
-            "children": null,
-            "sort": null,
-            "subCode": null,
-            "mapping": null,
-            "outerCode": null,
-            "bgNode": false
-          }
-        ],
-        "desc": null,
-        "departmentIntro": null,
-        "jobDuty": "1. 交易产品规划：负责无人车场景下交易链路（下单 → 支付 → 履约 → 结算 → 退款）的端到端产品设计，制定 6-12 个月产品路线图，对交易转化率、支付成功率等核心指标负责。\n2. 用户体验优化：深度洞察乘客 / 收货用户的交易痛点，通过 A/B 实验、漏斗分析持续提升端到端转化，将\"无人交付\"的体验差异转化为用户留存优势。\n3. 商户侧产品设计：设计商户入驻、订单管理、收益结算的全流程产品方案，降低商户接入门槛，提升运营效率和合作黏性。\n4. AI 能力落地：联合算法团队将 AI 引入交易场景——智能动态定价、异常交易识别、智能客诉分流——定义 AI 介入的产品形态与评估指标。\n5. 跨团队协同交付：作为主要对接方协调技术研发、无人车运营、法务合规、市场等团队，制定里程碑计划，确保产品按时高质量上线。\n6. 行业与合规跟踪：持续跟踪无人车商业化政策动向、主流支付合规要求，前置识别产品风险，输出可落地的应对方案。\n7. 数据驱动迭代：建立交易健康度监控体系，定期分析核心指标波动，主导问题归因与快速迭代。",
-        "jobRequirement": null,
-        "precedence": null,
-        "highLight": "✨ 全球独一份的交易场景：美团无人车已在全国多个城市完成商业化落地，无人配送每日订单量持续攀升。你设计的交易系统将直接支撑这些真实的商业运转——这种\"从 0 到规模化\"的全程参与机会。\n\n✨ 技术最前沿，业务最真实：无人车不只是酷炫的概念——它是一个需要解决真实支付、真实配送、真实合规问题的完整商业系统。你将与自动驾驶顶/级工程师并肩工作，在最硬核的技术团队里打磨最接地气的交易产品。\n\n✨ AI-Native 的团队氛围：美团 2025 年\"AI at Work\"已渗透每个角落——CatPaw AI 编程、NoCode 零代码、美境 MeiGen 图像生成，这里不只是\"用 AI\"，而是\"呼吸 AI\"。你的产品工作也将天然接入智能定价、AI 风控等能力，成为真正意义上的 AI 驱动的产品经理。\n\n✨ 高成长、高影响力的职业跳板：无人车交易 PM 的经验极度稀缺，市场上几乎没有同类候选人。在这里积累 2-3 年，你将成为自动驾驶商业化领域极具话语权的产品专家之一——这是一张在整个行业都极具含金量的履历。",
-        "otherInfo": null,
-        "firstPostTime": null,
-        "refreshTime": 1783387808000,
-        "tag": null,
-        "expiredTime": null,
-        "socialRecommendJob": null
-      },
-      {
-        "jobUnionId": "4183396688",
-        "name": "弱电项目经理",
-        "projectId": null,
-        "projectName": null,
-        "jobType": "3",
-        "jobSpecialCode": "5",
-        "jobSource": "1",
-        "jobStatus": "000",
-        "jobFamily": "销售、客服与支持类",
-        "jobFamilyGroup": "业务支持",
-        "cityList": [
-          {
-            "code": null,
-            "name": "济南市",
-            "children": null,
-            "sort": null,
-            "subCode": null,
-            "mapping": null,
-            "outerCode": null,
-            "bgNode": false
-          }
-        ],
-        "workYear": null,
-        "department": [
-          {
-            "code": null,
-            "name": "食杂零售-公共部门",
-            "children": null,
-            "sort": null,
-            "subCode": null,
-            "mapping": null,
-            "outerCode": null,
-            "bgNode": false
-          }
-        ],
-        "desc": null,
-        "departmentIntro": null,
-        "jobDuty": "（1）负责美团旗下自营零售仓储、门店弱电工程建设的全生命周期管理，包括但不限于弱电图纸规划设计、现场施工过程管理、验收结审等环节。\n（2）统筹所负责弱电项目的工程质量、施工进度、乙方供应商关系、客户满意度等工作，确保各项目的交付成果达到标准要求。\n（3）负责零售仓储、门店IT桌面及IoT智能硬件的运行维护，如PDA、电脑、打印机、摄像头、门禁、温控、能耗等，保障业务设备稳定正常运行。\n（4）负责零售仓储、门店IT网络设备上架及调试，如防火墙、交换机、AP等，以及日常告警问题治理。\n（5）参与7×24小时的IT运维支持，处理仓内断网、联网终端、IoT硬件使用异常等故障，远程或到场保障仓内IT基础设施的整体运行。",
-        "jobRequirement": null,
-        "precedence": null,
-        "highLight": "● 有机会全身心地参与新零售业态，体验并掌握各个环节的核心技术要素，和团队一起对供应链、采销、仓配等行业技能进行全新的升级、再造；\n● 能在高速发展的C端业务当中，从0到1地建立对C端业务和产品技术的认知，构建完整的宏观图景；\n● 能和电商、O2O、物流、零售、人工智能等多元化背景的团队技术大牛一起，综合学习，共同进步。\n● 未来IT结合AIoT技能的成长性。",
-        "otherInfo": null,
-        "firstPostTime": null,
-        "refreshTime": 1783387807000,
+        "refreshTime": 1784251805000,
         "tag": null,
         "expiredTime": null,
         "socialRecommendJob": null
@@ -5328,14 +4635,14 @@
         "highLight": "1.大而稳定的平台发展，业务发展前景广阔；\n2.健全的培养体系，晋升通道完善；\n3.团队专业性强，产品竞争力强。",
         "otherInfo": null,
         "firstPostTime": null,
-        "refreshTime": 1783387805000,
+        "refreshTime": 1784251804000,
         "tag": null,
         "expiredTime": null,
         "socialRecommendJob": null
       },
       {
-        "jobUnionId": "4600838955",
-        "name": "数据标注运营",
+        "jobUnionId": "4626636244",
+        "name": "渠道调度策略",
         "projectId": null,
         "projectName": null,
         "jobType": "3",
@@ -5360,7 +4667,7 @@
         "department": [
           {
             "code": null,
-            "name": "软硬件服务-无人车业务部",
+            "name": "软硬件服务-骑行事业部",
             "children": null,
             "sort": null,
             "subCode": null,
@@ -5371,13 +4678,180 @@
         ],
         "desc": null,
         "departmentIntro": null,
-        "jobDuty": "1. 负责数据标注日常运营管理，推进内部验收产能、进度和人员稳定性管理，保障项目按期交付。\n2. 负责供应商管理，包括人员入离场账号管理、出勤记录、进度反馈和问题闭环。\n3. 建立并维护项目过程管理机制，监控标注、质检、验收、返修等关键环节及核心指标。\n4. 基于项目数据识别效率、交付风险，推动供应商、产品、算法等团队协同解决问题。\n5. 参与标注规则、任务分发、质检验收和项目SOP优化，提升数据生产效率和交付能力。",
+        "jobDuty": "1.负责制定和执行两轮车辆运营策略，以提高O端运营效率和盈利能力，达成目标。\n2.分析市场需求和竞争情况，制定相应的车辆调度和运营计划，确保车辆供应和需求的平衡。\n3.负责监控车辆运营数据，进行数据分析和挖掘，发现问题并提出改进措施，以优化运营效果。\n4.推动车辆运营相关联的标准化建设，完善流程管理，风控防范等。",
         "jobRequirement": null,
         "precedence": null,
-        "highLight": "1. 深入参与自动驾驶数据生产链路，接触数据标注、质检验收、供应商管理等核心环节。\n2. 业务场景复杂、项目类型丰富，有机会提升项目运营、流程优化和跨团队协同能力。\n3. 团队处于数据生产模式升级阶段，可参与流程标准化和运营机制建设。\n4. 提供稳定的发展平台和清晰的职业成长空间。",
+        "highLight": "1.作为O端运营策略专家，有机会参与和引领车辆运营策略的制定和实施，对公司整体业务发展具有重要影响力。\n2.可以接触到丰富的车辆运营数据，并通过数据分析和挖掘提出改进方案，为公司的运营效果和盈利能力提供重要支持。",
         "otherInfo": null,
         "firstPostTime": null,
-        "refreshTime": 1783386172000,
+        "refreshTime": 1784250168000,
+        "tag": null,
+        "expiredTime": null,
+        "socialRecommendJob": null
+      },
+      {
+        "jobUnionId": "4626207865",
+        "name": "Keeta财务FPA",
+        "projectId": null,
+        "projectName": null,
+        "jobType": "3",
+        "jobSpecialCode": "5",
+        "jobSource": "1",
+        "jobStatus": "000",
+        "jobFamily": "职能类",
+        "jobFamilyGroup": "财务",
+        "cityList": [
+          {
+            "code": null,
+            "name": "北京市",
+            "children": null,
+            "sort": null,
+            "subCode": null,
+            "mapping": null,
+            "outerCode": null,
+            "bgNode": false
+          }
+        ],
+        "workYear": null,
+        "department": [
+          {
+            "code": null,
+            "name": "财务平台",
+            "children": null,
+            "sort": null,
+            "subCode": null,
+            "mapping": null,
+            "outerCode": null,
+            "bgNode": false
+          }
+        ],
+        "desc": null,
+        "departmentIntro": null,
+        "jobDuty": "1. 负责Keeta业务的财务规划与分析工作，包括预算编制、滚动预测及财务模型搭建。  \n2. 深入分析业务运营数据，提供财务洞察，支持管理层决策。  \n3. 监控关键财务指标，定期输出财务分析报告，识别潜在风险与机会。  \n4. 协同业务部门优化资源配置，提升财务效率与业务盈利能力。",
+        "jobRequirement": null,
+        "precedence": null,
+        "highLight": "1. 加入快速发展的新兴业务团队，和团队一起成长。  \n2. 与行业优秀人才共事，获得广阔的职业发展空间。  \n3. 扁平化管理，高效决策机制，工作氛围开放包容。",
+        "otherInfo": null,
+        "firstPostTime": null,
+        "refreshTime": 1784250166000,
+        "tag": null,
+        "expiredTime": null,
+        "socialRecommendJob": null
+      },
+      {
+        "jobUnionId": "4616149275",
+        "name": "济南、福州调味品产业带招商",
+        "projectId": null,
+        "projectName": null,
+        "jobType": "3",
+        "jobSpecialCode": "5",
+        "jobSource": "1",
+        "jobStatus": "000",
+        "jobFamily": "零售类",
+        "jobFamilyGroup": "采购",
+        "cityList": [
+          {
+            "code": null,
+            "name": "济南市",
+            "children": null,
+            "sort": null,
+            "subCode": null,
+            "mapping": null,
+            "outerCode": null,
+            "bgNode": false
+          },
+          {
+            "code": null,
+            "name": "福州市",
+            "children": null,
+            "sort": null,
+            "subCode": null,
+            "mapping": null,
+            "outerCode": null,
+            "bgNode": false
+          }
+        ],
+        "workYear": null,
+        "department": [
+          {
+            "code": null,
+            "name": "食杂零售-快驴事业部",
+            "children": null,
+            "sort": null,
+            "subCode": null,
+            "mapping": null,
+            "outerCode": null,
+            "bgNode": false
+          }
+        ],
+        "desc": null,
+        "departmentIntro": null,
+        "jobDuty": "1.工厂引入： 商家管理：完成产业带地图摸排，筛选合作的工厂，并制定对应的开发计划，完成工厂引入谈判，优胜劣汰，争取工厂促销资源；完善工厂商信息管理，确保合规性要求；\n\n2.品类管理：对于餐厨/调味品/干货商品知识、商品价格及营销活动有较好的管理；对类目进行品类管理和规划，制定商品调整计划；完成所负责品类的销售额等目标。\n\n3.卖家运营：基于卖家经营分析及履约情况，找到机会点进行策略输出，制定商家运营策略，监督和跟进活动。\n\n4.协同工作：与团队密切协同，促进品类经营策略落地；跟其他相关部门配合好工作，积极筹备各种营销活动，诸如工厂促销商品的选择，促销方案的制定监督、执行等。",
+        "jobRequirement": null,
+        "precedence": null,
+        "highLight": "26年供应链整体跃迁趋势，岗位机会多成长空间大",
+        "otherInfo": null,
+        "firstPostTime": null,
+        "refreshTime": 1784250164000,
+        "tag": null,
+        "expiredTime": null,
+        "socialRecommendJob": null
+      },
+      {
+        "jobUnionId": "4603993027",
+        "name": "武汉招商采购",
+        "projectId": null,
+        "projectName": null,
+        "jobType": "3",
+        "jobSpecialCode": "5",
+        "jobSource": "1",
+        "jobStatus": "000",
+        "jobFamily": "零售类",
+        "jobFamilyGroup": "采购",
+        "cityList": [
+          {
+            "code": null,
+            "name": "郑州市",
+            "children": null,
+            "sort": null,
+            "subCode": null,
+            "mapping": null,
+            "outerCode": null,
+            "bgNode": false
+          },
+          {
+            "code": null,
+            "name": "武汉市",
+            "children": null,
+            "sort": null,
+            "subCode": null,
+            "mapping": null,
+            "outerCode": null,
+            "bgNode": false
+          }
+        ],
+        "workYear": null,
+        "department": [
+          {
+            "code": null,
+            "name": "食杂零售-快驴事业部",
+            "children": null,
+            "sort": null,
+            "subCode": null,
+            "mapping": null,
+            "outerCode": null,
+            "bgNode": false
+          }
+        ],
+        "desc": null,
+        "departmentIntro": null,
+        "jobDuty": "1.负责标品招商工作，包括开发新的供应商资源，筛选合适供应商入驻等。\n2.负责建立和维护与供应商的良好关系，确保供应链畅通，保证商品的质量和交货准时。\n3.负责监控市场动态，分析竞争对手的招商策略，制定相应的应对措施。\n4.协调内部各部门，确保招商工作与公司整体战略的协调一致。",
+        "jobRequirement": null,
+        "precedence": null,
+        "highLight": "1.所在城市：武汉、郑州，商业氛围浓厚，市场潜力大。\n2.机会：作为初级标品招商，可以在这个岗位上锻炼和提升自己的招商能力，为未来的职业发展奠定基础。\n3.发展：公司提供良好的晋升机会和培训体系，可以在这里实现个人职业目标并获得个人成长。\n具备以下优先:\n一次性用品，餐厨用品，家清方向经验优先",
+        "otherInfo": null,
+        "firstPostTime": null,
+        "refreshTime": 1784250158000,
         "tag": null,
         "expiredTime": null,
         "socialRecommendJob": null
@@ -5426,7 +4900,763 @@
         "highLight": "1. Impact : Building Keeta's premium portfolio from a blank canvas. Your insights directly shape product roadmaps and resource allocation. The portfolio you build becomes a competitive moat , premium supply is the scarcest resource in food delivery.\n2. Culture : Lean, high-impact team. We values performance and talented individuals. Good ideas don't get buried, they get amplified and executed fast. No layers, no months of consensus-building. Speed of iteration is itself a competitive advantage.\n3. AI-Native Environment : \"Work smarter, not harder.\" AI amplifies everything, meeting prep, data analysis, communications. The compounding effect of this efficiency advantage over a quarter is enormous. Access to internal AI platforms designed for the Keeta business context.",
         "otherInfo": null,
         "firstPostTime": null,
-        "refreshTime": 1783386171000,
+        "refreshTime": 1784250152000,
+        "tag": null,
+        "expiredTime": null,
+        "socialRecommendJob": null
+      },
+      {
+        "jobUnionId": "4596453933",
+        "name": "小象财务-物流财务BP",
+        "projectId": null,
+        "projectName": null,
+        "jobType": "3",
+        "jobSpecialCode": "5",
+        "jobSource": "1",
+        "jobStatus": "000",
+        "jobFamily": "职能类",
+        "jobFamilyGroup": "财务",
+        "cityList": [
+          {
+            "code": null,
+            "name": "北京市",
+            "children": null,
+            "sort": null,
+            "subCode": null,
+            "mapping": null,
+            "outerCode": null,
+            "bgNode": false
+          }
+        ],
+        "workYear": null,
+        "department": [
+          {
+            "code": null,
+            "name": "财务平台",
+            "children": null,
+            "sort": null,
+            "subCode": null,
+            "mapping": null,
+            "outerCode": null,
+            "bgNode": false
+          }
+        ],
+        "desc": null,
+        "departmentIntro": null,
+        "jobDuty": "1、 深入了解业务，建立合理有效的分析体系，能够给予业务方有效专业的财务意见及解决方案；\n2、 深度参与年度预算及月度业务目标制定，高频追踪目标完成情况对风险及时预警，对重点业务和项目进行随时跟进，定期反馈；\n3、通过调研核心玩家为业务经营决策和成本优化提供衡量标尺和参考；\n4、建立业务运营风险管控机制，识别合同、运营、合规类风险，并制定应对方案；\n5、参与新项目、新模式需求评估，设定项目收益目标。",
+        "jobRequirement": null,
+        "precedence": null,
+        "highLight": "1、深入参与到业务模式探索中，通过财务分析推动业务决策及方案落地\n2、快速成长，提升综合能力\n3、团队氛围好",
+        "otherInfo": null,
+        "firstPostTime": null,
+        "refreshTime": 1784250150000,
+        "tag": null,
+        "expiredTime": null,
+        "socialRecommendJob": null
+      },
+      {
+        "jobUnionId": "4587149324",
+        "name": "医药健康FPA",
+        "projectId": null,
+        "projectName": null,
+        "jobType": "3",
+        "jobSpecialCode": "5",
+        "jobSource": "1",
+        "jobStatus": "000",
+        "jobFamily": "职能类",
+        "jobFamilyGroup": "财务",
+        "cityList": [
+          {
+            "code": null,
+            "name": "北京市",
+            "children": null,
+            "sort": null,
+            "subCode": null,
+            "mapping": null,
+            "outerCode": null,
+            "bgNode": false
+          }
+        ],
+        "workYear": null,
+        "department": [
+          {
+            "code": null,
+            "name": "财务平台",
+            "children": null,
+            "sort": null,
+            "subCode": null,
+            "mapping": null,
+            "outerCode": null,
+            "bgNode": false
+          }
+        ],
+        "desc": null,
+        "departmentIntro": null,
+        "jobDuty": "该岗位负责医药健康事业部的财务分析工作（FP&A），本岗位的主要职责包括：\n1、全面深入了解业务，对商业模式有充分的理解和判断。\n2、在财务预算及预测编制中，基于业务长期及年度计划，结合业务管理颗粒度的需要，不断优化工作流，对业务数据进行异动分析；月度追踪预算达成及识别风险点。\n3、与业务部门建立良好合作关系，支持业务策略制定并展开财务分析；完成行业对标和流程梳理，识别提效机会点并推动成本费用优化。\n4、多维分层分析及专项分析，结合市场及竞争情况，从内、外多维度看清业务的结构和趋势，对于重点维度能够展开分析，结合业务特性和商业逻辑识别机会和风险点，推动业务以UE为底线的高质量增长。\n5、通过AI工具的使用推动财务流程优化和业务效率提升。",
+        "jobRequirement": null,
+        "precedence": null,
+        "highLight": "1、所处行业潜力好，业务经营佳。\n2、团队气氛融洽，协同成本低；团队自驱力强，成长机会多。",
+        "otherInfo": null,
+        "firstPostTime": null,
+        "refreshTime": 1784250148000,
+        "tag": null,
+        "expiredTime": null,
+        "socialRecommendJob": null
+      },
+      {
+        "jobUnionId": "4586269209",
+        "name": "小象财务-营销财务BP",
+        "projectId": null,
+        "projectName": null,
+        "jobType": "3",
+        "jobSpecialCode": "5",
+        "jobSource": "1",
+        "jobStatus": "000",
+        "jobFamily": "职能类",
+        "jobFamilyGroup": "财务",
+        "cityList": [
+          {
+            "code": null,
+            "name": "北京市",
+            "children": null,
+            "sort": null,
+            "subCode": null,
+            "mapping": null,
+            "outerCode": null,
+            "bgNode": false
+          }
+        ],
+        "workYear": null,
+        "department": [
+          {
+            "code": null,
+            "name": "财务平台",
+            "children": null,
+            "sort": null,
+            "subCode": null,
+            "mapping": null,
+            "outerCode": null,
+            "bgNode": false
+          }
+        ],
+        "desc": null,
+        "departmentIntro": null,
+        "jobDuty": "1.负责小象超市财务数据的收集、整理和分析\n2.能够针对门店、城市等经营单元的财务及经营表现进行数据整理、异常分析；搭建业务标准化模型，实现业务效率提升，优化盈利表现\n3.负责与其他部门沟通协调，协助制定财务目标和计划；落实不同策略下的财务建议情况\n4.积极探索AI工具在营销数据分析和财务建模中的应用，提升分析效率和报告产出质量。",
+        "jobRequirement": null,
+        "precedence": null,
+        "highLight": "1.在小象超市这样的知名零售企业工作，有机会接触到丰富的财务数据和复杂的财务情况，能够锻炼和提升自己的财务分析能力。\n2.作为高级财务BP，将有机会承担更多的财务决策责任，为公司未来发展提供重要支持和指导。\n3.薪资待遇优厚，福利完善，有良好的晋升空间和发展前景。",
+        "otherInfo": null,
+        "firstPostTime": null,
+        "refreshTime": 1784250145000,
+        "tag": null,
+        "expiredTime": null,
+        "socialRecommendJob": null
+      },
+      {
+        "jobUnionId": "4583709908",
+        "name": "医药健康事业部-医疗业务部财务BP TL",
+        "projectId": null,
+        "projectName": null,
+        "jobType": "3",
+        "jobSpecialCode": "5",
+        "jobSource": "1",
+        "jobStatus": "000",
+        "jobFamily": "职能类",
+        "jobFamilyGroup": "财务",
+        "cityList": [
+          {
+            "code": null,
+            "name": "北京市",
+            "children": null,
+            "sort": null,
+            "subCode": null,
+            "mapping": null,
+            "outerCode": null,
+            "bgNode": false
+          },
+          {
+            "code": null,
+            "name": "上海市",
+            "children": null,
+            "sort": null,
+            "subCode": null,
+            "mapping": null,
+            "outerCode": null,
+            "bgNode": false
+          }
+        ],
+        "workYear": null,
+        "department": [
+          {
+            "code": null,
+            "name": "财务平台",
+            "children": null,
+            "sort": null,
+            "subCode": null,
+            "mapping": null,
+            "outerCode": null,
+            "bgNode": false
+          }
+        ],
+        "desc": null,
+        "departmentIntro": null,
+        "jobDuty": "1. 财务管理规划与推动：能够从战略高度和长短线视角诊断业务健康度并规划财务管理策略，基于业务阶段、财务组织及能力建设需要，以及AI对于财务工作范式的变革，系统性规划工作重点并带领团队交付推进工作。\n2. 策略支撑及优化：作为业务部门的合作伙伴，深入参与到业务的日常经营支持和策略制定中：1)熟悉核算、结算、资金、税务的专业知识，能够有效牵引调度专业财务团队提供合规且可实施的方案并落地实施；2）打通业务战略-运营-资源投入的全局视角，协助业务优化商业模式，看清收益和效率，支持业务制定并优化策略；3）控制业务经营相关的财务风险，通过机制设计和追踪体系能力，确保风险敞口可控；4）参与日常财务运营，包括但不限于合同和付款审核等。\n3. 预算及预测管理：负责年度预算以及月度滚动预测编制、监控和分析：1）预算流程中，参与业务战略和策略的讨论，并主导业务线的预算流程，与业务共同规划收益和投资结构；2）使用滚动预测工具前瞻性地协助业务预期经营结果，支持短期资源的分配。\n4. 经营分析：1）针对业务重点问题，能够通过分析识别关键问题并提出有效建议，支持业务高质量盈利性增长；2）资源投入管理及复盘：能够综合战略、业务和商业价值视角对重点项目业财表现进行复盘，综合设计有效的ROI指标平衡长短期增长和财务收益；3）多维度细颗粒度分析：对于重点维度能够展开分析，结合业务特性和商业逻辑识别机会和风险点，提升业务效能。",
+        "jobRequirement": null,
+        "precedence": null,
+        "highLight": "1、核心事业部，覆盖到家模式与到店模式，多元商业模式视角。\n2、伴随业务第二和第三曲线的扩张，成长空间大，成长机会多。\n3、所处行业潜力好，业务经营佳。",
+        "otherInfo": null,
+        "firstPostTime": null,
+        "refreshTime": 1784250144000,
+        "tag": null,
+        "expiredTime": null,
+        "socialRecommendJob": null
+      },
+      {
+        "jobUnionId": "4552294194",
+        "name": "美团酒店旅行-交通财务BP",
+        "projectId": null,
+        "projectName": null,
+        "jobType": "3",
+        "jobSpecialCode": "5",
+        "jobSource": "1",
+        "jobStatus": "000",
+        "jobFamily": "职能类",
+        "jobFamilyGroup": "财务",
+        "cityList": [
+          {
+            "code": null,
+            "name": "北京市",
+            "children": null,
+            "sort": null,
+            "subCode": null,
+            "mapping": null,
+            "outerCode": null,
+            "bgNode": false
+          }
+        ],
+        "workYear": null,
+        "department": [
+          {
+            "code": null,
+            "name": "财务平台",
+            "children": null,
+            "sort": null,
+            "subCode": null,
+            "mapping": null,
+            "outerCode": null,
+            "bgNode": false
+          }
+        ],
+        "desc": null,
+        "departmentIntro": null,
+        "jobDuty": "1. 负责美团酒店旅行交通业务的财务BP工作，深入理解业务逻辑，提供财务支持与决策建议。  \n2. 参与业务预算编制、执行监控及滚动预测，定期输出财务分析报告，识别经营风险与机会。  \n3. 协同业务团队优化定价策略、成本结构与资源配置，提升业务盈利能力。  \n4. 建立并完善财务模型，支持新业务探索、项目评估及投资回报分析。  \n5. 推动财务流程优化与系统建设，提升财务数据准确性与分析效率。\n6. 支持财务调研以及行业盈利举措研究。",
+        "jobRequirement": null,
+        "precedence": null,
+        "highLight": "1. 深入参与美团核心酒旅业务，与业务团队紧密合作，影响力强。  \n2. 成长空间大，可接触多业务线财务场景，积累复合型经验。  \n3. 团队氛围开放，鼓励创新与专业深耕，支持个人职业发展。  \n4. 工作地点位于北京。",
+        "otherInfo": null,
+        "firstPostTime": null,
+        "refreshTime": 1784250141000,
+        "tag": null,
+        "expiredTime": null,
+        "socialRecommendJob": null
+      },
+      {
+        "jobUnionId": "4549225245",
+        "name": "核心本地商业-境内酒店财务BP",
+        "projectId": null,
+        "projectName": null,
+        "jobType": "3",
+        "jobSpecialCode": "5",
+        "jobSource": "1",
+        "jobStatus": "000",
+        "jobFamily": "职能类",
+        "jobFamilyGroup": "财务",
+        "cityList": [
+          {
+            "code": null,
+            "name": "北京市",
+            "children": null,
+            "sort": null,
+            "subCode": null,
+            "mapping": null,
+            "outerCode": null,
+            "bgNode": false
+          }
+        ],
+        "workYear": null,
+        "department": [
+          {
+            "code": null,
+            "name": "财务平台",
+            "children": null,
+            "sort": null,
+            "subCode": null,
+            "mapping": null,
+            "outerCode": null,
+            "bgNode": false
+          }
+        ],
+        "desc": null,
+        "departmentIntro": null,
+        "jobDuty": "1、支持境内酒店的财务BP工作，包含财务流程优化、预算及预测管理、多维度差异分析、风险识别及管理方案落地；\n2、与业务部门建立良好合作关系，对业务策略有独立的理解和判断，输出有价值的关键发现和策略建议；\n3、深入了解行业动态，不断更新迭代认知，输出行业解读；\n4、拥抱AI，主动探索并推动AI在财务BP场景中的落地应用，并持续识别可通过AI实现提效的工作环节，并形成可复用的内部实践方案，推动团队整体智能化转型。",
+        "jobRequirement": null,
+        "precedence": null,
+        "highLight": "1. 深入参与业务决策、与业务团队紧密协作；\n2. 团队氛围开放，鼓励创新与专业成长。",
+        "otherInfo": null,
+        "firstPostTime": null,
+        "refreshTime": 1784250139000,
+        "tag": null,
+        "expiredTime": null,
+        "socialRecommendJob": null
+      },
+      {
+        "jobUnionId": "4540665244",
+        "name": "渠道经理",
+        "projectId": null,
+        "projectName": null,
+        "jobType": "3",
+        "jobSpecialCode": "5",
+        "jobSource": "1",
+        "jobStatus": "000",
+        "jobFamily": "销售、客服与支持类",
+        "jobFamilyGroup": "销售",
+        "cityList": [
+          {
+            "code": null,
+            "name": "贵阳市",
+            "children": null,
+            "sort": null,
+            "subCode": null,
+            "mapping": null,
+            "outerCode": null,
+            "bgNode": false
+          },
+          {
+            "code": null,
+            "name": "郑州市",
+            "children": null,
+            "sort": null,
+            "subCode": null,
+            "mapping": null,
+            "outerCode": null,
+            "bgNode": false
+          },
+          {
+            "code": null,
+            "name": "合肥市",
+            "children": null,
+            "sort": null,
+            "subCode": null,
+            "mapping": null,
+            "outerCode": null,
+            "bgNode": false
+          },
+          {
+            "code": null,
+            "name": "太原市",
+            "children": null,
+            "sort": null,
+            "subCode": null,
+            "mapping": null,
+            "outerCode": null,
+            "bgNode": false
+          },
+          {
+            "code": null,
+            "name": "南宁市",
+            "children": null,
+            "sort": null,
+            "subCode": null,
+            "mapping": null,
+            "outerCode": null,
+            "bgNode": false
+          },
+          {
+            "code": null,
+            "name": "福州市",
+            "children": null,
+            "sort": null,
+            "subCode": null,
+            "mapping": null,
+            "outerCode": null,
+            "bgNode": false
+          },
+          {
+            "code": null,
+            "name": "石家庄市",
+            "children": null,
+            "sort": null,
+            "subCode": null,
+            "mapping": null,
+            "outerCode": null,
+            "bgNode": false
+          }
+        ],
+        "workYear": null,
+        "department": [
+          {
+            "code": null,
+            "name": "食杂零售-快驴事业部",
+            "children": null,
+            "sort": null,
+            "subCode": null,
+            "mapping": null,
+            "outerCode": null,
+            "bgNode": false
+          }
+        ],
+        "desc": null,
+        "departmentIntro": null,
+        "jobDuty": "1、渠道体系建设：负责所辖区域的渠道开发与管理，制定区域渠道策略，持续扩大市场渗透率。\n2、渠道拓展与维护：主导区域内代理商的招募、评估与日常运营管理，建立长期稳定的合作关系，提升渠道忠诚度与活跃度。\n3、业绩目标达成：制定并分解区域销售目标，追踪核心渠道数据，通过精细化运营手段推动渠道业绩持续增长。\n4、团队管理：组建并带领区域渠道团队，建立标准化销售流程，实施人才培养与梯队建设，提升团队整体战斗力。\n5、市场洞察：持续跟踪区域竞争态势，掌握客户需求变化，提炼市场洞察并反馈至产品及运营团队，驱动业务策略优化。\n6、跨部门协作：协同商品、运营、物流等部门，保障渠道履约质量，推动客户问题快速响应与解决。",
+        "jobRequirement": null,
+        "precedence": null,
+        "highLight": "美团快驴深耕B2B餐饮供应链业务，渠道正处于快速扩张阶段，将深度参与区域市场从0到1的开拓，直接操盘代理商体系建设与业务增长。",
+        "otherInfo": null,
+        "firstPostTime": null,
+        "refreshTime": 1784250137000,
+        "tag": null,
+        "expiredTime": null,
+        "socialRecommendJob": null
+      },
+      {
+        "jobUnionId": "4535089598",
+        "name": "鲜肉招商采购",
+        "projectId": null,
+        "projectName": null,
+        "jobType": "3",
+        "jobSpecialCode": "5",
+        "jobSource": "1",
+        "jobStatus": "000",
+        "jobFamily": "零售类",
+        "jobFamilyGroup": "采购",
+        "cityList": [
+          {
+            "code": null,
+            "name": "上海市",
+            "children": null,
+            "sort": null,
+            "subCode": null,
+            "mapping": null,
+            "outerCode": null,
+            "bgNode": false
+          }
+        ],
+        "workYear": null,
+        "department": [
+          {
+            "code": null,
+            "name": "食杂零售-快驴事业部",
+            "children": null,
+            "sort": null,
+            "subCode": null,
+            "mapping": null,
+            "outerCode": null,
+            "bgNode": false
+          }
+        ],
+        "desc": null,
+        "departmentIntro": null,
+        "jobDuty": "1.负责区域鲜肉品类的招商采购工作，制定并落实相关策略和计划；\n2.有当地鲜禽、牛羊、水产核心宰场及批市有较好的供给资源，通过批市引入优质商资源，通过成本优化提升销售；\n3.通过商品及品类的结构梳理、品类操盘来提升鲜肉规模；\n4.有较好的供应商管理能力,能长期保障稳定的品质及供给；",
+        "jobRequirement": null,
+        "precedence": null,
+        "highLight": "1.参与大区品类策略制定和执行，与供应商、团队紧密合作，实现共赢发展。\n2.提供广阔的发展空间和职业晋升机会。",
+        "otherInfo": null,
+        "firstPostTime": null,
+        "refreshTime": 1784250129000,
+        "tag": null,
+        "expiredTime": null,
+        "socialRecommendJob": null
+      },
+      {
+        "jobUnionId": "4529053134",
+        "name": "筹建财务BP",
+        "projectId": null,
+        "projectName": null,
+        "jobType": "3",
+        "jobSpecialCode": "5",
+        "jobSource": "1",
+        "jobStatus": "000",
+        "jobFamily": "职能类",
+        "jobFamilyGroup": "财务",
+        "cityList": [
+          {
+            "code": null,
+            "name": "北京市",
+            "children": null,
+            "sort": null,
+            "subCode": null,
+            "mapping": null,
+            "outerCode": null,
+            "bgNode": false
+          }
+        ],
+        "workYear": null,
+        "department": [
+          {
+            "code": null,
+            "name": "财务平台",
+            "children": null,
+            "sort": null,
+            "subCode": null,
+            "mapping": null,
+            "outerCode": null,
+            "bgNode": false
+          }
+        ],
+        "desc": null,
+        "departmentIntro": null,
+        "jobDuty": "1. 从多个角度挖掘探索筹建降本路径，制定前置仓租金年度预算和降本目标，并追踪监控达成情况，及时进行风险预警；\n2. 跟进标的二审流程，完善财务审核指标，支持二审决策；\n3. 借助AI手段，从多个角度建立财务模型，全面评估租金合理性和业务策略带来的财务影响，并提示风险；\n4. 建立行业对标能力，监控行业经营和策略变化，进行策略和成本对标；\n5. 熟练使用AI辅助工具，持续优化运营流程，建设系统能力，支持多维度数据分析；\n6. 日常流程审批。",
+        "jobRequirement": null,
+        "precedence": null,
+        "highLight": "1. 参与公司战略级筹建项目，深度影响业务发展方向，锻炼并提升自身综合管理与战略思维； \n2. 团队氛围开放包容，鼓励创新与专业成长。",
+        "otherInfo": null,
+        "firstPostTime": null,
+        "refreshTime": 1784250127000,
+        "tag": null,
+        "expiredTime": null,
+        "socialRecommendJob": null
+      },
+      {
+        "jobUnionId": "4526182915",
+        "name": "物资设备管理专家",
+        "projectId": null,
+        "projectName": null,
+        "jobType": "3",
+        "jobSpecialCode": "5",
+        "jobSource": "1",
+        "jobStatus": "000",
+        "jobFamily": "零售类",
+        "jobFamilyGroup": "门店",
+        "cityList": [
+          {
+            "code": null,
+            "name": "北京市",
+            "children": null,
+            "sort": null,
+            "subCode": null,
+            "mapping": null,
+            "outerCode": null,
+            "bgNode": false
+          }
+        ],
+        "workYear": null,
+        "department": [
+          {
+            "code": null,
+            "name": "食杂零售-Keemart",
+            "children": null,
+            "sort": null,
+            "subCode": null,
+            "mapping": null,
+            "outerCode": null,
+            "bgNode": false
+          }
+        ],
+        "desc": null,
+        "departmentIntro": null,
+        "jobDuty": "1.供应管理：负责物资设备的选型和跨境采购的供应管理，包含需求预测、订单履约管理和上下游部门协作，有零售业务采购经验和供应链管理经验优先；\n2.成本管理：负责一线物资的用量分析和成本治理，包含管理包材用量、周转物资循环效率、设备故障治理、门店能耗管理，具备问题诊断和项目管理制的改善能力；\n3.流程和产品运营：推动预算管理、补货计划、交付效率提升、验收入库、审计盘点、设备报修和报废等流程的持续精进改善和线上化；\n4.质量管理：能够体系化输出物资及服务的技术标准要求，包含理化性质，设备养护标准，在门店消杀、清洁和用水等服务，能深入研究服务商的管理和门店环境治理策略；\n5.创新设备/物资探索：通过行业最佳实践调研及业务需求诊断，持续引入创新型物资及设备，提升业务运营水平及降低成本；",
+        "jobRequirement": null,
+        "precedence": null,
+        "highLight": "可参与海外快速发展的零售业务，积累仓储流程标准和产品建设能力，见证中国人的出海fighting！",
+        "otherInfo": null,
+        "firstPostTime": null,
+        "refreshTime": 1784250124000,
+        "tag": null,
+        "expiredTime": null,
+        "socialRecommendJob": null
+      },
+      {
+        "jobUnionId": "4490380054",
+        "name": "仓配BP财务-运输",
+        "projectId": null,
+        "projectName": null,
+        "jobType": "3",
+        "jobSpecialCode": "5",
+        "jobSource": "1",
+        "jobStatus": "000",
+        "jobFamily": "职能类",
+        "jobFamilyGroup": "财务",
+        "cityList": [
+          {
+            "code": null,
+            "name": "北京市",
+            "children": null,
+            "sort": null,
+            "subCode": null,
+            "mapping": null,
+            "outerCode": null,
+            "bgNode": false
+          }
+        ],
+        "workYear": null,
+        "department": [
+          {
+            "code": null,
+            "name": "财务平台",
+            "children": null,
+            "sort": null,
+            "subCode": null,
+            "mapping": null,
+            "outerCode": null,
+            "bgNode": false
+          }
+        ],
+        "desc": null,
+        "departmentIntro": null,
+        "jobDuty": "1. 负责仓配运输业务的财务支持与分析，深入理解业务模式，提供财务视角的决策建议。  \n2. 搭建并优化运输成本核算模型，监控运输费用变动，识别异常并推动成本优化。  \n3. 参与运输预算编制、执行跟踪及滚动预测，确保财务目标与业务目标对齐。  \n4. 协同业务团队进行运输项目财务评估，包括定价策略、资源投入回报分析等。  \n5. 输出高质量的财务分析报告，支持管理层在运输网络布局、运力配置等方面的决策。",
+        "jobRequirement": null,
+        "precedence": null,
+        "highLight": "1. 深入参与核心物流运输业务，财务与业务高度融合，成长空间广阔。  \n2. 团队氛围开放，鼓励创新与数据驱动决策。  \n3. 公司提供完善的培训体系与职业发展通道。  \n4. 工作地点位于北京核心区域，交通便利，办公环境优良。",
+        "otherInfo": null,
+        "firstPostTime": null,
+        "refreshTime": 1784250118000,
+        "tag": null,
+        "expiredTime": null,
+        "socialRecommendJob": null
+      },
+      {
+        "jobUnionId": "4490284563",
+        "name": "仓配BP财务-配送",
+        "projectId": null,
+        "projectName": null,
+        "jobType": "3",
+        "jobSpecialCode": "5",
+        "jobSource": "1",
+        "jobStatus": "000",
+        "jobFamily": "职能类",
+        "jobFamilyGroup": "财务",
+        "cityList": [
+          {
+            "code": null,
+            "name": "北京市",
+            "children": null,
+            "sort": null,
+            "subCode": null,
+            "mapping": null,
+            "outerCode": null,
+            "bgNode": false
+          }
+        ],
+        "workYear": null,
+        "department": [
+          {
+            "code": null,
+            "name": "财务平台",
+            "children": null,
+            "sort": null,
+            "subCode": null,
+            "mapping": null,
+            "outerCode": null,
+            "bgNode": false
+          }
+        ],
+        "desc": null,
+        "departmentIntro": null,
+        "jobDuty": "岗位职责：  \n1. 负责仓配配送业务的财务支持工作，深入理解业务模式，提供财务分析与决策支持。  \n2. 搭建并优化配送业务财务模型，进行成本、利润及预算的精细化分析与管理。  \n3. 协同业务团队制定财务目标，监控关键指标执行情况，及时预警并提出改进建议。  \n4. 带领1人团队完成日常财务BP工作，包括数据整理、报告输出及跨部门协作。  \n5. 推动财务流程在配送业务中的落地与优化，提升财务与业务协同效率。",
+        "jobRequirement": null,
+        "precedence": null,
+        "highLight": "1. 深入参与仓配核心业务，财务与业务高度融合，成长空间广阔。  \n2. 团队氛围开放，支持创新与主动思考，鼓励专业能力提升。  \n3. 工作地点位于北京核心区域，办公环境优良，福利待遇完善。",
+        "otherInfo": null,
+        "firstPostTime": null,
+        "refreshTime": 1784250116000,
+        "tag": null,
+        "expiredTime": null,
+        "socialRecommendJob": null
+      },
+      {
+        "jobUnionId": "4473843562",
+        "name": "美团骑行-政企大客户专家（成都）",
+        "projectId": null,
+        "projectName": null,
+        "jobType": "3",
+        "jobSpecialCode": "5",
+        "jobSource": "1",
+        "jobStatus": "000",
+        "jobFamily": "职能类",
+        "jobFamilyGroup": "公司事务",
+        "cityList": [
+          {
+            "code": null,
+            "name": "成都市",
+            "children": null,
+            "sort": null,
+            "subCode": null,
+            "mapping": null,
+            "outerCode": null,
+            "bgNode": false
+          }
+        ],
+        "workYear": null,
+        "department": [
+          {
+            "code": null,
+            "name": "软硬件服务-骑行事业部",
+            "children": null,
+            "sort": null,
+            "subCode": null,
+            "mapping": null,
+            "outerCode": null,
+            "bgNode": false
+          }
+        ],
+        "desc": null,
+        "departmentIntro": null,
+        "jobDuty": "该岗位在未来2年主要为开拓川藏等区域市场（含高校），摸排收集区县电单车信息，能够建立下层市场生态渠道体系，针对川藏一区责任田城市、高校迅速开拓落车。",
+        "jobRequirement": null,
+        "precedence": null,
+        "highLight": "1.具备较好的发展空间，表现优异者可以往管理方面培养。\n2.个人能力提升较快，具备成熟的培训体系。\n3.平台较好，公司在行业内知名度较高。",
+        "otherInfo": null,
+        "firstPostTime": null,
+        "refreshTime": 1784250110000,
+        "tag": null,
+        "expiredTime": null,
+        "socialRecommendJob": null
+      },
+      {
+        "jobUnionId": "4470497120",
+        "name": "酒店景点游玩财务BP",
+        "projectId": null,
+        "projectName": null,
+        "jobType": "3",
+        "jobSpecialCode": "5",
+        "jobSource": "1",
+        "jobStatus": "000",
+        "jobFamily": "职能类",
+        "jobFamilyGroup": "财务",
+        "cityList": [
+          {
+            "code": null,
+            "name": "北京市",
+            "children": null,
+            "sort": null,
+            "subCode": null,
+            "mapping": null,
+            "outerCode": null,
+            "bgNode": false
+          }
+        ],
+        "workYear": null,
+        "department": [
+          {
+            "code": null,
+            "name": "财务平台",
+            "children": null,
+            "sort": null,
+            "subCode": null,
+            "mapping": null,
+            "outerCode": null,
+            "bgNode": false
+          }
+        ],
+        "desc": null,
+        "departmentIntro": null,
+        "jobDuty": "1、打造智能财务体系：主导日常财务运营与创新分析，通过自动化工具和业财联动，保障财务BP工作的高效性与准确性，成为业务团队的“数据大脑”。\n2、深度参与业务决策：作为景点游玩业务的核心财务伙伴，积极参与业务策略制定，驱动业务健康增长，在景点游玩业务最前沿发挥财务影响力，助力业务实现也才目标。\n3、风险管控先锋：识别业务中的财务风险，设计具有行业特色的风控方案和运营机制，守护业务健康度。\n4、拥抱AI，主动探索并推动AI在财务BP场景中的落地应用，并持续识别可通过AI实现提效的工作环节，并形成可复用的内部实践方案，推动团队整体智能化转型。\n\n在这里，你需要致力于“让每个人轻松拥有美好旅程”，深入以景区为核心的“吃住行游”一体化，切身体验景区各类产品及营销活动，成为在“景点游玩+财务”交叉领域的专家。你的工作不仅是景点游玩业务发展不可或缺的力量，还将影响千万游客的体验。",
+        "jobRequirement": null,
+        "precedence": null,
+        "highLight": "1.资深级别，提供广阔的发展空间和机会。\n2.拥有全链路闭环的财务管理视角，拓宽自己的行业视野和经验。\n3.与一群富有激情的伙伴，一起助力业务高质量增长。",
+        "otherInfo": null,
+        "firstPostTime": null,
+        "refreshTime": 1784250109000,
         "tag": null,
         "expiredTime": null,
         "socialRecommendJob": null
@@ -5435,8 +5665,8 @@
     "page": {
       "pageNo": 3,
       "pageSize": 100,
-      "totalPage": 24,
-      "totalCount": 2318
+      "totalPage": 23,
+      "totalCount": 2215
     },
     "traceId": null
   },

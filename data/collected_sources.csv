@@ -1,7 +1,2 @@
-﻿source,sourceId,sourceType,baseUrl,licenseNote,records,fetchedAt
-Baidu Careers,baidu_careers,official_enterprise_site,https://talent.baidu.com/jobs/,Official Baidu careers public pages; keep source attribution.,10,2026-07-07T20:16:52+08:00
-Huawei Careers,huawei_careers,official_enterprise_api,https://career.huawei.com/reccampportal/,Official Huawei careers public pages/API; keep source attribution.,378,2026-07-07T20:16:52+08:00
-JobOnline Public Employment Service,jobonline_public_employment_service,public_employment_service,https://www.jobonline.cn/,MOHRSS-organized public employment service platform; keep source attribution.,50000,2026-07-07T20:16:52+08:00
-Meituan Careers,meituan_careers,official_enterprise_api,https://zhaopin.meituan.com/web/social,Official Meituan careers public pages/API; keep source attribution.,2318,2026-07-07T20:16:52+08:00
-National College Student Employment Service,national_college_student_employment_service,public_employment_service,https://www.ncss.cn/student/jobs/index.html,Education-ministry public employment service pages/API; keep source attribution.,100,2026-07-07T20:16:52+08:00
-Tencent Careers,tencent_careers,official_enterprise_api,https://careers.tencent.com/,Public Tencent Careers job pages/API; keep source attribution.,2304,2026-07-07T20:16:52+08:00
+﻿source,baseUrl,licenseNote,records,fetchedAt
+Tencent Careers,https://careers.tencent.com/,Public Tencent Careers job pages/API; use only for project analysis and keep source attribution.,250,2026-07-17T13:54:28+08:00

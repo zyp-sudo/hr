@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-07-07T20:17:30+08:00",
-  "target": 50000,
+  "generated_at": "2026-07-17T11:11:40+08:00",
+  "target": 1000,
   "write_mode": "merge",
-  "existing_records_before_run": 5190,
-  "new_records_this_run": 50000,
-  "actual_records": 55110,
-  "actual_skill_records": 69275,
+  "existing_records_before_run": 55253,
+  "new_records_this_run": 546,
+  "actual_records": 55267,
+  "actual_skill_records": 69598,
   "active_sources": [
     "Baidu Careers",
     "Huawei Careers",
@@ -22,15 +22,15 @@
   ],
   "active_source_type_count": 3,
   "source_counts": {
-    "Tencent Careers": 2304,
-    "Meituan Careers": 2318,
+    "Tencent Careers": 2375,
+    "Meituan Careers": 2394,
     "Huawei Careers": 378,
-    "Baidu Careers": 10,
+    "Baidu Careers": 20,
     "National College Student Employment Service": 100,
     "JobOnline Public Employment Service": 50000
   },
   "region_counts": {
-    "china": 55110,
+    "china": 55267,
     "foreign": 0
   },
   "gap": 0,

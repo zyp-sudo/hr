@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="zh-CN"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>人岗匹配智能评估系统 - 顶部导航版</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&amp;family=Space+Grotesk:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-dim": "#131318",
+                        "on-error-container": "#ffdad6",
+                        "surface-variant": "#35343a",
+                        "inverse-on-surface": "#303035",
+                        "tertiary-fixed": "#9bf2e9",
+                        "surface-container": "#1f1f24",
+                        "on-tertiary-fixed": "#00201e",
+                        "surface-container-lowest": "#0e0e13",
+                        "on-tertiary-container": "#00302c",
+                        "on-error": "#690005",
+                        "secondary-fixed": "#b8ecee",
+                        "on-surface-variant": "#c9c4d8",
+                        "on-tertiary": "#003733",
+                        "on-secondary-container": "#8bbec0",
+                        "on-secondary": "#003739",
+                        "background": "#131318",
+                        "surface-container-low": "#1b1b20",
+                        "primary-fixed-dim": "#cabeff",
+                        "inverse-primary": "#603ce2",
+                        "tertiary-container": "#469e97",
+                        "outline-variant": "#484555",
+                        "outline": "#938ea1",
+                        "on-primary": "#31009a",
+                        "surface-container-high": "#2a292f",
+                        "on-secondary-fixed": "#002021",
+                        "primary": "#cabeff",
+                        "on-surface": "#e4e1e8",
+                        "on-primary-fixed": "#1c0062",
+                        "surface-container-highest": "#35343a",
+                        "on-tertiary-fixed-variant": "#00504b",
+                        "tertiary-fixed-dim": "#7fd5cd",
+                        "error": "#ffb4ab",
+                        "on-background": "#e4e1e8",
+                        "tertiary": "#7fd5cd",
+                        "on-secondary-fixed-variant": "#184e50",
+                        "error-container": "#93000a",
+                        "secondary-container": "#184e50",
+                        "primary-container": "#947dff",
+                        "secondary-fixed-dim": "#9cd0d2",
+                        "primary-fixed": "#e6deff",
+                        "on-primary-container": "#2a0088",
+                        "inverse-surface": "#e4e1e8",
+                        "surface-bright": "#39383e",
+                        "surface-tint": "#cabeff",
+                        "secondary": "#9cd0d2",
+                        "on-primary-fixed-variant": "#4816cb",
+                        "surface": "#131318"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "gutter": "24px",
+                        "stack-md": "12px",
+                        "base": "8px",
+                        "stack-sm": "4px",
+                        "margin-desktop": "40px",
+                        "margin-mobile": "16px",
+                        "stack-lg": "24px",
+                        "container-max": "1440px"
+                    },
+                    "fontFamily": {
+                        "label-sm": ["JetBrains Mono"],
+                        "data-numeral": ["JetBrains Mono"],
+                        "headline-md": ["Space Grotesk"],
+                        "body-sm": ["Space Grotesk"],
+                        "headline-lg-mobile": ["Space Grotesk"],
+                        "headline-lg": ["Space Grotesk"],
+                        "body-md": ["Space Grotesk"],
+                        "label-md": ["JetBrains Mono"],
+                        "body-lg": ["Space Grotesk"],
+                        "headline-xl": ["Space Grotesk"]
+                    },
+                    "fontSize": {
+                        "label-sm": ["12px", { "lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "400" }],
+                        "data-numeral": ["20px", { "lineHeight": "24px", "fontWeight": "700" }],
+                        "headline-md": ["24px", { "lineHeight": "32px", "fontWeight": "500" }],
+                        "body-sm": ["14px", { "lineHeight": "20px", "fontWeight": "400" }],
+                        "headline-lg-mobile": ["24px", { "lineHeight": "32px", "fontWeight": "600" }],
+                        "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+                        "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+                        "label-md": ["14px", { "lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "500" }],
+                        "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
+                        "headline-xl": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700" }]
+                    },
+                    "scale": {
+                        "102": "1.02"
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        :root {
+            --mouse-x: 50%;
+            --mouse-y: 50%;
+        }
+
+        .glass-panel {
+            background: rgba(31, 31, 36, 0.4);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(147, 142, 161, 0.2);
+            box-shadow: inset 0 0 20px rgba(124, 92, 255, 0.05);
+        }
+        
+        .glowing-border {
+            position: relative;
+        }
+        
+        .glowing-border::before {
+            content: '';
+            position: absolute;
+            top: -1px; left: -1px; right: -1px; bottom: -1px;
+            background: linear-gradient(45deg, #7C5CFF, #9bf2e9);
+            z-index: -1;
+            border-radius: inherit;
+            opacity: 0.3;
+            transition: opacity 0.3s ease;
+        }
+        
+        .glowing-border:hover::before {
+            opacity: 0.6;
+        }
+
+        .starfield {
+            background-image: 
+                radial-gradient(1px 1px at 20px 30px, #ffffff, rgba(0,0,0,0)),
+                radial-gradient(1px 1px at 40px 70px, #ffffff, rgba(0,0,0,0)),
+                radial-gradient(1px 1px at 50px 160px, #ffffff, rgba(0,0,0,0)),
+                radial-gradient(1px 1px at 90px 40px, #ffffff, rgba(0,0,0,0)),
+                radial-gradient(1px 1px at 130px 80px, #ffffff, rgba(0,0,0,0)),
+                radial-gradient(1px 1px at 160px 120px, #ffffff, rgba(0,0,0,0));
+            background-repeat: repeat;
+            background-size: 200px 200px;
+            opacity: 0.1;
+        }
+
+        /* Mouse Follower */
+        .mouse-light {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            background: radial-gradient(circle 600px at var(--mouse-x) var(--mouse-y), rgba(124, 92, 255, 0.08), transparent 80%);
+            z-index: 1;
+        }
+
+        /* Viewport Aura */
+        .viewport-aura {
+            position: fixed;
+            inset: 0;
+            pointer-events: none;
+            z-index: 60;
+            box-shadow: inset 0 0 40px rgba(124, 92, 255, 0.1);
+            animation: pulse-aura 6s ease-in-out infinite;
+        }
+
+        @keyframes pulse-aura {
+            0%, 100% { box-shadow: inset 0 0 30px rgba(124, 92, 255, 0.1); }
+            33% { box-shadow: inset 0 0 50px rgba(155, 242, 233, 0.15); }
+            66% { box-shadow: inset 0 0 40px rgba(127, 213, 205, 0.12); }
+        }
+
+        /* Premium Button */
+        .premium-button {
+            position: relative;
+            overflow: hidden;
+            transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+        }
+        
+        .premium-button::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(
+                120deg,
+                transparent,
+                rgba(255, 255, 255, 0.2),
+                transparent
+            );
+            transition: all 0.6s;
+        }
+
+        .premium-button:hover {
+            transform: scale(1.02);
+            box-shadow: 0 10px 25px -5px rgba(148, 125, 255, 0.4);
+        }
+
+        .premium-button:hover::after {
+            left: 100%;
+        }
+
+        ::-webkit-scrollbar {
+            width: 8px;
+            height: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #131318;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #35343a;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #484555;
+        }
+
+        .nav-item-active {
+            position: relative;
+        }
+        .nav-item-active::after {
+            content: '';
+            position: absolute;
+            bottom: -8px;
+            left: 0;
+            right: 0;
+            height: 2px;
+            background: #cabeff;
+            box-shadow: 0 0 8px #cabeff;
+        }
+
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .no-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-md h-screen overflow-hidden flex flex-col relative">
+<!-- Interactivity Layers -->
+<div class="mouse-light"></div>
+<div class="viewport-aura"></div>
+<!-- Background Texture -->
+<div class="absolute inset-0 starfield pointer-events-none z-0"></div>
+<div class="absolute inset-0 bg-gradient-to-br from-surface-dim/80 to-background z-0 pointer-events-none"></div>
+<!-- Top Navigation Bar -->
+<header class="h-auto w-full glass-panel border-b border-outline-variant/30 flex flex-col z-[70] sticky top-0">
+<!-- Brand and System Info -->
+<div class="flex justify-between items-center px-8 py-4 border-b border-outline-variant/10">
+<div class="flex items-center gap-4">
+<div class="w-10 h-10 rounded-lg bg-primary-container flex items-center justify-center text-on-primary-container">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">handshake</span>
+</div>
+<h1 class="text-headline-md font-bold text-primary tracking-tight">人岗匹配智能评估系统 - 顶部导航版</h1>
+</div>
+<div class="flex items-center gap-6">
+<span class="text-label-sm font-label-sm text-secondary px-3 py-1 rounded-full border border-secondary/30 bg-secondary/10">API: http://localhost:8080</span>
+<div class="flex items-center gap-3">
+<button class="text-on-surface-variant hover:text-primary transition-colors duration-200">
+<span class="material-symbols-outlined">notifications</span>
+</button>
+<button class="text-on-surface-variant hover:text-primary transition-colors duration-200">
+<span class="material-symbols-outlined">settings</span>
+</button>
+<div class="w-8 h-8 rounded-full bg-surface-variant border border-outline-variant overflow-hidden ml-2">
+<img class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCwgcoGMkj5B7TpIMi1gYsqbaTkO_97GfXLr5Q-gakgIExlOwRg37evzN4ERxQAYVfVPWFgzOC8X0Vw7zzouU8MEoE-LUR517nCXCK4qrLuusXaLg8mSafIqtimWPAcbtEGlHLEExjvtFsir4NmlYOhX5rGJSKY_PYEE3-qfqRlBDwhchkVTmof0bPiQd7bqFtlUBiHN6wtlVHgvZx5LDKYCsVCbavIPoFvoaxqJUVCzJFJaF-NfDZ7M6qosN5xmlfdnL9rRuY9dMUu"/>
+</div>
+</div>
+</div>
+</div>
+<!-- Menu Items -->
+<nav class="flex items-center gap-8 px-8 py-3 overflow-x-auto no-scrollbar">
+<a class="text-label-md font-label-md text-on-surface-variant hover:text-on-surface transition-colors whitespace-nowrap" href="#">总览</a>
+<a class="text-label-md font-label-md text-on-surface-variant hover:text-on-surface transition-colors whitespace-nowrap" href="#">统一结果</a>
+<a class="text-label-md font-label-md text-on-surface-variant hover:text-on-surface transition-colors whitespace-nowrap" href="#">架构落地</a>
+<a class="text-label-md font-label-md text-on-surface-variant hover:text-on-surface transition-colors whitespace-nowrap" href="#">能力图谱</a>
+<a class="text-label-md font-label-md text-primary nav-item-active font-bold whitespace-nowrap" href="#">人岗匹配</a>
+<a class="text-label-md font-label-md text-on-surface-variant hover:text-on-surface transition-colors whitespace-nowrap" href="#">动态演化</a>
+<a class="text-label-md font-label-md text-on-surface-variant hover:text-on-surface transition-colors whitespace-nowrap" href="#">数据质量</a>
+<a class="text-label-md font-label-md text-on-surface-variant hover:text-on-surface transition-colors whitespace-nowrap" href="#">ETL治理</a>
+<a class="text-label-md font-label-md text-on-surface-variant hover:text-on-surface transition-colors whitespace-nowrap" href="#">样本数据</a>
+<a class="text-label-md font-label-md text-on-surface-variant hover:text-on-surface transition-colors whitespace-nowrap" href="#">采集岗位</a>
+<a class="text-label-md font-label-md text-on-surface-variant hover:text-on-surface transition-colors whitespace-nowrap" href="#">系统设置</a>
+</nav>
+</header>
+<!-- Main Content Area -->
+<main class="flex-1 flex flex-col overflow-hidden relative z-10">
+<div class="flex-1 overflow-y-auto">
+<div class="grid grid-cols-12 gap-gutter p-8 h-full">
+<!-- Left Panel: Input -->
+<div class="col-span-4 h-full">
+<div class="glass-panel rounded-xl p-8 space-y-8 h-full flex flex-col">
+<div class="flex items-center justify-between mb-2">
+<h3 class="text-headline-md font-bold text-primary">输入候选人信息</h3>
+<span class="material-symbols-outlined text-primary text-headline-md">person_add</span>
+</div>
+<div class="space-y-6 flex-1 flex flex-col">
+<div class="space-y-3">
+<label class="text-label-md text-on-surface-variant">选择目标岗位</label>
+<div class="w-full p-4 bg-surface-container rounded-lg border border-outline-variant text-on-surface flex justify-between items-center cursor-pointer hover:bg-surface-variant transition-colors">
+<span class="text-body-lg">高级后端工程师</span>
+<span class="material-symbols-outlined">expand_more</span>
+</div>
+</div>
+<div class="space-y-3">
+<label class="text-label-md text-on-surface-variant">上传简历 (PDF/Docx)</label>
+<div class="w-full h-40 border-2 border-dashed border-outline-variant rounded-lg flex flex-col items-center justify-center gap-3 hover:border-primary hover:bg-primary/5 transition-all cursor-pointer">
+<span class="material-symbols-outlined text-headline-xl">cloud_upload</span>
+<span class="text-body-md">点击或拖拽文件至此</span>
+</div>
+</div>
+<div class="space-y-3 flex-1 flex flex-col">
+<label class="text-label-md text-on-surface-variant">粘贴简历文本</label>
+<textarea class="w-full flex-1 bg-surface-container rounded-lg border border-outline-variant p-4 text-body-md focus:ring-1 focus:ring-primary outline-none resize-none transition-all" placeholder="在此输入候选人详细经历..."></textarea>
+</div>
+<button class="premium-button w-full py-4 bg-primary text-on-primary text-headline-sm font-bold rounded-lg mt-4">开始智能评估</button>
+</div>
+</div>
+</div>
+<!-- Right Panel: Results -->
+<div class="col-span-8 grid grid-cols-12 gap-gutter">
+<!-- Results Left Column (Gauge and Radar) -->
+<div class="col-span-7 space-y-gutter">
+<!-- Matching Score Gauge -->
+<div class="glass-panel rounded-xl p-8 flex flex-col items-center justify-center h-[380px] relative overflow-hidden">
+<div class="absolute top-6 left-8">
+<h4 class="text-headline-sm font-bold text-on-surface-variant">综合匹配得分</h4>
+</div>
+<div class="relative w-64 h-64 flex items-center justify-center">
+<svg class="w-full h-full -rotate-90" viewbox="0 0 100 100">
+<circle class="text-surface-variant" cx="50" cy="50" fill="none" r="45" stroke="currentColor" stroke-width="6"></circle>
+<circle cx="50" cy="50" fill="none" r="45" stroke="url(#scoreGradientLarge)" stroke-dasharray="282.7" stroke-dashoffset="42.4" stroke-linecap="round" stroke-width="8"></circle>
+<defs>
+<lineargradient id="scoreGradientLarge" x1="0%" x2="100%" y1="0%" y2="0%">
+<stop offset="0%" style="stop-color:#9bf2e9"></stop>
+<stop offset="100%" style="stop-color:#7C5CFF"></stop>
+</lineargradient>
+</defs>
+</svg>
+<div class="absolute inset-0 flex flex-col items-center justify-center">
+<span class="text-headline-xl font-bold text-primary scale-150">85</span>
+<span class="text-body-md text-on-surface-variant mt-4">优秀匹配</span>
+</div>
+</div>
+</div>
+<!-- Capability Radar Chart -->
+<div class="glass-panel rounded-xl p-8 h-[calc(100%-380px-24px)] min-h-[300px]">
+<h4 class="text-headline-sm font-bold text-on-surface-variant mb-8">能力项匹配度</h4>
+<div class="w-full h-full flex items-center justify-center">
+<div class="w-64 h-64 relative">
+<div class="absolute inset-0 border border-outline-variant/20 rounded-full"></div>
+<div class="absolute inset-[25%] border border-outline-variant/20 rounded-full"></div>
+<div class="absolute inset-[50%] border border-outline-variant/20 rounded-full"></div>
+<div class="absolute inset-[75%] border border-outline-variant/20 rounded-full"></div>
+<div class="absolute inset-0 flex items-center justify-center">
+<div class="w-full h-full bg-primary/20" style="clip-path: polygon(50% 10%, 90% 40%, 75% 90%, 25% 90%, 10% 40%);"></div>
+</div>
+<div class="absolute -top-6 left-1/2 -translate-x-1/2 text-body-sm font-bold">技术能力</div>
+<div class="absolute top-1/4 -right-12 text-body-sm font-bold">项目经验</div>
+<div class="absolute -bottom-6 -right-8 text-body-sm font-bold">团队协作</div>
+<div class="absolute -bottom-6 -left-8 text-body-sm font-bold">教育背景</div>
+<div class="absolute top-1/4 -left-12 text-body-sm font-bold">软技能</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Results Right Column -->
+<div class="col-span-5 space-y-gutter flex flex-col">
+<!-- Experience Match -->
+<div class="glass-panel rounded-xl p-8">
+<h4 class="text-headline-sm font-bold text-on-surface-variant mb-6">经验匹配</h4>
+<div class="space-y-6">
+<div class="space-y-2">
+<div class="flex justify-between text-body-md">
+<span>行业相关性</span>
+<span class="text-primary font-bold">92%</span>
+</div>
+<div class="w-full h-3 bg-surface-container rounded-full overflow-hidden">
+<div class="h-full bg-gradient-to-r from-tertiary to-primary" style="width: 92%"></div>
+</div>
+</div>
+<div class="space-y-2">
+<div class="flex justify-between text-body-md">
+<span>职级对标</span>
+<span class="text-primary font-bold">78%</span>
+</div>
+<div class="w-full h-3 bg-surface-container rounded-full overflow-hidden">
+<div class="h-full bg-gradient-to-r from-tertiary to-primary" style="width: 78%"></div>
+</div>
+</div>
+</div>
+</div>
+<!-- Skill Gaps -->
+<div class="glass-panel rounded-xl p-8">
+<h4 class="text-headline-sm font-bold text-on-surface-variant mb-6">技能缺口</h4>
+<div class="flex flex-wrap gap-3">
+<span class="px-4 py-2 rounded-full bg-error-container/20 text-error text-body-md border border-error/30 hover:bg-error-container/30 transition-colors cursor-default">Kubernetes</span>
+<span class="px-4 py-2 rounded-full bg-error-container/20 text-error text-body-md border border-error/30 hover:bg-error-container/30 transition-colors cursor-default">Rust</span>
+<span class="px-4 py-2 rounded-full bg-error-container/20 text-error text-body-md border border-error/30 hover:bg-error-container/30 transition-colors cursor-default">分布式架构</span>
+</div>
+</div>
+<!-- Matching Highlights -->
+<div class="glass-panel rounded-xl p-8 flex-1">
+<h4 class="text-headline-sm font-bold text-on-surface-variant mb-6">匹配亮点</h4>
+<ul class="space-y-4">
+<li class="flex items-start gap-3 text-body-md">
+<span class="material-symbols-outlined text-tertiary text-headline-sm mt-0.5">check_circle</span>
+<span>拥有5年以上大型互联网公司后端开发经验</span>
+</li>
+<li class="flex items-start gap-3 text-body-md">
+<span class="material-symbols-outlined text-tertiary text-headline-sm mt-0.5">check_circle</span>
+<span>精通Java/Go多语言开发，具备高并发处理能力</span>
+</li>
+<li class="flex items-start gap-3 text-body-md">
+<span class="material-symbols-outlined text-tertiary text-headline-sm mt-0.5">check_circle</span>
+<span>曾主导过千万级DAU系统的架构重构</span>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</main>
+<script>
+    // Mouse following light effect
+    document.addEventListener('mousemove', (e) => {
+        const x = e.clientX + 'px';
+        const y = e.clientY + 'px';
+        document.documentElement.style.setProperty('--mouse-x', x);
+        document.documentElement.style.setProperty('--mouse-y', y);
+    });
+
+    // Handle premium buttons interaction logic if needed (e.g., loading state)
+    const primaryBtn = document.querySelector('.premium-button');
+    if(primaryBtn) {
+        primaryBtn.addEventListener('click', () => {
+            primaryBtn.innerHTML = '<span class="flex items-center justify-center gap-2"><svg class="animate-spin h-5 w-5 text-on-primary" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"><circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle><path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path></svg> 正在评估...</span>';
+            setTimeout(() => {
+                primaryBtn.innerHTML = '重新开始评估';
+            }, 3000);
+        });
+    }
+</script>
+</body></html>

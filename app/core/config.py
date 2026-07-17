@@ -41,6 +41,9 @@ class Settings(BaseModel):
     milvus_collection: str = os.getenv("MILVUS_COLLECTION", "talent_profiles")
     talent_vector_dim: int = int(os.getenv("TALENT_VECTOR_DIM", "128"))
 
+    # ---- AI Hub -------------------------------------------------------
+    ai_proxy_timeout: int = int(os.getenv("AI_PROXY_TIMEOUT", "120"))
+
 
 @lru_cache
 def get_settings() -> Settings:
