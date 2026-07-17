@@ -36,6 +36,11 @@ class ElasticsearchClient:
         if recreate:
             self.delete_index(index_name, ignore_missing=True)
         if self.client.indices.exists(index=index_name):
+            if index_name == JOB_INDEX:
+                self.client.indices.put_settings(
+                    index=index_name,
+                    settings={"index.max_result_window": 100_000},
+                )
             return
         body = INDEX_MAPPINGS[index_name]
         self.client.indices.create(index=index_name, **body)

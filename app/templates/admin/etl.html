@@ -1,0 +1,131 @@
+{% extends "admin/base.html" %}
+{% block content %}
+
+<!-- ETL manifest stats -->
+<div class="stat-grid" id="etl-stats">
+  <div class="stat-card"><div class="stat-label">统一岗位记录</div><div class="stat-value skeleton" style="width:80px;height:32px;">&nbsp;</div></div>
+  <div class="stat-card"><div class="stat-label">技能记录</div><div class="stat-value skeleton" style="width:80px;height:32px;">&nbsp;</div></div>
+  <div class="stat-card"><div class="stat-label">注册数据源</div><div class="stat-value skeleton" style="width:40px;height:32px;">&nbsp;</div></div>
+  <div class="stat-card"><div class="stat-label">候选评分</div><div class="stat-value skeleton" style="width:80px;height:32px;">&nbsp;</div></div>
+</div>
+
+<!-- Category distribution -->
+<div class="card">
+  <div class="card-header"><h3>岗位分类分布</h3></div>
+  <div id="etl-categories">加载中…</div>
+</div>
+
+<!-- Active sources -->
+<div class="card">
+  <div class="card-header">
+    <h3>活跃数据源</h3>
+    <button class="btn btn-primary" id="btn-sync-es" onclick="triggerSync()">↻ 同步到 ES</button>
+  </div>
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>数据源</th><th>类型</th><th>记录数</th><th>平均质量</th><th>状态</th></tr></thead>
+      <tbody id="etl-sources-body"><tr><td colspan="5" class="empty-state"><p>加载中…</p></td></tr></tbody>
+    </table>
+  </div>
+</div>
+
+<!-- Pipeline files -->
+<div class="card" style="display:none;" id="etl-files-card">
+  <div class="card-header"><h3>ETL 输入/输出文件</h3></div>
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:20px;">
+    <div>
+      <h4 style="font-size:12px;color:var(--text-secondary);margin-bottom:8px;">输入文件</h4>
+      <ul id="etl-input-files" style="list-style:none;font-size:12px;font-family:var(--font-mono);color:var(--teal);"></ul>
+    </div>
+    <div>
+      <h4 style="font-size:12px;color:var(--text-secondary);margin-bottom:8px;">输出文件</h4>
+      <ul id="etl-output-files" style="list-style:none;font-size:12px;font-family:var(--font-mono);color:var(--accent);"></ul>
+    </div>
+  </div>
+</div>
+
+{% endblock %}
+{% block scripts %}
+<script>
+(async function loadETL() {
+  const { API, escapeHtml } = window.Admin;
+
+  try {
+    const manifest = await API.get('/etl/manifest');
+    document.getElementById('etl-stats').innerHTML = `
+      <div class="stat-card"><div class="stat-label">统一岗位记录</div><div class="stat-value">${(manifest.unified_job_records || 0).toLocaleString()}</div><div class="stat-sub">unified_jobs.csv</div></div>
+      <div class="stat-card"><div class="stat-label">技能记录</div><div class="stat-value">${(manifest.unified_skill_records || 0).toLocaleString()}</div><div class="stat-sub">unified_job_skills.csv</div></div>
+      <div class="stat-card"><div class="stat-label">注册数据源</div><div class="stat-value">${manifest.registered_sources || 0}</div><div class="stat-sub">${(manifest.active_source_types || []).length} 种类型活跃</div></div>
+      <div class="stat-card"><div class="stat-label">候选评分</div><div class="stat-value">${(manifest.candidate_score_records || 0).toLocaleString()}</div><div class="stat-sub">job_candidate_scores.csv</div></div>`;
+
+    // Categories bar chart
+    if (manifest.category_counts) {
+      const cats = Object.entries(manifest.category_counts).sort((a,b) => b[1]-a[1]);
+      const max = cats[0]?.[1] || 1;
+      document.getElementById('etl-categories').innerHTML = cats.map(([name, count]) => `
+        <div class="bar-row">
+          <div class="bar-label">${name}</div>
+          <div class="bar-track"><div class="bar-fill" style="width:${(count/max*100).toFixed(0)}%;"></div></div>
+          <div class="bar-value">${count.toLocaleString()}</div>
+        </div>`).join('');
+    }
+
+    // Files
+    const filesCard = document.getElementById('etl-files-card');
+    if (manifest.input_files || manifest.output_files) {
+      filesCard.style.display = '';
+      document.getElementById('etl-input-files').innerHTML = (manifest.input_files || []).map(f => `<li style="margin-bottom:4px;">📄 ${escapeHtml(f)}</li>`).join('');
+      document.getElementById('etl-output-files').innerHTML = (manifest.output_files || []).map(f => `<li style="margin-bottom:4px;">📄 ${escapeHtml(f)}</li>`).join('');
+    }
+  } catch(e) {
+    console.error('ETL manifest error:', e);
+  }
+
+  // Sources table
+  try {
+    const sources = await API.get('/etl/sources');
+    const dq = await API.get('/data-quality/report');
+    const scoreMap = {};
+    (dq.sources || []).forEach(s => { scoreMap[s.source_id || s.source_name] = s.avg_quality_score; });
+
+    const activeNames = new Set(sources.active_sources || []);
+    const allSources = sources.active_sources?.map(name => ({
+      name, type: (sources.active_source_types || [])[0] || '—', active: true
+    })) || [];
+
+    const tbody = document.getElementById('etl-sources-body');
+    if (allSources.length === 0) {
+      tbody.innerHTML = '<tr><td colspan="5" class="empty-state"><p>暂无活跃数据源</p></td></tr>';
+    } else {
+      tbody.innerHTML = allSources.map(s => {
+        const score = scoreMap[s.name];
+        const scoreBadge = score ? (score >= 85 ? 'badge badge-a' : score >= 70 ? 'badge badge-b' : 'badge badge-c') : '';
+        return `<tr>
+          <td><strong>${escapeHtml(s.name)}</strong></td>
+          <td style="font-size:11px;color:var(--text-secondary);">${escapeHtml(s.type)}</td>
+          <td>—</td>
+          <td>${score ? `<span class="${scoreBadge}">${score}</span>` : '—'}</td>
+          <td><span class="badge badge-success">活跃</span></td>
+        </tr>`;
+      }).join('');
+    }
+  } catch(e) {
+    console.error('Sources error:', e);
+  }
+})();
+
+async function triggerSync() {
+  const btn = document.getElementById('btn-sync-es');
+  btn.disabled = true;
+  btn.textContent = '同步中…';
+  try {
+    const result = await Admin.API.post('/etl/sync-es');
+    Admin.toast(result.message || '同步已触发');
+  } catch(e) {
+    Admin.toast('同步失败: ' + e.message, 'error');
+  }
+  btn.disabled = false;
+  btn.textContent = '↻ 同步到 ES';
+}
+</script>
+{% endblock %}

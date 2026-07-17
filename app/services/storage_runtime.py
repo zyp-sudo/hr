@@ -200,6 +200,42 @@ class Neo4jGraphRepository:
             ]
         return {"nodes": nodes, "edges": edges, "storage": "neo4j"}
 
+    def related_subgraph(self, terms: list[str], limit: int = 40) -> dict[str, Any]:
+        normalized = [term.strip().lower() for term in terms if term.strip()][:12]
+        if not normalized:
+            return {"nodes": [], "edges": [], "storage": "neo4j"}
+        with self.session() as session:
+            records = [
+                dict(record)
+                for record in session.run(
+                    """
+                    MATCH (seed:KgNode)
+                    WHERE any(term IN $terms WHERE toLower(coalesce(seed.label, '')) CONTAINS term)
+                    WITH seed
+                    ORDER BY coalesce(seed.count, 0) DESC
+                    LIMIT 12
+                    OPTIONAL MATCH (seed)-[r:KG_RELATION]-(neighbor:KgNode)
+                    RETURN seed.id AS seed_id, seed.label AS seed_label, seed.type AS seed_type,
+                           neighbor.id AS neighbor_id, neighbor.label AS neighbor_label,
+                           neighbor.type AS neighbor_type, coalesce(r.type, type(r)) AS relation,
+                           coalesce(r.weight, 0) AS weight
+                    ORDER BY weight DESC
+                    LIMIT $limit
+                    """,
+                    terms=normalized,
+                    limit=max(1, min(limit, 200)),
+                )
+            ]
+        node_map: dict[str, dict[str, Any]] = {}
+        edges: list[dict[str, Any]] = []
+        for row in records:
+            if row.get("seed_id"):
+                node_map[row["seed_id"]] = {"id": row["seed_id"], "label": row["seed_label"], "type": row["seed_type"]}
+            if row.get("neighbor_id"):
+                node_map[row["neighbor_id"]] = {"id": row["neighbor_id"], "label": row["neighbor_label"], "type": row["neighbor_type"]}
+                edges.append({"from": row["seed_id"], "to": row["neighbor_id"], "relation": row["relation"], "weight": row["weight"]})
+        return {"nodes": list(node_map.values()), "edges": edges, "storage": "neo4j"}
+
     def summary(self) -> dict[str, Any]:
         with self.session() as session:
             node_count = session.run("MATCH (n:KgNode) RETURN count(n) AS count").single()["count"]

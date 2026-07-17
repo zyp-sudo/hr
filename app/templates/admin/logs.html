@@ -1,0 +1,236 @@
+{% extends "admin/base.html" %}
+{% block content %}
+
+<!-- Quick Stats Bar -->
+<div class="card stats-bar" id="log-stats-bar">
+  <div class="stats-bar-item">
+    <span class="stats-bar-label">总日志</span>
+    <span class="stats-bar-value" id="stat-total">—</span>
+  </div>
+  <div class="stats-bar-item success">
+    <span class="stats-bar-label">INFO</span>
+    <span class="stats-bar-value" id="stat-info">—</span>
+  </div>
+  <div class="stats-bar-item warn">
+    <span class="stats-bar-label">WARNING</span>
+    <span class="stats-bar-value" id="stat-warning">—</span>
+  </div>
+  <div class="stats-bar-item error">
+    <span class="stats-bar-label">ERROR</span>
+    <span class="stats-bar-value" id="stat-error">—</span>
+  </div>
+  <div class="stats-bar-item accent">
+    <span class="stats-bar-label">CRITICAL</span>
+    <span class="stats-bar-value" id="stat-critical">—</span>
+  </div>
+  <div class="stats-bar-item" style="flex:1;display:flex;align-items:center;justify-content:flex-end;gap:14px;font-size:11px;color:var(--text-muted);">
+    <span>🟢 200</span><span>🔵 3xx</span><span>🟡 4xx</span><span>🔴 5xx</span>
+  </div>
+</div>
+
+<!-- Filters -->
+<div class="card">
+  <div class="toolbar" id="log-filters">
+    <select id="filter-level">
+      <option value="">全部级别</option>
+      <option value="DEBUG">DEBUG</option>
+      <option value="INFO">INFO</option>
+      <option value="WARNING">WARNING</option>
+      <option value="ERROR">ERROR</option>
+      <option value="CRITICAL">CRITICAL</option>
+    </select>
+    <input type="text" id="filter-module" placeholder="模块名称…" style="width:160px;"/>
+    <input type="text" id="filter-search" placeholder="搜索关键词…" style="width:180px;"/>
+    <input type="text" id="filter-start" placeholder="开始时间 (YYYY-MM-DD HH:MM)" style="width:190px;"/>
+    <input type="text" id="filter-end" placeholder="结束时间 (YYYY-MM-DD HH:MM)" style="width:190px;"/>
+    <button class="btn btn-primary" id="btn-search">🔍 搜索</button>
+    <button class="btn btn-secondary" id="btn-reset">↺ 重置</button>
+    <span style="margin-left:auto;display:flex;align-items:center;gap:8px;">
+      <label style="display:flex;align-items:center;gap:6px;font-size:12px;color:var(--text-secondary);cursor:pointer;">
+        <input type="checkbox" id="toggle-stream"/> 实时流
+      </label>
+      <span id="stream-indicator" style="display:none;" class="log-stream-indicator">
+        <span class="pulse"></span> LIVE
+      </span>
+    </span>
+  </div>
+</div>
+
+<!-- Log table -->
+<div class="card" style="padding:12px 0;">
+  <div class="table-wrap">
+    <table class="log-table">
+      <thead>
+        <tr>
+          <th style="width:155px;">时间</th>
+          <th style="width:72px;">级别</th>
+          <th style="width:170px;">模块</th>
+          <th>消息</th>
+        </tr>
+      </thead>
+      <tbody id="log-body">
+        <tr><td colspan="4" class="empty-state"><p>加载中…</p></td></tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<!-- Pagination -->
+<div class="card">
+  <div class="pagination" id="log-pagination" style="justify-content:space-between;">
+    <span id="log-info">—</span>
+    <div id="log-pages"></div>
+  </div>
+</div>
+
+{% endblock %}
+{% block scripts %}
+<script>
+(function() {
+  const { API, escapeHtml, parseRequest } = window.Admin;
+  let currentPage = 1;
+  let streamSource = null;
+
+  const $id = id => document.getElementById(id);
+
+  function formatMessage(msg, module) {
+    // Highlight HTTP request lines from middleware
+    const req = parseRequest(msg);
+    if (req.isRequest) {
+      return `<span class="log-req-method">${req.method}</span> <span class="status-code-inline ${req.cls}">${req.code}</span> <span style="color:var(--text-secondary);">${escapeHtml(req.path)}</span>`;
+    }
+    // Highlight any standalone status codes in other messages
+    return escapeHtml(msg).replace(/\b(\d{3})\b/g, (m, code) => {
+      const n = parseInt(code);
+      const cls = n < 300 ? 'ok' : n < 400 ? 'info' : n < 500 ? 'warn' : 'error';
+      return `<span class="status-code-inline ${cls}">${code}</span>`;
+    });
+  }
+
+  async function loadLogs(page = 1) {
+    const params = {
+      level: $id('filter-level').value || undefined,
+      module: $id('filter-module').value || undefined,
+      search: $id('filter-search').value || undefined,
+      start_time: $id('filter-start').value || undefined,
+      end_time: $id('filter-end').value || undefined,
+      page: page,
+      page_size: 50,
+    };
+    Object.keys(params).forEach(k => params[k] === undefined && delete params[k]);
+
+    try {
+      const data = await API.get('/logs', params);
+      currentPage = data.page;
+      renderTable(data.items);
+      renderPagination(data);
+      loadStats(); // async fire
+    } catch(e) {
+      $id('log-body').innerHTML = `<tr><td colspan="4" class="empty-state"><p>加载失败: ${escapeHtml(e.message)}</p></td></tr>`;
+    }
+  }
+
+  async function loadStats() {
+    try {
+      const stats = await API.get('/logs/stats');
+      const byLevel = stats.by_level || {};
+      $id('stat-total').textContent = stats.total?.toLocaleString() || '—';
+      $id('stat-info').textContent = (byLevel.INFO || 0).toLocaleString();
+      $id('stat-warning').textContent = (byLevel.WARNING || 0).toLocaleString();
+      $id('stat-error').textContent = (byLevel.ERROR || 0).toLocaleString();
+      $id('stat-critical').textContent = (byLevel.CRITICAL || 0).toLocaleString();
+    } catch(e) {}
+  }
+
+  function renderTable(items) {
+    const tbody = $id('log-body');
+    if (!items || items.length === 0) {
+      tbody.innerHTML = '<tr><td colspan="4" class="empty-state"><p>没有匹配的日志条目</p></td></tr>';
+      return;
+    }
+    tbody.innerHTML = items.map(l => `
+      <tr>
+        <td class="log-ts">${l.timestamp}</td>
+        <td><span class="level-${l.level}" style="font-weight:600;font-size:11px;">${l.level}</span></td>
+        <td class="log-module">${escapeHtml(l.module)}</td>
+        <td class="log-msg">${formatMessage(l.message, l.module)}</td>
+      </tr>`).join('');
+  }
+
+  function renderPagination(data) {
+    $id('log-info').textContent = `共 ${data.total.toLocaleString()} 条，第 ${data.page}/${data.total_pages} 页`;
+    const pagesDiv = $id('log-pages');
+    let html = '';
+    html += `<button ${data.page <= 1 ? 'disabled' : ''} onclick="window._logGo(${data.page-1})">‹ 上一页</button>`;
+    for (let p = Math.max(1, data.page-2); p <= Math.min(data.total_pages, data.page+2); p++) {
+      html += `<button class="${p === data.page ? 'active' : ''}" onclick="window._logGo(${p})">${p}</button>`;
+    }
+    html += `<button ${data.page >= data.total_pages ? 'disabled' : ''} onclick="window._logGo(${data.page+1})">下一页 ›</button>`;
+    pagesDiv.innerHTML = html;
+  }
+
+  window._logGo = page => loadLogs(page);
+
+  // ---- SSE streaming ------------------------------------------------------
+  function startStream() {
+    if (streamSource) streamSource.close();
+    const params = new URLSearchParams();
+    const level = $id('filter-level').value;
+    const module = $id('filter-module').value;
+    const search = $id('filter-search').value;
+    if (level) params.set('level', level);
+    if (module) params.set('module', module);
+    if (search) params.set('search', search);
+    const url = `/api/admin/logs/stream${params.toString() ? '?'+params : ''}`;
+
+    streamSource = new EventSource(url);
+    streamSource.onmessage = e => {
+      try {
+        const entry = JSON.parse(e.data);
+        const tbody = $id('log-body');
+        const row = document.createElement('tr');
+        row.style.animation = 'slideDown 0.25s ease';
+        row.innerHTML = `
+          <td class="log-ts">${entry.timestamp}</td>
+          <td><span class="level-${entry.level}" style="font-weight:600;font-size:11px;">${entry.level}</span></td>
+          <td class="log-module">${escapeHtml(entry.module)}</td>
+          <td class="log-msg">${formatMessage(entry.message, entry.module)}</td>`;
+        if (tbody.firstChild && tbody.firstChild.querySelector('.empty-state')) {
+          tbody.innerHTML = '';
+        }
+        tbody.insertBefore(row, tbody.firstChild);
+        while (tbody.children.length > 200) tbody.lastChild.remove();
+      } catch(_) {}
+    };
+    streamSource.onerror = () => { stopStream(); };
+    $id('stream-indicator').style.display = 'flex';
+  }
+
+  function stopStream() {
+    if (streamSource) { streamSource.close(); streamSource = null; }
+    $id('stream-indicator').style.display = 'none';
+  }
+
+  // ---- Events -------------------------------------------------------------
+  $id('btn-search').addEventListener('click', () => { stopStream(); loadLogs(1); });
+  $id('btn-reset').addEventListener('click', () => {
+    $id('filter-level').value = '';
+    $id('filter-module').value = '';
+    $id('filter-search').value = '';
+    $id('filter-start').value = '';
+    $id('filter-end').value = '';
+    stopStream();
+    loadLogs(1);
+  });
+  $id('toggle-stream').addEventListener('change', function() {
+    if (this.checked) startStream();
+    else stopStream();
+  });
+  ['filter-module', 'filter-search'].forEach(id => {
+    $id(id).addEventListener('keydown', e => { if (e.key === 'Enter') { stopStream(); loadLogs(1); } });
+  });
+
+  loadLogs(1);
+})();
+</script>
+{% endblock %}

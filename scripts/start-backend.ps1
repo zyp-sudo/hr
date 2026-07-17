@@ -32,11 +32,61 @@ function Wait-LocalPort {
   )
 
   for ($attempt = 0; $attempt -lt $Attempts; $attempt++) {
-    if (Test-LocalPort -Port $Port) { return $true }
     if ($Job.State -in @("Completed", "Failed", "Stopped")) { return $false }
+    if (Test-LocalPort -Port $Port) {
+      Start-Sleep -Milliseconds 250
+      return $Job.State -notin @("Completed", "Failed", "Stopped")
+    }
     Start-Sleep -Milliseconds 500
   }
   return $false
+}
+
+function Get-ListeningProcessIds {
+  param([Parameter(Mandatory = $true)][int]$Port)
+
+  $processIds = foreach ($line in netstat -ano) {
+    if ($line -match "^\s*TCP\s+\S+:$Port\s+\S+\s+LISTENING\s+(\d+)\s*$") {
+      [int]$Matches[1]
+    }
+  }
+  return @($processIds | Where-Object { $_ -gt 0 } | Select-Object -Unique)
+}
+
+function Stop-LocalPort {
+  param([Parameter(Mandatory = $true)][int]$Port)
+
+  foreach ($processId in (Get-ListeningProcessIds -Port $Port)) {
+    try {
+      Stop-Process -Id $processId -Force -ErrorAction Stop
+    } catch {
+      Write-Host "Could not stop PID $processId on port $Port`: $($_.Exception.Message)" -ForegroundColor Yellow
+    }
+  }
+
+  for ($attempt = 0; $attempt -lt 30; $attempt++) {
+    if (-not (Test-LocalPort -Port $Port)) { return }
+    Start-Sleep -Milliseconds 200
+  }
+
+  $remaining = Get-ListeningProcessIds -Port $Port
+  $ownerText = if ($remaining.Count) { $remaining -join ", " } else { "unknown process" }
+  throw "Port $Port is still occupied by $ownerText. Close the old service or run this launcher as Administrator, then try again."
+}
+
+function Test-HttpService {
+  param(
+    [Parameter(Mandatory = $true)][string]$Uri,
+    [string]$ExpectedStatus
+  )
+
+  try {
+    $response = Invoke-RestMethod -Uri $Uri -TimeoutSec 3
+    if ($ExpectedStatus) { return $response.status -eq $ExpectedStatus }
+    return $true
+  } catch {
+    return $false
+  }
 }
 
 function Write-JobFailure {
@@ -55,13 +105,12 @@ if ($env:SKIP_STORAGE_INIT -ne "true") {
   if (-not $?) { throw "Storage initialization failed." }
 }
 
-foreach ($line in netstat -ano) {
-  foreach ($port in @(8080, 8081)) {
-    if ($line -match ":$port\s" -and $line -match "LISTENING\s+(\d+)\s*$") {
-      Stop-Process -Id $Matches[1] -Force -ErrorAction SilentlyContinue
-    }
-  }
-}
+$ReuseStorageApi = Test-HttpService -Uri "http://127.0.0.1:8080/api/health" -ExpectedStatus "ok"
+$ReuseJavaApi = Test-HttpService -Uri "http://127.0.0.1:8081/api/real-jobs?limit=1"
+if (-not $ReuseStorageApi) { Stop-LocalPort -Port 8080 }
+if (-not $ReuseJavaApi) { Stop-LocalPort -Port 8081 }
+
+$PythonExe = (Get-Command python -ErrorAction Stop).Source
 
 $BuildRoot = Join-Path ([IO.Path]::GetTempPath()) "xh-202621-java"
 $RuntimeOut = Join-Path $BuildRoot ("runtime-build-" + [guid]::NewGuid().ToString("N"))
@@ -77,23 +126,29 @@ try {
   }
   Write-Host "Java compile OK: $RuntimeOut" -ForegroundColor Green
 
-  $javaJob = Start-Job -Name ("xh-java-backend-" + [guid]::NewGuid().ToString("N")) -ScriptBlock {
-    Set-Location $using:ProjectRoot
-    $env:BACKEND_PORT = "8081"
-    & java -cp $using:RuntimeOut com.xh202621.App
-  }
-  if (-not (Wait-LocalPort -Port 8081 -Job $javaJob)) {
-    Write-JobFailure -Service "Java API" -Job $javaJob
-    throw "Java API did not open port 8081."
+  if (-not $ReuseJavaApi) {
+    $javaJob = Start-Job -Name ("xh-java-backend-" + [guid]::NewGuid().ToString("N")) -ScriptBlock {
+      Set-Location $using:ProjectRoot
+      $env:BACKEND_PORT = "8081"
+      & java -cp $using:RuntimeOut com.xh202621.App
+    }
+    if (-not (Wait-LocalPort -Port 8081 -Job $javaJob)) {
+      Write-JobFailure -Service "Java API" -Job $javaJob
+      throw "Java API did not open port 8081."
+    }
   }
 
-  $apiJob = Start-Job -Name ("xh-storage-api-" + [guid]::NewGuid().ToString("N")) -ScriptBlock {
-    Set-Location $using:ProjectRoot
-    & python -m uvicorn app.main:app --host 0.0.0.0 --port 8080
-  }
-  if (-not (Wait-LocalPort -Port 8080 -Job $apiJob)) {
-    Write-JobFailure -Service "Python API" -Job $apiJob
-    throw "Python API did not open port 8080."
+  if (-not $ReuseStorageApi) {
+    $apiJob = Start-Job -Name ("xh-storage-api-" + [guid]::NewGuid().ToString("N")) -ScriptBlock {
+      Set-Location $using:ProjectRoot
+      $env:PYTHONUTF8 = "1"
+      $env:PYTHONUNBUFFERED = "1"
+      & $using:PythonExe -m uvicorn app.main:app --host 0.0.0.0 --port 8080
+    }
+    if (-not (Wait-LocalPort -Port 8080 -Job $apiJob)) {
+      Write-JobFailure -Service "Python API" -Job $apiJob
+      throw "Python API did not open port 8080."
+    }
   }
 
   try {
@@ -124,10 +179,11 @@ try {
 
   Write-Host "Press Ctrl+C to stop." -ForegroundColor Green
   while ($true) {
-    foreach ($service in @(
+    $managedServices = @(
       @{ Name = "Java API"; Job = $javaJob },
       @{ Name = "Python API"; Job = $apiJob }
-    )) {
+    ) | Where-Object { $null -ne $_.Job }
+    foreach ($service in $managedServices) {
       if ($service.Job.State -in @("Completed", "Failed", "Stopped")) {
         Write-JobFailure -Service $service.Name -Job $service.Job
         throw "$($service.Name) stopped unexpectedly."

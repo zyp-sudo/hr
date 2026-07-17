@@ -1,0 +1,65 @@
+{% extends "admin/base.html" %}
+{% block content %}
+
+<!-- Health grid -->
+<div class="card">
+  <div class="card-header"><h3>全量健康检查</h3></div>
+  <div class="health-grid" id="health-grid">
+    <div class="health-item"><div class="health-name">加载中…</div></div>
+  </div>
+</div>
+
+<!-- Settings table -->
+<div class="card">
+  <div class="card-header"><h3>运行配置</h3></div>
+  <div class="table-wrap">
+    <table class="config-table">
+      <thead><tr><th>配置项</th><th>值</th></tr></thead>
+      <tbody id="config-body"><tr><td colspan="2" class="empty-state"><p>加载中…</p></td></tr></tbody>
+    </table>
+  </div>
+</div>
+
+{% endblock %}
+{% block scripts %}
+<script>
+(async function loadSettings() {
+  const { API, escapeHtml } = window.Admin;
+
+  // --- Health --------------------------------------------------------------
+  try {
+    const health = await API.get('/health-full');
+    const grid = document.getElementById('health-grid');
+    grid.innerHTML = Object.entries(health.checks).map(([name, c]) => {
+      const ok = c.status === 'connected' || c.status === 'ok';
+      const dotCls = ok ? 'ok' : (c.status === 'error' ? 'error' : 'degraded');
+      let detail = '';
+      if (c.detail) detail = escapeHtml(c.detail);
+      else if (c.uri || c.hosts) detail = escapeHtml(c.uri || c.hosts);
+      else if (c.total_gb) detail = `已用 ${c.used_gb} / ${c.total_gb} GB (${c.pct_used}%)`;
+      else if (c.available_gb) detail = `可用 ${c.available_gb} / ${c.total_gb} GB`;
+      return `<div class="health-item">
+        <div class="health-name"><span class="status-dot ${dotCls}"></span> ${name}</div>
+        <div class="health-detail">${detail || '—'}</div>
+      </div>`;
+    }).join('');
+  } catch(e) {
+    document.getElementById('health-grid').innerHTML = `<div class="health-item"><div class="health-name">加载失败</div><div class="health-detail">${escapeHtml(e.message)}</div></div>`;
+  }
+
+  // --- Settings ------------------------------------------------------------
+  try {
+    const cfg = await API.get('/settings');
+    const tbody = document.getElementById('config-body');
+    const items = cfg.settings || {};
+    tbody.innerHTML = Object.entries(items).map(([k, v]) => `
+      <tr>
+        <td>${escapeHtml(k)}</td>
+        <td>${escapeHtml(String(v))}</td>
+      </tr>`).join('');
+  } catch(e) {
+    document.getElementById('config-body').innerHTML = `<tr><td colspan="2" class="empty-state"><p>加载失败: ${escapeHtml(e.message)}</p></td></tr>`;
+  }
+})();
+</script>
+{% endblock %}

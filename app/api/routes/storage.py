@@ -6,6 +6,7 @@ from app.api.deps import get_es, get_graph_repository, get_job_repository
 from app.core.config import Settings, get_settings
 from app.services.storage_runtime import MySQLJobRepository, Neo4jGraphRepository
 from app.services.es_client import ElasticsearchClient
+from app.services.milvus_talent import TalentVectorStore
 
 router = APIRouter(prefix="/api", tags=["mysql-neo4j-runtime"])
 
@@ -15,6 +16,7 @@ def health(
     mysql: Annotated[MySQLJobRepository, Depends(get_job_repository)],
     neo4j: Annotated[Neo4jGraphRepository, Depends(get_graph_repository)],
     elasticsearch: Annotated[ElasticsearchClient, Depends(get_es)],
+    settings: Annotated[Settings, Depends(get_settings)],
 ) -> dict:
     checks: dict[str, str] = {}
     for name, check in (("mysql", mysql.ping), ("neo4j", neo4j.ping), ("elasticsearch", elasticsearch.ping)):
@@ -23,6 +25,11 @@ def health(
             checks[name] = "connected"
         except Exception as exc:
             checks[name] = f"unavailable: {type(exc).__name__}"
+    try:
+        TalentVectorStore(settings.milvus_uri, settings.milvus_token, settings.milvus_collection, settings.talent_vector_dim).health()
+        checks["milvus"] = "connected"
+    except Exception as exc:
+        checks["milvus"] = f"unavailable: {type(exc).__name__}"
     return {
         "status": "ok" if all(value == "connected" for value in checks.values()) else "degraded",
         "service": "xh-202621-storage-api",

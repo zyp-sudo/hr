@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>{{ title }} — {{ app_name }}</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="/static/admin/style.css"/>
+</head>
+<body>
+<div class="admin-layout">
+
+  <!-- ============ SIDEBAR ============ -->
+  <aside class="sidebar">
+    <div class="sidebar-brand">
+      <h2>◈ 管理后台</h2>
+      <span>{{ app_name }}</span>
+    </div>
+    <nav class="sidebar-nav">
+      {% for item in nav_items %}
+      <a class="nav-item{% if item.key == current_page %} active{% endif %}" href="{{ item.url }}">
+        <span class="nav-icon">{{ item.icon }}</span>
+        <span>{{ item.label }}</span>
+      </a>
+      {% endfor %}
+    </nav>
+    <div class="sidebar-footer">v1.0.0 · FastAPI</div>
+  </aside>
+
+  <!-- ============ MAIN AREA ============ -->
+  <div style="flex:1;display:flex;flex-direction:column;overflow:hidden;">
+    <!-- Top bar -->
+    <header class="topbar">
+      <div>
+        <h1>{{ title }}</h1>
+        <div class="breadcrumb">/ {{ current_page }}</div>
+      </div>
+      <div style="display:flex;align-items:center;gap:16px;">
+        <div class="status-badge" id="health-badge">
+          <span class="dot"></span>
+          <span>检测中…</span>
+        </div>
+      </div>
+    </header>
+
+    <!-- ====== Real-time request status strip ====== -->
+    <div class="request-strip" id="request-strip">
+      <div class="strip-label">HTTP 请求</div>
+      <div class="strip-items" id="strip-items">
+        <span class="strip-waiting">等待请求…</span>
+      </div>
+    </div>
+
+    <!-- Content -->
+    <main class="main-content">
+      {% block content %}{% endblock %}
+    </main>
+  </div>
+
+</div>
+
+<script src="/static/admin/app.js"></script>
+<script>
+// ---- Health badge — poll every 30s ---------------------------------------
+(async function updateBadge() {
+  try {
+    const data = await Admin.API.get('/health-full');
+    const badge = document.getElementById('health-badge');
+    if (data.status === 'ok') {
+      badge.innerHTML = '<span class="dot"></span><span>全部正常</span>';
+    } else {
+      badge.innerHTML = '<span class="dot" style="background:#f0c448;box-shadow:0 0 6px #f0c448"></span><span>部分降级</span>';
+    }
+  } catch(e) {
+    document.getElementById('health-badge').innerHTML =
+      '<span class="dot" style="background:#f0626e;box-shadow:0 0 6px #f0626e"></span><span>离线</span>';
+  }
+  setTimeout(updateBadge, 30000);
+})();
+
+// ---- Request strip — live HTTP status codes, poll every 3s ---------------
+(async function updateStrip() {
+  try {
+    const logs = await Admin.API.get('/logs', { module: 'middleware', page_size: 8 });
+    const itemsDiv = document.getElementById('strip-items');
+    if (!logs.items || !logs.items.length) {
+      itemsDiv.innerHTML = '<span class="strip-waiting">暂无请求</span>';
+    } else {
+      itemsDiv.innerHTML = logs.items.map(l => {
+        const parsed = Admin.parseRequest(l.message);
+        return `<span class="strip-chip ${parsed.cls}" title="${Admin.escapeHtml(l.timestamp)} · ${Admin.escapeHtml(l.message)}">
+          <span class="strip-method">${parsed.method}</span>
+          <span class="strip-code">${parsed.code}</span>
+          <span class="strip-path">${parsed.path}</span>
+        </span>`;
+      }).join('');
+    }
+  } catch(e) { /* silent */ }
+  setTimeout(updateStrip, 3000);
+})();
+</script>
+{% block scripts %}{% endblock %}
+</body>
+</html>

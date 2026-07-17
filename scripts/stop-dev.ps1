@@ -1,4 +1,4 @@
-$ports = @(8080, 8081, 8501)
+$ports = @(8080, 8081, 3000, 8501)
 $pids = @()
 
 try {
@@ -7,7 +7,9 @@ try {
       $_.CommandLine -like '*com.xh202621.App*' -or
       $_.CommandLine -like '*uvicorn app.main:app*' -or
       $_.CommandLine -like '*frontend/app.py*' -or
-      $_.CommandLine -like '*frontend\app.py*'
+      $_.CommandLine -like '*frontend\app.py*' -or
+      $_.CommandLine -like '*talentmatch*server.ts*' -or
+      $_.CommandLine -like '*talentmatch*server.cjs*'
     }
   $pids += $targets | ForEach-Object { $_.ProcessId }
 } catch {

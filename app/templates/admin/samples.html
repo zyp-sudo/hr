@@ -1,0 +1,157 @@
+{% extends "admin/base.html" %}
+{% block content %}
+
+<!-- Toolbar -->
+<div class="card">
+  <div class="toolbar">
+    <input type="text" id="sample-search" placeholder="搜索岗位名称、公司、技能…" style="width:320px;"/>
+    <button class="btn btn-primary" id="btn-sample-search">搜索</button>
+    <button class="btn btn-secondary" id="btn-sample-reset">重置</button>
+    <span style="margin-left:auto;font-size:12px;color:var(--text-secondary);" id="sample-count-info">—</span>
+  </div>
+</div>
+
+<!-- Job table -->
+<div class="card" style="padding:12px 0;">
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr>
+          <th>岗位名称</th><th>公司</th><th>城市</th><th>类别</th><th>工作年限</th>
+          <th>技能</th><th>来源</th><th>采集时间</th><th></th>
+        </tr>
+      </thead>
+      <tbody id="sample-body">
+        <tr><td colspan="9" class="empty-state"><p>加载中…</p></td></tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<!-- Pagination -->
+<div class="card">
+  <div class="pagination" id="sample-pagination" style="justify-content:space-between;">
+    <span id="sample-info">—</span>
+    <div id="sample-pages"></div>
+  </div>
+</div>
+
+<!-- Skill stats sidebar (shown when data loaded) -->
+<div class="card" id="skill-stats-card" style="display:none;">
+  <div class="card-header"><h3>热门技能 TOP 10</h3></div>
+  <div id="skill-stats-content"></div>
+</div>
+
+{% endblock %}
+{% block scripts %}
+<script>
+(function() {
+  const { API, escapeHtml } = window.Admin;
+  let currentPage = 1;
+  let currentSearch = '';
+
+  async function loadSamples(page = 1) {
+    const params = { page, page_size: 20 };
+    if (currentSearch) params.search = currentSearch;
+
+    try {
+      const data = await API.get('/samples/jobs', params);
+      currentPage = data.page;
+      renderTable(data.items);
+      renderPagination(data);
+      if (data.stats?.skill_stats) renderSkillStats(data.stats.skill_stats);
+      document.getElementById('sample-count-info').textContent =
+        `共 ${data.total.toLocaleString()} 条 (总计 ${(data.record_count || 0).toLocaleString()})`;
+    } catch(e) {
+      document.getElementById('sample-body').innerHTML =
+        `<tr><td colspan="9" class="empty-state"><p>加载失败: ${escapeHtml(e.message)}</p></td></tr>`;
+    }
+  }
+
+  function renderTable(items) {
+    const tbody = document.getElementById('sample-body');
+    if (!items || items.length === 0) {
+      tbody.innerHTML = '<tr><td colspan="9" class="empty-state"><p>没有匹配的岗位数据</p></td></tr>';
+      return;
+    }
+    tbody.innerHTML = items.map(j => `
+      <tr>
+        <td><strong>${escapeHtml(j.title || '—')}</strong></td>
+        <td>${escapeHtml(j.company || '—')}</td>
+        <td>${escapeHtml(j.city || '—')}</td>
+        <td><span class="badge badge-info">${escapeHtml(j.category || '—')}</span></td>
+        <td>${escapeHtml(j.workYears || '—')}</td>
+        <td style="max-width:200px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;" title="${escapeHtml((j.skills||[]).join(', '))}">${escapeHtml((j.skills||[]).slice(0,4).join(', ') + ((j.skills||[]).length > 4 ? '…' : ''))}</td>
+        <td style="font-size:11px;color:var(--text-secondary);">${escapeHtml(j.source || '—')}</td>
+        <td style="font-size:11px;color:var(--text-muted);">${Admin.formatTime(j.fetchedAt)}</td>
+        <td><button class="btn btn-secondary btn-sm job-detail-btn">详情</button></td>
+      </tr>
+      <tr class="job-detail" style="display:none;">
+        <td colspan="9" style="background:rgba(255,255,255,0.02);padding:16px 24px;font-size:12px;">
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;">
+            <div><strong style="color:var(--text-secondary);">职责要求</strong><p style="margin-top:4px;color:var(--text-primary);white-space:pre-wrap;">${escapeHtml(j.responsibility || '—')}</p></div>
+            <div><strong style="color:var(--text-secondary);">任职要求</strong><p style="margin-top:4px;color:var(--text-primary);white-space:pre-wrap;">${escapeHtml(j.requirement || '—')}</p></div>
+          </div>
+          ${j.sourceUrl ? `<p style="margin-top:8px;"><a href="${escapeHtml(j.sourceUrl)}" target="_blank">查看原始页面 →</a></p>` : ''}
+        </td>
+      </tr>`).join('');
+
+    // Attach click handlers to all detail buttons
+    tbody.querySelectorAll('.job-detail-btn').forEach(btn => {
+      btn.addEventListener('click', function() {
+        const detailRow = this.closest('tr').nextElementSibling;
+        detailRow.style.display = detailRow.style.display === 'none' ? '' : 'none';
+      });
+    });
+  }
+
+  // (toggleDetail is now inline above — kept for reference)
+  window.toggleDetail = function(btn) {
+    const detailRow = btn.closest('tr').nextElementSibling;
+    detailRow.style.display = detailRow.style.display === 'none' ? '' : 'none';
+  };
+
+  function renderPagination(data) {
+    document.getElementById('sample-info').textContent = `第 ${data.page}/${data.total_pages} 页`;
+    const pagesDiv = document.getElementById('sample-pages');
+    let html = '';
+    html += `<button ${data.page <= 1 ? 'disabled' : ''} onclick="window._sampleGo(${data.page-1})">‹ 上一页</button>`;
+    for (let p = Math.max(1, data.page-2); p <= Math.min(data.total_pages, data.page+2); p++) {
+      html += `<button class="${p === data.page ? 'active' : ''}" onclick="window._sampleGo(${p})">${p}</button>`;
+    }
+    html += `<button ${data.page >= data.total_pages ? 'disabled' : ''} onclick="window._sampleGo(${data.page+1})">下一页 ›</button>`;
+    pagesDiv.innerHTML = html;
+  }
+
+  window._sampleGo = page => loadSamples(page);
+
+  function renderSkillStats(skills) {
+    document.getElementById('skill-stats-card').style.display = '';
+    const max = skills[0]?.count || 1;
+    document.getElementById('skill-stats-content').innerHTML = skills.slice(0,10).map((s, i) => `
+      <div class="bar-row">
+        <span style="font-size:11px;color:var(--text-muted);width:24px;">${i+1}</span>
+        <div class="bar-label">${escapeHtml(s.name)}</div>
+        <div class="bar-track"><div class="bar-fill" style="width:${(s.count/max*100).toFixed(0)}%;background:linear-gradient(90deg,rgba(127,213,205,0.4),var(--teal));"></div></div>
+        <div class="bar-value">${s.count.toLocaleString()}</div>
+      </div>`).join('');
+  }
+
+  // Events
+  document.getElementById('btn-sample-search').addEventListener('click', () => {
+    currentSearch = document.getElementById('sample-search').value;
+    loadSamples(1);
+  });
+  document.getElementById('btn-sample-reset').addEventListener('click', () => {
+    document.getElementById('sample-search').value = '';
+    currentSearch = '';
+    loadSamples(1);
+  });
+  document.getElementById('sample-search').addEventListener('keydown', e => {
+    if (e.key === 'Enter') { currentSearch = e.target.value; loadSamples(1); }
+  });
+
+  loadSamples(1);
+})();
+</script>
+{% endblock %}

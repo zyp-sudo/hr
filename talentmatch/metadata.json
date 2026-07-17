@@ -1,0 +1,6 @@
+{
+  "name": "人岗匹配智能评估系统",
+  "description": "基于 Gemini 3.5-Flash 构建的人岗匹配智能评估系统。支持简历上传、深度文本解析、智能综合评分、五维雷达图、技能缺口及匹配亮点分析，配备 Apple 级动态物理交互和动态光源鼠标跟随特效。",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

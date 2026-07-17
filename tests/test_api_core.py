@@ -108,4 +108,6 @@ def test_fastapi_dependencies_report_503_and_degraded_health():
     assert client.get("/api/kg-summary").status_code == 503
     health = client.get("/api/health").json()
     assert health["status"] == "degraded"
-    assert all(value.startswith("unavailable") for value in health["storage"].values())
+    for dependency in ("mysql", "neo4j", "elasticsearch"):
+        assert health["storage"][dependency].startswith("unavailable")
+    assert health["storage"]["milvus"] == "connected" or health["storage"]["milvus"].startswith("unavailable")

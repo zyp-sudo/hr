@@ -1,9 +1,11 @@
-"""Verify cross-store row-count invariants for the generated 55,110-job snapshot."""
+"""Verify cross-store row-count invariants for the current generated snapshot."""
 
 from __future__ import annotations
 
+import csv
 import json
 import os
+from pathlib import Path
 from typing import Any
 
 from elasticsearch import Elasticsearch
@@ -11,9 +13,21 @@ from neo4j import GraphDatabase
 from sqlalchemy import create_engine, text
 
 
+ROOT = Path(__file__).resolve().parents[1]
+
+
+def csv_record_count(relative_path: str) -> int:
+    with (ROOT / relative_path).open("r", encoding="utf-8-sig", newline="") as handle:
+        return max(0, sum(1 for _ in csv.reader(handle)) - 1)
+
+
+CURRENT_JOB_COUNT = csv_record_count("data/etl/unified_jobs.csv")
+CURRENT_SKILL_EVIDENCE_COUNT = csv_record_count("data/etl/unified_job_skills.csv")
+
+
 EXPECTED_MYSQL = {
-    "job_postings": 55_110,
-    "job_skill_evidence": 69_291,
+    "job_postings": CURRENT_JOB_COUNT,
+    "job_skill_evidence": CURRENT_SKILL_EVIDENCE_COUNT,
     "kg_nodes": 907,
     "kg_edges": 1_806,
     "skill_trends": 2_932,
@@ -29,7 +43,7 @@ EXPECTED_NEO4J = {
     "skill_trends": 2_932,
     "graph_versions": 22,
 }
-EXPECTED_ES = {"job_index": 55_110}
+EXPECTED_ES = {"job_index": CURRENT_JOB_COUNT}
 
 
 def assert_counts(store: str, actual: dict[str, int], expected: dict[str, int]) -> None:

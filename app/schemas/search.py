@@ -25,7 +25,12 @@ class JobSearchItem(BaseModel):
     experience: str | None = None
     industry: str | None = None
     skills: list[str] = Field(default_factory=list)
+    description: str | None = None
+    requirement: str | None = None
+    salary_text: str | None = None
+    source_url: str | None = None
     published_at: str | None = None
+    collected_at: str | None = None
     source: str | None = None
 
 

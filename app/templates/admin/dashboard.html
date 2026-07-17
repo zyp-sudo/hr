@@ -1,0 +1,203 @@
+{% extends "admin/base.html" %}
+{% block content %}
+
+<!-- ====== API Request Monitor (top, auto-refreshes) ====== -->
+<div class="card card-accent">
+  <div class="card-header">
+    <h3>📡 API 请求监控</h3>
+    <div style="display:flex;align-items:center;gap:10px;">
+      <span style="font-size:11px;color:var(--text-muted);">自动刷新 · 3s</span>
+      <span class="pulse-dot"></span>
+    </div>
+  </div>
+  <div class="request-grid" id="request-grid">
+    <div class="request-card placeholder">
+      <div class="rc-method">—</div>
+      <div class="rc-code">—</div>
+      <div class="rc-path">等待请求…</div>
+      <div class="rc-time">—</div>
+    </div>
+  </div>
+  <div style="margin-top:12px;display:flex;gap:12px;font-size:11px;color:var(--text-muted);">
+    <span>🟢 2xx = 正常</span><span>🔵 3xx = 重定向</span><span>🟡 4xx = 客户端错误</span><span>🔴 5xx = 服务端错误</span>
+  </div>
+</div>
+
+<!-- Stat cards -->
+<div class="stat-grid" id="stat-cards">
+  <div class="stat-card">
+    <div class="stat-label">岗位总数</div>
+    <div class="stat-value skeleton" style="width:80px;height:32px;">&nbsp;</div>
+    <div class="stat-sub">MySQL job_postings</div>
+  </div>
+  <div class="stat-card">
+    <div class="stat-label">数据源</div>
+    <div class="stat-value skeleton" style="width:60px;height:32px;">&nbsp;</div>
+    <div class="stat-sub">活跃 / 注册</div>
+  </div>
+  <div class="stat-card">
+    <div class="stat-label">质量 A 级率</div>
+    <div class="stat-value skeleton" style="width:80px;height:32px;">&nbsp;</div>
+    <div class="stat-sub">数据质量评分 ≥85</div>
+  </div>
+  <div class="stat-card">
+    <div class="stat-label">存储健康</div>
+    <div class="stat-value skeleton" style="width:100px;height:32px;">&nbsp;</div>
+    <div class="stat-sub">MySQL / Neo4j / ES / Milvus</div>
+  </div>
+  <div class="stat-card">
+    <div class="stat-label">今日请求</div>
+    <div class="stat-value skeleton" style="width:60px;height:32px;">&nbsp;</div>
+    <div class="stat-sub">HTTP 200 / 4xx / 5xx</div>
+  </div>
+</div>
+
+<!-- Health & sources row -->
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:20px;">
+  <!-- Storage health -->
+  <div class="card">
+    <div class="card-header"><h3>🔍 存储健康检查</h3></div>
+    <div id="health-checks">加载中…</div>
+  </div>
+  <!-- Recent logs -->
+  <div class="card">
+    <div class="card-header">
+      <h3>📋 最近日志</h3>
+      <a href="/admin/logs" style="font-size:12px;color:var(--accent);">查看全部 →</a>
+    </div>
+    <div id="recent-logs" style="max-height:320px;overflow-y:auto;">加载中…</div>
+  </div>
+</div>
+
+{% endblock %}
+{% block scripts %}
+<script>
+(async function loadDashboard() {
+  const { API, escapeHtml, parseRequest } = window.Admin;
+
+  // --- API Request Monitor (auto-refresh every 3s) -------------------------
+  async function refreshRequests() {
+    try {
+      const logs = await API.get('/logs', { module: 'middleware', page_size: 15 });
+      const grid = document.getElementById('request-grid');
+      if (!logs.items || !logs.items.length) {
+        grid.innerHTML = '<div class="request-card placeholder"><div class="rc-method">—</div><div class="rc-code">—</div><div class="rc-path">暂无请求</div><div class="rc-time">—</div></div>';
+      } else {
+        grid.innerHTML = logs.items.slice(0, 12).map(l => {
+          const p = parseRequest(l.message);
+          return `<div class="request-card ${p.cls}">
+            <div class="rc-method">${p.method}</div>
+            <div class="rc-code code-${p.cls}">${p.code}</div>
+            <div class="rc-path" title="${escapeHtml(l.message)}">${escapeHtml(p.path)}</div>
+            <div class="rc-time">${p.latency || '—'}</div>
+          </div>`;
+        }).join('');
+      }
+    } catch(e) { /* keep last data */ }
+    setTimeout(refreshRequests, 3000);
+  }
+  refreshRequests();
+
+  // --- Load all data in parallel (fire-and-forget with individual fallback) --
+  let healthOk = false;
+
+  // Health check
+  const healthP = API.get('/health-full').then(data => {
+    const div = document.getElementById('health-checks');
+    healthOk = data.status === 'ok';
+    div.innerHTML = Object.entries(data.checks).map(([name, c]) => {
+      const ok = c.status === 'connected' || c.status === 'ok';
+      const dot = ok ? 'ok' : (c.status === 'error' ? 'error' : 'degraded');
+      let detail = '';
+      if (c.total_gb) detail = `${c.used_gb}/${c.total_gb} GB (${c.pct_used}%)`;
+      else if (c.detail) detail = c.detail;
+      else if (c.uri || c.hosts) detail = c.uri || c.hosts;
+      return `<div class="health-item">
+        <div class="health-name"><span class="status-dot ${dot}"></span> ${name}</div>
+        <div class="health-detail">${escapeHtml(String(detail))}</div>
+      </div>`;
+    }).join('');
+  }).catch(e => {
+    document.getElementById('health-checks').innerHTML = `<div class="empty-state"><p>健康检查失败: ${escapeHtml(e.message)}</p></div>`;
+  });
+
+  // Stat cards — parallel fetch, render when all resolve
+  const sourcesP  = API.get('/etl/sources').catch(() => ({}));
+  const dqP       = API.get('/data-quality/summary').catch(() => ({}));
+  const jobsP     = API.get('/samples/jobs', { page_size: 1 }).catch(() => ({}));
+  const logStatsP = API.get('/logs/stats').catch(() => ({}));
+
+  await Promise.all([healthP, sourcesP, dqP, jobsP, logStatsP]);
+
+  const sources  = await sourcesP;
+  const dq       = await dqP;
+  const jobs     = await jobsP;
+  const logStats = await logStatsP;
+
+  const cards = document.getElementById('stat-cards');
+  const byLevel = logStats.by_level || {};
+  const totalReqs = logStats.total || 0;
+  const jobCount = jobs.record_count || 0;
+  const activeSrc = sources.active_sources?.length || 0;
+  const regSrc = sources.registered_sources || 0;
+  const dqPct = dq.level_a_pct || 0;
+  const dqA = dq.level_a || 0;
+  const dqTotal = dq.total_records || 0;
+
+  cards.innerHTML = `
+    <div class="stat-card">
+      <div class="stat-label">岗位总数</div>
+      <div class="stat-value">${jobCount.toLocaleString()}</div>
+      <div class="stat-sub">MySQL job_postings</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-label">数据源</div>
+      <div class="stat-value">${activeSrc} <span style="font-size:18px;color:var(--text-muted);">/ ${regSrc}</span></div>
+      <div class="stat-sub">活跃 / 注册</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-label">质量 A 级率</div>
+      <div class="stat-value">${dqPct}%</div>
+      <div class="stat-sub">${dqA.toLocaleString()} / ${dqTotal.toLocaleString()} 条</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-label">存储健康</div>
+      <div class="stat-value" style="color:${healthOk ? 'var(--green)' : 'var(--yellow)'}">${healthOk ? '✓ 全部正常' : '△ 部分降级'}</div>
+      <div class="stat-sub">4 项存储检查</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-label">今日请求</div>
+      <div class="stat-value">${totalReqs.toLocaleString()}</div>
+      <div class="stat-sub">
+        <span style="color:var(--green);">${byLevel.INFO || 0} OK</span>
+        ${byLevel.WARNING ? `<span style="color:var(--yellow);"> · ${byLevel.WARNING} WARN</span>` : ''}
+        ${byLevel.ERROR ? `<span style="color:var(--red);"> · ${byLevel.ERROR} ERR</span>` : ''}
+      </div>
+    </div>`;
+
+  // --- Recent logs ---------------------------------------------------------
+  try {
+    const logs = await API.get('/logs', { page_size: 30 });
+    const logDiv = document.getElementById('recent-logs');
+    if (!logs.items || !logs.items.length) {
+      logDiv.innerHTML = '<div class="empty-state"><p>暂无日志</p></div>';
+    } else {
+      logDiv.innerHTML = '<table class="compact-table"><tbody>' + logs.items.map(l => {
+        const req = parseRequest(l.message);
+        const msgDisplay = req.isRequest
+          ? `<span class="log-req-method">${req.method}</span> <span class="status-code-inline ${req.cls}">${req.code}</span> <span style="color:var(--text-secondary);">${escapeHtml(req.path)}</span>`
+          : escapeHtml(l.message);
+        return `<tr>
+          <td class="compact-ts">${l.timestamp.substring(11,19)}</td>
+          <td style="width:60px;"><span class="level-${l.level}" style="font-size:10px;font-weight:600;">${l.level}</span></td>
+          <td class="compact-module">${escapeHtml(l.module.split('.').pop())}</td>
+          <td style="font-size:12px;word-break:break-all;">${msgDisplay}</td>
+        </tr>`;
+      }).join('') + '</tbody></table>';
+    }
+  } catch(e) {
+    document.getElementById('recent-logs').innerHTML = `<div class="empty-state"><p>日志加载失败: ${escapeHtml(e.message)}</p></div>`;
+  }
+})();
+</script>
+{% endblock %}

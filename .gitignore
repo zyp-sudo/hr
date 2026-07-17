@@ -14,3 +14,38 @@ data/sync/
 scripts/local-env.ps1
 .env
 .env.local
+
+# Local Python environments and tooling
+.venv/
+venv/
+.idea/
+.vscode/
+.claude/settings.local.json
+
+# Runtime state, logs and local databases
+logs/
+*.log
+*.out.log
+*.err.log
+*.sqlite
+*.sqlite-shm
+*.sqlite-wal
+data/hr_state.json
+talentmatch/data/
+
+# Generated builds, exports and local scratch projects
+out/
+release/
+docx_render_check/
+leaf_report_assets/
+model_training_assets/
+/202676/
+
+# Newly collected raw responses can be regenerated and may be very large.
+# Files already tracked in Git remain tracked; this protects future additions.
+data/raw/
+
+# Keep shareable environment templates, never real credentials.
+.env.*
+!.env.example
+!talentmatch/.env.example

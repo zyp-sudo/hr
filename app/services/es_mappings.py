@@ -20,7 +20,7 @@ RESUME_INDEX = "resume_index"
 
 INDEX_MAPPINGS = {
     JOB_INDEX: {
-        "settings": COMMON_SETTINGS,
+        "settings": {**COMMON_SETTINGS, "max_result_window": 100_000},
         "mappings": {
             "properties": {
                 "id": {"type": "keyword"},

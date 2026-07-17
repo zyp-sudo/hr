@@ -1,0 +1,13 @@
+# Python runtime dependencies for the API, storage bootstrap and data services.
+# Supported: Python 3.11-3.12 (tested with Python 3.12.10).
+fastapi>=0.111.0,<1.0.0
+uvicorn[standard]>=0.30.0,<1.0.0
+SQLAlchemy>=2.0.30,<3.0.0
+PyMySQL>=1.1.1,<2.0.0
+pydantic>=2.7.0,<3.0.0
+elasticsearch>=8.13.0,<9.0.0
+python-dateutil>=2.9.0,<3.0.0
+neo4j>=5.22.0,<6.0.0
+pymilvus>=2.6.0,<3.0.0
+psutil>=5.9.0,<8.0.0
+jinja2>=3.1.0,<4.0.0
