@@ -44,6 +44,19 @@ class Settings(BaseModel):
     # ---- AI Hub -------------------------------------------------------
     ai_proxy_timeout: int = int(os.getenv("AI_PROXY_TIMEOUT", "120"))
 
+    # ---- Company Agent (external intelligent scoring adapter) ---------
+    company_agent_enabled: bool = (
+        os.getenv("COMPANY_AGENT_ENABLED", "false").lower() == "true"
+    )
+    company_agent_base_url: str = os.getenv("COMPANY_AGENT_BASE_URL", "")
+    company_agent_api_key: str = os.getenv("COMPANY_AGENT_API_KEY", "")
+    company_agent_timeout_seconds: int = int(
+        os.getenv("COMPANY_AGENT_TIMEOUT_SECONDS", "30")
+    )
+    company_agent_max_retries: int = int(
+        os.getenv("COMPANY_AGENT_MAX_RETRIES", "1")
+    )
+
 
 @lru_cache
 def get_settings() -> Settings:
