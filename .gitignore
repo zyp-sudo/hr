@@ -49,6 +49,13 @@ data/raw/
 database-backup/
 data/etl/unified_jobs.csv
 
+# Competition runtime logs — regenerated on each run.
+/data/competition/rag_audit.jsonl
+
+# Pytest temporary directories — may have restricted permissions on Windows.
+/.pytest-tmp*/
+/pytest-temp-*/
+
 # Keep shareable environment templates, never real credentials.
 .env.*
 !.env.example
