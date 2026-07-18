@@ -1,6 +1,7 @@
 import { useCallback, useEffect, useRef, useState } from "react";
 import type { CSSProperties } from "react";
 import PlatformPage, { type PageKey, TalentGraphPage } from "./PlatformPages";
+import InterviewManagement from "./pages/InterviewManagement";
 import { AlertTriangle, ArrowUpRight, Bell, CalendarDays, Check, ChevronDown, FileImage, FileText, FileUp, Handshake, Plus, Sparkles, UserRound, UserRoundPlus, X } from "lucide-react";
 import TalentMatchCard, { ScoreDisplay, MatchMetricBar, AIRecommendation } from "./components/TalentMatchCard";
 import CandidateCard, { type CardData } from "./components/CandidateCard";
@@ -12,7 +13,7 @@ import { isLoggedIn, getSavedUser, logout, type AuthUser } from "./auth";
 type Job = { id:string; name:string; description?:string };
 type Assessment = AssessmentViewModel;
 type Candidate = { name:string; phone:string; email:string };
-type Notice = { id:string;type:"interview"|"resume";title:string;detail:string;time:string };
+type Notice = { id:string;entityId?:string;candidateId?:string;type:"interview"|"resume";title:string;detail:string;time:string };
 
 const jobs:Job[]=[
   {id:"backend",name:"高级后端工程师"},{id:"ai",name:"AI 算法工程师"},
@@ -20,7 +21,7 @@ const jobs:Job[]=[
 ];
 const nav:Array<{label:string;key:PageKey|"matching"}>=[
   {label:"主页",key:"overview"},{label:"岗位管理",key:"jobs"},{label:"人岗匹配",key:"matching"},
-  {label:"岗位能力图谱",key:"capability"},{label:"评估结果",key:"unified"},{label:"特别关注",key:"favorites"},{label:"招聘趋势",key:"evolution"},
+  {label:"岗位能力图谱",key:"capability"},{label:"评估结果",key:"unified"},{label:"面试管理",key:"interviews"},{label:"特别关注",key:"favorites"},{label:"招聘趋势",key:"evolution"},
 ];
 const radarLabels=["技术能力","项目经验","团队协作","教育背景","软技能"];
 
@@ -36,7 +37,7 @@ function Radar({values}:{values:number[]}){
 
 export default function App(){
   const [jobOptions,setJobOptions]=useState(jobs);
-  const getInitialPage=():PageKey|"matching"=>{const stored=sessionStorage.getItem("talentmatch-activePage");if(stored==="competition"){sessionStorage.setItem("talentmatch-activePage","jobs");return"jobs"}if(stored==="graph"){sessionStorage.setItem("talentmatch-activePage","matching");sessionStorage.setItem("talentmatch-matchingTab","graph");return"matching"}const valid=["overview","jobs","matching","capability","unified","favorites","evolution"];if(stored&&valid.includes(stored))return stored as PageKey|"matching";return "overview";};
+  const getInitialPage=():PageKey|"matching"=>{const stored=sessionStorage.getItem("talentmatch-activePage");if(stored==="competition"){sessionStorage.setItem("talentmatch-activePage","jobs");return"jobs"}if(stored==="graph"){sessionStorage.setItem("talentmatch-activePage","matching");sessionStorage.setItem("talentmatch-matchingTab","graph");return"matching"}const valid=["overview","jobs","matching","capability","unified","interviews","favorites","evolution"];if(stored&&valid.includes(stored))return stored as PageKey|"matching";return "overview";};
   const [activePage,setActivePage]=useState<PageKey|"matching">(getInitialPage);
   const [matchingTab,setMatchingTab]=useState<"match"|"graph">(()=>{const stored=sessionStorage.getItem("talentmatch-matchingTab");return stored==="graph"?"graph":"match";});
   const handleNavigate=(page:PageKey|"matching")=>{if(page==="graph"){setActivePage("matching");setMatchingTab("graph");sessionStorage.setItem("talentmatch-activePage","matching");sessionStorage.setItem("talentmatch-matchingTab","graph")}else{setActivePage(page);sessionStorage.setItem("talentmatch-activePage",page)}};
@@ -223,9 +224,9 @@ export default function App(){
     {/* ---- 鼠标跟随光晕 ---- */}
     <div className="mouse-glow-tracker" id="mouse-glow-tracker"/>
 
-    <header><div className="brand"><div className="logo"><Handshake/></div><h1>人岗匹配智能评估系统</h1></div><div className="header-actions"><span className={`api ${apiOnline?"online":"offline"}`}><i/>{apiOnline?"服务已连接":"服务未连接"}</span><div className="notification-wrap"><button className="notification-button" aria-label="通知" onClick={()=>{setNoticeOpen(x=>!x);loadNotices(true)}}><Bell/>{unread>0&&<i>{Math.min(unread,99)}</i>}</button>{noticeOpen&&<div className="notification-panel"><div className="notification-head"><span><b>招聘通知</b><small>面试安排与新简历</small></span><button onClick={()=>setNoticeOpen(false)}><X/></button></div><div className="notification-list">{notices.length?notices.map(item=><button key={item.id} onClick={()=>{setActivePage("overview");setNoticeOpen(false)}}>{item.type==="interview"?<CalendarDays/>:<FileText/>}<span><b>{item.title}</b><small>{item.detail}</small><time>{new Intl.DateTimeFormat("zh-CN",{month:"2-digit",day:"2-digit",hour:"2-digit",minute:"2-digit",hour12:false}).format(new Date(item.time))}</time></span></button>):<p>暂时没有新通知</p>}</div></div>}</div>{authUser?<span className="avatar" aria-label={authUser.name} title={`${authUser.name} · ${authUser.email}\n点击退出登录`} onClick={async()=>{await logout();setAuthUser(null);notify("已退出登录")}} style={{cursor:"pointer"}}>{authUser.name[0]}</span>:<button className="header-login-btn spring-hover" onClick={()=>setLoginModalOpen(true)}>登录</button>}</div></header>
+    <header><div className="brand"><div className="logo"><Handshake/></div><h1>人岗匹配智能评估系统</h1></div><div className="header-actions"><span className={`api ${apiOnline?"online":"offline"}`}><i/>{apiOnline?"服务已连接":"服务未连接"}</span><div className="notification-wrap"><button className="notification-button" aria-label="通知" onClick={()=>{setNoticeOpen(x=>!x);loadNotices(true)}}><Bell/>{unread>0&&<i>{Math.min(unread,99)}</i>}</button>{noticeOpen&&<div className="notification-panel"><div className="notification-head"><span><b>招聘通知</b><small>面试安排与新简历</small></span><button onClick={()=>setNoticeOpen(false)}><X/></button></div><div className="notification-list">{notices.length?notices.map(item=>{const target=(item as any).target;return <button key={item.id} onClick={()=>{if(target?.page==="interviews"){if(target.interviewId)sessionStorage.setItem("talentmatch-focus-interview",target.interviewId);setActivePage("interviews");sessionStorage.setItem("talentmatch-activePage","interviews")}else if(item.type==="interview"){if(target?.interviewId)sessionStorage.setItem("talentmatch-focus-interview",target.interviewId);else if((item as any).entityId)sessionStorage.setItem("talentmatch-focus-interview",(item as any).entityId);setActivePage("interviews");sessionStorage.setItem("talentmatch-activePage","interviews")}else{sessionStorage.setItem("talentmatch-open-hr-panel","candidates");if((item as any).entityId)sessionStorage.setItem("talentmatch-focus-entity",(item as any).entityId);setActivePage("jobs");sessionStorage.setItem("talentmatch-activePage","jobs")}setNoticeOpen(false);fetch(`/api/notifications/${item.id}/read`,{method:"PATCH"}).catch(()=>undefined);loadNotices()}}>{item.type==="interview"?<CalendarDays/>:<FileText/>}<span><b>{item.title}</b><small>{item.detail}</small><time>{new Intl.DateTimeFormat("zh-CN",{month:"2-digit",day:"2-digit",hour:"2-digit",minute:"2-digit",hour12:false}).format(new Date(item.time))}</time></span></button>}):<p>暂时没有新通知</p>}</div></div>}</div>{authUser?<span className="avatar" aria-label={authUser.name} title={`${authUser.name} · ${authUser.email}\n点击退出登录`} onClick={async()=>{await logout();setAuthUser(null);notify("已退出登录")}} style={{cursor:"pointer"}}>{authUser.name[0]}</span>:<button className="header-login-btn spring-hover" onClick={()=>setLoginModalOpen(true)}>登录</button>}</div></header>
     <nav>{nav.map(item=><button className={activePage===item.key?"active":""} key={item.key} onClick={()=>{if(!authUser&&item.key!=="overview"){setLoginModalOpen(true);notify("请先登录后查看")}else{handleNavigate(item.key)}}}>{item.label}</button>)}</nav>
-    {activePage!=="matching"?<PlatformPage key={activePage} page={activePage} onNavigate={handleNavigate} isLoggedIn={!!authUser} preferredCandidateName={graphCandidateName} onOpenGraph={name=>{setGraphCandidateName(name);setActivePage("matching");setMatchingTab("graph");sessionStorage.setItem("talentmatch-activePage","matching");sessionStorage.setItem("talentmatch-matchingTab","graph")}}/>:<>
+    {activePage==="interviews"?<InterviewManagement isLoggedIn={!!authUser} onNavigate={handleNavigate} onFocusInterviewId={()=>sessionStorage.getItem("talentmatch-focus-interview")||undefined}/>:activePage!=="matching"?<PlatformPage key={activePage} page={activePage} onNavigate={handleNavigate} isLoggedIn={!!authUser} preferredCandidateName={graphCandidateName} onOpenGraph={name=>{setGraphCandidateName(name);setActivePage("matching");setMatchingTab("graph");sessionStorage.setItem("talentmatch-activePage","matching");sessionStorage.setItem("talentmatch-matchingTab","graph")}}/>:<>
       <div className="sub-nav">
         <button className={matchingTab==="match"?"active":""} onClick={()=>{setMatchingTab("match");sessionStorage.setItem("talentmatch-matchingTab","match")}}>智能匹配</button>
         <button className={matchingTab==="graph"?"active":""} onClick={()=>{setMatchingTab("graph");sessionStorage.setItem("talentmatch-matchingTab","graph")}}>人才能力图谱</button>

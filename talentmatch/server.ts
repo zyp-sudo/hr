@@ -49,19 +49,99 @@ const database=new DatabaseSync(databasePath);
 database.exec("CREATE TABLE IF NOT EXISTS trend_snapshots (id INTEGER PRIMARY KEY AUTOINCREMENT, job_id TEXT NOT NULL, fetched_at TEXT NOT NULL, payload_json TEXT NOT NULL)");
 const latestTrend=database.prepare("SELECT payload_json, fetched_at FROM trend_snapshots WHERE job_id = ? ORDER BY id DESC LIMIT 1");
 const saveTrend=database.prepare("INSERT INTO trend_snapshots (job_id, fetched_at, payload_json) VALUES (?, ?, ?)");
-type HrState = { candidates:Array<Record<string,any>>; interviews:Array<Record<string,any>>; jobs:Array<Record<string,any>>; favorites:string[] };
+type HrState = { candidates:Array<Record<string,any>>; interviews:Array<Record<string,any>>; jobs:Array<Record<string,any>>; favorites:string[]; interviewTags?:Array<Record<string,any>>; notifications?:Array<Record<string,any>> };
+// ── Write lock to prevent concurrent hr_state.json writes ──
+let writeLock = Promise.resolve();
+function lockedWrite(fn:()=>Promise<void>){writeLock=writeLock.then(fn,fn);return writeLock}
 const initialHrState:HrState = {
   candidates:[
     {id:"candidate-linchen",name:"林晨",email:"linchen@example.com",phone:"138****1024",stage:"待评估",skills:["Java","Go","Redis","微服务"],experienceYears:6,education:"本科",projectScore:88,collaborationScore:84,createdAt:new Date().toISOString()},
     {id:"candidate-zhouning",name:"周宁",email:"zhouning@example.com",phone:"139****3078",stage:"待面试",skills:["Python","LLM","RAG","PyTorch","SQL"],experienceYears:4,education:"硕士",projectScore:92,collaborationScore:80,createdAt:new Date().toISOString()},
     {id:"candidate-anonymous",name:"匿名候选人",email:"",phone:"",stage:"待评估",skills:["React","TypeScript","可视化"],experienceYears:3,education:"本科",projectScore:76,collaborationScore:86,createdAt:new Date().toISOString()},
   ],
-  interviews:[{id:"interview-1",candidateId:"candidate-zhouning",candidateName:"周宁",jobTitle:"高级后端工程师",scheduledAt:new Date(Date.now()+86400000).toISOString(),interviewer:"技术面试官",status:"待进行"}],
+  interviews:[{id:"interview-1",candidateId:"candidate-zhouning",candidateName:"周宁",jobId:"ai",jobTitle:"AI 算法工程师",title:"周宁 · 技术一面",startsAt:new Date(Date.now()+86400000).toISOString(),endsAt:new Date(Date.now()+86400000+3600000).toISOString(),timezone:"Asia/Shanghai",format:"视频",customFormat:"",location:"",meetingUrl:"",interviewers:["技术面试官"],round:"技术一面",customRound:"",status:"scheduled",priority:"important",customPriority:"",tagIds:[],focusAreas:["系统设计","项目深度"],questions:[],internalNotes:"",candidateNotes:"",contactStatus:"not_contacted",reminderMinutes:30,isPinned:false,createdAt:new Date(Date.now()-86400000).toISOString(),updatedAt:new Date().toISOString()}],
   jobs:[],
   favorites:[],
+  interviewTags:[
+    {id:"tag-priority",name:"重点",color:"#f59e0b",createdAt:new Date().toISOString()},
+    {id:"tag-tech",name:"技术面",color:"#3b82f6",createdAt:new Date().toISOString()},
+    {id:"tag-hr",name:"HR面",color:"#10b981",createdAt:new Date().toISOString()},
+    {id:"tag-review",name:"需复核",color:"#ef4444",createdAt:new Date().toISOString()},
+    {id:"tag-urgent",name:"紧急",color:"#dc2626",createdAt:new Date().toISOString()},
+  ],
+  notifications:[],
 };
-async function readHrState():Promise<HrState>{try{const saved=JSON.parse(await fs.readFile(hrStatePath,"utf8"));return {...initialHrState,...saved,favorites:Array.isArray(saved.favorites)?saved.favorites:[],candidates:(saved.candidates||initialHrState.candidates).map((c:any)=>({...initialHrState.candidates.find(x=>x.id===c.id),...c}))}}catch{return initialHrState}}
+async function readHrState():Promise<HrState>{try{const raw=JSON.parse(await fs.readFile(hrStatePath,"utf8"));const saved={...initialHrState,...raw,favorites:Array.isArray(raw.favorites)?raw.favorites:[],candidates:(raw.candidates||initialHrState.candidates).map((c:any)=>({...initialHrState.candidates.find(x=>x.id===c.id),...c})),interviewTags:raw.interviewTags||initialHrState.interviewTags||[],notifications:raw.notifications||initialHrState.notifications||[]};// Normalize interviews
+saved.interviews=(saved.interviews||[]).map((iv:any)=>normalizeInterview(iv,saved.candidates));// Rebuild notifications
+saved.notifications=buildNotifications(saved.interviews,saved.candidates,saved.notifications);return saved}catch{return initialHrState}}
 async function writeHrState(state:HrState){await fs.mkdir(path.dirname(hrStatePath),{recursive:true});await fs.writeFile(hrStatePath,JSON.stringify(state,null,2),"utf8")}
+
+// ── Interview normalizer: convert legacy fields to new structure ────────────
+const STATUS_MAP:Record<string,string>={"待进行":"scheduled","待安排":"pending","已安排":"scheduled","进行中":"in_progress","已完成":"completed","已取消":"cancelled"};
+function normalizeInterview(raw:Record<string,any>,candidates:Array<Record<string,any>>):Record<string,any>{
+  const candidate=candidates.find(c=>c.id===raw.candidateId)||{name:raw.candidateName||"匿名候选人"};
+  const now=new Date().toISOString();
+  // merge legacy scheduledAt / single interviewer / tags / notes
+  const startsAt=raw.startsAt||raw.scheduledAt||now;
+  const endsAt=raw.endsAt||(raw.startsAt?new Date(new Date(raw.startsAt).getTime()+3600000).toISOString():new Date(Date.now()+3600000).toISOString());
+  const interviewers=Array.isArray(raw.interviewers)&&raw.interviewers.length?raw.interviewers:(raw.interviewer?[raw.interviewer]:["待分配"]);
+  const tagIds=Array.isArray(raw.tagIds)?raw.tagIds:Array.isArray(raw.tags)?[]:[];
+  return {
+    id:raw.id||crypto.randomUUID(),
+    candidateId:raw.candidateId||"",
+    candidateName:candidate.name||raw.candidateName||"匿名候选人",
+    jobId:raw.jobId||"",
+    jobTitle:raw.jobTitle||"待定岗位",
+    title:raw.title||`${candidate.name||raw.candidateName||"候选人"} · ${raw.round||raw.jobTitle||"面试"}`,
+    startsAt, endsAt,
+    timezone:raw.timezone||"Asia/Shanghai",
+    format:raw.format||"视频",
+    customFormat:raw.customFormat||"",
+    location:raw.location||"",
+    meetingUrl:raw.meetingUrl||"",
+    interviewers,
+    round:raw.round||"初试",
+    customRound:raw.customRound||"",
+    status:STATUS_MAP[raw.status]||raw.status||"scheduled",
+    priority:raw.priority||"普通",
+    customPriority:raw.customPriority||"",
+    tagIds,
+    focusAreas:Array.isArray(raw.focusAreas)?raw.focusAreas:[],
+    questions:Array.isArray(raw.questions)?raw.questions:[],
+    internalNotes:raw.internalNotes||raw.notes||"",
+    candidateNotes:raw.candidateNotes||"",
+    contactStatus:raw.contactStatus||"not_contacted",
+    reminderMinutes:typeof raw.reminderMinutes==="number"?raw.reminderMinutes:30,
+    isPinned:Boolean(raw.isPinned),
+    createdAt:raw.createdAt||now,
+    updatedAt:raw.updatedAt||now,
+  };
+}
+
+// ── Generate notifications from interviews ──────────────────────────────────
+function buildNotifications(interviews:Array<Record<string,any>>,candidates:Array<Record<string,any>>,existing:Array<Record<string,any>>):Array<Record<string,any>>{
+  const now=Date.now();
+  const upcoming=interviews.filter(iv=>{
+    const s=STATUS_MAP[iv.status]||iv.status;
+    return s==="scheduled"||s==="in_progress";
+  });
+  return upcoming.map(iv=>{
+    const startsAt=new Date(iv.startsAt||iv.scheduledAt||0).getTime();
+    const diff=startsAt-now;
+    const isSoon=diff>0&&diff<3600000; // within 1 hour
+    const existingNote=existing.find(n=>n.target?.interviewId===iv.id);
+    return {
+      id:existingNote?.id||`notif-${iv.id}`,
+      type:"interview" as const,
+      title:isSoon?`即将开始：${iv.candidateName} ${iv.round||""}`.trim():`面试安排：${iv.candidateName}`,
+      detail:`${iv.jobTitle||""} · ${new Date(iv.startsAt||iv.scheduledAt).toLocaleString("zh-CN",{month:"2-digit",day:"2-digit",hour:"2-digit",minute:"2-digit",hour12:false})}`,
+      time:iv.updatedAt||iv.createdAt||new Date().toISOString(),
+      readAt:existingNote?.readAt||null,
+      target:{page:"interviews",interviewId:iv.id,candidateId:iv.candidateId},
+    };
+  });
+}
+
 async function localEvolution(jobId:string){const [trendText,jobText]=await Promise.all([fs.readFile(path.join(projectRoot,"data","evolution.csv"),"utf8"),fs.readFile(path.join(projectRoot,"data","jobs.csv"),"utf8")]);const trendRows=trendText.trim().split(/\r?\n/).slice(1).map(line=>{const [id,period,skill,demand]=line.split(",");return {jobId:id,period,skill,demand:Number(demand),sourceCount:1}});const jobRows=jobText.trim().split(/\r?\n/).slice(1).map(line=>{const [id,name]=line.split(",");return {roleId:id,role:name,recordCount:trendRows.filter(row=>row.jobId===id).length}});const selected=trendRows.filter(row=>row.jobId===jobId);const fallback=selected.length?selected:trendRows.filter(row=>row.jobId===jobRows[0]?.roleId);const activeId=selected.length?jobId:jobRows[0]?.roleId;return {title:jobRows.find(row=>row.roleId===activeId)?.role||"岗位技能需求趋势",jobId:activeId,roleOptions:jobRows,series:fallback,seriesCount:fallback.length,source:"data/evolution.csv"}}
 async function captureTalentVector(candidate:Record<string,any>){try{const response=await fetch(`${process.env.STORAGE_API_URL||"http://127.0.0.1:8080"}/api/talent-vectors/upsert`,{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify(candidate),signal:AbortSignal.timeout(1800)});return response.ok?{status:"stored"}:{status:"unavailable",httpStatus:response.status}}catch{return {status:"unavailable"}}}
 
@@ -292,12 +372,223 @@ async function startServer() {
   app.get("/api/jobs", (_req, res) => res.json({ items: jobs }));
   app.get("/api/hr/state", async (_req,res)=>res.json(await readHrState()));
   app.get("/api/hr/favorites",async(_req,res)=>{const state=await readHrState();const items=state.favorites.map(id=>state.candidates.find(candidate=>candidate.id===id)).filter(Boolean).map(candidate=>({...candidate,latestAssessment:history.find(item=>(item.candidateName||"匿名候选人")===(candidate?.name||"匿名候选人"))||null}));res.json({items})});
-  app.put("/api/hr/favorites/:candidateId",async(req,res,next)=>{try{const state=await readHrState();const candidate=state.candidates.find(item=>item.id===req.params.candidateId);if(!candidate)return res.status(404).json({error:"候选人不存在"});if(!state.favorites.includes(candidate.id))state.favorites.unshift(candidate.id);await writeHrState(state);res.json({favorite:true,candidateId:candidate.id})}catch(error){next(error)}});
-  app.delete("/api/hr/favorites/:candidateId",async(req,res,next)=>{try{const state=await readHrState();state.favorites=state.favorites.filter(id=>id!==req.params.candidateId);await writeHrState(state);res.json({favorite:false,candidateId:req.params.candidateId})}catch(error){next(error)}});
-  app.get("/api/notifications",async (_req,res)=>{const state=await readHrState();const interviews=state.interviews.filter(x=>x.status==="待进行").map(x=>({id:`interview-${x.id}`,type:"interview",title:`待安排面试：${x.candidateName||"匿名候选人"}`,detail:`${x.jobTitle||"待定岗位"} · ${x.interviewer||"待分配面试官"}`,time:x.scheduledAt||x.createdAt}));const resumes=state.candidates.map(x=>({id:`resume-${x.id}`,type:"resume",title:`收到新简历：${x.name||"匿名候选人"}`,detail:`${(x.skills||[]).slice(0,3).join("、")||"尚未提取技能"} · ${x.stage||"待评估"}`,time:x.createdAt}));res.json({items:[...interviews,...resumes].sort((a,b)=>String(b.time).localeCompare(String(a.time))).slice(0,12),unread:interviews.length+resumes.filter(x=>Date.now()-new Date(x.time).getTime()<7*86400000).length})});
-  app.post("/api/hr/candidates", async (req,res,next)=>{try{const state=await readHrState();const item={id:crypto.randomUUID(),name:String(req.body.name||"匿名候选人").trim()||"匿名候选人",email:String(req.body.email||""),phone:String(req.body.phone||""),stage:String(req.body.stage||"待评估"),skills:Array.isArray(req.body.skills)?req.body.skills:String(req.body.skills||"").split(/[,，、]/).filter(Boolean),experienceYears:Number(req.body.experienceYears||0),education:String(req.body.education||"未填写"),projectScore:Number(req.body.projectScore||0),collaborationScore:Number(req.body.collaborationScore||0),profileText:String(req.body.profileText||req.body.resumeText||""),createdAt:new Date().toISOString()};state.candidates.unshift(item);await writeHrState(state);const vectorCapture=await captureTalentVector(item);res.status(201).json({...item,vectorCapture})}catch(e){next(e)}});
+  app.put("/api/hr/favorites/:candidateId",async(req,res,next)=>{try{const state=await readHrState();const candidate=state.candidates.find(item=>item.id===req.params.candidateId);if(!candidate)return res.status(404).json({error:"候选人不存在"});if(!state.favorites.includes(candidate.id))state.favorites.unshift(candidate.id);await lockedWrite(()=>writeHrState(state));res.json({favorite:true,candidateId:candidate.id})}catch(error){next(error)}});
+  app.delete("/api/hr/favorites/:candidateId",async(req,res,next)=>{try{const state=await readHrState();state.favorites=state.favorites.filter(id=>id!==req.params.candidateId);await lockedWrite(()=>writeHrState(state));res.json({favorite:false,candidateId:req.params.candidateId})}catch(error){next(error)}});
+  app.post("/api/hr/candidates", async (req,res,next)=>{try{const state=await readHrState();const item={id:crypto.randomUUID(),name:String(req.body.name||"匿名候选人").trim()||"匿名候选人",email:String(req.body.email||""),phone:String(req.body.phone||""),stage:String(req.body.stage||"待评估"),skills:Array.isArray(req.body.skills)?req.body.skills:String(req.body.skills||"").split(/[,，、]/).filter(Boolean),experienceYears:Number(req.body.experienceYears||0),education:String(req.body.education||"未填写"),projectScore:Number(req.body.projectScore||0),collaborationScore:Number(req.body.collaborationScore||0),profileText:String(req.body.profileText||req.body.resumeText||""),createdAt:new Date().toISOString()};state.candidates.unshift(item);await lockedWrite(()=>writeHrState(state));const vectorCapture=await captureTalentVector(item);res.status(201).json({...item,vectorCapture})}catch(e){next(e)}});
   app.get("/api/vector/health",async(_req,res)=>{try{const response=await fetch(`${process.env.STORAGE_API_URL||"http://127.0.0.1:8080"}/api/talent-vectors/health`,{signal:AbortSignal.timeout(1800)});res.status(response.status).send(await response.text())}catch{res.status(503).json({status:"unavailable",detail:"Milvus 向量服务未启动"})}});
-  app.post("/api/hr/interviews", async (req,res,next)=>{try{const state=await readHrState();const item={id:crypto.randomUUID(),candidateId:String(req.body.candidateId||""),candidateName:String(req.body.candidateName||"匿名候选人"),jobTitle:String(req.body.jobTitle||"待定岗位"),scheduledAt:String(req.body.scheduledAt||new Date().toISOString()),interviewer:String(req.body.interviewer||"待分配"),status:"待进行",createdAt:new Date().toISOString()};state.interviews.unshift(item);const c=state.candidates.find(x=>x.id===item.candidateId);if(c)c.stage="待面试";await writeHrState(state);res.status(201).json(item)}catch(e){next(e)}});
+  // ── Interviews CRUD ──────────────────────────────────────────────────────
+  const VALID_STATUSES=["pending","scheduled","in_progress","completed","cancelled"];
+  app.get("/api/hr/interviews",async(req,res,next)=>{try{
+    const state=await readHrState();
+    let list=state.interviews;
+    const q=req.query as Record<string,string>;
+    if(q.status&&VALID_STATUSES.includes(q.status)) list=list.filter(iv=>iv.status===q.status);
+    if(q.candidateId) list=list.filter(iv=>iv.candidateId===q.candidateId);
+    if(q.jobTitle) list=list.filter(iv=>String(iv.jobTitle||"").includes(q.jobTitle!));
+    if(q.tag) list=list.filter(iv=>(iv.tagIds||[]).includes(q.tag));
+    if(q.dateFrom) list=list.filter(iv=>new Date(iv.startsAt)>=new Date(q.dateFrom!));
+    if(q.dateTo) list=list.filter(iv=>new Date(iv.startsAt)<=new Date(q.dateTo!));
+    if(q.isPinned==="1") list=list.filter(iv=>Boolean(iv.isPinned));
+    if(q.onlyFavorites==="1") list=list.filter(iv=>state.favorites.includes(iv.candidateId));
+    if(q.search){const s=q.search.toLowerCase();list=list.filter(iv=>`${iv.candidateName}${iv.jobTitle}${(iv.interviewers||[]).join(" ")}${iv.title}`.toLowerCase().includes(s))}
+    if(q.round) list=list.filter(iv=>iv.round===q.round);
+    if(q.priority) list=list.filter(iv=>iv.priority===q.priority);
+    // sort by startsAt descending (newest first)
+    list=[...list].sort((a,b)=>new Date(String(b.startsAt||"")).getTime()-new Date(String(a.startsAt||"")).getTime());
+    // pagination
+    const page=Math.max(1,Number(q.page)||1);
+    const pageSize=Math.min(100,Math.max(1,Number(q.pageSize)||200));
+    const total=list.length;
+    const items=list.slice((page-1)*pageSize,page*pageSize);
+    res.json({items,total,page,pageSize});
+  }catch(e){next(e)}});
+
+  app.get("/api/hr/interviews/:id",async(req,res,next)=>{try{
+    const state=await readHrState();
+    const iv=state.interviews.find(x=>x.id===req.params.id);
+    if(!iv) return res.status(404).json({error:"面试记录不存在"});
+    res.json(iv);
+  }catch(e){next(e)}});
+
+  app.post("/api/hr/interviews",async(req,res,next)=>{try{
+    const state=await readHrState();
+    const body=req.body||{};
+    // validate
+    if(!body.candidateId) return res.status(400).json({error:"请选择候选人"});
+    const candidate=state.candidates.find(c=>c.id===body.candidateId);
+    if(!candidate) return res.status(400).json({error:"候选人不存在"});
+    if(!body.startsAt) return res.status(400).json({error:"请设置面试开始时间"});
+    if(!body.endsAt) return res.status(400).json({error:"请设置面试结束时间"});
+    if(new Date(body.endsAt)<=new Date(body.startsAt)) return res.status(400).json({error:"结束时间必须晚于开始时间"});
+    if(body.status&&!VALID_STATUSES.includes(body.status)) return res.status(400).json({error:`状态值无效，允许：${VALID_STATUSES.join(", ")}`});
+    const now=new Date().toISOString();
+    const item={
+      id:crypto.randomUUID(),
+      candidateId:body.candidateId,
+      candidateName:candidate.name||"匿名候选人",
+      jobId:body.jobId||"",
+      jobTitle:body.jobTitle||"待定岗位",
+      title:body.title||`${candidate.name||"匿名候选人"} · ${body.round||"面试"}`,
+      startsAt:body.startsAt,
+      endsAt:body.endsAt,
+      timezone:body.timezone||"Asia/Shanghai",
+      format:body.format||"视频",
+      customFormat:body.customFormat||"",
+      location:body.location||"",
+      meetingUrl:body.meetingUrl||"",
+      interviewers:Array.isArray(body.interviewers)?body.interviewers.filter(Boolean):(body.interviewer?[body.interviewer]:["待分配"]),
+      round:body.round||"初试",
+      customRound:body.customRound||"",
+      status:body.status||"scheduled",
+      priority:body.priority||"普通",
+      customPriority:body.customPriority||"",
+      tagIds:Array.isArray(body.tagIds)?body.tagIds:[],
+      focusAreas:Array.isArray(body.focusAreas)?body.focusAreas.filter(Boolean):[],
+      questions:Array.isArray(body.questions)?body.questions.filter(Boolean):[],
+      internalNotes:body.internalNotes||"",
+      candidateNotes:body.candidateNotes||"",
+      contactStatus:body.contactStatus||"not_contacted",
+      reminderMinutes:typeof body.reminderMinutes==="number"?body.reminderMinutes:30,
+      isPinned:Boolean(body.isPinned),
+      createdAt:now,
+      updatedAt:now,
+    };
+    state.interviews.unshift(item);
+    if(candidate) candidate.stage="待面试";
+    state.notifications=buildNotifications(state.interviews,state.candidates,state.notifications||[]);
+    await lockedWrite(()=>writeHrState(state));
+    res.status(201).json(item);
+  }catch(e){next(e)}});
+
+  app.patch("/api/hr/interviews/:id",async(req,res,next)=>{try{
+    const state=await readHrState();
+    const iv=state.interviews.find(x=>x.id===req.params.id);
+    if(!iv) return res.status(404).json({error:"面试记录不存在"});
+    const body=req.body||{};
+    // validate time if both provided
+    if(body.startsAt||body.endsAt){
+      const startsAt=body.startsAt||iv.startsAt;
+      const endsAt=body.endsAt||iv.endsAt;
+      if(new Date(endsAt)<=new Date(startsAt)) return res.status(400).json({error:"结束时间必须晚于开始时间"});
+    }
+    if(body.status&&!VALID_STATUSES.includes(body.status)) return res.status(400).json({error:`状态值无效`});
+    // allowed update keys
+    const allowed=["startsAt","endsAt","timezone","format","customFormat","location","meetingUrl","interviewers","round","customRound","status","priority","customPriority","tagIds","focusAreas","questions","internalNotes","candidateNotes","contactStatus","reminderMinutes","isPinned","title","jobTitle","jobId","candidateId"];
+    for(const key of allowed){
+      if(body[key]!==undefined){
+        if(Array.isArray(body[key])) (iv as any)[key]=body[key].filter(Boolean);
+        else (iv as any)[key]=body[key];
+      }
+    }
+    // legacy compat keys
+    if(body.interviewer&&!Array.isArray(body.interviewers)) iv.interviewers=[String(body.interviewer)];
+    if(body.notes&&!body.internalNotes) iv.internalNotes=String(body.notes);
+    if(body.tags&&!body.tagIds) iv.tagIds=body.tags.map(String).filter(Boolean);
+    iv.updatedAt=new Date().toISOString();
+    // update candidate stage
+    const candidate=state.candidates.find(c=>c.id===iv.candidateId);
+    if(candidate){
+      const s=iv.status;
+      if(s==="completed") candidate.stage="已面试";
+      else if(s==="cancelled") candidate.stage="待评估";
+      else if(s==="scheduled"||s==="in_progress") candidate.stage="待面试";
+    }
+    state.notifications=buildNotifications(state.interviews,state.candidates,state.notifications||[]);
+    await lockedWrite(()=>writeHrState(state));
+    res.json(iv);
+  }catch(e){next(e)}});
+
+  app.delete("/api/hr/interviews/:id",async(req,res,next)=>{try{
+    const state=await readHrState();
+    const idx=state.interviews.findIndex(x=>x.id===req.params.id);
+    if(idx===-1) return res.status(404).json({error:"面试记录不存在"});
+    state.interviews.splice(idx,1);
+    state.notifications=buildNotifications(state.interviews,state.candidates,state.notifications||[]);
+    await lockedWrite(()=>writeHrState(state));
+    res.json({deleted:true,id:req.params.id});
+  }catch(e){next(e)}});
+
+  // ── Interview Tags CRUD ──────────────────────────────────────────────────
+  app.get("/api/hr/interview-tags",async(_req,res,next)=>{try{
+    const state=await readHrState();
+    res.json({items:state.interviewTags||[]});
+  }catch(e){next(e)}});
+
+  app.post("/api/hr/interview-tags",async(req,res,next)=>{try{
+    const state=await readHrState();
+    const name=String(req.body.name||"").trim();
+    if(!name) return res.status(400).json({error:"标签名称不能为空"});
+    if((state.interviewTags||[]).some(t=>t.name===name)) return res.status(400).json({error:"标签名称已存在"});
+    const tag={id:crypto.randomUUID(),name,color:req.body.color||"#6366f1",createdAt:new Date().toISOString()};
+    state.interviewTags=(state.interviewTags||[]).concat([tag]);
+    await lockedWrite(()=>writeHrState(state));
+    res.status(201).json(tag);
+  }catch(e){next(e)}});
+
+  app.patch("/api/hr/interview-tags/:id",async(req,res,next)=>{try{
+    const state=await readHrState();
+    const tag=(state.interviewTags||[]).find(t=>t.id===req.params.id);
+    if(!tag) return res.status(404).json({error:"标签不存在"});
+    if(req.body.name!==undefined) tag.name=String(req.body.name).trim();
+    if(req.body.color!==undefined) tag.color=String(req.body.color);
+    await lockedWrite(()=>writeHrState(state));
+    res.json(tag);
+  }catch(e){next(e)}});
+
+  app.delete("/api/hr/interview-tags/:id",async(req,res,next)=>{try{
+    const state=await readHrState();
+    const tagIdx=(state.interviewTags||[]).findIndex(t=>t.id===req.params.id);
+    if(tagIdx===-1) return res.status(404).json({error:"标签不存在"});
+    // remove tag from all interviews
+    state.interviews.forEach(iv=>{if(iv.tagIds) iv.tagIds=iv.tagIds.filter((tid:string)=>tid!==req.params.id)});
+    state.interviewTags!.splice(tagIdx,1);
+    await lockedWrite(()=>writeHrState(state));
+    res.json({deleted:true,id:req.params.id});
+  }catch(e){next(e)}});
+
+  // ── Candidate detail ─────────────────────────────────────────────────────
+  app.get("/api/hr/candidates/:id",async(req,res,next)=>{try{
+    const state=await readHrState();
+    const c=state.candidates.find(x=>x.id===req.params.id);
+    if(!c) return res.status(404).json({error:"候选人不存在"});
+    res.json(c);
+  }catch(e){next(e)}});
+
+  app.patch("/api/hr/candidates/:id",async(req,res,next)=>{try{
+    const state=await readHrState();
+    const c=state.candidates.find(x=>x.id===req.params.id);
+    if(!c) return res.status(404).json({error:"候选人不存在"});
+    const allowed=["name","email","phone","stage","education","experienceYears","profileText"];
+    for(const key of allowed){if(req.body[key]!==undefined) (c as any)[key]=req.body[key]}
+    if(req.body.skills) c.skills=Array.isArray(req.body.skills)?req.body.skills:String(req.body.skills).split(/[,，、]/).filter(Boolean);
+    await lockedWrite(()=>writeHrState(state));
+    res.json(c);
+  }catch(e){next(e)}});
+
+  // ── Enhanced Notifications ──────────────────────────────────────────────
+  app.get("/api/notifications",async(_req,res)=>{try{
+    const state=await readHrState();
+    const items=(state.notifications||[]).sort((a,b)=>String(b.time).localeCompare(String(a.time))).slice(0,20);
+    const unread=items.filter(n=>!n.readAt).length;
+    res.json({items,unread});
+  }catch{res.json({items:[],unread:0})}});
+
+  app.patch("/api/notifications/:id/read",async(req,res,next)=>{try{
+    const state=await readHrState();
+    const n=(state.notifications||[]).find(x=>x.id===req.params.id);
+    if(!n) return res.status(404).json({error:"通知不存在"});
+    n.readAt=new Date().toISOString();
+    await lockedWrite(()=>writeHrState(state));
+    res.json(n);
+  }catch(e){next(e)}});
+
+  app.post("/api/notifications/read-all",async(_req,res,next)=>{try{
+    const state=await readHrState();
+    const now=new Date().toISOString();
+    (state.notifications||[]).forEach(n=>{if(!n.readAt) n.readAt=now});
+    await lockedWrite(()=>writeHrState(state));
+    res.json({marked:true});
+  }catch(e){next(e)}});
   app.post("/api/hr/jobs", async (req,res,next)=>{try{const state=await readHrState();const item={...req.body,id:crypto.randomUUID(),createdAt:new Date().toISOString(),source:"HR手动创建"};state.jobs.unshift(item);await writeHrState(state);res.status(201).json(item)}catch(e){next(e)}});
   app.delete("/api/hr/jobs/:jobId", async (req,res,next)=>{try{const state=await readHrState();const before=state.jobs.length;state.jobs=state.jobs.filter((job:any)=>job.id!==req.params.jobId);if(state.jobs.length===before)return res.status(404).json({error:"岗位不存在或并非手动创建"});await writeHrState(state);res.json({deleted:true,jobId:req.params.jobId})}catch(e){next(e)}});
 

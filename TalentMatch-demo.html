@@ -1,0 +1,803 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>人岗匹配智能评估系统 — TalentMatch</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Noto+Sans+SC:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+/* ===== RESET & BASE ===== */
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --bg:#0a0a0f;--panel:rgba(255,255,255,0.025);--border:rgba(255,255,255,0.06);
+  --text:#e8e8ed;--text-dim:#9090a8;--text-muted:#606078;
+  --violet:#a78bfa;--lilac:#c084fc;--mint:#5eead4;--cyan:#22d3ee;
+  --purple:#8b5cf6;--rose:#f472b6;--amber:#fbbf24;--emerald:#34d399;
+  --red:#f87171;--blue:#60a5fa;
+  --font-display:'Space Grotesk',sans-serif;
+  --font-body:'Noto Sans SC',sans-serif;
+  --font-mono:'JetBrains Mono',monospace;
+}
+html,body{height:100%;overflow-x:hidden}
+body{
+  font-family:var(--font-body);background:var(--bg);color:var(--text);
+  -webkit-font-smoothing:antialiased;
+}
+/* ===== AMBIENT LIGHT SYSTEM ===== */
+.ambient{
+  position:fixed;inset:0;pointer-events:none;z-index:0;overflow:hidden;
+}
+.light{
+  position:absolute;border-radius:50%;filter:blur(120px);opacity:0.18;
+  animation:bokeh 18s ease-in-out infinite;
+}
+.light-1{width:600px;height:600px;background:radial-gradient(circle,rgba(167,139,250,0.5),transparent);top:-10%;left:-5%;animation-delay:0s}
+.light-2{width:500px;height:500px;background:radial-gradient(circle,rgba(34,211,238,0.4),transparent);top:60%;right:-8%;animation-delay:-6s}
+.light-3{width:450px;height:450px;background:radial-gradient(circle,rgba(192,132,252,0.4),transparent);bottom:-10%;left:30%;animation-delay:-12s}
+.light-4{width:550px;height:550px;background:radial-gradient(circle,rgba(244,114,182,0.35),transparent);top:20%;left:60%;animation-delay:-4s}
+.light-5{width:400px;height:400px;background:radial-gradient(circle,rgba(94,234,212,0.35),transparent);top:40%;left:-6%;animation-delay:-10s}
+@keyframes bokeh{
+  0%,100%{transform:translate(0,0) scale(1);opacity:0.16}
+  25%{transform:translate(60px,-40px) scale(1.1);opacity:0.22}
+  50%{transform:translate(-30px,50px) scale(0.9);opacity:0.14}
+  75%{transform:translate(40px,20px) scale(1.05);opacity:0.2}
+}
+
+/* ===== MOUSE GLOW ===== */
+.mouse-glow{
+  position:fixed;width:400px;height:400px;pointer-events:none;z-index:0;
+  background:radial-gradient(circle,rgba(167,139,250,0.12),transparent 70%);
+  border-radius:50%;transform:translate(-50%,-50%);transition:left 0.4s ease-out,top 0.4s ease-out;
+}
+
+/* ===== APP SHELL ===== */
+.app-shell{
+  position:relative;z-index:1;max-width:1440px;margin:0 auto;padding:0 24px;
+}
+
+/* ===== GLASS HEADER ===== */
+.header{
+  position:sticky;top:12px;z-index:50;
+  display:flex;align-items:center;justify-content:space-between;
+  padding:14px 28px;margin-top:12px;
+  background:rgba(255,255,255,0.03);
+  backdrop-filter:blur(24px) saturate(140%);
+  -webkit-backdrop-filter:blur(24px) saturate(140%);
+  border:1px solid rgba(255,255,255,0.06);
+  border-radius:20px;
+}
+.brand{
+  display:flex;align-items:center;gap:12px;
+}
+.brand-logo{
+  width:36px;height:36px;border-radius:10px;
+  background:linear-gradient(135deg,var(--violet),var(--cyan));
+  display:flex;align-items:center;justify-content:center;
+  font-family:var(--font-display);font-weight:700;font-size:18px;color:#fff;
+}
+.brand-text{font-family:var(--font-display);font-weight:600;font-size:16px;letter-spacing:-0.2px}
+.header-actions{display:flex;align-items:center;gap:16px}
+.status-dot{width:8px;height:8px;border-radius:50%;background:var(--emerald);box-shadow:0 0 8px var(--emerald)}
+.status-text{font-size:12px;color:var(--text-dim);font-family:var(--font-mono)}
+.avatar{
+  width:34px;height:34px;border-radius:50%;
+  background:linear-gradient(135deg,var(--violet),var(--purple));
+  display:flex;align-items:center;justify-content:center;
+  font-size:14px;font-weight:600;cursor:pointer;transition:transform .2s;
+}
+.avatar:hover{transform:scale(1.08)}
+.notif-btn{
+  position:relative;width:34px;height:34px;border-radius:10px;
+  background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.06);
+  display:flex;align-items:center;justify-content:center;font-size:16px;cursor:pointer;
+  transition:all .2s;
+}
+.notif-btn:hover{background:rgba(255,255,255,0.08)}
+.notif-badge{
+  position:absolute;top:-4px;right:-4px;width:8px;height:8px;border-radius:50%;
+  background:var(--rose);
+}
+
+/* ===== NAVIGATION ===== */
+.nav-bar{
+  position:sticky;top:90px;z-index:40;
+  display:flex;gap:6px;padding:6px;margin-top:16px;
+  background:rgba(255,255,255,0.02);
+  backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);
+  border:1px solid rgba(255,255,255,0.05);border-radius:16px;
+  overflow-x:auto;
+}
+.nav-btn{
+  flex-shrink:0;padding:10px 20px;border-radius:12px;border:none;
+  background:transparent;color:var(--text-dim);
+  font-family:var(--font-body);font-size:14px;cursor:pointer;
+  transition:all .25s;white-space:nowrap;
+}
+.nav-btn:hover{color:var(--text);background:rgba(255,255,255,0.04)}
+.nav-btn.active{
+  color:#fff;background:rgba(167,139,250,0.15);
+  box-shadow:0 0 20px rgba(167,139,250,0.08);
+}
+
+/* ===== PAGE CONTENT ===== */
+.page-content{margin-top:24px;padding-bottom:80px;min-height:60vh}
+
+/* ===== STAT CARDS ===== */
+.stat-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-bottom:28px}
+.stat-card{
+  padding:22px 24px;border-radius:18px;
+  background:var(--panel);border:1px solid var(--border);
+  backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);
+  transition:all .3s;cursor:pointer;
+}
+.stat-card:hover{transform:translateY(-2px);border-color:rgba(167,139,250,0.2);box-shadow:0 8px 32px rgba(0,0,0,0.3)}
+.stat-label{font-size:12px;color:var(--text-muted);text-transform:uppercase;letter-spacing:.8px;margin-bottom:8px}
+.stat-value{font-family:var(--font-display);font-size:32px;font-weight:700;background:linear-gradient(135deg,var(--violet),var(--cyan));-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+.stat-change{font-size:12px;margin-top:6px}
+.stat-change.up{color:var(--emerald)}
+.stat-icon{font-size:24px;margin-bottom:8px}
+
+/* ===== SECTION ===== */
+.section-title{
+  font-family:var(--font-display);font-size:18px;font-weight:600;
+  margin-bottom:16px;display:flex;align-items:center;gap:10px;
+}
+.section-title::before{content:'';width:4px;height:20px;background:linear-gradient(to bottom,var(--violet),var(--cyan));border-radius:2px}
+
+/* ===== JOB CARDS ===== */
+.job-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:14px}
+.job-card{
+  padding:20px 22px;border-radius:16px;
+  background:var(--panel);border:1px solid var(--border);
+  backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);
+  transition:all .3s;cursor:pointer;
+}
+.job-card:hover{border-color:rgba(167,139,250,0.2);transform:translateY(-2px);box-shadow:0 8px 32px rgba(0,0,0,0.3)}
+.job-card h3{font-family:var(--font-display);font-size:16px;font-weight:600;margin-bottom:6px}
+.job-card .dept{font-size:12px;color:var(--text-dim);margin-bottom:10px}
+.job-tags{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:12px}
+.job-tag{
+  padding:4px 10px;border-radius:20px;font-size:11px;
+  background:rgba(167,139,250,0.1);color:var(--violet);
+  border:1px solid rgba(167,139,250,0.15);
+}
+.job-meta{display:flex;justify-content:space-between;align-items:center}
+.job-meta span{font-size:12px;color:var(--text-muted);font-family:var(--font-mono)}
+.job-status{padding:4px 10px;border-radius:20px;font-size:11px;font-weight:500}
+.job-status.hot{background:rgba(244,114,182,0.12);color:var(--rose)}
+.job-status.active{background:rgba(94,234,212,0.12);color:var(--mint)}
+
+/* ===== MATCHING WORKSPACE (3-COLUMN) ===== */
+.match-layout{display:grid;grid-template-columns:280px 1fr 360px;gap:16px;min-height:600px}
+.match-sidebar{
+  padding:18px;border-radius:18px;background:var(--panel);
+  border:1px solid var(--border);backdrop-filter:blur(10px);
+  display:flex;flex-direction:column;gap:14px;
+}
+.match-sidebar h4{font-family:var(--font-display);font-size:14px;font-weight:600}
+.sidebar-select{
+  width:100%;padding:10px 12px;border-radius:10px;
+  background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.08);
+  color:var(--text);font-family:var(--font-body);font-size:13px;
+  cursor:pointer;outline:none;
+}
+.sidebar-select:focus{border-color:var(--violet)}
+.candidate-list{display:flex;flex-direction:column;gap:8px;overflow-y:auto;flex:1}
+.candidate-thumb{
+  padding:12px;border-radius:12px;background:rgba(255,255,255,0.02);
+  border:1px solid rgba(255,255,255,0.04);cursor:pointer;
+  transition:all .2s;font-size:13px;
+}
+.candidate-thumb:hover{border-color:rgba(167,139,250,0.2);background:rgba(255,255,255,0.04)}
+.candidate-thumb .name{font-weight:600;font-size:14px}
+.candidate-thumb .skills{font-size:11px;color:var(--text-dim);margin-top:4px}
+.match-btn{
+  width:100%;padding:12px;border-radius:12px;border:none;
+  background:linear-gradient(135deg,var(--violet),var(--purple));
+  color:#fff;font-family:var(--font-body);font-size:14px;font-weight:600;
+  cursor:pointer;transition:all .3s;
+}
+.match-btn:hover{opacity:0.9;box-shadow:0 4px 20px rgba(167,139,250,0.3)}
+
+.match-workspace{
+  border-radius:18px;background:var(--panel);border:1px solid var(--border);
+  backdrop-filter:blur(10px);position:relative;overflow:hidden;
+  display:flex;align-items:center;justify-content:center;
+}
+.workspace-empty{text-align:center;color:var(--text-muted)}
+.workspace-empty .icon{font-size:48px;margin-bottom:12px;opacity:0.3}
+.workspace-empty p{font-size:14px}
+.candidate-on-canvas{
+  position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);
+  width:220px;padding:18px;border-radius:16px;
+  background:rgba(255,255,255,0.04);border:1px solid rgba(167,139,250,0.2);
+  backdrop-filter:blur(12px);cursor:grab;transition:box-shadow .3s;
+}
+.candidate-on-canvas:hover{box-shadow:0 0 30px rgba(167,139,250,0.15)}
+.candidate-on-canvas .name{font-weight:600;font-size:15px}
+.candidate-on-canvas .info{font-size:11px;color:var(--text-dim);margin-top:6px}
+
+.match-result-panel{
+  padding:18px;border-radius:18px;background:var(--panel);
+  border:1px solid var(--border);backdrop-filter:blur(10px);
+}
+.result-empty{text-align:center;color:var(--text-muted);padding:40px 0;font-size:14px}
+.score-ring{
+  width:80px;height:80px;border-radius:50%;margin:0 auto 12px;
+  background:conic-gradient(var(--emerald) 0% 85%,rgba(255,255,255,0.05) 85% 100%);
+  display:flex;align-items:center;justify-content:center;
+}
+.score-inner{
+  width:62px;height:62px;border-radius:50%;background:var(--bg);
+  display:flex;align-items:center;justify-content:center;
+  font-family:var(--font-display);font-size:22px;font-weight:700;color:var(--emerald);
+}
+.match-metrics{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:12px}
+.metric-item{padding:10px;border-radius:10px;background:rgba(255,255,255,0.02);text-align:center}
+.metric-value{font-family:var(--font-mono);font-size:16px;font-weight:600;color:var(--cyan)}
+.metric-label{font-size:10px;color:var(--text-dim);margin-top:2px}
+
+/* ===== CAPABILITY GRAPH PAGE ===== */
+.graph-container{
+  border-radius:18px;background:var(--panel);border:1px solid var(--border);
+  backdrop-filter:blur(10px);padding:24px;min-height:500px;
+  position:relative;overflow:hidden;
+}
+.graph-node{
+  position:absolute;padding:10px 16px;border-radius:12px;
+  font-size:12px;font-weight:500;cursor:pointer;transition:all .3s;
+}
+.graph-node.role{background:rgba(167,139,250,0.15);border:1px solid rgba(167,139,250,0.3);color:var(--violet)}
+.graph-node.skill{background:rgba(34,211,238,0.12);border:1px solid rgba(34,211,238,0.25);color:var(--cyan)}
+.graph-node.gap{background:rgba(244,114,182,0.12);border:1px solid rgba(244,114,182,0.25);color:var(--rose)}
+.graph-canvas-svg{position:absolute;inset:0;pointer-events:none}
+.graph-canvas-svg line{stroke:rgba(255,255,255,0.06);stroke-width:1}
+
+/* ===== ASSESSMENT / UNIFIED TABLE ===== */
+.table-wrap{border-radius:18px;background:var(--panel);border:1px solid var(--border);overflow:hidden}
+.table-header{
+  display:grid;grid-template-columns:2fr 1fr 1fr 120px 100px;gap:12px;
+  padding:14px 20px;background:rgba(255,255,255,0.02);font-size:12px;
+  color:var(--text-dim);font-weight:600;text-transform:uppercase;letter-spacing:.5px;
+}
+.table-row{
+  display:grid;grid-template-columns:2fr 1fr 1fr 120px 100px;gap:12px;
+  padding:14px 20px;border-top:1px solid rgba(255,255,255,0.03);font-size:13px;
+  transition:background .2s;cursor:pointer;align-items:center;
+}
+.table-row:hover{background:rgba(255,255,255,0.02)}
+.badge{
+  display:inline-block;padding:3px 10px;border-radius:20px;font-size:11px;font-weight:500;
+}
+.badge.excellent{background:rgba(94,234,212,0.12);color:var(--mint)}
+.badge.review{background:rgba(251,191,36,0.12);color:var(--amber)}
+.badge.average{background:rgba(96,165,250,0.12);color:var(--blue)}
+
+/* ===== TREND PAGE ===== */
+.trend-tabs{display:flex;gap:8px;margin-bottom:20px}
+.trend-tab{
+  padding:10px 20px;border-radius:10px;border:1px solid rgba(255,255,255,0.08);
+  background:transparent;color:var(--text-dim);font-family:var(--font-body);
+  font-size:13px;cursor:pointer;transition:all .2s;
+}
+.trend-tab.active{background:rgba(167,139,250,0.12);border-color:rgba(167,139,250,0.3);color:var(--violet)}
+.chart-placeholder{
+  height:300px;border-radius:18px;background:var(--panel);border:1px solid var(--border);
+  display:flex;align-items:center;justify-content:center;color:var(--text-muted);
+  font-size:14px;
+}
+
+/* ===== FAVORITES PAGE ===== */
+.fav-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:14px}
+.fav-card{
+  padding:20px;border-radius:16px;background:var(--panel);border:1px solid var(--border);
+  backdrop-filter:blur(10px);transition:all .3s;cursor:pointer;
+}
+.fav-card:hover{border-color:rgba(251,191,36,0.3);transform:translateY(-2px)}
+.fav-card .name{font-weight:600;font-size:15px;display:flex;align-items:center;gap:8px}
+.fav-card .star{color:var(--amber)}
+.fav-card .meta{font-size:12px;color:var(--text-dim);margin-top:8px}
+.fav-card .score{font-family:var(--font-mono);font-size:20px;font-weight:600;color:var(--emerald);margin-top:8px}
+
+/* ===== FAB ===== */
+.fab{
+  position:fixed;bottom:32px;right:32px;z-index:100;
+  width:56px;height:56px;border-radius:50%;
+  background:linear-gradient(135deg,var(--violet),var(--cyan));
+  border:none;color:#fff;font-size:28px;cursor:pointer;
+  box-shadow:0 8px 32px rgba(167,139,250,0.3);
+  transition:all .3s;display:flex;align-items:center;justify-content:center;
+}
+.fab:hover{transform:scale(1.08);box-shadow:0 12px 40px rgba(167,139,250,0.4)}
+
+/* ===== RESPONSIVE ===== */
+@media(max-width:1024px){
+  .stat-grid{grid-template-columns:repeat(2,1fr)}
+  .match-layout{grid-template-columns:1fr}
+}
+@media(max-width:640px){
+  .stat-grid{grid-template-columns:1fr}
+  .nav-bar{flex-wrap:nowrap}
+}
+</style>
+</head>
+<body>
+
+<!-- Ambient Light -->
+<div class="ambient">
+  <div class="light light-1"></div>
+  <div class="light light-2"></div>
+  <div class="light light-3"></div>
+  <div class="light light-4"></div>
+  <div class="light light-5"></div>
+</div>
+<div class="mouse-glow" id="mouseGlow"></div>
+
+<!-- App Shell -->
+<div class="app-shell">
+
+  <!-- Header -->
+  <header class="header">
+    <div class="brand">
+      <div class="brand-logo">TM</div>
+      <span class="brand-text">人岗匹配智能评估系统</span>
+    </div>
+    <div class="header-actions">
+      <span class="status-dot"></span>
+      <span class="status-text">AI 已就绪 · Gemini 2.5</span>
+      <button class="notif-btn" title="通知">
+        🔔<span class="notif-badge"></span>
+      </button>
+      <div class="avatar">管</div>
+    </div>
+  </header>
+
+  <!-- Navigation -->
+  <nav class="nav-bar" id="navBar">
+    <button class="nav-btn active" data-page="overview">🏠 主页</button>
+    <button class="nav-btn" data-page="jobs">💼 岗位管理</button>
+    <button class="nav-btn" data-page="matching">🎯 人岗匹配</button>
+    <button class="nav-btn" data-page="capability">📊 岗位能力图谱</button>
+    <button class="nav-btn" data-page="unified">📋 评估结果</button>
+    <button class="nav-btn" data-page="favorites">⭐ 特别关注</button>
+    <button class="nav-btn" data-page="evolution">📈 招聘趋势</button>
+  </nav>
+
+  <!-- Page Content -->
+  <div class="page-content" id="pageContent"></div>
+
+</div>
+
+<!-- FAB -->
+<button class="fab" title="上传简历">+</button>
+
+<script>
+// ===== NAVIGATION =====
+const pages = { overview, jobs, matching, capability, unified, favorites, evolution };
+
+document.getElementById('navBar').addEventListener('click', (e) => {
+  const btn = e.target.closest('.nav-btn');
+  if (!btn) return;
+  document.querySelectorAll('.nav-btn').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+  renderPage(btn.dataset.page);
+});
+
+// ===== MOUSE GLOW =====
+document.addEventListener('mousemove', (e) => {
+  const glow = document.getElementById('mouseGlow');
+  glow.style.left = e.clientX + 'px';
+  glow.style.top = e.clientY + 'px';
+});
+
+// ===== TAB SWITCHERS (generic delegation) =====
+document.getElementById('pageContent').addEventListener('click', (e) => {
+  const tab = e.target.closest('.trend-tab');
+  if (tab) {
+    const parent = tab.parentElement;
+    parent.querySelectorAll('.trend-tab').forEach(t => t.classList.remove('active'));
+    tab.classList.add('active');
+  }
+});
+
+// ===== INITIAL RENDER =====
+renderPage('overview');
+
+function renderPage(key) {
+  const fn = pages[key];
+  document.getElementById('pageContent').innerHTML = fn ? fn() : '<p style="color:var(--text-dim)">页面开发中...</p>';
+}
+
+function renderJobCard(title, dept, tags, salary, status, candidates) {
+  const cls = status === 'hot' ? 'hot' : 'active';
+  const label = status === 'hot' ? '🔥 急招' : '🟢 招聘中';
+  return `
+    <div class="job-card">
+      <h3>${title}</h3>
+      <div class="dept">${dept}</div>
+      <div class="job-tags">${tags.map(t => `<span class="job-tag">${t}</span>`).join('')}</div>
+      <div class="job-meta">
+        <span>${salary}</span>
+        <span>${candidates}</span>
+        <span class="job-status ${cls}">${label}</span>
+      </div>
+    </div>
+  `;
+}
+
+// ===== PAGE: OVERVIEW (主页) =====
+function overview() {
+  return `
+    <div class="stat-grid">
+      <div class="stat-card">
+        <div class="stat-icon">💼</div>
+        <div class="stat-label">在招岗位</div>
+        <div class="stat-value">24</div>
+        <div class="stat-change up">↑ 3 本周新增</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-icon">👥</div>
+        <div class="stat-label">候选人才</div>
+        <div class="stat-value">186</div>
+        <div class="stat-change up">↑ 12 本周新增</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-icon">✅</div>
+        <div class="stat-label">成功匹配</div>
+        <div class="stat-value">47</div>
+        <div class="stat-change up">↑ 8 本月</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-icon">📊</div>
+        <div class="stat-label">AI 评估次数</div>
+        <div class="stat-value">1,204</div>
+        <div class="stat-change up">↑ 156 本周</div>
+      </div>
+    </div>
+
+    <div class="section-title">优先岗位</div>
+    <div class="job-grid">
+      ${renderJobCard('高级后端工程师', '技术研发部', ['Go', 'Kubernetes', '分布式', 'PostgreSQL'], '¥35k-55k', 'active', '12 候选人')}
+      ${renderJobCard('AI 算法研究员', 'AI 实验室', ['PyTorch', 'LLM', 'RAG', 'Transformer'], '¥45k-70k', 'hot', '8 候选人')}
+      ${renderJobCard('资深前端架构师', '用户体验部', ['React', 'TypeScript', 'Next.js', 'WebGL'], '¥35k-50k', 'active', '15 候选人')}
+      ${renderJobCard('产品总监', '产品管理部', ['B端', 'SaaS', '数据驱动', 'AI'], '¥50k-80k', 'hot', '5 候选人')}
+    </div>
+
+    <div class="section-title" style="margin-top:28px">最新评估洞察</div>
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-bottom:24px">
+      <div class="job-card">
+        <h3>🎯 技能缺口 TOP 3</h3>
+        <p style="font-size:13px;color:var(--text-dim);margin-top:8px">Kubernetes 编排、LLM 微调、WebAssembly 性能优化</p>
+        <p style="font-size:11px;color:var(--text-muted);margin-top:8px">基于最近 30 天评估数据</p>
+      </div>
+      <div class="job-card">
+        <h3>📈 岗位增长趋势</h3>
+        <p style="font-size:13px;color:var(--text-dim);margin-top:8px">AI 相关岗位需求增长 45%，DevOps 增长 28%</p>
+        <p style="font-size:11px;color:var(--text-muted);margin-top:8px">同比 2025 Q3</p>
+      </div>
+      <div class="job-card">
+        <h3>🏆 最佳匹配率</h3>
+        <p style="font-size:13px;color:var(--text-dim);margin-top:8px">前端架构师岗位匹配率最高，平均 87.3 分</p>
+        <p style="font-size:11px;color:var(--text-muted);margin-top:8px">5 名候选人评分 ≥ 85</p>
+      </div>
+    </div>
+  `;
+}
+
+// ===== PAGE: JOBS (岗位管理) =====
+function jobs() {
+  return `
+    <div class="trend-tabs">
+      <button class="trend-tab active">在招岗位</button>
+      <button class="trend-tab">新岗位发现</button>
+      <button class="trend-tab">岗位能力演化</button>
+      <button class="trend-tab">岗位证据审核</button>
+    </div>
+    <div class="stat-grid" style="grid-template-columns:repeat(3,1fr)">
+      <div class="stat-card">
+        <div class="stat-label">总岗位数</div>
+        <div class="stat-value">24</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-label">急招岗位</div>
+        <div class="stat-value" style="background:linear-gradient(135deg,var(--rose),var(--amber));-webkit-background-clip:text;-webkit-text-fill-color:transparent">6</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-label">本月新增</div>
+        <div class="stat-value">5</div>
+      </div>
+    </div>
+    <div class="job-grid">
+      ${renderJobCard('高级后端工程师', '技术研发部', ['Go', 'Kubernetes', '分布式', 'PostgreSQL'], '¥35k-55k', 'active', '12 候选人')}
+      ${renderJobCard('AI 算法研究员', 'AI 实验室', ['PyTorch', 'LLM', 'RAG', 'Transformer'], '¥45k-70k', 'hot', '8 候选人')}
+      ${renderJobCard('资深前端架构师', '用户体验部', ['React', 'TypeScript', 'Next.js', 'WebGL'], '¥35k-50k', 'active', '15 候选人')}
+      ${renderJobCard('产品总监', '产品管理部', ['B端', 'SaaS', '数据驱动', 'AI'], '¥50k-80k', 'hot', '5 候选人')}
+      ${renderJobCard('DevOps 工程师', '基础设施部', ['Docker', 'K8s', 'CI/CD', 'Terraform'], '¥30k-45k', 'active', '7 候选人')}
+      ${renderJobCard('数据分析师', '数据平台部', ['SQL', 'Python', 'Tableau', 'A/B'], '¥25k-40k', 'active', '9 候选人')}
+    </div>
+  `;
+}
+
+// ===== PAGE: MATCHING (人岗匹配) =====
+function matching() {
+  return `
+    <div class="trend-tabs">
+      <button class="trend-tab active">🎯 智能匹配</button>
+      <button class="trend-tab">🧬 人才能力图谱</button>
+    </div>
+    <div class="match-layout">
+      <div class="match-sidebar">
+        <h4>选择岗位</h4>
+        <select class="sidebar-select">
+          <option>高级后端工程师 (Go/K8s)</option>
+          <option>AI 算法研究员 (LLM)</option>
+          <option>资深前端架构师 (React)</option>
+          <option>产品总监 (B端SaaS)</option>
+        </select>
+        <h4>候选人才</h4>
+        <div class="candidate-list">
+          <div class="candidate-thumb">
+            <div class="name">张明远</div>
+            <div class="skills">Go · Python · K8s · 分布式 · 7年</div>
+          </div>
+          <div class="candidate-thumb">
+            <div class="name">李思涵</div>
+            <div class="skills">PyTorch · NLP · RAG · 算法 · 5年</div>
+          </div>
+          <div class="candidate-thumb">
+            <div class="name">王浩然</div>
+            <div class="skills">React · TypeScript · Node.js · 6年</div>
+          </div>
+          <div class="candidate-thumb">
+            <div class="name">陈雨萱</div>
+            <div class="skills">Java · Spring · 微服务 · 8年</div>
+          </div>
+          <div class="candidate-thumb">
+            <div class="name">赵子涵</div>
+            <div class="skills">Vue · Angular · 全栈 · 4年</div>
+          </div>
+        </div>
+        <button class="match-btn">+ 添加候选人</button>
+        <button style="width:100%;padding:10px;border-radius:12px;border:1px solid rgba(255,255,255,0.08);background:rgba(255,255,255,0.02);color:var(--text-dim);font-family:var(--font-body);font-size:13px;cursor:pointer;">清空工作区</button>
+      </div>
+      <div class="match-workspace">
+        <div class="workspace-empty">
+          <div class="icon">🎯</div>
+          <p>从左侧拖拽候选人至此区域</p>
+          <p style="font-size:12px;color:var(--text-muted);margin-top:4px">或点击 ⬆ 按钮直接添加</p>
+        </div>
+        <div class="candidate-on-canvas" style="top:25%;left:25%">
+          <div class="name">张明远</div>
+          <div class="info">高级后端 · 7年 · Go/K8s</div>
+        </div>
+        <div class="candidate-on-canvas" style="top:60%;left:55%">
+          <div class="name">李思涵</div>
+          <div class="info">AI算法 · 5年 · PyTorch/NLP</div>
+        </div>
+      </div>
+      <div class="match-result-panel">
+        <h4 style="font-family:var(--font-display);font-size:14px;font-weight:600;margin-bottom:14px">匹配结果</h4>
+        <div class="score-ring">
+          <div class="score-inner">85</div>
+        </div>
+        <p style="text-align:center;font-size:13px;font-weight:600;color:var(--emerald);margin-bottom:16px">强烈推荐 — 张明远 × 高级后端工程师</p>
+        <div class="match-metrics">
+          <div class="metric-item"><div class="metric-value">92%</div><div class="metric-label">技能匹配</div></div>
+          <div class="metric-item"><div class="metric-value">78%</div><div class="metric-label">经验匹配</div></div>
+          <div class="metric-item"><div class="metric-value">85%</div><div class="metric-label">文化契合</div></div>
+          <div class="metric-item"><div class="metric-value">88%</div><div class="metric-label">成长潜力</div></div>
+        </div>
+        <div style="margin-top:14px;padding:12px;border-radius:10px;background:rgba(34,211,238,0.06);font-size:12px;color:var(--cyan)">
+          <strong>AI 洞察：</strong>候选人 Go 与分布式系统经验与岗位高度匹配。建议面试时确认 Kubernetes 集群运维经验深度。
+        </div>
+        <div style="margin-top:8px;font-size:11px;color:var(--text-muted)">
+          <p>⚠ 技能缺口：Kubernetes Operator 开发、gRPC 高级模式</p>
+          <p>✨ 亮点：7年分布式系统设计经验，开源贡献者</p>
+        </div>
+      </div>
+    </div>
+  `;
+}
+
+// ===== PAGE: CAPABILITY (岗位能力图谱) =====
+function capability() {
+  return `
+    <div class="graph-container" style="min-height:550px">
+      <div class="section-title">岗位能力全景图谱</div>
+      <div class="trend-tabs">
+        <button class="trend-tab active">全部</button>
+        <button class="trend-tab">技术栈</button>
+        <button class="trend-tab">职级</button>
+        <button class="trend-tab">版本</button>
+      </div>
+      <div style="position:relative;height:420px">
+        <svg class="graph-canvas-svg" viewBox="0 0 800 400" preserveAspectRatio="xMidYMid meet" style="position:absolute;inset:0;width:100%;height:100%">
+          <!-- Edges -->
+          <line x1="400" y1="60" x2="150" y2="180" stroke="rgba(167,139,250,0.15)" stroke-width="1.5"/>
+          <line x1="400" y1="60" x2="400" y2="200" stroke="rgba(167,139,250,0.15)" stroke-width="1.5"/>
+          <line x1="400" y1="60" x2="650" y2="180" stroke="rgba(167,139,250,0.15)" stroke-width="1.5"/>
+          <line x1="150" y1="180" x2="80" y2="320" stroke="rgba(34,211,238,0.1)" stroke-width="1"/>
+          <line x1="150" y1="180" x2="220" y2="340" stroke="rgba(34,211,238,0.1)" stroke-width="1"/>
+          <line x1="400" y1="200" x2="320" y2="340" stroke="rgba(34,211,238,0.1)" stroke-width="1"/>
+          <line x1="400" y1="200" x2="480" y2="340" stroke="rgba(34,211,238,0.1)" stroke-width="1"/>
+          <line x1="650" y1="180" x2="580" y2="340" stroke="rgba(34,211,238,0.1)" stroke-width="1"/>
+          <line x1="650" y1="180" x2="720" y2="320" stroke="rgba(34,211,238,0.1)" stroke-width="1"/>
+          <!-- Role node -->
+          <circle cx="400" cy="60" r="28" fill="rgba(167,139,250,0.15)" stroke="rgba(167,139,250,0.4)" stroke-width="2"/>
+          <text x="400" y="65" text-anchor="middle" fill="#c4b5fd" font-size="12" font-weight="600">后端工程师</text>
+          <!-- Skill nodes -->
+          <circle cx="150" cy="180" r="22" fill="rgba(34,211,238,0.08)" stroke="rgba(34,211,238,0.3)" stroke-width="1.5"/>
+          <text x="150" y="184" text-anchor="middle" fill="#67e8f9" font-size="11">Go 语言</text>
+          <circle cx="400" cy="200" r="22" fill="rgba(34,211,238,0.08)" stroke="rgba(34,211,238,0.3)" stroke-width="1.5"/>
+          <text x="400" y="204" text-anchor="middle" fill="#67e8f9" font-size="11">分布式系统</text>
+          <circle cx="650" cy="180" r="22" fill="rgba(34,211,238,0.08)" stroke="rgba(34,211,238,0.3)" stroke-width="1.5"/>
+          <text x="650" y="184" text-anchor="middle" fill="#67e8f9" font-size="11">Kubernetes</text>
+          <!-- Capability/evidence nodes -->
+          <rect x="30" y="300" width="100" height="36" rx="10" fill="rgba(244,114,182,0.08)" stroke="rgba(244,114,182,0.2)" stroke-width="1"/>
+          <text x="80" y="322" text-anchor="middle" fill="#fda4af" font-size="10">高并发经验</text>
+          <rect x="170" y="320" width="100" height="36" rx="10" fill="rgba(244,114,182,0.08)" stroke="rgba(244,114,182,0.2)" stroke-width="1"/>
+          <text x="220" y="342" text-anchor="middle" fill="#fda4af" font-size="10">微服务架构</text>
+          <rect x="270" y="320" width="100" height="36" rx="10" fill="rgba(244,114,182,0.08)" stroke="rgba(244,114,182,0.2)" stroke-width="1"/>
+          <text x="320" y="342" text-anchor="middle" fill="#fda4af" font-size="10">数据库优化</text>
+          <rect x="430" y="320" width="100" height="36" rx="10" fill="rgba(244,114,182,0.08)" stroke="rgba(244,114,182,0.2)" stroke-width="1"/>
+          <text x="480" y="342" text-anchor="middle" fill="#fda4af" font-size="10">CI/CD 管线</text>
+          <rect x="530" y="300" width="100" height="36" rx="10" fill="rgba(244,114,182,0.08)" stroke="rgba(244,114,182,0.2)" stroke-width="1"/>
+          <text x="580" y="322" text-anchor="middle" fill="#fda4af" font-size="10">API 设计</text>
+          <rect x="670" y="300" width="100" height="36" rx="10" fill="rgba(244,114,182,0.08)" stroke="rgba(244,114,182,0.2)" stroke-width="1"/>
+          <text x="720" y="322" text-anchor="middle" fill="#fda4af" font-size="10">安全合规</text>
+        </svg>
+      </div>
+      <div style="display:flex;gap:24px;justify-content:center;margin-top:12px;font-size:12px">
+        <span>🟣 角色岗位</span>
+        <span>🔵 技能领域</span>
+        <span>🩷 能力证据</span>
+      </div>
+    </div>
+  `;
+}
+
+// ===== PAGE: UNIFIED (评估结果) =====
+function unified() {
+  return `
+    <div class="trend-tabs">
+      <button class="trend-tab active">全部 (47)</button>
+      <button class="trend-tab">优秀 ⭐ (18)</button>
+      <button class="trend-tab">待复评 (11)</button>
+      <button class="trend-tab">一般 (18)</button>
+    </div>
+    <div class="table-wrap">
+      <div class="table-header">
+        <span>候选人</span><span>岗位</span><span>匹配评分</span><span>等级</span><span>评估日期</span>
+      </div>
+      <div class="table-row">
+        <span><strong>张明远</strong> · Go 后端</span><span>高级后端工程师</span>
+        <span style="font-family:var(--font-mono);color:var(--emerald);font-weight:600">85</span>
+        <span><span class="badge excellent">优秀</span></span>
+        <span style="color:var(--text-muted);font-family:var(--font-mono)">07-15</span>
+      </div>
+      <div class="table-row">
+        <span><strong>李思涵</strong> · AI 算法</span><span>AI 算法研究员</span>
+        <span style="font-family:var(--font-mono);color:var(--emerald);font-weight:600">91</span>
+        <span><span class="badge excellent">优秀</span></span>
+        <span style="color:var(--text-muted);font-family:var(--font-mono)">07-14</span>
+      </div>
+      <div class="table-row">
+        <span><strong>王浩然</strong> · 前端</span><span>资深前端架构师</span>
+        <span style="font-family:var(--font-mono);color:var(--amber);font-weight:600">72</span>
+        <span><span class="badge review">待复评</span></span>
+        <span style="color:var(--text-muted);font-family:var(--font-mono)">07-13</span>
+      </div>
+      <div class="table-row">
+        <span><strong>陈雨萱</strong> · Java</span><span>高级后端工程师</span>
+        <span style="font-family:var(--font-mono);color:var(--amber);font-weight:600">68</span>
+        <span><span class="badge average">一般</span></span>
+        <span style="color:var(--text-muted);font-family:var(--font-mono)">07-12</span>
+      </div>
+      <div class="table-row">
+        <span><strong>赵子涵</strong> · 全栈</span><span>资深前端架构师</span>
+        <span style="font-family:var(--font-mono);color:var(--emerald);font-weight:600">83</span>
+        <span><span class="badge excellent">优秀</span></span>
+        <span style="color:var(--text-muted);font-family:var(--font-mono)">07-11</span>
+      </div>
+    </div>
+  `;
+}
+
+// ===== PAGE: FAVORITES (特别关注) =====
+function favorites() {
+  return `
+    <div class="section-title">已收藏候选人</div>
+    <div class="fav-grid">
+      <div class="fav-card">
+        <div class="name"><span class="star">⭐</span> 张明远</div>
+        <div class="meta">高级后端工程师 · Go/K8s · 7年经验</div>
+        <div class="score">85 分</div>
+        <div style="margin-top:8px;font-size:11px;color:var(--text-dim)">已面试 · 等待反馈</div>
+      </div>
+      <div class="fav-card">
+        <div class="name"><span class="star">⭐</span> 李思涵</div>
+        <div class="meta">AI 算法研究员 · PyTorch/NLP · 5年经验</div>
+        <div class="score">91 分</div>
+        <div style="margin-top:8px;font-size:11px;color:var(--text-dim)">Offer 阶段</div>
+      </div>
+      <div class="fav-card">
+        <div class="name"><span class="star">⭐</span> 王浩然</div>
+        <div class="meta">前端架构师 · React/TypeScript · 6年经验</div>
+        <div class="score">72 分</div>
+        <div style="margin-top:8px;font-size:11px;color:var(--text-dim)">待复评</div>
+      </div>
+      <div class="fav-card">
+        <div class="name"><span class="star">⭐</span> 赵子涵</div>
+        <div class="meta">全栈工程师 · Vue/Node.js · 4年经验</div>
+        <div class="score">83 分</div>
+        <div style="margin-top:8px;font-size:11px;color:var(--text-dim)">已面试 · 技术面通过</div>
+      </div>
+    </div>
+  `;
+}
+
+// ===== PAGE: EVOLUTION (招聘趋势) =====
+function evolution() {
+  return `
+    <div class="trend-tabs">
+      <button class="trend-tab active">📈 时序变化图</button>
+      <button class="trend-tab">📊 同比对比图</button>
+    </div>
+    <div class="stat-grid" style="grid-template-columns:repeat(3,1fr);margin-bottom:20px">
+      <div class="stat-card">
+        <div class="stat-label">本月招聘需求趋势</div>
+        <div class="stat-value">+18%</div>
+        <div class="stat-change up">↑ 对比上月</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-label">AI 岗位占比</div>
+        <div class="stat-value">35%</div>
+        <div class="stat-change up">↑ 8% YoY</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-label">平均招聘周期</div>
+        <div class="stat-value">23天</div>
+        <div class="stat-change up" style="color:var(--emerald)">↓ 5天 优化</div>
+      </div>
+    </div>
+    <!-- Mock bar chart -->
+    <div class="chart-placeholder" style="flex-direction:column;gap:12px">
+      <p style="font-size:16px;font-weight:600">📊 月度岗位需求趋势 (2026)</p>
+      <svg viewBox="0 0 700 250" style="width:100%;max-width:700px;height:250px">
+        <!-- Grid lines -->
+        <line x1="50" y1="30" x2="680" y2="30" stroke="rgba(255,255,255,0.04)"/>
+        <line x1="50" y1="80" x2="680" y2="80" stroke="rgba(255,255,255,0.04)"/>
+        <line x1="50" y1="130" x2="680" y2="130" stroke="rgba(255,255,255,0.04)"/>
+        <line x1="50" y1="180" x2="680" y2="180" stroke="rgba(255,255,255,0.04)"/>
+        <!-- Bars -->
+        <rect x="70" y="140" width="40" height="90" rx="4" fill="rgba(167,139,250,0.4)"/>
+        <rect x="130" y="120" width="40" height="110" rx="4" fill="rgba(167,139,250,0.45)"/>
+        <rect x="190" y="90" width="40" height="140" rx="4" fill="rgba(167,139,250,0.5)"/>
+        <rect x="250" y="60" width="40" height="170" rx="4" fill="rgba(167,139,250,0.55)"/>
+        <rect x="310" y="40" width="40" height="190" rx="4" fill="rgba(167,139,250,0.6)"/>
+        <rect x="370" y="35" width="40" height="195" rx="4" fill="rgba(167,139,250,0.65)"/>
+        <rect x="430" y="50" width="40" height="180" rx="4" fill="rgba(167,139,250,0.6)"/>
+        <rect x="490" y="70" width="40" height="160" rx="4" fill="rgba(167,139,250,0.55)"/>
+        <rect x="550" y="80" width="40" height="150" rx="4" fill="rgba(167,139,250,0.5)"/>
+        <rect x="610" y="55" width="40" height="175" rx="4" fill="rgba(167,139,250,0.6)"/>
+        <!-- Labels -->
+        <text x="90" y="245" fill="#606078" font-size="10" text-anchor="middle">1月</text>
+        <text x="150" y="245" fill="#606078" font-size="10" text-anchor="middle">2月</text>
+        <text x="210" y="245" fill="#606078" font-size="10" text-anchor="middle">3月</text>
+        <text x="270" y="245" fill="#606078" font-size="10" text-anchor="middle">4月</text>
+        <text x="330" y="245" fill="#606078" font-size="10" text-anchor="middle">5月</text>
+        <text x="390" y="245" fill="#606078" font-size="10" text-anchor="middle">6月</text>
+        <text x="450" y="245" fill="#606078" font-size="10" text-anchor="middle">7月</text>
+        <text x="510" y="245" fill="#606078" font-size="10" text-anchor="middle">8月</text>
+        <text x="570" y="245" fill="#606078" font-size="10" text-anchor="middle">9月</text>
+        <text x="630" y="245" fill="#606078" font-size="10" text-anchor="middle">10月</text>
+      </svg>
+    </div>
+  `;
+}
+</script>
+
+</body>
+</html>
