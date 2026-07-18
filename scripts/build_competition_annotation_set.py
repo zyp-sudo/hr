@@ -36,6 +36,22 @@ UNIFIED_JOBS_PATH = ROOT / "data" / "etl" / "unified_jobs.csv"
 COMPETITION_DIR = ROOT / "data" / "benchmarks" / "competition"
 SEED = 42
 
+
+def _safe_source_descriptor(path: Path) -> str:
+    """Return a safe source descriptor for the manifest ``generated_from`` field.
+
+    - Paths inside the repository root are rendered as a POSIX relative path
+      (e.g. ``data/etl/unified_jobs.csv``).
+    - Paths outside the repository root (e.g. pytest temporary directories)
+      are reduced to the bare filename so that **no absolute path, username,
+      or machine-specific directory** leaks into the generated manifest.
+    """
+    try:
+        return path.relative_to(ROOT).as_posix()
+    except ValueError:
+        # path is not under ROOT — only record the safe filename
+        return path.name
+
 # ── JD parsing annotation fields ──────────────────────────────────────────
 JD_ANNOTATION_FIELDS = [
     "job_record_id",
@@ -332,7 +348,7 @@ def build_manifest(paths: dict[str, Path]) -> Path:
     manifest_path.parent.mkdir(parents=True, exist_ok=True)
     manifest_path.write_text(
         json.dumps({
-            "generated_from": str(UNIFIED_JOBS_PATH.relative_to(ROOT)),
+            "generated_from": _safe_source_descriptor(UNIFIED_JOBS_PATH),
             "random_seed": SEED,
             "datasets": rows,
             "annotation_protocol": {
