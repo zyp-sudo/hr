@@ -1,8 +1,12 @@
-# XH-202621 岗位能力图谱系统（旧版说明）
+# XH-202621 岗位能力图谱系统（旧版说明 · 已归档）
 
-> **正式 MVP 入口：** `frontend/app.py`。React/Vue 目录已归档为视觉原型；真实 RAG、
+> **本文档为历史归档说明，不再反映当前项目入口。正式前端已迁移至 `talentmatch/`
+> （React + TypeScript，端口 `3000`），完整说明见仓库根目录 [`README.md`](../README.md)。**
+>
+> 以下内容保留供历史参考。`frontend/app.py`、`frontend-react/` 和 `frontend-vue/`
+> 均为历史/归档实现，不参与当前构建、测试、部署或验收。RAG、
 > 扫描件 OCR 和未来趋势预测不在当前验收范围，完整边界见
-> [docs/mvp-scope.md](docs/mvp-scope.md)。
+> [docs/mvp-scope.md](mvp-scope.md)。
 
 > 当前运行时数据层为 MySQL + Elasticsearch + Neo4j。CSV 用于采集、ETL 和快照同步；配置与初始化方式见 [docs/storage-runtime.md](docs/storage-runtime.md)。
 

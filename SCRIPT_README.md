@@ -275,21 +275,22 @@ data/pipeline_manifest.json
 
 ## Web 端统一结果
 
-启动后端和前端：
+启动后端和前端（完整启动说明以仓库根目录 [`README.md`](README.md) 为准）：
 
 ```powershell
-powershell -ExecutionPolicy Bypass -File scripts\start-backend.ps1
-powershell -ExecutionPolicy Bypass -File scripts\start-frontend.ps1
+powershell -ExecutionPolicy Bypass -File start.ps1
 ```
 
-打开：
+打开正式前端：
 
 ```text
-http://localhost:8501
-http://localhost:8501/?page=results
-http://localhost:8501/?page=architecture
-http://localhost:8501/results
-http://localhost:8501/architecture
+http://localhost:3000
+```
+
+Python API 入口：
+
+```text
+http://localhost:8080
 ```
 
 这个页面统一展示：
@@ -316,8 +317,8 @@ GET /api/evolution
 
 404 排查：
 
-- `http://localhost:8080` 是后端 API 索引。
-- 前端页面打开 `http://localhost:8501`。
+- `http://localhost:8080` 是 Python API 入口。
+- 正式前端页面打开 `http://localhost:3000`。
 - 后端业务接口必须带 `/api/...`。
 - 如果端口被旧进程占用，先执行：
 

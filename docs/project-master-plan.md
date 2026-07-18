@@ -150,7 +150,7 @@
 
 ### 5.1 第一版技术栈
 
-- 前端：Python 标准库 HTTP 服务。
+- 前端：React 19 + TypeScript + Vite + Express 网关（`talentmatch/`）。
 - 后端：Java 标准库 HTTP Server。
 - 数据：CSV 文件。
 - 图谱展示：前端 SVG 简易图。
@@ -166,12 +166,12 @@
 - 知识图谱：Neo4j + py2neo。Neo4j 存储岗位、技能、能力维度和时序关系，py2neo 提供 Python 写入和查询接口。
 - 图谱可视化：AntV G6 / ECharts Graph。G6 支持力导向布局、节点聚类和交互探索，ECharts Graph 用于轻量图展示。
 - RAG 框架：LangChain + ChromaDB + DeepSeek API。LangChain 编排 DeepSeek 调用链，ChromaDB 做向量存储，实现检索增强生成。
-- 后端框架：FastAPI / Flask。FastAPI 性能优异，自带 OpenAPI 文档，Flask 可作为更轻量的替代。
-- 前端框架：Vue 3 + Vite + Pinia。Vue 生态成熟，Vite 构建快，Pinia 状态管理简洁。
+- 后端框架：FastAPI / Flask。FastAPI 性能优异，自带 OpenAPI 文档。Flask 为备选方案，当前未实际使用。
+- 前端框架：React 19 + TypeScript + Vite。React 生态成熟，Vite 构建快，TypeScript 提供类型安全（`talentmatch/`）。
 - 数据分析：Pandas + NetworkX。Pandas 做数据清洗和统计分析，NetworkX 做中心性、社区发现、相似岗位聚类和路径分析。
 - 简历解析：PaddleOCR / Tesseract + PDF/Word 本地解析 + 自定义 NER。本地 OCR 处理图片和扫描版 PDF 简历，PDF/Word 本地解析处理文本型简历，自定义 NER 提取技能、项目、年限、教育、证书等结构化字段。
 
-当前代码仍保留 Python 前端、Java 后端和 CSV/JSON 文件层，目的是保证比赛原型可运行。目标技术栈作为后续生产化升级路线，优先承接当前已经生成的 `data/etl/*.csv` 和 `data/kg/*.csv` 产物。
+当前代码仍保留 `talentmatch/` React 前端、Java 后端和 CSV/JSON 文件层，目的是保证比赛原型可运行。目标技术栈作为后续生产化升级路线，优先承接当前已经生成的 `data/etl/*.csv` 和 `data/kg/*.csv` 产物。
 
 ## 6. 数据文件设计
 
@@ -184,7 +184,7 @@
 - `data_sources.csv`：数据源质量评分。
 - `resume_samples.csv`：简历文本样本。
 - `discoveries.csv`：新兴岗位发现样本。
-- `collected_jobs.csv`：真实采集岗位总表，包含中国和海外来源。
+- `collected_jobs.csv`：真实采集岗位总表（当前仅含中国来源，海外采集已默认禁用）。
 - `collected_job_skills.csv`：从真实岗位职责和要求中抽取的技能命中记录。
 - `collected_sources.csv`：真实数据来源记录。
 - `china_jobs.csv`：中国岗位分表。

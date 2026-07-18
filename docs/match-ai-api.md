@@ -4,11 +4,7 @@ The `/api/match` response now always includes an `aiAnalysis` object.
 
 By default the hook is disabled and no remote request is sent. Enable it with:
 
-You can configure the same values from the Web UI:
-
-```text
-http://localhost:8501/?page=settings
-```
+You can configure the same values from the TalentMatch Web UI at <http://localhost:3000>.
 
 The settings page writes `scripts/local-env.ps1`, which is ignored by git. Leaving the API key field blank keeps the existing saved key.
 

@@ -1,7 +1,9 @@
 # XH-202621 岗位能力图谱项目 README
 
-> 正式交付前端统一为 `frontend/app.py`。`frontend-react/` 和 `frontend-vue/` 已归档为
-> 视觉原型。RAG、扫描件 OCR 和未来趋势预测当前明确为 MVP 后续能力，见
+> **正式前端入口已迁移至 `talentmatch/`（React + TypeScript，端口 `3000`）。**
+> `frontend/app.py`（Python Web）、`frontend-react/` 和 `frontend-vue/` 均为历史/归档
+> 实现，不参与构建、测试、部署或验收。完整启动说明以仓库根目录 [`README.md`](README.md)
+> 为准。RAG、扫描件 OCR 和未来趋势预测当前明确为 MVP 后续能力，见
 > `docs/mvp-scope.md`，不得按已完成能力计入验收。
 
 ## 项目定位
@@ -10,7 +12,7 @@
 
 当前运行技术栈：
 
-- 前端：Python
+- 前端：React 19 + TypeScript + Vite + Express 网关（`talentmatch/`）
 - 后端：FastAPI 公开 API + Java 分析服务
 - 业务数据层：MySQL 8.x
 - 检索与聚合：Elasticsearch 8.13.x
@@ -26,8 +28,8 @@
 - 知识图谱：Neo4j + py2neo
 - 图谱可视化：AntV G6 / ECharts Graph
 - RAG：LangChain + ChromaDB + DeepSeek API
-- 后端框架：FastAPI / Flask
-- 正式前端：Python Web（React/Vue 原型已归档）
+- 后端框架：FastAPI / Flask（当前仅使用 FastAPI，Flask 为备选方案，未实际部署）
+- 正式前端：React + TypeScript（`talentmatch/`）；旧 Python Web（`frontend/app.py`）、`frontend-react/` 和 `frontend-vue/` 已归档
 - 数据分析：Pandas + NetworkX
 - 简历解析：PaddleOCR / Tesseract + PDF/Word 本地解析 + 自定义 NER
 
@@ -47,18 +49,23 @@
 
 ```text
 backend/                  Java 后端 HTTP API
-frontend/                 Python 前端页面
+talentmatch/              正式 React/TypeScript 前端与 Express 网关
+frontend/                 [归档] Python 前端页面（历史实现）
+frontend-react/           [归档] React 早期视觉原型
+frontend-vue/             [归档] Vue 早期视觉原型
 scripts/                  数据采集、ETL、启动脚本
 data/                     CSV、JSON、ETL、图谱、仓库导入和 AI 产物
 docs/                     设计文档、架构文档、ETL 治理说明
-README.md                 项目快速启动 README
+README.md                 项目快速启动 README（当前正式入口说明）
 PROJECT_README.md         项目总 README
 SCRIPT_README.md          采集、ETL、图谱和架构脚本 README
 ```
 
 ## 启动项目
 
-一键启动（编译后端 + 启动后端 + 启动前端）：
+完整启动说明请以仓库根目录 [`README.md`](README.md) 为准，这里给出简要版本。
+
+一键启动：
 
 **Git Bash / Linux / Mac：**
 
@@ -72,20 +79,14 @@ bash start.sh
 powershell -NoProfile -ExecutionPolicy Bypass -File start.ps1
 ```
 
-脚本会自动停止旧进程、编译 Java 后端、启动后端(8080)、等待后端就绪、再启动前端(8501)。按 `Ctrl+C` 一键停止所有服务。
+脚本会自动启动数据库容器、同步数据、编译 Java 后端（`8081`）、启动 Python API（`8080`）、再启动 TalentMatch 前端（`3000`）。按 `Ctrl+C` 停止应用层进程。
 
 默认地址：
 
 ```text
-前端: http://localhost:8501
-后端: http://localhost:8080
-```
-
-架构落地页可直接打开：
-
-```text
-http://localhost:8501/?page=architecture
-http://localhost:8501/?page=results
+前端: http://localhost:3000
+Python API: http://localhost:8080
+Java 服务: http://localhost:8081
 ```
 
 如需单独停止服务：
@@ -94,7 +95,9 @@ http://localhost:8501/?page=results
 powershell -ExecutionPolicy Bypass -File scripts\stop-dev.ps1
 ```
 
-## 主要页面
+## 主要页面（归档 Python 前端页面参考）
+
+以下页面来自已归档的 `frontend/app.py` 实现，仅供设计参考；正式前端 `talentmatch/` 的页面结构见 [`README.md`](README.md)。
 
 - `/?page=dashboard`：项目总览
 - `/?page=results`：统一结果
@@ -126,7 +129,7 @@ powershell -ExecutionPolicy Bypass -File scripts\stop-dev.ps1
 
 核心数据目录：
 
-- `data/collected_jobs.csv`：真实采集岗位总表，包含中国和海外来源
+- `data/collected_jobs.csv`：真实采集岗位总表（当前仅含中国来源，海外采集已默认禁用 `ALLOW_FOREIGN_SOURCES=0`）
 - `data/collected_job_skills.csv`：真实采集岗位技能抽取结果
 - `data/collected_sources.csv`：真实采集来源统计
 - `data/china_jobs.csv`：中国岗位分表
@@ -170,10 +173,10 @@ SCRIPT_README.md
 
 ## 404 排查
 
-- `http://localhost:8080` 是后端 API 索引，不是前端页面。
-- 前端页面打开 `http://localhost:8501`、`http://localhost:8501/architecture` 或 `http://localhost:8501/results`。
+- `http://localhost:8080` 是 Python API 入口，`http://localhost:8081` 是 Java 服务。
+- 正式前端页面打开 `http://localhost:3000`。
 - 后端接口使用 `/api/...`，例如 `http://localhost:8080/api/health`。
-- 如仍看到旧 404，先运行 `scripts\stop-dev.ps1` 再重新启动前后端。
+- 如仍看到旧 404，先运行 `scripts\stop-dev.ps1` 再重新启动各服务。
 
 ## 设计文档
 

@@ -2,11 +2,11 @@
 
 ## 唯一正式前端
 
-正式入口是 `frontend/app.py`，默认地址为 `http://localhost:8501`。根目录的
-`start.ps1`、`start.sh` 和 `scripts/start-frontend.ps1` 只启动这一实现。
+正式入口是 `talentmatch/`（React 19 + TypeScript + Vite + Express 网关），默认地址为
+`http://localhost:3000`。完整启动说明见仓库根目录 [`README.md`](../README.md)。
 
-`frontend-react/` 与 `frontend-vue/` 是早期视觉原型，保留用于设计参考，不参与构建、
-测试、部署或验收。二者的数据 Mock 不能作为正式功能证据。
+`frontend/app.py`（Python Web）、`frontend-react/` 与 `frontend-vue/` 是历史/归档实现，
+保留用于设计参考，不参与构建、测试、部署或验收。三者的数据 Mock 不能作为正式功能证据。
 
 ## 当前真实能力
 

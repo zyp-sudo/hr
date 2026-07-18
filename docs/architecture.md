@@ -5,7 +5,8 @@
 
 ## 技术约束与目标技术栈
 
-当前版本优先保证本地可运行、接口清晰、业务闭环完整。正式前端唯一确定为 Python Web；
+当前版本优先保证本地可运行、接口清晰、业务闭环完整。正式前端为 `talentmatch/`
+（React 19 + TypeScript + Vite + Express 网关，端口 `3000`）；
 运行时采用 FastAPI 公开 API、Java 分析服务、MySQL、Elasticsearch 和 Neo4j。CSV/JSON
 是采集与快照同步介质。其余技术是后续路线：
 
@@ -18,40 +19,43 @@
 | 图谱可视化 | AntV G6 / ECharts Graph | G6 支持力导向布局、节点聚类和交互探索；ECharts Graph 用于轻量展示 |
 | RAG 框架 | LangChain + ChromaDB + DeepSeek API | LangChain 编排 DeepSeek 调用链，ChromaDB 做向量存储，实现检索增强生成 |
 | 后端框架 | FastAPI / Flask | FastAPI 提供高性能 API 和 OpenAPI 文档；Flask 可作为轻量替代 |
-| 前端 | Python 标准库 Web | 当前唯一正式交付前端；React/Vue 原型已归档 |
+| 前端 | React 19 + TypeScript + Vite | 当前唯一正式交付前端（`talentmatch/`）；旧 Python Web（`frontend/app.py`）、`frontend-react/` 和 `frontend-vue/` 已归档 |
 | 数据分析 | Pandas + NetworkX | Pandas 做清洗统计，NetworkX 做中心性、社区发现、路径分析等图算法 |
 | 简历解析 | PaddleOCR / Tesseract + PDF/Word 本地解析 + 自定义 NER | 本地 OCR 处理图片和扫描版 PDF，PDF/Word 本地解析处理文本型简历，自定义 NER 抽取结构化字段 |
 
 阶段定位：
 
-- 当前原型：Python HTML 前端 + FastAPI + Java HTTP Server，已完成多源采集、ETL、质量评分、自动知识图谱和历史时序趋势。
+- 当前原型：React + TypeScript 前端（`talentmatch/`）+ FastAPI + Java HTTP Server，已完成多源采集、ETL、质量评分、自动知识图谱和历史时序趋势。
 - 运行时：ETL/KG 快照增量同步到 MySQL、Elasticsearch、Neo4j；公开 API 查询三类数据库。
 
 ## 分层架构
 
 ```text
-Python Frontend
-  - 仪表盘
-  - 图谱可视化
-  - 简历输入和匹配诊断
-  - 动态演化趋势
-        |
-        | HTTP JSON
-        v
-Java Backend
-  - 岗位服务
-  - 图谱服务
-  - 匹配服务
-  - 演化分析服务
-  - 数据质量服务
-        |
-        v
-Future Data/AI Layer
-  - MySQL: 结构化岗位、技能、来源、评估数据
-  - Neo4j: 岗位能力图谱
-  - Elasticsearch: JD 和报告全文检索
-  - Vector DB: 简历/JD/技能语义检索
-  - LLM/RAG: 实体抽取、关系推理、学习路径生成
+┌─────────────────────────────────────────────────────┐
+│  talentmatch (React + TypeScript + Express, :3000)  │
+│  仪表盘 · 图谱可视化 · 匹配诊断 · 演化趋势          │
+└─────────────────────┬───────────────────────────────┘
+                      │ HTTP JSON
+          ┌───────────┴───────────┐
+          v                       v
+┌─────────────────┐     ┌─────────────────────┐
+│  FastAPI (:8080) │     │  Java 分析 (:8081)   │
+│  公开数据/API    │     │  内部分析服务        │
+│  · 岗位查询      │     │  · 图谱构建          │
+│  · 匹配评估      │     │  · 演化分析          │
+│  · 数据质量      │     │  · ETL/KG 汇总       │
+│  · 搜索聚合      │     │  · 数据采样          │
+└────────┬────────┘     └──────────┬──────────┘
+         │                         │
+         └───────────┬─────────────┘
+                     v
+┌─────────────────────────────────────────────────────┐
+│  数据层                                             │
+│  · MySQL (:3307)         结构化业务数据              │
+│  · Elasticsearch (:9200)  全文检索与聚合             │
+│  · Neo4j (:7474/:7687)   岗位能力图谱                │
+│  · Milvus (:19530)        人才向量检索               │
+└─────────────────────────────────────────────────────┘
 ```
 
 ## 生产版数据流
@@ -66,7 +70,7 @@ Scrapy / Playwright
   -> Neo4j 图谱写入
   -> ChromaDB 向量索引
   -> FastAPI 查询服务
-  -> Vue 3 / AntV G6 / ECharts 展示
+  -> React + TypeScript / AntV G6 / ECharts 展示
 ```
 
 ## 当前已落地产物
@@ -137,7 +141,7 @@ CSV 作为采集与 ETL 的可审计交换层；运行时岗位查询使用 MySQ
 
 4. 服务与前端升级：
    - 后端迁移到 FastAPI 或 Flask，保留当前 API 语义。
-   - 前端迁移到 Vue 3 + Vite + Pinia。
+   - 前端已迁移到 React + TypeScript（`talentmatch/`）。
    - 图谱页面改用 AntV G6 或 ECharts Graph。
 
 5. RAG 与简历解析：
