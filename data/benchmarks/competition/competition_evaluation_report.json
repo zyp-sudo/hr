@@ -1,0 +1,49 @@
+{
+  "status": "pending_annotation",
+  "metadata": {
+    "random_seed": 42,
+    "competition_dir": "E:\\202676\\data\\benchmarks\\competition",
+    "evaluation_date": "2026-07-17T19:53:58",
+    "limitations": [
+      "Metrics are only computed when >= 2 independent annotators have completed all annotation columns.",
+      "System predictions come from the pre-existing rule-based pipeline in scripts/job_taxonomy.py — they are independent of the annotation templates.",
+      "This framework does not generate synthetic ground truth. All ground truth must come from human annotators.",
+      "Inter-annotator agreement (Cohen's kappa) is measured during annotation, not during evaluation."
+    ]
+  },
+  "annotation_status": {
+    "jd_parsing": {
+      "dataset": "jd_parsing",
+      "total_records": 200,
+      "annotated_records": 0,
+      "unique_annotators": 0,
+      "is_complete": false
+    },
+    "resume_extraction": {
+      "dataset": "resume_extraction",
+      "total_records": 30,
+      "annotated_records": 0,
+      "unique_annotators": 0,
+      "is_complete": false
+    },
+    "person_job_matching": {
+      "dataset": "person_job_matching",
+      "total_records": 600,
+      "annotated_records": 0,
+      "unique_annotators": 0,
+      "is_complete": false
+    }
+  },
+  "jd_parsing": {
+    "status": "pending_annotation",
+    "reason": "Only 0/200 records annotated by 0 annotator(s). Need >= 2 annotators covering all records."
+  },
+  "resume_extraction": {
+    "status": "pending_annotation",
+    "reason": "Only 0/30 records annotated by 0 annotator(s). Need >= 2 annotators covering all records."
+  },
+  "person_job_matching": {
+    "status": "pending_annotation",
+    "reason": "Only 0/600 records annotated by 0 annotator(s). Need >= 2 annotators covering all records."
+  }
+}

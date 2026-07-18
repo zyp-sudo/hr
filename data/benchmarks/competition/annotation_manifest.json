@@ -1,0 +1,35 @@
+{
+  "generated_from": "data\\etl\\unified_jobs.csv",
+  "random_seed": 42,
+  "datasets": [
+    {
+      "dataset": "jd_parsing",
+      "file_name": "jd_parsing_annotation_template.csv",
+      "record_count": 200,
+      "annotation_status": "pending_annotation",
+      "annotator_count": 0,
+      "notes": "Annotation columns are empty. Requires independent human annotation by at least two reviewers."
+    },
+    {
+      "dataset": "resume_extraction",
+      "file_name": "resume_extraction_annotation_template.csv",
+      "record_count": 30,
+      "annotation_status": "pending_annotation",
+      "annotator_count": 0,
+      "notes": "Annotation columns are empty. Requires independent human annotation by at least two reviewers."
+    },
+    {
+      "dataset": "person_job_matching",
+      "file_name": "person_job_matching_annotation_template.csv",
+      "record_count": 600,
+      "annotation_status": "pending_annotation",
+      "annotator_count": 0,
+      "notes": "Annotation columns are empty. Requires independent human annotation by at least two reviewers."
+    }
+  ],
+  "annotation_protocol": {
+    "reviewers": 2,
+    "arbitration": "Disagreements between annotators are resolved by a third senior reviewer.  Inter-annotator agreement is measured with Cohen's kappa; pairs below 0.6 are re-annotated.",
+    "skill_labels": "Annotators map free-text skill mentions to canonical skill names defined in scripts/job_taxonomy.py SKILL_ALIASES. Skills not covered by the taxonomy should be noted in annotation_notes for taxonomy expansion."
+  }
+}
