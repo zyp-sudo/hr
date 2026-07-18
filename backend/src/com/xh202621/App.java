@@ -42,7 +42,7 @@ public class App {
         respond(exchange, 200, Json.stringify(Map.of(
                 "service", "xh-202621-backend",
                 "status", "ok",
-                "frontend", "http://localhost:8501/?page=architecture",
+                "frontend", "http://localhost:3000",
                 "apis", Map.of(
                         "health", "/api/health",
                         "jobs", "/api/jobs",
