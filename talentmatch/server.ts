@@ -264,7 +264,7 @@ async function startServer() {
       //   POST $baseUrl/$url            body
       const body: any = req.body || {};
       const isWrapped = typeof body.url === "string" && body.method;
-      const forwardPath: string = isWrapped ? body.url : req.url;
+      const forwardPath: string = (isWrapped ? body.url : req.url).replace(/^\/api\/platform\/storage/, "");
       const forwardMethod: string = isWrapped ? body.method : req.method;
       const forwardBody: any = isWrapped ? body.body : body;
 

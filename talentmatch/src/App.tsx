@@ -1,10 +1,11 @@
 import { useCallback, useEffect, useRef, useState } from "react";
 import type { CSSProperties } from "react";
-import PlatformPage, { type PageKey } from "./PlatformPages";
-import { ArrowUpRight, Bell, CalendarDays, Check, ChevronDown, FileImage, FileText, FileUp, Handshake, Plus, Sparkles, UserRound, UserRoundPlus, X } from "lucide-react";
+import PlatformPage, { type PageKey, TalentGraphPage } from "./PlatformPages";
+import { AlertTriangle, ArrowUpRight, Bell, CalendarDays, Check, ChevronDown, FileImage, FileText, FileUp, Handshake, Plus, Sparkles, UserRound, UserRoundPlus, X } from "lucide-react";
 import TalentMatchCard, { ScoreDisplay, MatchMetricBar, AIRecommendation } from "./components/TalentMatchCard";
 import CandidateCard, { type CardData } from "./components/CandidateCard";
 import LoginModal from "./components/LoginModal";
+import CompanyAgentPanel from "./components/CompanyAgentPanel";
 import type { AssessmentViewModel } from "./types";
 import { isLoggedIn, getSavedUser, logout, type AuthUser } from "./auth";
 
@@ -19,7 +20,7 @@ const jobs:Job[]=[
 ];
 const nav:Array<{label:string;key:PageKey|"matching"}>=[
   {label:"主页",key:"overview"},{label:"岗位管理",key:"jobs"},{label:"人岗匹配",key:"matching"},
-  {label:"人才图谱",key:"graph"},{label:"评估结果",key:"unified"},{label:"特别关注",key:"favorites"},{label:"招聘趋势",key:"evolution"},
+  {label:"岗位能力图谱",key:"capability"},{label:"评估结果",key:"unified"},{label:"特别关注",key:"favorites"},{label:"招聘趋势",key:"evolution"},
 ];
 const radarLabels=["技术能力","项目经验","团队协作","教育背景","软技能"];
 
@@ -34,7 +35,11 @@ function Radar({values}:{values:number[]}){
 }
 
 export default function App(){
-  const [jobOptions,setJobOptions]=useState(jobs); const [activePage,setActivePage]=useState<PageKey|"matching">("overview");
+  const [jobOptions,setJobOptions]=useState(jobs);
+  const getInitialPage=():PageKey|"matching"=>{const stored=sessionStorage.getItem("talentmatch-activePage");if(stored==="competition"){sessionStorage.setItem("talentmatch-activePage","jobs");return"jobs"}if(stored==="graph"){sessionStorage.setItem("talentmatch-activePage","matching");sessionStorage.setItem("talentmatch-matchingTab","graph");return"matching"}const valid=["overview","jobs","matching","capability","unified","favorites","evolution"];if(stored&&valid.includes(stored))return stored as PageKey|"matching";return "overview";};
+  const [activePage,setActivePage]=useState<PageKey|"matching">(getInitialPage);
+  const [matchingTab,setMatchingTab]=useState<"match"|"graph">(()=>{const stored=sessionStorage.getItem("talentmatch-matchingTab");return stored==="graph"?"graph":"match";});
+  const handleNavigate=(page:PageKey|"matching")=>{if(page==="graph"){setActivePage("matching");setMatchingTab("graph");sessionStorage.setItem("talentmatch-activePage","matching");sessionStorage.setItem("talentmatch-matchingTab","graph")}else{setActivePage(page);sessionStorage.setItem("talentmatch-activePage",page)}};
   const [job,setJob]=useState(jobs[0]); const [jobText,setJobText]=useState(jobs[0].name);const [open,setOpen]=useState(false); const [resume,setResume]=useState(""); const [fileName,setFileName]=useState("");
   const [loading,setLoading]=useState(false); const [parsing,setParsing]=useState(false); const [ocrProgress,setOcrProgress]=useState(0); const [toast,setToast]=useState(""); const [graphCandidateName,setGraphCandidateName]=useState("");
   const [assessment,setAssessment]=useState<Assessment|null>(null); const [apiOnline,setApiOnline]=useState(false); const [candidate,setCandidate]=useState<Candidate>({name:"",phone:"",email:""}); const [candidateOpen,setCandidateOpen]=useState(false);
@@ -219,8 +224,13 @@ export default function App(){
     <div className="mouse-glow-tracker" id="mouse-glow-tracker"/>
 
     <header><div className="brand"><div className="logo"><Handshake/></div><h1>人岗匹配智能评估系统</h1></div><div className="header-actions"><span className={`api ${apiOnline?"online":"offline"}`}><i/>{apiOnline?"服务已连接":"服务未连接"}</span><div className="notification-wrap"><button className="notification-button" aria-label="通知" onClick={()=>{setNoticeOpen(x=>!x);loadNotices(true)}}><Bell/>{unread>0&&<i>{Math.min(unread,99)}</i>}</button>{noticeOpen&&<div className="notification-panel"><div className="notification-head"><span><b>招聘通知</b><small>面试安排与新简历</small></span><button onClick={()=>setNoticeOpen(false)}><X/></button></div><div className="notification-list">{notices.length?notices.map(item=><button key={item.id} onClick={()=>{setActivePage("overview");setNoticeOpen(false)}}>{item.type==="interview"?<CalendarDays/>:<FileText/>}<span><b>{item.title}</b><small>{item.detail}</small><time>{new Intl.DateTimeFormat("zh-CN",{month:"2-digit",day:"2-digit",hour:"2-digit",minute:"2-digit",hour12:false}).format(new Date(item.time))}</time></span></button>):<p>暂时没有新通知</p>}</div></div>}</div>{authUser?<span className="avatar" aria-label={authUser.name} title={`${authUser.name} · ${authUser.email}\n点击退出登录`} onClick={async()=>{await logout();setAuthUser(null);notify("已退出登录")}} style={{cursor:"pointer"}}>{authUser.name[0]}</span>:<button className="header-login-btn spring-hover" onClick={()=>setLoginModalOpen(true)}>登录</button>}</div></header>
-    <nav>{nav.map(item=><button className={activePage===item.key||(item.key==="graph"&&activePage==="compare")?"active":""} key={item.key} onClick={()=>{if(!authUser&&item.key!=="overview"){setLoginModalOpen(true);notify("请先登录后查看")}else{setActivePage(item.key)}}}>{item.label}</button>)}</nav>
-    {activePage!=="matching"?<PlatformPage key={activePage} page={activePage} onNavigate={setActivePage} isLoggedIn={!!authUser} preferredCandidateName={graphCandidateName} onOpenGraph={name=>{setGraphCandidateName(name);setActivePage("graph")}}/>:<>
+    <nav>{nav.map(item=><button className={activePage===item.key?"active":""} key={item.key} onClick={()=>{if(!authUser&&item.key!=="overview"){setLoginModalOpen(true);notify("请先登录后查看")}else{handleNavigate(item.key)}}}>{item.label}</button>)}</nav>
+    {activePage!=="matching"?<PlatformPage key={activePage} page={activePage} onNavigate={handleNavigate} isLoggedIn={!!authUser} preferredCandidateName={graphCandidateName} onOpenGraph={name=>{setGraphCandidateName(name);setActivePage("matching");setMatchingTab("graph");sessionStorage.setItem("talentmatch-activePage","matching");sessionStorage.setItem("talentmatch-matchingTab","graph")}}/>:<>
+      <div className="sub-nav">
+        <button className={matchingTab==="match"?"active":""} onClick={()=>{setMatchingTab("match");sessionStorage.setItem("talentmatch-matchingTab","match")}}>智能匹配</button>
+        <button className={matchingTab==="graph"?"active":""} onClick={()=>{setMatchingTab("graph");sessionStorage.setItem("talentmatch-matchingTab","graph")}}>人才能力图谱</button>
+      </div>
+      {matchingTab==="match"?<>
       <main className="match-canvas-layout">
       {/* ════════ Left sidebar — job selector + controls ════════ */}
       <aside className="match-sidebar">
@@ -330,7 +340,22 @@ export default function App(){
               {activeCard.result.strengths.map(s=><p key={s} className="match-result-panel__highlight"><Check/><span>{s}</span></p>)}
             </section>
           </div>
-          <button className="match-result-panel__graph" onClick={()=>{const graphCandidate=activeCard.name.trim()||"匿名候选人";setGraphCandidateName(graphCandidate);sessionStorage.setItem("talentmatch-graph-candidate",graphCandidate);localStorage.setItem("talentmatch-graph-candidate",graphCandidate);setActivePage("graph")}}><UserRound/> 查看人才图谱 <ArrowUpRight/></button>
+          {/* ── Company Agent Enhanced Scoring ── */}
+          <CompanyAgentPanel
+            candidateName={activeCard.name || "匿名候选人"}
+            resumeText={activeCard.resumeText || ""}
+            jobId={job.id}
+            jobTitle={jobText.trim()}
+            localScore={activeCard.result.score}
+            localDimensions={{
+              "技术能力": activeCard.result.radar[0],
+              "项目经验": activeCard.result.radar[1],
+              "团队协作": activeCard.result.radar[2],
+              "教育背景": activeCard.result.radar[3],
+              "软技能": activeCard.result.radar[4],
+            }}
+          />
+          <button className="match-result-panel__graph" onClick={()=>{const graphCandidate=activeCard.name.trim()||"匿名候选人";setGraphCandidateName(graphCandidate);sessionStorage.setItem("talentmatch-graph-candidate",graphCandidate);localStorage.setItem("talentmatch-graph-candidate",graphCandidate);setMatchingTab("graph");sessionStorage.setItem("talentmatch-matchingTab","graph")}}><UserRound/> 查看人才能力图谱 <ArrowUpRight/></button>
         </aside>
       )}
     </main>
@@ -361,7 +386,8 @@ export default function App(){
         </button>
       )}
     </div>
-  </>}
+  </>:<TalentGraphPage onCompare={()=>setActivePage("compare")} preferredCandidateName={graphCandidateName} embedded={true} onBackToMatching={()=>{setMatchingTab("match");sessionStorage.setItem("talentmatch-matchingTab","match")}}/>}
+</>}
     {candidateOpen&&<div className="modal-backdrop" onMouseDown={e=>{if(e.target===e.currentTarget)setCandidateOpen(false)}}><div className="dialog"><div className="dialog-head"><div><span>CANDIDATE PROFILE</span><h3>候选人档案</h3></div><button onClick={()=>setCandidateOpen(false)}><X/></button></div><label className="field"><span>姓名</span><input value={candidate.name} onChange={e=>setCandidate({...candidate,name:e.target.value})} placeholder="未填写将显示匿名候选人"/></label><label className="field"><span>手机</span><input value={candidate.phone} onChange={e=>setCandidate({...candidate,phone:e.target.value})} placeholder="选填"/></label><label className="field"><span>邮箱</span><input value={candidate.email} onChange={e=>setCandidate({...candidate,email:e.target.value})} placeholder="选填"/></label><label className="field"><span>核心技能</span><input value={profile.skills} onChange={e=>setProfile({...profile,skills:e.target.value})} placeholder="如 Java、Python、产品设计" /></label><label className="field"><span>工作年限</span><input value={profile.years} onChange={e=>setProfile({...profile,years:e.target.value})} placeholder="相关工作年限" /></label><label className="field"><span>学历</span><select value={profile.education} onChange={e=>setProfile({...profile,education:e.target.value})}><option>高中及以下</option><option>专科</option><option>本科</option><option>硕士</option><option>博士</option></select></label><label className="field"><span>项目/工作经历</span><textarea value={profile.experience} onChange={e=>setProfile({...profile,experience:e.target.value})} placeholder="项目、实习或工作经历摘要" /></label><button className="primary" onClick={async()=>{const response=await fetch("/api/hr/candidates",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({...candidate,skills:profile.skills,experienceYears:Number(profile.years||0),education:profile.education,profileText:resume})});const saved=await response.json().catch(()=>null);setCandidateOpen(false);notify(saved?.vectorCapture?.status==="stored"?"候选人已保存并写入人才向量库":candidate.name?`已保存候选人：${candidate.name}`:"已保存为匿名候选人")}}>保存候选人</button></div></div>}
     {toast&&<div className="toast"><span>{toast}</span><button onClick={()=>setToast("")}><X/></button></div>}
 
