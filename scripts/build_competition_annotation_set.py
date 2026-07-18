@@ -28,6 +28,7 @@ from __future__ import annotations
 import csv
 import json
 import random
+import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -99,6 +100,88 @@ MANIFEST_FIELDS = [
     "annotator_count",
     "notes",
 ]
+
+# ── Overwrite protection ────────────────────────────────────────────────────
+# Fields whose non-empty values indicate human annotation work has been done.
+# The builder will refuse to overwrite any CSV that contains data in these
+# fields, even with --force.
+
+_HUMAN_ANNOTATION_EXACT_FIELDS = frozenset({
+    "annotator_id",
+    "annotation_date",
+    "annotation_notes",
+    "match_label",
+    "match_rationale",
+})
+
+_HUMAN_ANNOTATION_PREFIXES = ("annotated_",)
+
+# Keywords matched case-insensitively against field names.  "裁决" and "仲裁"
+# cover Chinese arbitration / judgment fields; "reviewer" and "arbitration"
+# cover English variants.
+_HUMAN_ANNOTATION_KEYWORDS = ("reviewer", "裁决", "arbitration", "仲裁")
+
+
+def _has_human_annotations(path: Path):
+    """Check whether a CSV annotation template contains human-filled data.
+
+    Returns ``(has_annotations: bool, found_fields: set[str])``.
+    ``found_fields`` is the set of field *names* (not values) that have
+    at least one non-empty cell — safe to include in error messages.
+    """
+    if not path.exists():
+        return False, set()
+
+    records = _read_csv(path)
+    found: set[str] = set()
+
+    for row in records:
+        for field, value in row.items():
+            if not str(value).strip():
+                continue
+            field_lower = field.lower()
+            # Exact field-name match
+            if field in _HUMAN_ANNOTATION_EXACT_FIELDS:
+                found.add(field)
+            # Prefix match  (annotated_skills, annotated_education, …)
+            elif any(field.startswith(p) for p in _HUMAN_ANNOTATION_PREFIXES):
+                found.add(field)
+            # Keyword match in field name (reviewer, arbitration, 裁决, 仲裁)
+            elif any(kw in field_lower for kw in _HUMAN_ANNOTATION_KEYWORDS):
+                found.add(field)
+
+    return len(found) > 0, found
+
+
+def _check_targets(targets: dict[str, Path], force: bool) -> list[str]:
+    """Pre-check every annotation target before writing *any* of them.
+
+    Returns a list of human-readable rejection reasons (one per failing
+    target).  An empty list means all targets are safe to write.
+    """
+    reasons: list[str] = []
+
+    for name, path in targets.items():
+        if not path.exists():
+            continue
+
+        if not force:
+            reasons.append(
+                f"{name} already exists: {path}\n"
+                f"  Reason: target file already exists. "
+                f"Use --force to overwrite empty (un-annotated) templates only."
+            )
+        else:
+            has_ann, fields = _has_human_annotations(path)
+            if has_ann:
+                field_list = ", ".join(sorted(fields))
+                reasons.append(
+                    f"{name} contains human annotations: {path}\n"
+                    f"  Reason: the following annotation fields have non-empty "
+                    f"values: {field_list}. Overwrite refused to prevent data loss."
+                )
+
+    return reasons
 
 
 def _read_csv(path: Path) -> list[dict]:
@@ -332,7 +415,29 @@ annotated by at least two reviewers.
     return path
 
 
-def main() -> None:
+def main(force: bool = False) -> int:
+    """Build competition annotation sets.
+
+    Returns 0 on success, 1 when targets are rejected by the overwrite
+    protection checks (no files are written in that case).
+    """
+    # ── Pre-check all annotation targets *before* writing anything ────────
+    targets = {
+        "JD parsing template": COMPETITION_DIR / "jd_parsing_annotation_template.csv",
+        "Resume extraction template": COMPETITION_DIR / "resume_extraction_annotation_template.csv",
+        "Person-job matching template": COMPETITION_DIR / "person_job_matching_annotation_template.csv",
+    }
+
+    reasons = _check_targets(targets, force)
+    if reasons:
+        for reason in reasons:
+            print(f"ERROR: {reason}", file=sys.stderr)
+        print(
+            "\nNo files were written. Annotation templates unchanged.",
+            file=sys.stderr,
+        )
+        return 1
+
     COMPETITION_DIR.mkdir(parents=True, exist_ok=True)
 
     print("Sampling ETL jobs from unified_jobs.csv ...")
@@ -368,7 +473,17 @@ def main() -> None:
 
     print("\nDone. All annotation templates are in:", str(COMPETITION_DIR))
     print("Status: pending_annotation — waiting for human annotators.")
+    return 0
 
 
 if __name__ == "__main__":
-    main()
+    force = "--force" in sys.argv
+    unknown = [a for a in sys.argv[1:] if a != "--force"]
+    if unknown:
+        print(f"Unknown arguments: {unknown}", file=sys.stderr)
+        print(
+            "Usage: python scripts/build_competition_annotation_set.py [--force]",
+            file=sys.stderr,
+        )
+        sys.exit(2)
+    sys.exit(main(force=force))

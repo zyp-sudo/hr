@@ -697,3 +697,623 @@ def test_template_counts_report():
 
     # All pass — the counts meet requirements
     assert True
+
+
+# ── Overwrite protection tests ──────────────────────────────────────────────
+
+
+class TestAnnotationSetBuilderOverwriteProtection:
+    """Verify the builder refuses to overwrite annotation templates that may
+    contain human-filled data.
+
+    All tests that involve writing use temporary directories — the real
+    ``data/benchmarks/competition`` files are never touched.
+    """
+
+    # -- helpers ---------------------------------------------------------------
+
+    @staticmethod
+    def _make_minimal_unified_jobs(tmp_path: Path, count: int = 10) -> Path:
+        """Create a small unified_jobs.csv with *count* ETL jobs."""
+        import csv
+
+        path = tmp_path / "unified_jobs.csv"
+        fields = [
+            "record_id", "job_title", "company", "normalized_category",
+            "responsibility", "requirement", "normalized_skills",
+            "education", "work_years",
+        ]
+        with path.open("w", encoding="utf-8-sig", newline="") as fh:
+            writer = csv.DictWriter(fh, fieldnames=fields)
+            writer.writeheader()
+            for i in range(count):
+                writer.writerow({
+                    "record_id": f"job-{i:04d}",
+                    "job_title": f"ETL开发工程师-{i}",
+                    "company": "TestCorp",
+                    "normalized_category": "data_engineering",
+                    "responsibility": "负责ETL流程开发和数据仓库建设",
+                    "requirement": "熟悉SQL和Python",
+                    "normalized_skills": "SQL|Python|Data Warehouse",
+                    "education": "本科",
+                    "work_years": "3年",
+                })
+        return path
+
+    @staticmethod
+    def _make_template_csv(
+        path: Path,
+        fieldnames: list[str],
+        rows: list[dict],
+    ) -> None:
+        """Write a CSV template file (utf-8-sig, same as the builder uses)."""
+        import csv
+
+        path.parent.mkdir(parents=True, exist_ok=True)
+        with path.open("w", encoding="utf-8-sig", newline="") as fh:
+            writer = csv.DictWriter(fh, fieldnames=fieldnames)
+            writer.writeheader()
+            writer.writerows(rows)
+
+    @staticmethod
+    def _read_bytes(path: Path) -> bytes:
+        """Read raw bytes of a file."""
+        return path.read_bytes()
+
+    # -- _has_human_annotations unit tests ------------------------------------
+
+    def test_has_human_annotations_file_not_found(self, tmp_path):
+        """Non-existent file → (False, empty set)."""
+        from scripts.build_competition_annotation_set import (
+            _has_human_annotations,
+        )
+
+        has_ann, fields = _has_human_annotations(tmp_path / "nope.csv")
+        assert has_ann is False
+        assert fields == set()
+
+    def test_has_human_annotations_empty_template(self, tmp_path):
+        """Template with all-empty annotation columns → (False, empty set)."""
+        from scripts.build_competition_annotation_set import (
+            _has_human_annotations,
+            JD_ANNOTATION_FIELDS,
+        )
+
+        path = tmp_path / "empty.csv"
+        self._make_template_csv(path, JD_ANNOTATION_FIELDS, [
+            {f: "" for f in JD_ANNOTATION_FIELDS} for _ in range(5)
+        ])
+
+        has_ann, fields = _has_human_annotations(path)
+        assert has_ann is False
+        assert fields == set()
+
+    def test_has_human_annotations_detects_annotator_id(self, tmp_path):
+        """Non-empty annotator_id → True."""
+        from scripts.build_competition_annotation_set import (
+            _has_human_annotations,
+            JD_ANNOTATION_FIELDS,
+        )
+
+        path = tmp_path / "anno.csv"
+        row = {f: "" for f in JD_ANNOTATION_FIELDS}
+        row["annotator_id"] = "reviewer_a"
+        self._make_template_csv(path, JD_ANNOTATION_FIELDS, [row])
+
+        has_ann, fields = _has_human_annotations(path)
+        assert has_ann is True
+        assert "annotator_id" in fields
+
+    def test_has_human_annotations_detects_annotated_prefix(self, tmp_path):
+        """Non-empty annotated_skills → True (prefix match)."""
+        from scripts.build_competition_annotation_set import (
+            _has_human_annotations,
+            RESUME_ANNOTATION_FIELDS,
+        )
+
+        path = tmp_path / "resume_anno.csv"
+        row = {f: "" for f in RESUME_ANNOTATION_FIELDS}
+        row["annotated_skills"] = "Java|Python"
+        self._make_template_csv(path, RESUME_ANNOTATION_FIELDS, [row])
+
+        has_ann, fields = _has_human_annotations(path)
+        assert has_ann is True
+        assert "annotated_skills" in fields
+
+    def test_has_human_annotations_detects_match_label(self, tmp_path):
+        """Non-empty match_label → True."""
+        from scripts.build_competition_annotation_set import (
+            _has_human_annotations,
+            MATCHING_ANNOTATION_FIELDS,
+        )
+
+        path = tmp_path / "match_anno.csv"
+        row = {f: "" for f in MATCHING_ANNOTATION_FIELDS}
+        row["match_label"] = "match"
+        self._make_template_csv(path, MATCHING_ANNOTATION_FIELDS, [row])
+
+        has_ann, fields = _has_human_annotations(path)
+        assert has_ann is True
+        assert "match_label" in fields
+
+    def test_has_human_annotations_detects_annotation_date(self, tmp_path):
+        """Non-empty annotation_date → True."""
+        from scripts.build_competition_annotation_set import (
+            _has_human_annotations,
+            JD_ANNOTATION_FIELDS,
+        )
+
+        path = tmp_path / "date_anno.csv"
+        row = {f: "" for f in JD_ANNOTATION_FIELDS}
+        row["annotation_date"] = "2026-07-17"
+        self._make_template_csv(path, JD_ANNOTATION_FIELDS, [row])
+
+        has_ann, fields = _has_human_annotations(path)
+        assert has_ann is True
+        assert "annotation_date" in fields
+
+    def test_has_human_annotations_detects_annotation_notes(self, tmp_path):
+        """Non-empty annotation_notes → True."""
+        from scripts.build_competition_annotation_set import (
+            _has_human_annotations,
+            JD_ANNOTATION_FIELDS,
+        )
+
+        path = tmp_path / "notes_anno.csv"
+        row = {f: "" for f in JD_ANNOTATION_FIELDS}
+        row["annotation_notes"] = "需要进一步确认"
+        self._make_template_csv(path, JD_ANNOTATION_FIELDS, [row])
+
+        has_ann, fields = _has_human_annotations(path)
+        assert has_ann is True
+        assert "annotation_notes" in fields
+
+    def test_has_human_annotations_detects_match_rationale(self, tmp_path):
+        """Non-empty match_rationale → True."""
+        from scripts.build_competition_annotation_set import (
+            _has_human_annotations,
+            MATCHING_ANNOTATION_FIELDS,
+        )
+
+        path = tmp_path / "rationale_anno.csv"
+        row = {f: "" for f in MATCHING_ANNOTATION_FIELDS}
+        row["match_rationale"] = "Perfect match"
+        self._make_template_csv(path, MATCHING_ANNOTATION_FIELDS, [row])
+
+        has_ann, fields = _has_human_annotations(path)
+        assert has_ann is True
+        assert "match_rationale" in fields
+
+    def test_has_human_annotations_detects_reviewer_field(self, tmp_path):
+        """Field name containing 'reviewer' → True (keyword match)."""
+        from scripts.build_competition_annotation_set import (
+            _has_human_annotations,
+            MATCHING_ANNOTATION_FIELDS,
+        )
+
+        # Use matching fields + custom reviewer field
+        fields = list(MATCHING_ANNOTATION_FIELDS) + ["final_reviewer_id"]
+        path = tmp_path / "reviewer_anno.csv"
+        row = {f: "" for f in fields}
+        row["final_reviewer_id"] = "senior_reviewer"
+        self._make_template_csv(path, fields, [row])
+
+        has_ann, found = _has_human_annotations(path)
+        assert has_ann is True
+        assert "final_reviewer_id" in found
+
+    def test_has_human_annotations_detects_arbitration_field(self, tmp_path):
+        """Field name containing 'arbitration' → True (keyword match)."""
+        from scripts.build_competition_annotation_set import (
+            _has_human_annotations,
+            MATCHING_ANNOTATION_FIELDS,
+        )
+
+        fields = list(MATCHING_ANNOTATION_FIELDS) + ["arbitration_status"]
+        path = tmp_path / "arb_anno.csv"
+        row = {f: "" for f in fields}
+        row["arbitration_status"] = "resolved"
+        self._make_template_csv(path, fields, [row])
+
+        has_ann, found = _has_human_annotations(path)
+        assert has_ann is True
+        assert "arbitration_status" in found
+
+    def test_has_human_annotations_empty_strings_ignored(self, tmp_path):
+        """Whitespace-only values should not trigger detection."""
+        from scripts.build_competition_annotation_set import (
+            _has_human_annotations,
+            JD_ANNOTATION_FIELDS,
+        )
+
+        path = tmp_path / "whitespace.csv"
+        row = {f: "" for f in JD_ANNOTATION_FIELDS}
+        row["annotator_id"] = "   "  # whitespace only
+        self._make_template_csv(path, JD_ANNOTATION_FIELDS, [row])
+
+        has_ann, fields = _has_human_annotations(path)
+        assert has_ann is False
+
+    # -- _check_targets unit tests --------------------------------------------
+
+    def test_check_targets_all_absent_returns_empty(self, tmp_path):
+        """All targets missing → no reasons."""
+        from scripts.build_competition_annotation_set import _check_targets
+
+        targets = {
+            "JD": tmp_path / "jd.csv",
+            "Resume": tmp_path / "resume.csv",
+            "Matching": tmp_path / "matching.csv",
+        }
+        reasons = _check_targets(targets, force=False)
+        assert reasons == []
+
+    def test_check_targets_exists_no_force(self, tmp_path):
+        """Existing target without --force → rejection."""
+        from scripts.build_competition_annotation_set import (
+            _check_targets,
+            JD_ANNOTATION_FIELDS,
+        )
+
+        jd_path = tmp_path / "jd.csv"
+        self._make_template_csv(jd_path, JD_ANNOTATION_FIELDS, [
+            {f: "" for f in JD_ANNOTATION_FIELDS}
+        ])
+
+        reasons = _check_targets({"JD": jd_path}, force=False)
+        assert len(reasons) == 1
+        assert "already exists" in reasons[0]
+        assert str(jd_path) in reasons[0]
+
+    def test_check_targets_empty_template_with_force_ok(self, tmp_path):
+        """Empty template + --force → allowed (no reasons)."""
+        from scripts.build_competition_annotation_set import (
+            _check_targets,
+            JD_ANNOTATION_FIELDS,
+        )
+
+        jd_path = tmp_path / "jd.csv"
+        self._make_template_csv(jd_path, JD_ANNOTATION_FIELDS, [
+            {f: "" for f in JD_ANNOTATION_FIELDS}
+        ])
+
+        reasons = _check_targets({"JD": jd_path}, force=True)
+        assert reasons == []
+
+    def test_check_targets_annotator_id_with_force_refused(self, tmp_path):
+        """annotator_id present + --force → refused."""
+        from scripts.build_competition_annotation_set import (
+            _check_targets,
+            JD_ANNOTATION_FIELDS,
+        )
+
+        jd_path = tmp_path / "jd.csv"
+        row = {f: "" for f in JD_ANNOTATION_FIELDS}
+        row["annotator_id"] = "reviewer_a"
+        self._make_template_csv(jd_path, JD_ANNOTATION_FIELDS, [row])
+
+        reasons = _check_targets({"JD": jd_path}, force=True)
+        assert len(reasons) == 1
+        assert "annotator_id" in reasons[0]
+        assert "human annotations" in reasons[0]
+
+    def test_check_targets_annotated_field_with_force_refused(self, tmp_path):
+        """annotated_skills present + --force → refused."""
+        from scripts.build_competition_annotation_set import (
+            _check_targets,
+            JD_ANNOTATION_FIELDS,
+        )
+
+        jd_path = tmp_path / "jd.csv"
+        row = {f: "" for f in JD_ANNOTATION_FIELDS}
+        row["annotated_skills"] = "Java|SQL"
+        self._make_template_csv(jd_path, JD_ANNOTATION_FIELDS, [row])
+
+        reasons = _check_targets({"JD": jd_path}, force=True)
+        assert len(reasons) == 1
+        assert "annotated_skills" in reasons[0]
+
+    def test_check_targets_match_label_with_force_refused(self, tmp_path):
+        """match_label present + --force → refused."""
+        from scripts.build_competition_annotation_set import (
+            _check_targets,
+            MATCHING_ANNOTATION_FIELDS,
+        )
+
+        match_path = tmp_path / "match.csv"
+        row = {f: "" for f in MATCHING_ANNOTATION_FIELDS}
+        row["match_label"] = "match"
+        self._make_template_csv(match_path, MATCHING_ANNOTATION_FIELDS, [row])
+
+        reasons = _check_targets({"Matching": match_path}, force=True)
+        assert len(reasons) == 1
+        assert "match_label" in reasons[0]
+
+    # -- Integration / multi-file tests ---------------------------------------
+
+    def test_multi_file_precheck_no_partial_overwrite(self, tmp_path):
+        """When one target has annotations, *none* of the others are written.
+
+        We simulate by running _check_targets against two targets where one
+        has annotations.  The check returns reasons → nothing proceeds.
+        We then verify the other (clean) target file was NOT touched.
+        """
+        from scripts.build_competition_annotation_set import (
+            _check_targets,
+            JD_ANNOTATION_FIELDS,
+            RESUME_ANNOTATION_FIELDS,
+        )
+
+        # Clean JD template
+        jd_path = tmp_path / "jd.csv"
+        self._make_template_csv(jd_path, JD_ANNOTATION_FIELDS, [
+            {f: "" for f in JD_ANNOTATION_FIELDS} for _ in range(3)
+        ])
+        jd_bytes_before = self._read_bytes(jd_path)
+
+        # Annotated resume template
+        resume_path = tmp_path / "resume.csv"
+        row = {f: "" for f in RESUME_ANNOTATION_FIELDS}
+        row["annotated_education"] = "硕士"
+        self._make_template_csv(resume_path, RESUME_ANNOTATION_FIELDS, [row])
+        resume_bytes_before = self._read_bytes(resume_path)
+
+        targets = {
+            "JD parsing template": jd_path,
+            "Resume extraction template": resume_path,
+        }
+
+        reasons = _check_targets(targets, force=True)
+        # Only the resume should be flagged
+        assert len(reasons) == 1
+        assert "Resume extraction template" in reasons[0]
+
+        # BOTH files must be byte-identical to before the check
+        assert self._read_bytes(jd_path) == jd_bytes_before, (
+            "Clean JD template was modified — partial overwrite!"
+        )
+        assert self._read_bytes(resume_path) == resume_bytes_before, (
+            "Annotated resume template was modified!"
+        )
+
+    def test_rejection_preserves_original_bytes(self, tmp_path):
+        """After _check_targets rejects, original file content is unchanged."""
+        from scripts.build_competition_annotation_set import (
+            _check_targets,
+            JD_ANNOTATION_FIELDS,
+        )
+
+        jd_path = tmp_path / "jd.csv"
+        row = {f: "" for f in JD_ANNOTATION_FIELDS}
+        row["job_record_id"] = "original-123"
+        row["job_title"] = "原始数据工程师"
+        row["annotator_id"] = "annotator_x"
+        row["annotated_skills"] = "Kafka|Flink"
+        self._make_template_csv(jd_path, JD_ANNOTATION_FIELDS, [row])
+
+        original_bytes = self._read_bytes(jd_path)
+
+        reasons = _check_targets({"JD": jd_path}, force=True)
+        assert len(reasons) == 1
+
+        after_bytes = self._read_bytes(jd_path)
+        assert after_bytes == original_bytes, (
+            "Original file bytes changed after rejection!"
+        )
+
+    def test_rejection_error_message_has_path_not_content(self, tmp_path):
+        """Error messages include file path and field names but NOT values."""
+        from scripts.build_competition_annotation_set import (
+            _check_targets,
+            JD_ANNOTATION_FIELDS,
+        )
+
+        jd_path = tmp_path / "jd.csv"
+        row = {f: "" for f in JD_ANNOTATION_FIELDS}
+        row["annotator_id"] = "reviewer_secret_name"
+        row["annotated_skills"] = "SecretSkill|Classified"
+        self._make_template_csv(jd_path, JD_ANNOTATION_FIELDS, [row])
+
+        reasons = _check_targets({"JD": jd_path}, force=True)
+        message = reasons[0]
+
+        # Should contain path
+        assert str(jd_path) in message
+        # Should contain field NAMES
+        assert "annotator_id" in message
+        assert "annotated_skills" in message
+        # Should NOT leak actual annotation values
+        assert "reviewer_secret_name" not in message
+        assert "SecretSkill" not in message
+        assert "Classified" not in message
+
+    # -- Full main() integration tests ----------------------------------------
+
+    def test_main_normal_init_when_targets_absent(self, tmp_path, monkeypatch):
+        """When no targets exist, main() creates them and returns 0."""
+        jobs_path = self._make_minimal_unified_jobs(tmp_path, count=10)
+        comp_dir = tmp_path / "competition"
+        comp_dir.mkdir(parents=True)
+
+        monkeypatch.setattr(
+            "scripts.build_competition_annotation_set.UNIFIED_JOBS_PATH",
+            jobs_path,
+        )
+        monkeypatch.setattr(
+            "scripts.build_competition_annotation_set.COMPETITION_DIR",
+            comp_dir,
+        )
+
+        from scripts.build_competition_annotation_set import main
+
+        exit_code = main(force=False)
+        assert exit_code == 0
+
+        assert (comp_dir / "jd_parsing_annotation_template.csv").exists()
+        assert (comp_dir / "resume_extraction_annotation_template.csv").exists()
+        assert (comp_dir / "person_job_matching_annotation_template.csv").exists()
+
+    def test_main_refuse_when_target_exists_without_force(
+        self, tmp_path, monkeypatch,
+    ):
+        """Existing target + no --force → main() returns 1, nothing written."""
+        jobs_path = self._make_minimal_unified_jobs(tmp_path, count=10)
+        comp_dir = tmp_path / "competition"
+        comp_dir.mkdir(parents=True)
+
+        # Pre-create one template file
+        from scripts.build_competition_annotation_set import JD_ANNOTATION_FIELDS
+
+        jd_path = comp_dir / "jd_parsing_annotation_template.csv"
+        self._make_template_csv(jd_path, JD_ANNOTATION_FIELDS, [
+            {f: "" for f in JD_ANNOTATION_FIELDS}
+        ])
+        jd_bytes_before = self._read_bytes(jd_path)
+
+        monkeypatch.setattr(
+            "scripts.build_competition_annotation_set.UNIFIED_JOBS_PATH",
+            jobs_path,
+        )
+        monkeypatch.setattr(
+            "scripts.build_competition_annotation_set.COMPETITION_DIR",
+            comp_dir,
+        )
+
+        from scripts.build_competition_annotation_set import main
+
+        exit_code = main(force=False)
+        assert exit_code == 1, (
+            f"Expected exit code 1 (rejection), got {exit_code}"
+        )
+
+        # JD template must be untouched
+        assert self._read_bytes(jd_path) == jd_bytes_before, (
+            "Existing template was overwritten despite rejection!"
+        )
+
+    def test_main_force_rebuild_empty_template(
+        self, tmp_path, monkeypatch,
+    ):
+        """Empty template + --force → main() rebuilds it and returns 0."""
+        jobs_path = self._make_minimal_unified_jobs(tmp_path, count=10)
+        comp_dir = tmp_path / "competition"
+        comp_dir.mkdir(parents=True)
+
+        # Pre-create an EMPTY template (no annotations)
+        from scripts.build_competition_annotation_set import JD_ANNOTATION_FIELDS
+
+        jd_path = comp_dir / "jd_parsing_annotation_template.csv"
+        self._make_template_csv(jd_path, JD_ANNOTATION_FIELDS, [
+            {f: "" for f in JD_ANNOTATION_FIELDS} for _ in range(3)
+        ])
+
+        monkeypatch.setattr(
+            "scripts.build_competition_annotation_set.UNIFIED_JOBS_PATH",
+            jobs_path,
+        )
+        monkeypatch.setattr(
+            "scripts.build_competition_annotation_set.COMPETITION_DIR",
+            comp_dir,
+        )
+
+        from scripts.build_competition_annotation_set import main
+
+        exit_code = main(force=True)
+        assert exit_code == 0, (
+            f"Expected exit code 0 (rebuild allowed), got {exit_code}"
+        )
+
+        # Template should still exist (was rebuilt)
+        assert jd_path.exists()
+
+        # Verify the rebuilt template still has empty annotation columns
+        import csv
+        with jd_path.open("r", encoding="utf-8-sig", newline="") as fh:
+            reader = csv.DictReader(fh)
+            for row in reader:
+                assert str(row.get("annotator_id", "")).strip() == ""
+                assert str(row.get("annotated_skills", "")).strip() == ""
+
+    def test_main_force_refuse_when_annotated(
+        self, tmp_path, monkeypatch,
+    ):
+        """Template with human annotations + --force → main() returns 1."""
+        jobs_path = self._make_minimal_unified_jobs(tmp_path, count=10)
+        comp_dir = tmp_path / "competition"
+        comp_dir.mkdir(parents=True)
+
+        # Pre-create a template WITH annotations
+        from scripts.build_competition_annotation_set import JD_ANNOTATION_FIELDS
+
+        jd_path = comp_dir / "jd_parsing_annotation_template.csv"
+        row = {f: "" for f in JD_ANNOTATION_FIELDS}
+        row["annotator_id"] = "reviewer_a"
+        row["annotated_skills"] = "Java|Python"
+        self._make_template_csv(jd_path, JD_ANNOTATION_FIELDS, [row])
+        jd_bytes_before = self._read_bytes(jd_path)
+
+        monkeypatch.setattr(
+            "scripts.build_competition_annotation_set.UNIFIED_JOBS_PATH",
+            jobs_path,
+        )
+        monkeypatch.setattr(
+            "scripts.build_competition_annotation_set.COMPETITION_DIR",
+            comp_dir,
+        )
+
+        from scripts.build_competition_annotation_set import main
+
+        exit_code = main(force=True)
+        assert exit_code == 1, (
+            f"Expected exit code 1 (annotations found), got {exit_code}"
+        )
+
+        # Original file must be untouched
+        assert self._read_bytes(jd_path) == jd_bytes_before, (
+            "Annotated template was overwritten!"
+        )
+
+    def test_main_rejection_no_files_created_in_comp_dir(
+        self, tmp_path, monkeypatch,
+    ):
+        """When rejection happens, the competition dir is not even mkdir'd
+        if it didn't already exist, and no new files appear inside it."""
+        jobs_path = self._make_minimal_unified_jobs(tmp_path, count=10)
+        comp_dir = tmp_path / "competition"
+        # Do NOT pre-create comp_dir — let main() try only after pre-check
+
+        # Pre-create one template WITH annotations
+        from scripts.build_competition_annotation_set import JD_ANNOTATION_FIELDS
+
+        comp_dir.mkdir(parents=True)
+        jd_path = comp_dir / "jd_parsing_annotation_template.csv"
+        row = {f: "" for f in JD_ANNOTATION_FIELDS}
+        row["annotator_id"] = "reviewer_a"
+        self._make_template_csv(jd_path, JD_ANNOTATION_FIELDS, [row])
+
+        # Record the set of files before running
+        files_before = set(
+            p.relative_to(comp_dir) for p in comp_dir.rglob("*") if p.is_file()
+        )
+
+        monkeypatch.setattr(
+            "scripts.build_competition_annotation_set.UNIFIED_JOBS_PATH",
+            jobs_path,
+        )
+        monkeypatch.setattr(
+            "scripts.build_competition_annotation_set.COMPETITION_DIR",
+            comp_dir,
+        )
+
+        from scripts.build_competition_annotation_set import main
+
+        exit_code = main(force=True)
+        assert exit_code == 1
+
+        # No new files should have been created
+        files_after = set(
+            p.relative_to(comp_dir) for p in comp_dir.rglob("*") if p.is_file()
+        )
+        assert files_after == files_before, (
+            f"New files appeared in competition dir: {files_after - files_before}"
+        )
