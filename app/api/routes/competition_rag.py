@@ -105,16 +105,35 @@ def evidence_generate(
 def evidence_health(
     service: CompetitionRAGService = Depends(_get_service),
 ) -> dict[str, Any]:
-    """Return evidence-source health summary."""
+    """Return evidence-source health summary.
+
+    File paths are reduced to safe filenames so that no absolute path,
+    username, or temporary directory leaks to the client.
+    """
+    def _safe_name(raw: str) -> str:
+        """Return bare filename regardless of platform path conventions.
+
+        Backslashes are normalised to forward slashes first so that Windows
+        paths (``C:\\Users\\name\\file.json``), Unix paths
+        (``/tmp/file.json``), and relative paths (``data/etl/file.json``)
+        all reduce to ``file.json``.  Non‑path identifiers like ``built‑in``
+        are returned unchanged.
+        """
+        stripped = raw.strip()
+        normalised = stripped.replace("\\", "/")
+        if "/" in normalised:
+            return normalised.rsplit("/", 1)[-1]
+        return stripped
+
     return {
         "status": "ok",
-        "sources_loaded": list(service._sources_used),
+        "sources_loaded": [_safe_name(s) for s in service._sources_used],
         "competencies_indexed": len(service._comp_by_id),
         "roles_indexed": len(service._role_index),
         "alias_entries": len(service._alias_index),
         "milvus_wired": service._milvus.store is not None,
         "neo4j_wired": service._neo4j.graph is not None,
-        "audit_path": str(service.audit_path),
+        "audit_path": service.audit_path.name,
     }
 
 

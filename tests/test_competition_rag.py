@@ -434,14 +434,95 @@ def test_missing_required_fields():
 
 
 def test_health_endpoint():
-    """Health endpoint returns source metadata."""
-    svc = _make_service()
+    """Health endpoint returns source metadata — all paths are safe filenames only."""
+    audit_dir = tempfile.mkdtemp()
+    svc = _make_service(audit_dir=audit_dir)
+
+    # Explicitly inject every path shape that _safe_name must handle,
+    # independently of the host OS.
+    svc._sources_used = [
+        r"C:\Users\name\windows-backslash.json",    # Windows backslash abs
+        "C:/Users/name/windows-forward.json",        # Windows forward-slash abs
+        "/tmp/unix-abs.json",                         # Unix absolute
+        "data/etl/relative.json",                     # POSIX relative
+        "plain-name.json",                            # bare filename
+        "built-in",                                   # non-path identifier
+    ]
+
     client = _test_app(svc)
     resp = client.get("/api/competition/rag/health")
     assert resp.status_code == 200
     data = resp.json()
     assert data["status"] == "ok"
     assert data["competencies_indexed"] > 0
+    # audit_path must be the bare filename, never an absolute path
+    assert data["audit_path"] == "rag_audit.jsonl"
+    assert "/" not in data["audit_path"]
+    assert "\\" not in data["audit_path"]
+    # Every injected path must reduce to the bare filename or stay unchanged
+    expected = [
+        "windows-backslash.json",
+        "windows-forward.json",
+        "unix-abs.json",
+        "relative.json",
+        "plain-name.json",
+        "built-in",
+    ]
+    assert data["sources_loaded"] == expected
+    # No entry in the whole response body should contain a path separator
+    raw_text = resp.text
+    assert "C:\\" not in raw_text
+    assert "C:/" not in raw_text
+    assert "/tmp/" not in raw_text
+    assert "data/etl/" not in raw_text
+    # The specific temp directory must not leak anywhere in the response
+    assert audit_dir not in raw_text, "Temporary directory leaked in health response"
+
+
+def test_health_endpoint_no_absolute_path_leak():
+    """Health response must never expose absolute paths, usernames, or temp dirs."""
+    audit_dir = tempfile.mkdtemp()
+    svc = _make_service(audit_dir=audit_dir)
+
+    # Another explicit set covering edge cases
+    svc._sources_used = [
+        r"D:\Projects\secret\key.json",
+        "/home/user/secret.json",
+        "C:/Users/name/Projects/secret.json",
+        "sub/deep/nested/file.csv",
+        "just-a-name",
+        "built-in",
+    ]
+
+    client = _test_app(svc)
+    resp = client.get("/api/competition/rag/health")
+    assert resp.status_code == 200
+    data = resp.json()
+    raw_text = resp.text
+
+    import re
+    # No Windows absolute paths  (C:\…  D:\…)
+    assert not re.search(r"[A-Za-z]:\\\\", raw_text), (
+        "Windows absolute path leaked in health response"
+    )
+    # No Unix absolute paths
+    assert "/home/" not in raw_text, "Unix /home/ path leaked"
+    assert "/Users/" not in raw_text, "Unix /Users/ path leaked"
+    assert "/tmp/" not in raw_text, "Unix /tmp/ path leaked"
+    # No relative path segments
+    assert "data/etl/" not in raw_text, "Relative path leaked"
+    assert "sub/deep/" not in raw_text, "Relative path leaked"
+    # No tempfile prefix leaked
+    assert tempfile.gettempdir() not in raw_text, (
+        "System temp directory leaked in health response"
+    )
+    # Verify the specific temp directory is NOT present
+    assert audit_dir not in raw_text, "Temporary directory leaked in health response"
+
+    # Every entry must be a safe bare name
+    for entry in data["sources_loaded"]:
+        assert "\\" not in entry, f"Backslash leaked: {entry}"
+        assert "/" not in entry, f"Forward slash leaked: {entry}"
 
 
 def test_answer_marks_non_llm():
