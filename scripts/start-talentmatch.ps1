@@ -26,6 +26,8 @@ foreach ($pidToKill in ($pids | Where-Object { $_ -gt 0 } | Select-Object -Uniqu
 }
 
 $env:PORT = "3000"
+$env:STORAGE_API_URL = "http://127.0.0.1:8080"
+$env:JAVA_API_URL = "http://127.0.0.1:8081"
 Write-Host "==> Starting redesigned TalentMatch page" -ForegroundColor Cyan
 Write-Host "    http://localhost:3000" -ForegroundColor Green
 Write-Host "    Press Ctrl+C to stop." -ForegroundColor DarkGray
