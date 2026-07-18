@@ -1,0 +1,37 @@
+# =============================================================================
+# FastAPI Storage & Search API — Competition Image
+# Port: 8080  |  Entry: app.main:app  |  Runner: uvicorn
+# =============================================================================
+FROM python:3.12-slim
+
+LABEL org.xh202621.service="storage-api"
+LABEL org.xh202621.port="8080"
+
+# ---- system deps ------------------------------------------------------------
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    curl \
+    && rm -rf /var/lib/apt/lists/*
+
+# ---- non-root user ----------------------------------------------------------
+RUN groupadd -r xh && useradd -r -g xh -d /app xh
+
+WORKDIR /app
+
+# ---- pip dependencies (cached layer) ----------------------------------------
+COPY requirements.txt /app/requirements.txt
+RUN pip install --no-cache-dir -r requirements.txt
+
+# ---- application code -------------------------------------------------------
+COPY app/ /app/app/
+
+# ---- runtime user -----------------------------------------------------------
+RUN chown -R xh:xh /app
+USER xh
+
+# ---- health check -----------------------------------------------------------
+HEALTHCHECK --interval=15s --timeout=5s --retries=3 --start-period=20s \
+    CMD curl -fsS http://localhost:8080/api/health || exit 1
+
+# ---- run --------------------------------------------------------------------
+EXPOSE 8080
+CMD ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "8080", "--log-level", "info"]
