@@ -1,0 +1,152 @@
+{
+  "meta": {
+    "description": "岗位能力全景图谱 — 展示岗位、技能、能力维度之间的关联关系",
+    "generated_at": "2026-07-15T08:00:00Z",
+    "stacks": ["backend", "frontend", "data", "ai"],
+    "levels": ["junior", "mid", "senior", "staff"],
+    "versions": ["v1", "v2"]
+  },
+  "nodes": [
+    {
+      "id": "role-java-developer",
+      "type": "role",
+      "label": "Java开发工程师",
+      "stack": "backend",
+      "level": "mid",
+      "version": "v2",
+      "source_ids": ["src-mkt-2026q1-001"]
+    },
+    {
+      "id": "role-frontend-developer",
+      "type": "role",
+      "label": "前端开发工程师",
+      "stack": "frontend",
+      "level": "mid",
+      "version": "v1",
+      "source_ids": ["src-seed-fe-001"]
+    },
+    {
+      "id": "role-data-scientist",
+      "type": "role",
+      "label": "数据科学家",
+      "stack": "data",
+      "level": "mid",
+      "version": "v2",
+      "source_ids": ["src-mkt-2026q1-ds"]
+    },
+    {
+      "id": "role-ai-agent-engineer",
+      "type": "role",
+      "label": "AI Agent工程师",
+      "stack": "ai",
+      "level": "mid",
+      "version": "v1",
+      "source_ids": ["src-boss-001"]
+    },
+    {
+      "id": "skill-java",
+      "type": "skill",
+      "label": "Java",
+      "source_ids": ["src-mkt-2026q1-001", "src-seed-java-001"]
+    },
+    {
+      "id": "skill-spring-boot",
+      "type": "skill",
+      "label": "Spring Boot",
+      "source_ids": ["src-mkt-2026q1-001", "src-seed-java-001"]
+    },
+    {
+      "id": "skill-python",
+      "type": "skill",
+      "label": "Python",
+      "source_ids": ["src-mkt-2026q1-ds", "src-boss-001", "src-seed-ds-001"]
+    },
+    {
+      "id": "skill-sql",
+      "type": "skill",
+      "label": "SQL",
+      "source_ids": ["src-mkt-2026q1-ds", "src-seed-ds-001", "src-51job-045"]
+    },
+    {
+      "id": "skill-llm",
+      "type": "skill",
+      "label": "LLM应用开发",
+      "source_ids": ["src-boss-001", "src-mkt-2026q1-001", "src-mkt-2026q1-ds"]
+    },
+    {
+      "id": "skill-react",
+      "type": "skill",
+      "label": "React",
+      "source_ids": ["src-seed-fe-001"]
+    },
+    {
+      "id": "skill-ml",
+      "type": "skill",
+      "label": "机器学习",
+      "source_ids": ["src-mkt-2026q1-ds", "src-seed-ds-001"]
+    },
+    {
+      "id": "skill-rag",
+      "type": "skill",
+      "label": "RAG架构",
+      "source_ids": ["src-boss-001"]
+    },
+    {
+      "id": "skill-k8s",
+      "type": "skill",
+      "label": "Kubernetes",
+      "source_ids": ["src-mkt-2026q1-001", "src-boss-2025-456"]
+    },
+    {
+      "id": "cap-backend-design",
+      "type": "capability",
+      "label": "后端架构设计",
+      "source_ids": ["src-mkt-2026q1-001"]
+    },
+    {
+      "id": "cap-system-integration",
+      "type": "capability",
+      "label": "系统集成",
+      "source_ids": ["src-mkt-2026q1-001", "src-boss-001"]
+    },
+    {
+      "id": "cap-data-modeling",
+      "type": "capability",
+      "label": "数据建模",
+      "source_ids": ["src-mkt-2026q1-ds", "src-51job-045"]
+    },
+    {
+      "id": "cap-agent-design",
+      "type": "capability",
+      "label": "Agent架构设计",
+      "source_ids": ["src-boss-001"]
+    },
+    {
+      "id": "cap-fe-architecture",
+      "type": "capability",
+      "label": "前端架构",
+      "source_ids": ["src-seed-fe-001"]
+    }
+  ],
+  "edges": [
+    {"source": "role-java-developer", "target": "skill-java", "relation": "requires", "source_ids": ["src-mkt-2026q1-001"]},
+    {"source": "role-java-developer", "target": "skill-spring-boot", "relation": "requires", "source_ids": ["src-mkt-2026q1-001"]},
+    {"source": "role-java-developer", "target": "skill-sql", "relation": "requires", "source_ids": ["src-mkt-2026q1-001"]},
+    {"source": "role-java-developer", "target": "skill-llm", "relation": "requires", "source_ids": ["src-mkt-2026q1-001"]},
+    {"source": "role-java-developer", "target": "skill-k8s", "relation": "requires", "source_ids": ["src-mkt-2026q1-001"]},
+    {"source": "role-java-developer", "target": "cap-backend-design", "relation": "demonstrates", "source_ids": ["src-mkt-2026q1-001"]},
+    {"source": "role-java-developer", "target": "cap-system-integration", "relation": "demonstrates", "source_ids": ["src-mkt-2026q1-001"]},
+    {"source": "role-data-scientist", "target": "skill-python", "relation": "requires", "source_ids": ["src-mkt-2026q1-ds"]},
+    {"source": "role-data-scientist", "target": "skill-sql", "relation": "requires", "source_ids": ["src-mkt-2026q1-ds"]},
+    {"source": "role-data-scientist", "target": "skill-ml", "relation": "requires", "source_ids": ["src-mkt-2026q1-ds"]},
+    {"source": "role-data-scientist", "target": "skill-llm", "relation": "requires", "source_ids": ["src-mkt-2026q1-ds"]},
+    {"source": "role-data-scientist", "target": "cap-data-modeling", "relation": "demonstrates", "source_ids": ["src-mkt-2026q1-ds"]},
+    {"source": "role-ai-agent-engineer", "target": "skill-python", "relation": "requires", "source_ids": ["src-boss-001"]},
+    {"source": "role-ai-agent-engineer", "target": "skill-llm", "relation": "requires", "source_ids": ["src-boss-001"]},
+    {"source": "role-ai-agent-engineer", "target": "skill-rag", "relation": "requires", "source_ids": ["src-boss-001"]},
+    {"source": "role-ai-agent-engineer", "target": "cap-agent-design", "relation": "demonstrates", "source_ids": ["src-boss-001"]},
+    {"source": "role-ai-agent-engineer", "target": "cap-system-integration", "relation": "demonstrates", "source_ids": ["src-boss-001"]},
+    {"source": "role-frontend-developer", "target": "skill-react", "relation": "requires", "source_ids": ["src-seed-fe-001"]},
+    {"source": "role-frontend-developer", "target": "cap-fe-architecture", "relation": "demonstrates", "source_ids": ["src-seed-fe-001"]}
+  ]
+}

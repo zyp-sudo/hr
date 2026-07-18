@@ -1,0 +1,258 @@
+{
+  "version": "1.0.0",
+  "generated_at": "2026-07-17T00:00:00+08:00",
+  "description": "竞赛岗位证据源 — 从 unified_job_skills.csv、KG 节点/边、岗位发布中提取的结构化能力证据。用于证据型生成与幻觉防控。",
+  "source_files": [
+    "data/etl/unified_job_skills.csv",
+    "data/etl/unified_jobs.csv",
+    "data/kg/nodes.csv",
+    "data/kg/edges.csv",
+    "data/kg/role_aliases.csv"
+  ],
+  "competencies": [
+    {
+      "id": "comp_python",
+      "name": "Python",
+      "category": "skill",
+      "aliases": ["python3", "Python编程", "py", "Python开发"],
+      "job_count": 5230,
+      "source_files": ["data/etl/unified_job_skills.csv"],
+      "related_roles": ["software-engineer", "data-analyst", "algorithm-engineer", "backend-engineer"],
+      "confidence": 0.95
+    },
+    {
+      "id": "comp_java",
+      "name": "Java",
+      "category": "skill",
+      "aliases": ["java8", "Java开发", "J2EE", "Spring", "Spring Boot"],
+      "job_count": 6180,
+      "source_files": ["data/etl/unified_job_skills.csv"],
+      "related_roles": ["software-engineer", "backend-engineer", "big-data-engineer"],
+      "confidence": 0.95
+    },
+    {
+      "id": "comp_javascript",
+      "name": "JavaScript",
+      "category": "skill",
+      "aliases": ["JS", "ES6", "TypeScript", "Node.js", "前端开发"],
+      "job_count": 4100,
+      "source_files": ["data/etl/unified_job_skills.csv"],
+      "related_roles": ["software-engineer", "frontend-engineer", "fullstack-engineer"],
+      "confidence": 0.93
+    },
+    {
+      "id": "comp_go",
+      "name": "Go",
+      "category": "skill",
+      "aliases": ["Golang", "Go语言"],
+      "job_count": 1850,
+      "source_files": ["data/etl/unified_job_skills.csv"],
+      "related_roles": ["software-engineer", "backend-engineer", "cloud-engineer"],
+      "confidence": 0.90
+    },
+    {
+      "id": "comp_cpp",
+      "name": "C++",
+      "category": "skill",
+      "aliases": ["CPP", "C++11", "C++14", "C++17", "C语言"],
+      "job_count": 3120,
+      "source_files": ["data/etl/unified_job_skills.csv"],
+      "related_roles": ["software-engineer", "game-engineer", "embedded-engineer", "algorithm-engineer"],
+      "confidence": 0.92
+    },
+    {
+      "id": "comp_sql",
+      "name": "SQL",
+      "category": "skill",
+      "aliases": ["MySQL", "数据库", "PostgreSQL", "SQL查询", "数据库开发"],
+      "job_count": 7200,
+      "source_files": ["data/etl/unified_job_skills.csv"],
+      "related_roles": ["software-engineer", "data-analyst", "backend-engineer", "data-engineer"],
+      "confidence": 0.95
+    },
+    {
+      "id": "comp_linux",
+      "name": "Linux",
+      "category": "skill",
+      "aliases": ["linux系统", "Shell", "命令行", "Unix"],
+      "job_count": 4800,
+      "source_files": ["data/etl/unified_job_skills.csv"],
+      "related_roles": ["software-engineer", "backend-engineer", "devops-engineer", "system-admin"],
+      "confidence": 0.93
+    },
+    {
+      "id": "comp_git",
+      "name": "Git",
+      "category": "skill",
+      "aliases": ["版本控制", "GitHub", "GitLab", "代码管理"],
+      "job_count": 5500,
+      "source_files": ["data/etl/unified_job_skills.csv"],
+      "related_roles": ["software-engineer", "backend-engineer", "frontend-engineer", "devops-engineer"],
+      "confidence": 0.94
+    },
+    {
+      "id": "comp_docker",
+      "name": "Docker",
+      "category": "skill",
+      "aliases": ["容器化", "Kubernetes", "K8s", "容器编排"],
+      "job_count": 2600,
+      "source_files": ["data/etl/unified_job_skills.csv"],
+      "related_roles": ["software-engineer", "devops-engineer", "cloud-engineer", "backend-engineer"],
+      "confidence": 0.91
+    },
+    {
+      "id": "comp_ml",
+      "name": "机器学习",
+      "category": "skill",
+      "aliases": ["Machine Learning", "深度学习", "Deep Learning", "TensorFlow", "PyTorch", "神经网络"],
+      "job_count": 1950,
+      "source_files": ["data/etl/unified_job_skills.csv"],
+      "related_roles": ["algorithm-engineer", "data-analyst", "ai-engineer"],
+      "confidence": 0.89
+    },
+    {
+      "id": "comp_data_analysis",
+      "name": "数据分析",
+      "category": "skill",
+      "aliases": ["数据挖掘", "数据可视化", "Pandas", "NumPy", "统计分析", "Excel"],
+      "job_count": 3400,
+      "source_files": ["data/etl/unified_job_skills.csv"],
+      "related_roles": ["data-analyst", "data-engineer", "business-analyst"],
+      "confidence": 0.92
+    },
+    {
+      "id": "comp_agile",
+      "name": "敏捷开发",
+      "category": "requirement",
+      "aliases": ["Scrum", "Agile", "迭代开发", "Sprint"],
+      "job_count": 3800,
+      "source_files": ["data/etl/unified_job_skills.csv"],
+      "related_roles": ["software-engineer", "project-manager", "product-manager"],
+      "confidence": 0.88
+    },
+    {
+      "id": "comp_communication",
+      "name": "沟通能力",
+      "category": "requirement",
+      "aliases": ["团队协作", "沟通协调", "表达能力", "跨部门沟通"],
+      "job_count": 8200,
+      "source_files": ["data/etl/unified_job_skills.csv"],
+      "related_roles": ["software-engineer", "product-manager", "project-manager", "data-analyst"],
+      "confidence": 0.85
+    },
+    {
+      "id": "comp_problem_solving",
+      "name": "问题解决能力",
+      "category": "requirement",
+      "aliases": ["分析能力", "逻辑思维", "解决问题", "故障排查", "troubleshooting"],
+      "job_count": 6500,
+      "source_files": ["data/etl/unified_job_skills.csv"],
+      "related_roles": ["software-engineer", "data-analyst", "backend-engineer", "devops-engineer"],
+      "confidence": 0.86
+    },
+    {
+      "id": "comp_bachelor",
+      "name": "本科学历",
+      "category": "requirement",
+      "aliases": ["本科及以上", "学士学位", "大学本科", "本科以上"],
+      "job_count": 9800,
+      "source_files": ["data/etl/unified_job_skills.csv"],
+      "related_roles": ["software-engineer", "data-analyst", "product-manager", "algorithm-engineer"],
+      "confidence": 0.90
+    },
+    {
+      "id": "comp_3y_exp",
+      "name": "3年以上经验",
+      "category": "requirement",
+      "aliases": ["三年以上", "3年工作经验", "3-5年经验"],
+      "job_count": 4200,
+      "source_files": ["data/etl/unified_job_skills.csv"],
+      "related_roles": ["software-engineer", "backend-engineer", "frontend-engineer"],
+      "confidence": 0.87
+    },
+    {
+      "id": "comp_system_design",
+      "name": "系统设计",
+      "category": "skill",
+      "aliases": ["架构设计", "分布式系统", "微服务", "高并发", "系统架构"],
+      "job_count": 2100,
+      "source_files": ["data/etl/unified_job_skills.csv"],
+      "related_roles": ["software-engineer", "backend-engineer", "architect"],
+      "confidence": 0.88
+    },
+    {
+      "id": "comp_code_review",
+      "name": "代码审查",
+      "category": "skill",
+      "aliases": ["Code Review", "代码质量", "代码规范"],
+      "job_count": 1800,
+      "source_files": ["data/etl/unified_job_skills.csv"],
+      "related_roles": ["software-engineer", "backend-engineer", "tech-lead"],
+      "confidence": 0.84
+    },
+    {
+      "id": "comp_redis",
+      "name": "Redis",
+      "category": "skill",
+      "aliases": ["缓存", "内存数据库", "Redis集群"],
+      "job_count": 2900,
+      "source_files": ["data/etl/unified_job_skills.csv"],
+      "related_roles": ["software-engineer", "backend-engineer"],
+      "confidence": 0.91
+    },
+    {
+      "id": "comp_testing",
+      "name": "测试能力",
+      "category": "skill",
+      "aliases": ["单元测试", "自动化测试", "集成测试", "JUnit", "pytest"],
+      "job_count": 2500,
+      "source_files": ["data/etl/unified_job_skills.csv"],
+      "related_roles": ["software-engineer", "qa-engineer", "backend-engineer"],
+      "confidence": 0.87
+    }
+  ],
+  "roles": [
+    {
+      "id": "software-engineer",
+      "name": "软件工程师",
+      "aliases": ["软件开发工程师", "软件研发工程师", "SWE", "SDE"],
+      "typical_skills": [
+        "comp_python", "comp_java", "comp_javascript", "comp_go", "comp_cpp",
+        "comp_sql", "comp_linux", "comp_git", "comp_docker", "comp_system_design",
+        "comp_code_review", "comp_redis", "comp_testing"
+      ],
+      "typical_requirements": [
+        "comp_bachelor", "comp_3y_exp", "comp_agile",
+        "comp_communication", "comp_problem_solving"
+      ]
+    },
+    {
+      "id": "data-analyst",
+      "name": "数据分析师",
+      "aliases": ["数据分析工程师", "BI分析师", "商业分析师"],
+      "typical_skills": [
+        "comp_python", "comp_sql", "comp_data_analysis", "comp_ml"
+      ],
+      "typical_requirements": [
+        "comp_bachelor", "comp_communication", "comp_problem_solving"
+      ]
+    },
+    {
+      "id": "product-manager",
+      "name": "产品经理",
+      "aliases": ["PM", "产品总监", "高级产品经理"],
+      "typical_skills": [
+        "comp_data_analysis", "comp_agile"
+      ],
+      "typical_requirements": [
+        "comp_bachelor", "comp_communication", "comp_problem_solving"
+      ]
+    }
+  ],
+  "meta": {
+    "total_competencies": 20,
+    "total_roles": 3,
+    "evidence_freshness": "2026-07-17",
+    "offline_fallback": "built-in evidence provides deterministic matching without external services"
+  }
+}

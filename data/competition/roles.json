@@ -1,0 +1,140 @@
+[
+  {
+    "role_id": "java-developer",
+    "name": "Java开发工程师",
+    "category": "后端开发",
+    "current_version": "v2",
+    "versions": [
+      {
+        "version_id": "v1",
+        "timestamp": "2024-03-15T08:00:00Z",
+        "source": "manual-seed",
+        "responsibilities": [
+          "负责后端服务模块的设计与开发",
+          "编写单元测试与集成测试",
+          "参与代码评审",
+          "维护现有系统，修复线上缺陷"
+        ],
+        "skills": [
+          {"name": "Java", "level": "advanced", "source_ids": ["src-seed-java-001"]},
+          {"name": "Spring Boot", "level": "advanced", "source_ids": ["src-seed-java-001"]},
+          {"name": "MySQL", "level": "intermediate", "source_ids": ["src-seed-java-001"]},
+          {"name": "MyBatis", "level": "intermediate", "source_ids": ["src-seed-java-001"]},
+          {"name": "Redis", "level": "intermediate", "source_ids": ["src-seed-java-001"]},
+          {"name": "Linux", "level": "intermediate", "source_ids": ["src-seed-java-001"]},
+          {"name": "Git", "level": "intermediate", "source_ids": ["src-seed-java-001"]}
+        ],
+        "source_ids": ["src-seed-java-001"]
+      },
+      {
+        "version_id": "v2",
+        "timestamp": "2026-01-20T09:00:00Z",
+        "source": "market-analysis-2026q1",
+        "responsibilities": [
+          "负责后端服务模块的架构设计与核心开发",
+          "编写单元测试、集成测试与性能测试",
+          "参与并主导代码评审，推动代码质量提升",
+          "维护现有系统，快速定位并修复线上缺陷",
+          "参与微服务拆分与服务治理",
+          "与AI团队协作，集成LLM能力到业务系统"
+        ],
+        "skills": [
+          {"name": "Java", "level": "expert", "source_ids": ["src-mkt-2026q1-001", "src-boss-2025-456"]},
+          {"name": "Spring Boot", "level": "expert", "source_ids": ["src-mkt-2026q1-001", "src-boss-2025-456"]},
+          {"name": "Spring Cloud", "level": "advanced", "source_ids": ["src-mkt-2026q1-001", "src-lagou-2025-789"]},
+          {"name": "MySQL", "level": "advanced", "source_ids": ["src-mkt-2026q1-001"]},
+          {"name": "MyBatis / JPA", "level": "advanced", "source_ids": ["src-mkt-2026q1-001"]},
+          {"name": "Redis", "level": "advanced", "source_ids": ["src-mkt-2026q1-001", "src-boss-2025-456"]},
+          {"name": "Kafka / RocketMQ", "level": "intermediate", "source_ids": ["src-mkt-2026q1-001", "src-lagou-2025-789"]},
+          {"name": "Docker", "level": "intermediate", "source_ids": ["src-boss-2025-456"]},
+          {"name": "Kubernetes", "level": "intermediate", "source_ids": ["src-boss-2025-456", "src-lagou-2025-789"]},
+          {"name": "Linux", "level": "advanced", "source_ids": ["src-mkt-2026q1-001"]},
+          {"name": "Git", "level": "advanced", "source_ids": ["src-mkt-2026q1-001"]},
+          {"name": "LLM应用集成", "level": "intermediate", "source_ids": ["src-mkt-2026q1-001", "src-boss-2025-456"]},
+          {"name": "Prompt Engineering", "level": "beginner", "source_ids": ["src-mkt-2026q1-001"]}
+        ],
+        "source_ids": ["src-mkt-2026q1-001", "src-boss-2025-456", "src-lagou-2025-789"]
+      }
+    ]
+  },
+  {
+    "role_id": "frontend-developer",
+    "name": "前端开发工程师",
+    "category": "前端开发",
+    "current_version": "v1",
+    "versions": [
+      {
+        "version_id": "v1",
+        "timestamp": "2025-06-01T08:00:00Z",
+        "source": "manual-seed",
+        "responsibilities": [
+          "负责Web前端页面的开发与维护",
+          "与UI/UX设计师协作还原设计稿",
+          "编写前端单元测试与E2E测试",
+          "优化前端性能与加载速度"
+        ],
+        "skills": [
+          {"name": "JavaScript/TypeScript", "level": "expert", "source_ids": ["src-seed-fe-001"]},
+          {"name": "React", "level": "advanced", "source_ids": ["src-seed-fe-001"]},
+          {"name": "Vue.js", "level": "intermediate", "source_ids": ["src-seed-fe-001"]},
+          {"name": "HTML/CSS", "level": "expert", "source_ids": ["src-seed-fe-001"]},
+          {"name": "Webpack/Vite", "level": "intermediate", "source_ids": ["src-seed-fe-001"]},
+          {"name": "Git", "level": "intermediate", "source_ids": ["src-seed-fe-001"]}
+        ],
+        "source_ids": ["src-seed-fe-001"]
+      }
+    ]
+  },
+  {
+    "role_id": "data-scientist",
+    "name": "数据科学家",
+    "category": "数据科学",
+    "current_version": "v2",
+    "versions": [
+      {
+        "version_id": "v1",
+        "timestamp": "2024-06-01T08:00:00Z",
+        "source": "manual-seed",
+        "responsibilities": [
+          "使用统计方法与机器学习算法解决业务问题",
+          "构建预测模型与推荐系统",
+          "进行探索性数据分析（EDA）并输出分析报告",
+          "与业务团队协作定义数据驱动策略"
+        ],
+        "skills": [
+          {"name": "Python", "level": "expert", "source_ids": ["src-seed-ds-001"]},
+          {"name": "SQL", "level": "advanced", "source_ids": ["src-seed-ds-001"]},
+          {"name": "机器学习", "level": "advanced", "source_ids": ["src-seed-ds-001"]},
+          {"name": "统计学", "level": "advanced", "source_ids": ["src-seed-ds-001"]},
+          {"name": "Pandas/NumPy", "level": "advanced", "source_ids": ["src-seed-ds-001"]},
+          {"name": "数据可视化", "level": "intermediate", "source_ids": ["src-seed-ds-001"]}
+        ],
+        "source_ids": ["src-seed-ds-001"]
+      },
+      {
+        "version_id": "v2",
+        "timestamp": "2026-02-10T10:00:00Z",
+        "source": "market-analysis-2026q1",
+        "responsibilities": [
+          "使用统计方法、机器学习与深度学习算法解决复杂业务问题",
+          "构建预测模型、推荐系统与大模型应用",
+          "进行探索性数据分析（EDA）并输出可执行分析报告",
+          "与业务团队协作定义数据驱动策略与实验设计",
+          "参与MLOps体系建设，推动模型从实验到生产的转化"
+        ],
+        "skills": [
+          {"name": "Python", "level": "expert", "source_ids": ["src-mkt-2026q1-ds"]},
+          {"name": "SQL", "level": "advanced", "source_ids": ["src-mkt-2026q1-ds"]},
+          {"name": "机器学习", "level": "expert", "source_ids": ["src-mkt-2026q1-ds", "src-boss-2025-ds"]},
+          {"name": "深度学习", "level": "advanced", "source_ids": ["src-mkt-2026q1-ds", "src-boss-2025-ds"]},
+          {"name": "统计学", "level": "advanced", "source_ids": ["src-mkt-2026q1-ds"]},
+          {"name": "Pandas/NumPy", "level": "advanced", "source_ids": ["src-mkt-2026q1-ds"]},
+          {"name": "LLM应用开发", "level": "intermediate", "source_ids": ["src-mkt-2026q1-ds", "src-boss-2025-ds"]},
+          {"name": "MLOps", "level": "intermediate", "source_ids": ["src-mkt-2026q1-ds"]},
+          {"name": "数据可视化", "level": "intermediate", "source_ids": ["src-mkt-2026q1-ds"]}
+        ],
+        "source_ids": ["src-mkt-2026q1-ds", "src-boss-2025-ds"]
+      }
+    ]
+  }
+]

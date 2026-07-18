@@ -1,0 +1,307 @@
+[
+  {
+    "id": "ai-agent-engineer",
+    "name": "AI Agent工程师",
+    "confidence": 0.92,
+    "growth_rate": 0.38,
+    "source_count": 127,
+    "responsibilities": [
+      "设计并实现基于大语言模型的智能体（Agent）工作流与决策链路",
+      "搭建Agent工具调用（Function Calling）框架，集成外部API与知识库",
+      "构建Agent记忆系统（短期/长期记忆）与上下文管理策略",
+      "设计并实施Agent评测体系，涵盖准确性、安全性、延迟等维度",
+      "优化Agent推理性能，包括提示词工程、思维链（CoT）与多步推理",
+      "搭建Agent安全护栏（Guardrails），防止幻觉、注入攻击与越权操作"
+    ],
+    "required_skills": [
+      {
+        "name": "Python",
+        "level": "expert",
+        "source_ids": [
+          "src-boss-001",
+          "src-lagou-042",
+          "src-51job-118"
+        ]
+      },
+      {
+        "name": "LLM应用开发",
+        "level": "expert",
+        "source_ids": [
+          "src-boss-001",
+          "src-lagou-042",
+          "src-zhilian-067"
+        ]
+      },
+      {
+        "name": "Prompt Engineering",
+        "level": "advanced",
+        "source_ids": [
+          "src-boss-001",
+          "src-51job-118"
+        ]
+      },
+      {
+        "name": "RAG架构",
+        "level": "advanced",
+        "source_ids": [
+          "src-lagou-042",
+          "src-zhilian-067"
+        ]
+      },
+      {
+        "name": "向量数据库",
+        "level": "intermediate",
+        "source_ids": [
+          "src-boss-001",
+          "src-lagou-042"
+        ]
+      },
+      {
+        "name": "API设计与集成",
+        "level": "intermediate",
+        "source_ids": [
+          "src-51job-118",
+          "src-zhilian-067"
+        ]
+      },
+      {
+        "name": "Agent框架(LangChain等)",
+        "level": "advanced",
+        "source_ids": [
+          "src-boss-001",
+          "src-lagou-042"
+        ]
+      }
+    ],
+    "bonus_skills": [
+      {
+        "name": "LangChain/LlamaIndex",
+        "source_ids": [
+          "src-boss-001"
+        ]
+      },
+      {
+        "name": "多模态Agent",
+        "source_ids": [
+          "src-lagou-042"
+        ]
+      },
+      {
+        "name": "MCP协议",
+        "source_ids": [
+          "src-boss-001",
+          "src-zhilian-067"
+        ]
+      },
+      {
+        "name": "强化学习(RLHF)",
+        "source_ids": [
+          "src-51job-118"
+        ]
+      }
+    ],
+    "application_scenarios": [
+      "智能客服Agent自动化",
+      "代码助手/编程Agent",
+      "企业知识库问答Agent",
+      "自动化运维Agent",
+      "数据分析Agent"
+    ],
+    "source_ids": [
+      "src-boss-001",
+      "src-boss-015",
+      "src-lagou-042",
+      "src-lagou-089",
+      "src-51job-118",
+      "src-51job-203",
+      "src-zhilian-067",
+      "src-zhilian-154",
+      "src-liepin-031",
+      "src-liepin-077"
+    ],
+    "review_status": "approved",
+    "reviewed_at": "2026-07-01T14:00:00Z"
+  },
+  {
+    "id": "data-governance-engineer",
+    "name": "数据治理工程师",
+    "confidence": 0.85,
+    "growth_rate": 0.25,
+    "source_count": 89,
+    "responsibilities": [
+      "制定企业级数据标准与数据字典，推动跨部门数据口径统一",
+      "搭建数据质量监控体系，设计质量度量指标与告警规则",
+      "维护核心业务指标（KPI）口径，确保报表数据一致性",
+      "建设元数据管理平台，实现数据血缘追踪与影响分析",
+      "配合合规要求，实施数据分类分级与敏感数据保护策略"
+    ],
+    "required_skills": [
+      {
+        "name": "SQL",
+        "level": "expert",
+        "source_ids": [
+          "src-51job-045",
+          "src-lagou-123"
+        ]
+      },
+      {
+        "name": "数据仓库",
+        "level": "advanced",
+        "source_ids": [
+          "src-51job-045",
+          "src-zhilian-201"
+        ]
+      },
+      {
+        "name": "数据质量管理",
+        "level": "advanced",
+        "source_ids": [
+          "src-51job-045",
+          "src-lagou-123",
+          "src-zhilian-201"
+        ]
+      },
+      {
+        "name": "元数据管理",
+        "level": "intermediate",
+        "source_ids": [
+          "src-lagou-123"
+        ]
+      },
+      {
+        "name": "数据血缘",
+        "level": "intermediate",
+        "source_ids": [
+          "src-zhilian-201"
+        ]
+      }
+    ],
+    "bonus_skills": [
+      {
+        "name": "Data Catalog工具",
+        "source_ids": [
+          "src-51job-045"
+        ]
+      },
+      {
+        "name": "隐私计算",
+        "source_ids": [
+          "src-lagou-123"
+        ]
+      },
+      {
+        "name": "Flink/Kafka",
+        "source_ids": [
+          "src-zhilian-201"
+        ]
+      }
+    ],
+    "application_scenarios": [
+      "企业数据中台建设",
+      "金融监管报送",
+      "数据资产盘点",
+      "主数据管理（MDM）"
+    ],
+    "source_ids": [
+      "src-51job-045",
+      "src-51job-167",
+      "src-lagou-123",
+      "src-zhilian-201",
+      "src-liepin-055",
+      "src-boss-022"
+    ],
+    "review_status": "approved",
+    "reviewed_at": "2026-06-15T10:30:00Z"
+  },
+  {
+    "id": "llm-ops-engineer",
+    "name": "大模型运维工程师(LLMOps)",
+    "confidence": 0.78,
+    "growth_rate": 0.32,
+    "source_count": 63,
+    "responsibilities": [
+      "搭建大模型训练与推理基础设施，管理GPU集群资源调度",
+      "实施模型版本管理与CI/CD流水线，确保模型安全上线",
+      "监控模型推理性能（延迟、吞吐、成本）并持续优化",
+      "管理Prompt版本与模型实验追踪",
+      "构建模型安全与合规审查流程"
+    ],
+    "required_skills": [
+      {
+        "name": "Kubernetes",
+        "level": "advanced",
+        "source_ids": [
+          "src-liepin-012",
+          "src-boss-078"
+        ]
+      },
+      {
+        "name": "Docker",
+        "level": "advanced",
+        "source_ids": [
+          "src-liepin-012"
+        ]
+      },
+      {
+        "name": "Python",
+        "level": "advanced",
+        "source_ids": [
+          "src-liepin-012",
+          "src-boss-078",
+          "src-51job-289"
+        ]
+      },
+      {
+        "name": "模型部署",
+        "level": "expert",
+        "source_ids": [
+          "src-liepin-012",
+          "src-boss-078",
+          "src-51job-289"
+        ]
+      },
+      {
+        "name": "MLflow/Kubeflow",
+        "level": "intermediate",
+        "source_ids": [
+          "src-boss-078"
+        ]
+      }
+    ],
+    "bonus_skills": [
+      {
+        "name": "Triton Inference Server",
+        "source_ids": [
+          "src-liepin-012"
+        ]
+      },
+      {
+        "name": "vLLM",
+        "source_ids": [
+          "src-boss-078"
+        ]
+      },
+      {
+        "name": "GPU编程(CUDA)",
+        "source_ids": [
+          "src-51job-289"
+        ]
+      }
+    ],
+    "application_scenarios": [
+      "大模型推理服务化部署",
+      "模型A/B测试与灰度发布",
+      "GPU资源成本优化",
+      "模型监控告警体系建设"
+    ],
+    "source_ids": [
+      "src-liepin-012",
+      "src-liepin-098",
+      "src-boss-078",
+      "src-51job-289",
+      "src-zhilian-333"
+    ],
+    "review_status": "pending",
+    "reviewed_at": null
+  }
+]

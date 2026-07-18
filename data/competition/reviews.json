@@ -1,0 +1,142 @@
+[
+  {
+    "review_id": "rev-001",
+    "discovery_id": "data-governance-engineer",
+    "status": "approved",
+    "editor": "admin",
+    "edits": {
+      "name": null,
+      "responsibilities": [
+        "制定企业级数据标准与数据字典，推动跨部门数据口径统一",
+        "搭建数据质量监控体系，设计质量度量指标与告警规则",
+        "维护核心业务指标（KPI）口径，确保报表数据一致性",
+        "建设元数据管理平台，实现数据血缘追踪与影响分析",
+        "配合合规要求，实施数据分类分级与敏感数据保护策略"
+      ],
+      "required_skills": [
+        {
+          "name": "SQL",
+          "level": "expert",
+          "source_ids": [
+            "src-51job-045",
+            "src-lagou-123"
+          ]
+        },
+        {
+          "name": "数据仓库",
+          "level": "advanced",
+          "source_ids": [
+            "src-51job-045",
+            "src-zhilian-201"
+          ]
+        },
+        {
+          "name": "数据质量管理",
+          "level": "advanced",
+          "source_ids": [
+            "src-51job-045",
+            "src-lagou-123",
+            "src-zhilian-201"
+          ]
+        },
+        {
+          "name": "元数据管理",
+          "level": "intermediate",
+          "source_ids": [
+            "src-lagou-123"
+          ]
+        },
+        {
+          "name": "数据血缘",
+          "level": "intermediate",
+          "source_ids": [
+            "src-zhilian-201"
+          ]
+        }
+      ],
+      "bonus_skills": null
+    },
+    "comment": "该岗位定义清晰，市场需求明确，数据治理在各行业均有强需求。建议通过。",
+    "created_at": "2026-06-15T10:30:00Z"
+  },
+  {
+    "review_id": "rev-002",
+    "discovery_id": "ai-agent-engineer",
+    "status": "approved",
+    "editor": "admin",
+    "edits": {
+      "name": null,
+      "responsibilities": [
+        "设计并实现基于大语言模型的智能体（Agent）工作流与决策链路",
+        "搭建Agent工具调用（Function Calling）框架，集成外部API与知识库",
+        "构建Agent记忆系统（短期/长期记忆）与上下文管理策略",
+        "设计并实施Agent评测体系，涵盖准确性、安全性、延迟等维度",
+        "优化Agent推理性能，包括提示词工程、思维链（CoT）与多步推理",
+        "搭建Agent安全护栏（Guardrails），防止幻觉、注入攻击与越权操作"
+      ],
+      "required_skills": [
+        {
+          "name": "Python",
+          "level": "expert",
+          "source_ids": [
+            "src-boss-001",
+            "src-lagou-042",
+            "src-51job-118"
+          ]
+        },
+        {
+          "name": "LLM应用开发",
+          "level": "expert",
+          "source_ids": [
+            "src-boss-001",
+            "src-lagou-042",
+            "src-zhilian-067"
+          ]
+        },
+        {
+          "name": "Prompt Engineering",
+          "level": "advanced",
+          "source_ids": [
+            "src-boss-001",
+            "src-51job-118"
+          ]
+        },
+        {
+          "name": "RAG架构",
+          "level": "advanced",
+          "source_ids": [
+            "src-lagou-042",
+            "src-zhilian-067"
+          ]
+        },
+        {
+          "name": "向量数据库",
+          "level": "intermediate",
+          "source_ids": [
+            "src-boss-001",
+            "src-lagou-042"
+          ]
+        },
+        {
+          "name": "API设计与集成",
+          "level": "intermediate",
+          "source_ids": [
+            "src-51job-118",
+            "src-zhilian-067"
+          ]
+        },
+        {
+          "name": "Agent框架(LangChain等)",
+          "level": "advanced",
+          "source_ids": [
+            "src-boss-001",
+            "src-lagou-042"
+          ]
+        }
+      ],
+      "bonus_skills": null
+    },
+    "comment": "新增LangChain等Agent框架为进阶要求。AI Agent岗位需求增长迅速，建议纳入正式岗位库。",
+    "created_at": "2026-07-01T14:00:00Z"
+  }
+]
