@@ -1,0 +1,503 @@
+{
+  "results": [
+    {
+      "type": "check",
+      "label": "scroll-390-HOME",
+      "pass": true,
+      "docSW": 390,
+      "docCW": 390,
+      "bodySW": 390,
+      "bodyCW": 390,
+      "vw": 390
+    },
+    {
+      "type": "check",
+      "label": "scroll-390-JOB-MGMT",
+      "pass": true,
+      "docSW": 390,
+      "docCW": 390,
+      "bodySW": 390,
+      "bodyCW": 390,
+      "vw": 390
+    },
+    {
+      "type": "check",
+      "label": "scroll-390-DISCOVERY",
+      "pass": true,
+      "docSW": 390,
+      "docCW": 390,
+      "bodySW": 390,
+      "bodyCW": 390,
+      "vw": 390
+    },
+    {
+      "type": "check",
+      "label": "scroll-390-DIALOG",
+      "pass": true,
+      "docSW": 390,
+      "docCW": 390,
+      "bodySW": 390,
+      "bodyCW": 390,
+      "vw": 390
+    },
+    {
+      "type": "shot",
+      "label": "390-HOME",
+      "path": "E:\\202676\\e2e-screenshots\\responsive-390-HOME.png"
+    },
+    {
+      "type": "check",
+      "label": "390-nav-trigger-exists",
+      "pass": true
+    },
+    {
+      "type": "check",
+      "label": "390-nav-menu-exists",
+      "pass": true
+    },
+    {
+      "type": "check",
+      "label": "390-nav-menu-visible",
+      "pass": true
+    },
+    {
+      "type": "check",
+      "label": "390-nav-menu-bbox-nonnull",
+      "pass": true
+    },
+    {
+      "type": "check",
+      "label": "390-nav-menu-left-ge0",
+      "pass": true,
+      "detail": "x=31"
+    },
+    {
+      "type": "check",
+      "label": "390-nav-menu-right-le-vw",
+      "pass": true,
+      "detail": "right=191 vw=390"
+    },
+    {
+      "type": "check",
+      "label": "390-nav-menu-top-ge0",
+      "pass": true,
+      "detail": "y=87"
+    },
+    {
+      "type": "check",
+      "label": "390-nav-menu-3-items",
+      "pass": true,
+      "detail": "found 3"
+    },
+    {
+      "type": "check",
+      "label": "390-nav-item-0-visible",
+      "pass": true,
+      "detail": "在招岗位"
+    },
+    {
+      "type": "check",
+      "label": "390-nav-item-1-visible",
+      "pass": true,
+      "detail": "新岗位发现"
+    },
+    {
+      "type": "check",
+      "label": "390-nav-item-2-visible",
+      "pass": true,
+      "detail": "岗位能力管理"
+    },
+    {
+      "type": "shot",
+      "label": "390-NAVDROP-visible",
+      "path": "E:\\202676\\e2e-screenshots\\responsive-390-NAVDROP-visible.png"
+    },
+    {
+      "type": "check",
+      "label": "390-click-disc-navigates",
+      "pass": true,
+      "detail": "新岗位发现"
+    },
+    {
+      "type": "check",
+      "label": "390-click-jobs-navigates",
+      "pass": true,
+      "detail": "all-jobs-section seen=true"
+    },
+    {
+      "type": "check",
+      "label": "scroll-412-HOME",
+      "pass": true,
+      "docSW": 412,
+      "docCW": 412,
+      "bodySW": 412,
+      "bodyCW": 412,
+      "vw": 412
+    },
+    {
+      "type": "check",
+      "label": "scroll-412-JOB-MGMT",
+      "pass": true,
+      "docSW": 412,
+      "docCW": 412,
+      "bodySW": 412,
+      "bodyCW": 412,
+      "vw": 412
+    },
+    {
+      "type": "check",
+      "label": "scroll-412-DISCOVERY",
+      "pass": true,
+      "docSW": 412,
+      "docCW": 412,
+      "bodySW": 412,
+      "bodyCW": 412,
+      "vw": 412
+    },
+    {
+      "type": "check",
+      "label": "scroll-412-DIALOG",
+      "pass": true,
+      "docSW": 412,
+      "docCW": 412,
+      "bodySW": 412,
+      "bodyCW": 412,
+      "vw": 412
+    },
+    {
+      "type": "shot",
+      "label": "412-HOME",
+      "path": "E:\\202676\\e2e-screenshots\\responsive-412-HOME.png"
+    },
+    {
+      "type": "check",
+      "label": "412-nav-trigger-exists",
+      "pass": true
+    },
+    {
+      "type": "check",
+      "label": "412-nav-menu-exists",
+      "pass": true
+    },
+    {
+      "type": "check",
+      "label": "412-nav-menu-visible",
+      "pass": true
+    },
+    {
+      "type": "check",
+      "label": "412-nav-menu-bbox-nonnull",
+      "pass": true
+    },
+    {
+      "type": "check",
+      "label": "412-nav-menu-left-ge0",
+      "pass": true,
+      "detail": "x=31"
+    },
+    {
+      "type": "check",
+      "label": "412-nav-menu-right-le-vw",
+      "pass": true,
+      "detail": "right=191 vw=412"
+    },
+    {
+      "type": "check",
+      "label": "412-nav-menu-top-ge0",
+      "pass": true,
+      "detail": "y=87"
+    },
+    {
+      "type": "check",
+      "label": "412-nav-menu-3-items",
+      "pass": true,
+      "detail": "found 3"
+    },
+    {
+      "type": "check",
+      "label": "412-nav-item-0-visible",
+      "pass": true,
+      "detail": "在招岗位"
+    },
+    {
+      "type": "check",
+      "label": "412-nav-item-1-visible",
+      "pass": true,
+      "detail": "新岗位发现"
+    },
+    {
+      "type": "check",
+      "label": "412-nav-item-2-visible",
+      "pass": true,
+      "detail": "岗位能力管理"
+    },
+    {
+      "type": "shot",
+      "label": "412-NAVDROP-visible",
+      "path": "E:\\202676\\e2e-screenshots\\responsive-412-NAVDROP-visible.png"
+    },
+    {
+      "type": "check",
+      "label": "412-click-disc-navigates",
+      "pass": true,
+      "detail": "新岗位发现"
+    },
+    {
+      "type": "check",
+      "label": "412-click-jobs-navigates",
+      "pass": true,
+      "detail": "all-jobs-section seen=true"
+    },
+    {
+      "type": "check",
+      "label": "scroll-768-HOME",
+      "pass": true,
+      "docSW": 768,
+      "docCW": 768,
+      "bodySW": 768,
+      "bodyCW": 768,
+      "vw": 768
+    },
+    {
+      "type": "check",
+      "label": "scroll-768-JOB-MGMT",
+      "pass": true,
+      "docSW": 768,
+      "docCW": 768,
+      "bodySW": 768,
+      "bodyCW": 768,
+      "vw": 768
+    },
+    {
+      "type": "check",
+      "label": "scroll-768-DISCOVERY",
+      "pass": true,
+      "docSW": 768,
+      "docCW": 768,
+      "bodySW": 768,
+      "bodyCW": 768,
+      "vw": 768
+    },
+    {
+      "type": "check",
+      "label": "scroll-768-DIALOG",
+      "pass": true,
+      "docSW": 768,
+      "docCW": 768,
+      "bodySW": 768,
+      "bodyCW": 768,
+      "vw": 768
+    },
+    {
+      "type": "shot",
+      "label": "768-HOME",
+      "path": "E:\\202676\\e2e-screenshots\\responsive-768-HOME.png"
+    },
+    {
+      "type": "check",
+      "label": "768-nav-trigger-exists",
+      "pass": true
+    },
+    {
+      "type": "check",
+      "label": "768-nav-menu-exists",
+      "pass": true
+    },
+    {
+      "type": "check",
+      "label": "768-nav-menu-visible",
+      "pass": true
+    },
+    {
+      "type": "check",
+      "label": "768-nav-menu-bbox-nonnull",
+      "pass": true
+    },
+    {
+      "type": "check",
+      "label": "768-nav-menu-left-ge0",
+      "pass": true,
+      "detail": "x=59"
+    },
+    {
+      "type": "check",
+      "label": "768-nav-menu-right-le-vw",
+      "pass": true,
+      "detail": "right=219 vw=768"
+    },
+    {
+      "type": "check",
+      "label": "768-nav-menu-top-ge0",
+      "pass": true,
+      "detail": "y=102"
+    },
+    {
+      "type": "check",
+      "label": "768-nav-menu-3-items",
+      "pass": true,
+      "detail": "found 3"
+    },
+    {
+      "type": "check",
+      "label": "768-nav-item-0-visible",
+      "pass": true,
+      "detail": "在招岗位"
+    },
+    {
+      "type": "check",
+      "label": "768-nav-item-1-visible",
+      "pass": true,
+      "detail": "新岗位发现"
+    },
+    {
+      "type": "check",
+      "label": "768-nav-item-2-visible",
+      "pass": true,
+      "detail": "岗位能力管理"
+    },
+    {
+      "type": "shot",
+      "label": "768-NAVDROP-visible",
+      "path": "E:\\202676\\e2e-screenshots\\responsive-768-NAVDROP-visible.png"
+    },
+    {
+      "type": "check",
+      "label": "768-click-disc-navigates",
+      "pass": true,
+      "detail": "新岗位发现"
+    },
+    {
+      "type": "check",
+      "label": "768-click-jobs-navigates",
+      "pass": true,
+      "detail": "all-jobs-section seen=true"
+    },
+    {
+      "type": "check",
+      "label": "scroll-1440-HOME",
+      "pass": true,
+      "docSW": 1440,
+      "docCW": 1440,
+      "bodySW": 1440,
+      "bodyCW": 1440,
+      "vw": 1440
+    },
+    {
+      "type": "check",
+      "label": "scroll-1440-JOB-MGMT",
+      "pass": true,
+      "docSW": 1440,
+      "docCW": 1440,
+      "bodySW": 1440,
+      "bodyCW": 1440,
+      "vw": 1440
+    },
+    {
+      "type": "check",
+      "label": "scroll-1440-DISCOVERY",
+      "pass": true,
+      "docSW": 1440,
+      "docCW": 1440,
+      "bodySW": 1440,
+      "bodyCW": 1440,
+      "vw": 1440
+    },
+    {
+      "type": "check",
+      "label": "scroll-1440-DIALOG",
+      "pass": true,
+      "docSW": 1440,
+      "docCW": 1440,
+      "bodySW": 1440,
+      "bodyCW": 1440,
+      "vw": 1440
+    },
+    {
+      "type": "shot",
+      "label": "1440-HOME",
+      "path": "E:\\202676\\e2e-screenshots\\responsive-1440-HOME.png"
+    },
+    {
+      "type": "check",
+      "label": "1440-nav-trigger-exists",
+      "pass": true
+    },
+    {
+      "type": "check",
+      "label": "1440-nav-menu-exists",
+      "pass": true
+    },
+    {
+      "type": "check",
+      "label": "1440-nav-menu-visible",
+      "pass": true
+    },
+    {
+      "type": "check",
+      "label": "1440-nav-menu-bbox-nonnull",
+      "pass": true
+    },
+    {
+      "type": "check",
+      "label": "1440-nav-menu-left-ge0",
+      "pass": true,
+      "detail": "x=407"
+    },
+    {
+      "type": "check",
+      "label": "1440-nav-menu-right-le-vw",
+      "pass": true,
+      "detail": "right=597 vw=1440"
+    },
+    {
+      "type": "check",
+      "label": "1440-nav-menu-top-ge0",
+      "pass": true,
+      "detail": "y=66"
+    },
+    {
+      "type": "check",
+      "label": "1440-nav-menu-3-items",
+      "pass": true,
+      "detail": "found 3"
+    },
+    {
+      "type": "check",
+      "label": "1440-nav-item-0-visible",
+      "pass": true,
+      "detail": "在招岗位"
+    },
+    {
+      "type": "check",
+      "label": "1440-nav-item-1-visible",
+      "pass": true,
+      "detail": "新岗位发现"
+    },
+    {
+      "type": "check",
+      "label": "1440-nav-item-2-visible",
+      "pass": true,
+      "detail": "岗位能力管理"
+    },
+    {
+      "type": "shot",
+      "label": "1440-NAVDROP-visible",
+      "path": "E:\\202676\\e2e-screenshots\\responsive-1440-NAVDROP-visible.png"
+    },
+    {
+      "type": "check",
+      "label": "1440-click-disc-navigates",
+      "pass": true,
+      "detail": "新岗位发现"
+    },
+    {
+      "type": "check",
+      "label": "1440-click-jobs-navigates",
+      "pass": true,
+      "detail": "all-jobs-section seen=true"
+    }
+  ],
+  "passes": 68,
+  "fails": 0,
+  "shots": 8
+}

@@ -1,11 +1,15 @@
-import { Fragment, useCallback, useEffect, useRef, useState } from "react";
+import { Fragment, useCallback, useEffect, useRef, useState, type CSSProperties } from "react";
+import { useHomeHeroMotion } from "./hooks/useHomeHeroMotion";
 import type { PointerEvent as ReactPointerEvent } from "react";
 import { Activity, AlertTriangle, ArrowLeft, ArrowUpRight, BriefcaseBusiness, CalendarDays, CheckCircle2, CircleDot, Clock3, FileText, GitCompareArrows, Heart, Info, Lock, Mail, MapPin, Phone, Plus, RefreshCw, Route, Search, ShieldAlert, Sparkles, Star, Trash2, TrendingUp, UserRound, X } from "lucide-react";
+import SplitText from "./components/SplitText";
 import CompetitionDiscovery from "./components/CompetitionDiscovery";
 import CompetitionRoleEvolution from "./components/CompetitionRoleEvolution";
 import RoleCapabilityGraph from "./components/RoleCapabilityGraph";
-import CompetitionEvidence from "./components/CompetitionEvidence";
+import CompetitionRoleWorkspace from "./components/CompetitionRoleWorkspace";
+import JobSectionHeader from "./components/JobSectionHeader";
 import CompetitionErrorBoundary from "./components/CompetitionErrorBoundary";
+import AddJobButton from "./components/AddJobButton";
 
 export type PageKey="overview"|"unified"|"graph"|"compare"|"evolution"|"jobs"|"favorites"|"about"|"capability"|"interviews";
 type Json=Record<string,any>;
@@ -42,76 +46,153 @@ function normalizeJobs(data:any):JobRow[]{const rows=Array.isArray(data)?data:da
    ========================================================================== */
 function HomePage({onNavigate,isLoggedIn}:{onNavigate?:(page:PageKey|"matching")=>void;isLoggedIn:boolean}){
   const [remoteJobs,setRemoteJobs]=useState<JobRow[]>([]);const [localJobs,setLocalJobs]=useState<JobRow[]>([]);const [total,setTotal]=useState(0);const [candidates,setCandidates]=useState<CandidateRow[]>([]);const [interviews,setInterviews]=useState<InterviewRow[]>([]);const [assessments,setAssessments]=useState<AssessmentRow[]>([]);const [updated,setUpdated]=useState(timeText());const [adding,setAdding]=useState(false);const [selected,setSelected]=useState<JobRow|null>(null);
+  /* ── Motion & loading state ── */
+  const heroRef = useRef<HTMLDivElement>(null);
+  const [dataLoading, setDataLoading] = useState(true);
+  const [showSkeleton, setShowSkeleton] = useState(false);
+  const skeletonTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
+  const finishTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
+  const dataLoadedRef = useRef(false);
+  useHomeHeroMotion(heroRef, isLoggedIn);
   /* ── Demo state (unauthenticated) ── */
   const [demoJobs,setDemoJobs]=useState<JobRow[]>([]);const [demoLoaded,setDemoLoaded]=useState(false);
-  const load=async()=>{try{const [jobResult,hrResult,assessResult]=await Promise.allSettled([json("/api/platform/storage/api/search/jobs?page=1&page_size=6"),json("/api/hr/state"),json("/api/assessments")]);const hr=hrResult.status==="fulfilled"?hrResult.value:{candidates:[],interviews:[],jobs:[]};if(jobResult.status==="fulfilled"){setRemoteJobs(normalizeJobs(jobResult.value));setTotal(Number(jobResult.value.total||0))}setLocalJobs((hr.jobs||[]).map((x:any)=>({...x,name:x.name||x.title})));setCandidates(hr.candidates||[]);setInterviews(hr.interviews||[]);if(assessResult.status==="fulfilled")setAssessments(assessResult.value.items||[]);setUpdated(timeText())}catch{}};
+  const load=async()=>{try{const [jobResult,hrResult,assessResult]=await Promise.allSettled([json("/api/platform/storage/api/search/jobs?page=1&page_size=6"),json("/api/hr/state"),json("/api/assessments")]);const hr=hrResult.status==="fulfilled"?hrResult.value:{candidates:[],interviews:[],jobs:[]};if(jobResult.status==="fulfilled"){setRemoteJobs(normalizeJobs(jobResult.value));setTotal(Number(jobResult.value.total||0))}setLocalJobs((hr.jobs||[]).map((x:any)=>({...x,name:x.name||x.title})));setCandidates(hr.candidates||[]);setInterviews(hr.interviews||[]);if(assessResult.status==="fulfilled")setAssessments(assessResult.value.items||[]);setUpdated(timeText())}catch{}finally{finishLoading()}};
   /* ── Demo data loader — public, no auth ── */
-  const loadDemo=async()=>{try{const res=await fetch("/api/platform/storage",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({url:"/api/home/demo-jobs",method:"GET"})});const data=await res.json();setDemoJobs(normalizeJobs(data));setDemoLoaded(true)}catch{setDemoLoaded(true)}};
-  useEffect(()=>{if(isLoggedIn){load()}else{loadDemo()}},[isLoggedIn]);
+  const loadDemo=async()=>{try{const res=await fetch("/api/platform/storage",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({url:"/api/home/demo-jobs",method:"GET"})});const data=await res.json();setDemoJobs(normalizeJobs(data));setDemoLoaded(true)}catch{setDemoLoaded(true)}finally{finishLoading()}};
+  const finishLoading = () => {
+    if (skeletonTimerRef.current) { clearTimeout(skeletonTimerRef.current); skeletonTimerRef.current = null; }
+    if (!dataLoadedRef.current) {
+      // Clear any pending finish timer before setting a new one
+      if (finishTimerRef.current) { clearTimeout(finishTimerRef.current); }
+      finishTimerRef.current = setTimeout(() => { setDataLoading(false); dataLoadedRef.current = true; finishTimerRef.current = null; }, 200);
+    }
+    setShowSkeleton(false);
+  };
+  useEffect(()=>{
+    dataLoadedRef.current = false;
+    setDataLoading(true);
+    // Show skeleton only if loading takes >180ms
+    skeletonTimerRef.current = setTimeout(() => { setShowSkeleton(true); }, 180);
+    if(isLoggedIn){load()}else{loadDemo()}
+    return () => { if (skeletonTimerRef.current) { clearTimeout(skeletonTimerRef.current); skeletonTimerRef.current = null; } if (finishTimerRef.current) { clearTimeout(finishTimerRef.current); finishTimerRef.current = null; } };
+  },[isLoggedIn]);
   const add=async(job:JobRow)=>{const saved=await json("/api/hr/jobs",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify(job)});setLocalJobs(x=>[{...saved,name:saved.name||saved.title},...x]);setAdding(false);setUpdated(timeText());setSelected({...saved,name:saved.name||saved.title})};
   const deleteLocalJob=async(jobId:string)=>{await json("/api/hr/jobs/"+jobId,{method:"DELETE"});setLocalJobs(x=>x.filter(j=>j.id!==jobId));setSelected(null);setUpdated(timeText())};
   const jobs=[...localJobs,...remoteJobs];const topJobs=isLoggedIn?jobs.slice(0,3):demoJobs.slice(0,6);
   const pendingInterviews=interviews.filter(x=>x.status==="待进行").length;
   const average=assessments.length?Math.round(assessments.reduce((sum,x)=>sum+x.score,0)/assessments.length):null;
   const totalJobs=total+localJobs.length;
-  const gradients=["linear-gradient(135deg,#1a1040,#0d1a30)","linear-gradient(135deg,#0d1a30,#101a28)","linear-gradient(135deg,#1a1028,#0d1530)","linear-gradient(135deg,#0d1a30,#101a28)","linear-gradient(135deg,#1a1040,#101a28)","linear-gradient(135deg,#1a1028,#0d1a30)"];
-  const badges=[{text:"高优先级",bg:"rgba(0,221,235,.12)",color:"#9bf2e9"},{text:"热招中",bg:"rgba(175,64,255,.12)",color:"#cabeff"},{text:"核心岗",bg:"rgba(127,213,205,.12)",color:"#9cd0d2"},{text:"急聘",bg:"rgba(255,175,64,.12)",color:"#ffaf40"},{text:"技术岗",bg:"rgba(64,200,255,.12)",color:"#40c8ff"},{text:"管理岗",bg:"rgba(255,128,200,.12)",color:"#ff80c8"}];
   /* ── UNAUTHENTICATED: Demo homepage ── */
   if(!isLoggedIn){
     return <div className="platform-main" style={{padding:0,margin:0,maxWidth:"100%"}}>
-      {/* Hero — simplified */}
-      <section className="home-hero" style={{minHeight:300,paddingBottom:48}}>
-        <p className="home-hero__eyebrow">TalentMatch Preview</p>
-        <h1 className="home-hero__title">{'人岗匹配智能评估系统'}</h1>
-        <p className="home-hero__desc">{'登录后可查看完整岗位数据、启动人才评估、使用知识图谱与招聘趋势等全部功能。以下展示 10 条精选 Demo 数据。'}</p>
-        <div className="home-hero__actions">
-          <button className="home-hero__primary" onClick={()=>window.dispatchEvent(new CustomEvent("auth:open-login"))}><Lock/> {'登录查看全部数据'}</button>
-          <span style={{fontSize:12,color:"rgba(196,199,200,.4)",marginLeft:12}}>{'共 10 条预览数据 · 来自 MySQL'}</span>
+      {/* Hero — shares the authenticated visual language while keeping guest actions */}
+      <section className="home-hero home-hero--showcase" ref={heroRef}>
+        <div className="hero-showcase__particles" aria-hidden="true">
+          {[
+            {x:10,y:25,s:3,d:.3},{x:16,y:48,s:2,d:.8},{x:8,y:62,s:3,d:1.4},{x:14,y:78,s:2,d:.6},{x:86,y:22,s:3,d:.4},{x:92,y:46,s:2,d:.9},
+            {x:88,y:68,s:3,d:1.5},{x:84,y:80,s:2,d:.7},{x:48,y:92,s:3,d:2.0},{x:52,y:88,s:2,d:2.3},
+          ].map((p,i)=><div key={i} className="hero-particle" style={{"--px":p.x+"%","--py":p.y+"%","--ps":p.s+"px","--pd":p.d+"s"} as CSSProperties}/>)}
+        </div>
+
+        <div className="hero-side-scene hero-side-scene--left" aria-hidden="true">
+          <svg className="hero-effect-frame hero-effect-frame--left" viewBox="0 0 540 400" preserveAspectRatio="none">
+            <defs>
+              <linearGradient id="guestLeftTrackGrad" x1="0" y1="1" x2="1" y2="0">
+                <stop offset="0%" stopColor="#8CBCE8" stopOpacity="0.18"/>
+                <stop offset="45%" stopColor="#2478C8" stopOpacity="0.70"/>
+                <stop offset="100%" stopColor="#7ED9E8" stopOpacity="0.32"/>
+              </linearGradient>
+            </defs>
+            <path d="M510 45 C260 12 54 72 46 210 C40 310 130 370 310 385" fill="none" stroke="url(#guestLeftTrackGrad)" strokeWidth="2.5" strokeLinecap="round"/>
+            <path d="M478 60 C255 32 72 84 65 210 C58 298 140 350 292 362" fill="none" stroke="#7EAEDB" strokeOpacity="0.35" strokeWidth="1.2" strokeDasharray="8 10" strokeLinecap="round"/>
+            <path d="M458 72 C248 50 86 96 80 210 C74 286 148 334 278 344" fill="none" stroke="#93C5FD" strokeOpacity="0.22" strokeWidth="0.8" strokeDasharray="3 14" strokeLinecap="round"/>
+          </svg>
+          <figure className="hero-showcase__visual hero-showcase__visual--left">
+            <img src="/hero/job-management.png" alt="" draggable="false" />
+          </figure>
+          <div className="hero-side-particles hero-side-particles--left">
+            {[
+              {x:6,y:18,s:4,d:.2},{x:10,y:44,s:3,d:.9},{x:4,y:68,s:4,d:1.6},{x:14,y:32,s:3,d:.5},{x:8,y:82,s:4,d:2.1},{x:18,y:56,s:3,d:1.2},
+              {x:22,y:40,s:4,d:.8},{x:16,y:74,s:3,d:1.8},
+            ].map((p,i)=><div key={i} className="hero-side-particle" style={{"--spx":p.x+"%","--spy":p.y+"%","--sps":p.s+"px","--spd":p.d+"s"} as CSSProperties}/>)}
+          </div>
+        </div>
+
+        <div className="hero-showcase__center">
+          <p className="home-hero__eyebrow">
+            <span aria-hidden="true" />
+            TALENTMATCH PREVIEW
+            <span aria-hidden="true" />
+          </p>
+          <h1 className="home-hero__title">
+            <SplitText text="人岗匹配" tag="span" className="home-hero__title-part" splitType="chars" delay={48} duration={0.85} ease="power3.out" from={{opacity:0,y:36,scale:.93}} to={{opacity:1,y:0,scale:1}} />
+            <SplitText text="智能" tag="em" className="home-hero__title-part home-hero__title-accent" splitType="chars" delay={48} duration={0.85} ease="power3.out" from={{opacity:0,y:36,scale:.93}} to={{opacity:1,y:0,scale:1}} initialDelay={100} />
+            <SplitText text="评估系统" tag="span" className="home-hero__title-part" splitType="chars" delay={48} duration={0.85} ease="power3.out" from={{opacity:0,y:36,scale:.93}} to={{opacity:1,y:0,scale:1}} initialDelay={200} />
+          </h1>
+          <p className="home-hero__desc" role="text">
+            <SplitText text="登录后可查看完整岗位数据、启动人才评估、使用知识图谱与招聘趋势等全部功能。" className="home-hero__desc-line" tag="span" splitType="chars" delay={22} duration={0.75} ease="power3.out" from={{opacity:0,y:16,scale:.96}} to={{opacity:1,y:0,scale:1}} />
+            <SplitText text="当前开放 10 条精选 Demo 岗位，登录即可解锁完整招聘工作台。" className="home-hero__desc-line" tag="span" splitType="chars" delay={22} duration={0.75} ease="power3.out" from={{opacity:0,y:16,scale:.96}} to={{opacity:1,y:0,scale:1}} initialDelay={120} />
+          </p>
+          <div className="home-hero__actions">
+            <button className="home-hero__primary" onClick={()=>window.dispatchEvent(new CustomEvent("auth:open-login"))}><Lock/>登录查看全部数据</button>
+            <button className="home-hero__secondary" onClick={()=>document.getElementById("demo-jobs")?.scrollIntoView({behavior:"smooth",block:"start"})}><BriefcaseBusiness/>浏览 Demo 岗位</button>
+          </div>
+        </div>
+
+        <div className="hero-side-scene hero-side-scene--right" aria-hidden="true">
+          <svg className="hero-effect-frame hero-effect-frame--right" viewBox="0 0 540 400" preserveAspectRatio="none">
+            <defs>
+              <linearGradient id="guestRightMeteorGrad" x1="1" y1="0" x2="0" y2="1">
+                <stop offset="0%" stopColor="#5B6EE1" stopOpacity="0.20"/>
+                <stop offset="38%" stopColor="#337FD1" stopOpacity="0.75"/>
+                <stop offset="78%" stopColor="#75D4E5" stopOpacity="0.34"/>
+                <stop offset="100%" stopColor="#75D4E5" stopOpacity="0"/>
+              </linearGradient>
+            </defs>
+            <path d="M86 36 C310 20 494 78 496 214 C497 310 420 368 268 388" fill="none" stroke="url(#guestRightMeteorGrad)" strokeWidth="2.5" strokeLinecap="round"/>
+            <path d="M118 54 C320 40 476 94 478 214 C480 292 410 344 290 366" fill="none" stroke="#786FE8" strokeOpacity="0.28" strokeWidth="1.4" strokeDasharray="3 10" strokeLinecap="round"/>
+            <path d="M142 68 C330 56 462 106 463 214 C464 278 400 326 304 350" fill="none" stroke="#93C5FD" strokeOpacity="0.20" strokeWidth="0.8" strokeDasharray="2 16" strokeLinecap="round"/>
+            <circle cx="86" cy="36" r="4.5" fill="#337FD1" opacity="0.65" className="hero-meteor-head"/>
+            <circle cx="86" cy="36" r="9" fill="#337FD1" opacity="0.12"/>
+          </svg>
+          <figure className="hero-showcase__visual hero-showcase__visual--right">
+            <img src="/hero/recruitment-insights.png" alt="" draggable="false" />
+          </figure>
+          <div className="hero-side-particles hero-side-particles--right">
+            {[
+              {x:90,y:14,s:4,d:.3},{x:86,y:34,s:3,d:.9},{x:82,y:56,s:4,d:1.5},{x:88,y:28,s:3,d:.6},{x:84,y:72,s:4,d:2.0},{x:92,y:42,s:3,d:1.1},
+              {x:80,y:50,s:3,d:1.3},{x:78,y:68,s:4,d:1.8},
+            ].map((p,i)=><div key={i} className="hero-side-particle" style={{"--spx":p.x+"%","--spy":p.y+"%","--sps":p.s+"px","--spd":p.d+"s"} as CSSProperties}/>)}
+          </div>
         </div>
       </section>
       <div style={{maxWidth:1280,margin:"0 auto",padding:"0 32px 32px"}}>
         {/* Stats — demo */}
+        {showSkeleton && dataLoading ? (
+        <div className="home-stats home-loading-skeleton" aria-hidden="true">
+          {[1,2,3,4].map(i => (
+            <div key={i} className="home-skeleton__stat-card">
+              <div className="home-skeleton__shimmer home-skeleton__stat-label" />
+              <div className="home-skeleton__shimmer home-skeleton__stat-value" />
+              <div className="home-skeleton__shimmer home-skeleton__stat-bar" />
+            </div>
+          ))}
+        </div>
+        ) : (
         <div className="home-stats">
           <div className="home-stat"><p className="home-stat__label">{'Demo 岗位'} <BriefcaseBusiness/></p><h3 className="home-stat__value">{demoJobs.length}</h3><p className="home-stat__sub">{'MySQL 演示数据'}</p></div>
           <div className="home-stat"><p className="home-stat__label">{'覆盖城市'} <MapPin/></p><h3 className="home-stat__value mint">{new Set(demoJobs.map(j=>j.city)).size}</h3><p className="home-stat__sub">{'北京·上海·深圳·杭州·广州'}</p></div>
           <div className="home-stat"><p className="home-stat__label">{'技能标签'} <Sparkles/></p><h3 className="home-stat__value">{new Set(demoJobs.flatMap(j=>j.skills||[])).size}+</h3><p className="home-stat__sub">{'Java·Go·Python·React·K8s…'}</p></div>
           <div className="home-stat"><p className="home-stat__label">{'登录解锁'} <Lock/></p><h3 className="home-stat__value mint">100%</h3><p className="home-stat__sub">{'全部功能开放使用'}</p></div>
         </div>
+        )}
         {/* Demo job cards — all 10 in two rows */}
-        <section className="home-section">
+        <section className="home-section" id="demo-jobs">
           <div className="home-section__head">
             <div><p className="home-section__head-label">Demo Preview</p><h2 className="home-section__head-title">{'精选 Demo 岗位（10 条）'}</h2></div>
-            <span style={{fontSize:12,color:"rgba(196,199,200,.35)"}}>{'数据来源: MySQL demo_homepage_jobs'}</span>
+            <span style={{fontSize:12,color:"var(--ent-text-muted)"}}>{'数据来源: MySQL demo_homepage_jobs'}</span>
           </div>
-          <div className="home-position-grid" style={{gridTemplateColumns:"repeat(auto-fill, minmax(340px, 1fr))"}}>
-            {demoLoaded&&demoJobs.length===0?<div className="home-position-card" style={{gridColumn:"1/-1",padding:60,textAlign:"center",cursor:"default"}}><p style={{color:"rgba(196,199,200,.4)"}}>{'Demo 数据加载失败，请确认后端服务已启动'}</p></div>:
-            demoJobs.map((job,i)=>{
-              const badge=badges[i%badges.length];
-              // Pick a deterministic gradient
-              const g=gradients[i%gradients.length];
-              return <button key={job.id} className="home-position-card" onClick={()=>setSelected(job)} style={{cursor:"default"}}>
-                <div className="home-position-card__img" style={{background:g}}>
-                  <div className="home-position-card__img-overlay"/>
-                  <span className="home-position-card__img-badge" style={{background:badge.bg,color:badge.color}}>{badge.text}</span>
-                </div>
-                <div className="home-position-card__body">
-                  <div className="home-position-card__score-row">
-                    <h4 className="home-position-card__name">{job.name}</h4>
-                    <span className="home-position-card__score">{job.score||85}{'分'}</span>
-                  </div>
-                  <p className="home-position-card__desc" style={{WebkitLineClamp:2,display:"-webkit-box",WebkitBoxOrient:"vertical",overflow:"hidden"}}>{job.description||job.summary}</p>
-                  <div className="skill-tags" style={{marginBottom:14}}>{(job.skills||[]).slice(0,4).map((s:string)=><i key={s}>{s}</i>)}</div>
-                  <div className="home-position-card__footer">
-                    <span style={{fontSize:12,color:"rgba(196,199,200,.5)"}}><MapPin style={{width:14,height:14,marginRight:4,verticalAlign:"middle"}}/>{job.city||'不限'} · {job.company}</span>
-                  </div>
-                </div>
-              </button>;
-            })}
-          </div>
-        </section>
-        {/* Login CTA */}
-        <section className="home-section" style={{marginBottom:20}}>
-          <div className="home-insights">
+          <div className="home-insights guest-demo-capability-preview" style={{margin:"0 0 32px"}}>
             <div className="home-quote-card">
               <div className="home-quote-card__icon"><Lock/></div>
               <p className="home-quote-card__text">{'登录后即可访问所有功能：岗位管理、人岗匹配（含人才能力图谱）、评估结果、招聘趋势等。'}</p>
@@ -125,10 +206,30 @@ function HomePage({onNavigate,isLoggedIn}:{onNavigate?:(page:PageKey|"matching")
               <ul className="home-insight-card__list">
                 <li className="home-insight-card__item"><div className="home-insight-card__dot"/><div className="home-insight-card__item-content"><h4>{'岗位管理'}</h4><p>{'管理招聘岗位、核心要求与候选人匹配进度。'}</p></div></li>
                 <li className="home-insight-card__item"><div className="home-insight-card__dot"/><div className="home-insight-card__item-content"><h4>{'人岗匹配'}</h4><p>{'上传简历，AI 智能评估候选人与岗位的契合度。'}</p></div></li>
-                <li className="home-insight-card__item"><div className="home-insight-card__dot"/><div className="home-insight-card__item-content"><h4>{'人才能力图谱'}</h4><p>{'人岗匹配功能：可视化候选人的能力、缺口与岗位适配关系。'}</p></div></li>
+                <li className="home-insight-card__item"><div className="home-insight-card__dot"/><div className="home-insight-card__item-content"><h4>{'人才能力图谱'}</h4><p>{'可视化候选人的能力、缺口与岗位适配关系。'}</p></div></li>
                 <li className="home-insight-card__item"><div className="home-insight-card__dot"/><div className="home-insight-card__item-content"><h4>{'招聘趋势'}</h4><p>{'按时间查看岗位热度及关键技能的演变。'}</p></div></li>
               </ul>
             </div>
+          </div>
+          <div className="priority-job-grid" style={{gridTemplateColumns:"repeat(auto-fill, minmax(340px, 1fr))"}}>
+            {demoLoaded&&demoJobs.length===0?<div className="priority-job-card" style={{gridColumn:"1/-1",padding:60,textAlign:"center",cursor:"default"}}><p style={{color:"var(--ent-text-muted)"}}>{'Demo 数据加载失败，请确认后端服务已启动'}</p></div>:
+            demoJobs.map((job,i)=>{
+              return <button key={job.id} className="priority-job-card" onClick={()=>setSelected(job)} style={{cursor:"default"}}>
+                <span className="priority-job-card__watermark" aria-hidden="true">{String(i+1).padStart(2,"0")}</span>
+                <div className="priority-job-card__top">
+                  <span className="priority-job-card__location"><MapPin size={12}/>{job.city||'不限'}</span>
+                  <span className="priority-job-card__score">{job.score||85}分</span>
+                </div>
+                <div className="priority-job-card__content">
+                  <h3 className="priority-job-card__name">{job.name}</h3>
+                  <p className="priority-job-card__desc">{job.description||job.summary}</p>
+                </div>
+                <div className="priority-job-card__bottom">
+                  <span className="priority-job-card__company">{job.company||'招聘团队'}</span>
+                  <span className="priority-job-card__detail">查看详情 <ArrowUpRight size={12}/></span>
+                </div>
+              </button>;
+            })}
           </div>
         </section>
       </div>
@@ -138,18 +239,104 @@ function HomePage({onNavigate,isLoggedIn}:{onNavigate?:(page:PageKey|"matching")
 
   /* ── AUTHENTICATED: Full dashboard ── */
   return <div className="platform-main" style={{padding:0,margin:0,maxWidth:"100%"}}>
-    {/* Hero Section */}
-    <section className="home-hero">
-      <p className="home-hero__eyebrow">Executive Dashboard</p>
-      <h1 className="home-hero__title">{'人岗匹配智能评估系统'}</h1>
-      <p className="home-hero__desc">{'精准管理组织人力资本，实时监控招聘流程与精英候选人匹配评分。集中查看在招岗位、候选人评估与近期招聘进展，驱动数据化招聘决策。'}</p>
-      <div className="home-hero__actions">
-        <button className="home-hero__primary" onClick={()=>setAdding(true)}><Plus/> {'发布新岗位'}</button>
-        <button className="home-hero__secondary" onClick={()=>onNavigate?.("evolution")}><TrendingUp/> {'查看招聘趋势'}</button>
+    {/* ── AUTHENTICATED Hero Showcase ── */}
+    <section className="home-hero home-hero--showcase" ref={heroRef}>
+      {/* Light ambient particles */}
+      <div className="hero-showcase__particles" aria-hidden="true">
+        {[
+          {x:10,y:25,s:3,d:.3},{x:16,y:48,s:2,d:.8},{x:8,y:62,s:3,d:1.4},{x:14,y:78,s:2,d:.6},{x:86,y:22,s:3,d:.4},{x:92,y:46,s:2,d:.9},
+          {x:88,y:68,s:3,d:1.5},{x:84,y:80,s:2,d:.7},{x:48,y:92,s:3,d:2.0},{x:52,y:88,s:2,d:2.3},
+        ].map((p,i)=><div key={i} className="hero-particle" style={{"--px":p.x+"%","--py":p.y+"%","--ps":p.s+"px","--pd":p.d+"s"} as CSSProperties}/>)}
+      </div>
+
+      {/* ── Left scene: racetrack semi-surround frame + screenshot ── */}
+      <div className="hero-side-scene hero-side-scene--left" aria-hidden="true">
+        <svg className="hero-effect-frame hero-effect-frame--left" viewBox="0 0 540 400" preserveAspectRatio="none">
+          <defs>
+            <linearGradient id="leftTrackGrad" x1="0" y1="1" x2="1" y2="0">
+              <stop offset="0%" stopColor="#8CBCE8" stopOpacity="0.18"/>
+              <stop offset="45%" stopColor="#2478C8" stopOpacity="0.70"/>
+              <stop offset="100%" stopColor="#7ED9E8" stopOpacity="0.32"/>
+            </linearGradient>
+          </defs>
+          <path d="M510 45 C260 12 54 72 46 210 C40 310 130 370 310 385" fill="none" stroke="url(#leftTrackGrad)" strokeWidth="2.5" strokeLinecap="round"/>
+          <path d="M478 60 C255 32 72 84 65 210 C58 298 140 350 292 362" fill="none" stroke="#7EAEDB" strokeOpacity="0.35" strokeWidth="1.2" strokeDasharray="8 10" strokeLinecap="round"/>
+          <path d="M458 72 C248 50 86 96 80 210 C74 286 148 334 278 344" fill="none" stroke="#93C5FD" strokeOpacity="0.22" strokeWidth="0.8" strokeDasharray="3 14" strokeLinecap="round"/>
+        </svg>
+        <figure className="hero-showcase__visual hero-showcase__visual--left">
+          <img src="/hero/job-management.png" alt="" draggable="false" />
+        </figure>
+        <div className="hero-side-particles hero-side-particles--left">
+          {[
+            {x:6,y:18,s:4,d:.2},{x:10,y:44,s:3,d:.9},{x:4,y:68,s:4,d:1.6},{x:14,y:32,s:3,d:.5},{x:8,y:82,s:4,d:2.1},{x:18,y:56,s:3,d:1.2},
+            {x:22,y:40,s:4,d:.8},{x:16,y:74,s:3,d:1.8},
+          ].map((p,i)=><div key={i} className="hero-side-particle" style={{"--spx":p.x+"%","--spy":p.y+"%","--sps":p.s+"px","--spd":p.d+"s"} as CSSProperties}/>)}
+        </div>
+      </div>
+
+      {/* Center content */}
+      <div className="hero-showcase__center">
+        <p className="home-hero__eyebrow">
+          <span aria-hidden="true" />
+          EXECUTIVE DASHBOARD
+          <span aria-hidden="true" />
+        </p>
+        <h1 className="home-hero__title">
+          <SplitText text="人岗匹配" tag="span" className="home-hero__title-part" splitType="chars" delay={48} duration={0.85} ease="power3.out" from={{opacity:0,y:36,scale:.93}} to={{opacity:1,y:0,scale:1}} />
+          <SplitText text="智能" tag="em" className="home-hero__title-part home-hero__title-accent" splitType="chars" delay={48} duration={0.85} ease="power3.out" from={{opacity:0,y:36,scale:.93}} to={{opacity:1,y:0,scale:1}} initialDelay={100} />
+          <SplitText text="评估系统" tag="span" className="home-hero__title-part" splitType="chars" delay={48} duration={0.85} ease="power3.out" from={{opacity:0,y:36,scale:.93}} to={{opacity:1,y:0,scale:1}} initialDelay={200} />
+        </h1>
+        <p className="home-hero__desc" role="text">
+          <SplitText text="精准管理组织人力资本，实时监控招聘流程与精英候选人匹配评分。" className="home-hero__desc-line" tag="span" splitType="chars" delay={22} duration={0.75} ease="power3.out" from={{opacity:0,y:16,scale:.96}} to={{opacity:1,y:0,scale:1}} />
+          <SplitText text="集中查看在招岗位、候选人评估与近期招聘进展，驱动数据化招聘决策。" className="home-hero__desc-line" tag="span" splitType="chars" delay={22} duration={0.75} ease="power3.out" from={{opacity:0,y:16,scale:.96}} to={{opacity:1,y:0,scale:1}} initialDelay={120} />
+        </p>
+        <div className="home-hero__actions">
+          <AddJobButton size="large" onClick={()=>setAdding(true)} />
+          <button className="home-hero__secondary" onClick={()=>onNavigate?.("evolution")}><TrendingUp/>查看招聘趋势</button>
+        </div>
+      </div>
+
+      {/* ── Right scene: meteor-trail semi-surround frame + screenshot ── */}
+      <div className="hero-side-scene hero-side-scene--right" aria-hidden="true">
+        <svg className="hero-effect-frame hero-effect-frame--right" viewBox="0 0 540 400" preserveAspectRatio="none">
+          <defs>
+            <linearGradient id="rightMeteorGrad" x1="1" y1="0" x2="0" y2="1">
+              <stop offset="0%" stopColor="#5B6EE1" stopOpacity="0.20"/>
+              <stop offset="38%" stopColor="#337FD1" stopOpacity="0.75"/>
+              <stop offset="78%" stopColor="#75D4E5" stopOpacity="0.34"/>
+              <stop offset="100%" stopColor="#75D4E5" stopOpacity="0"/>
+            </linearGradient>
+          </defs>
+          <path d="M86 36 C310 20 494 78 496 214 C497 310 420 368 268 388" fill="none" stroke="url(#rightMeteorGrad)" strokeWidth="2.5" strokeLinecap="round"/>
+          <path d="M118 54 C320 40 476 94 478 214 C480 292 410 344 290 366" fill="none" stroke="#786FE8" strokeOpacity="0.28" strokeWidth="1.4" strokeDasharray="3 10" strokeLinecap="round"/>
+          <path d="M142 68 C330 56 462 106 463 214 C464 278 400 326 304 350" fill="none" stroke="#93C5FD" strokeOpacity="0.20" strokeWidth="0.8" strokeDasharray="2 16" strokeLinecap="round"/>
+          <circle cx="86" cy="36" r="4.5" fill="#337FD1" opacity="0.65" className="hero-meteor-head"/>
+          <circle cx="86" cy="36" r="9" fill="#337FD1" opacity="0.12"/>
+        </svg>
+        <figure className="hero-showcase__visual hero-showcase__visual--right">
+          <img src="/hero/recruitment-insights.png" alt="" draggable="false" />
+        </figure>
+        <div className="hero-side-particles hero-side-particles--right">
+          {[
+            {x:90,y:14,s:4,d:.3},{x:86,y:34,s:3,d:.9},{x:82,y:56,s:4,d:1.5},{x:88,y:28,s:3,d:.6},{x:84,y:72,s:4,d:2.0},{x:92,y:42,s:3,d:1.1},
+            {x:80,y:50,s:3,d:1.3},{x:78,y:68,s:4,d:1.8},
+          ].map((p,i)=><div key={i} className="hero-side-particle" style={{"--spx":p.x+"%","--spy":p.y+"%","--sps":p.s+"px","--spd":p.d+"s"} as CSSProperties}/>)}
+        </div>
       </div>
     </section>
     <div style={{maxWidth:1280,margin:"0 auto",padding:"0 32px 32px"}}>
       {/* Stats Grid */}
+      {showSkeleton && dataLoading ? (
+        <div className="home-stats home-loading-skeleton" aria-hidden="true">
+          {[1,2,3,4].map(i => (
+            <div key={i} className="home-skeleton__stat-card">
+              <div className="home-skeleton__shimmer home-skeleton__stat-label" />
+              <div className="home-skeleton__shimmer home-skeleton__stat-value" />
+              <div className="home-skeleton__shimmer home-skeleton__stat-bar" />
+            </div>
+          ))}
+        </div>
+      ) : (
       <div className="home-stats">
         <button className="home-stat" onClick={()=>onNavigate?.("jobs")}>
           <p className="home-stat__label">{'在招岗位'} <BriefcaseBusiness/></p>
@@ -172,8 +359,75 @@ function HomePage({onNavigate,isLoggedIn}:{onNavigate?:(page:PageKey|"matching")
           <div className="home-stat__bar"><div className="home-stat__bar-fill" style={{width:average!==null?average+"%":"0%"}}/></div>
         </button>
       </div>
-      {/* Key Positions */}
-      <section className="home-section">
+      )}
+      {/* Intelligent Insight + Editorial Quote Grid */}
+      <section className="home-section home-editorial-section" style={{marginBottom:36}}>
+        <div className="home-editorial-grid">
+          {/* ── Left: Intelligent Insight Card ── */}
+          <div className="insight-card">
+            <div className="insight-card__header">
+              <div className="insight-card__title-group">
+                <span className="insight-card__category">INTELLIGENT INSIGHT</span>
+                <h2 className="insight-card__title">智能洞察</h2>
+              </div>
+              <div className="insight-card__icon-wrap" aria-hidden="true">
+                <div className="insight-card__icon-base" />
+                <TrendingUp className="insight-card__icon-giant" size={110} strokeWidth={2.5} />
+              </div>
+            </div>
+            <div className="insight-card__body">
+              <div className="insight-card__hero-stat">
+                <span className="insight-card__stat-number">{totalJobs.toLocaleString()}</span>
+                <span className="insight-card__stat-label">当前系统在招岗位，覆盖多个行业与城市。</span>
+              </div>
+              <div className="insight-card__section-title">人才评估</div>
+              <div className="insight-card__details">
+                <div className="insight-card__detail">
+                  <div className="insight-card__detail-heading">
+                    <strong>人才评估质量</strong>
+                    <span className="insight-card__detail-badge insight-card__detail-badge--blue">QUALITY</span>
+                  </div>
+                  <p>已完成 <b>{assessments.length}</b> 次智能评估，平均匹配度为 <b>{average!==null?average+"%" : "--"}</b>。</p>
+                </div>
+                <div className="insight-card__detail">
+                  <div className="insight-card__detail-heading">
+                    <strong>招聘趋势洞察</strong>
+                    <span className="insight-card__detail-badge">TRENDS</span>
+                  </div>
+                  <p>按时间区间查看岗位热度及关键技能的演变，辅助招聘规划。</p>
+                </div>
+              </div>
+            </div>
+            <button className="insight-card__action" onClick={()=>onNavigate?.("evolution")}>
+              <span>探索更多洞察</span>
+              <TrendingUp size={16} />
+            </button>
+          </div>
+
+          {/* ── Right: Magazine Editorial Quote ── */}
+          <div className="editorial-quote" role="blockquote">
+            <span className="editorial-quote__mark editorial-quote__mark--open" aria-hidden="true">&#x201C;</span>
+            <div className="editorial-quote__content">
+              <p className="editorial-quote__text">
+                <span className="editorial-quote__line">优秀的招聘者</span>
+                <span className="editorial-quote__line">不仅仅是填补岗位空缺；</span>
+              </p>
+              <p className="editorial-quote__text editorial-quote__text--indent">
+                <span className="editorial-quote__line">他们在构建组织</span>
+                <span className="editorial-quote__line">的未来蓝图。</span>
+              </p>
+            </div>
+            <span className="editorial-quote__mark editorial-quote__mark--close" aria-hidden="true">&#x201D;</span>
+            <footer className="editorial-quote__author">
+              <span>&mdash; TalentMatch</span>
+              <strong>智能评估团队</strong>
+              <Sparkles size={13} aria-hidden="true" />
+            </footer>
+          </div>
+        </div>
+      </section>
+      {/* Key Positions — last section */}
+      <section className="home-section home-priority-section">
         <div className="home-section__head">
           <div>
             <p className="home-section__head-label">Priority Pipeline</p>
@@ -181,75 +435,47 @@ function HomePage({onNavigate,isLoggedIn}:{onNavigate?:(page:PageKey|"matching")
           </div>
           <button className="home-section__head-link" onClick={()=>onNavigate?.("jobs")}>{'查看全部岗位'} <ArrowUpRight/></button>
         </div>
-        <div className="home-position-grid">
-          {topJobs.length?topJobs.map((job,i)=>{
-            const badge=badges[i]||badges[0];
-            return <button key={job.id} className="home-position-card" onClick={()=>{setSelected(job)}}>
-              <div className="home-position-card__img" style={{background:gradients[i]||gradients[0]}}>
-                <div className="home-position-card__img-overlay"/>
-                <span className="home-position-card__img-badge" style={{background:badge.bg,color:badge.color}}>{badge.text}</span>
+        <div className="priority-job-grid">
+          {showSkeleton && dataLoading ? (
+            <div className="home-loading-skeleton" aria-hidden="true" style={{display:"contents"}}>
+              {[1,2,3].map(i => (
+                <div key={i} className="home-skeleton__job-card">
+                  <div className="home-skeleton__shimmer home-skeleton__job-watermark" />
+                  <div className="home-skeleton__shimmer home-skeleton__job-location" />
+                  <div className="home-skeleton__shimmer home-skeleton__job-name" />
+                  <div className="home-skeleton__shimmer home-skeleton__job-desc" />
+                  <div className="home-skeleton__shimmer home-skeleton__job-desc" />
+                  <div className="home-skeleton__job-footer">
+                    <div className="home-skeleton__shimmer home-skeleton__job-company" />
+                    <div className="home-skeleton__shimmer home-skeleton__job-action" />
+                  </div>
+                </div>
+              ))}
+            </div>
+          ) : topJobs.length?topJobs.map((job,i)=>{
+            return <button key={job.id} className="priority-job-card" onClick={()=>{setSelected(job)}}>
+              <span className="priority-job-card__watermark" aria-hidden="true">{String(i+1).padStart(2,"0")}</span>
+              <div className="priority-job-card__top">
+                <span className="priority-job-card__location"><MapPin size={12}/>{job.city||'不限'}</span>
+                <span className="priority-job-card__score">{(job.score||85)}分</span>
               </div>
-              <div className="home-position-card__body">
-                <div className="home-position-card__score-row">
-                  <h4 className="home-position-card__name">{job.name}</h4>
-                  <span className="home-position-card__score">{(job.score||85)}{'分'}</span>
-                </div>
-                <p className="home-position-card__desc">{job.description}</p>
-                <div className="skill-tags" style={{marginBottom:14}}>{(job.skills||[]).slice(0,3).map((s:string)=><i key={s}>{s}</i>)}</div>
-                <div className="home-position-card__footer">
-                  <span style={{fontSize:12,color:"rgba(196,199,200,.5)"}}><MapPin style={{width:14,height:14,marginRight:4,verticalAlign:"middle"}}/>{job.city||'不限'}</span>
-                  <span className="home-position-card__footer-btn">{'查看详情'} <ArrowUpRight style={{width:14,height:14}}/></span>
-                </div>
+              <div className="priority-job-card__content">
+                <h3 className="priority-job-card__name">{job.name}</h3>
+                <p className="priority-job-card__desc">{job.description}</p>
+              </div>
+              <div className="priority-job-card__bottom">
+                <span className="priority-job-card__company">{job.company||'招聘团队'}</span>
+                <span className="priority-job-card__detail">查看详情 <ArrowUpRight size={12}/></span>
               </div>
             </button>;
-          }):<div className="home-position-card" style={{gridColumn:"1/-1",padding:60,textAlign:"center",cursor:"default"}}><p style={{color:"rgba(196,199,200,.4)"}}>{'正在加载岗位数据...'}</p></div>}
+          }):<div className="priority-job-card" style={{gridColumn:"1/-1",padding:60,textAlign:"center",cursor:"default"}}><p style={{color:"var(--ent-text-muted)"}}>{'正在加载岗位数据...'}</p></div>}
+          {/* Add new job card placeholder */}
+          <button className="priority-add-card" onClick={()=>setAdding(true)}>
+            <span className="priority-add-card__watermark" aria-hidden="true">+</span>
+            <div className="priority-add-card__icon"><Plus size={22}/></div>
+            <span className="priority-add-card__text">添加新岗位</span>
+          </button>
         </div>
-      </section>
-      {/* Insights Bento */}
-      <section className="home-section" style={{marginBottom:20}}>
-        <div className="home-insights">
-          <div className="home-quote-card">
-            <div className="home-quote-card__icon"><Sparkles/></div>
-            <p className="home-quote-card__text">{'“优秀的招聘者不仅仅是填补岗位空缺；他们在构建组织的未来蓝图。”'}</p>
-            <p className="home-quote-card__author">— TalentMatch {'智能评估团队'}</p>
-          </div>
-          <div className="home-insight-card">
-            <div className="home-insight-card__head">
-              <div className="home-insight-card__head-icon"><Activity/></div>
-              <h3 className="home-insight-card__head-title">{'智能洞察'}</h3>
-            </div>
-            <ul className="home-insight-card__list">
-              <li className="home-insight-card__item">
-                <div className="home-insight-card__dot"/>
-                <div className="home-insight-card__item-content">
-                  <h4>{'实时招聘标的'}</h4>
-                  <p>{'当前系统共有'} <b style={{color:"#9bf2e9"}}>{totalJobs.toLocaleString()}</b> {'个在招岗位，覆盖多个行业领域。'}</p>
-                </div>
-              </li>
-              <li className="home-insight-card__item">
-                <div className="home-insight-card__dot"/>
-                <div className="home-insight-card__item-content">
-                  <h4>{'人才评估质量'}</h4>
-                  <p>{'已完成'} <b style={{color:"#9bf2e9"}}>{assessments.length}</b> {'次智能评估，平均匹配度为'} <b style={{color:"#9bf2e9"}}>{average!==null?average+"%":"--"}</b>{'。'}</p>
-                </div>
-              </li>
-              <li className="home-insight-card__item">
-                <div className="home-insight-card__dot"/>
-                <div className="home-insight-card__item-content">
-                  <h4>{'招聘趋势洞察'}</h4>
-                  <p>{'按时间区间查看岗位热度及关键技能的演变，辅助战略规划。'}</p>
-                </div>
-              </li>
-            </ul>
-            <button className="home-insight-card__action" onClick={()=>onNavigate?.("evolution")}><TrendingUp/> {'探索更多洞察'}</button>
-          </div>
-        </div>
-      </section>
-      {/* Quick Actions */}
-      <section className="workspace-shortcuts">
-        <button className="spring-hover" onClick={()=>setAdding(true)}><Plus/><span><b>{'发布招聘岗位'}</b><small>{'创建新的招聘需求'}</small></span></button>
-        <button className="spring-hover" onClick={()=>onNavigate?.("matching")}><Sparkles/><span><b>{'开始人才评估'}</b><small>{'上传简历并进行匹配'}</small></span></button>
-        <button className="spring-hover" onClick={()=>onNavigate?.("graph")}><Route/><span><b>{'人才能力图谱'}</b><small>{'可视化候选人与岗位关系'}</small></span></button>
       </section>
     </div>
     {selected&&<JobDialog job={selected} close={()=>setSelected(null)} onDelete={deleteLocalJob}/>}
@@ -258,11 +484,13 @@ function HomePage({onNavigate,isLoggedIn}:{onNavigate?:(page:PageKey|"matching")
 }
 
 
-export default function PlatformPage({page,onNavigate,preferredCandidateName,onOpenGraph,isLoggedIn}:{page:PageKey;onNavigate?:(page:PageKey|"matching")=>void;preferredCandidateName?:string;onOpenGraph?:(name:string)=>void;isLoggedIn:boolean}){
+export type JobSectionKey="jobs"|"discovery"|"evolution"|"evidence";
+export default function PlatformPage({page,onNavigate,preferredCandidateName,onOpenGraph,isLoggedIn,activeJobSection,onJobSectionChange}:{page:PageKey;onNavigate?:(page:PageKey|"matching")=>void;preferredCandidateName?:string;onOpenGraph?:(name:string)=>void;isLoggedIn:boolean;activeJobSection?:JobSectionKey;onJobSectionChange?:(section:JobSectionKey)=>void}){
   const m=meta[page];
   if(page==="overview")return <HomePage onNavigate={onNavigate} isLoggedIn={isLoggedIn}/>;
   if(page==="capability")return <CapabilityPage onNavigate={onNavigate}/>;
-  return <main className="platform-main"><div className="page-heading" key={page}><div><span className="slide-in-left" style={{"--i":0} as any}>{m.eyebrow}</span><h2 className="slide-in-left" style={{"--i":1} as any}>{m.title}</h2><p className="slide-in-left" style={{"--i":2} as any}>{m.desc}</p></div></div><Fragment>{page==="graph"?<TalentGraphPage onCompare={()=>onNavigate?.("compare")} preferredCandidateName={preferredCandidateName}/>:page==="compare"?<CompareRoute onBack={()=>onNavigate?.("graph")}/>:page==="evolution"?<TrendInsightsPage/>:page==="unified"?<AssessmentPage onOpenGraph={onOpenGraph}/>:page==="favorites"?<FavoritesPage onOpenGraph={onOpenGraph}/>:page==="about"?<AboutPage onBack={()=>onNavigate?.("overview")}/>:<JobsPage workspace={false} onNavigate={onNavigate}/>}</Fragment></main>;
+  if(page==="jobs")return <JobsPage workspace={false} onNavigate={onNavigate} activeJobSection={activeJobSection||"jobs"} onJobSectionChange={onJobSectionChange}/>;
+  return <main className="platform-main"><div className="page-heading" key={page}><div><span className="slide-in-left" style={{"--i":0} as any}>{m.eyebrow}</span><h2 className="slide-in-left" style={{"--i":1} as any}>{m.title}</h2><p className="slide-in-left" style={{"--i":2} as any}>{m.desc}</p></div></div><Fragment>{page==="graph"?<TalentGraphPage onCompare={()=>onNavigate?.("compare")} preferredCandidateName={preferredCandidateName}/>:page==="compare"?<CompareRoute onBack={()=>onNavigate?.("graph")}/>:page==="evolution"?<TrendInsightsPage/>:page==="unified"?<AssessmentPage onOpenGraph={onOpenGraph}/>:page==="favorites"?<FavoritesPage onOpenGraph={onOpenGraph}/>:page==="about"?<AboutPage onBack={()=>onNavigate?.("overview")}/>:null}</Fragment></main>;
 }
 
 type GraphNode={id:string;label:string;type:"person"|"skill"|"gap"|"job";score:number;x:number;y:number;desc:string};
@@ -453,9 +681,9 @@ export function TalentGraphPage({onCompare,preferredCandidateName,embedded,onBac
   };
   /* ── 同行候选人(同技能) ── */
   const skillPeers=(skillName:string)=>candidates.filter(c=>c.id!==candidateId&&(c.skills||[]).some(s=>s.includes(skillName)||skillName.includes(s))).slice(0,4);
-  const tagStyle={fontStyle:"normal" as const,padding:"3px 7px",borderRadius:999,fontSize:10,border:"1px solid rgba(203,188,255,.12)",background:"rgba(255,255,255,.025)",color:"rgba(255,255,255,.45)"};
-  const tagMatch={fontStyle:"normal" as const,padding:"3px 7px",borderRadius:999,fontSize:10,border:"1px solid rgba(155,242,233,.18)",background:"rgba(0,221,235,.06)",color:"#9bf2e9"};
-  const tagGap={fontStyle:"normal" as const,padding:"3px 7px",borderRadius:999,fontSize:10,border:"1px solid rgba(255,135,148,.18)",background:"rgba(255,90,110,.06)",color:"#ffb9c0"};
+  const tagStyle={fontStyle:"normal" as const,padding:"3px 7px",borderRadius:999,fontSize:10,border:"1px solid #DCE3EC",background:"#F4F7FB",color:"#667085"};
+  const tagMatch={fontStyle:"normal" as const,padding:"3px 7px",borderRadius:999,fontSize:10,border:"1px solid rgba(7,94,204,.15)",background:"#E8F1FD",color:"#075ECC"};
+  const tagGap={fontStyle:"normal" as const,padding:"3px 7px",borderRadius:999,fontSize:10,border:"1px solid rgba(220,38,38,.15)",background:"#FEE2E2",color:"#DC2626"};
 
   return <>{embedded&&<div className="page-actions" style={{marginBottom:0}}><button className="ghost-action spring-hover" onClick={onBackToMatching}><ArrowLeft/>返回匹配结果</button></div>}{embedded&&dataLoaded&&candidates.length===0?<section className="interactive-graph" style={{display:"flex",alignItems:"center",justifyContent:"center",minHeight:480}}><div style={{display:"flex",flexDirection:"column",alignItems:"center",gap:20,textAlign:"center",padding:40}}><div style={{width:72,height:72,borderRadius:"50%",display:"grid",placeItems:"center",background:"radial-gradient(circle,rgba(0,221,235,.12),transparent 70%)",border:"1px solid rgba(0,221,235,.15)"}}><UserRound style={{width:32,height:32,color:"rgba(0,221,235,.45)"}}/></div><h3 style={{margin:0,fontSize:18,fontWeight:600,color:"rgba(255,255,255,.65)"}}>暂无候选人数据</h3><p style={{margin:0,fontSize:13,lineHeight:1.7,color:"rgba(255,255,255,.35)",maxWidth:420}}>请先在「智能匹配」中上传简历并完成评估，然后从匹配结果点击「查看人才能力图谱」跳转到这里。</p><button className="ghost-action spring-hover" onClick={onBackToMatching} style={{marginTop:8}}><ArrowLeft/>返回智能匹配</button></div></section>:<><div className="page-actions graph-actions"><label><span>查看候选人</span><select value={candidateId} onChange={event=>{setCandidateId(event.target.value);setRemoteFits({});applyCandidate(candidates.find(x=>x.id===event.target.value))}}>{candidates.map(candidate=><option key={candidate.id} value={candidate.id}>{candidate.name||"匿名候选人"}</option>)}</select></label><button className={`ghost-action favorite-action ${isFavorite?"active":""}`} onClick={toggleFavorite}><Heart fill={isFavorite?"currentColor":"none"}/>{isFavorite?"已特别关注":"特别关注"}</button><button className="primary small-primary" onClick={onCompare}><GitCompareArrows/>候选人对比</button></div><section className="interactive-graph"><div className="graph-canvas live" onPointerMove={onCanvasMove} onPointerUp={endDrag} onClick={()=>setSelectedId("")}><canvas ref={bgCanvasRef} className="graph-dot-canvas" style={{position:"absolute",inset:0,zIndex:0,pointerEvents:"none",borderRadius:14}}/><svg className="graph-lines" viewBox="0 0 100 100" preserveAspectRatio="none">{graphEdges.map(([from,to])=>{const a=nodes.find(x=>x.id===from)!;const b=nodes.find(x=>x.id===to)!;const connected=edgeConnected(from,to);const dimmed=edgeDimmed(from,to);const x1=a.x+NODE_HALF_W,y1=a.y+NODE_HALF_H,x2=b.x,y2=b.y+NODE_HALF_H;return <g key={`${from}-${to}`} ref={el=>{lineRefs.current[`${from}-${to}`]=el}} className={dimmed?"graph-edge--dim":""}><line className={`graph-edge--cyan${connected&&hoveredNode!==""?" graph-edge--active":""}`} x1={x1} y1={y1} x2={x2} y2={y2}/></g>})}</svg>{nodes.map(node=>{return <button key={node.id} ref={el=>{nodeRefs.current[node.id]=el}} className={`live-node ${node.type} ${selectedId===node.id?"selected":""} ${hoveredNode===node.id?"node-hovered":""}`} style={{left:`${node.x}%`,top:`${node.y}%`}} onPointerDown={startDrag(node.id)} onPointerEnter={()=>{if(!dragging.current)setHoveredNode(node.id)}} onPointerLeave={()=>{if(!dragging.current)setHoveredNode("")}} onClick={e=>{e.stopPropagation();selectNode(node)}}><span>{node.label}</span><small>{node.score}分</small></button>})}</div>{/* popover */selectedId!==""&&selectedId!=="p"&&(()=>{const node=nodes.find(n=>n.id===selectedId);if(!node)return null;const fit=node.type==="job"?(remoteFits[node.id]||jobFits[node.id]):null;const isPerson=node.type==="person";const nodeEl=nodeRefs.current[node.id];const pctX=parseFloat(nodeEl?.style.left||"0");const pctY=parseFloat(nodeEl?.style.top||"0");return <div className="graph-popover-flyout" style={{left:`${Math.min(pctX+3,68)}%`,top:`${Math.max(8,pctY-5)}%`}} onMouseLeave={()=>setSelectedId("")} onClick={e=>e.stopPropagation()}><div className="graph-popover-flyout__inner"><div style={{display:"flex",justifyContent:"space-between",alignItems:"flex-start",gap:12}}><div style={{minWidth:0}}><span style={{fontSize:10,fontWeight:500,color:"rgba(155,242,233,.65)",letterSpacing:".08em",marginBottom:4,display:"block"}}>{node.type==="person"?"候选人":node.type==="job"?"岗位匹配":node.type==="gap"?"能力缺口":"核心技能"}</span><b style={{fontSize:16,color:"rgba(255,255,255,.90)",display:"block",marginBottom:4}}>{node.label}</b><small style={{color:"rgba(255,255,255,.45)",fontSize:11}}>{node.score} 分</small></div><div className="popover-score-ring"><span style={{fontFamily:`"SF Pro Rounded","JetBrains Mono",monospace`,fontSize:20,fontWeight:800,lineHeight:1,color:"rgba(255,255,255,.95)",fontVariantNumeric:"tabular-nums",WebkitFontSmoothing:"antialiased"}}>{isPerson?dimensions.overall:node.score}</span><span style={{display:"block",fontSize:7,color:"rgba(6,182,212,.70)",fontWeight:300,transform:"translateY(-3px)"}}>分</span></div></div><div style={{marginTop:14,paddingTop:14,borderTop:"1px solid rgba(255,255,255,.08)"}}>{isPerson?<><div style={{display:"flex",flexWrap:"wrap",gap:5,marginBottom:10}}><i style={tagStyle}>{activeCandidate?.education||"学历未填写"}</i><i style={tagStyle}>{activeCandidate?.experienceYears||0} 年经验</i>{(activeCandidate?.skills||[]).slice(0,4).map((s:string)=><i key={s} style={{...tagStyle,borderColor:"rgba(155,242,233,.18)",background:"rgba(0,221,235,.06)",color:"#9bf2e9"}}>{s}</i>)}</div><div className="score-dimensions" style={{marginBottom:8}}><span>技能<b>{dimensions.skills}</b></span><span>经验<b>{dimensions.experience}</b></span><span>学历<b>{dimensions.education}</b></span><span>项目<b>{dimensions.project}</b></span><span>协作<b>{dimensions.collaboration}</b></span></div><p style={{margin:0,fontSize:10,lineHeight:1.6,color:"rgba(255,255,255,.40)"}}>综合技能、经验、学历、项目与协作能力计算。</p></>:fit?<><p style={{margin:0,fontSize:10,lineHeight:1.6,color:"rgba(255,255,255,.45)",marginBottom:8}}>{fit.summary}</p><div style={{fontSize:9,color:"rgba(255,255,255,.30)",marginBottom:3}}>已验证的匹配证据</div><div style={{display:"flex",flexWrap:"wrap",gap:4,marginBottom:8}}>{fit.matched.length?fit.matched.map((x:string)=><i key={x} style={tagMatch}>{x}</i>):<i style={tagMatch}>证据不足</i>}</div>{fit.gaps.length>0&&<><div style={{fontSize:9,color:"rgba(255,255,255,.30)",marginBottom:3}}>需要补充</div><div style={{display:"flex",flexWrap:"wrap",gap:4,marginBottom:8}}>{fit.gaps.map((x:string)=><i key={x} style={tagGap}>{x}</i>)}</div></>}<div style={{fontSize:9,color:"rgba(255,255,255,.30)",marginBottom:3}}>补齐路径</div><div style={{display:"flex",flexWrap:"wrap",gap:3}}>{fit.path.map((x:string,i:number)=><span key={i} style={{fontSize:9,color:"rgba(255,255,255,.40)",display:"inline-flex",alignItems:"center",gap:2}}>{x}{i<fit.path.length-1&&<span style={{color:"rgba(0,221,235,.4)"}}>→</span>}</span>)}</div></>:<p style={{margin:0,fontSize:10,lineHeight:1.6,color:"rgba(255,255,255,.45)"}}>{node.desc}</p>}</div></div></div>})()}<aside className="node-detail comprehensive-detail">{activeCandidate?<><span>候选人画像</span><h3>{activeCandidate.name||"匿名候选人"}</h3><div className="node-score person">{dimensions.overall}<small>分</small></div><p style={{fontSize:12,lineHeight:1.7,color:"rgba(255,255,255,.50)",margin:"0 0 16px"}}>综合技能覆盖、相关经验、学历背景、项目经历和协作能力计算。</p><div className="score-dimensions"><span>技能<b>{dimensions.skills}</b></span><span>经验<b>{dimensions.experience}</b></span><span>学历<b>{dimensions.education}</b></span><span>项目<b>{dimensions.project}</b></span><span>协作<b>{dimensions.collaboration}</b></span></div>{activeCandidate.profileText?<div style={{marginTop:20,padding:0}}><div style={{fontSize:11,color:"rgba(155,242,233,.55)",letterSpacing:".08em",marginBottom:10,fontWeight:600}}>候选人简历</div><div style={{padding:"14px 15px",borderRadius:10,border:"1px solid rgba(255,255,255,.08)",background:"rgba(0,0,0,.15)",maxHeight:260,overflowY:"auto"}}><pre style={{margin:0,fontSize:10,lineHeight:1.75,color:"rgba(255,255,255,.45)",whiteSpace:"pre-wrap",wordBreak:"break-word",fontFamily:`"SF Pro Display","PingFang SC","Noto Sans SC",sans-serif`}}>{activeCandidate.profileText}</pre></div></div>:<div style={{marginTop:20,padding:"14px 16px",borderRadius:10,border:"1px solid rgba(255,255,255,.06)",background:"rgba(255,255,255,.015)"}}><div style={{fontSize:10,color:"rgba(155,242,233,.55)",letterSpacing:".08em",marginBottom:8,fontWeight:600}}>使用提示</div><p style={{margin:0,fontSize:11,lineHeight:1.7,color:"rgba(255,255,255,.40)"}}>点击图谱中任意节点查看详情。点击岗位节点可展开该候选人对具体岗位的匹配分析和能力缺口。</p></div>}</>:<><div style={{display:"flex",flexDirection:"column",alignItems:"center",justifyContent:"center",flex:1,gap:16,textAlign:"center",padding:"40px 20px"}}><div style={{width:56,height:56,borderRadius:"50%",display:"grid",placeItems:"center",background:"radial-gradient(circle,rgba(0,221,235,.12),transparent 70%)",border:"1px solid rgba(0,221,235,.15)"}}><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="rgba(0,221,235,.45)" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/></svg></div><span style={{fontSize:14,fontWeight:600,color:"rgba(255,255,255,.60)"}}>尚未加载候选人数据</span><p style={{margin:0,fontSize:11,lineHeight:1.7,color:"rgba(255,255,255,.35)"}}>请先在"人岗匹配"页面上传简历并完成评估，或等待后端服务启动后自动加载示例数据。</p></div></>}</aside></section></>}</>;
 }
@@ -483,7 +711,46 @@ function CapabilityPage({onNavigate}:{onNavigate?:(page:PageKey|"matching")=>voi
   );
 }
 
-function TrendInsightsPage(){const [mode,setMode]=useState<"change"|"compare">("change");return <><div className="trend-mode-switch"><button type="button" className={mode==="change"?"active":""} onClick={()=>setMode("change")}><Activity/>时间变化图</button><button type="button" className={mode==="compare"?"active":""} onClick={()=>setMode("compare")}><GitCompareArrows/>时间对比图</button></div>{mode==="change"?<CachedEvolutionPage/>:<YearComparisonPage/>}</>}
+type TrendPageState={dataTime:string;loading:boolean;error:string;roleName:string;summary:{currentDemand:number|null;peakDemand:number|null;recentChange:number|null;changeDirection:""|"up"|"down";dataPoints:number;hasTwoPoints:boolean}};
+function TrendInsightsPage(){
+  const [mode,setMode]=useState<"change"|"compare">("change");
+  const [pageState,setPageState]=useState<TrendPageState>({dataTime:"",loading:false,error:"",roleName:"",summary:{currentDemand:null,peakDemand:null,recentChange:null,changeDirection:"",dataPoints:0,hasTwoPoints:false}});
+  const [refreshTrigger,setRefreshTrigger]=useState(0);
+  const m=meta.evolution;const s=pageState.summary;
+  const handleRefresh=()=>setRefreshTrigger(t=>t+1);
+  return <main className="trends-page">
+    <div className="trends-page__inner">
+      <section className="trends-page-heading">
+        <div className="trends-page-heading__copy">
+          <span className="trends-page-heading__eyebrow">{m.eyebrow}</span>
+          <h1>{m.title}</h1>
+          <p>{m.desc}</p>
+        </div>
+        <div className="trends-page-heading__actions">
+          {pageState.dataTime&&<span className="trends-page-heading__time"><Clock3 size={13}/>数据时间：{pageState.dataTime}</span>}
+          <button className="job-actions__secondary" onClick={handleRefresh} disabled={pageState.loading} type="button">
+            <RefreshCw className={pageState.loading?"spin":""} size={15}/>
+            {pageState.loading?"更新中":"获取最新趋势"}
+          </button>
+        </div>
+      </section>
+      {pageState.error&&<div className="trends-error-banner" role="alert"><AlertTriangle size={16}/><span>{pageState.error}</span><button type="button" className="job-actions__secondary" onClick={handleRefresh}>重试</button></div>}
+      <section className="trends-summary-grid">
+        <MetricCard label="当前需求" value={s.currentDemand!==null?s.currentDemand.toLocaleString():"--"} icon={TrendingUp} tone="blue" description={s.currentDemand!==null?`${pageState.roleName||"岗位"}最新月度需求量`:"暂无可用数据"}/>
+        <MetricCard label="历史峰值" value={s.peakDemand!==null?s.peakDemand.toLocaleString():"--"} icon={Activity} tone="mint" description={s.peakDemand!==null?"当前筛选范围内最高月需求":"暂无可用数据"}/>
+        <MetricCard label="近期变化" value={s.hasTwoPoints&&s.recentChange!==null?(s.recentChange>0?"+":"")+s.recentChange.toLocaleString():"数据不足"} icon={TrendingUp} tone={s.changeDirection==="up"?"mint":s.changeDirection==="down"?"blue":"blue"} description={s.hasTwoPoints&&s.recentChange!==null?(s.recentChange>0?"较前值上升":s.recentChange<0?"较前值下降":"较前值持平"):"需至少两个有效数据点"}/>
+        <MetricCard label="数据覆盖" value={s.dataPoints>0?s.dataPoints.toLocaleString()+" 个月":"--"} icon={CalendarDays} tone="cyan" description={s.dataPoints>0?"含历史值与预测趋势":"暂无数据"}/>
+      </section>
+      <nav className="trends-view-tabs" role="tablist" aria-label="趋势视图切换">
+        <button type="button" role="tab" aria-selected={mode==="change"} className={mode==="change"?"trends-view-tabs__active":""} onClick={()=>setMode("change")}><Activity size={14}/>时间变化图</button>
+        <button type="button" role="tab" aria-selected={mode==="compare"} className={mode==="compare"?"trends-view-tabs__active":""} onClick={()=>setMode("compare")}><GitCompareArrows size={14}/>时间对比图</button>
+      </nav>
+      <section className="trends-workspace">
+        {mode==="change"?<CachedEvolutionPage onStateChange={setPageState} refreshTrigger={refreshTrigger}/>:<YearComparisonPage onStateChange={setPageState} refreshTrigger={refreshTrigger}/>}
+      </section>
+    </div>
+  </main>;
+}
 
 const monthKey=(value:string)=>/^\d{4}-\d{2}$/.test(value)?value:`${String(value).slice(0,4)}-01`;
 const addMonths=(value:string,offset:number)=>{const [year,month]=monthKey(value).split("-").map(Number);const date=new Date(year,month-1+offset,1);return `${date.getFullYear()}-${String(date.getMonth()+1).padStart(2,"0")}`};
@@ -493,65 +760,219 @@ function monthlyRows(series:any[],count:number){
   const byMonth=new Map(normalized.map(row=>[row.period,row]));const end=normalized.at(-1)!.period;return Array.from({length:count},(_,index)=>{const period=addMonths(end,index-count+1);return byMonth.get(period)||{period,demand:0,sourceCount:0}});
 }
 
-function YearComparisonPage(){
-  const [data,setData]=useState<any>(null);const [role,setRole]=useState("java-backend-engineer");const [skill,setSkill]=useState("");const [yearA,setYearA]=useState("");const [yearB,setYearB]=useState("");const [loading,setLoading]=useState(false);
-  useEffect(()=>{setLoading(true);json(`/api/trends?jobId=${encodeURIComponent(role)}&refresh=0`).then(payload=>{const evolution=payload.evolution||{};setData(evolution);const availableSkills=Array.from(new Set((evolution.series||[]).map((row:any)=>row.skill))) as string[];const years=Array.from(new Set((evolution.series||[]).map((row:any)=>String(row.period).slice(0,4)))).sort() as string[];setSkill(current=>current&&availableSkills.includes(current)?current:availableSkills[0]||"");setYearA(current=>current&&years.includes(current)?current:years.at(-2)||years[0]||"");setYearB(current=>current&&years.includes(current)?current:years.at(-1)||years[0]||"")}).finally(()=>setLoading(false))},[role]);
-  const years=Array.from(new Set((data?.series||[]).map((row:any)=>String(row.period).slice(0,4)))).sort() as string[];const skills=Array.from(new Set((data?.series||[]).map((row:any)=>row.skill))) as string[];const valuesFor=(year:string)=>Array.from({length:12},(_,index)=>(data?.series||[]).filter((row:any)=>row.skill===skill&&monthKey(String(row.period))===`${year}-${String(index+1).padStart(2,"0")}`).reduce((sum:number,row:any)=>sum+Number(row.demand||0),0));const valuesA=valuesFor(yearA);const valuesB=valuesFor(yearB);const max=Math.max(1,...valuesA,...valuesB);const totalA=valuesA.reduce((sum,value)=>sum+value,0);const totalB=valuesB.reduce((sum,value)=>sum+value,0);const difference=totalB-totalA;const roleName=(data?.roleOptions||[]).find((item:any)=>item.roleId===role)?.role||data?.title||"岗位";const months=Array.from({length:12},(_,index)=>`${String(index+1).padStart(2,"0")}月`);
-  return <section className="year-compare line-compare"><div className="year-compare-head four-fields"><label><span>特定岗位</span><select value={role} onChange={event=>setRole(event.target.value)}>{(data?.roleOptions||[]).map((item:any)=><option value={item.roleId} key={item.roleId}>{item.role}</option>)}</select></label><label><span>技能趋势</span><select value={skill} onChange={event=>setSkill(event.target.value)}>{skills.map(item=><option key={item}>{item}</option>)}</select></label><label><span>起始年份</span><select value={yearA} onChange={event=>setYearA(event.target.value)}>{years.map(year=><option key={year}>{year}</option>)}</select></label><label><span>对比年份</span><select value={yearB} onChange={event=>setYearB(event.target.value)}>{years.map(year=><option key={year}>{year}</option>)}</select></label></div>{loading?<p className="compare-empty">正在读取月度趋势...</p>:years.length<2?<p className="compare-empty">当前数据不足两个年份，暂时无法进行时间对比。</p>:<><div className="chart-title comparison-line-title"><div><h3>{skill||"技能"} · {roleName}</h3><span>按 1—12 月对齐比较 · {yearA} 合计 <b>{totalA}</b> · {yearB} 合计 <b>{totalB}</b></span></div><div className="line-legend"><span className="year-a"><i/>{yearA}</span><span className="year-b"><i/>{yearB}</span></div></div><div className="market-canvas compare-canvas"><div className="axis-labels"><span>{max}</span><span>{Math.round(max*.66)}</span><span>{Math.round(max*.33)}</span><span>0</span></div><svg viewBox="0 0 1000 340" preserveAspectRatio="none"><polyline points={monthPoints(valuesA,max)} fill="none" stroke="#9bf2e9" strokeWidth="4"/><polyline points={monthPoints(valuesB,max)} fill="none" stroke="#a58dff" strokeWidth="4"/>{valuesA.map((value,index)=><circle key={`a-${index}`} cx={20+index*(960/11)} cy={315-value/max*280} r="5" fill="#131318" stroke="#9bf2e9" strokeWidth="3"><title>{yearA}年{months[index]}：{value}</title></circle>)}{valuesB.map((value,index)=><circle key={`b-${index}`} cx={20+index*(960/11)} cy={315-value/max*280} r="5" fill="#131318" stroke="#a58dff" strokeWidth="3"><title>{yearB}年{months[index]}：{value}</title></circle>)}</svg></div><div className="time-axis monthly-axis">{months.map(month=><span key={month}>{month}</span>)}</div><div className="comparison-summary"><GitCompareArrows/><p>{difference>0?`${yearB} 年全年需求比 ${yearA} 年增加 ${difference}；折线按月展示变化，可直接判断增长集中在哪些月份。`:difference<0?`${yearB} 年全年需求比 ${yearA} 年减少 ${Math.abs(difference)}；折线按月展示下降发生的具体月份。`:`两个年份全年需求总量一致，可通过月度折线观察需求高峰出现时间的差异。`}</p></div></>}</section>;
+function YearComparisonPage({onStateChange,refreshTrigger}:{onStateChange?:(state:TrendPageState)=>void;refreshTrigger?:number}){
+  const [data,setData]=useState<any>(null);const [role,setRole]=useState("java-backend-engineer");const [skill,setSkill]=useState("");const [yearA,setYearA]=useState("");const [yearB,setYearB]=useState("");const [loading,setLoading]=useState(false);const [error,setError]=useState("");const [dataTime,setDataTime]=useState("");
+  const abortRef=useRef<AbortController|null>(null);
+  const load=async()=>{
+    if(abortRef.current)abortRef.current.abort();const controller=new AbortController();abortRef.current=controller;
+    setLoading(true);setError("");
+    try{const payload=await json(`/api/trends?jobId=${encodeURIComponent(role)}&refresh=0`,{signal:controller.signal});if(controller.signal.aborted)return;const evolution=payload.evolution||{};setData(evolution);setDataTime(payload.cachedAt||"");const availableSkills=Array.from(new Set((evolution.series||[]).map((row:any)=>row.skill))) as string[];const years=Array.from(new Set((evolution.series||[]).map((row:any)=>String(row.period).slice(0,4)))).sort() as string[];setSkill(current=>current&&availableSkills.includes(current)?current:availableSkills[0]||"");setYearA(current=>current&&years.includes(current)?current:years.at(-2)||years[0]||"");setYearB(current=>current&&years.includes(current)?current:years.at(-1)||years[0]||"")}
+    catch(e:any){if(controller.signal.aborted)return;setError(e?.message||"数据加载失败，请检查网络后重试")}
+    finally{if(!controller.signal.aborted)setLoading(false)}
+  };
+  useEffect(()=>{load();return ()=>{abortRef.current?.abort()}},[role]);
+  useEffect(()=>{if(refreshTrigger!==undefined&&refreshTrigger>0)load()},[refreshTrigger]);
+  const years=Array.from(new Set((data?.series||[]).map((row:any)=>String(row.period).slice(0,4)))).sort() as string[];const skills=Array.from(new Set((data?.series||[]).map((row:any)=>row.skill))) as string[];
+  const valuesFor=(year:string)=>Array.from({length:12},(_,index)=>(data?.series||[]).filter((row:any)=>row.skill===skill&&monthKey(String(row.period))===`${year}-${String(index+1).padStart(2,"0")}`).reduce((sum:number,row:any)=>sum+(Number(row.demand)||0),0));
+  const valuesA=valuesFor(yearA);const valuesB=valuesFor(yearB);const max=Math.max(1,...valuesA,...valuesB);const totalA=valuesA.reduce((sum,value)=>sum+value,0);const totalB=valuesB.reduce((sum,value)=>sum+value,0);const difference=totalB-totalA;const roleName=(data?.roleOptions||[]).find((item:any)=>item.roleId===role)?.role||data?.title||"岗位";const months=Array.from({length:12},(_,index)=>`${String(index+1).padStart(2,"0")}月`);
+  const dataForA=valuesA.some(v=>v>0);const dataForB=valuesB.some(v=>v>0);
+  useEffect(()=>{
+    if(!onStateChange)return;const allMonthly=[...valuesA,...valuesB].filter(v=>v>0);const peakDemand=allMonthly.length?Math.max(...allMonthly):null;
+    onStateChange({dataTime:dataTime?timeText(new Date(dataTime)):"",loading,error,roleName,summary:{currentDemand:totalB,peakDemand,recentChange:yearA&&yearB?Math.abs(difference):null,changeDirection:difference>0?"up":difference<0?"down":"",dataPoints:allMonthly.length,hasTwoPoints:!!(dataForA&&dataForB)}});
+  },[dataTime,loading,error,roleName,totalB,difference,yearA,yearB,valuesA.join(","),valuesB.join(",")]);
+  return <div className="trends-chart-card">
+    <header className="trends-toolbar trends-toolbar--four">
+      <label className="trends-toolbar__field"><span>特定岗位</span><select value={role} onChange={e=>setRole(e.target.value)}>{(data?.roleOptions||[]).map((item:any)=><option value={item.roleId} key={item.roleId}>{item.role}</option>)}</select></label>
+      <label className="trends-toolbar__field"><span>技能趋势</span><select value={skill} onChange={e=>setSkill(e.target.value)}>{skills.map((item:string)=><option key={item}>{item}</option>)}</select></label>
+      <label className="trends-toolbar__field"><span>起始年份</span><select value={yearA} onChange={e=>setYearA(e.target.value)}>{years.map((year:string)=><option key={year}>{year}</option>)}</select></label>
+      <label className="trends-toolbar__field"><span>对比年份</span><select value={yearB} onChange={e=>setYearB(e.target.value)}>{years.map((year:string)=><option key={year}>{year}</option>)}</select></label>
+    </header>
+    {loading&&!data?<div className="trends-empty"><div className="trends-spinner"/><p>正在读取月度趋势...</p></div>
+    :!data&&error?<div className="trends-empty" role="alert"><AlertTriangle size={20}/><p>{error}</p><button type="button" className="job-actions__secondary" onClick={load}>重试</button></div>
+    :!data&&years.length<2?<div className="trends-empty"><CalendarDays size={20}/><p>当前数据不足两个年份，暂时无法进行时间对比。</p></div>
+    :!data?<div className="trends-empty"><CalendarDays size={20}/><p>暂无对比数据。</p></div>
+    :<>
+      {error&&<div className="trends-error-banner" role="alert" style={{marginBottom:16}}><AlertTriangle size={14}/><span>{error}</span><button type="button" className="job-actions__secondary" onClick={load} style={{marginLeft:"auto"}}>重试</button></div>}
+      {years.length<2?<div className="trends-empty"><CalendarDays size={20}/><p>当前数据不足两个年份，暂时无法进行时间对比。</p></div>
+      :<>
+      <div className="trends-chart-header"><div><h3 className="trends-chart-title">{skill||"技能"} · {roleName}</h3><span className="trends-chart-subtitle">按 1—12 月对齐比较 · {yearA} 合计 <b>{totalA}</b> · {yearB} 合计 <b>{totalB}</b></span></div><div className="trends-chart-legend"><span className="trends-legend-year-a"><i/>{yearA}</span><span className="trends-legend-year-b"><i/>{yearB}</span></div></div>
+      <div className="trends-canvas trends-canvas--compare">
+        <div className="trends-canvas__axis"><span>{max}</span><span>{Math.round(max*.66)}</span><span>{Math.round(max*.33)}</span><span>0</span></div>
+        <svg viewBox="0 0 1000 340" preserveAspectRatio="none" aria-label={`${yearA}年与${yearB}年${skill||"技能"}月度需求对比`}>
+          <polyline points={monthPoints(valuesA,max)} fill="none" stroke="#075ECC" strokeWidth="3"/>
+          <polyline points={monthPoints(valuesB,max)} fill="none" stroke="#C00072" strokeWidth="3"/>
+          {valuesA.map((value,index)=><circle key={`a-${index}`} cx={20+index*(960/11)} cy={315-value/max*280} r="5" fill="#FFFFFF" stroke="#075ECC" strokeWidth="3"><title>{yearA}年{months[index]}：{value}</title></circle>)}
+          {valuesB.map((value,index)=><circle key={`b-${index}`} cx={20+index*(960/11)} cy={315-value/max*280} r="5" fill="#FFFFFF" stroke="#C00072" strokeWidth="3"><title>{yearB}年{months[index]}：{value}</title></circle>)}
+        </svg>
+      </div>
+      <div className="trends-canvas__timeaxis">{months.map((month:string)=><span key={month}>{month}</span>)}</div>
+      <div className="trends-insight"><GitCompareArrows size={16}/><p>{difference>0?`${yearB} 年全年需求比 ${yearA} 年增加 ${difference}；折线按月展示变化，可直接判断增长集中在哪些月份。`:difference<0?`${yearB} 年全年需求比 ${yearA} 年减少 ${Math.abs(difference)}；折线按月展示下降发生的具体月份。`:`两个年份全年需求总量一致，可通过月度折线观察需求高峰出现时间的差异。`}</p></div>
+      {loading&&data&&<div className="trends-chart-card__busy" aria-live="polite">更新中...</div>}
+    </>}
+    </>
+  }
+  </div>;
 }
 
-function CachedEvolutionPage(){
-  const [role,setRole]=useState("java-backend-engineer");const [skill,setSkill]=useState("Java");const [months,setMonths]=useState(12);const [data,setData]=useState<any>(null);const [loading,setLoading]=useState(false);const [cachedAt,setCachedAt]=useState("");const [cacheStatus,setCacheStatus]=useState("");
-  const load=async(force=false)=>{setLoading(true);try{const payload=await json(`/api/trends?jobId=${encodeURIComponent(role)}&refresh=${force?1:0}`);const evolution=payload.evolution||{};setData(evolution);setCachedAt(payload.cachedAt||"");setCacheStatus(payload.cacheStatus||"");const available=Array.from(new Set((evolution.series||[]).map((x:any)=>x.skill))) as string[];if(!available.includes(skill))setSkill(available[0]||"")}finally{setLoading(false)}};
-  useEffect(()=>{load(false)},[role]);const skills=Array.from(new Set((data?.series||[]).map((x:any)=>x.skill))) as string[];const all=(data?.series||[]).filter((x:any)=>x.skill===skill);const rows=monthlyRows(all,months);const historicalValues=rows.map((row:any)=>Number(row.demand||0));const last=historicalValues.at(-1)||0;const recent=historicalValues.slice(-4);const rawStep=recent.length>1?(recent.slice(1).reduce((sum,value,index)=>sum+value-recent[index],0)/(recent.length-1)):0;const stepLimit=Math.max(1,last*.2);const step=Math.max(-stepLimit,Math.min(stepLimit,rawStep));let projected=last;const forecast=Array.from({length:6},(_,index)=>{projected=Math.max(0,Math.round(projected+step));return {period:addMonths(rows.at(-1)?.period||monthKey(new Date().toISOString().slice(0,7)),index+1),demand:projected}});const combinedValues=[...historicalValues,...forecast.map(item=>item.demand)];const max=Math.max(1,...combinedValues);const totalCount=combinedValues.length;const x=(index:number)=>20+index*(960/Math.max(1,totalCount-1));const y=(value:number)=>315-value/max*280;const historicalPoints=historicalValues.map((value,index)=>`${x(index)},${y(value)}`).join(" ");const forecastPoints=[last,...forecast.map(item=>item.demand)].map((value,index)=>`${x(rows.length-1+index)},${y(value)}`).join(" ");const predictionStart=x(Math.max(0,rows.length-1));const axisRows=[...rows,...forecast];
-  return <><div className="page-actions"><span><Clock3/>数据时间：{cachedAt?timeText(new Date(cachedAt)):"等待数据"}</span><button className="ghost-action spring-hover" onClick={()=>load(true)} disabled={loading}><RefreshCw className={loading?"spin":""}/>{loading?"更新中":"获取最新趋势"}</button></div><section className="evolution-panel market-chart"><div className="trend-filter"><label><span>特定岗位</span><select value={role} onChange={e=>setRole(e.target.value)}>{(data?.roleOptions||[]).map((x:any)=><option key={x.roleId} value={x.roleId}>{x.role}（{x.recordCount}）</option>)}</select></label><label><span>技能趋势</span><select value={skill} onChange={e=>setSkill(e.target.value)}>{skills.map(x=><option key={x}>{x}</option>)}</select></label><div><span>历史范围</span>{[[6,"6个月"],[12,"12个月"],[24,"24个月"]].map(([n,l])=><button className={months===n?"active":""} onClick={()=>setMonths(n as number)} key={n}>{l}</button>)}</div></div><div className="chart-title"><div><h3>{skill||"技能"} · {data?.title||"岗位需求趋势"}</h3><span>当前需求量 <b>{last}</b> · 历史按月统计 · 右侧虚线为未来 6 个月预测</span></div><div className="line-legend"><span className="history-line"><i/>历史数据</span><span className="forecast-line"><i/>预测数据（虚线）</span></div></div><div className="market-canvas forecast-canvas"><div className="axis-labels"><span>{max}</span><span>{Math.round(max*.66)}</span><span>{Math.round(max*.33)}</span><span>0</span></div><svg viewBox="0 0 1000 340" preserveAspectRatio="none"><defs><linearGradient id="cachedMarketArea" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stopColor="#9bf2e9" stopOpacity=".28"/><stop offset="1" stopColor="#7c5cff" stopOpacity="0"/></linearGradient></defs><rect x={predictionStart} y="0" width={1000-predictionStart} height="340" fill="#7c5cff" opacity=".055"/><polygon points={`${historicalPoints} ${x(rows.length-1)},330 20,330`} fill="url(#cachedMarketArea)"/><polyline points={historicalPoints} fill="none" stroke="#9bf2e9" strokeWidth="4"/><polyline className="forecast-polyline" points={forecastPoints} fill="none" stroke="#b39dff" strokeWidth="4" strokeDasharray="14 10"/><line x1={predictionStart} y1="10" x2={predictionStart} y2="330" stroke="#8f7ad8" strokeWidth="2" strokeDasharray="5 8"/><text x={Math.min(900,predictionStart+12)} y="24" fill="#b9a8f5" fontSize="13">预测区间</text>{rows.map((row:any,index:number)=><circle key={row.period} cx={x(index)} cy={y(Number(row.demand||0))} r="5" fill="#131318" stroke="#9bf2e9" strokeWidth="3"><title>{row.period}：{row.demand||0}</title></circle>)}{forecast.map((row,index)=><circle key={row.period} cx={x(rows.length+index)} cy={y(row.demand)} r="5" fill="#211c30" stroke="#b39dff" strokeWidth="3"><title>{row.period} 预测：{row.demand}</title></circle>)}</svg></div><div className="time-axis monthly-axis forecast-axis">{axisRows.map((row:any,index:number)=><span className={index>=rows.length?"predicted":""} key={row.period}>{row.period.slice(2)}{index===rows.length&&<b>预测</b>}</span>)}</div><div className="forecast-note"><TrendingUp/><p>虚线从最后一个真实月份开始延伸，表示未来 6 个月的需求估算；预测值用于趋势参考，不代表确定的岗位数量。</p></div></section></>;
+function CachedEvolutionPage({onStateChange,refreshTrigger}:{onStateChange?:(state:TrendPageState)=>void;refreshTrigger?:number}){
+  const [role,setRole]=useState("java-backend-engineer");const [skill,setSkill]=useState("Java");const [months,setMonths]=useState(12);const [data,setData]=useState<any>(null);const [loading,setLoading]=useState(false);const [error,setError]=useState("");const [dataTime,setDataTime]=useState("");
+  const abortRef=useRef<AbortController|null>(null);
+  const load=async(force=false)=>{
+    if(abortRef.current)abortRef.current.abort();const controller=new AbortController();abortRef.current=controller;
+    setLoading(true);setError("");
+    try{const payload=await json(`/api/trends?jobId=${encodeURIComponent(role)}&refresh=${force?1:0}`,{signal:controller.signal});if(controller.signal.aborted)return;const evolution=payload.evolution||{};setData(evolution);setDataTime(payload.cachedAt||"");const available=Array.from(new Set((evolution.series||[]).map((x:any)=>x.skill))) as string[];if(!available.includes(skill))setSkill(available[0]||"")}
+    catch(e:any){if(controller.signal.aborted)return;setError(e?.message||"数据加载失败，请检查网络后重试")}
+    finally{if(!controller.signal.aborted)setLoading(false)}
+  };
+  useEffect(()=>{load(false);return ()=>{abortRef.current?.abort()}},[role]);
+  useEffect(()=>{if(refreshTrigger!==undefined&&refreshTrigger>0)load(true)},[refreshTrigger]);
+  const skills=Array.from(new Set((data?.series||[]).map((x:any)=>x.skill))) as string[];const all=(data?.series||[]).filter((x:any)=>x.skill===skill);const rows=monthlyRows(all,months);const historicalValues=rows.map((row:any)=>Number(row.demand)||0);const last=historicalValues.at(-1)||0;const recent=historicalValues.slice(-4);const rawStep=recent.length>1?(recent.slice(1).reduce((sum,value,index)=>sum+value-recent[index],0)/(recent.length-1)):0;const stepLimit=Math.max(1,last*.2);const step=Math.max(-stepLimit,Math.min(stepLimit,rawStep));let projected=last;const forecast=Array.from({length:6},(_,index)=>{projected=Math.max(0,Math.round(projected+step));return {period:addMonths(rows.at(-1)?.period||monthKey(new Date().toISOString().slice(0,7)),index+1),demand:projected}});const combinedValues=[...historicalValues,...forecast.map(item=>item.demand)];const max=Math.max(1,...combinedValues);const totalCount=combinedValues.length;
+  const safeX=(i:number)=>20+i*(960/Math.max(1,totalCount-1));const safeY=(v:number)=>315-(v/max)*280;
+  const historyLinePoints=historicalValues.map((value,index)=>`${safeX(index)},${safeY(value)}`).join(" ");
+  const forecastPoints=[last,...forecast.map(item=>item.demand)].map((value,index)=>`${safeX(rows.length-1+index)},${safeY(value)}`).join(" ");
+  const predictionStart=historicalValues.length?safeX(Math.max(0,rows.length-1)):0;const axisRows=[...rows,...forecast];
+  const roleName=data?.title||"岗位";const hasData=historicalValues.length>0;const hasMultiple=historicalValues.length>=2;
+  useEffect(()=>{
+    if(!onStateChange)return;const valid=historicalValues.filter(v=>isFinite(v)&&v>0);
+    const currentDemand=valid.length?valid[valid.length-1]:null;const peakDemand=valid.length?Math.max(...valid):null;
+    const hasTwo=valid.length>=2;const prev=hasTwo?valid[valid.length-2]:null;const curr=hasTwo?valid[valid.length-1]:null;
+    const diff=hasTwo&&prev!==null&&curr!==null?curr-prev:null;
+    onStateChange({dataTime:dataTime?timeText(new Date(dataTime)):"",loading,error,roleName,summary:{currentDemand,peakDemand,recentChange:diff!==null?Math.abs(diff):null,changeDirection:diff!==null&&diff>0?"up":diff!==null&&diff<0?"down":"",dataPoints:valid.length,hasTwoPoints:hasTwo}});
+  },[dataTime,loading,error,roleName,historicalValues.join(","),months]);
+  return <div className="trends-chart-card">
+    <header className="trends-toolbar">
+      <label className="trends-toolbar__field"><span>特定岗位</span><select value={role} onChange={e=>setRole(e.target.value)}>{(data?.roleOptions||[]).map((x:any)=><option key={x.roleId} value={x.roleId}>{x.role}（{x.recordCount}）</option>)}</select></label>
+      <label className="trends-toolbar__field"><span>技能趋势</span><select value={skill} onChange={e=>setSkill(e.target.value)}>{skills.map((x:string)=><option key={x}>{x}</option>)}</select></label>
+      <div className="trends-toolbar__range"><span>历史范围</span><div className="trends-toolbar__pills">{[[6,"6个月"],[12,"12个月"],[24,"24个月"]].map(([n,l])=><button type="button" className={months===n?"trends-pill--active":""} onClick={()=>setMonths(n as number)} key={n}>{l}</button>)}</div></div>
+    </header>
+    {loading&&!data?<div className="trends-empty"><div className="trends-spinner"/><p>正在读取趋势数据...</p></div>
+    :!hasData&&error?<div className="trends-empty" role="alert"><AlertTriangle size={20}/><p>{error}</p><button type="button" className="job-actions__secondary" onClick={()=>load(true)}>重试</button></div>
+    :!hasData?<div className="trends-empty"><CalendarDays size={20}/><p>暂无趋势数据，请切换岗位或技能后重试。</p></div>
+    :<>
+      {error&&<div className="trends-error-banner" role="alert" style={{marginBottom:16}}><AlertTriangle size={14}/><span>{error}</span><button type="button" className="job-actions__secondary" onClick={()=>load(true)} style={{marginLeft:"auto"}}>重试</button></div>}
+      <div className="trends-chart-header"><div><h3 className="trends-chart-title">{skill||"技能"} · {roleName}</h3><span className="trends-chart-subtitle">当前需求量 <b>{last}</b> · 历史按月统计 · 虚线为未来 6 个月预测</span></div><div className="trends-chart-legend"><span className="trends-legend-history"><i/>历史数据</span><span className="trends-legend-forecast"><i/>预测数据</span></div></div>
+      <div className="trends-canvas trends-canvas--forecast">
+        <div className="trends-canvas__axis"><span>{max}</span><span>{Math.round(max*.66)}</span><span>{Math.round(max*.33)}</span><span>0</span></div>
+        <svg viewBox="0 0 1000 340" preserveAspectRatio="none" aria-label={`${skill||"技能"}历史趋势与未来6个月预测`}>
+          <defs><linearGradient id="trendsMarketArea" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stopColor="#075ECC" stopOpacity=".14"/><stop offset="1" stopColor="#075ECC" stopOpacity="0"/></linearGradient></defs>
+          {hasMultiple&&predictionStart>0&&<rect x={predictionStart} y="0" width={1000-predictionStart} height="340" fill="#E8F1FD" opacity=".5"/>}
+          {hasMultiple&&historyLinePoints&&<polygon points={`${historyLinePoints} ${safeX(rows.length-1)},330 20,330`} fill="url(#trendsMarketArea)"/>}
+          {hasMultiple&&<polyline points={historyLinePoints} fill="none" stroke="#075ECC" strokeWidth="3"/>}
+          {!hasMultiple&&hasData&&<circle cx={safeX(0)} cy={safeY(historicalValues[0])} r="6" fill="#075ECC"><title>{rows[0]?.period}：{historicalValues[0]}</title></circle>}
+          <polyline className="trends-forecast-line" points={forecastPoints} fill="none" stroke="#C00072" strokeWidth="3" strokeDasharray="12 8"/>
+          {predictionStart>0&&<line x1={predictionStart} y1="10" x2={predictionStart} y2="330" stroke="#C00072" strokeWidth="1.5" strokeDasharray="4 6" opacity=".4"/>}
+          {predictionStart>0&&<text x={Math.min(900,predictionStart+12)} y="22" fill="#C00072" fontSize="12" fontFamily="'Noto Sans SC',sans-serif">预测区间</text>}
+          {rows.map((row:any,index:number)=><circle key={row.period} cx={safeX(index)} cy={safeY(Number(row.demand||0))} r="5" fill="#FFFFFF" stroke="#075ECC" strokeWidth="2.5"><title>{row.period}：{row.demand||0}</title></circle>)}
+          {forecast.map((row,index)=><circle key={row.period} cx={safeX(rows.length+index)} cy={safeY(row.demand)} r="5" fill="#FDE8F2" stroke="#C00072" strokeWidth="2.5"><title>{row.period} 预测：{row.demand}</title></circle>)}
+        </svg>
+      </div>
+      <div className="trends-canvas__timeaxis">{axisRows.map((row:any,index:number)=><span className={index>=rows.length?"trends-timeaxis--predicted":""} key={row.period}>{row.period.slice(2)}{index===rows.length&&<b>预测</b>}</span>)}</div>
+      <div className="trends-insight"><TrendingUp size={16}/><p>虚线从最后一个真实月份开始延伸，表示未来 6 个月的需求估算；预测值用于趋势参考，不代表确定的岗位数量。</p></div>
+      {loading&&data&&<div className="trends-chart-card__busy" aria-live="polite">更新中...</div>}
+    </>}
+  </div>;
 }
 
 function Stat({label,value,tone="purple",onClick,help}:{label:string;value:string|number;tone?:string;onClick?:()=>void;help?:string}){const content=<><span>{label}</span><div><b className={tone}>{value}</b>{onClick&&<ArrowUpRight/>}</div>{help&&<small>{help}</small>}</>;return onClick?<button className="stat-card actionable spring-hover" onClick={onClick}>{content}</button>:<div className="stat-card">{content}</div>}
 
-function JobsPage({workspace,onNavigate}:{workspace:boolean;onNavigate?:(page:PageKey|"matching")=>void}){
-  const pageSize=workspace?6:30;const [remoteJobs,setRemoteJobs]=useState<JobRow[]>([]);const [localJobs,setLocalJobs]=useState<JobRow[]>([]);const [total,setTotal]=useState(0);const [page,setPage]=useState(1);const [candidates,setCandidates]=useState<CandidateRow[]>([]);const [interviews,setInterviews]=useState<InterviewRow[]>([]);const [assessments,setAssessments]=useState<AssessmentRow[]>([]);const [error,setError]=useState("");const [loading,setLoading]=useState(false);const [updated,setUpdated]=useState(timeText());const [query,setQuery]=useState("");const [selected,setSelected]=useState<JobRow|null>(null);const [adding,setAdding]=useState(false);const [candidatePanel,setCandidatePanel]=useState(false);const [interviewPanel,setInterviewPanel]=useState(false);const [crawler,setCrawler]=useState<any>(null);const listPanel=useRef<HTMLDivElement|null>(null);
-  const [jobsTab,setJobsTab]=useState<string>(()=>sessionStorage.getItem("talentmatch-jobsTab")||"jobs");
+function MetricCard({label,value,icon:Icon,tone="blue",onClick,description,ariaLabel}:{label:string;value:number|string;icon?:React.ComponentType<{size?:number}>;tone?:"blue"|"mint"|"cyan";onClick?:()=>void;description?:string;ariaLabel?:string}){
+  const valueClass=tone==="mint"?"job-stat-card__value job-stat-card__value--mint":tone==="cyan"?"job-stat-card__value job-stat-card__value--cyan":"job-stat-card__value";
+  const content=<>
+    <p className="job-stat-card__label">{label} {Icon&&<Icon size={16}/>}</p>
+    <h3 className={valueClass}>{typeof value==="number"?value.toLocaleString():value}</h3>
+    {description&&<p className="job-stat-card__sub">{description}</p>}
+  </>;
+  return onClick?<button className="job-stat-card" onClick={onClick} aria-label={ariaLabel||label}>{content}</button>:<div className="job-stat-card" role="status" aria-label={ariaLabel||label}>{content}</div>;
+}
+
+function JobsPage({workspace,onNavigate,activeJobSection,onJobSectionChange}:{workspace:boolean;onNavigate?:(page:PageKey|"matching")=>void;activeJobSection?:JobSectionKey;onJobSectionChange?:(section:JobSectionKey)=>void}){
+  const pageSize=workspace?6:30;const [remoteJobs,setRemoteJobs]=useState<JobRow[]>([]);const [localJobs,setLocalJobs]=useState<JobRow[]>([]);const [total,setTotal]=useState(0);const [page,setPage]=useState(1);const [candidates,setCandidates]=useState<CandidateRow[]>([]);const [interviews,setInterviews]=useState<InterviewRow[]>([]);const [assessments,setAssessments]=useState<AssessmentRow[]>([]);const [error,setError]=useState("");const [loading,setLoading]=useState(false);const [updated,setUpdated]=useState(timeText());const [query,setQuery]=useState("");const [selected,setSelected]=useState<JobRow|null>(null);const [adding,setAdding]=useState(false);const [candidatePanel,setCandidatePanel]=useState(false);const [interviewPanel,setInterviewPanel]=useState(false);const [crawler,setCrawler]=useState<any>(null);const loadMoreRef=useRef<HTMLDivElement|null>(null);const loadingMoreRef=useRef(false);const requestSeqRef=useRef(0);
+  const [jobsTab,setJobsTab]=useState<string>(()=>{const s=activeJobSection||sessionStorage.getItem("talentmatch-job-section")||"jobs";if(s==="evidence"){sessionStorage.setItem("talentmatch-job-section","evolution");return"evolution"}return s});
+  useEffect(()=>{if(activeJobSection)setJobsTab(activeJobSection)},[activeJobSection]);
   /* ── Overview data for job management homepage ── */
-  const [overview,setOverview]=useState<{discoveryTotal:number|null;discoveryPending:number|null;discoveryError:boolean;evidenceStatus:string|null;evidenceError:boolean;latestVersion:string|null;versionError:boolean}>({discoveryTotal:null,discoveryPending:null,discoveryError:false,evidenceStatus:null,evidenceError:false,latestVersion:null,versionError:false});
+  const [overview,setOverview]=useState<{discoveryTotal:number|null;discoveryPending:number|null;discoveryError:boolean}>({discoveryTotal:null,discoveryPending:null,discoveryError:false});
   useEffect(()=>{if(workspace)return;
     fetch("/api/platform/storage/api/competition/discoveries").then(r=>{if(!r.ok)throw new Error("HTTP "+r.status);return r.json()}).then(data=>{if(!Array.isArray(data?.items))throw new Error("discoveries.items不是数组");const items=data.items;setOverview(prev=>({...prev,discoveryTotal:items.length,discoveryPending:items.filter((i:any)=>i.review_status==="pending").length,discoveryError:false}))}).catch(()=>setOverview(prev=>({...prev,discoveryError:true})));
-    fetch("/api/platform/storage/api/competition/rag/health").then(r=>{if(!r.ok)throw new Error("HTTP "+r.status);return r.json()}).then(data=>{if(!data||typeof data.status!=="string"||typeof data.competencies_indexed!=="number"||typeof data.roles_indexed!=="number"||typeof data.milvus_wired!=="boolean"||typeof data.neo4j_wired!=="boolean")throw new Error("RAG health结构不完整");const label=data.status==="ok"?"正常":data.status==="degraded"?"降级":"不可用";setOverview(prev=>({...prev,evidenceStatus:label,evidenceError:false}))}).catch(()=>setOverview(prev=>({...prev,evidenceError:true})));
-    fetch("/api/platform/storage/api/competition/roles/java-developer/versions").then(r=>{if(!r.ok)throw new Error("HTTP "+r.status);return r.json()}).then(data=>{if(!Array.isArray(data?.versions))throw new Error("versions.versions不是数组");const versions:any[]=data.versions;setOverview(prev=>({...prev,latestVersion:versions.length>0?versions[versions.length-1].version_id:"暂无",versionError:false}))}).catch(()=>setOverview(prev=>({...prev,versionError:true})));
   },[workspace]);
   const load=async(targetPage=1,append=false,search=query)=>{setLoading(true);setError("");const searchPart=search.trim()?`&keyword=${encodeURIComponent(search.trim())}`:"";const [jobResult,hrResult,assessmentResult,crawlerResult]=await Promise.allSettled([json(`/api/platform/storage/api/search/jobs?page=${targetPage}&page_size=${pageSize}${searchPart}`),json("/api/hr/state"),json("/api/assessments"),json("/api/crawler/status")]);const hr=hrResult.status==="fulfilled"?hrResult.value:{candidates:[],interviews:[],jobs:[]};const rows=jobResult.status==="fulfilled"?normalizeJobs(jobResult.value):[];const local=(hr.jobs||[]).map((x:any)=>({...x,name:x.name||x.title})).filter((x:JobRow)=>!search.trim()||`${x.name}${x.company}${x.city}`.toLowerCase().includes(search.toLowerCase()));setLocalJobs(local);setRemoteJobs(previous=>append?[...previous,...rows.filter(row=>!previous.some(item=>item.id===row.id))]:rows);setTotal(jobResult.status==="fulfilled"?Number(jobResult.value.total||rows.length):0);setPage(targetPage);setCandidates(hr.candidates||[]);setInterviews(hr.interviews||[]);setAssessments(assessmentResult.status==="fulfilled"?assessmentResult.value.items||[]:[]);if(crawlerResult.status==="fulfilled")setCrawler(crawlerResult.value);if(jobResult.status==="rejected")setError("岗位搜索服务暂未启动，候选人、面试和评估数据仍已正常读取。");setUpdated(timeText());setLoading(false)};
   useEffect(()=>{load(1,false,"")},[]);
   useEffect(()=>{const panel=sessionStorage.getItem("talentmatch-open-hr-panel");if(panel==="interviews")setInterviewPanel(true);if(panel==="candidates")setCandidatePanel(true);if(panel)sessionStorage.removeItem("talentmatch-open-hr-panel")},[]);
   useEffect(()=>{if(workspace)return;const timer=setTimeout(()=>load(1,false,query),350);return ()=>clearTimeout(timer)},[query,workspace]);
-  /* scroll auto-load */
-  useEffect(()=>{if(workspace)return;const el=listPanel.current;if(!el)return;let busy=false;const onScroll=()=>{if(busy)return;const s=scrollState.current;if(s.loading||!s.hasMore)return;const {scrollTop,scrollHeight,clientHeight}=el;if(scrollTop+clientHeight<scrollHeight-80)return;busy=true;loadFn.current(s.page+1,true,s.query).finally(()=>{busy=false})};el.addEventListener("scroll",onScroll,{passive:true});return ()=>el.removeEventListener("scroll",onScroll)},[workspace]);
-  const loadFn=useRef(load);loadFn.current=load;const scrollState=useRef({loading:false,hasMore:true,page:1,query:""});scrollState.current={loading,hasMore:remoteJobs.length<total,page,query};const jobs=[...localJobs,...remoteJobs];const filtered=workspace?jobs.slice(0,6):jobs;
+  /* IntersectionObserver auto-load when sentinel enters viewport */
+  const hasMore=remoteJobs.length<total&&!workspace;
+  useEffect(()=>{const sentinel=loadMoreRef.current;if(!sentinel||workspace)return;const observer=new IntersectionObserver(entries=>{const entry=entries[0];if(!entry||!entry.isIntersecting)return;if(loading||!hasMore||loadingMoreRef.current)return;loadingMoreRef.current=true;requestSeqRef.current++;const seq=requestSeqRef.current;load(page+1,true,query).finally(()=>{loadingMoreRef.current=false;if(requestSeqRef.current===seq)loadingMoreRef.current=false})},{root:null,rootMargin:"400px 0px",threshold:0.01});observer.observe(sentinel);return ()=>observer.disconnect()},[workspace,loading,hasMore,page,query]);
+  const jobs=[...localJobs,...remoteJobs];const filtered=workspace?jobs.slice(0,6):jobs;
   const average=assessments.length?Math.round(assessments.reduce((sum,x)=>sum+x.score,0)/assessments.length):null;
   const add=async(job:JobRow)=>{const saved=await json("/api/hr/jobs",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify(job)});setLocalJobs(x=>[{...saved,name:saved.name||saved.title},...x]);setAdding(false);setUpdated(timeText());setSelected({...saved,name:saved.name||saved.title})};
   const deleteLocalJob=async(jobId:string)=>{await json(`/api/hr/jobs/${jobId}`,{method:"DELETE"});setLocalJobs(x=>x.filter(j=>j.id!==jobId));setSelected(null);setUpdated(timeText())};
-  const runCrawler=async()=>{try{const state=await json("/api/crawler/refresh",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({mode:"quick",target:1000})});setCrawler(state);setUpdated(timeText())}catch(e){setError(e instanceof Error?e.message:"岗位采集启动失败")}};
-  return <><div className="page-actions"><span><Clock3/>更新时间：{updated}</span>{!workspace&&<button className="ghost-action spring-hover" onClick={()=>load(1,false,query)} disabled={loading}><RefreshCw className={loading?"spin":""}/>{loading?"刷新中":"刷新列表"}</button>}{!workspace&&<button className="ghost-action ai-refresh" onClick={runCrawler} disabled={crawler?.status==="running"}><Sparkles/>{crawler?.status==="running"?"采集并同步中":"快速采集"}</button>}<button className="primary small-primary" onClick={()=>setAdding(true)}><Plus/>新增岗位</button></div>
-    <div className="sub-nav">
-      <button className={jobsTab==="jobs"?"active":""} onClick={()=>{setJobsTab("jobs");sessionStorage.setItem("talentmatch-jobsTab","jobs")}}>在招岗位</button>
-      <button className={jobsTab==="discovery"?"active":""} onClick={()=>{setJobsTab("discovery");sessionStorage.setItem("talentmatch-jobsTab","discovery")}}>新岗位发现</button>
-      <button className={jobsTab==="evolution"?"active":""} onClick={()=>{setJobsTab("evolution");sessionStorage.setItem("talentmatch-jobsTab","evolution")}}>岗位能力演化</button>
-      <button className={jobsTab==="evidence"?"active":""} onClick={()=>{setJobsTab("evidence");sessionStorage.setItem("talentmatch-jobsTab","evidence")}}>岗位证据审核</button>
+  const runCrawler=async()=>{try{const state=await json("/api/crawler/refresh",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({mode:"quick",target:1000})});setCrawler(state);setUpdated(timeText());load(1,false,query)}catch(e){setError(e instanceof Error?e.message:"岗位采集启动失败")}};
+  const m=meta.jobs;
+  return <main className="platform-main" style={{padding:0,margin:0,maxWidth:"100%"}}>
+    <div style={{maxWidth:1280,margin:"0 auto",padding:"0 32px 32px"}}>
+      {/* ── Left-aligned heading ── */}
+      <section className="jobs-page-heading">
+        <div className="jobs-page-heading__copy">
+          <span className="jobs-page-heading__eyebrow">{m.eyebrow}</span>
+          <h1><SplitText text={m.title} tag="span" splitType="chars" delay={38} duration={0.75} ease="power3.out" from={{opacity:0,y:28,scale:.94}} to={{opacity:1,y:0,scale:1}} /></h1>
+          <p><SplitText text={m.desc} tag="span" splitType="chars" delay={18} duration={0.65} ease="power3.out" from={{opacity:0,y:12,scale:.97}} to={{opacity:1,y:0,scale:1}} /></p>
+        </div>
+        <div className="jobs-page-heading__actions">
+          <span className="job-actions__time"><Clock3 size={13}/>更新时间：{updated}</span>
+          {!workspace&&<button className="job-actions__secondary" onClick={runCrawler} disabled={crawler?.status==="running"}><Sparkles size={15}/>{crawler?.status==="running"?"采集中…":"快速采集"}</button>}
+        </div>
+      </section>
+      {/* ── Discovery overview stats (2 cards) ── */}
+      {!workspace&&<div className="jobs-discovery-metrics">
+        <MetricCard label="新岗位候选" value={overview.discoveryError?"不可用":overview.discoveryTotal??"..."} icon={Sparkles} tone={overview.discoveryError?"blue":"mint"} description={overview.discoveryError?"接口异常":"competition 模块发现的新岗位总数"} onClick={()=>onJobSectionChange?.("discovery")} ariaLabel="查看新岗位候选"/>
+        <MetricCard label="待审核" value={overview.discoveryError?"不可用":overview.discoveryPending??"..."} tone={overview.discoveryError?"blue":"cyan"} description={overview.discoveryError?"接口异常":"待审核的新岗位发现数量"} onClick={()=>onJobSectionChange?.("discovery")} ariaLabel="查看待审核岗位"/>
+      </div>}
+      {jobsTab==="jobs"?<>
+        {error&&<div className="service-warning"><AlertTriangle/><div><b>岗位数据未实时更新</b><span>{error}</span></div></div>}
+        {/* ── Main stat cards (4 cards) ── */}
+        <div className="jobs-overview-metrics">
+          <MetricCard label="在招岗位" value={total} icon={BriefcaseBusiness} tone="blue" description={`数据库岗位总量${localJobs.length>0?`，另有本地岗位 ${localJobs.length} 条`:""}`} onClick={()=>{const el=document.getElementById("all-jobs-section");el?.scrollIntoView({behavior:"smooth",block:"start"})}} ariaLabel="滚动到全部招聘岗位"/>
+          <MetricCard label="候选人" value={candidates.length} icon={UserRound} tone="mint" onClick={()=>setCandidatePanel(true)} description="点击查看和添加候选人" ariaLabel="打开候选人管理"/>
+          <MetricCard label="待安排面试" value={interviews.filter(x=>x.status==="待进行").length} icon={CalendarDays} tone="cyan" onClick={()=>onNavigate?.("interviews")} description="点击进入面试管理" ariaLabel="打开面试管理"/>
+          <MetricCard label="平均匹配度" value={average===null?"--":`${average}%`} icon={Sparkles} tone="mint" onClick={()=>{sessionStorage.setItem("talentmatch-assessment-target","average");onNavigate?.("unified")}} description={average===null?"暂无真实评估记录":"查看个人匹配度明细"} ariaLabel="查看个人匹配度明细"/>
+        </div>
+        {/* ── All jobs section ── */}
+        <section className="all-jobs-section" id="all-jobs-section">
+          <JobSectionHeader
+            eyebrow="ALL POSITIONS"
+            title={workspace ? "重点招聘岗位" : "全部招聘岗位"}
+            sticky
+          />
+          <div className="all-jobs-toolbar">
+            <label className="all-jobs-search"><Search size={18}/><input value={query} onChange={e=>setQuery(e.target.value)} placeholder="搜索岗位、部门或城市..."/></label>
+            <AddJobButton onClick={()=>setAdding(true)} />
+          </div>
+          <div className="all-jobs-grid">
+            {filtered.map((job,i)=><button key={job.id} className="priority-job-card" onClick={()=>setSelected(job)}>
+              <span className="priority-job-card__watermark" aria-hidden="true">{String(i+1).padStart(2,"0")}</span>
+              <div className="priority-job-card__top">
+                <span className="priority-job-card__location"><MapPin size={12}/>{job.city||'不限'}</span>
+                <span className="priority-job-card__score">{(job.score||85)}分</span>
+              </div>
+              <div className="priority-job-card__content">
+                <h3 className="priority-job-card__name">{job.name}</h3>
+                <p className="priority-job-card__desc">{job.description||job.summary}</p>
+              </div>
+              <div className="priority-job-card__bottom">
+                <span className="priority-job-card__company">{job.company||'招聘团队'}</span>
+                <span className="priority-job-card__detail">查看详情 <ArrowUpRight size={12}/></span>
+              </div>
+            </button>)}
+          </div>
+          {loading&&hasMore&&<div className="all-jobs-loading"><div className="cube-loader"><div className="cube-loader__inner cube-loader__inner--color"/></div><span>加载中…</span></div>}
+          {!hasMore&&filtered.length>0&&!workspace&&<p className="all-jobs-end">没有更多岗位</p>}
+          <div ref={loadMoreRef} className="all-jobs-sentinel" aria-hidden="true"/>
+        </section>
+      </>:jobsTab==="discovery"?<CompetitionErrorBoundary pageName="新岗位发现" onNavigateHome={()=>{setJobsTab("jobs");sessionStorage.setItem("talentmatch-jobsTab","jobs")}}><CompetitionDiscovery/></CompetitionErrorBoundary>
+      :jobsTab==="evolution"?<CompetitionErrorBoundary pageName="岗位能力管理" onNavigateHome={()=>{setJobsTab("jobs");sessionStorage.setItem("talentmatch-jobsTab","jobs")}}><CompetitionRoleWorkspace/></CompetitionErrorBoundary>
+      :<>{/* fallback to jobs overview */}</>}
     </div>
-    {/* ── Overview bar — real API only, show "不可用" on failure ── */}
-    {!workspace&&<section className="stats-grid" style={{marginBottom:20}}><Stat label="新岗位候选" value={overview.discoveryError?"不可用":overview.discoveryTotal??"..."} tone={overview.discoveryError?"purple":"mint"} help={overview.discoveryError?"接口异常，无法获取新岗位候选数量":"competition 模块发现的新岗位总数"}/><Stat label="待审核" value={overview.discoveryError?"不可用":overview.discoveryPending??"..."} tone={overview.discoveryError?"purple":"cyan"} help={overview.discoveryError?"接口异常":"待审核的新岗位发现数量"}/><Stat label="最近能力版本" value={overview.versionError?"不可用":overview.latestVersion??"..."} help={overview.versionError?"接口异常，无法获取版本信息":"Java开发工程师岗位最新能力版本"}/><Stat label="证据服务" value={overview.evidenceError?"不可用":overview.evidenceStatus??"..."} tone={overview.evidenceError?"purple":overview.evidenceStatus==="正常"?"mint":"cyan"} help={overview.evidenceError?"接口异常":"轻量确定性证据检索服务状态"}/></section>}
-    {jobsTab==="jobs"?<>
-    {error&&<div className="service-warning"><AlertTriangle/><div><b>岗位数据未实时更新</b><span>{error}</span></div></div>}
-    {crawler&&<div className={`crawler-status ${crawler.status}`}><CircleDot/><span><b>{crawler.message}</b><small>{crawler.status==="running"?`任务进程 ${crawler.pid||"启动中"}`:crawler.finishedAt?`完成时间 ${timeText(new Date(crawler.finishedAt))}`:""}</small></span></div>}
-    <section className="stats-grid"><Stat label="在招岗位" value={total} onClick={()=>document.querySelector(".job-card-grid")?.scrollIntoView({behavior:"smooth"})} help={`数据库岗位总量${localJobs.length>0?`，另有本地岗位 ${localJobs.length} 条`:""}`}/><Stat label="候选人" value={candidates.length} tone="mint" onClick={()=>setCandidatePanel(true)} help="点击查看和添加候选人"/><Stat label="待安排面试" value={interviews.filter(x=>x.status==="待进行").length} tone="cyan" onClick={()=>setInterviewPanel(true)} help="点击管理面试安排"/><Stat label="平均匹配度" value={average===null?"--":`${average}%`} onClick={()=>onNavigate?.("unified")} help={average===null?"暂无真实评估记录":"真实评估总分 ÷ 评估人数"}/></section>
-    {workspace&&<section className="workspace-shortcuts"><button className="spring-hover" onClick={()=>setAdding(true)}><Plus/><span><b>发布招聘岗位</b><small>创建新的招聘需求</small></span></button><button className="spring-hover" onClick={()=>onNavigate?.("matching")}><Sparkles/><span><b>开始人才评估</b><small>上传简历并进行匹配</small></span></button><button className="spring-hover" onClick={runCrawler} disabled={crawler?.status=="running"}><Sparkles/><span><b>{crawler?.status=="running"?"AI 采集中…":"AI 脚本采集"}</b><small>自动抓取最新岗位数据</small></span></button></section>}
-    <section className="wide-panel" ref={listPanel} style={workspace?undefined:{maxHeight:"calc(100vh - 300px)",overflowY:"auto"}}><div className="table-toolbar"><div><h3>{workspace?"重点招聘岗位":"全部招聘岗位"}</h3><span>点击任一岗位查看完整职责与要求 · 滚动到底自动加载</span></div><label className="search-box"><Search/><input value={query} onChange={e=>setQuery(e.target.value)} placeholder="搜索岗位、部门或城市..."/></label></div>
-      <div className="job-card-grid">{filtered.map(job=><button key={job.id} className="job-card spring-hover" onClick={()=>setSelected(job)}><div><span>{job.type}</span><em>{job.city}</em></div><h3>{job.name}</h3><p>{job.description}</p><div className="skill-tags">{(job.skills||[]).slice(0,3).map(x=><i key={x}>{x}</i>)}</div><footer><span>{job.salary}</span><b>查看详情 <ArrowUpRight/></b></footer></button>)}</div>
-      {!workspace&&<div className="job-list-footer"><span>已加载 <b>{remoteJobs.length}</b> / {total} 条岗位</span>{remoteJobs.length<total&&(loading?<div className="cube-loader"><div className="cube-loader__inner cube-loader__inner--color"/><div className="cube-loader__inner cube-loader__inner--glow"/></div>:<span style={{color:"#6e6a78",fontSize:11}}>继续滚动以加载更多</span>)}</div>}
-    </section>
-    </>:jobsTab==="discovery"?<CompetitionErrorBoundary pageName="新岗位发现" onNavigateHome={()=>{setJobsTab("jobs");sessionStorage.setItem("talentmatch-jobsTab","jobs")}}><CompetitionDiscovery/></CompetitionErrorBoundary>
-    :jobsTab==="evolution"?<CompetitionErrorBoundary pageName="岗位能力演化" onNavigateHome={()=>{setJobsTab("jobs");sessionStorage.setItem("talentmatch-jobsTab","jobs")}}><CompetitionRoleEvolution/></CompetitionErrorBoundary>
-    :<CompetitionErrorBoundary pageName="岗位证据审核" onNavigateHome={()=>{setJobsTab("jobs");sessionStorage.setItem("talentmatch-jobsTab","jobs")}}><CompetitionEvidence/></CompetitionErrorBoundary>}
-    {selected&&<JobDialog job={selected} close={()=>setSelected(null)} onDelete={deleteLocalJob}/>} {adding&&<AddJobDialog close={()=>setAdding(false)} save={add}/>} {candidatePanel&&<CandidateDialog candidates={candidates} close={()=>setCandidatePanel(false)} onChange={load}/>} {interviewPanel&&<InterviewDialog candidates={candidates} interviews={interviews} jobs={jobs} close={()=>setInterviewPanel(false)} onChange={load}/>}</>;
+    {selected&&<JobDialog job={selected} close={()=>setSelected(null)} onDelete={deleteLocalJob}/>} {adding&&<AddJobDialog close={()=>setAdding(false)} save={add}/>} {candidatePanel&&<CandidateDialog candidates={candidates} close={()=>setCandidatePanel(false)} onChange={load}/>} {interviewPanel&&<InterviewDialog candidates={candidates} interviews={interviews} jobs={jobs} close={()=>setInterviewPanel(false)} onChange={load}/>}
+  </main>;
 }
 
 function JobDialog({job,close,onDelete,isReadonly}:{job:JobRow;close:()=>void;onDelete?:(id:string)=>void;isReadonly?:boolean}){return <div className="modal-backdrop" onMouseDown={e=>{if(e.target===e.currentTarget)close()}}><div className="dialog job-dialog"><div className="dialog-head"><div><span>JOB DETAIL</span><h3>{job.name}</h3></div><button onClick={close}><X/></button></div><div className="job-meta"><span><BriefcaseBusiness/>{job.company}</span><span><MapPin/>{job.city}</span><span><CalendarDays/>{job.type}</span></div><section><h4>岗位职责与说明</h4><p>{job.description}</p></section>{job.requirement&&<section><h4>任职要求</h4><p>{job.requirement}</p></section>}<section><h4>核心能力要求</h4><div className="skill-tags">{(job.skills?.length?job.skills:["沟通协作","项目经验","专业能力"]).map(x=><i key={x}>{x}</i>)}</div></section><div className="dialog-summary"><span>薪资范围<b>{job.salary||"面议"}</b></span><span>岗位更新时间<b>{job.updatedAt?timeText(new Date(job.updatedAt)):"未标注"}</b></span></div>{!isReadonly&&job.source==="HR手动创建"&&onDelete&&<button className="ghost-action" style={{color:"#ff6b6b",marginBottom:12}} onClick={()=>{if(confirm("确认删除该岗位？此操作不可恢复。"))onDelete(job.id)}}><Trash2/>删除岗位</button>}{job.sourceUrl&&<a className="job-source-link" href={job.sourceUrl} target="_blank" rel="noreferrer">查看原始招聘页面 <ArrowUpRight/></a>}{isReadonly?<p style={{fontSize:12,color:"rgba(196,199,200,.35)",textAlign:"center",marginTop:16}}>登录后可管理此岗位</p>:<button className="primary" onClick={close}>关闭详情</button>}</div></div>}
@@ -577,6 +998,7 @@ function AssessmentPage({onOpenGraph}:{onOpenGraph?:(name:string)=>void}){
   const [items,setItems]=useState<AssessmentRow[]>([]);const [candidates,setCandidates]=useState<CandidateRow[]>([]);const [favorites,setFavorites]=useState<string[]>([]);const [loading,setLoading]=useState(false);const [updated,setUpdated]=useState(timeText());const [selected,setSelected]=useState<AssessmentRow|null>(null);const [category,setCategory]=useState<"all"|"excellent"|"review"|"average"|null>(null);
   const load=async()=>{setLoading(true);try{const [assessmentData,hrData]=await Promise.all([json("/api/assessments"),json("/api/hr/state")]);setItems(assessmentData.items||[]);setCandidates(hrData.candidates||[]);setFavorites(hrData.favorites||[])}catch{setItems([])}finally{setUpdated(timeText());setLoading(false)}};
   useEffect(()=>{load()},[]);
+  useEffect(()=>{const target=sessionStorage.getItem("talentmatch-assessment-target");if(target==="average"){setCategory("average");sessionStorage.removeItem("talentmatch-assessment-target")}},[]);
   const candidateFor=(item:AssessmentRow)=>candidates.find(candidate=>(candidate.name||"匿名候选人")===(item.candidateName?.trim()||"匿名候选人"));
   const toggleFavorite=async(candidate?:CandidateRow)=>{if(!candidate)return;const active=favorites.includes(candidate.id);await json(`/api/hr/favorites/${candidate.id}`,{method:active?"DELETE":"PUT"});setFavorites(rows=>active?rows.filter(id=>id!==candidate.id):[candidate.id,...rows])};
   const average=items.length?Math.round(items.reduce((sum,item)=>sum+item.score,0)/items.length):0;

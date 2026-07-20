@@ -50,6 +50,8 @@ export interface ValidatedDiscoveryItem {
   source_ids: string[];
   review_status: string;
   reviewed_at: string | null;
+  source_note?: string | null;
+  created_at?: string | null;
 }
 
 export interface ValidatedSkillItem {
@@ -98,6 +100,8 @@ function validateDiscoveryItem(raw: unknown): ValidatedDiscoveryItem {
     source_ids: Array.isArray(o.source_ids) ? o.source_ids.map(String) : [],
     review_status: ensureString(o.review_status, "discovery.review_status"),
     reviewed_at: o.reviewed_at != null ? ensureString(o.reviewed_at, "discovery.reviewed_at") : null,
+    source_note: o.source_note != null ? String(o.source_note) : undefined,
+    created_at: o.created_at != null ? String(o.created_at) : undefined,
   };
 }
 

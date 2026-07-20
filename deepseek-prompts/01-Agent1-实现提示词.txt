@@ -1,0 +1,86 @@
+DeepSeek Agent1 提示词——主页动效实现负责人
+
+你是 Agent1，负责完成 TalentMatch 主页动效的第一版可运行实现。不要只给建议或伪代码，必须直接修改项目、运行验证，并交付准确结果。
+
+项目：E:\202676\talentmatch
+必读总控：E:\202676\deepseek-prompts\00-总控流程.txt
+
+开始前必须执行：
+
+1. git status --short，确认工作树已有用户改动。
+2. 完整阅读 src/PlatformPages.tsx 的 HomePage、src/components/SplitText.tsx、src/main.tsx、src/reference-theme.css 约 729～990 行及文件末尾覆盖规则。
+3. 查看两张 public/hero 图片的实际尺寸。
+4. 运行 npm run lint 与 npm run build，记录基线。
+
+你的修改范围优先限制为：
+
+- src/PlatformPages.tsx
+- src/reference-theme.css
+- 可新建 src/components/HomeHeroMotion.tsx 或 src/hooks/useHomeHeroMotion.ts（二选一，只有确实能降低复杂度才新建）
+- 如非必要，不改 SplitText.tsx；禁止改接口、server.ts、业务数据、登录逻辑和其他页面。
+
+实现任务 A：短开屏星轨
+
+- 在已登录正式主页的 .home-hero--showcase 内增加 aria-hidden、pointer-events:none 的视觉层。未登录 Demo 首页可复用简化版本，但不能妨碍登录按钮；如果风险较高，Demo 仅淡入，不强制星轨。
+- 星星起点使用 Hero 相对坐标 x=23.6%、y=76.4%，体现左下黄金比例区域；终点动态读取 .home-hero__title-accent 的中心或其略偏右上位置。
+- 使用一条平滑二次/三次贝塞尔曲线，先略向右平移再加速向右上，拖尾由蓝青渐变到透明，星头不超过 14px，光晕克制，不能遮盖标题。
+- 首次会话总时长 1.3～1.6 秒、绝不超过 1.8 秒。sessionStorage 键固定为 talentmatch-home-intro-v1。React StrictMode 下只播放一次。
+- 首帧背景必须立即出现；不要做全屏黑色遮罩、长 Logo、假百分比或等待接口后才结束动画。
+- 星轨接近终点时按顺序显示：标题由上到下；说明由下到上；按钮轻微上浮淡入。三个父容器的动画与现有 SplitText 不得争抢同一个 transform。
+
+实现任务 B：两侧宣传图进退场
+
+- 目标元素是 .hero-side-scene--left 和 .hero-side-scene--right，内部现有 SVG 框和两张图片必须保留。
+- 进入 Hero 可视区：左侧从靠中心 x=+70px、右侧从靠中心 x=-70px，opacity=0、scale=.94 开始；同时 clip-path 从内侧收拢状态展开。最后回到现有透视位置，形成“从内向外生长”。
+- 离开 Hero：左侧向左 x=-120px，右侧向右 x=+120px，opacity=0、scale=.97。滚动返回重新入场。
+- 使用 ScrollTrigger 回调或一个清晰的 IntersectionObserver 状态机。快滚时使用 overwrite:auto 或显式 kill 当前 tween，不能叠加时间线。
+- 首次开屏两侧入场与星轨时间线协调；之后滚动只播放短版进退场，不重复整段开屏。
+- 不允许破坏已有 rotateY/rotateZ 透视。若父元素负责位移，子 figure 保留透视；不要让 GSAP 覆盖子元素现有 transform。
+
+实现任务 C：加载反馈
+
+- 为 HomePage 的岗位/候选人/评估请求增加可辨认但克制的 loading 状态。
+- 超过约 180ms 才展示骨架，避免快速请求闪一下；请求完成后以 180～240ms 淡出并由真实内容替换。
+- 骨架数量和布局贴近当前 stats/job cards，不得改业务文案或伪造数字；请求失败必须退出 loading，沿用当前 fallback/空态。
+- 骨架 shimmer 只移动 background-position；reduced-motion 下静止。
+
+实现任务 D：响应式、无障碍和清理
+
+- <=768px 当前隐藏两侧场景，保持此行为。移动端星轨直接跳过或缩成不超过 300ms 的微光，标题与按钮立即可用。
+- prefers-reduced-motion: reduce 时跳过星轨和大位移，所有真实内容立即显示，两侧最多短淡入。
+- 开屏视觉层 aria-hidden=true；不能复制一份可访问标题；不能挡鼠标或键盘。
+- 路由离开、组件卸载、窗口变化时清理 timeline、ScrollTrigger、ResizeObserver、timeout。页面后台切回不应突然补播长动画。
+- 不要用 setInterval 造粒子，不要新增大图/GIF/视频，不要引入依赖。
+
+CSS 要求：
+
+- 动效新增规则统一写入 reference-theme.css 的 Hero 专区附近，并用清晰前缀 home-intro__ / hero-motion--，避免污染其他页面。
+- 保留现有视觉主题；动画主要使用 transform、opacity、clip-path、stroke-dashoffset。
+- 添加 .is-motion-ready 或同等机制，确保 JS 尚未执行或异常时内容默认可见，不能因 CSS 初始 opacity:0 导致永久空白。
+- 只有动画期间使用 will-change，结束时移除/恢复 auto。
+
+验证要求：
+
+1. npm run lint
+2. npm run build
+3. 启动本地页面后手工/自动检查首次进入、滚动离开、滚动返回、快速上下滚动、导航离开再返回。
+4. 检查 1440×900、1280×720、768×1024、390×844，不得出现水平滚动条。
+5. 模拟 prefers-reduced-motion，确认内容立刻可见。
+6. 检查 console 无新增 error/warning，React StrictMode 不重复播放。
+
+交付时必须输出：
+
+- 实际改动文件列表和每个文件的作用。
+- 精确动画时序及 sessionStorage 行为。
+- lint/build/浏览器验证的真实结果；失败必须原样说明，禁止虚构通过。
+- git diff --stat。
+- 留给 Agent2 的风险清单，特别说明快滚、移动端、reduced-motion、请求失败是否验证。
+
+禁止事项：
+
+- 禁止 git reset/checkout/clean；禁止提交、推送。
+- 禁止重写 HomePage 或更换视觉风格。
+- 禁止修改中文文案和 API。
+- 禁止为了“好看”添加持续高耗能粒子、鼠标跟随或无限大范围 blur。
+- 禁止只产出代码片段而不落地。
+

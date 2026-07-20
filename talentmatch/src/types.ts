@@ -44,6 +44,8 @@ export interface DiscoveryItem {
   source_ids: string[];
   review_status: "pending" | "approved" | "rejected";
   reviewed_at: string | null;
+  source_note?: string | null;  // 来源说明（人工录入时填写）
+  created_at?: string | null;  // 记录创建时间 (ISO-8601)
 }
 
 export interface ReviewEditPayload {

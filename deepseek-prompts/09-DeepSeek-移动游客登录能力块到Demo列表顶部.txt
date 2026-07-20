@@ -1,0 +1,74 @@
+【角色】
+你是 DeepSeek 前端实施 Agent。请直接修改代码并完成验证，不要只输出建议。
+
+【项目】
+E:\202676\talentmatch
+
+【目标】
+调整未登录主页的信息顺序。把下面这一整块：
+
+1. “登录后即可访问所有功能：岗位管理、人岗匹配（含人才能力图谱）、评估结果、招聘趋势等。”
+2. “立即登录”按钮
+3. “平台能力预览”
+4. 岗位管理 / 人岗匹配 / 人才能力图谱 / 招聘趋势及其说明
+
+移动到“精选 Demo 岗位（10 条） / 数据来源: MySQL demo_homepage_jobs”标题下方，并且必须位于编号 01 的第一张 Demo 岗位卡之前。
+
+【目标 DOM 顺序】
+未登录分支中，id="demo-jobs" 的 section 内部顺序必须是：
+
+1. home-section__head
+   - Demo Preview
+   - 精选 Demo 岗位（10 条）
+   - 数据来源: MySQL demo_homepage_jobs
+2. 登录能力介绍块
+   - 左侧登录说明 + 立即登录
+   - 右侧平台能力预览
+3. priority-job-grid
+   - 01 高级后端工程师
+   - 02 ……
+   - 其余 Demo 岗位
+
+也就是：标题 → 登录能力介绍 → 01 岗位卡。禁止放在 10 张岗位卡之后。
+
+【修改位置】
+主要文件：
+E:\202676\talentmatch\src\PlatformPages.tsx
+
+当前结构大约为：
+- 第 190 行附近：<section className="home-section" id="demo-jobs">
+- 第 195 行附近：priority-job-grid
+- 第 216 行以后：独立的 Login CTA section
+
+请把现有 Login CTA 的 home-insights 整块移动到 demo-jobs section 的 home-section__head 后、priority-job-grid 前；随后删除原来岗位列表下方的 Login CTA 外层 section，页面上只能保留一份内容。
+
+【样式要求】
+1. 复用现有 home-insights、home-quote-card、home-insight-card 等样式，不重新设计组件。
+2. 为移动后的能力块增加独立修饰类，例如 guest-demo-capability-preview；只在确有需要时修改：
+   E:\202676\talentmatch\src\reference-theme.css
+3. 能力块与下面岗位卡网格之间保留约 24–36px 的清晰间距；不要依赖一个已经被删除的外层 home-section 来制造间距。
+4. 桌面端保持左右两列；现有响应式规则下，移动端继续单列。
+5. 不改变 Demo 标题、数据来源、岗位卡编号、岗位数据和登录文案。
+6. “立即登录”仍触发 auth:open-login。
+
+【禁止事项】
+1. 不复制出第二份能力预览；必须是移动，不是复制。
+2. 不修改登录后主页。
+3. 不修改 Hero、环绕动画、Demo 数据接口、权限逻辑和 JobDialog。
+4. 不安装依赖，不改后端，不格式化或覆盖无关文件。
+5. 不使用 git reset / git checkout 清理工作区。
+
+【验收标准】
+1. 未登录主页只出现一次“平台能力预览”。
+2. DOM 和视觉顺序严格为：Demo 标题 → 登录能力块 → 01 岗位卡。
+3. 点击“立即登录”正常弹出登录框。
+4. 点击 Hero 的“浏览 Demo 岗位”仍滚动到 Demo 标题区域。
+5. 1440×900 和 390×844 均无横向溢出，移动端没有卡片重叠。
+6. 登录后主页没有变化。
+7. 在 E:\202676\talentmatch 执行并通过：
+   - npm.cmd run lint
+   - npm.cmd run build
+
+【完成报告】
+请输出：修改文件、移动前后 DOM 顺序、响应式检查结果、登录按钮检查结果、lint/build 结果。若未实际打开未登录主页验证，必须明确说明，不得写“全部通过”。
+

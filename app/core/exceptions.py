@@ -27,13 +27,26 @@ async def http_exception_handler(request: Request, exc: StarletteHTTPException) 
 
 async def validation_exception_handler(request: Request, exc: RequestValidationError) -> JSONResponse:
     logger.warning("Validation error on %s %s — %s", request.method, request.url.path, exc.errors())
+    # Sanitize errors: remove non-JSON-serializable exception objects from ctx
+    clean_errors: list[dict[str, Any]] = []
+    for e in exc.errors():
+        clean: dict[str, Any] = {}
+        for k, v in e.items():
+            if k == "ctx" and isinstance(v, dict):
+                # Keep ctx but strip the 'error' key (contains a non-serializable ValueError)
+                safe_ctx = {ck: cv for ck, cv in v.items() if ck != "error"}
+                if safe_ctx:
+                    clean["ctx"] = safe_ctx
+            elif k != "ctx":
+                clean[k] = v
+        clean_errors.append(clean)
     return JSONResponse(
         status_code=422,
         content={
             "error": True,
             "status": 422,
             "detail": "Request validation failed",
-            "errors": exc.errors(),
+            "errors": clean_errors,
             "path": request.url.path,
         },
     )

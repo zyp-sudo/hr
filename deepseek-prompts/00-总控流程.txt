@@ -1,0 +1,94 @@
+TalentMatch 主页动效项目——DeepSeek 总控提示词
+
+你的身份：你是本次前端动效任务的总控 Agent。必须在现有代码上做增量修改，不得重写主页，不得改变业务逻辑、接口、文案、登录流程和视觉主题。
+
+一、唯一工作目录与技术事实
+
+1. 唯一目标项目：E:\202676\talentmatch
+2. 正式主页：E:\202676\talentmatch\src\PlatformPages.tsx 中的 HomePage。
+3. 主页最终覆盖样式主要位于：E:\202676\talentmatch\src\reference-theme.css。
+4. 全局引入顺序：index.css -> design-repair.css -> reference-theme.css，后者优先级最高。先查清现有规则再新增，禁止在三个文件里重复堆同一套选择器。
+5. 已安装 React 19、TypeScript、GSAP、@gsap/react、Motion；现有 SplitText 已使用 GSAP/ScrollTrigger。禁止再安装动画库。
+6. 两侧正式图片已经存在：public/hero/job-management.png、public/hero/recruitment-insights.png。
+7. 当前工作树已有大量用户修改。禁止 git reset、checkout、clean，禁止覆盖或回滚任何无关变更；修改前后都查看 git diff，只触碰本任务需要的文件。
+
+二、用户要达到的最终效果
+
+1. 开屏动画必须短，总时长目标 1.3～1.6 秒，硬上限 1.8 秒；不能用长时间黑屏、Logo 等待或假进度条阻塞页面。
+2. 首次打开主页时，从 Hero 左下区域的黄金比例点发出一颗带柔和拖尾的星星，沿贝塞尔曲线向右上飞行，最终落在中央主标题中“智能”附近。
+3. 星星接近落点时，中央文案块联动出现：标题“人岗匹配 / 智能 / 评估系统”从上方轻落，两个说明句从下方上浮，按钮最后淡入。整体有层次但不能逐字拖得很久。
+4. Hero 两侧宣传图在 Hero 进入可视区域时从靠近中央的位置向左右外展并“生长”出来；需要 opacity + translate + scale + clip-path/mask 的组合，不能只做简单 fade。
+5. Hero 离开可视区域时，两图分别向左、向右滑出并消失；滚动返回时再次反向入场。快速滚动不能残留半透明、错位或卡死状态。
+6. 主页数据请求期间要有克制的加载反馈（骨架/微光），数据回来后平滑替换；不得伪造加载百分比，不得让短请求产生明显闪烁。
+7. 保留现有颜色、字号、布局、文案、按钮、图片和交互。动画是增强，不是重新设计页面。
+
+三、动画时序（统一执行，不允许各自随意改节奏）
+
+首次开屏时间线：
+
+- 0～120ms：Hero 背景立即可见，避免白屏；中央内容保持可访问但视觉上预备入场。
+- 100～850ms：星星从 Hero 内相对坐标约 x=23.6%、y=76.4% 出发，沿向右上弯曲的路径飞到“智能”文字附近。终点必须由目标元素 getBoundingClientRect 动态计算，不得写死桌面像素。
+- 250～950ms：两侧场景从中央两边向外展开放，左图向左归位，右图向右归位。
+- 680～1180ms：标题容器从 y=-24、opacity=0、scale=.985 到正常位置。
+- 760～1280ms：说明文字从 y=22、opacity=0 到正常位置。
+- 900～1350ms：按钮从 y=12、opacity=0 到正常位置。
+- 1350～1600ms：拖尾衰减，临时层 pointer-events:none 并彻底隐藏/卸载。
+
+滚动时间线：
+
+- 使用 Hero 自身作为触发器，建议 GSAP ScrollTrigger 或等价的 IntersectionObserver 状态机；不得监听 scroll 后每帧 setState。
+- onEnter/onEnterBack：左图由靠中央 x=+70px、右图由靠中央 x=-70px 开始，clip-path 从内侧收拢状态展开到完整画面，duration 0.65～0.85 秒，ease 使用 cubic-bezier(0.16,1,0.3,1) 或 power3.out。
+- onLeave：左图 x=-120px、右图 x=+120px，opacity=0，scale=.97，duration 0.45～0.6 秒。
+- 进入、离开、快速反向滚动时要先 kill/overwrite 当前 tween，保证最终状态唯一。
+
+四、关键实现约束
+
+1. 首次开屏只在当前浏览器标签会话播放一次。用 sessionStorage 键 talentmatch-home-intro-v1；从其他导航返回主页不重复整段星轨，只执行 250～400ms 的轻入场。开发环境 React StrictMode 下不得播放两遍。
+2. 星轨推荐使用 Hero 内绝对定位的 SVG 层：一条渐变 path 做拖尾、一颗可用 CSS/SVG 绘制的四角或五角星做头部。可使用现有 GSAP MotionPathPlugin；不得引入大体积视频、GIF 或 Canvas 粒子引擎。
+3. 路径坐标以 Hero 容器为坐标系，通过 ResizeObserver 或 resize 刷新，不能依赖固定的 1440px 屏幕。
+4. 不要与现有 SplitText 对同一元素叠加互相冲突的 transform。中央“上下出现”应主要控制 title/desc/actions 三个父容器；如必须调整 SplitText，只能增加向后兼容的可选参数，不能破坏其他页面。
+5. 开屏层必须 aria-hidden=true、pointer-events:none，不进入 Tab 顺序。视觉隐藏不能造成标题被屏幕阅读器重复朗读。
+6. prefers-reduced-motion: reduce：不播放星轨、不做位移/缩放；正文立即可见，两侧图最多 150ms 淡入，加载骨架停止流动。
+7. 768px 以下当前两侧图片会隐藏：移动端不要强行塞入两张图。星轨可简化成 300ms 微光或直接跳过，标题必须在首屏立即可读。
+8. 页面失焦、组件卸载和路由切换时，必须 kill timeline、ScrollTrigger、ResizeObserver/requestAnimationFrame，不能留下全局监听和内存泄漏。
+9. 动画只使用 transform、opacity、clip-path、stroke-dashoffset 等可合成属性；避免持续改 top/left/width/height 引发布局抖动。只在动画期间使用 will-change，结束后清理。
+10. 加载骨架需设置最短显示策略：如果请求少于约 180ms，不出现明显闪烁；超过后显示，完成后 180～240ms 淡出。请求失败沿用现有内容/空态，不得无限 loading。
+
+五、双 Agent 串行流程
+
+阶段 0：总控先记录基线
+
+- 运行 git status --short。
+- 阅读 PlatformPages.tsx 中完整 HomePage、main.tsx 的样式引入顺序、SplitText.tsx、reference-theme.css 的 Hero 区域。
+- 运行 npm run lint 和 npm run build，记录修改前是否已有错误，不得把历史错误算成自己完成。
+
+阶段 1：Agent1 实现
+
+- 将 01-Agent1-实现提示词.txt 原文交给 Agent1。
+- Agent1 完成后必须提供：改动文件、设计说明、命令结果、仍存在风险、git diff --stat。
+- 未通过 lint/build 不得进入 Agent2，除非明确证明是修改前已有且与本任务无关。
+
+阶段 2：Agent2 独立验收与修复
+
+- Agent2 必须先阅读 Agent1 的交付说明和实际 diff，再执行 02-Agent2-验收修复提示词.txt。
+- Agent2 有权修复本任务范围内的问题，但不得重做视觉或扩大范围。
+- 验收至少覆盖：1440×900、1280×720、768×1024、390×844；正常动效和 reduced-motion；首次开屏、重复进入主页、上下快速滚动、页面切换返回、请求快速/慢速/失败。
+
+阶段 3：总控终验
+
+- npm run lint
+- npm run build
+- 检查无水平滚动条、无 console error、无重复开屏、无 DOM/ScrollTrigger 泄漏。
+- 查看最终 git diff，确认没有业务接口、文案和无关文件变化。
+- 最终报告按“结果 / 改动文件 / 动效时序 / 验证结果 / 已知限制”输出，不能只说“已完成”。
+
+六、完成定义（全部满足才算完成）
+
+- 首屏 1.8 秒内完成，星轨落点与“智能”文字在不同尺寸下仍对齐。
+- 标题上落、说明下浮、按钮淡入顺序明确且不拖沓。
+- 两侧图进入时由内向外展开，离开时向两侧滑出，返回可重复，快滚无错位。
+- 数据加载有稳定反馈，无闪烁、无限等待或假数据。
+- 键盘/按钮业务交互不被动画层遮挡。
+- reduced-motion 与移动端降级可用。
+- lint、build 通过，浏览器控制台无新增错误。
+

@@ -1,6 +1,7 @@
 """Competition Core Service — JSON file–based data access layer.
 
 无外部数据库依赖，纯基于 ``data/competition/*.json`` 的演示数据存储。
+所有 read-modify-write 操作均受 per-file 线程锁保护，避免并发覆盖丢失。
 """
 
 from __future__ import annotations
@@ -8,6 +9,7 @@ from __future__ import annotations
 import json
 import logging
 import os
+import threading
 import uuid
 from copy import deepcopy
 from datetime import datetime, timezone
@@ -27,6 +29,13 @@ _ROLES_PATH = _DATA_DIR / "roles.json"
 _REVIEWS_PATH = _DATA_DIR / "reviews.json"
 _PANORAMA_PATH = _DATA_DIR / "panorama.json"
 
+# ---------------------------------------------------------------------------
+# Per-file locks — protect full read-modify-write cycles
+# ---------------------------------------------------------------------------
+
+_discoveries_lock = threading.Lock()
+_reviews_lock = threading.Lock()
+
 
 # ---------------------------------------------------------------------------
 # 通用 JSON 读写
@@ -43,7 +52,11 @@ def _read_json(path: Path) -> Any:
 
 
 def _write_json(path: Path, data: Any) -> None:
-    """原子写入 JSON 文件（使用唯一临时文件 + os.replace）。"""
+    """原子写入 JSON 文件（使用唯一临时文件 + os.replace）。
+
+    注意：本函数只保证单次写入的原子性。调用方必须在外层持有对应的
+    per-file 锁来保护完整的 read-modify-write 临界区。
+    """
     tmp = path.with_suffix(f".{uuid.uuid4().hex[:8]}.tmp")
     try:
         with open(tmp, "w", encoding="utf-8") as fh:
@@ -72,6 +85,78 @@ def get_discovery(discovery_id: str) -> dict[str, Any] | None:
     return None
 
 
+def create_discovery(
+    name: str,
+    responsibilities: list[str],
+    required_skills: list[str],
+    bonus_skills: list[str],
+    application_scenarios: list[str],
+    source_note: str = "人工录入",
+    confidence: float = 0.5,
+    growth_rate: float = 0.05,
+) -> dict[str, Any] | None:
+    """创建一条新的岗位发现记录（人工录入）。
+
+    返回创建后的完整 DiscoveryItem。
+    如岗位名称已存在则返回 None 表示重复。
+
+    整个 read→check→append→write 在当前 per-file 锁内完成。
+    """
+    # ── 防御性校验（即使 Pydantic 已经校验过，service 层仍保护）──
+    normalized_name = name.strip()
+    if not normalized_name:
+        logger.error("create_discovery 收到空岗位名，拒绝创建")
+        return None
+    resp = [r.strip() for r in responsibilities if r.strip()]
+    if not resp:
+        logger.error("create_discovery 收到空职责列表，拒绝创建")
+        return None
+
+    with _discoveries_lock:
+        discoveries = _read_json(_DISCOVERIES_PATH)
+
+        # 去重检查：岗位名称（忽略大小写和首尾空白）
+        for item in discoveries:
+            if item.get("name", "").strip().lower() == normalized_name.lower():
+                logger.warning("发现记录名称重复: %s", normalized_name)
+                return None
+
+        now = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
+        discovery_id = f"disc-{uuid.uuid4().hex[:8]}"
+
+        def _make_skill(skill_name: str) -> dict[str, Any]:
+            return {"name": skill_name.strip(), "level": None, "source_ids": ["manual-entry"]}
+
+        def _make_bonus(skill_name: str) -> dict[str, Any]:
+            return {"name": skill_name.strip(), "source_ids": ["manual-entry"]}
+
+        req_skills = [_make_skill(s) for s in required_skills if s.strip()]
+        bon_skills = [_make_bonus(s) for s in bonus_skills if s.strip()]
+        scenarios = [s.strip() for s in application_scenarios if s.strip()]
+
+        discovery: dict[str, Any] = {
+            "id": discovery_id,
+            "name": normalized_name,
+            "confidence": confidence,
+            "growth_rate": growth_rate,
+            "source_count": 1,
+            "responsibilities": resp,
+            "required_skills": req_skills,
+            "bonus_skills": bon_skills,
+            "application_scenarios": scenarios,
+            "source_ids": ["manual-entry"],
+            "review_status": "pending",
+            "reviewed_at": None,
+            "source_note": source_note.strip(),
+            "created_at": now,
+        }
+
+        discoveries.append(discovery)
+        _write_json(_DISCOVERIES_PATH, discoveries)
+        logger.info("创建发现记录成功: %s (%s)", normalized_name, discovery_id)
+        return discovery
+
+
 # ---------------------------------------------------------------------------
 # 2) 审核记录
 # ---------------------------------------------------------------------------
@@ -92,10 +177,12 @@ def create_review(
     edits: dict[str, Any] | None = None,
     comment: str | None = None,
 ) -> dict[str, Any]:
-    """创建一条审核记录并更新对应发现记录的状态。"""
-    reviews = _read_json(_REVIEWS_PATH)
-    discoveries = _read_json(_DISCOVERIES_PATH)
+    """创建一条审核记录并更新对应发现记录的状态。
 
+    review 写入和 discovery 状态更新通过各自 per-file 锁串行化：
+    先锁定 reviews 写入，再在 discoveries 锁内更新状态。
+    两个操作都已受保护，但非跨文件事务（无两阶段提交）。
+    """
     now = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
     review_id = f"rev-{uuid.uuid4().hex[:8]}"
 
@@ -108,28 +195,33 @@ def create_review(
         "comment": comment,
         "created_at": now,
     }
-    reviews.append(review)
-    _write_json(_REVIEWS_PATH, reviews)
 
-    # 同步更新发现记录的审核状态
-    for item in discoveries:
-        if item.get("id") == discovery_id:
-            item["review_status"] = status
-            item["reviewed_at"] = now
+    # Step 1: 原子追加 review
+    with _reviews_lock:
+        reviews = _read_json(_REVIEWS_PATH)
+        reviews.append(review)
+        _write_json(_REVIEWS_PATH, reviews)
 
-            # 如审核时提供了编辑内容，则合并到发现记录
-            if edits:
-                if edits.get("name") is not None:
-                    item["name"] = edits["name"]
-                if edits.get("responsibilities") is not None:
-                    item["responsibilities"] = edits["responsibilities"]
-                if edits.get("required_skills") is not None:
-                    item["required_skills"] = edits["required_skills"]
-                if edits.get("bonus_skills") is not None:
-                    item["bonus_skills"] = edits["bonus_skills"]
+    # Step 2: 更新 discovery 状态
+    with _discoveries_lock:
+        discoveries = _read_json(_DISCOVERIES_PATH)
+        for item in discoveries:
+            if item.get("id") == discovery_id:
+                item["review_status"] = status
+                item["reviewed_at"] = now
 
-            _write_json(_DISCOVERIES_PATH, discoveries)
-            break
+                if edits:
+                    if edits.get("name") is not None:
+                        item["name"] = edits["name"]
+                    if edits.get("responsibilities") is not None:
+                        item["responsibilities"] = edits["responsibilities"]
+                    if edits.get("required_skills") is not None:
+                        item["required_skills"] = edits["required_skills"]
+                    if edits.get("bonus_skills") is not None:
+                        item["bonus_skills"] = edits["bonus_skills"]
+
+                _write_json(_DISCOVERIES_PATH, discoveries)
+                break
 
     return review
 
@@ -181,7 +273,6 @@ def diff_role_versions(
     if v_from is None or v_to is None:
         return None
 
-    # 构建技能名 → 技能项映射
     skills_from: dict[str, dict[str, Any]] = {
         s["name"]: s for s in v_from.get("skills", [])
     }
@@ -193,7 +284,6 @@ def diff_role_versions(
     removed = []
     modified = []
 
-    # 新增: v_to 有而 v_from 无
     for name, skill in skills_to.items():
         if name not in skills_from:
             added.append({
@@ -203,7 +293,6 @@ def diff_role_versions(
                 "reason": _build_reason("added", name, v_from, v_to),
             })
 
-    # 移除: v_from 有而 v_to 无
     for name, skill in skills_from.items():
         if name not in skills_to:
             removed.append({
@@ -213,11 +302,10 @@ def diff_role_versions(
                 "reason": _build_reason("removed", name, v_from, v_to),
             })
 
-    # 修改: 两者都有但等级不同（或 source_ids 变化）
     for name, skill_to in skills_to.items():
         skill_from = skills_from.get(name)
         if skill_from is None:
-            continue  # already handled as "added"
+            continue
         if skill_from.get("level") != skill_to.get("level") or \
            set(skill_from.get("source_ids", [])) != set(skill_to.get("source_ids", [])):
             modified.append({
@@ -278,7 +366,6 @@ def get_panorama(
     nodes: list[dict[str, Any]] = raw.get("nodes", [])
     edges: list[dict[str, Any]] = raw.get("edges", [])
 
-    # 过滤节点
     if stack or level or version:
         filtered_nodes: list[dict[str, Any]] = []
         for node in nodes:
@@ -291,7 +378,6 @@ def get_panorama(
             filtered_nodes.append(node)
         nodes = filtered_nodes
 
-        # 仅保留两端节点都在过滤结果中的边
         node_ids = {n["id"] for n in nodes}
         edges = [
             e for e in edges

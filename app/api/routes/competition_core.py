@@ -18,6 +18,7 @@ import logging
 from fastapi import APIRouter, HTTPException, Query
 
 from app.schemas.competition import (
+    CreateDiscoveryRequest,
     DiffSkillItem,
     DiscoveryItem,
     DiscoveryListResponse,
@@ -60,6 +61,38 @@ def list_discoveries(
     items.sort(key=lambda x: x.get("confidence", 0), reverse=True)
 
     return {"total": len(items), "items": items}
+
+
+@router.post(
+    "/discoveries",
+    response_model=DiscoveryItem,
+    status_code=201,
+)
+def create_discovery(body: CreateDiscoveryRequest) -> dict:
+    """手动创建新岗位发现记录。
+
+    Pydantic field_validator 确保 name 非空非空白、responsibilities 至少一条。
+    重复岗位名称返回 409。
+    创建成功后默认状态为 pending，来源标记为人工录入。
+    """
+    result = svc.create_discovery(
+        name=body.name,
+        responsibilities=body.responsibilities,
+        required_skills=body.required_skills,
+        bonus_skills=body.bonus_skills,
+        application_scenarios=body.application_scenarios,
+        source_note=body.source_note,
+        confidence=body.confidence,
+        growth_rate=body.growth_rate,
+    )
+
+    if result is None:
+        raise HTTPException(
+            status_code=409,
+            detail=f"岗位「{body.name}」已存在，请勿重复添加",
+        )
+
+    return result
 
 
 # =============================================================================

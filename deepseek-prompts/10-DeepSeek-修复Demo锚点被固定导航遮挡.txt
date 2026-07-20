@@ -1,0 +1,76 @@
+【角色】
+你是 DeepSeek 前端修复 Agent。请直接修改并实际验证，不要只给建议。
+
+【项目】
+E:\202676\talentmatch
+
+【已确认的问题】
+上一轮已把“登录说明 + 平台能力预览”移动到未登录主页的 Demo 岗位标题和 01 岗位卡之间。DOM 顺序及两列/单列布局正确，但真实浏览器终验发现：
+
+点击 Hero 的“浏览 Demo 岗位”后，现有代码执行：
+document.getElementById("demo-jobs")?.scrollIntoView({behavior:"smooth",block:"start"})
+
+#demo-jobs 最终停在视口 top≈0px，而全局 header 是 position:sticky; top:0; z-index:300。结果“Demo Preview / 精选 Demo 岗位（10 条）”被固定导航栏遮住：
+- 1440×900：标题上部被导航盖住。
+- 390×844：标题大面积被两行移动导航盖住，视觉问题更明显。
+
+【当前已通过的项目，不要破坏】
+1. #demo-jobs 的子元素顺序：
+   - home-section__head
+   - home-insights guest-demo-capability-preview
+   - priority-job-grid
+2. 平台能力预览只出现一次。
+3. 桌面端能力块为两列，移动端为单列。
+4. 能力块与岗位网格间距为 32px。
+5. 无横向溢出，控制台无错误。
+
+【修复目标】
+点击“浏览 Demo 岗位”平滑滚动完成后：
+1. Demo Preview 和“精选 Demo 岗位（10 条）”必须完整显示在 sticky header 下方。
+2. 标题与 header 底部保留约 12–20px 的视觉安全间距。
+3. 桌面端 1440×900、移动端 390×844 都正确。
+4. 不改变 Demo 内容块现有 DOM 顺序、32px 间距或卡片布局。
+
+【推荐最小实现】
+优先在 E:\202676\talentmatch\src\reference-theme.css 为 #demo-jobs（或专用 class）设置 scroll-margin-top，并根据 sticky header 在桌面/移动端的真实高度设置响应式值。
+
+参考方向（数值必须以实际渲染验收为准，不能盲抄）：
+- 桌面 header 最小高度约 76px，可使用约 92–100px 的 scroll-margin-top。
+- ≤900px / 移动端 header 会换成两行，需使用更大的 scroll-margin-top，例如约 104–116px。
+
+如果现有响应式 header 高度会动态变化，允许改为在按钮点击时读取 header.getBoundingClientRect().height，再用 window.scrollTo 计算目标位置；但优先采用 CSS scroll-margin-top 的小改动方案。禁止用固定 setTimeout 二次滚动掩盖问题。
+
+【修改范围】
+允许修改：
+1. E:\202676\talentmatch\src\reference-theme.css
+2. 仅当 CSS 方案无法可靠适配时，最小修改 E:\202676\talentmatch\src\PlatformPages.tsx 的“浏览 Demo 岗位”点击逻辑。
+
+【禁止事项】
+1. 不修改登录后主页。
+2. 不修改 Hero 环绕动画、登录能力块内容、Demo 数据和权限逻辑。
+3. 不重新移动或复制平台能力预览。
+4. 不安装依赖，不改后端，不覆盖无关改动，不执行 git reset/checkout。
+
+【真实验收要求】
+必须实际打开未登录主页验证，不能只做静态分析：
+
+1. 1440×900：点击“浏览 Demo 岗位”后，读取：
+   - header.getBoundingClientRect().bottom
+   - #demo-jobs.getBoundingClientRect().top
+   要求 demoTop >= headerBottom + 12，且标题完整可见。
+
+2. 390×844：重复相同验证，要求 demoTop >= headerBottom + 12；标题不能被两行导航覆盖。
+
+3. 两个视口都验证：
+   - document.documentElement.scrollWidth <= window.innerWidth
+   - 平台能力预览只有 1 份
+   - 能力块不与岗位卡重叠
+   - 控制台无新增 error/warn
+
+4. 执行：
+   - npm.cmd run lint
+   - npm.cmd run build
+
+【完成报告】
+输出修改文件、采用的滚动偏移方案、两个视口的 headerBottom/demoTop 实测值、视觉检查、横向溢出检查及 lint/build 结果。若没有真实浏览器环境，必须明确写“未完成真实验收”，不得直接判定通过。
+

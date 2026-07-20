@@ -138,5 +138,14 @@
     },
     "comment": "新增LangChain等Agent框架为进阶要求。AI Agent岗位需求增长迅速，建议纳入正式岗位库。",
     "created_at": "2026-07-01T14:00:00Z"
+  },
+  {
+    "review_id": "rev-bdb23131",
+    "discovery_id": "llm-ops-engineer",
+    "status": "approved",
+    "editor": "competition-ui",
+    "edits": null,
+    "comment": null,
+    "created_at": "2026-07-18T13:21:45Z"
   }
 ]

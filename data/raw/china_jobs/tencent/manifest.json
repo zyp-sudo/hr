@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-07-17T13:54:28+08:00",
+  "fetchedAt": "2026-07-19T12:22:34+08:00",
   "source": "Tencent Careers",
   "keywords": [
     "Java",
@@ -40,84 +40,84 @@
       "keyword": "__ALL__",
       "page": 1,
       "count": 20,
-      "sourceCount": 2320
+      "sourceCount": 2313
     },
     {
       "keyword": "__ALL__",
       "page": 2,
       "count": 20,
-      "sourceCount": 2320
+      "sourceCount": 2313
     },
     {
       "keyword": "__ALL__",
       "page": 3,
       "count": 20,
-      "sourceCount": 2320
+      "sourceCount": 2313
     },
     {
       "keyword": "__ALL__",
       "page": 4,
       "count": 20,
-      "sourceCount": 2320
+      "sourceCount": 2313
     },
     {
       "keyword": "__ALL__",
       "page": 5,
       "count": 20,
-      "sourceCount": 2320
+      "sourceCount": 2313
     },
     {
       "keyword": "__ALL__",
       "page": 6,
       "count": 20,
-      "sourceCount": 2320
+      "sourceCount": 2313
     },
     {
       "keyword": "__ALL__",
       "page": 7,
       "count": 20,
-      "sourceCount": 2320
+      "sourceCount": 2313
     },
     {
       "keyword": "__ALL__",
       "page": 8,
       "count": 20,
-      "sourceCount": 2320
+      "sourceCount": 2313
     },
     {
       "keyword": "__ALL__",
       "page": 9,
       "count": 20,
-      "sourceCount": 2320
+      "sourceCount": 2313
     },
     {
       "keyword": "__ALL__",
       "page": 10,
       "count": 20,
-      "sourceCount": 2320
+      "sourceCount": 2313
     },
     {
       "keyword": "__ALL__",
       "page": 11,
       "count": 20,
-      "sourceCount": 2320
+      "sourceCount": 2313
     },
     {
       "keyword": "__ALL__",
       "page": 12,
       "count": 20,
-      "sourceCount": 2320
+      "sourceCount": 2313
     },
     {
       "keyword": "__ALL__",
       "page": 13,
       "count": 20,
-      "sourceCount": 2320
+      "sourceCount": 2313
     }
   ],
   "detailStats": {
-    "fetched": 2,
-    "cached": 248,
+    "fetched": 0,
+    "cached": 250,
     "errors": 0
   },
   "records": 250,

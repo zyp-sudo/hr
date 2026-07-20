@@ -1,0 +1,138 @@
+DeepSeek 任务——主页环绕动效播放后永久保留
+
+项目目录：E:\202676\talentmatch
+
+一、最终目标
+
+主页 Hero 的元素流必须完成以下运动叙事：
+
+1. 元素流从页面右侧前景进入。
+2. 向“人岗匹配 / 智能 / 评估系统”中央标题收束。
+3. 到标题区域时切换到标题后景，从文字后面穿过。
+4. 从标题左侧重新切回前景。
+5. 沿标题下方回旋，形成包围标题的三根并行蓝紫/蓝青丝带。
+6. 入场动画结束后，包围效果必须永久保留在主页 Hero 中，不能淡出、不能删除、不能变成空白。
+
+“永久保留”的含义：只要用户仍停留在主页，最终三条轨迹、素材符号和粒子就一直存在；切换路由导致 HomePage 卸载时才正常 cleanup。效果随 Hero 一起滚动，不要做成 fixed 层覆盖后续内容。
+
+二、当前代码基础
+
+核心文件：
+
+- src/hooks/useHomeHeroMotion.ts
+- src/reference-theme.css
+- public/hero/orbit-elements（18 张用户素材）
+
+当前实现已有：
+
+- buildOrbitPaths：完整的右侧进入、标题后方穿越、左侧穿出及下方回旋路径。
+- buildOrbitFrontPaths：左侧穿出后的前景包围路径。
+- home-intro__layer--back：z-index 15。
+- hero-showcase__center：z-index 20。
+- home-intro__layer--front：z-index 30。
+- 9 个 home-intro__orbit-symbol。
+- 30 个 home-intro__orbit-dot。
+- settleOrbitElements()：用于动画结束后把符号、粒子均匀分布在路径上。
+- 动画每次进入/刷新主页都会播放，不再受 sessionStorage 限制。
+- lint/build 当前通过。
+
+不要推倒重写。先完整阅读真实代码和 git diff，再做最小修正。
+
+三、必须修正和确认的逻辑
+
+关键词：禁止消失
+
+- GSAP timeline 的 onComplete 中禁止执行 overlay.remove()。
+- 禁止把 overlayDivRef.current 设为 null，除非组件 cleanup/unmount。
+- 禁止在动画末尾把 orbitPaths、frontOrbitPaths、orbitSymbols、orbitDots 的 opacity 动画到 0。
+- leading star 和临时细拖尾可以在入场完成后隐藏；三条包围丝带、9 个素材符号、30 个粒子必须保留。
+- onComplete 给 overlay 增加 home-intro__overlay--settled 类。
+
+关键词：最终静态布局
+
+- 入场结束后调用 settleOrbitElements()。
+- 9 个符号沿三条完整路径均匀错开，不能全部堆在右侧终点。
+- 30 个粒子沿路径均匀分布，不能集中成三个点。
+- 处于路径进度约 0.18～0.48 的元素放入 backLayer，其他元素放入 frontLayer，保持“从文字后穿过再从左侧穿出”的层级关系。
+- 最终符号建议 opacity 0.45～0.65，最终粒子 opacity 0.20～0.45，不能压住标题和说明。
+- 最终状态不要继续运行无限 GSAP 动画，不要用 setInterval；保持静态可减少耗电。
+- 动画完成后清除 symbol/dot 的 will-change。
+
+关键词：轨迹常驻
+
+- backOrbitPaths 与 frontOrbitPaths 的 strokeDashoffset 最终必须为 0。
+- 不允许在 1.7 秒附近把路径 opacity 淡到 0。
+- 前景路径应比后景路径略亮，但标题文字必须始终可读。
+- 最终三根丝带保持接近的平行间距，不能互相乱穿。
+
+关键词：刷新和重复进入
+
+- 每次刷新主页都重新播放入场，然后进入常驻状态。
+- 从其他页面返回主页也重新播放。
+- React StrictMode 第一次试挂载必须在 cleanup 中移除，不允许同时存在两套 overlay。
+- 动画完成 5 秒后，页面仍应只有 1 个 overlay，而不是 0 个或多个。
+
+关键词：ResizeObserver
+
+- 窗口改变尺寸后更新 back/front SVG path。
+- 如果已经 settled，重新调用 settleOrbitElements(newOrbitDs)，让符号和粒子跟随新路径重新分布。
+- 不允许 resize 后符号留在旧坐标。
+
+关键词：交互和清理
+
+- overlay、frontLayer、backLayer 均保持 pointer-events:none。
+- 标题和按钮继续可点击、可选择、可通过键盘操作。
+- HomePage 卸载时才执行 overlay.remove()、ResizeObserver.disconnect()、ctx.revert()。
+- 不能留下重复 ScrollTrigger、事件监听器或动画节点。
+
+四、移动端和无障碍
+
+- <=768px 继续隐藏完整轨迹动画，避免标题拥挤；正文必须立即完整显示。
+- prefers-reduced-motion: reduce 下不播放轨迹动画，也不显示动态常驻层。
+- overlay 必须 aria-hidden=true，不得复制可访问标题。
+
+五、允许修改范围
+
+只允许修改：
+
+- src/hooks/useHomeHeroMotion.ts
+- src/reference-theme.css
+
+禁止修改 API、业务数据、中文文案、登录、路由、按钮功能和其他页面。禁止新增依赖。禁止 git reset、checkout、clean。
+
+六、浏览器验收（必须实际执行）
+
+1440×900：
+
+1. 刷新后立即确认 .home-intro__overlay 数量为 1。
+2. 观察右侧进入 → 标题后方 → 左侧穿出 → 下方回旋的完整过程。
+3. 动画完成后等待 5 秒，再确认：
+   - .home-intro__overlay 数量 === 1
+   - back layer 中存在 3 条后景轨迹
+   - front layer 中存在 3 条前景轨迹
+   - 9 个 symbol 仍可见且分散
+   - 30 个 dot 仍存在且分散
+4. 点击“添加新岗位”和“查看招聘趋势”，确认覆盖层不挡交互。
+5. 页面 documentElement.scrollWidth 不得大于 clientWidth。
+6. 控制台无新增 error/warning。
+
+再验证 1280×720、768×1024、390×844。768 和 390 应保持移动端降级，无横向溢出。
+
+命令验收：
+
+- npm run lint
+- npm run build
+- git diff --check
+
+七、完成报告格式
+
+1. 结论：通过 / 不通过。
+2. 修改文件和修改位置。
+3. onComplete 如何保留 overlay。
+4. settleOrbitElements 如何分布符号和粒子。
+5. 5 秒后 DOM 数量和可见性实测结果。
+6. 四种分辨率、按钮交互、控制台结果。
+7. lint/build/diff check 真实结果。
+
+禁止只做代码审查后声称通过；必须打开浏览器验证“动画结束后仍然存在”。
+

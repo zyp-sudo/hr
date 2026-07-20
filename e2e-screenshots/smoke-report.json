@@ -1,0 +1,115 @@
+{
+  "tag": "SMOKE-1784445047413",
+  "timestamp": "2026-07-19T07:11:03.578Z",
+  "passed": 19,
+  "failed": 0,
+  "shots": 4,
+  "checks": [
+    {
+      "type": "check",
+      "test": "Login 200",
+      "passed": true,
+      "detail": "HTTP 200"
+    },
+    {
+      "type": "check",
+      "test": "Token present",
+      "passed": true
+    },
+    {
+      "type": "check",
+      "test": "POST 201",
+      "passed": true,
+      "detail": "HTTP 201"
+    },
+    {
+      "type": "check",
+      "test": "review_status pending",
+      "passed": true
+    },
+    {
+      "type": "check",
+      "test": "source_ids manual-entry",
+      "passed": true
+    },
+    {
+      "type": "check",
+      "test": "ID generated",
+      "passed": true,
+      "detail": "disc-e0328922"
+    },
+    {
+      "type": "check",
+      "test": "source_note preserved",
+      "passed": true
+    },
+    {
+      "type": "check",
+      "test": "created_at present",
+      "passed": true
+    },
+    {
+      "type": "check",
+      "test": "GET via proxy succeeds",
+      "passed": true,
+      "detail": "HTTP 200"
+    },
+    {
+      "type": "check",
+      "test": "Record in GET list",
+      "passed": true,
+      "detail": "found 1"
+    },
+    {
+      "type": "check",
+      "test": "review_status pending",
+      "passed": true,
+      "detail": "pending"
+    },
+    {
+      "type": "check",
+      "test": "source_note correct",
+      "passed": true
+    },
+    {
+      "type": "check",
+      "test": "source_ids [manual-entry]",
+      "passed": true
+    },
+    {
+      "type": "check",
+      "test": "Record \"SMOKE-1784445047413\" visible in browser",
+      "passed": true,
+      "detail": "SMOKE-1784445047413"
+    },
+    {
+      "type": "check",
+      "test": "Record survives refresh",
+      "passed": true,
+      "detail": "found=true"
+    },
+    {
+      "type": "check",
+      "test": "Page renders at 390px",
+      "passed": true,
+      "detail": "body: 1033/390, html: 1033/390"
+    },
+    {
+      "type": "check",
+      "test": "Dialog fits viewport width",
+      "passed": true,
+      "detail": "width=342"
+    },
+    {
+      "type": "check",
+      "test": "Dialog scrollable",
+      "passed": true
+    },
+    {
+      "type": "check",
+      "test": "Review still works",
+      "passed": true,
+      "detail": "HTTP 201"
+    }
+  ]
+}

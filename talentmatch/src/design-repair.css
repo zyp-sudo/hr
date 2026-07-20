@@ -76,9 +76,9 @@ header {
   top: 0;
 }
 
+/* nav is now inside header as a single-row layout */
 nav {
-  position: sticky;
-  top: 72px;
+  /* sticky behavior managed by reference-theme.css */;
 }
 
 .page-heading {

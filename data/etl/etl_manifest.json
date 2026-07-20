@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-17T11:11:40+08:00",
+  "generated_at": "2026-07-19T12:24:13+08:00",
   "input_files": [
     "data\\collected_jobs.csv",
     "data\\collected_job_skills.csv",
@@ -12,9 +12,9 @@
     "data\\etl\\job_candidate_scores.csv",
     "data\\benchmarks\\field_coverage_report.json"
   ],
-  "unified_job_records": 55267,
-  "unified_skill_records": 69615,
-  "candidate_score_records": 50000,
+  "unified_job_records": 546,
+  "unified_skill_records": 1498,
+  "candidate_score_records": 1092,
   "registered_sources": 17,
   "registered_source_types": [
     "ats_public_api",
@@ -28,37 +28,34 @@
   "active_sources": [
     "baidu_careers",
     "huawei_careers",
-    "jobonline_public_employment_service",
     "meituan_careers",
-    "national_college_student_employment_service",
     "tencent_careers"
   ],
   "active_source_types": [
     "official_enterprise_api",
-    "official_enterprise_site",
-    "public_employment_service"
+    "official_enterprise_site"
   ],
   "category_counts": {
-    "ai_algorithm": 1921,
-    "frontend_client": 339,
-    "data_engineering": 987,
-    "product_operation": 2803,
-    "cloud_infra": 425,
-    "testing_quality": 1062,
-    "design": 1557,
-    "other": 267,
-    "backend_engineering": 45133,
-    "security": 773
+    "product_operation": 99,
+    "cloud_infra": 16,
+    "ai_algorithm": 194,
+    "data_engineering": 90,
+    "frontend_client": 23,
+    "security": 42,
+    "other": 20,
+    "testing_quality": 53,
+    "design": 8,
+    "backend_engineering": 1
   },
   "searchable_field_coverage": {
     "education": {
-      "non_null": 33891,
-      "total": 55267,
+      "non_null": 159,
+      "total": 546,
       "method": "explicit requirement-text extraction"
     },
     "salary": {
-      "non_null": 11246,
-      "total": 55267,
+      "non_null": 0,
+      "total": 546,
       "method": "explicit RMB monthly/annual range extraction; normalized to monthly RMB"
     }
   },

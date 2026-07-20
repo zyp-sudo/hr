@@ -1,0 +1,48 @@
+DeepSeek 简单任务——主页弧形粒子动画视觉微调
+
+项目：E:\202676\talentmatch
+
+核心动画已经完成，禁止重写：
+
+- src/hooks/useHomeHeroMotion.ts 已实现 3 条弧形轨迹、9 个素材符号、30 个运动粒子。
+- public/hero/orbit-elements 已包含用户提供的 18 张素材。
+- src/reference-theme.css 已包含轨迹、符号、粒子和移动端降级样式。
+- 首次动画约 1.55 秒后自动移除；sessionStorage、StrictMode、ScrollTrigger 和 cleanup 已处理。
+
+你只负责以下简单微调，不得扩大范围。
+
+关键词 1：视觉接近参考图
+
+- 参考目标：三条蓝紫/蓝青弧形流线围绕中央标题，弧线中带网络符号和细碎粒子。
+- 保持标题和按钮在最上层，任何轨迹不能影响点击。
+- 仅微调 stroke-width、opacity、drop-shadow、符号尺寸、粒子密度和颜色。
+- 避免纯霓虹风、过度模糊和大面积深色遮罩。
+
+关键词 2：素材融合
+
+- PNG 是白底，继续使用 mix-blend-mode:multiply 融入浅色 Hero。
+- 不允许把素材放大到模糊；长条符号建议 42～58px，小图标 16～28px。
+- 如果某张素材白边明显，只替换为 orbit-elements 中更合适的图片，不做复杂抠图。
+
+关键词 3：动画节奏
+
+- 弧线 0.08～1.05 秒绘制。
+- 素材与粒子错峰前进，不要全部挤在同一点。
+- 1.15 秒后开始消退，1.6 秒前彻底移除。
+- 不修改标题、说明、按钮以及两侧宣传图的既有时序。
+
+关键词 4：安全边界
+
+- 只允许修改 src/hooks/useHomeHeroMotion.ts 与 src/reference-theme.css。
+- 禁止新增依赖，禁止修改 API、文案、登录、路由和数据加载。
+- 禁止 git reset、checkout、clean，不得覆盖其他人的改动。
+- 768px 以下与 prefers-reduced-motion 下必须继续完全跳过轨迹动画。
+
+关键词 5：验收
+
+- npm run lint
+- npm run build
+- 浏览器检查 1440×900：标题清晰、按钮可点、无水平溢出、动画结束后 .home-intro__overlay 数量为 0。
+- 检查控制台无新增 error/warning。
+- 输出实际改动、前后差异、验证结果；禁止只说“已优化”。
+
