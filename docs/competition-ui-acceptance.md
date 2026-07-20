@@ -12,35 +12,35 @@
 ### 新增文件
 | 文件 | 说明 |
 |------|------|
-| `talentmatch/src/utils/competitionValidators.ts` | 7个响应类型守卫 + ValidationError 类 |
-| `talentmatch/src/components/CompetitionErrorBoundary.tsx` | React Error Boundary，防止单页面崩溃导致整个比赛中心空白 |
-| `talentmatch/src/components/CompetitionOverview.tsx` | 功能总览页面（含严格校验+每卡片独立错误状态） |
-| `talentmatch/src/components/CompetitionEvidence.tsx` | 证据与审计页面（含严格校验） |
-| `talentmatch/.env.local` | 前端环境：STORAGE_API_URL=http://127.0.0.1:8082 |
+| `talentmatch-frontend/src/utils/competitionValidators.ts` | 7个响应类型守卫 + ValidationError 类 |
+| `talentmatch-frontend/src/components/CompetitionErrorBoundary.tsx` | React Error Boundary，防止单页面崩溃导致整个比赛中心空白 |
+| `talentmatch-frontend/src/components/CompetitionOverview.tsx` | 功能总览页面（含严格校验+每卡片独立错误状态） |
+| `talentmatch-frontend/src/components/CompetitionEvidence.tsx` | 证据与审计页面（含严格校验） |
+| `talentmatch-frontend/.env.local` | 前端环境：STORAGE_API_URL=http://127.0.0.1:8082 |
 
 ### 修改文件
 | 文件 | 变更说明 |
 |------|----------|
-| `talentmatch/server.ts` | 修复代理路径前缀问题：`/api/platform/storage` → `/api/...` |
-| `talentmatch/src/PlatformPages.tsx` | CompetitionHubPage 导入 Error Boundary + 包裹每个 Tab |
-| `talentmatch/src/components/CompetitionDiscovery.tsx` | 重写：validateDiscoveriesResponse 校验 + 审核历史 + source_ids折叠 |
-| `talentmatch/src/components/CompetitionRoleEvolution.tsx` | 重写：validateRoleVersionsResponse + validateRoleDiffResponse 校验 |
-| `talentmatch/src/components/CompetitionPanorama.tsx` | 重写：validatePanoramaResponse 校验 + 非法边过滤 + layoutNodes防御 |
-| `talentmatch/src/components/CompetitionEvidence.tsx` | 重写：validateRagHealthResponse + validateRagAuditResponse + validateRagGenerateResponse |
-| `talentmatch/src/components/CompetitionOverview.tsx` | 重写：每卡片独立 API 调用 + 4种错误状态区分 |
-| `talentmatch/src/index.css` | 新增样式（已在上轮完成，本轮无额外CSS变更） |
+| `talentmatch-frontend/server.ts` | 修复代理路径前缀问题：`/api/platform/storage` → `/api/...` |
+| `talentmatch-frontend/src/PlatformPages.tsx` | CompetitionHubPage 导入 Error Boundary + 包裹每个 Tab |
+| `talentmatch-frontend/src/components/CompetitionDiscovery.tsx` | 重写：validateDiscoveriesResponse 校验 + 审核历史 + source_ids折叠 |
+| `talentmatch-frontend/src/components/CompetitionRoleEvolution.tsx` | 重写：validateRoleVersionsResponse + validateRoleDiffResponse 校验 |
+| `talentmatch-frontend/src/components/CompetitionPanorama.tsx` | 重写：validatePanoramaResponse 校验 + 非法边过滤 + layoutNodes防御 |
+| `talentmatch-frontend/src/components/CompetitionEvidence.tsx` | 重写：validateRagHealthResponse + validateRagAuditResponse + validateRagGenerateResponse |
+| `talentmatch-frontend/src/components/CompetitionOverview.tsx` | 重写：每卡片独立 API 调用 + 4种错误状态区分 |
+| `talentmatch-frontend/src/index.css` | 新增样式（已在上轮完成，本轮无额外CSS变更） |
 | `docs/competition-ui-acceptance.md` | 更新验收报告 |
 
 ### 未修改
-- `talentmatch/src/App.tsx` — 本轮无额外变更
-- `talentmatch/src/types.ts` — 类型定义保持不变
+- `talentmatch-frontend/src/App.tsx` — 本轮无额外变更
+- `talentmatch-frontend/src/types.ts` — 类型定义保持不变
 - 所有 `app/` `backend/` `data/` `tests/` — 零改动
 
 ---
 
 ## 二、新增响应类型守卫
 
-文件：`talentmatch/src/utils/competitionValidators.ts`
+文件：`talentmatch-frontend/src/utils/competitionValidators.ts`
 
 | 守卫函数 | 校验的端点 | 关键校验项 |
 |----------|-----------|-----------|
@@ -60,7 +60,7 @@
 
 ## 三、Error Boundary 行为
 
-文件：`talentmatch/src/components/CompetitionErrorBoundary.tsx`
+文件：`talentmatch-frontend/src/components/CompetitionErrorBoundary.tsx`
 
 - 包裹 CompetitionHubPage 中当前 Tab 的内容
 - 捕获子组件渲染错误（包括 `.length` on undefined 等运行时错误）
@@ -140,7 +140,7 @@
 
 ```bash
 # 在前端 terminal 中 Ctrl+C 停止当前前端进程，然后：
-cd E:\202676\talentmatch
+cd E:\202676\talentmatch-frontend
 npm.cmd run dev
 ```
 

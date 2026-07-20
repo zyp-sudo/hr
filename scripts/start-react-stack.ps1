@@ -1,10 +1,10 @@
 $ErrorActionPreference = "Stop"
 
 $ProjectRoot = Resolve-Path (Join-Path $PSScriptRoot "..")
-$FrontendDir = Join-Path $ProjectRoot "frontend-react"
+$FrontendDir = Join-Path $ProjectRoot "_archived-frontends/frontend-react"
 
 if (-not (Test-Path (Join-Path $FrontendDir "node_modules"))) {
-  Write-Host "frontend-react/node_modules not found. Run npm install in frontend-react first." -ForegroundColor Yellow
+  Write-Host "_archived-frontends/frontend-react/node_modules not found. Run npm install in _archived-frontends/frontend-react first." -ForegroundColor Yellow
   exit 1
 }
 

@@ -2,10 +2,10 @@
 
 ## 唯一正式前端
 
-正式入口是 `talentmatch/`（React 19 + TypeScript + Vite + Express 网关），默认地址为
+正式入口是 `talentmatch-frontend/`（React 19 + TypeScript + Vite + Express 网关），默认地址为
 `http://localhost:3000`。完整启动说明见仓库根目录 [`README.md`](../README.md)。
 
-`frontend/app.py`（Python Web）、`frontend-react/` 与 `frontend-vue/` 是历史/归档实现，
+`_archived-frontends/frontend/app.py`（Python Web）、`_archived-frontends/frontend-react/` 与 `_archived-frontends/frontend-vue/` 是历史/归档实现，
 保留用于设计参考，不参与构建、测试、部署或验收。三者的数据 Mock 不能作为正式功能证据。
 
 ## 当前真实能力

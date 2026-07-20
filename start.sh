@@ -26,10 +26,10 @@ JAVA_PID=$!
 python -m uvicorn app.main:app --host 0.0.0.0 --port 8080 &
 API_PID=$!
 
-if [[ ! -d talentmatch/node_modules ]]; then
-  (cd talentmatch && npm ci)
+if [[ ! -d talentmatch-frontend/node_modules ]]; then
+  (cd talentmatch-frontend && npm ci)
 fi
-(cd talentmatch && PORT=3000 npm run dev) &
+(cd talentmatch-frontend && PORT=3000 npm run dev) &
 FRONTEND_PID=$!
 
 cleanup() {

@@ -31,7 +31,7 @@ src/
 ## 启动
 
 ```powershell
-cd frontend-react
+cd _archived-frontends/frontend-react
 npm install
 npm run dev
 ```

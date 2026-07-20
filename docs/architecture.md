@@ -5,7 +5,7 @@
 
 ## 技术约束与目标技术栈
 
-当前版本优先保证本地可运行、接口清晰、业务闭环完整。正式前端为 `talentmatch/`
+当前版本优先保证本地可运行、接口清晰、业务闭环完整。正式前端为 `talentmatch-frontend/`
 （React 19 + TypeScript + Vite + Express 网关，端口 `3000`）；
 运行时采用 FastAPI 公开 API、Java 分析服务、MySQL、Elasticsearch 和 Neo4j。CSV/JSON
 是采集与快照同步介质。其余技术是后续路线：
@@ -19,20 +19,20 @@
 | 图谱可视化 | AntV G6 / ECharts Graph | G6 支持力导向布局、节点聚类和交互探索；ECharts Graph 用于轻量展示 |
 | RAG 框架 | LangChain + ChromaDB + DeepSeek API | LangChain 编排 DeepSeek 调用链，ChromaDB 做向量存储，实现检索增强生成 |
 | 后端框架 | FastAPI / Flask | FastAPI 提供高性能 API 和 OpenAPI 文档；Flask 可作为轻量替代 |
-| 前端 | React 19 + TypeScript + Vite | 当前唯一正式交付前端（`talentmatch/`）；旧 Python Web（`frontend/app.py`）、`frontend-react/` 和 `frontend-vue/` 已归档 |
+| 前端 | React 19 + TypeScript + Vite | 当前唯一正式交付前端（`talentmatch-frontend/`）；旧 Python Web（`_archived-frontends/frontend/app.py`）、`_archived-frontends/frontend-react/` 和 `_archived-frontends/frontend-vue/` 已归档 |
 | 数据分析 | Pandas + NetworkX | Pandas 做清洗统计，NetworkX 做中心性、社区发现、路径分析等图算法 |
 | 简历解析 | PaddleOCR / Tesseract + PDF/Word 本地解析 + 自定义 NER | 本地 OCR 处理图片和扫描版 PDF，PDF/Word 本地解析处理文本型简历，自定义 NER 抽取结构化字段 |
 
 阶段定位：
 
-- 当前原型：React + TypeScript 前端（`talentmatch/`）+ FastAPI + Java HTTP Server，已完成多源采集、ETL、质量评分、自动知识图谱和历史时序趋势。
+- 当前原型：React + TypeScript 前端（`talentmatch-frontend/`）+ FastAPI + Java HTTP Server，已完成多源采集、ETL、质量评分、自动知识图谱和历史时序趋势。
 - 运行时：ETL/KG 快照增量同步到 MySQL、Elasticsearch、Neo4j；公开 API 查询三类数据库。
 
 ## 分层架构
 
 ```text
 ┌─────────────────────────────────────────────────────┐
-│  talentmatch (React + TypeScript + Express, :3000)  │
+│  talentmatch-frontend (React + TypeScript + Express, :3000)  │
 │  仪表盘 · 图谱可视化 · 匹配诊断 · 演化趋势          │
 └─────────────────────┬───────────────────────────────┘
                       │ HTTP JSON
@@ -141,7 +141,7 @@ CSV 作为采集与 ETL 的可审计交换层；运行时岗位查询使用 MySQ
 
 4. 服务与前端升级：
    - 后端迁移到 FastAPI 或 Flask，保留当前 API 语义。
-   - 前端已迁移到 React + TypeScript（`talentmatch/`）。
+   - 前端已迁移到 React + TypeScript（`talentmatch-frontend/`）。
    - 图谱页面改用 AntV G6 或 ECharts Graph。
 
 5. RAG 与简历解析：

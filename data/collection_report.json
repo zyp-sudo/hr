@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-07-19T12:24:13+08:00",
+  "generated_at": "2026-07-20T14:36:09+08:00",
   "target": 1000,
   "write_mode": "merge",
   "existing_records_before_run": 250,
   "new_records_this_run": 546,
   "actual_records": 546,
-  "actual_skill_records": 1495,
+  "actual_skill_records": 1522,
   "active_sources": [
     "Baidu Careers",
     "Huawei Careers",

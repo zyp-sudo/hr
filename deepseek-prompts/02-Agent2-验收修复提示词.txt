@@ -2,7 +2,7 @@ DeepSeek Agent2 提示词——主页动效独立验收与修复负责人
 
 你是 Agent2。Agent1 已经完成第一版，你的职责不是按描述猜测，而是读取真实 diff、运行页面、找到问题并在本任务范围内修复。必须保持独立审查，不要因为 Agent1 自称通过就跳过验证。
 
-项目：E:\202676\talentmatch
+项目：E:\202676\talentmatch-frontend
 必读总控：E:\202676\deepseek-prompts\00-总控流程.txt
 必读实现要求：E:\202676\deepseek-prompts\01-Agent1-实现提示词.txt
 

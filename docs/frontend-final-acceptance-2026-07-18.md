@@ -8,7 +8,7 @@
 
 ## 一、CSS 引用检查结果
 
-使用 `rg` 在 `talentmatch/src` 下全量搜索以下类名在 `.tsx/.ts/.jsx/.js/.html` 中的引用：
+使用 `rg` 在 `talentmatch-frontend/src` 下全量搜索以下类名在 `.tsx/.ts/.jsx/.js/.html` 中的引用：
 
 | CSS 类 | 引用位置 | 结论 |
 |--------|----------|------|
@@ -129,8 +129,8 @@
 
 | 验证项 | 命令 | 结果 |
 |--------|------|------|
-| CSS 类残留检查 | `rg -n "comp-panorama\|comp-overview\|comp-hub__tabs--five" talentmatch/src` | **零匹配** — 全部清除 |
-| `.rcg__*` 保留确认 | `rg -n "\.rcg__" talentmatch/src/index.css` | **43 条匹配** — 全部保留 |
+| CSS 类残留检查 | `rg -n "comp-panorama\|comp-overview\|comp-hub__tabs--five" talentmatch-frontend/src` | **零匹配** — 全部清除 |
+| `.rcg__*` 保留确认 | `rg -n "\.rcg__" talentmatch-frontend/src/index.css` | **43 条匹配** — 全部保留 |
 | TypeScript 类型检查 | `npm.cmd run lint` (tsc --noEmit) | **通过** — 零错误 |
 | 生产构建 | `npm.cmd run build` (Vite + esbuild) | **通过** — CSS 128.86KB → gzip 23.59KB |
 | 空白符检查 | `git diff --check` | **通过** — 无空白符错误（仅 Windows CRLF 提示） |

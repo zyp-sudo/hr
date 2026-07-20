@@ -30,7 +30,7 @@
 
 **命令：**
 ```bash
-cd talentmatch && npm.cmd run lint
+cd talentmatch-frontend && npm.cmd run lint
 ```
 
 **执行内容：** `tsc --noEmit`（TypeScript 类型检查）
@@ -40,7 +40,7 @@ cd talentmatch && npm.cmd run lint
 
 **复现方式：**
 ```powershell
-Set-Location talentmatch; npm.cmd run lint
+Set-Location talentmatch-frontend; npm.cmd run lint
 ```
 
 ---
@@ -49,7 +49,7 @@ Set-Location talentmatch; npm.cmd run lint
 
 **命令：**
 ```bash
-cd talentmatch && npm.cmd run build
+cd talentmatch-frontend && npm.cmd run build
 ```
 
 **执行内容：** `vite build && esbuild server.ts --bundle --platform=node --format=cjs --packages=external --sourcemap --outfile=dist/server.cjs`
@@ -74,7 +74,7 @@ cd talentmatch && npm.cmd run build
 
 **复现方式：**
 ```powershell
-Set-Location talentmatch; npm.cmd run build
+Set-Location talentmatch-frontend; npm.cmd run build
 ```
 
 ---
@@ -229,8 +229,8 @@ docker compose ps
 | `scripts/start-backend.ps1` | 单独启动后端 (Java + Python) | ✅ 正常 |
 | `scripts/start-talentmatch.ps1` | 单独启动 TalentMatch 前端 | ✅ 正常 |
 | `scripts/start-frontend.ps1` | 遗留前端启动器 (Flask) | ✅ 正常 |
-| `scripts/start-react-frontend.ps1` | React 前端启动器 (frontend-react) | ✅ 正常 |
-| `scripts/start-react-stack.ps1` | React 全栈启动器 (frontend-react) | ✅ 正常 |
+| `scripts/start-react-frontend.ps1` | React 前端启动器 (_archived-frontends/frontend-react) | ✅ 正常 |
+| `scripts/start-react-stack.ps1` | React 全栈启动器 (_archived-frontends/frontend-react) | ✅ 正常 |
 | `scripts/init-storage.ps1` | 存储初始化 | ✅ 正常 |
 | `scripts/local-env.ps1` | 本地环境变量 (gitignored) | ✅ 正常 |
 
@@ -265,10 +265,10 @@ docker compose ps
 # 检查所有脚本引用的路径是否存在
 test -f scripts/bootstrap_storage.py   # ✅
 test -f scripts/sync_mysql_to_es.py    # ✅
-test -f frontend/app.py                # ✅ (遗留前端)
+test -f _archived-frontends/frontend/app.py                # ✅ (遗留前端)
 test -d frontend/                       # ✅
-test -d frontend-react/                 # ✅
-test -d talentmatch/                    # ✅
+test -d _archived-frontends/frontend-react/                 # ✅
+test -d talentmatch-frontend/                    # ✅
 test -d backend/                        # ✅
 test -d app/                            # ✅
 test -d backend/runtime-out             # ✅
@@ -325,7 +325,7 @@ Remove-Item $env:TEMP\java-check -Recurse -Force
 python -c "from app.main import app; print(app.title)"
 
 # 5. 验证 TalentMatch 类型检查和构建
-Set-Location talentmatch
+Set-Location talentmatch-frontend
 npm.cmd run lint                  # tsc --noEmit
 npm.cmd run build                 # vite build + esbuild
 # 确认: dir dist\assets\

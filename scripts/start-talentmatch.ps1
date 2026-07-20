@@ -1,7 +1,7 @@
 $ErrorActionPreference = "Stop"
 
 $ProjectRoot = (Resolve-Path (Join-Path $PSScriptRoot "..")).Path
-$FrontendDir = Join-Path $ProjectRoot "talentmatch"
+$FrontendDir = Join-Path $ProjectRoot "talentmatch-frontend"
 
 if (-not (Test-Path (Join-Path $FrontendDir "package.json"))) {
   throw "TalentMatch project not found: $FrontendDir"

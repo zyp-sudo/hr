@@ -6,7 +6,7 @@ try {
     Where-Object {
       $_.CommandLine -like '*com.xh202621.App*' -or
       $_.CommandLine -like '*uvicorn app.main:app*' -or
-      $_.CommandLine -like '*frontend/app.py*' -or
+      $_.CommandLine -like '*_archived-frontends/frontend/app.py*' -or
       $_.CommandLine -like '*frontend\app.py*' -or
       $_.CommandLine -like '*talentmatch*server.ts*' -or
       $_.CommandLine -like '*talentmatch*server.cjs*'

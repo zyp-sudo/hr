@@ -2,7 +2,7 @@
 必须等待 Agent1 完成后再运行。你是 DeepSeek Agent2，负责独立终验；发现问题时直接做最小修复，然后重新完整验证。不要只写审查报告。
 
 【项目位置】
-E:\202676\talentmatch
+E:\202676\talentmatch-frontend
 
 【任务背景】
 Agent1 已负责把未登录主页的 Hero 视觉、出现动效、整页前景环绕和加载反馈与登录后主页同步，同时保留游客权限边界。你必须基于最终代码与实际页面验证，不要相信 Agent1 的自述。
@@ -30,7 +30,7 @@ Agent1 已负责把未登录主页的 Hero 视觉、出现动效、整页前景�
 3. cleanup 必须完整，overlay 必须 pointer-events:none。
 
 【强制命令】
-在 E:\202676\talentmatch 执行：
+在 E:\202676\talentmatch-frontend 执行：
 1. npm.cmd run lint
 2. npm.cmd run build
 

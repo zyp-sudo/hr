@@ -31,7 +31,7 @@ logs/
 *.sqlite-shm
 *.sqlite-wal
 data/hr_state.json
-talentmatch/data/
+talentmatch-frontend/data/
 
 # Generated builds, exports and local scratch projects
 out/
@@ -59,4 +59,4 @@ data/etl/unified_jobs.csv
 # Keep shareable environment templates, never real credentials.
 .env.*
 !.env.example
-!talentmatch/.env.example
+!talentmatch-frontend/.env.example

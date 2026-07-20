@@ -2,7 +2,7 @@
 你是 DeepSeek Agent1，资深 React / TypeScript / GSAP 前端工程师。你负责直接修改项目代码，不只给建议。
 
 【项目位置】
-E:\202676\talentmatch
+E:\202676\talentmatch-frontend
 
 【本轮目标】
 完成“未登录（游客态）主页”的视觉设计同步：该同步的视觉、动效、加载反馈与响应式行为要和登录后主页一致；游客数据、登录入口和权限限制必须保持游客态，绝不能把登录后的业务操作直接开放出来。
@@ -10,11 +10,11 @@ E:\202676\talentmatch
 当前工作区可能已经存在一版未完成的登录前 Hero 同步骨架。先逐行检查现状，在现有实现上修正和收尾；不要回滚、覆盖或格式化与本任务无关的用户改动。
 
 【先检查这些文件】
-1. E:\202676\talentmatch\src\PlatformPages.tsx
-2. E:\202676\talentmatch\src\hooks\useHomeHeroMotion.ts
-3. E:\202676\talentmatch\src\reference-theme.css
-4. E:\202676\talentmatch\src\components\SplitText.tsx
-5. E:\202676\talentmatch\public\hero\orbit-elements\
+1. E:\202676\talentmatch-frontend\src\PlatformPages.tsx
+2. E:\202676\talentmatch-frontend\src\hooks\useHomeHeroMotion.ts
+3. E:\202676\talentmatch-frontend\src\reference-theme.css
+4. E:\202676\talentmatch-frontend\src\components\SplitText.tsx
+5. E:\202676\talentmatch-frontend\public\hero\orbit-elements\
 
 【必须实现】
 
@@ -69,7 +69,7 @@ E:\202676\talentmatch
 5. 如果当前代码已有初步同步实现，要审查它是否满足以上条件并直接修正，不要重复插入相同结构。
 
 【强制验证】
-在 E:\202676\talentmatch 执行：
+在 E:\202676\talentmatch-frontend 执行：
 1. npm.cmd run lint
 2. npm.cmd run build
 3. 实际打开未登录主页做桌面端与移动端检查。

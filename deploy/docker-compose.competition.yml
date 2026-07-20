@@ -194,7 +194,7 @@ services:
 
   web:
     build:
-      context: ../talentmatch
+      context: ../talentmatch-frontend
       dockerfile: ../deploy/Dockerfile.web
     image: xh202621/web-frontend:competition
     container_name: xh-comp-web-frontend

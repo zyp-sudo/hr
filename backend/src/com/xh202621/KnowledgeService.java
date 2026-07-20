@@ -856,7 +856,7 @@ public class KnowledgeService {
                         map(
                                 "name", "Web/API",
                                 "target", "FastAPI + Java 分析服务 + React + TypeScript",
-                                "current", "正式前端为 talentmatch/；frontend/app.py、frontend-react/、frontend-vue/ 已归档",
+                                "current", "正式前端为 talentmatch-frontend/；_archived-frontends/frontend/app.py、_archived-frontends/frontend-react/、_archived-frontends/frontend-vue/ 已归档",
                                 "status", "ready",
                                 "records", 0,
                                 "outputs", List.of("/api/architecture-summary", "/api/etl-summary", "/api/kg-summary", "/?page=architecture")

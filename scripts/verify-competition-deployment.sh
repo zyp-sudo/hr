@@ -93,8 +93,8 @@ else
     fail "missing backend/src/" "Java Dockerfile needs this"
 fi
 
-if [ -d "talentmatch" ] && [ -f "talentmatch/package.json" ]; then
-    pass "talentmatch/ ready (Web build)"
+if [ -d "talentmatch-frontend" ] && [ -f "talentmatch-frontend/package.json" ]; then
+    pass "talentmatch-frontend/ ready (Web build)"
 else
     fail "missing talentmatch source" "Web Dockerfile needs this"
 fi

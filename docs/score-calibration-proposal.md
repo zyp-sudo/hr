@@ -7,16 +7,16 @@
 ### 路径追踪
 
 ```
-React 前端 (talentmatch/App.tsx:67)
+React 前端 (talentmatch-frontend/App.tsx:67)
   → POST /api/evaluate {jobId, jobTitle, resumeText, candidateName}
-    → talentmatch/server.ts:195  Express /api/evaluate handler
+    → talentmatch-frontend/server.ts:195  Express /api/evaluate handler
       ├── 无 AI key → fallbackAssessment() → 基准分 78
       └── 有 AI key → LLM (DeepSeek/Gemini) → 无校准 prompt → 同样虚高
 ```
 
 ### 🐛 Bug #1：硬编码 78 分基准（最直接的原因）
 
-**文件**：`talentmatch/server.ts:85-89`
+**文件**：`talentmatch-frontend/server.ts:85-89`
 
 ```typescript
 function fallbackAssessment(job, resumeText) {
@@ -37,7 +37,7 @@ function fallbackAssessment(job, resumeText) {
 
 ### 🐛 Bug #2：LLM prompt 无校准锚点
 
-**文件**：`talentmatch/server.ts:207`
+**文件**：`talentmatch-frontend/server.ts:207`
 
 ```
 岗位要求：${job.requirements.join("；")}\n简历：${resumeText}
@@ -60,7 +60,7 @@ System prompt 只说了"Ground every finding in the provided context"，但：
 
 ### 方案 A：修复 fallback 函数（立即生效，无 AI 依赖）
 
-**文件**：`talentmatch/server.ts`
+**文件**：`talentmatch-frontend/server.ts`
 
 ```typescript
 function fallbackAssessment(job: typeof jobs[number], resumeText: string) {
@@ -127,7 +127,7 @@ function fallbackAssessment(job: typeof jobs[number], resumeText: string) {
 
 ### 方案 B：校准 LLM prompt（AI API 启用时）
 
-**文件**：`talentmatch/server.ts:207`（非 Google provider）
+**文件**：`talentmatch-frontend/server.ts:207`（非 Google provider）
 
 改前：
 ```

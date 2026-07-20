@@ -6,7 +6,7 @@ DeepSeek Agent2 提示词——招聘趋势独立验收与修复负责人
 【运行顺序】
 必须等待 Agent1 完成并提供交付报告后再执行。你是独立验收负责人，不相信自述，只相信当前代码、实际页面、控制台和命令结果。发现本任务范围内的问题时直接做最小修复，然后重新完整验证。
 
-项目：E:\202676\talentmatch
+项目：E:\202676\talentmatch-frontend
 总控要求：E:\202676\deepseek-prompts\11-招聘趋势页面改造-总控提示词.txt
 
 【你的职位】
@@ -49,7 +49,7 @@ DeepSeek Agent2 提示词——招聘趋势独立验收与修复负责人
 - 禁止新增依赖，禁止 git reset / checkout / clean，禁止提交和推送。
 
 【强制命令】
-在 E:\202676\talentmatch 执行：
+在 E:\202676\talentmatch-frontend 执行：
 1. npm.cmd run lint
 2. npm.cmd run build
 

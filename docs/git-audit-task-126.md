@@ -45,25 +45,25 @@
 | 文件 | 状态 | 说明 |
 |------|------|------|
 | `backend/src/com/xh202621/App.java` | M | 前端 URL 从 `:8501` 更新为 `:3000` |
-| `backend/src/com/xh202621/KnowledgeService.java` | M | 技术栈描述更新为 talentmatch/ React |
+| `backend/src/com/xh202621/KnowledgeService.java` | M | 技术栈描述更新为 talentmatch-frontend/ React |
 
 #### A3. TalentMatch 前端
 
 | 文件 | 状态 | 说明 |
 |------|------|------|
-| `talentmatch/server.ts` | M | Express 代理路径净化：移除 `/api/platform/storage` 前缀 |
-| `talentmatch/src/App.tsx` | M | 一级导航重构、人岗匹配画布、公司智能体集成、FAB 简历上传 |
-| `talentmatch/src/PlatformPages.tsx` | M | 岗位管理页 Hub 布局、CapabilityPage、各子页面路由 |
-| `talentmatch/src/index.css` | M | +2317 行：Competition 组件、RCG 图谱、证据页、公司智能体、响应式 |
-| `talentmatch/src/types.ts` | M | +155 行：Competition / CompanyAgent TypeScript 类型定义 |
-| `talentmatch/src/components/CompanyAgentPanel.tsx` | ?? | 公司智能体评分面板 |
-| `talentmatch/src/components/CompetitionDiscovery.tsx` | ?? | 岗位发现卡片列表 + 详情 + 审核 |
-| `talentmatch/src/components/CompetitionErrorBoundary.tsx` | ?? | Competition 错误边界 + 返回首页 |
-| `talentmatch/src/components/CompetitionEvidence.tsx` | ?? | RAG 证据生成、声明验证、审计 |
-| `talentmatch/src/components/CompetitionRoleEvolution.tsx` | ?? | 角色能力版本演化 + Diff 对比 |
-| `talentmatch/src/components/RoleCapabilityGraph.tsx` | ?? | 岗位能力图谱（SVG 力导向布局 + 筛选 + 键盘可访问） |
-| `talentmatch/src/utils/companyAgent.ts` | ?? | 公司智能体前端状态机 + API 封装 |
-| `talentmatch/src/utils/competitionValidators.ts` | ?? | Panorama 响应校验 + 类型 guard |
+| `talentmatch-frontend/server.ts` | M | Express 代理路径净化：移除 `/api/platform/storage` 前缀 |
+| `talentmatch-frontend/src/App.tsx` | M | 一级导航重构、人岗匹配画布、公司智能体集成、FAB 简历上传 |
+| `talentmatch-frontend/src/PlatformPages.tsx` | M | 岗位管理页 Hub 布局、CapabilityPage、各子页面路由 |
+| `talentmatch-frontend/src/index.css` | M | +2317 行：Competition 组件、RCG 图谱、证据页、公司智能体、响应式 |
+| `talentmatch-frontend/src/types.ts` | M | +155 行：Competition / CompanyAgent TypeScript 类型定义 |
+| `talentmatch-frontend/src/components/CompanyAgentPanel.tsx` | ?? | 公司智能体评分面板 |
+| `talentmatch-frontend/src/components/CompetitionDiscovery.tsx` | ?? | 岗位发现卡片列表 + 详情 + 审核 |
+| `talentmatch-frontend/src/components/CompetitionErrorBoundary.tsx` | ?? | Competition 错误边界 + 返回首页 |
+| `talentmatch-frontend/src/components/CompetitionEvidence.tsx` | ?? | RAG 证据生成、声明验证、审计 |
+| `talentmatch-frontend/src/components/CompetitionRoleEvolution.tsx` | ?? | 角色能力版本演化 + Diff 对比 |
+| `talentmatch-frontend/src/components/RoleCapabilityGraph.tsx` | ?? | 岗位能力图谱（SVG 力导向布局 + 筛选 + 键盘可访问） |
+| `talentmatch-frontend/src/utils/companyAgent.ts` | ?? | 公司智能体前端状态机 + API 封装 |
+| `talentmatch-frontend/src/utils/competitionValidators.ts` | ?? | Panorama 响应校验 + 类型 guard |
 
 ### B. 自动化测试
 
@@ -104,7 +104,7 @@
 
 | 文件 | 状态 | 说明 |
 |------|------|------|
-| `PROJECT_README.md` | M | 前端入口统一为 talentmatch/ |
+| `PROJECT_README.md` | M | 前端入口统一为 talentmatch-frontend/ |
 | `SCRIPT_README.md` | M | 脚本说明更新 |
 | `docs/architecture.md` | M | 架构更新为 React + TypeScript 前端 |
 | `docs/legacy-readme.md` | M | 历史说明 |
@@ -117,8 +117,8 @@
 | `docs/delivery-verification.md` | ?? | 交付验证记录 |
 | `docs/frontend-final-acceptance-2026-07-18.md` | ?? | 最终前端验收报告（任务 123-125） |
 | `docs/project-completion-audit.md` | ?? | 项目完成审计 |
-| `frontend-react/ARCHIVED.md` | M | 归档标记 |
-| `frontend-vue/ARCHIVED.md` | M | 归档标记 |
+| `_archived-frontends/frontend-react/ARCHIVED.md` | M | 归档标记 |
+| `_archived-frontends/frontend-vue/ARCHIVED.md` | M | 归档标记 |
 | `competition-delivery/` * (11 文件) | ?? | 竞赛交付物：设计方案、架构、测试方案、演示脚本等 |
 
 ### E. 正式数据资产
@@ -200,7 +200,7 @@ Utils 引用：
 
 - `CompetitionPanorama` — 源代码中 **零引用**（已确认删除的 CSS 即其残留）
 - `CompetitionOverview` — 源代码中 **零引用**
-- 上述两个 .tsx 文件在 `talentmatch/src/components/` 下已不存在 ✅
+- 上述两个 .tsx 文件在 `talentmatch-frontend/src/components/` 下已不存在 ✅
 
 ### 3.5 测试-实现对应
 
@@ -307,7 +307,7 @@ python -m pytest tests/test_competition_core.py tests/test_competition_rag.py te
 
 **建议消息**:
 ```
-chore(java): update frontend URL and stack description to talentmatch/
+chore(java): update frontend URL and stack description to talentmatch-frontend/
 ```
 
 **精确文件清单**:
@@ -339,19 +339,19 @@ feat(talentmatch): integrate competition workflows and capability graphs
 
 **精确文件清单**:
 ```
-talentmatch/server.ts
-talentmatch/src/App.tsx
-talentmatch/src/PlatformPages.tsx
-talentmatch/src/index.css
-talentmatch/src/types.ts
-talentmatch/src/components/CompanyAgentPanel.tsx
-talentmatch/src/components/CompetitionDiscovery.tsx
-talentmatch/src/components/CompetitionErrorBoundary.tsx
-talentmatch/src/components/CompetitionEvidence.tsx
-talentmatch/src/components/CompetitionRoleEvolution.tsx
-talentmatch/src/components/RoleCapabilityGraph.tsx
-talentmatch/src/utils/companyAgent.ts
-talentmatch/src/utils/competitionValidators.ts
+talentmatch-frontend/server.ts
+talentmatch-frontend/src/App.tsx
+talentmatch-frontend/src/PlatformPages.tsx
+talentmatch-frontend/src/index.css
+talentmatch-frontend/src/types.ts
+talentmatch-frontend/src/components/CompanyAgentPanel.tsx
+talentmatch-frontend/src/components/CompetitionDiscovery.tsx
+talentmatch-frontend/src/components/CompetitionErrorBoundary.tsx
+talentmatch-frontend/src/components/CompetitionEvidence.tsx
+talentmatch-frontend/src/components/CompetitionRoleEvolution.tsx
+talentmatch-frontend/src/components/RoleCapabilityGraph.tsx
+talentmatch-frontend/src/utils/companyAgent.ts
+talentmatch-frontend/src/utils/competitionValidators.ts
 ```
 
 **功能边界**: 岗位管理 Hub、岗位发现审核、能力演化对比、岗位能力图谱、RAG 证据审计、公司智能体面板、人岗匹配画布、FAB 简历上传
@@ -360,14 +360,14 @@ talentmatch/src/utils/competitionValidators.ts
 
 **提交前验证**:
 ```powershell
-cd E:\202676\talentmatch
+cd E:\202676\talentmatch-frontend
 npm.cmd run lint
 npm.cmd run build
 ```
 
 **提交后验证**:
 ```powershell
-cd E:\202676\talentmatch
+cd E:\202676\talentmatch-frontend
 npm.cmd run lint
 npm.cmd run build
 # 浏览器访问 http://localhost:3000 验收 6 个一级导航页面
@@ -443,8 +443,8 @@ docs/competition-ui-acceptance.md
 docs/delivery-verification.md
 docs/frontend-final-acceptance-2026-07-18.md
 docs/project-completion-audit.md
-frontend-react/ARCHIVED.md
-frontend-vue/ARCHIVED.md
+_archived-frontends/frontend-react/ARCHIVED.md
+_archived-frontends/frontend-vue/ARCHIVED.md
 deploy/docker-compose.competition.yml
 deploy/Dockerfile.python
 deploy/Dockerfile.java
@@ -547,7 +547,7 @@ data/competition/discoveries.json.bak
 | 序号 | 建议消息 | 文件数 | 依赖 |
 |------|----------|--------|------|
 | 1 | `feat(api): add competition intelligence and company agent services` | 11 | 无 |
-| 2 | `chore(java): update frontend URL and stack description to talentmatch/` | 2 | 无（可独立回滚） |
+| 2 | `chore(java): update frontend URL and stack description to talentmatch-frontend/` | 2 | 无（可独立回滚） |
 | 3 | `feat(talentmatch): integrate competition workflows and capability graphs` | 13 | 提交 1 |
 | 4 | `test: add competition, security and storage verification suites` | 13 | 提交 1, 3 |
 | 5 | `docs(delivery): add deployment manifests, competition delivery docs and verification` | 32 | 无代码依赖 |
@@ -565,7 +565,7 @@ data/competition/discoveries.json.bak
 
 ```powershell
 # 前端
-cd E:\202676\talentmatch
+cd E:\202676\talentmatch-frontend
 npm.cmd run lint
 npm.cmd run build
 
@@ -575,7 +575,7 @@ python -m pytest --basetemp E:\202676\pytest-final-verify -ra
 
 # 工作区整洁检查
 git diff --check
-rg -n "comp-panorama|comp-overview|comp-hub__tabs--five" talentmatch/src
+rg -n "comp-panorama|comp-overview|comp-hub__tabs--five" talentmatch-frontend/src
 ```
 
 ---

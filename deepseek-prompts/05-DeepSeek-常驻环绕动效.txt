@@ -1,6 +1,6 @@
 DeepSeek 任务——主页环绕动效播放后永久保留
 
-项目目录：E:\202676\talentmatch
+项目目录：E:\202676\talentmatch-frontend
 
 一、最终目标
 

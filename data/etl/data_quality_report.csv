@@ -1,5 +1,5 @@
 ﻿source_id,source_name,source_type,records,avg_quality_score,level_a,level_b,level_c,level_d,missing_title,missing_source_url,missing_collected_at,missing_published_at,missing_city,missing_company,missing_origin_record_id,short_responsibility,short_requirement,no_skill_hit,duplicate_content,unknown_source
-tencent_careers,Tencent Careers,official_enterprise_api,250,98.82,250,0,0,0,0,0,0,0,0,0,0,0,17,9,0,0
-meituan_careers,Meituan Careers,official_enterprise_api,250,97.98,249,1,0,0,0,0,0,0,0,0,0,0,18,29,0,0
+tencent_careers,Tencent Careers,official_enterprise_api,250,98.79,249,1,0,0,0,0,0,0,0,0,0,0,16,9,1,0
+meituan_careers,Meituan Careers,official_enterprise_api,250,98.1,248,2,0,0,0,0,0,0,0,0,0,0,23,18,1,0
 huawei_careers,Huawei Careers,official_enterprise_api,36,94.72,28,8,0,0,0,0,0,0,0,0,0,0,0,3,8,0
 baidu_careers,Baidu Careers,official_enterprise_site,10,98.8,10,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0

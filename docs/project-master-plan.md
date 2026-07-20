@@ -150,7 +150,7 @@
 
 ### 5.1 第一版技术栈
 
-- 前端：React 19 + TypeScript + Vite + Express 网关（`talentmatch/`）。
+- 前端：React 19 + TypeScript + Vite + Express 网关（`talentmatch-frontend/`）。
 - 后端：Java 标准库 HTTP Server。
 - 数据：CSV 文件。
 - 图谱展示：前端 SVG 简易图。
@@ -167,11 +167,11 @@
 - 图谱可视化：AntV G6 / ECharts Graph。G6 支持力导向布局、节点聚类和交互探索，ECharts Graph 用于轻量图展示。
 - RAG 框架：LangChain + ChromaDB + DeepSeek API。LangChain 编排 DeepSeek 调用链，ChromaDB 做向量存储，实现检索增强生成。
 - 后端框架：FastAPI / Flask。FastAPI 性能优异，自带 OpenAPI 文档。Flask 为备选方案，当前未实际使用。
-- 前端框架：React 19 + TypeScript + Vite。React 生态成熟，Vite 构建快，TypeScript 提供类型安全（`talentmatch/`）。
+- 前端框架：React 19 + TypeScript + Vite。React 生态成熟，Vite 构建快，TypeScript 提供类型安全（`talentmatch-frontend/`）。
 - 数据分析：Pandas + NetworkX。Pandas 做数据清洗和统计分析，NetworkX 做中心性、社区发现、相似岗位聚类和路径分析。
 - 简历解析：PaddleOCR / Tesseract + PDF/Word 本地解析 + 自定义 NER。本地 OCR 处理图片和扫描版 PDF 简历，PDF/Word 本地解析处理文本型简历，自定义 NER 提取技能、项目、年限、教育、证书等结构化字段。
 
-当前代码仍保留 `talentmatch/` React 前端、Java 后端和 CSV/JSON 文件层，目的是保证比赛原型可运行。目标技术栈作为后续生产化升级路线，优先承接当前已经生成的 `data/etl/*.csv` 和 `data/kg/*.csv` 产物。
+当前代码仍保留 `talentmatch-frontend/` React 前端、Java 后端和 CSV/JSON 文件层，目的是保证比赛原型可运行。目标技术栈作为后续生产化升级路线，优先承接当前已经生成的 `data/etl/*.csv` 和 `data/kg/*.csv` 产物。
 
 ## 6. 数据文件设计
 

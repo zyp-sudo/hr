@@ -1,7 +1,7 @@
 # XH-202621 岗位能力图谱项目 README
 
-> **正式前端入口已迁移至 `talentmatch/`（React + TypeScript，端口 `3000`）。**
-> `frontend/app.py`（Python Web）、`frontend-react/` 和 `frontend-vue/` 均为历史/归档
+> **正式前端入口已迁移至 `talentmatch-frontend/`（React + TypeScript，端口 `3000`）。**
+> `_archived-frontends/frontend/app.py`（Python Web）、`_archived-frontends/frontend-react/` 和 `_archived-frontends/frontend-vue/` 均为历史/归档
 > 实现，不参与构建、测试、部署或验收。完整启动说明以仓库根目录 [`README.md`](README.md)
 > 为准。RAG、扫描件 OCR 和未来趋势预测当前明确为 MVP 后续能力，见
 > `docs/mvp-scope.md`，不得按已完成能力计入验收。
@@ -12,7 +12,7 @@
 
 当前运行技术栈：
 
-- 前端：React 19 + TypeScript + Vite + Express 网关（`talentmatch/`）
+- 前端：React 19 + TypeScript + Vite + Express 网关（`talentmatch-frontend/`）
 - 后端：FastAPI 公开 API + Java 分析服务
 - 业务数据层：MySQL 8.x
 - 检索与聚合：Elasticsearch 8.13.x
@@ -29,7 +29,7 @@
 - 图谱可视化：AntV G6 / ECharts Graph
 - RAG：LangChain + ChromaDB + DeepSeek API
 - 后端框架：FastAPI / Flask（当前仅使用 FastAPI，Flask 为备选方案，未实际部署）
-- 正式前端：React + TypeScript（`talentmatch/`）；旧 Python Web（`frontend/app.py`）、`frontend-react/` 和 `frontend-vue/` 已归档
+- 正式前端：React + TypeScript（`talentmatch-frontend/`）；旧 Python Web（`_archived-frontends/frontend/app.py`）、`_archived-frontends/frontend-react/` 和 `_archived-frontends/frontend-vue/` 已归档
 - 数据分析：Pandas + NetworkX
 - 简历解析：PaddleOCR / Tesseract + PDF/Word 本地解析 + 自定义 NER
 
@@ -49,10 +49,8 @@
 
 ```text
 backend/                  Java 后端 HTTP API
-talentmatch/              正式 React/TypeScript 前端与 Express 网关
-frontend/                 [归档] Python 前端页面（历史实现）
-frontend-react/           [归档] React 早期视觉原型
-frontend-vue/             [归档] Vue 早期视觉原型
+talentmatch-frontend/     正式 React/TypeScript 前端与 Express 网关
+_archived-frontends/     [归档] 所有历史前端、视觉原型与静态演示
 scripts/                  数据采集、ETL、启动脚本
 data/                     CSV、JSON、ETL、图谱、仓库导入和 AI 产物
 docs/                     设计文档、架构文档、ETL 治理说明
@@ -97,7 +95,7 @@ powershell -ExecutionPolicy Bypass -File scripts\stop-dev.ps1
 
 ## 主要页面（归档 Python 前端页面参考）
 
-以下页面来自已归档的 `frontend/app.py` 实现，仅供设计参考；正式前端 `talentmatch/` 的页面结构见 [`README.md`](README.md)。
+以下页面来自已归档的 `_archived-frontends/frontend/app.py` 实现，仅供设计参考；正式前端 `talentmatch-frontend/` 的页面结构见 [`README.md`](README.md)。
 
 - `/?page=dashboard`：项目总览
 - `/?page=results`：统一结果

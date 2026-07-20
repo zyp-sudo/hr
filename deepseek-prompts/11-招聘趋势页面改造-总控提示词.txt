@@ -19,7 +19,7 @@ TalentMatch 招聘趋势页面第一阶段改造——DeepSeek 总控提示词
 本阶段不是重新设计整个系统，也不是开发新的趋势算法。必须保留当前真实数据、接口、筛选逻辑、时间变化图、时间对比图和预测说明，只重组招聘趋势页面的呈现层与必要的前端状态反馈。
 
 【项目与事实基线】
-1. 唯一工作目录：E:\202676\talentmatch
+1. 唯一工作目录：E:\202676\talentmatch-frontend
 2. 招聘趋势入口：src/PlatformPages.tsx 中的 TrendInsightsPage、CachedEvolutionPage、YearComparisonPage。
 3. 页面元信息：src/PlatformPages.tsx 中 meta.evolution。
 4. 风格参照：

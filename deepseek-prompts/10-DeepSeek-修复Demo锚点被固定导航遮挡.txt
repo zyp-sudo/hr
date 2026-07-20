@@ -2,7 +2,7 @@
 你是 DeepSeek 前端修复 Agent。请直接修改并实际验证，不要只给建议。
 
 【项目】
-E:\202676\talentmatch
+E:\202676\talentmatch-frontend
 
 【已确认的问题】
 上一轮已把“登录说明 + 平台能力预览”移动到未登录主页的 Demo 岗位标题和 01 岗位卡之间。DOM 顺序及两列/单列布局正确，但真实浏览器终验发现：
@@ -32,7 +32,7 @@ document.getElementById("demo-jobs")?.scrollIntoView({behavior:"smooth",block:"s
 4. 不改变 Demo 内容块现有 DOM 顺序、32px 间距或卡片布局。
 
 【推荐最小实现】
-优先在 E:\202676\talentmatch\src\reference-theme.css 为 #demo-jobs（或专用 class）设置 scroll-margin-top，并根据 sticky header 在桌面/移动端的真实高度设置响应式值。
+优先在 E:\202676\talentmatch-frontend\src\reference-theme.css 为 #demo-jobs（或专用 class）设置 scroll-margin-top，并根据 sticky header 在桌面/移动端的真实高度设置响应式值。
 
 参考方向（数值必须以实际渲染验收为准，不能盲抄）：
 - 桌面 header 最小高度约 76px，可使用约 92–100px 的 scroll-margin-top。
@@ -42,8 +42,8 @@ document.getElementById("demo-jobs")?.scrollIntoView({behavior:"smooth",block:"s
 
 【修改范围】
 允许修改：
-1. E:\202676\talentmatch\src\reference-theme.css
-2. 仅当 CSS 方案无法可靠适配时，最小修改 E:\202676\talentmatch\src\PlatformPages.tsx 的“浏览 Demo 岗位”点击逻辑。
+1. E:\202676\talentmatch-frontend\src\reference-theme.css
+2. 仅当 CSS 方案无法可靠适配时，最小修改 E:\202676\talentmatch-frontend\src\PlatformPages.tsx 的“浏览 Demo 岗位”点击逻辑。
 
 【禁止事项】
 1. 不修改登录后主页。

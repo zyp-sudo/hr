@@ -91,8 +91,8 @@ try {
     if (Test-Path "backend/src") { Write-Pass "backend/src/ directory exists (Java build)" }
     else { Write-Fail "missing backend/src/" }
 
-    if ((Test-Path "talentmatch") -and (Test-Path "talentmatch/package.json")) {
-        Write-Pass "talentmatch/ ready (Web build)"
+    if ((Test-Path "talentmatch-frontend") -and (Test-Path "talentmatch-frontend/package.json")) {
+        Write-Pass "talentmatch-frontend/ ready (Web build)"
     } else {
         Write-Fail "missing talentmatch source"
     }

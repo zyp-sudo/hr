@@ -181,7 +181,7 @@ try {
     throw "Storage health is '$($health.status)': $($health.storage | ConvertTo-Json -Compress)"
   }
 
-  $TalentMatchDir = Join-Path $ProjectRoot "talentmatch"
+  $TalentMatchDir = Join-Path $ProjectRoot "talentmatch-frontend"
   if (-not (Test-Path (Join-Path $TalentMatchDir "package.json"))) {
     throw "Redesigned frontend was not found: $TalentMatchDir"
   }

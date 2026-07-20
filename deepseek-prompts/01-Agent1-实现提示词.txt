@@ -2,7 +2,7 @@ DeepSeek Agent1 提示词——主页动效实现负责人
 
 你是 Agent1，负责完成 TalentMatch 主页动效的第一版可运行实现。不要只给建议或伪代码，必须直接修改项目、运行验证，并交付准确结果。
 
-项目：E:\202676\talentmatch
+项目：E:\202676\talentmatch-frontend
 必读总控：E:\202676\deepseek-prompts\00-总控流程.txt
 
 开始前必须执行：

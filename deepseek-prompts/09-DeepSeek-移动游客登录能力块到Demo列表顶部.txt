@@ -2,7 +2,7 @@
 你是 DeepSeek 前端实施 Agent。请直接修改代码并完成验证，不要只输出建议。
 
 【项目】
-E:\202676\talentmatch
+E:\202676\talentmatch-frontend
 
 【目标】
 调整未登录主页的信息顺序。把下面这一整块：
@@ -33,7 +33,7 @@ E:\202676\talentmatch
 
 【修改位置】
 主要文件：
-E:\202676\talentmatch\src\PlatformPages.tsx
+E:\202676\talentmatch-frontend\src\PlatformPages.tsx
 
 当前结构大约为：
 - 第 190 行附近：<section className="home-section" id="demo-jobs">
@@ -45,7 +45,7 @@ E:\202676\talentmatch\src\PlatformPages.tsx
 【样式要求】
 1. 复用现有 home-insights、home-quote-card、home-insight-card 等样式，不重新设计组件。
 2. 为移动后的能力块增加独立修饰类，例如 guest-demo-capability-preview；只在确有需要时修改：
-   E:\202676\talentmatch\src\reference-theme.css
+   E:\202676\talentmatch-frontend\src\reference-theme.css
 3. 能力块与下面岗位卡网格之间保留约 24–36px 的清晰间距；不要依赖一个已经被删除的外层 home-section 来制造间距。
 4. 桌面端保持左右两列；现有响应式规则下，移动端继续单列。
 5. 不改变 Demo 标题、数据来源、岗位卡编号、岗位数据和登录文案。
@@ -65,7 +65,7 @@ E:\202676\talentmatch\src\PlatformPages.tsx
 4. 点击 Hero 的“浏览 Demo 岗位”仍滚动到 Demo 标题区域。
 5. 1440×900 和 390×844 均无横向溢出，移动端没有卡片重叠。
 6. 登录后主页没有变化。
-7. 在 E:\202676\talentmatch 执行并通过：
+7. 在 E:\202676\talentmatch-frontend 执行并通过：
    - npm.cmd run lint
    - npm.cmd run build
 

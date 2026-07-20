@@ -1,0 +1,4 @@
+# 已归档
+
+该 React 工程是早期视觉原型，不是正式前端，不参与默认启动、测试、部署或验收。
+正式前端为 `talentmatch-frontend/`（React + TypeScript）。此目录仅保留设计和交互参考；其中 Mock 数据不代表真实能力。

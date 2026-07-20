@@ -77,7 +77,7 @@
 第一版先做可运行闭环，不直接引入重型数据库和模型依赖：
 
 - Java 后端提供 REST API 和领域服务。
-- React + TypeScript 前端（`talentmatch/`）提供岗位图谱、动态演化、人岗匹配、数据质量视图。
+- React + TypeScript 前端（`talentmatch-frontend/`）提供岗位图谱、动态演化、人岗匹配、数据质量视图。
 - 数据先用内存样例，后续替换为 MySQL、Neo4j、Elasticsearch、向量库和大模型服务。
 - 简历解析第一版用文本技能抽取占位，后续接入 OCR、PDF/Word 解析和 NER。
 

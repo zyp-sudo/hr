@@ -4,9 +4,9 @@ TalentMatch 主页动效项目——DeepSeek 总控提示词
 
 一、唯一工作目录与技术事实
 
-1. 唯一目标项目：E:\202676\talentmatch
-2. 正式主页：E:\202676\talentmatch\src\PlatformPages.tsx 中的 HomePage。
-3. 主页最终覆盖样式主要位于：E:\202676\talentmatch\src\reference-theme.css。
+1. 唯一目标项目：E:\202676\talentmatch-frontend
+2. 正式主页：E:\202676\talentmatch-frontend\src\PlatformPages.tsx 中的 HomePage。
+3. 主页最终覆盖样式主要位于：E:\202676\talentmatch-frontend\src\reference-theme.css。
 4. 全局引入顺序：index.css -> design-repair.css -> reference-theme.css，后者优先级最高。先查清现有规则再新增，禁止在三个文件里重复堆同一套选择器。
 5. 已安装 React 19、TypeScript、GSAP、@gsap/react、Motion；现有 SplitText 已使用 GSAP/ScrollTrigger。禁止再安装动画库。
 6. 两侧正式图片已经存在：public/hero/job-management.png、public/hero/recruitment-insights.png。

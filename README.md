@@ -2,7 +2,7 @@
 
 TalentMatch 是一个面向招聘场景的人岗匹配与人才分析项目，包含岗位管理、候选人评估、人才图谱、重点人才跟踪、招聘趋势分析和向量检索能力。
 
-当前正式入口是 `talentmatch/` 中的 React + TypeScript 前端。完整服务包括：
+当前正式入口是 `talentmatch-frontend/` 中的 React + TypeScript 前端。完整服务包括：
 
 - TalentMatch Web：React 19、TypeScript、Vite、Express，端口 `3000`
 - Python API：FastAPI，端口 `8080`
@@ -140,7 +140,7 @@ python -m pip install -r requirements-dev.txt
 Windows PowerShell：
 
 ```powershell
-Set-Location talentmatch
+Set-Location talentmatch-frontend
 npm.cmd ci
 Set-Location ..
 ```
@@ -148,7 +148,7 @@ Set-Location ..
 Linux/macOS：
 
 ```bash
-cd talentmatch
+cd talentmatch-frontend
 npm ci
 cd ..
 ```
@@ -257,7 +257,7 @@ python -m uvicorn app.main:app --host 0.0.0.0 --port 8080
 再新开终端。Windows PowerShell：
 
 ```powershell
-Set-Location talentmatch
+Set-Location talentmatch-frontend
 $env:PORT = "3000"
 npm.cmd run dev
 ```
@@ -265,7 +265,7 @@ npm.cmd run dev
 Linux/macOS：
 
 ```bash
-cd talentmatch
+cd talentmatch-frontend
 PORT=3000 npm run dev
 ```
 
@@ -279,7 +279,7 @@ Windows 用户可复制配置模板：
 
 ```powershell
 Copy-Item scripts\local-env.example.ps1 scripts\local-env.ps1
-Copy-Item talentmatch\.env.example talentmatch\.env.local
+Copy-Item talentmatch-frontend\.env.example talentmatch-frontend\.env.local
 ```
 
 只在本地文件中填写自己的密钥。这两个真实配置文件已被 `.gitignore` 排除，禁止提交。
@@ -314,7 +314,7 @@ python scripts/verify_storage_counts.py
 Windows 前端检查：
 
 ```powershell
-Set-Location talentmatch
+Set-Location talentmatch-frontend
 npm.cmd run lint
 npm.cmd run build
 ```
@@ -365,7 +365,8 @@ python scripts\bootstrap_storage.py --sync
 ```text
 app/                    FastAPI 应用、API、数据访问与管理后台
 backend/                Java 分析服务
-talentmatch/            正式 React/TypeScript 前端与 Express 网关
+talentmatch-frontend/            正式 React/TypeScript 前端与 Express 网关
+_archived-frontends/            历史前端、视觉原型与静态演示（请勿作为正式入口）
 scripts/                初始化、同步、采集、ETL、测试和启动脚本
 data/                   示例数据、ETL 结果与数据库导入文件
 tests/                  Python 自动化测试
@@ -390,7 +391,7 @@ git switch -c feature/your-feature
 
 ```bash
 python -m pytest
-cd talentmatch
+cd talentmatch-frontend
 npm run lint
 npm run build
 ```

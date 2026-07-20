@@ -1,6 +1,6 @@
 DeepSeek 简单任务——主页弧形粒子动画视觉微调
 
-项目：E:\202676\talentmatch
+项目：E:\202676\talentmatch-frontend
 
 核心动画已经完成，禁止重写：
 

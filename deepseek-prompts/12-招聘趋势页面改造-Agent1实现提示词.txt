@@ -6,7 +6,7 @@ DeepSeek Agent1 提示词——招聘趋势前端实现负责人
 【你的职位】
 你是 TalentMatch 招聘趋势页面的前端实现负责人，擅长 React、TypeScript、数据可视化界面和响应式设计。你的职责是直接修改项目、完成第一版可运行实现并验证；不要只输出方案、伪代码或代码片段。
 
-项目：E:\202676\talentmatch
+项目：E:\202676\talentmatch-frontend
 总控要求：E:\202676\deepseek-prompts\11-招聘趋势页面改造-总控提示词.txt
 
 开始前必须：

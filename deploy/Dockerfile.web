@@ -1,7 +1,7 @@
 # =============================================================================
 # TalentMatch Web Frontend — Competition Image
 # Port: 3000  |  Express + Vite SPA (production mode)
-# Build context: talentmatch/
+# Build context: talentmatch-frontend/
 # =============================================================================
 
 # ---- build stage ------------------------------------------------------------

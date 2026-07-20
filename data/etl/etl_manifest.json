@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-19T12:24:13+08:00",
+  "generated_at": "2026-07-20T14:36:08+08:00",
   "input_files": [
     "data\\collected_jobs.csv",
     "data\\collected_job_skills.csv",
@@ -13,7 +13,7 @@
     "data\\benchmarks\\field_coverage_report.json"
   ],
   "unified_job_records": 546,
-  "unified_skill_records": 1498,
+  "unified_skill_records": 1527,
   "candidate_score_records": 1092,
   "registered_sources": 17,
   "registered_source_types": [
@@ -36,20 +36,20 @@
     "official_enterprise_site"
   ],
   "category_counts": {
-    "product_operation": 99,
-    "cloud_infra": 16,
-    "ai_algorithm": 194,
-    "data_engineering": 90,
-    "frontend_client": 23,
-    "security": 42,
-    "other": 20,
-    "testing_quality": 53,
-    "design": 8,
+    "testing_quality": 60,
+    "security": 38,
+    "product_operation": 95,
+    "ai_algorithm": 180,
+    "data_engineering": 101,
+    "frontend_client": 26,
+    "cloud_infra": 19,
+    "other": 17,
+    "design": 9,
     "backend_engineering": 1
   },
   "searchable_field_coverage": {
     "education": {
-      "non_null": 159,
+      "non_null": 163,
       "total": 546,
       "method": "explicit requirement-text extraction"
     },
